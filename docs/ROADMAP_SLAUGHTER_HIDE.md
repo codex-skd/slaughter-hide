@@ -88,12 +88,49 @@ Mismo patrón: `<Mob>Skin`/`<Mob>Fur` (curtido), `Raw<Corte> de <Mob>` / `Cooked
 
 **Conclusión operativa**: el "motor" real de Butchery son ~5-6 patrones (sangrado → despiece → drop → colocación de carcasa/cabeza/esqueleto) aplicados a ~60 tipos de mob distintos, más ~54 bloques y un puñado de ítems con mecánica propia (curtido, prensa de carne, salazón, taxidermia, caja registradora). Portar **un mob de referencia completo de punta a punta** (bloque carcasa + cabeza + head mount + esqueleto + ítems de piel/carne + las 4-5 procedures asociadas) fija el patrón; el resto de mobs se generan por plantilla a partir de ese patrón en vez de decompilar y traducir 700+ procedures a mano.
 
-### Próximo paso concreto (siguiente sesión)
+## Diseño técnico — sistema genérico de carcasas (COMPLETADO 2026-08-15, mob de referencia: vaca)
 
-1. Elegir el mob de referencia para fijar el patrón (candidato natural: **vaca** — mecánica simple, sin cortes de humanoide, y es de los primeros del roadmap "core" por ser el mob de granja más común).
-2. Leer a fondo (no resumido) los ~6 archivos de `procedures/` de ese mob + sus bloques/ítems asociados en `temp/butchery-src/`.
-3. Diseñar el sistema idiomático NeoForge equivalente (block entity o estado de bloque para el sangrado, `UseItemOn`/interacción para el despiece, tabla de loot o lista de drops en código).
-4. Delegar en OpenCode (caso 1 de la política de delegación) la implementación del mob de referencia + el generador/plantilla para el resto, una vez el patrón esté validado a mano.
+Lectura completa de `CowcarcassBlock`, `CowcarcassBlockEntity`, `CowcarcassbleedingProcedure`, `CowcutupProcedure`, `CowcarcassbrokenProcedure` en `temp/butchery-src/`. **Hallazgo clave**: la lógica de despiece es **idéntica para los ~120 mobs con carcasa** — lo único que cambia por mob es a qué loot table JSON se llama en cada etapa. Esto significa que el sistema entero de carcasas/cabezas/esqueletos se puede portar como **una única familia de clases genéricas parametrizadas por mob**, no como ~330 clases de bloque + ~293 procedures copiadas una a una.
+
+### Mecánica observada (vaca, aplicable 1:1 al resto)
+
+1. **Colocación**: al morir el mob, se coloca un `<mob>_carcass` (bloque colgante/tirado, blockstate `FACING` + `blockstate` entero, empieza en `blockstate=1`).
+2. **Sangrado** (clic con cleaver sobre carcasa fresca, `blockstate==1`): marca NBT `isBleeding=true`, sonidos + partículas de sangre, rellena un `bloodgrate`/`bloodpuddle` cercano en un loop temporizado (22 × 45 ticks). Tras 900 ticks (45s) — o instantáneo si `INSTANT_BLEED` está activo en config — sustituye el bloque por `drained_<mob>_carcass` (mismo `blockstate` property pero solo acepta `{0,6,7,8,9}`; al no aceptar `1`, cae a `0` por defecto), preservando NBT del block entity. Marca `isBleeding=false`, `isDrained=true`.
+3. **Despiece** (clic con cleaver/skinning knife sobre la carcasa **ya drenada**, requiere NBT `isDrained=true`):
+   - `blockstate==0` + cleaver → tira loot table `<mob>_head_drop` → `blockstate=6`
+   - `blockstate==6` + skinning knife → tira `<mob>_skin_drop` → `blockstate=7`
+   - `blockstate==7` + cleaver → tira `<mob>_cut_1_drop` → `blockstate=8`
+   - `blockstate==8` + cleaver → tira `<mob>_cut_2_drop` → `blockstate=9`
+   - `blockstate==9` + cleaver → tira `<mob>_cut_3_drop` → bloque se limpia (`AIR`)
+   - Cada golpe: daña 1 punto de durabilidad de la herramienta, sonido `item.axe.strip` + `block.honey_block.step`, partícula de rotura de bloque (`levelEvent 2001`).
+   - Tags de herramienta usados (constantes en todo el mod, no varían por mob): `c:cleaver`/`forge:cleaver`, `c:skinning_knives`/`forge:skinning_knives`.
+4. **Rotura no autorizada** (minar la carcasa en vez de despiezarla, sin modo creativo, solo en `blockstate` 0 o 1): dropea el propio bloque como ítem recolocable — antes de sangrar el bloque es "reubicable" como decoración, después de sangrar/despiezar ya no.
+5. **`<mob>CarcassBlockEntity`**: es un contenedor genérico de 9 slots (`RandomizableContainerBlockEntity`) — vestigio de plantilla MCreator, no aporta lógica propia de la mecánica de despiece (el estado real vive en el `blockstate` property + NBT persistente `isBleeding`/`isDrained`).
+6. **`<mob>_head`/`<mob>_head_mount`/`<mob>_skeleton`**: bloques de exhibición independientes, generados por el drop de `head_drop`/`cut_3_drop` respectivamente (colocables por el jugador) — sin mecánica propia más allá de blockstate `FACING`.
+
+### Arquitectura idiomática propuesta (reemplaza ~330 clases de bloque + ~293 procedures)
+
+| Original MCreator | Reemplazo idiomático |
+|---|---|
+| `<Mob>CarcassBlock` × ~65 | **1 clase** `CarcassBlock` (fresh) parametrizada por `CarcassDefinition` (record: mob id, bounding boxes si difieren, sonidos) |
+| `Drained<Mob>CarcassBlock` × ~65 | **1 clase** `DrainedCarcassBlock`, misma idea |
+| `<Mob>CarcassBlockEntity` × ~65 | **1 clase** `CarcassBlockEntity` genérica (guarda `mobId`, `isBleeding`, `isDrained` como datos tipados, no NBT suelto; sin inventario de 9 slots — no se usa) |
+| `<Mob>carcassbleedingProcedure` × 36 | **1 handler** `CarcassBleedingHandler`, recibe `CarcassDefinition` |
+| `<Mob>cutupProcedure` × 137 | **1 handler** `CarcassCutupHandler`, máquina de estados `{FRESH→DRAINED→HEAD_CUT→SKINNED→CUT_1→CUT_2→CUT_3(empty)}` genérica, resuelve el loot table por convención `<namespace>:blocks/<mob_id>_<stage>_drop` |
+| `Placed<Mob>CarcassProcedure` × ~60 | **1 listener** de evento `LivingDeathEvent`, tabla `Map<EntityType, CarcassDefinition>` en vez de 60 clases |
+| `<Mob>Head`/`HeadMount`/`Skeleton`Block × ~170 | **3 clases genéricas** (`TrophyHeadBlock`, `HeadMountBlock`, `SkeletonBlock`), un registro de datos por mob en vez de una clase java por mob |
+| `data/butchery/loot_table/blocks/<mob>_*.json` (976 en total) | **Se reutilizan tal cual** (namespace `butchery:` → `slaughter_hide:`, decisión ya confirmada) — no hay que tocar su contenido, solo el namespace |
+| `assets/butchery/{models,textures,blockstates}/` | **Se reutilizan tal cual** (misma decisión) |
+
+Con esto, el trabajo real de "port" por mob se reduce a: **1 entrada en la tabla `CarcassDefinition`** (mob id + entity type + qué bloques tiene: carcasa/cabeza/mount/esqueleto/corpse) + copiar sus JSON de loot table/blockstate/modelo (mecánico, scripteable) — no escribir código Java nuevo por mob.
+
+### Próximo paso concreto — Fase 2 (delegado a OpenCode)
+
+1. Implementar el sistema genérico (`CarcassBlock`, `DrainedCarcassBlock`, `CarcassBlockEntity`, `CarcassBleedingHandler`, `CarcassCutupHandler`, `CarcassDefinition`) usando la vaca como único caso de prueba end-to-end (bloques `cow_carcass`/`drained_cow_carcass`/`cow_head`/`cow_head_mount`/`cow_skeleton` + ítems `cow_skin`, cortes de vaca).
+2. Migrar assets/datos de la vaca desde `temp/butchery-assets/` a `src/main/resources/` con namespace `slaughter_hide:` (blockstates, models, textures, loot tables — reutilización tal cual, ya aprobada).
+3. Registro vía `DeferredRegister` de bloques/ítems/block entities usando la tabla `CarcassDefinition`, no clases individuales.
+4. Validar en dev run (`./gradlew.bat runClient`) el ciclo completo: matar vaca → carcasa aparece → sangrar → drenar → cortar cabeza → despellejar → 3 cortes de carne → bloque desaparece.
+5. Una vez validado, extender `CarcassDefinition` al resto de mobs "animales simples" (sin cortes de humanoide) copiando sus JSON — trabajo mecánico, no de diseño.
 
 ## Fase 1 — Setup del repositorio (COMPLETADO esta sesión)
 
