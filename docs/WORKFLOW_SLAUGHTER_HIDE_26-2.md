@@ -21,9 +21,11 @@
 - **package**: `com.skd.slaughterhide`
 - **Minecraft / NeoForge**: `26.2` / `26.2.0.45-beta` (no actualizar sin pedirlo explícitamente)
 - **Origen MCreator**: el mod original está generado con [MCreator](https://mcreator.net/) (paquete `net.mcreator.butchery`). Solo existe el `.jar` compilado (`butchery-5.2-neoforge-26.1.2.jar`, sin fuente pública) — el port arranca desde bytecode decompilado, no desde un proyecto MCreator editable. Ver Fase 0 del roadmap.
-- **Referencia en `lib_ext/`**: `butchery-5.2-neoforge-26.1.2.jar` (compilado, sin fuente) + su decompilación en `temp/butchery-src/` (no versionado) como base de lectura para portar clase a clase. `lib_ext/` y `temp/` no se versionan (ver `.gitignore`).
+- **Referencia en `lib_ext/`**: `butchery-5.2-neoforge-26.1.2.jar` (compilado, sin fuente) + su decompilación en `temp/butchery-src/` (no versionado, CFR 0.152 desde `%TEMP%\opencode\cfr.jar`) como base de lectura para portar clase a clase. `lib_ext/` y `temp/` no se versionan (ver `.gitignore`).
 - **Atribución obligatoria**: mantener "port of Butchery by Jmods, used with permission" en `README.md`, `docs/curseforge/project_description.md` y `credits` de `neoforge.mods.toml` durante todo el desarrollo.
-- **Sin residuos MCreator**: eliminar todo rastro de `net.mcreator.butchery` (paquetes, clases, comentarios generados, `credits="Made with Mcreator"`) — reescribir a mano, no solo renombrar mecánicamente, salvo que el roadmap indique lo contrario para una fase concreta.
+- **Assets SÍ se reutilizan** (decisión confirmada 2026-08-15, a diferencia de otros ports del workspace): texturas/modelos/sonidos/lang de Butchery se copian tal cual bajo `assets/slaughter_hide/`, dado el permiso expreso del autor. No aplica a nombres de paquete/clase Java (ver punto siguiente).
+- **Sin residuos MCreator en el código**: eliminar todo rastro de `net.mcreator.butchery` (paquetes, clases, comentarios generados, `credits="Made with Mcreator"`) — reescribir a mano, no solo renombrar mecánicamente, salvo que el roadmap indique lo contrario para una fase concreta.
+- **Alcance**: subconjunto priorizado con betas incrementales (no paridad 100% desde el inicio) — ver orden de fases en `docs/ROADMAP_SLAUGHTER_HIDE.md`.
 - **Compat opcional a confirmar en Fase 0**: JEI (el original lo declara opcional en `neoforge.mods.toml`) — verificar versión compatible con NeoForge 26.2.0.45-beta antes de portar `compat/`. No asumir.
 
 ## Convenciones de nomenclatura

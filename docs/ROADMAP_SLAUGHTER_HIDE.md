@@ -46,12 +46,12 @@
 
 **Conclusión de tamaño**: esto no es un mod pequeño — es un content-pack grande, comparable en volumen a mods de referencia como Equivalent Legacy (~491 archivos Java) pero **4x más clases** y con generación MCreator (código no idiomático, muy repetitivo, con lógica de negocio embebida en `procedures/` en vez de en las clases de bloque/ítem). Un port 1:1 completo es un proyecto de varias semanas incluso delegando el grueso a OpenCode. Este roadmap está pensado en fases para poder liberar betas jugables incrementales en vez de bloquear todo hasta tener el 100%.
 
-## Fase 0 — Viabilidad y decompilación (bloqueante, siguiente paso)
+## Fase 0 — Viabilidad y decompilación (COMPLETADO 2026-08-15)
 
-1. Decompilar el jar completo (Vineflower o CFR — no hay decompilador instalado localmente, requiere descarga puntual) a `temp/butchery-src/` (no versionado).
-2. Ollama (`qwen2.5-coder:7b`) para pre-filtrar y resumir los `procedures/*.java` decompilados más largos antes de que la sesión los lea completos (regla de `codex-docs/reference/CLAUDE.md` — no aplica al código del propio mod que se está portando, pero sí sirve para hacer un primer barrido de qué hace cada procedure antes de decidir el orden de port).
-3. Catalogar: qué bloques/ítems son variantes simples (mismo patrón × N mobs, ej. "cabeza de X", "alfombra de X") vs mecánicas núcleo únicas (mesa de carnicero, curtido de pieles, etc.). Las variantes en serie son candidatas a generación asistida (script/plantilla), no a copiar clase a clase a mano.
-4. Confirmar con el usuario si el port apunta a **paridad completa** o a un **subconjunto priorizado** (ver Fase 1+ — probablemente la decisión correcta dado el tamaño).
+1. ✅ Decompilado el jar completo con CFR 0.152 (`%TEMP%\opencode\cfr.jar`, ya presente en el sistema de sesiones previas) a `temp/butchery-src/` (no versionado) — **1963 archivos `.java`**, 0 errores/excepciones en `temp/cfr-decompile.log`.
+2. ✅ Assets y datos originales extraídos a `temp/butchery-assets/` (`assets/butchery/` + `data/butchery/` + `pack.mcmeta`, 8129 archivos) — se reutilizan tal cual (decisión confirmada, ver abajo).
+3. **Pendiente próxima sesión**: catalogar qué bloques/ítems son variantes simples (mismo patrón × N mobs, ej. "cabeza de X", "alfombra de X") vs mecánicas núcleo únicas (mesa de carnicero, curtido de pieles, etc.) leyendo `temp/butchery-src/net/mcreator/butchery/`. Las variantes en serie son candidatas a generación asistida (script/plantilla), no a copiar clase a clase a mano. Usar Ollama (`qwen2.5-coder:7b`) para pre-filtrar/resumir los `procedures/*.java` más largos antes de leerlos completos.
+4. ✅ Alcance confirmado con el usuario: **subconjunto priorizado, betas incrementales** (no paridad 100% desde el inicio).
 
 ## Fase 1 — Setup del repositorio (COMPLETADO esta sesión)
 
@@ -101,9 +101,9 @@
 
 ---
 
-## Decisiones pendientes de confirmar con el usuario
+## Decisiones confirmadas por el usuario (2026-08-15)
 
-1. **Alcance**: ¿paridad 100% con Butchery 5.2, o un subconjunto priorizado publicable antes? (recomendado dado el tamaño: subconjunto por fases con betas incrementales).
-2. **Reutilización de assets**: dado que hay permiso expreso del autor, ¿se pueden reutilizar texturas/modelos/sonidos originales tal cual, o se prefiere arte propio igual que en los demás ports del workspace?
-3. **Descarga de decompilador** (Vineflower o CFR, ~5-15 MB): requiere permiso explícito antes de descargar (regla de acciones que requieren confirmación).
-4. **Modelo de OpenCode a usar** para las fases delegadas (se pregunta una vez al iniciar la primera delegación, según `codex-docs/reference/CLAUDE.md`).
+1. **Alcance**: **subconjunto priorizado, betas incrementales**. Se empieza por las mecánicas núcleo (carnicería/curtido) y las familias de bloques más visibles, publicando betas jugables antes de llegar a paridad completa. No bloquear el primer release a tener el 100% del contenido original.
+2. **Reutilización de assets**: **SÍ** — dado el permiso expreso del autor, texturas/modelos/sonidos/lang de Butchery se reutilizan tal cual (con atribución en README/CurseForge/`credits`), sin rehacer arte propio. Esto reduce muchísimo el esfuerzo de las Fases 4-5 frente a los demás ports del workspace (que sí exigen arte propio por ser forks MIT sin ese permiso).
+3. **Decompilador**: se reutiliza el CFR 0.152 ya presente en `%TEMP%\opencode\cfr.jar` (mismo binario usado en sesiones previas para otros mods compilados del workspace — `dinamyc_combat`, `teleport_animation`) en vez de descargar una copia nueva. Salida en `temp/butchery-src/` (no versionado).
+4. **Modelo de OpenCode**: pendiente de preguntar al usuario en la primera delegación real (Fase 2 en adelante), según el orden de proveedores de `codex-docs/reference/CLAUDE.md`.
