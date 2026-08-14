@@ -8,7 +8,7 @@
 |---|---|
 | Project Name | `Slaughter & Hide` |
 | Slug/URL | `slaughter-hide` (verificar disponibilidad; si está ocupado, `slaughter-and-hide`) |
-| Summary (resumen corto) | `Realistically butcher everything in Minecraft — a Butchery port for NeoForge 26.2, used with the original author's permission.` |
+| Summary (resumen corto, campo "Summary" de CurseForge, máx. ~250 car.) | `Realistically butcher every mob in Minecraft: skin carcasses, cure hides into leather, cut meat, and cook it all at the butcher's table. An official port of Butchery (by Jmods) to NeoForge 26.2, used with the original author's permission.` |
 | Category | Mobs / Decoration & Building (según disponibilidad — mismo tipo usado por Butchery original) |
 | License | All Rights Reserved (port de Butchery por Jmods, usado con permiso expreso — ver `README.md`) |
 | Game | Minecraft |
@@ -16,12 +16,27 @@
 | Client/Server | Both |
 | Description | Contenido de `project_description.md` (HTML) |
 | Relations — optional dependency | JEI |
-| Issue tracker | URL del repo (GitHub, tras el mirror) |
-| Source URL | URL del repo (GitHub, tras el mirror) |
+| Issue tracker | `https://gitlab.com/stalking-dragons/minecraft/slaughter-hide/-/issues` |
+| Source URL | `https://gitlab.com/stalking-dragons/minecraft/slaughter-hide` |
 
 ## Icono / imagen del proyecto
 
-Pendiente de diseñar (`assets/slaughter_hide/icon.png`) — no reutilizar ningún asset del `butchery-5.2-neoforge-26.1.2.jar` original (ver regla de "sin residuos" en el WORKFLOW). Definir prompt/estilo cuando se llegue a la fase de arte del roadmap.
+El jar original no trae un logo de proyecto (solo iconos de ítem sueltos: `elder_guardian_icon.png`, `sausage_icon.png`, etc. — no sirven como logo cuadrado de CurseForge). Hay que generar uno propio. Nota: esto **no contradice** la decisión de reutilizar assets in-game (texturas/modelos/sonidos de Butchery se reutilizan tal cual, ver WORKFLOW) — es solo que no existe un asset de logo que reutilizar.
+
+Prompt (tema: carnicería/curtido rústico, sin texto):
+
+```
+Fantasy game project icon, a rustic wooden butcher's chopping block seen
+from a slight top-down angle, a heavy cleaver stuck upright in the wood,
+a cured animal hide draped over one corner and a small string of sausages
+hanging from a meat hook in the background, warm dim tavern lighting,
+deep browns and dried-blood reds, subtle steam rising from a fresh cut of
+meat on the block, painterly digital art style matching a cozy rustic
+Minecraft mod icon aesthetic, square composition, centered subject, no
+text, no border, high detail, 1:1 aspect ratio
+```
+
+Generar en alta resolución (1024x1024 recomendado) y exportar dos tamaños: 64x64 para `assets/slaughter_hide/icon.png` (icono in-game, ver `logoFile` en `neoforge.mods.toml`) y una versión cuadrada (mínimo 256x256, PNG con fondo) para el logo del proyecto en CurseForge.
 
 ## Proyecto
 
