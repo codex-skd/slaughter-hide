@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/cow_skeleton",
+  "textures": {
+    "all": "slaughter_hide:block/cow_skeleton",
+    "particle": "slaughter_hide:block/cow_skeleton",
+    "cow_texture": "slaughter_hide:block/cow_skeleton",
+    "Cow Skeleton": "slaughter_hide:block/cow_skeleton"
+  }
+}

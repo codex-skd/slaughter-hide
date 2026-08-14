@@ -124,7 +124,31 @@ Lectura completa de `CowcarcassBlock`, `CowcarcassBlockEntity`, `Cowcarcassbleed
 
 Con esto, el trabajo real de "port" por mob se reduce a: **1 entrada en la tabla `CarcassDefinition`** (mob id + entity type + qué bloques tiene: carcasa/cabeza/mount/esqueleto/corpse) + copiar sus JSON de loot table/blockstate/modelo (mecánico, scripteable) — no escribir código Java nuevo por mob.
 
-### Próximo paso concreto — Fase 2 (delegado a OpenCode)
+## Fase 2 — sistema genérico implementado (COMPLETADO 2026-08-15, mob de referencia: vaca)
+
+Delegado a OpenCode (`opencode/deepseek-v4-flash-free`, OpenCode Zen). `./gradlew.bat build` pasa en verde y el jar `slaughter_hide-26.2-neoforge-26.2.0.45-beta-0.0.0-beta.1.jar` empaqueta clases + 116 entradas de assets/datos. Informe completo de la delegación en `temp/opencode-fase2-report.md` (no versionado).
+
+**Ciclo de juego funcional end-to-end** (pendiente de smoke test manual en cliente — ver Fase 2.1): matar vaca → aparece `cow_carcass` colgante → cleaver → sangrado (900 ticks o instantáneo con `INSTANT_BLEED`) → `drained_cow_carcass` → cleaver (cabeza, `cow_head_drop`) → skinning knife (piel, `cow_skin_drop`) → cleaver ×3 (`cow_cut_1/2/3_drop`) → bloque desaparece. Máquina de estados genérica (`CarcassCutupHandler`, 110 líneas) reemplaza exactamente el comportamiento de las 1209 líneas decompiladas de `CowcutupProcedure` — verificado línea a línea contra el original antes de delegar.
+
+**Clases nuevas** (paquete `com.skd.slaughterhide`): `CarcassDefinition`, `Carcasses` (tabla de definiciones — solo vaca poblada), `CarcassBlockProperty`; `block/{CarcassBlock,DrainedCarcassBlock,TrophyHeadBlock,HeadMountBlock,SkeletonBlock}`; `block/entity/CarcassBlockEntity`; `item/ButcherToolItem`; `handler/{CarcassDeathHandler,CarcassInteractionHandler,CarcassBleedingHandler,CarcassCutupHandler,CarcassLoot}`; `ServerWorkScheduler`; `config/SlaughterHideConfig`; `init/{ModBlocks,ModItems,ModBlockEntities,ModCreativeTabs}`; `tag/ModItemTags`.
+
+**Desviaciones deliberadas respecto al original** (documentadas, no eliminan nada sin permiso):
+- La muerte de la vaca coloca directamente el bloque colgante listo para despiezar, en vez del original (item + cuerda/gancho manual, estados 1-5 de `PlacecowcarcassProcedure`) — el sistema de cuerda/gancho queda pendiente para una fase posterior.
+- El inventario vestigial de 9 slots (`RandomizableContainerBlockEntity`) del `CowcarcassBlockEntity` original **no se ha portado** — confirmado que ninguna lógica de despiece/sangrado lo usa, es plantilla MCreator sin función real.
+- Tags de herramienta propios (`slaughter_hide:cleaver`/`slaughter_hide:skinning_knives`) en vez de `forge:`/`c:` — decisión tomada en el brief de delegación.
+- Solo tier Iron de cleaver/skinning knife portado (el original tiene 6 tiers: bone/copper/iron/gold/diamond/netherite) — el resto queda para cuando se generalice a más mobs.
+
+**Pendiente (fuera de alcance de esta fase, confirmado en el informe de OpenCode)**: sangre/rejilla/charco de sangre, colocación de `cow_head_mount`/`cow_skeleton` por el jugador, recetas de cocinado de los cortes de vaca.
+
+### Fase 2.1 — Verificación manual (pendiente, requiere sesión con cliente Minecraft)
+
+No se ha podido lanzar un cliente de desarrollo con interfaz gráfica desde esta sesión para probar el ciclo en juego. Antes de dar la Fase 2 por definitivamente cerrada, ejecutar en local:
+```bash
+./gradlew.bat runClient
+```
+Y verificar manualmente: la vaca muerta genera la carcasa colgante con el modelo/textura correctos, el ciclo sangrado→drenado→corte funciona en las 5 etapas, y `config/SlaughterHide.toml` expone `INSTANT_BLEED`.
+
+### Próximo paso concreto — Fase 3 (tras validar Fase 2.1)
 
 1. Implementar el sistema genérico (`CarcassBlock`, `DrainedCarcassBlock`, `CarcassBlockEntity`, `CarcassBleedingHandler`, `CarcassCutupHandler`, `CarcassDefinition`) usando la vaca como único caso de prueba end-to-end (bloques `cow_carcass`/`drained_cow_carcass`/`cow_head`/`cow_head_mount`/`cow_skeleton` + ítems `cow_skin`, cortes de vaca).
 2. Migrar assets/datos de la vaca desde `temp/butchery-assets/` a `src/main/resources/` con namespace `slaughter_hide:` (blockstates, models, textures, loot tables — reutilización tal cual, ya aprobada).
