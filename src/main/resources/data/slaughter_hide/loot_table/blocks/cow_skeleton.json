@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "slaughter_hide:blocks/cow_skeleton",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "slaughter_hide:cow_skeleton"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "slaughter_hide:custom/hanging_cow_carcass_headless_skinned",
+  "textures": {
+    "all": "slaughter_hide:block/cow_skinned",
+    "particle": "minecraft:block/nether_wart_block",
+    "cow_texture": "slaughter_hide:block/cow_skinned",
+    "Cow Skeleton": "slaughter_hide:block/cow_skeleton",
+    "Inner Texture": "slaughter_hide:block/inner_blood"
+  }
+}
