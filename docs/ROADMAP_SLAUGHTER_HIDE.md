@@ -50,8 +50,50 @@
 
 1. ✅ Decompilado el jar completo con CFR 0.152 (`%TEMP%\opencode\cfr.jar`, ya presente en el sistema de sesiones previas) a `temp/butchery-src/` (no versionado) — **1963 archivos `.java`**, 0 errores/excepciones en `temp/cfr-decompile.log`.
 2. ✅ Assets y datos originales extraídos a `temp/butchery-assets/` (`assets/butchery/` + `data/butchery/` + `pack.mcmeta`, 8129 archivos) — se reutilizan tal cual (decisión confirmada, ver abajo).
-3. **Pendiente próxima sesión**: catalogar qué bloques/ítems son variantes simples (mismo patrón × N mobs, ej. "cabeza de X", "alfombra de X") vs mecánicas núcleo únicas (mesa de carnicero, curtido de pieles, etc.) leyendo `temp/butchery-src/net/mcreator/butchery/`. Las variantes en serie son candidatas a generación asistida (script/plantilla), no a copiar clase a clase a mano. Usar Ollama (`qwen2.5-coder:7b`) para pre-filtrar/resumir los `procedures/*.java` más largos antes de leerlos completos.
+3. ✅ Catálogo de bloques/ítems/procedures (series vs mecánicas únicas) — ver siguiente sección.
 4. ✅ Alcance confirmado con el usuario: **subconjunto priorizado, betas incrementales** (no paridad 100% desde el inicio).
+
+## Catálogo Fase 0 — series vs mecánicas únicas (COMPLETADO 2026-08-15)
+
+Análisis de `temp/butchery-src/net/mcreator/butchery/` (fuente decompilada). Confirma la hipótesis: la inmensa mayoría del volumen es **repetición del mismo patrón × mob**, no lógica distinta. Esto es la base para decidir qué se porta a mano (una vez) y qué se genera por script/plantilla (N veces).
+
+### `block/` (456 clases)
+
+| Categoría | Cantidad aprox. | Patrón |
+|---|---|---|
+| `<Mob>Carcass` / `Drained<Mob>Carcass` | ~136 + variantes drenadas | Carcasa colgada/tirada por mob, con y sin sangre extraída |
+| `<Mob>Head` / `<Mob>HeadMount` | ~76 + ~67 | Cabeza cortada y su versión montada en pared |
+| `<Mob>Corpse` (humanoides: zombie, husk, piglin, witch, villager...) | ~27 | Variante "cadáver" para mobs humanoides en vez de carcasa animal |
+| `<Mob>Skeleton` | ~24 | Esqueleto tras vaciar de carne |
+| `<WoodType>Butcherstable` / `Butcherdisplay` / `Counter` | ~25 (×10 tipos de madera aprox.) | Mueble de carnicero, un set por madera vanilla |
+| `Canopy<Color>` | serie por color de tinte | Toldo/carpa de puesto de carnicero |
+| **Bloques mecánicos únicos (sin serie)** | **54** | Ver lista abajo — esto es lo que hay que diseñar/portar a mano, una vez cada uno |
+
+Lista completa de los 54 bloques únicos (mecánica propia, no repetidos por mob/madera): `Basin, Blood, Bloodgrate, Bloodpuddle, Bloodsplatter, Bonebarrel, Brain, Butcherstatue, Cashregisterblock, Clingfilm, Codbarrel, Cookedbloodsausages, Cookedsausages, Deepslatesulfurore, Dioritebricks, DioriteBrickSlab, Dioritebrickstairs, DioriteBrickwall, Dragonscaleblock, Endermite, FloorstandingSign, Freezer, Hook, InfectedBlood, Irongolem(+arms/body/legs), Jar, Meatgrinder, Metaltray, Pestleandmortar, Photos, Plasticsheet(+corner), Pufferfish, Ravager, Rawbloodsausages, Rawsausages, Rope, Salmonbarrel, Saltblock, Saltformation(base/frustum/middle/tip), Sand, Skinrack, Spiketrap, Sulfurore, Taxidermytable, Woodenspitrotisserie`.
+
+### `item/` (304 clases)
+
+Mismo patrón: `<Mob>Skin`/`<Mob>Fur` (curtido), `Raw<Corte> de <Mob>` / `Cooked<Corte> de <Mob>` (con cortes específicos por tipo de mob — humanoides tienen "intestines/kidney/liver/lungs/stomach/heart", animales normales tienen cortes tipo "steak/chunk/mince"). El resto (herramientas: `Bonecleaver`, `Bonehacksaw`, `Bonehammer`, `Boneskinningknife`; vestimenta: `Butchersapron`, `Bloodybutchersapron`; economía: `Cashregister`, `Coin`, `Butcherspapers`; consumibles especiales: `Bottleofblood`, `Bottleofsulfuricacid`...) es contenido único, minoritario en cuenta pero es el que define la identidad jugable del mod.
+
+### `procedures/` (798 clases)
+
+| Patrón | Cantidad | Qué hace |
+|---|---|---|
+| `<Mob>CutUp` / `CutUp<Mob>` | 137 | Lógica de despiece: clic con herramienta sobre carcasa → genera drops de carne/piel/huesos según el mob |
+| `<Mob>Carcassdrop` | 50 | Qué sueltan las carcasas al romperse sin despiece "limpio" |
+| `<Mob>Carcassbleeding` | 36 | Tick de sangrado de la carcasa (mancha el suelo con `Blood`/`Bloodpuddle`) |
+| `<Mob>Corpsedrop` | 10 | Equivalente a carcassdrop para cadáveres humanoides |
+| `Placed<Mob>Carcass` / `Placed<Mob>Skeleton` / `Placed<Mob>Corpse` | ~60 | Lógica de spawn/colocación al morir el mob original |
+| Resto (tick de muebles, recetas condicionales, JEI, red, comandos...) | ~305 | Lógica de soporte, no repetitiva |
+
+**Conclusión operativa**: el "motor" real de Butchery son ~5-6 patrones (sangrado → despiece → drop → colocación de carcasa/cabeza/esqueleto) aplicados a ~60 tipos de mob distintos, más ~54 bloques y un puñado de ítems con mecánica propia (curtido, prensa de carne, salazón, taxidermia, caja registradora). Portar **un mob de referencia completo de punta a punta** (bloque carcasa + cabeza + head mount + esqueleto + ítems de piel/carne + las 4-5 procedures asociadas) fija el patrón; el resto de mobs se generan por plantilla a partir de ese patrón en vez de decompilar y traducir 700+ procedures a mano.
+
+### Próximo paso concreto (siguiente sesión)
+
+1. Elegir el mob de referencia para fijar el patrón (candidato natural: **vaca** — mecánica simple, sin cortes de humanoide, y es de los primeros del roadmap "core" por ser el mob de granja más común).
+2. Leer a fondo (no resumido) los ~6 archivos de `procedures/` de ese mob + sus bloques/ítems asociados en `temp/butchery-src/`.
+3. Diseñar el sistema idiomático NeoForge equivalente (block entity o estado de bloque para el sangrado, `UseItemOn`/interacción para el despiece, tabla de loot o lista de drops en código).
+4. Delegar en OpenCode (caso 1 de la política de delegación) la implementación del mob de referencia + el generador/plantilla para el resto, una vez el patrón esté validado a mano.
 
 ## Fase 1 — Setup del repositorio (COMPLETADO esta sesión)
 
