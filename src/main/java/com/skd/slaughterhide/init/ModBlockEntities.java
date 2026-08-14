@@ -3,8 +3,6 @@ package com.skd.slaughterhide.init;
 import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.block.entity.CarcassBlockEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -18,14 +16,15 @@ public final class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> REGISTRY =
             DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, SlaughterHide.MOD_ID);
 
+    // The supplier runs during the BlockEntityType RegisterEvent, which NeoForge fires
+    // after the Block RegisterEvent — ModBlocks.carcassBlocks() (which resolves
+    // DeferredBlock::get) MUST stay inside this lambda, not in a static field
+    // initializer, or it throws "Trying to access unbound value" during mod
+    // construction (blocks aren't registered yet at that point).
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CarcassBlockEntity>> CARCASS =
-            register("carcass", CarcassBlockEntity::new, ModBlocks.carcassBlocks());
+            REGISTRY.register("carcass",
+                    () -> new BlockEntityType<>(CarcassBlockEntity::new, ModBlocks.carcassBlocks()));
 
     private ModBlockEntities() {
-    }
-
-    private static <T extends BlockEntity> DeferredHolder<BlockEntityType<?>, BlockEntityType<T>> register(
-            String name, BlockEntityType.BlockEntitySupplier<T> supplier, Block[] blocks) {
-        return REGISTRY.register(name, () -> new BlockEntityType<>(supplier, blocks));
     }
 }
