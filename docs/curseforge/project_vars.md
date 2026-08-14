@@ -1,6 +1,6 @@
 # CurseForge — Variables del proyecto
 
-> **Proyecto aún NO creado en CurseForge.** El alta manual se hace cuando el mod tenga una build funcional para publicar (ver `docs/ROADMAP_SLAUGHTER_HIDE.md`, Fase de release). Esta ficha es la referencia lista para rellenar en ese momento.
+> Proyecto creado: `project_id = 1652921`.
 
 ## Datos para el alta manual (formulario "Create Project")
 
@@ -38,11 +38,16 @@ text, no border, high detail, 1:1 aspect ratio
 
 Generar en alta resolución (1024x1024 recomendado) y exportar dos tamaños: 64x64 para `assets/slaughter_hide/icon.png` (icono in-game, ver `logoFile` en `neoforge.mods.toml`) y una versión cuadrada (mínimo 256x256, PNG con fondo) para el logo del proyecto en CurseForge.
 
+**Hecho** (2026-08-15): logo generado y aplicado.
+- `src/main/resources/assets/slaughter_hide/icon.png` — 64×64, icono in-game.
+- `docs/curseforge/assets/project_logo_256.png` — 256×256, para subir como logo del proyecto en CurseForge.
+- `docs/curseforge/assets/project_logo.png` — original 1254×1254, referencia.
+
 ## Proyecto
 
 | Variable | Valor |
 |----------|-------|
-| `curseforge_project_id` | *(pendiente — se rellena al crear el proyecto)* |
+| `curseforge_project_id` | `1652921` |
 | `mod_id` | `slaughter_hide` |
 | `display_name` | `Slaughter & Hide` |
 
@@ -50,16 +55,16 @@ Generar en alta resolución (1024x1024 recomendado) y exportar dos tamaños: 64x
 
 | API | Token | Uso |
 |-----|-------|-----|
-| Upload | *(mismo token de cuenta usado en el resto de mods — copiar desde `docs/curseforge/project_vars.md` de otro proyecto del grupo al crear este)* | Subir archivos JAR |
-| Core (GET) | *(ídem)* | Consultar datos del mod |
+| Upload | `ee776b0a-ee95-4850-b554-06be02a8657f` | Subir archivos JAR (token de cuenta, compartido entre proyectos) |
+| Core (GET) | `$2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO` | Consultar datos del mod |
 
 Autenticación Upload: cabecera `X-Api-Token`
 Autenticación Core: cabecera `x-api-key`
 
 ## Variables para script (lectura automática)
 
-project_id =
-api_token =
+project_id = 1652921
+api_token = ee776b0a-ee95-4850-b554-06be02a8657f
 release_type = beta
 game_versions = 9638, 9639, 16498, 10150
 relations =
