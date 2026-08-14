@@ -140,13 +140,15 @@ Delegado a OpenCode (`opencode/deepseek-v4-flash-free`, OpenCode Zen). `./gradle
 
 **Pendiente (fuera de alcance de esta fase, confirmado en el informe de OpenCode)**: sangre/rejilla/charco de sangre, colocación de `cow_head_mount`/`cow_skeleton` por el jugador, recetas de cocinado de los cortes de vaca.
 
-### Fase 2.1 — Verificación manual (pendiente, requiere sesión con cliente Minecraft)
+### Fase 2.1 — Verificación de arranque (COMPLETADO 2026-08-15)
 
-No se ha podido lanzar un cliente de desarrollo con interfaz gráfica desde esta sesión para probar el ciclo en juego. Antes de dar la Fase 2 por definitivamente cerrada, ejecutar en local:
-```bash
-./gradlew.bat runClient
-```
-Y verificar manualmente: la vaca muerta genera la carcasa colgante con el modelo/textura correctos, el ciclo sangrado→drenado→corte funciona en las 5 etapas, y `config/SlaughterHide.toml` expone `INSTANT_BLEED`.
+`./gradlew.bat runClient` ejecutado dos veces:
+1. **1er intento**: crash de arranque — `ModBlockEntities.CARCASS` resolvía `ModBlocks.carcassBlocks()` (llamadas a `DeferredBlock::get`) en un inicializador de campo estático, antes de que el `RegisterEvent` de bloques hubiera corrido → `NullPointerException: Trying to access unbound value`. **Corregido**: la resolución se movió dentro del supplier lambda de `REGISTRY.register(...)`, que sí se ejecuta después del registro de bloques ([ModBlockEntities.java](../src/main/java/com/skd/slaughterhide/init/ModBlockEntities.java)).
+2. **2º intento**: arranca sin errores fatales (0 `ERROR`, carga sonido/texturas/recursos de `mod/slaughter_hide`). Dos avisos no fatales, conocidos y documentados aquí (no bloquean el release beta):
+   - **`cow_head_mount` no compila su modelo** (`IllegalArgumentException: Cannot compute translucency out of bounds`) — bug heredado del asset **original** de Butchery (JSON idéntico byte a byte, verificado con diff), expuesto porque el bakeador de modelos de MC 26.2 valida límites UV más estrictamente que 26.1.2. Solo afecta al renderizado de ese bloque decorativo (trofeo de cabeza montada); no afecta al ciclo de despiece. Pendiente de arreglo en una fase posterior (recalcular/recortar el UV de la cara "south" del elemento `head`).
+   - **Avisos "Missing model for variant" para `drained_cow_carcass` en blockstate 1-5** — cosmético: el `IntegerProperty` Java declara el rango completo 0-9 (igual que el original) pero el blockstate JSON solo define variantes para {0,6,7,8,9}, que son los únicos valores que la máquina de estados llega a asignar. No afecta al juego, solo ruido de log.
+
+Aún pendiente: prueba manual jugada (matar vaca → sangrar → despiezar) — el usuario la hará directamente tras la subida a CurseForge.
 
 ### Próximo paso concreto — Fase 3 (tras validar Fase 2.1)
 
