@@ -1,5 +1,17 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.3] - 2026-08-15
+
+### Fix
+
+- La vaca ya no coloca la carcasa automáticamente colgada al morir: ahora suelta el ítem `Cow Carcass` para que el jugador lo coloque donde quiera (feedback de prueba en beta.2).
+- `cow_head_mount` ya renderiza correctamente — el modelo mezclaba unidades UV (rejilla 0-16 vs píxeles), bug heredado del Butchery original, expuesto por la validación más estricta de NeoForge 26.2. Corregido comparando con el modelo hermano `cow_head`.
+- Limpieza de geometría muerta invisible (`neck` element del modelo `cow_head`) y de una referencia de textura rota (`"missing": "slaughter_hide:block/"`).
+
+### Add
+
+- Traducción completa al castellano (`lang/es_es.json`).
+
 ## [0.0.0-beta.2] - 2026-08-15
 
 ### Add
