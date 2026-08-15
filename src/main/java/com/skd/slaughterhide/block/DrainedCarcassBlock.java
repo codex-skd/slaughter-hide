@@ -88,7 +88,9 @@ public class DrainedCarcassBlock extends Block implements EntityBlock {
 
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new CarcassBlockEntity(pos, state);
+        CarcassBlockEntity blockEntity = new CarcassBlockEntity(pos, state);
+        blockEntity.remember(definition);
+        return blockEntity;
     }
 
     @Override
