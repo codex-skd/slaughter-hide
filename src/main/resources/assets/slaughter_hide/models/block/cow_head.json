@@ -3,7 +3,6 @@
   "textures": {
     "all": "slaughter_hide:block/cow",
     "particle": "minecraft:block/nether_wart_block",
-    "cow_texture": "slaughter_hide:block/cow",
-    "missing": "slaughter_hide:block/"
+    "cow_texture": "slaughter_hide:block/cow"
   }
 }
