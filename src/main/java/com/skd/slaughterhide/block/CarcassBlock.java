@@ -60,8 +60,11 @@ public class CarcassBlock extends Block implements EntityBlock {
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
+        // blockstate=1 ("hung") so a manually placed carcass is immediately
+        // ready to bleed, same as the original's freshly-spawned carcass.
         return defaultBlockState()
-                .setValue(CarcassBlockProperty.FACING, context.getHorizontalDirection().getOpposite());
+                .setValue(CarcassBlockProperty.FACING, context.getHorizontalDirection().getOpposite())
+                .setValue(CarcassBlockProperty.BLOCKSTATE, 1);
     }
 
     @Override
@@ -76,7 +79,14 @@ public class CarcassBlock extends Block implements EntityBlock {
 
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new CarcassBlockEntity(pos, state);
+        // The block itself is already mob-specific (one CarcassBlock instance
+        // per mob, built with its CarcassDefinition), so the block entity can
+        // remember which mob it belongs to right away instead of relying on
+        // whoever placed it (world-death handler, player, /setblock...) to
+        // call remember() afterwards.
+        CarcassBlockEntity blockEntity = new CarcassBlockEntity(pos, state);
+        blockEntity.remember(definition);
+        return blockEntity;
     }
 
     @Override

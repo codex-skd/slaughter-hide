@@ -74,6 +74,10 @@ public final class ModItems {
                 () -> properties);
     }
 
+    public static DeferredItem<Item> freshItemFor(String mobId) {
+        return FRESH_BY_MOB.get(mobId);
+    }
+
     public static Map<String, DeferredItem<Item>> freshItems() {
         return FRESH_BY_MOB;
     }

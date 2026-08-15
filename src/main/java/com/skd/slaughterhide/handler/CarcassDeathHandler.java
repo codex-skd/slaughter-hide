@@ -1,28 +1,24 @@
 package com.skd.slaughterhide.handler;
 
-import com.skd.slaughterhide.CarcassBlockProperty;
 import com.skd.slaughterhide.CarcassDefinition;
 import com.skd.slaughterhide.Carcasses;
 import com.skd.slaughterhide.ServerWorkScheduler;
-import com.skd.slaughterhide.block.CarcassBlock;
-import com.skd.slaughterhide.block.entity.CarcassBlockEntity;
-import com.skd.slaughterhide.init.ModBlocks;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
+import com.skd.slaughterhide.init.ModItems;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 
 /**
- * World placement of carcasses: when a mob with a carcass definition dies, its
- * carcass block appears at the death spot and the vanilla beef/leather item
- * drops are swept away so the carcass is the reward. Replaces the original
+ * World placement of carcasses: when a mob with a carcass definition dies, it
+ * drops its carcass as a placeable item (matching the original's item + manual
+ * placement, not an auto-hung block) and the vanilla beef/leather item drops
+ * are swept away so the carcass is the reward. Replaces the original
  * {@code <Mob>carcassdropProcedure} per-mob event classes with one dispatcher.
  */
 public final class CarcassDeathHandler {
@@ -46,27 +42,23 @@ public final class CarcassDeathHandler {
         if (entity instanceof LivingEntity living && living.isBaby()) {
             return;
         }
-        placeCarcass(level, entity, definition);
+        dropCarcassItem(level, entity, definition);
         sweepVanillaDrops(level, entity);
     }
 
-    private static void placeCarcass(ServerLevel level, Entity entity, CarcassDefinition definition) {
-        var fresh = ModBlocks.freshFor(definition.mobId());
-        if (fresh == null) {
+    /**
+     * Drops the carcass as a placeable item, like the original: the player
+     * picks it up and places it themselves (a normal {@code BlockItem} use)
+     * instead of it appearing pre-hung at the death spot.
+     */
+    private static void dropCarcassItem(ServerLevel level, Entity entity, CarcassDefinition definition) {
+        var carcassItem = ModItems.freshItemFor(definition.mobId());
+        if (carcassItem == null) {
             return;
         }
-        BlockPos pos = findPlacementPos(level, entity.blockPosition());
-        if (pos == null) {
-            return;
-        }
-        BlockState state = fresh.get().defaultBlockState()
-                .setValue(CarcassBlockProperty.FACING, entity.getDirection().getOpposite())
-                .setValue(CarcassBlockProperty.BLOCKSTATE, 1);
-        level.setBlock(pos, state, 3);
-        if (level.getBlockEntity(pos) instanceof CarcassBlockEntity blockEntity) {
-            blockEntity.remember(definition);
-            level.sendBlockUpdated(pos, state, state, 3);
-        }
+        ItemEntity drop = new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(),
+                new ItemStack(carcassItem.get()));
+        level.addFreshEntity(drop);
     }
 
     /**
@@ -83,17 +75,5 @@ public final class CarcassDeathHandler {
                 }
             }
         });
-    }
-
-    private static BlockPos findPlacementPos(ServerLevel level, BlockPos origin) {
-        BlockPos.MutableBlockPos cursor = origin.mutable();
-        for (int i = 0; i < 5; i++) {
-            BlockState existing = level.getBlockState(cursor);
-            if ((existing.isAir() || existing.canBeReplaced()) && !existing.liquid()) {
-                return cursor.immutable();
-            }
-            cursor.move(Direction.UP);
-        }
-        return null;
     }
 }
