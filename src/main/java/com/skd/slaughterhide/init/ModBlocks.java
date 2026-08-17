@@ -6,6 +6,7 @@ import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.block.CarcassBlock;
 import com.skd.slaughterhide.block.DrainedCarcassBlock;
 import com.skd.slaughterhide.block.HeadMountBlock;
+import com.skd.slaughterhide.block.HookBlock;
 import com.skd.slaughterhide.block.SkeletonBlock;
 import com.skd.slaughterhide.block.TrophyHeadBlock;
 import net.minecraft.world.level.block.Block;
@@ -30,6 +31,9 @@ public final class ModBlocks {
     private static final Map<String, DeferredBlock<Block>> HEADS = new HashMap<>();
     private static final Map<String, DeferredBlock<Block>> MOUNTS = new HashMap<>();
     private static final Map<String, DeferredBlock<Block>> SKELETONS = new HashMap<>();
+
+    /** Global attachment point a carcass item hangs from, see HookPlacementHandler. */
+    public static final DeferredBlock<HookBlock> HOOK = register("hook", HookBlock::new);
 
     static {
         registerFamily(Carcasses.COW);

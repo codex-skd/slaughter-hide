@@ -27,6 +27,7 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.COW_HEAD.get());
                         output.accept(ModItems.COW_HEAD_MOUNT.get());
                         output.accept(ModItems.COW_SKELETON.get());
+                        output.accept(ModItems.HOOK.get());
                     })
                     .build());
 

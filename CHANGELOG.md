@@ -1,5 +1,15 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.4] - 2026-08-18
+
+### Change
+
+- **Restringida la colocación de la carcasa**: ya no se puede colocar en cualquier sitio como un bloque normal. Ahora hay que colgarla de un nuevo bloque `Hook` (clic derecho con la carcasa en mano), igual que en el mod original.
+
+### Known issues
+
+- El bloque `Rope` del original (colgar sin necesidad de un Hook fijo, tras "tensarlo" con varios clics) no está portado — su lógica exacta no se pudo verificar con confianza desde el bytecode decompilado. Solo `Hook` es funcional por ahora.
+
 ## [0.0.0-beta.3] - 2026-08-15
 
 ### Fix
