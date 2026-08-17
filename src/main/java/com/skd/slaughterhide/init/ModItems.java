@@ -1,8 +1,10 @@
 package com.skd.slaughterhide.init;
 
+import com.skd.slaughterhide.CarcassDefinition;
 import com.skd.slaughterhide.Carcasses;
 import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.item.ButcherToolItem;
+import com.skd.slaughterhide.item.CarcassPlacementItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -33,11 +35,17 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_SIRLOIN_STEAK = item("raw_sirloin_steak", Item::new);
     public static final DeferredItem<Item> RAW_TBONE_STEAK = item("raw_tbone_steak", Item::new);
 
-    public static final DeferredItem<Item> COW_CARCASS = blockItem("cow_carcass", new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_COW_CARCASS = blockItem("drained_cow_carcass", new Item.Properties().stacksTo(8));
+    // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
+    // they don't place a block on right-click like a normal BlockItem.
+    public static final DeferredItem<Item> COW_CARCASS =
+            placementItem("cow_carcass", Carcasses.COW, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_COW_CARCASS =
+            placementItem("drained_cow_carcass", Carcasses.COW, true, new Item.Properties().stacksTo(8));
     public static final DeferredItem<Item> COW_HEAD = blockItem("cow_head", new Item.Properties());
     public static final DeferredItem<Item> COW_HEAD_MOUNT = blockItem("cow_head_mount", new Item.Properties());
     public static final DeferredItem<Item> COW_SKELETON = blockItem("cow_skeleton", new Item.Properties().stacksTo(8));
+
+    public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
     private static final Map<String, DeferredItem<Item>> FRESH_BY_MOB = new HashMap<>();
@@ -63,14 +71,22 @@ public final class ModItems {
 
     private static DeferredItem<Item> blockItem(String name, Item.Properties properties) {
         Supplier<? extends net.minecraft.world.level.block.Block> block = switch (name) {
-            case "cow_carcass" -> ModBlocks.freshFor(Carcasses.COW.mobId());
-            case "drained_cow_carcass" -> ModBlocks.drainedFor(Carcasses.COW.mobId());
             case "cow_head" -> ModBlocks.headFor(Carcasses.COW.mobId());
             case "cow_head_mount" -> ModBlocks.mountFor(Carcasses.COW.mobId());
-            default -> ModBlocks.skeletonFor(Carcasses.COW.mobId());
+            case "cow_skeleton" -> ModBlocks.skeletonFor(Carcasses.COW.mobId());
+            case "hook" -> ModBlocks.HOOK;
+            default -> throw new IllegalArgumentException("No block registered for item " + name);
         };
         return REGISTRY.registerItem(name,
                 props -> new BlockItem(block.get(), props),
+                () -> properties);
+    }
+
+    /** Fresh/drained carcass item that only hangs from a hook, see {@link CarcassPlacementItem}. */
+    private static DeferredItem<Item> placementItem(String name, CarcassDefinition definition, boolean drained,
+                                                      Item.Properties properties) {
+        return REGISTRY.registerItem(name,
+                props -> new CarcassPlacementItem(props, definition, drained),
                 () -> properties);
     }
 

@@ -140,6 +140,16 @@ Delegado a OpenCode (`opencode/deepseek-v4-flash-free`, OpenCode Zen). `./gradle
 
 **Pendiente (fuera de alcance de esta fase, confirmado en el informe de OpenCode)**: sangre/rejilla/charco de sangre, colocación de `cow_head_mount`/`cow_skeleton` por el jugador, recetas de cocinado de los cortes de vaca.
 
+## Fase 2.2 — Restricción de colocación con Hook (COMPLETADO 2026-08-18, implementado directamente por Claude)
+
+El usuario probó la beta.3 y pidió restringir la colocación de la carcasa "tal cual el mod original" (en vez del bloque libre en cualquier superficie de la Fase 2). Dos intentos de delegar esto en OpenCode (`opencode/deepseek-v4-flash-free`) se colgaron sin producir ninguna salida durante horas (ver memoria `opencode_run_hangs_zero_output`) — tercer cuelgue de este tipo en el histórico del proyecto. Se abandonó la delegación para esta tarea concreta y se implementó directamente, ya que el mecanismo original (`PlacecowcarcassProcedure`, 654 líneas decompiladas) ya se había leído por completo.
+
+**Implementado**: nuevo bloque `Hook` (`block/HookBlock.java`) — colocable libremente como cualquier bloque normal, pero **las carcasas ya NO se pueden colocar en ningún sitio**: `cow_carcass`/`drained_cow_carcass` pasaron de `BlockItem` normal a `CarcassPlacementItem`, cuyo único punto de colocación válido es clic derecho sobre un `Hook` (`handler/HookPlacementHandler.java`). Al colgarla: coloca el bloque de carcasa correcto un bloque por debajo del Hook, con la misma orientación, sonido `block.chain.hit`, y consume 1 ítem del inventario (salvo creativo).
+
+**Simplificación deliberada y documentada**: el original también permite colgar de un bloque `Rope` tras "tensarlo" con varios clics (propiedad `blockstate` 0-7). Se decompiló y leyó `RopeBlock.java` completo, pero el flujo de control exacto de `PlacecowcarcassProcedure` para ese caso (si tensar la cuerda es un requisito previo o ocurre en el mismo clic que la colocación) no se pudo reconstruir con confianza suficiente desde el bytecode decompilado — los bloques `break`/fallthrough de CFR son ambiguos en ese tramo. En vez de arriesgar una reimplementación incorrecta, **`Rope` no se ha portado en esta fase**; solo `Hook` es funcional. Pendiente para una fase futura si se decide que merece la pena.
+
+Verificado con `./gradlew.bat build` (verde) y arranque de cliente (`runClient`): 0 errores, 0 warnings de `hook` en el log.
+
 ### Fase 2.1 — Verificación de arranque (COMPLETADO 2026-08-15)
 
 `./gradlew.bat runClient` ejecutado dos veces:
