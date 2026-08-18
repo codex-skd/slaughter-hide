@@ -27,6 +27,7 @@ public final class ModItems {
     public static final DeferredItem<Item> IRON_SKINNING_KNIFE = item("iron_skinning_knife", ButcherToolItem::new);
 
     public static final DeferredItem<Item> COW_SKIN = item("cow_skin", Item::new);
+    public static final DeferredItem<Item> PIG_SKIN = item("pig_skin", Item::new);
     public static final DeferredItem<Item> ANIMAL_FAT = item("animal_fat", Item::new);
     public static final DeferredItem<Item> HOOF = item("hoof", Item::new);
     public static final DeferredItem<Item> RAW_CHUCK_STEAK = item("raw_chuck_steak", Item::new);
@@ -34,6 +35,11 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_RUMP_STEAK = item("raw_rump_steak", Item::new);
     public static final DeferredItem<Item> RAW_SIRLOIN_STEAK = item("raw_sirloin_steak", Item::new);
     public static final DeferredItem<Item> RAW_TBONE_STEAK = item("raw_tbone_steak", Item::new);
+    public static final DeferredItem<Item> RAW_PORK_SHOULDER = item("raw_pork_shoulder", Item::new);
+    public static final DeferredItem<Item> RAW_PORK_LOIN = item("raw_pork_loin", Item::new);
+    public static final DeferredItem<Item> RAW_PORK_LEG = item("raw_pork_leg", Item::new);
+    public static final DeferredItem<Item> RAW_PORK_BELLY = item("raw_pork_belly", Item::new);
+    public static final DeferredItem<Item> RAW_HAM = item("raw_ham", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -44,6 +50,16 @@ public final class ModItems {
     public static final DeferredItem<Item> COW_HEAD = blockItem("cow_head", new Item.Properties());
     public static final DeferredItem<Item> COW_HEAD_MOUNT = blockItem("cow_head_mount", new Item.Properties());
     public static final DeferredItem<Item> COW_SKELETON = blockItem("cow_skeleton", new Item.Properties().stacksTo(8));
+
+    // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
+    // they don't place a block on right-click like a normal BlockItem.
+    public static final DeferredItem<Item> PIG_CARCASS =
+            placementItem("pig_carcass", Carcasses.PIG, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_PIG_CARCASS =
+            placementItem("drained_pig_carcass", Carcasses.PIG, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> PIG_HEAD = blockItem("pig_head", new Item.Properties());
+    public static final DeferredItem<Item> PIG_HEAD_MOUNT = blockItem("pig_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> PIG_SKELETON = blockItem("pig_skeleton", new Item.Properties().stacksTo(8));
 
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
@@ -60,6 +76,11 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.COW.mobId(), COW_HEAD);
         MOUNT_BY_MOB.put(Carcasses.COW.mobId(), COW_HEAD_MOUNT);
         SKELETON_BY_MOB.put(Carcasses.COW.mobId(), COW_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.PIG.mobId(), PIG_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.PIG.mobId(), DRAINED_PIG_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.PIG.mobId(), PIG_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.PIG.mobId(), PIG_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.PIG.mobId(), PIG_SKELETON);
     }
 
     private ModItems() {
@@ -74,6 +95,9 @@ public final class ModItems {
             case "cow_head" -> ModBlocks.headFor(Carcasses.COW.mobId());
             case "cow_head_mount" -> ModBlocks.mountFor(Carcasses.COW.mobId());
             case "cow_skeleton" -> ModBlocks.skeletonFor(Carcasses.COW.mobId());
+            case "pig_head" -> ModBlocks.headFor(Carcasses.PIG.mobId());
+            case "pig_head_mount" -> ModBlocks.mountFor(Carcasses.PIG.mobId());
+            case "pig_skeleton" -> ModBlocks.skeletonFor(Carcasses.PIG.mobId());
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

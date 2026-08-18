@@ -1,10 +1,12 @@
 package com.skd.slaughterhide;
 
+import java.util.List;
 import java.util.function.Function;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -15,9 +17,10 @@ import net.minecraft.world.phys.shapes.VoxelShape;
  * <p>This is the single place that describes how a mob is butchered: which
  * {@link net.minecraft.world.entity.EntityType} it triggers on, which loot
  * tables feed each cutting stage, which optional display blocks it has
- * (head, head mount, skeleton) and the collision shapes used by the hanging /
- * lying models. Future mobs only need a new entry here plus their assets;
- * no new block/handler classes.</p>
+ * (head, head mount, skeleton), which vanilla item drops the carcass
+ * replaces on death, and the collision shapes used by the hanging / lying
+ * models. Future mobs only need a new entry here plus their assets; no new
+ * block/handler classes.</p>
  */
 public record CarcassDefinition(
         String mobId,
@@ -29,7 +32,8 @@ public record CarcassDefinition(
         Function<BlockState, VoxelShape> drainedCarcassShape,
         Function<BlockState, VoxelShape> headShape,
         Function<BlockState, VoxelShape> headMountShape,
-        Function<BlockState, VoxelShape> skeletonShape) {
+        Function<BlockState, VoxelShape> skeletonShape,
+        List<Item> sweptVanillaItems) {
 
     /** Registry name for a block of this mob, e.g. {@code cow_carcass}. */
     public Identifier blockId(String suffix) {
