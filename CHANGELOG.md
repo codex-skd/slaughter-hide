@@ -1,5 +1,11 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.6] - 2026-08-18
+
+### Add
+
+- **Oveja** como tercer mob completo: matar → colgar del `Hook` → sangrar → drenar → despiezar (cabeza, piel, 5 cortes de cordero: pierna, paletilla, costilla, solomillo, lomo).
+
 ## [0.0.0-beta.5] - 2026-08-18
 
 ### Add

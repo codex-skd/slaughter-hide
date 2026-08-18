@@ -189,6 +189,15 @@ Segundo mob añadido, siguiendo el patrón genérico sin ninguna clase Java nuev
 - **Corrección post-delegación**: `DrainedCarcassBlock.onDestroyedByPlayer` dropeaba `Items.BEEF` fijo al romper una carcasa a medio cortar, incluso para cerdo — el propio informe de OpenCode lo señaló como "fuera de alcance pero recomendable". Corregido para usar `definition.sweptVanillaItems().get(0)`.
 - `./gradlew.bat build` verde. **Sin probar en cliente todavía** (recomendado por el propio informe: colocar en Hook, romper a medio cortar, verificar cabeza montada en tablón de roble oscuro, barrido de `porkchop` al morir).
 
+## Fase 3.2 — Oveja (COMPLETADO 2026-08-18, delegado a OpenCode)
+
+Tercer mob, mismo patrón mecánico exitoso que el cerdo (0 clases Java nuevas). Informe completo en `temp/opencode-sheep-report.md`.
+
+- `sweptVanillaItems = [Items.MUTTON]`. Reutiliza las formas de colisión del cerdo para carcasa/esqueleto (cajas idénticas verificadas), con formas propias para `sheep_head`/`sheep_head_mount`.
+- Mismo bug de UV (0-16 vs píxeles) encontrado en `sheep_head_mount.json` — esta vez corregido comparando contra el propio `sheep_head.json` en vez de copiar los números del cerdo (la cara no coincidía exactamente), buen criterio de la delegación.
+- Ítems de carne con nomenclatura "lamb", no "sheep" (`raw_leg_of_lamb`, `raw_lamb_shoulder`, `raw_lamb_rib`, `raw_lamb_sirloin`, `raw_lamb_loin`) — verificado contra las loot tables reales, no asumido.
+- `./gradlew.bat build` verde. Sin probar en cliente todavía.
+
 ## Fase 3 — Extender a más mobs + cerrar huecos de la vaca (SIGUIENTE)
 
 Con el patrón genérico validado (`CarcassDefinition` + `Hook`), añadir un mob nuevo es en gran parte mecánico: una entrada en `Carcasses`, copiar sus assets/loot tables desde `temp/butchery-assets/` con el namespace remapeado, y sus ítems de corte específicos. Candidatos en orden de prioridad sugerido (animales "simples" primero, humanoides con cortes de intestines/kidney/etc. después, por ser más complejos):

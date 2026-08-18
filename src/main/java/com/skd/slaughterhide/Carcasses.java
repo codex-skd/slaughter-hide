@@ -27,6 +27,8 @@ public final class Carcasses {
     public static final CarcassDefinition COW = buildCow();
     /** Second fully-playable mob: pigs. */
     public static final CarcassDefinition PIG = buildPig();
+    /** Third fully-playable mob: sheep. */
+    public static final CarcassDefinition SHEEP = buildSheep();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -36,6 +38,7 @@ public final class Carcasses {
     static {
         register(COW);
         register(PIG);
+        register(SHEEP);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -151,6 +154,51 @@ public final class Carcasses {
             case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
             default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
         };
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery sheep blocks so
+    // the generic blocks collide exactly like the per-mob classes they replace.
+    // The sheep's carcass/skeleton use the exact same boxes as the pig's, so
+    // those definitions reuse pigHanging/pigLying directly.
+
+    private static VoxelShape sheepHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.0, 0.0, 4.0, 11.0, 6.0, 12.0);
+            case EAST -> box(4.0, 0.0, 5.0, 12.0, 6.0, 11.0);
+            case WEST -> box(4.0, 0.0, 5.0, 12.0, 6.0, 11.0);
+            default -> box(5.0, 0.0, 4.0, 11.0, 6.0, 12.0);
+        };
+    }
+
+    private static VoxelShape sheepHeadMount(BlockState state) {
+        // The original SheepHeadMountBlock uses the same mount box as cow/pig.
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    private static CarcassDefinition buildSheep() {
+        return new CarcassDefinition(
+                "sheep",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:sheep")))
+                        .value(),
+                true,
+                true,
+                true,
+                // The sheep carcass uses the same boxes as the pig's: blockstate 1
+                // is hanging, 0 is the relocatable lying pose.
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pigHanging(state) : pigLying(state),
+                Carcasses::pigLying,
+                Carcasses::sheepHead,
+                Carcasses::sheepHeadMount,
+                // Skeleton: blockstate 1 hung, 0 lying, same boxes as the fresh carcass.
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pigHanging(state) : pigLying(state),
+                // The carcass replaces the sheep's vanilla mutton drop.
+                java.util.List.of(net.minecraft.world.item.Items.MUTTON));
     }
 
     private static CarcassDefinition buildPig() {
