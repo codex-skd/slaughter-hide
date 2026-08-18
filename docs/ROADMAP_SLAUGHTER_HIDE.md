@@ -160,13 +160,9 @@ Verificado con `./gradlew.bat build` (verde) y arranque de cliente (`runClient`)
 
 Aún pendiente: prueba manual jugada (matar vaca → sangrar → despiezar) — el usuario la hará directamente tras la subida a CurseForge.
 
-### Próximo paso concreto — Fase 3 (tras validar Fase 2.1)
+### Fase 2 — COMPLETADA (2026-08-18)
 
-1. Implementar el sistema genérico (`CarcassBlock`, `DrainedCarcassBlock`, `CarcassBlockEntity`, `CarcassBleedingHandler`, `CarcassCutupHandler`, `CarcassDefinition`) usando la vaca como único caso de prueba end-to-end (bloques `cow_carcass`/`drained_cow_carcass`/`cow_head`/`cow_head_mount`/`cow_skeleton` + ítems `cow_skin`, cortes de vaca).
-2. Migrar assets/datos de la vaca desde `temp/butchery-assets/` a `src/main/resources/` con namespace `slaughter_hide:` (blockstates, models, textures, loot tables — reutilización tal cual, ya aprobada).
-3. Registro vía `DeferredRegister` de bloques/ítems/block entities usando la tabla `CarcassDefinition`, no clases individuales.
-4. Validar en dev run (`./gradlew.bat runClient`) el ciclo completo: matar vaca → carcasa aparece → sangrar → drenar → cortar cabeza → despellejar → 3 cortes de carne → bloque desaparece.
-5. Una vez validado, extender `CarcassDefinition` al resto de mobs "animales simples" (sin cortes de humanoide) copiando sus JSON — trabajo mecánico, no de diseño.
+La vaca de referencia está validada de punta a punta en cliente real por el usuario: matar → colgar del `Hook` → sangrar → drenar → despiezar en 5 pasos → bloque desaparece. Confirmado funcionando correctamente (2026-08-18).
 
 ## Fase 1 — Setup del repositorio (COMPLETADO esta sesión)
 
@@ -183,10 +179,19 @@ Aún pendiente: prueba manual jugada (matar vaca → sangrar → despiezar) — 
 - Migrar primero las familias más simples y de mayor impacto visual (mesas/mostradores de carnicero, carcasas básicas) para tener algo renderizable pronto.
 - Candidato fuerte para delegar en OpenCode (tarea mecánica de código NeoForge sustancial, caso 1 de la política de delegación) una vez el catálogo de Fase 0 esté listo.
 
-## Fase 3 — Mecánicas núcleo (`procedures/` → lógica idiomática)
+## Fase 3 — Extender a más mobs + cerrar huecos de la vaca (SIGUIENTE)
 
-- Reescribir (no traducir literalmente) la lógica de negocio real: despiece de mobs, curtido/procesado de pieles, recetas de carnicero, efectos de consumo de carne.
-- Priorizar por lo que el usuario confirme como "mecánica principal" vs "contenido de relleno" en Fase 0.
+Con el patrón genérico validado (`CarcassDefinition` + `Hook`), añadir un mob nuevo es en gran parte mecánico: una entrada en `Carcasses`, copiar sus assets/loot tables desde `temp/butchery-assets/` con el namespace remapeado, y sus ítems de corte específicos. Candidatos en orden de prioridad sugerido (animales "simples" primero, humanoides con cortes de intestines/kidney/etc. después, por ser más complejos):
+
+1. **Más mobs animales simples**: cerdo, oveja, pollo, conejo (mismo patrón que la vaca, sin cortes de humanoide).
+2. **Huecos conocidos de la vaca** (documentados como fuera de alcance en Fase 2/2.2, decidir si se cierran antes o después de sumar mobs):
+   - `Rope` como alternativa al `Hook` — pendiente de decidir si se reintenta (con más contexto/tiempo) o se descarta definitivamente.
+   - Sangre visible (`Blood`/`Bloodpuddle`/`Bloodgrate`) al sangrar.
+   - Recetas de cocinado de los cortes de vaca (crudo → cocido en hoguera/horno).
+   - Colocación de `cow_head_mount`/`cow_skeleton` por el jugador (los bloques existen, falta la interacción).
+   - Tiers de herramienta adicionales (copper/gold/diamond/netherite/bone; solo Iron existe).
+3. **Mobs humanoides** (zombie, esqueleto, piglin...) — mismo patrón pero con cortes tipo "intestines/kidney/liver/lungs/stomach/heart" en vez de "steak/chunk/mince", y bloque `corpse` en vez de `carcass`.
+4. **Los 54 bloques mecánicos únicos** del catálogo (mesa de despiece, prensa de carne, salazón, taxidermia, caja registradora...) — contenido nuevo, no repetición del patrón de carcasa.
 
 ## Fase 4 — Cliente (renderers, pantallas, modelos de entidad)
 
