@@ -39,6 +39,11 @@ public final class ModBlocks {
         registerFamily(Carcasses.COW);
         registerFamily(Carcasses.PIG);
         registerFamily(Carcasses.SHEEP);
+        registerFamily(Carcasses.CHICKEN);
+        registerFamily(Carcasses.RABBIT);
+        registerFamily(Carcasses.GOAT);
+        registerFamily(Carcasses.FOX);
+        registerFamily(Carcasses.WOLF);
     }
 
     private ModBlocks() {

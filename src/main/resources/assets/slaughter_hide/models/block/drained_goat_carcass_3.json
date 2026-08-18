@@ -1,0 +1,10 @@
+{
+  "parent": "slaughter_hide:custom/goat_carcass_cut_1_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/goat_skinned",
+    "particle": "minecraft:block/nether_wart_block",
+    "default": "slaughter_hide:block/goat_skinned",
+    "2": "slaughter_hide:block/inner_blood",
+    "bones": "slaughter_hide:block/goat_bones"
+  }
+}
