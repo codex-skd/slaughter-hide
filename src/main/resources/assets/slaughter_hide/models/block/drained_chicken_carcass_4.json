@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/chicken_carcass_headless",
+  "textures": {
+    "all": "slaughter_hide:block/chicken_drained",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/chicken_drained"
+  }
+}

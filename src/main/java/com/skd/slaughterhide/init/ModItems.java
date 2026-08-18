@@ -46,6 +46,24 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_LAMB_RIB = item("raw_lamb_rib", Item::new);
     public static final DeferredItem<Item> RAW_LAMB_SIRLOIN = item("raw_lamb_sirloin", Item::new);
     public static final DeferredItem<Item> RAW_LAMB_LOIN = item("raw_lamb_loin", Item::new);
+    public static final DeferredItem<Item> RAW_CHICKEN_LEG = item("raw_chicken_leg", Item::new);
+    public static final DeferredItem<Item> RAW_CHICKEN_WING = item("raw_chicken_wing", Item::new);
+    public static final DeferredItem<Item> BIRD_FOOT = item("bird_foot", Item::new);
+    public static final DeferredItem<Item> WISHBONE = item("wishbone", Item::new);
+    // Goat (uses lamb cuts + hooves)
+    public static final DeferredItem<Item> GOAT_SKIN = item("goat_skin", Item::new);
+    public static final DeferredItem<Item> RAW_LEG_OF_LAMB_GOAT = item("raw_leg_of_lamb", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_SHOULDER_GOAT = item("raw_lamb_shoulder", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_RIB_GOAT = item("raw_lamb_rib", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_SIRLOIN_GOAT = item("raw_lamb_sirloin", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_LOIN_GOAT = item("raw_lamb_loin", Item::new);
+    public static final DeferredItem<Item> HOOF_GOAT = item("hoof", Item::new);
+    // Fox
+    public static final DeferredItem<Item> FOX_SKIN = item("fox_skin", Item::new);
+    public static final DeferredItem<Item> RAW_FOX_MEAT = item("raw_fox_meat", Item::new);
+    // Wolf
+    public static final DeferredItem<Item> WOLF_PELT = item("wolf_pelt", Item::new);
+    public static final DeferredItem<Item> RAW_WOLF_MEAT = item("raw_wolf_meat", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -77,6 +95,55 @@ public final class ModItems {
     public static final DeferredItem<Item> SHEEP_HEAD_MOUNT = blockItem("sheep_head_mount", new Item.Properties());
     public static final DeferredItem<Item> SHEEP_SKELETON = blockItem("sheep_skeleton", new Item.Properties().stacksTo(8));
 
+    // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
+    // they don't place a block on right-click like a normal BlockItem.
+    public static final DeferredItem<Item> CHICKEN_CARCASS =
+            placementItem("chicken_carcass", Carcasses.CHICKEN, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_CHICKEN_CARCASS =
+            placementItem("drained_chicken_carcass", Carcasses.CHICKEN, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> CHICKEN_HEAD = blockItem("chicken_head", new Item.Properties());
+    public static final DeferredItem<Item> CHICKEN_HEAD_MOUNT = blockItem("chicken_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> CHICKEN_SKELETON = blockItem("chicken_skeleton", new Item.Properties().stacksTo(8));
+
+    // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
+    // they don't place a block on right-click like a normal BlockItem.
+    public static final DeferredItem<Item> RABBIT_CARCASS =
+            placementItem("rabbit_carcass", Carcasses.RABBIT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_RABBIT_CARCASS =
+            placementItem("drained_rabbit_carcass", Carcasses.RABBIT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> RABBIT_HEAD = blockItem("rabbit_head", new Item.Properties());
+    public static final DeferredItem<Item> RABBIT_HEAD_MOUNT = blockItem("rabbit_head_mount", new Item.Properties());
+
+    // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
+    // they don't place a block on right-click like a normal BlockItem.
+    public static final DeferredItem<Item> GOAT_CARCASS =
+            placementItem("goat_carcass", Carcasses.GOAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_GOAT_CARCASS =
+            placementItem("drained_goat_carcass", Carcasses.GOAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> GOAT_HEAD = blockItem("goat_head", new Item.Properties());
+    public static final DeferredItem<Item> GOAT_HEAD_MOUNT = blockItem("goat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> GOAT_SKELETON = blockItem("goat_skeleton", new Item.Properties().stacksTo(8));
+
+    // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
+    // they don't place a block on right-click like a normal BlockItem.
+    public static final DeferredItem<Item> FOX_CARCASS =
+            placementItem("fox_carcass", Carcasses.FOX, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_FOX_CARCASS =
+            placementItem("drained_fox_carcass", Carcasses.FOX, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> FOX_HEAD = blockItem("fox_head", new Item.Properties());
+    public static final DeferredItem<Item> FOX_HEAD_MOUNT = blockItem("fox_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> FOX_SKELETON = blockItem("fox_skeleton", new Item.Properties().stacksTo(8));
+
+    // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
+    // they don't place a block on right-click like a normal BlockItem.
+    public static final DeferredItem<Item> WOLF_CARCASS =
+            placementItem("wolf_carcass", Carcasses.WOLF, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_WOLF_CARCASS =
+            placementItem("drained_wolf_carcass", Carcasses.WOLF, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> WOLF_HEAD = blockItem("wolf_head", new Item.Properties());
+    public static final DeferredItem<Item> WOLF_HEAD_MOUNT = blockItem("wolf_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> WOLF_SKELETON = blockItem("wolf_skeleton", new Item.Properties().stacksTo(8));
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -102,6 +169,30 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.SHEEP.mobId(), SHEEP_HEAD);
         MOUNT_BY_MOB.put(Carcasses.SHEEP.mobId(), SHEEP_HEAD_MOUNT);
         SKELETON_BY_MOB.put(Carcasses.SHEEP.mobId(), SHEEP_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.CHICKEN.mobId(), CHICKEN_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.CHICKEN.mobId(), DRAINED_CHICKEN_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.CHICKEN.mobId(), CHICKEN_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.CHICKEN.mobId(), CHICKEN_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.CHICKEN.mobId(), CHICKEN_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.RABBIT.mobId(), RABBIT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.RABBIT.mobId(), DRAINED_RABBIT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.RABBIT.mobId(), RABBIT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.RABBIT.mobId(), RABBIT_HEAD_MOUNT);
+        FRESH_BY_MOB.put(Carcasses.GOAT.mobId(), GOAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.GOAT.mobId(), DRAINED_GOAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.GOAT.mobId(), GOAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.GOAT.mobId(), GOAT_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.GOAT.mobId(), GOAT_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.FOX.mobId(), FOX_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.FOX.mobId(), DRAINED_FOX_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.FOX.mobId(), FOX_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.FOX.mobId(), FOX_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.FOX.mobId(), FOX_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.WOLF.mobId(), WOLF_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.WOLF.mobId(), DRAINED_WOLF_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.WOLF.mobId(), WOLF_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.WOLF.mobId(), WOLF_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.WOLF.mobId(), WOLF_SKELETON);
     }
 
     private ModItems() {
@@ -122,6 +213,20 @@ public final class ModItems {
             case "sheep_head" -> ModBlocks.headFor(Carcasses.SHEEP.mobId());
             case "sheep_head_mount" -> ModBlocks.mountFor(Carcasses.SHEEP.mobId());
             case "sheep_skeleton" -> ModBlocks.skeletonFor(Carcasses.SHEEP.mobId());
+            case "chicken_head" -> ModBlocks.headFor(Carcasses.CHICKEN.mobId());
+            case "chicken_head_mount" -> ModBlocks.mountFor(Carcasses.CHICKEN.mobId());
+            case "chicken_skeleton" -> ModBlocks.skeletonFor(Carcasses.CHICKEN.mobId());
+            case "rabbit_head" -> ModBlocks.headFor(Carcasses.RABBIT.mobId());
+            case "rabbit_head_mount" -> ModBlocks.mountFor(Carcasses.RABBIT.mobId());
+            case "goat_head" -> ModBlocks.headFor(Carcasses.GOAT.mobId());
+            case "goat_head_mount" -> ModBlocks.mountFor(Carcasses.GOAT.mobId());
+            case "goat_skeleton" -> ModBlocks.skeletonFor(Carcasses.GOAT.mobId());
+            case "fox_head" -> ModBlocks.headFor(Carcasses.FOX.mobId());
+            case "fox_head_mount" -> ModBlocks.mountFor(Carcasses.FOX.mobId());
+            case "fox_skeleton" -> ModBlocks.skeletonFor(Carcasses.FOX.mobId());
+            case "wolf_head" -> ModBlocks.headFor(Carcasses.WOLF.mobId());
+            case "wolf_head_mount" -> ModBlocks.mountFor(Carcasses.WOLF.mobId());
+            case "wolf_skeleton" -> ModBlocks.skeletonFor(Carcasses.WOLF.mobId());
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

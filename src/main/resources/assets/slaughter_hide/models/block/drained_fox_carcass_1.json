@@ -1,0 +1,10 @@
+{
+  "parent": "slaughter_hide:custom/fox_carcass_headless_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/fox",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/fox_skeleton",
+    "1": "slaughter_hide:block/fox",
+    "2": "slaughter_hide:block/inner_blood_fox"
+  }
+}
