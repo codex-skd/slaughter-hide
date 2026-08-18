@@ -25,6 +25,8 @@ public final class Carcasses {
 
     /** The reference implementation: cows. */
     public static final CarcassDefinition COW = buildCow();
+    /** Second fully-playable mob: pigs. */
+    public static final CarcassDefinition PIG = buildPig();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -33,6 +35,7 @@ public final class Carcasses {
 
     static {
         register(COW);
+        register(PIG);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -102,6 +105,75 @@ public final class Carcasses {
         };
     }
 
+    // Shapes below are ported 1:1 from the original Butchery pig blocks so the
+    // generic blocks collide exactly like the per-mob classes they replace.
+
+    private static VoxelShape pigHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.02277, -1.02911, 0.79255, 12.82277, 14.77089, 8.59255);
+            case EAST -> box(7.40745, -1.02911, 3.02277, 15.20745, 14.77089, 12.82277);
+            case WEST -> box(0.79255, -1.02911, 3.17723, 8.59255, 14.77089, 12.97723);
+            default -> box(3.17723, -1.02911, 7.40745, 12.97723, 14.77089, 15.20745);
+        };
+    }
+
+    private static VoxelShape pigLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(0.1527, 0.10082, 5.00518, 15.9527, 9.90082, 12.80518);
+            case EAST -> box(3.19482, 0.10082, 0.1527, 10.99482, 9.90082, 15.9527);
+            case WEST -> box(5.00518, 0.10082, 0.0473, 12.80518, 9.90082, 15.8473);
+            default -> box(0.0473, 0.10082, 3.19482, 15.8473, 9.90082, 10.99482);
+        };
+    }
+
+    private static VoxelShape pigHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(
+                    box(3.99777, 0.01651, 3.99301, 11.99777, 8.01651, 11.99301),
+                    box(5.99777, 1.01651, 2.99301, 9.99777, 4.01651, 3.99301));
+            case EAST -> Shapes.or(
+                    box(4.00699, 0.01651, 3.99777, 12.00699, 8.01651, 11.99777),
+                    box(12.00699, 1.01651, 5.99777, 13.00699, 4.01651, 9.99777));
+            case WEST -> Shapes.or(
+                    box(3.99301, 0.01651, 4.00223, 11.99301, 8.01651, 12.00223),
+                    box(2.99301, 1.01651, 6.00223, 3.99301, 4.01651, 10.00223));
+            default -> Shapes.or(
+                    box(4.00223, 0.01651, 4.00699, 12.00223, 8.01651, 12.00699),
+                    box(6.00223, 1.01651, 12.00699, 10.00223, 4.01651, 13.00699));
+        };
+    }
+
+    private static VoxelShape pigHeadMount(BlockState state) {
+        // The original PigHeadMountBlock uses the identical mount box as the cow's.
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    private static CarcassDefinition buildPig() {
+        return new CarcassDefinition(
+                "pig",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:pig")))
+                        .value(),
+                true,
+                true,
+                true,
+                // Fresh carcass: blockstate 1 is the "hung to bleed" pose, 0 is the relocatable lying pose.
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pigHanging(state) : pigLying(state),
+                // Drained carcass only ever uses cut stages {0,6,7,8,9}; all of those are the lying pose.
+                Carcasses::pigLying,
+                Carcasses::pigHead,
+                Carcasses::pigHeadMount,
+                // Skeleton: blockstate 1 hung, 0 lying, same boxes as the fresh pig carcass.
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pigHanging(state) : pigLying(state),
+                // The original sweeps the pig's vanilla porkchop drop; the carcass replaces it.
+                java.util.List.of(net.minecraft.world.item.Items.PORKCHOP));
+    }
+
     private static CarcassDefinition buildCow() {
         return new CarcassDefinition(
                 "cow",
@@ -118,6 +190,8 @@ public final class Carcasses {
                 Carcasses::cowHead,
                 Carcasses::cowHeadMount,
                 // Skeleton: blockstate 1 hung, 0 lying, same boxes as the fresh carcass.
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? hanging(state) : lying(state));
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? hanging(state) : lying(state),
+                // The carcass replaces the vanilla beef/leather drops, which are swept on death.
+                java.util.List.of(net.minecraft.world.item.Items.BEEF, net.minecraft.world.item.Items.LEATHER));
     }
 }

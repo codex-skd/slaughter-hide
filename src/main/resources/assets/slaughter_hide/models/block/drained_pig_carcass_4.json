@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/hanging_pig_carcass_cut_2",
+  "textures": {
+    "all": "slaughter_hide:block/skinned_hanging_pig",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/skinned_hanging_pig"
+  }
+}

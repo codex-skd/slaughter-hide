@@ -101,8 +101,12 @@ public class DrainedCarcassBlock extends Block implements EntityBlock {
             if (state.getValue(CarcassBlockProperty.DRAINED_BLOCKSTATE) == STAGE_UNTOUCHED) {
                 Block.popResource(level, pos, new ItemStack(this));
             } else {
-                // Mid-cut carcass is no longer relocatable; leave a scrap of beef.
-                Block.popResource(level, pos, new ItemStack(Items.BEEF));
+                // Mid-cut carcass is no longer relocatable; leave a scrap of meat
+                // (whichever vanilla item this mob's death sweep normally drops).
+                var scrap = definition.sweptVanillaItems().isEmpty()
+                        ? Items.BEEF
+                        : definition.sweptVanillaItems().get(0);
+                Block.popResource(level, pos, new ItemStack(scrap));
             }
         }
         return removed;

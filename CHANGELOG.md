@@ -1,5 +1,15 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.5] - 2026-08-18
+
+### Add
+
+- **Cerdo** como segundo mob completo: matar → colgar del `Hook` → sangrar → drenar → despiezar (cabeza, piel, 3 cortes: paleta/lomo/pierna/panceta/jamón) → bloque desaparece. Mismo sistema genérico que la vaca, sin código nuevo por mob.
+
+### Fix
+
+- Al romper (no despiezar limpiamente) una carcasa a medio cortar, ahora dropea el corte de carne correcto según el mob (antes siempre dropeaba ternera, incluso para cerdo).
+
 ## [0.0.0-beta.4] - 2026-08-18
 
 ### Change

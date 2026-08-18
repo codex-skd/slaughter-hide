@@ -37,6 +37,7 @@ public final class ModBlocks {
 
     static {
         registerFamily(Carcasses.COW);
+        registerFamily(Carcasses.PIG);
     }
 
     private ModBlocks() {

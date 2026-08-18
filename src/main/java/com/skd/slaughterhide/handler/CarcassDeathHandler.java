@@ -9,7 +9,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.phys.AABB;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
@@ -43,7 +42,7 @@ public final class CarcassDeathHandler {
             return;
         }
         dropCarcassItem(level, entity, definition);
-        sweepVanillaDrops(level, entity);
+        sweepVanillaDrops(level, entity, definition);
     }
 
     /**
@@ -62,16 +61,21 @@ public final class CarcassDeathHandler {
     }
 
     /**
-     * Shelves the original's beef/leather item drops so the carcass (which
-     * yields the real meat cuts) replaces them, as the original does by killing
-     * those item entities a tick after death.
+     * Shelves the original's vanilla item drops so the carcass (which yields
+     * the real meat cuts) replaces them, as the original does by killing those
+     * item entities a tick after death. Which items are swept is per-mob data
+     * ({@link CarcassDefinition#sweptVanillaItems()}, e.g. beef/leather for the
+     * cow, porkchop for the pig), so one handler stays right for every mob.
      */
-    private static void sweepVanillaDrops(ServerLevel level, Entity entity) {
+    private static void sweepVanillaDrops(ServerLevel level, Entity entity, CarcassDefinition definition) {
         AABB area = new AABB(entity.blockPosition()).inflate(6.0);
         ServerWorkScheduler.queue(1, () -> {
             for (ItemEntity item : level.getEntitiesOfClass(ItemEntity.class, area)) {
-                if (item.getItem().is(Items.BEEF) || item.getItem().is(Items.LEATHER)) {
-                    item.discard();
+                for (var vanilla : definition.sweptVanillaItems()) {
+                    if (item.getItem().is(vanilla)) {
+                        item.discard();
+                        break;
+                    }
                 }
             }
         });

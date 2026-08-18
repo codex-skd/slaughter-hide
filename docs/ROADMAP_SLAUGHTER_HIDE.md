@@ -179,6 +179,16 @@ La vaca de referencia está validada de punta a punta en cliente real por el usu
 - Migrar primero las familias más simples y de mayor impacto visual (mesas/mostradores de carnicero, carcasas básicas) para tener algo renderizable pronto.
 - Candidato fuerte para delegar en OpenCode (tarea mecánica de código NeoForge sustancial, caso 1 de la política de delegación) una vez el catálogo de Fase 0 esté listo.
 
+## Fase 3.1 — Cerdo (COMPLETADO 2026-08-18, delegado a OpenCode)
+
+Segundo mob añadido, siguiendo el patrón genérico sin ninguna clase Java nueva por mob (delegación mecánica exitosa, en contraste con el intento fallido de Hook/Rope — el cerdo es estructuralmente idéntico a la vaca, sin la ambigüedad del bytecode decompilado que causó los cuelgues). Informe completo en `temp/opencode-pig-report.md` (no versionado).
+
+- 81 archivos de assets/datos migrados (namespace `butchery:` → `slaughter_hide:`), 8 archivos de código modificados, 0 clases Java nuevas.
+- **Generalización real del sistema**: `CarcassDefinition` ganó un campo `sweptVanillaItems` (lista) — la vaca barre `[beef, leather]`, el cerdo solo `[porkchop]`, cada uno según su `PlacecowcarcassProcedure`/`PlacepigcarcassProcedure` original. `CarcassDeathHandler` pasó de hardcodear beef/leather a leer esto de la definición — sigue siendo 100% genérico.
+- **Mismo bug de UV que `cow_head_mount`** encontrado y corregido en `pig_head_mount.json` (mezcla de unidades rejilla 0-16 vs píxeles) — mismo diagnóstico, mismo arreglo, aplicado proactivamente sin que Claude lo pidiera.
+- **Corrección post-delegación**: `DrainedCarcassBlock.onDestroyedByPlayer` dropeaba `Items.BEEF` fijo al romper una carcasa a medio cortar, incluso para cerdo — el propio informe de OpenCode lo señaló como "fuera de alcance pero recomendable". Corregido para usar `definition.sweptVanillaItems().get(0)`.
+- `./gradlew.bat build` verde. **Sin probar en cliente todavía** (recomendado por el propio informe: colocar en Hook, romper a medio cortar, verificar cabeza montada en tablón de roble oscuro, barrido de `porkchop` al morir).
+
 ## Fase 3 — Extender a más mobs + cerrar huecos de la vaca (SIGUIENTE)
 
 Con el patrón genérico validado (`CarcassDefinition` + `Hook`), añadir un mob nuevo es en gran parte mecánico: una entrada en `Carcasses`, copiar sus assets/loot tables desde `temp/butchery-assets/` con el namespace remapeado, y sus ítems de corte específicos. Candidatos en orden de prioridad sugerido (animales "simples" primero, humanoides con cortes de intestines/kidney/etc. después, por ser más complejos):
