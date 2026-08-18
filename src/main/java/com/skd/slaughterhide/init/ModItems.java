@@ -28,6 +28,7 @@ public final class ModItems {
 
     public static final DeferredItem<Item> COW_SKIN = item("cow_skin", Item::new);
     public static final DeferredItem<Item> PIG_SKIN = item("pig_skin", Item::new);
+    public static final DeferredItem<Item> SHEEP_SKIN = item("sheep_skin", Item::new);
     public static final DeferredItem<Item> ANIMAL_FAT = item("animal_fat", Item::new);
     public static final DeferredItem<Item> HOOF = item("hoof", Item::new);
     public static final DeferredItem<Item> RAW_CHUCK_STEAK = item("raw_chuck_steak", Item::new);
@@ -40,6 +41,11 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_PORK_LEG = item("raw_pork_leg", Item::new);
     public static final DeferredItem<Item> RAW_PORK_BELLY = item("raw_pork_belly", Item::new);
     public static final DeferredItem<Item> RAW_HAM = item("raw_ham", Item::new);
+    public static final DeferredItem<Item> RAW_LEG_OF_LAMB = item("raw_leg_of_lamb", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_SHOULDER = item("raw_lamb_shoulder", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_RIB = item("raw_lamb_rib", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_SIRLOIN = item("raw_lamb_sirloin", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_LOIN = item("raw_lamb_loin", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -61,6 +67,16 @@ public final class ModItems {
     public static final DeferredItem<Item> PIG_HEAD_MOUNT = blockItem("pig_head_mount", new Item.Properties());
     public static final DeferredItem<Item> PIG_SKELETON = blockItem("pig_skeleton", new Item.Properties().stacksTo(8));
 
+    // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
+    // they don't place a block on right-click like a normal BlockItem.
+    public static final DeferredItem<Item> SHEEP_CARCASS =
+            placementItem("sheep_carcass", Carcasses.SHEEP, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SHEEP_CARCASS =
+            placementItem("drained_sheep_carcass", Carcasses.SHEEP, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> SHEEP_HEAD = blockItem("sheep_head", new Item.Properties());
+    public static final DeferredItem<Item> SHEEP_HEAD_MOUNT = blockItem("sheep_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> SHEEP_SKELETON = blockItem("sheep_skeleton", new Item.Properties().stacksTo(8));
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -81,6 +97,11 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.PIG.mobId(), PIG_HEAD);
         MOUNT_BY_MOB.put(Carcasses.PIG.mobId(), PIG_HEAD_MOUNT);
         SKELETON_BY_MOB.put(Carcasses.PIG.mobId(), PIG_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.SHEEP.mobId(), SHEEP_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SHEEP.mobId(), DRAINED_SHEEP_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.SHEEP.mobId(), SHEEP_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.SHEEP.mobId(), SHEEP_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.SHEEP.mobId(), SHEEP_SKELETON);
     }
 
     private ModItems() {
@@ -98,6 +119,9 @@ public final class ModItems {
             case "pig_head" -> ModBlocks.headFor(Carcasses.PIG.mobId());
             case "pig_head_mount" -> ModBlocks.mountFor(Carcasses.PIG.mobId());
             case "pig_skeleton" -> ModBlocks.skeletonFor(Carcasses.PIG.mobId());
+            case "sheep_head" -> ModBlocks.headFor(Carcasses.SHEEP.mobId());
+            case "sheep_head_mount" -> ModBlocks.mountFor(Carcasses.SHEEP.mobId());
+            case "sheep_skeleton" -> ModBlocks.skeletonFor(Carcasses.SHEEP.mobId());
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

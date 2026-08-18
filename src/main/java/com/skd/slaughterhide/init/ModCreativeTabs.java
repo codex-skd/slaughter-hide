@@ -32,6 +32,11 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.PIG_HEAD.get());
                         output.accept(ModItems.PIG_HEAD_MOUNT.get());
                         output.accept(ModItems.PIG_SKELETON.get());
+                        output.accept(ModItems.SHEEP_CARCASS.get());
+                        output.accept(ModItems.DRAINED_SHEEP_CARCASS.get());
+                        output.accept(ModItems.SHEEP_HEAD.get());
+                        output.accept(ModItems.SHEEP_HEAD_MOUNT.get());
+                        output.accept(ModItems.SHEEP_SKELETON.get());
                         output.accept(ModItems.HOOK.get());
                     })
                     .build());
@@ -46,6 +51,7 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.IRON_SKINNING_KNIFE.get());
                         output.accept(ModItems.COW_SKIN.get());
                         output.accept(ModItems.PIG_SKIN.get());
+                        output.accept(ModItems.SHEEP_SKIN.get());
                         output.accept(ModItems.ANIMAL_FAT.get());
                         output.accept(ModItems.HOOF.get());
                     })
@@ -67,6 +73,11 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.RAW_PORK_LEG.get());
                         output.accept(ModItems.RAW_PORK_BELLY.get());
                         output.accept(ModItems.RAW_HAM.get());
+                        output.accept(ModItems.RAW_LEG_OF_LAMB.get());
+                        output.accept(ModItems.RAW_LAMB_SHOULDER.get());
+                        output.accept(ModItems.RAW_LAMB_RIB.get());
+                        output.accept(ModItems.RAW_LAMB_SIRLOIN.get());
+                        output.accept(ModItems.RAW_LAMB_LOIN.get());
                     })
                     .build());
 
