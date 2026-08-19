@@ -56,6 +56,15 @@ public final class ModBlocks {
         registerFamily(Carcasses.BAT);
         registerFamily(Carcasses.SILVERFISH);
         registerFamily(Carcasses.ENDERMITE);
+        registerFamily(Carcasses.COD);
+        registerFamily(Carcasses.SALMON);
+        registerFamily(Carcasses.PHANTOM);
+        registerFamily(Carcasses.SHULKER);
+        registerFamily(Carcasses.GUARDIAN);
+        registerFamily(Carcasses.ELDER_GUARDIAN);
+        registerFamily(Carcasses.SKELETON_HORSE);
+        registerFamily(Carcasses.ZOMBIE_HORSE);
+        registerFamily(Carcasses.HORSE);
     }
 
     private ModBlocks() {
