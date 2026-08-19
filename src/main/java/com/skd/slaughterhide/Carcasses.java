@@ -64,6 +64,8 @@ public final class Carcasses {
     public static final CarcassDefinition SILVERFISH = buildSILVERFISH();
     /** Twentieth: endermite. */
     public static final CarcassDefinition ENDERMITE = buildENDERMITE();
+    /** Twenty-first: bee. */
+    public static final CarcassDefinition BEE = buildBEE();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -91,6 +93,7 @@ public final class Carcasses {
         register(BAT);
         register(SILVERFISH);
         register(ENDERMITE);
+        register(BEE);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -1404,5 +1407,48 @@ public final class Carcasses {
                 Carcasses::endermiteLying,  // no skeleton
                 // endermite drops raw_endermite_chunks
                 java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery bee blocks.
+    private static VoxelShape beeHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.5, 0.0, 6.0, 11.5, 7.0, 10.0);
+            case EAST -> box(4.5, 0.0, 4.5, 11.5, 7.0, 11.5);
+            case WEST -> box(4.5, 0.0, 4.5, 11.5, 7.0, 11.5);
+            default -> box(4.5, 0.0, 6.0, 11.5, 7.0, 10.0);
+        };
+    }
+
+    private static VoxelShape beeLying(BlockState state) {
+        return beeHanging(state);
+    }
+
+    private static VoxelShape beeHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.5, 0.0, 6.0, 11.5, 7.0, 10.0);
+            case EAST -> box(6.0, 0.0, 4.5, 10.0, 7.0, 11.5);
+            case WEST -> box(6.0, 0.0, 4.5, 10.0, 7.0, 11.5);
+            default -> box(4.5, 0.0, 6.0, 11.5, 7.0, 10.0);
+        };
+    }
+
+    // bee has no head mount, no skeleton
+
+    private static CarcassDefinition buildBEE() {
+        return new CarcassDefinition(
+                "bee",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:bee")))
+                        .value(),
+                true,
+                false,
+                false,
+                Carcasses::beeHanging,
+                Carcasses::beeLying,
+                Carcasses::beeHead,
+                Carcasses::beeLying,  // no head mount
+                Carcasses::beeLying,  // no skeleton
+                // bee drops honey_stomach
+                java.util.List.of(net.minecraft.world.item.Items.HONEY_BOTTLE));
     }
 }
