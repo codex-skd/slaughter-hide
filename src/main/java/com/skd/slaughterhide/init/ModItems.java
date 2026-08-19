@@ -286,6 +286,76 @@ public final class ModItems {
     public static final DeferredItem<Item> ENDERMITE_HEAD_MOUNT = blockItem("endermite_head_mount", new Item.Properties());
     // Endermite has no skeleton
 
+    // Cod
+    public static final DeferredItem<Item> COD_CARCASS =
+            placementItem("cod_carcass", Carcasses.COD, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_COD_CARCASS =
+            placementItem("drained_cod_carcass", Carcasses.COD, true, new Item.Properties().stacksTo(8));
+    // Cod has no head, head mount, skeleton
+
+    // Salmon
+    public static final DeferredItem<Item> SALMON_CARCASS =
+            placementItem("salmon_carcass", Carcasses.SALMON, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SALMON_CARCASS =
+            placementItem("drained_salmon_carcass", Carcasses.SALMON, true, new Item.Properties().stacksTo(8));
+    // Salmon has no head, head mount, skeleton
+
+    // Phantom
+    public static final DeferredItem<Item> PHANTOM_CARCASS =
+            placementItem("phantom_carcass", Carcasses.PHANTOM, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_PHANTOM_CARCASS =
+            placementItem("drained_phantom_carcass", Carcasses.PHANTOM, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> PHANTOM_HEAD = blockItem("phantom_head", new Item.Properties());
+    public static final DeferredItem<Item> PHANTOM_HEAD_MOUNT = blockItem("phantom_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> PHANTOM_SKELETON = blockItem("phantom_skeleton", new Item.Properties().stacksTo(8));
+    // Phantom has no skin
+
+    // Shulker
+    public static final DeferredItem<Item> SHULKER_CARCASS =
+            placementItem("shulker_carcass", Carcasses.SHULKER, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SHULKER_CARCASS =
+            placementItem("drained_shulker_carcass", Carcasses.SHULKER, true, new Item.Properties().stacksTo(8));
+    // Shulker has no head, head mount, skeleton
+
+    // Guardian
+    public static final DeferredItem<Item> GUARDIAN_CARCASS =
+            placementItem("guardian_carcass", Carcasses.GUARDIAN, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_GUARDIAN_CARCASS =
+            placementItem("drained_guardian_carcass", Carcasses.GUARDIAN, true, new Item.Properties().stacksTo(8));
+    // Guardian has no head, head mount, skeleton, skin
+
+    // Elder Guardian
+    public static final DeferredItem<Item> ELDER_GUARDIAN_CARCASS =
+            placementItem("elder_guardian_carcass", Carcasses.ELDER_GUARDIAN, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_ELDER_GUARDIAN_CARCASS =
+            placementItem("drained_elder_guardian_carcass", Carcasses.ELDER_GUARDIAN, true, new Item.Properties().stacksTo(8));
+    // Elder Guardian has no head, head mount, skeleton, skin
+
+    // Skeleton Horse
+    public static final DeferredItem<Item> SKELETON_HORSE_CARCASS =
+            placementItem("skeleton_horse_carcass", Carcasses.SKELETON_HORSE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SKELETON_HORSE_CARCASS =
+            placementItem("drained_skeleton_horse_carcass", Carcasses.SKELETON_HORSE, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> SKELETON_HORSE_HEAD = blockItem("skeleton_horse_head", new Item.Properties());
+    public static final DeferredItem<Item> SKELETON_HORSE_HEAD_MOUNT = blockItem("skeleton_horse_head_mount", new Item.Properties());
+    // Skeleton Horse has no skeleton
+
+    // Zombie Horse
+    public static final DeferredItem<Item> ZOMBIE_HORSE_CARCASS =
+            placementItem("zombie_horse_carcass", Carcasses.ZOMBIE_HORSE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_ZOMBIE_HORSE_CARCASS =
+            placementItem("drained_zombie_horse_carcass", Carcasses.ZOMBIE_HORSE, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> ZOMBIE_HORSE_HEAD = blockItem("zombie_horse_head", new Item.Properties());
+    public static final DeferredItem<Item> ZOMBIE_HORSE_HEAD_MOUNT = blockItem("zombie_horse_head_mount", new Item.Properties());
+    // Zombie Horse has no skeleton
+
+    // Horse
+    public static final DeferredItem<Item> HORSE_CARCASS =
+            placementItem("horse_carcass", Carcasses.HORSE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_HORSE_CARCASS =
+            placementItem("drained_horse_carcass", Carcasses.HORSE, true, new Item.Properties().stacksTo(8));
+    // Horse has no head, head mount, skeleton
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -395,6 +465,40 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.ENDERMITE.mobId(), ENDERMITE_HEAD);
         MOUNT_BY_MOB.put(Carcasses.ENDERMITE.mobId(), ENDERMITE_HEAD_MOUNT);
         // Endermite has no skeleton
+        FRESH_BY_MOB.put(Carcasses.COD.mobId(), COD_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.COD.mobId(), DRAINED_COD_CARCASS);
+        // Cod has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.SALMON.mobId(), SALMON_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SALMON.mobId(), DRAINED_SALMON_CARCASS);
+        // Salmon has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.PHANTOM.mobId(), PHANTOM_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.PHANTOM.mobId(), DRAINED_PHANTOM_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.PHANTOM.mobId(), PHANTOM_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.PHANTOM.mobId(), PHANTOM_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.PHANTOM.mobId(), PHANTOM_SKELETON);
+        // Phantom has no skin
+        FRESH_BY_MOB.put(Carcasses.SHULKER.mobId(), SHULKER_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SHULKER.mobId(), DRAINED_SHULKER_CARCASS);
+        // Shulker has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.GUARDIAN.mobId(), GUARDIAN_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.GUARDIAN.mobId(), DRAINED_GUARDIAN_CARCASS);
+        // Guardian has no head, head mount, skeleton, skin
+        FRESH_BY_MOB.put(Carcasses.ELDER_GUARDIAN.mobId(), ELDER_GUARDIAN_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.ELDER_GUARDIAN.mobId(), DRAINED_ELDER_GUARDIAN_CARCASS);
+        // Elder Guardian has no head, head mount, skeleton, skin
+        FRESH_BY_MOB.put(Carcasses.SKELETON_HORSE.mobId(), SKELETON_HORSE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SKELETON_HORSE.mobId(), DRAINED_SKELETON_HORSE_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.SKELETON_HORSE.mobId(), SKELETON_HORSE_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.SKELETON_HORSE.mobId(), SKELETON_HORSE_HEAD_MOUNT);
+        // Skeleton Horse has no skeleton
+        FRESH_BY_MOB.put(Carcasses.ZOMBIE_HORSE.mobId(), ZOMBIE_HORSE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.ZOMBIE_HORSE.mobId(), DRAINED_ZOMBIE_HORSE_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.ZOMBIE_HORSE.mobId(), ZOMBIE_HORSE_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.ZOMBIE_HORSE.mobId(), ZOMBIE_HORSE_HEAD_MOUNT);
+        // Zombie Horse has no skeleton
+        FRESH_BY_MOB.put(Carcasses.HORSE.mobId(), HORSE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.HORSE.mobId(), DRAINED_HORSE_CARCASS);
+        // Horse has no head, head mount, skeleton
     }
 
     private ModItems() {
@@ -465,6 +569,13 @@ public final class ModItems {
             case "endermite_head" -> ModBlocks.headFor(Carcasses.ENDERMITE.mobId());
             case "endermite_head_mount" -> ModBlocks.mountFor(Carcasses.ENDERMITE.mobId());
             // endermite has no skeleton
+            case "phantom_head" -> ModBlocks.headFor(Carcasses.PHANTOM.mobId());
+            case "phantom_head_mount" -> ModBlocks.mountFor(Carcasses.PHANTOM.mobId());
+            case "phantom_skeleton" -> ModBlocks.skeletonFor(Carcasses.PHANTOM.mobId());
+            case "skeleton_horse_head" -> ModBlocks.headFor(Carcasses.SKELETON_HORSE.mobId());
+            case "skeleton_horse_head_mount" -> ModBlocks.mountFor(Carcasses.SKELETON_HORSE.mobId());
+            case "zombie_horse_head" -> ModBlocks.headFor(Carcasses.ZOMBIE_HORSE.mobId());
+            case "zombie_horse_head_mount" -> ModBlocks.mountFor(Carcasses.ZOMBIE_HORSE.mobId());
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

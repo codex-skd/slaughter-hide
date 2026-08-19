@@ -66,6 +66,24 @@ public final class Carcasses {
     public static final CarcassDefinition ENDERMITE = buildENDERMITE();
     /** Twenty-first: bee. */
     public static final CarcassDefinition BEE = buildBEE();
+    /** Twenty-second: cod. */
+    public static final CarcassDefinition COD = buildCOD();
+    /** Twenty-third: salmon. */
+    public static final CarcassDefinition SALMON = buildSALMON();
+    /** Twenty-fourth: phantom. */
+    public static final CarcassDefinition PHANTOM = buildPHANTOM();
+    /** Twenty-fifth: shulker. */
+    public static final CarcassDefinition SHULKER = buildSHULKER();
+    /** Twenty-sixth: guardian. */
+    public static final CarcassDefinition GUARDIAN = buildGUARDIAN();
+    /** Twenty-seventh: elder_guardian. */
+    public static final CarcassDefinition ELDER_GUARDIAN = buildELDER_GUARDIAN();
+    /** Twenty-eighth: skeleton_horse. */
+    public static final CarcassDefinition SKELETON_HORSE = buildSKELETON_HORSE();
+    /** Twenty-ninth: zombie_horse. */
+    public static final CarcassDefinition ZOMBIE_HORSE = buildZOMBIE_HORSE();
+    /** Thirtieth: horse. */
+    public static final CarcassDefinition HORSE = buildHORSE();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -94,6 +112,15 @@ public final class Carcasses {
         register(SILVERFISH);
         register(ENDERMITE);
         register(BEE);
+        register(COD);
+        register(SALMON);
+        register(PHANTOM);
+        register(SHULKER);
+        register(GUARDIAN);
+        register(ELDER_GUARDIAN);
+        register(SKELETON_HORSE);
+        register(ZOMBIE_HORSE);
+        register(HORSE);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -1492,5 +1519,410 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::beeLying,  // no skeleton
                 // bee drops honey_stomach
                 java.util.List.of(net.minecraft.world.item.Items.HONEY_BOTTLE));
+    }
+
+    // ===== NEW MOBS (cod through horse) =====
+
+    // Shapes below are ported 1:1 from the original Butchery cod blocks.
+    private static VoxelShape codHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.85, 0.3, 3.75, 12.85, 19.3, 10.75);
+            case EAST -> box(5.25, 0.3, 3.85, 12.25, 19.3, 12.85);
+            case WEST -> box(3.75, 0.3, 3.15, 10.75, 19.3, 12.15);
+            default -> box(3.15, 0.3, 5.25, 12.15, 19.3, 12.25);
+        };
+    }
+
+    private static VoxelShape codLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.75, 0.05, 5.0, 13.75, 2.05, 9.0);
+            case EAST -> box(7.0, 0.05, 3.75, 11.0, 2.05, 13.75);
+            case WEST -> box(5.0, 0.05, 2.25, 9.0, 2.05, 12.25);
+            default -> box(2.25, 0.05, 7.0, 12.25, 2.05, 11.0);
+        };
+    }
+
+    // cod has no head, head mount, skeleton, skin
+
+    private static CarcassDefinition buildCOD() {
+        return new CarcassDefinition(
+                "cod",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:cod")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                1,
+                Carcasses::codHanging,
+                Carcasses::codLying,
+                Carcasses::codLying,  // no head
+                Carcasses::codLying,  // no head mount
+                Carcasses::codLying,  // no skeleton
+                // cod drops cod
+                java.util.List.of(net.minecraft.world.item.Items.COD));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery salmon blocks.
+    private static VoxelShape salmonHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.42231, -10.01219, 2.2655, 14.42231, 19.98781, 13.2655);
+            case EAST -> box(2.7345, -10.01219, 1.42231, 13.7345, 19.98781, 14.42231);
+            case WEST -> box(2.2655, -10.01219, 1.57769, 13.2655, 19.98781, 14.57769);
+            default -> box(1.57769, -10.01219, 2.7345, 14.57769, 19.98781, 13.7345);
+        };
+    }
+
+    private static VoxelShape salmonLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(0.05, 0.05, 6.0, 16.05, 3.05, 11.0);
+            case EAST -> box(5.0, 0.05, 0.05, 10.0, 3.05, 16.05);
+            case WEST -> box(6.0, 0.05, -0.05, 11.0, 3.05, 15.95);
+            default -> box(-0.05, 0.05, 5.0, 15.95, 3.05, 10.0);
+        };
+    }
+
+    // salmon has no head, head mount, skeleton, skin
+
+    private static CarcassDefinition buildSALMON() {
+        return new CarcassDefinition(
+                "salmon",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:salmon")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                1,
+                Carcasses::salmonHanging,
+                Carcasses::salmonLying,
+                Carcasses::salmonLying,  // no head
+                Carcasses::salmonLying,  // no head mount
+                Carcasses::salmonLying,  // no skeleton
+                // salmon drops salmon
+                java.util.List.of(net.minecraft.world.item.Items.SALMON));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery phantom blocks.
+    private static VoxelShape phantomHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(5.5, 3.48171, 6.70847, 10.5, 12.48171, 9.70847), box(-0.5, 3.48171, 7.70847, 5.5, 12.48171, 9.70847), box(10.5, 3.48171, 7.70847, 16.5, 12.48171, 9.70847), box(6.5, 12.46765, 7.71055, 9.5, 18.46765, 9.71055));
+            case EAST -> Shapes.or(box(6.29153, 3.48171, 5.5, 9.29153, 12.48171, 10.5), box(6.29153, 3.48171, -0.5, 8.29153, 12.48171, 5.5), box(6.29153, 3.48171, 10.5, 8.29153, 12.48171, 16.5), box(6.28945, 12.46765, 6.5, 8.28945, 18.46765, 9.5));
+            case WEST -> Shapes.or(box(6.70847, 3.48171, 5.5, 9.70847, 12.48171, 10.5), box(7.70847, 3.48171, 10.5, 9.70847, 12.48171, 16.5), box(7.70847, 3.48171, -0.5, 9.70847, 12.48171, 5.5), box(7.71055, 12.46765, 6.5, 9.71055, 18.46765, 9.5));
+            default -> Shapes.or(box(5.5, 3.48171, 6.29153, 10.5, 12.48171, 9.29153), box(10.5, 3.48171, 6.29153, 16.5, 12.48171, 8.29153), box(-0.5, 3.48171, 6.29153, 5.5, 12.48171, 8.29153), box(6.5, 12.46765, 6.28945, 9.5, 18.46765, 8.28945));
+        };
+    }
+
+    private static VoxelShape phantomLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(5.5, 0.05, 3.0, 10.5, 3.05, 12.0), box(-0.5, 0.05, 3.0, 5.5, 2.05, 12.0), box(10.5, 0.05, 3.0, 16.5, 2.05, 12.0));
+            case EAST -> Shapes.or(box(4.0, 0.05, 5.5, 13.0, 3.05, 10.5), box(4.0, 0.05, -0.5, 13.0, 2.05, 5.5), box(4.0, 0.05, 10.5, 13.0, 2.05, 16.5));
+            case WEST -> Shapes.or(box(3.0, 0.05, 5.5, 12.0, 3.05, 10.5), box(3.0, 0.05, 10.5, 12.0, 2.05, 16.5), box(3.0, 0.05, -0.5, 12.0, 2.05, 5.5));
+            default -> Shapes.or(box(5.5, 0.05, 4.0, 10.5, 3.05, 13.0), box(10.5, 0.05, 4.0, 16.5, 2.05, 13.0), box(-0.5, 0.05, 4.0, 5.5, 2.05, 13.0));
+        };
+    }
+
+    private static VoxelShape phantomHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.5, 0.00502, 5.49791, 11.5, 3.00502, 10.49791);
+            case EAST -> box(5.50209, 0.00502, 4.5, 10.50209, 3.00502, 11.5);
+            case WEST -> box(5.49791, 0.00502, 4.5, 10.49791, 3.00502, 11.5);
+            default -> box(4.5, 0.00502, 5.50209, 11.5, 3.00502, 10.50209);
+        };
+    }
+
+    private static VoxelShape phantomHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    private static VoxelShape phantomSkeletonHanging(BlockState state) {
+        return phantomHanging(state);
+    }
+
+    private static VoxelShape phantomSkeletonLying(BlockState state) {
+        return phantomLying(state);
+    }
+
+    private static CarcassDefinition buildPHANTOM() {
+        return new CarcassDefinition(
+                "phantom",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:phantom")))
+                        .value(),
+                true,
+                true,
+                true,
+                false,
+                6,
+                Carcasses::phantomHanging,
+                Carcasses::phantomLying,
+                Carcasses::phantomHead,
+                Carcasses::phantomHeadMount,
+                Carcasses::phantomSkeletonHanging,
+                // phantom drops phantom_membrane
+                java.util.List.of(net.minecraft.world.item.Items.PHANTOM_MEMBRANE));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery shulker blocks.
+    private static VoxelShape shulkerHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.0, 0.0, 2.0, 13.0, 16.0, 14.0);
+            case EAST -> box(2.0, 0.0, 3.0, 14.0, 16.0, 13.0);
+            case WEST -> box(2.0, 0.0, 3.0, 14.0, 16.0, 13.0);
+            default -> box(3.0, 0.0, 2.0, 13.0, 16.0, 14.0);
+        };
+    }
+
+    private static VoxelShape shulkerLying(BlockState state) {
+        return shulkerHanging(state);
+    }
+
+    // shulker has no head, head mount, skeleton, skin
+
+    private static CarcassDefinition buildSHULKER() {
+        return new CarcassDefinition(
+                "shulker",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:shulker")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                3,
+                Carcasses::shulkerHanging,
+                Carcasses::shulkerLying,
+                Carcasses::shulkerLying,  // no head
+                Carcasses::shulkerLying,  // no head mount
+                Carcasses::shulkerLying,  // no skeleton
+                // shulker drops shulker_shell
+                java.util.List.of(net.minecraft.world.item.Items.SHULKER_SHELL));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery guardian blocks.
+    private static VoxelShape guardianHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(2.0, -7.4, 4.0, 14.0, 4.6, 16.0);
+            case EAST -> box(0.0, -7.4, 2.0, 12.0, 4.6, 14.0);
+            case WEST -> box(4.0, -7.4, 2.0, 16.0, 4.6, 14.0);
+            default -> box(2.0, -7.4, 0.0, 14.0, 4.6, 12.0);
+        };
+    }
+
+    private static VoxelShape guardianLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(2.0, 2.0, 2.0, 14.0, 14.0, 14.0);
+            case EAST -> box(2.0, 2.0, 2.0, 14.0, 14.0, 14.0);
+            case WEST -> box(2.0, 2.0, 2.0, 14.0, 14.0, 14.0);
+            default -> box(2.0, 2.0, 2.0, 14.0, 14.0, 14.0);
+        };
+    }
+
+    // guardian has no head, head mount, skeleton, skin (has spike_drop instead)
+
+    private static CarcassDefinition buildGUARDIAN() {
+        return new CarcassDefinition(
+                "guardian",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:guardian")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                3,
+                Carcasses::guardianHanging,
+                Carcasses::guardianLying,
+                Carcasses::guardianLying,  // no head
+                Carcasses::guardianLying,  // no head mount
+                Carcasses::guardianLying,  // no skeleton
+                // guardian drops prismarine_shard
+                java.util.List.of(net.minecraft.world.item.Items.PRISMARINE_SHARD));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery elder_guardian blocks.
+    private static VoxelShape elder_guardianHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), box(0.0, 16.0, 0.0, 16.0, 32.0, 16.0));
+            case EAST -> Shapes.or(box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), box(0.0, 16.0, 0.0, 16.0, 32.0, 16.0));
+            case WEST -> Shapes.or(box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), box(0.0, 16.0, 0.0, 16.0, 32.0, 16.0));
+            default -> Shapes.or(box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), box(0.0, 16.0, 0.0, 16.0, 32.0, 16.0));
+        };
+    }
+
+    private static VoxelShape elder_guardianLying(BlockState state) {
+        return elder_guardianHanging(state);
+    }
+
+    // elder_guardian has no head, head mount, skeleton, skin
+
+    private static CarcassDefinition buildELDER_GUARDIAN() {
+        return new CarcassDefinition(
+                "elder_guardian",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:elder_guardian")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                4,
+                Carcasses::elder_guardianHanging,
+                Carcasses::elder_guardianLying,
+                Carcasses::elder_guardianLying,  // no head
+                Carcasses::elder_guardianLying,  // no head mount
+                Carcasses::elder_guardianLying,  // no skeleton
+                // elder_guardian drops prismarine_crystals
+                java.util.List.of(net.minecraft.world.item.Items.PRISMARINE_CRYSTALS));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery skeleton_horse blocks.
+    // Need to extract shapes from SkeletonhorsecarcassBlock
+    private static VoxelShape skeleton_horseHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.0, 0.0, 2.0, 13.0, 16.0, 14.0);
+            case EAST -> box(2.0, 0.0, 3.0, 14.0, 16.0, 13.0);
+            case WEST -> box(2.0, 0.0, 3.0, 14.0, 16.0, 13.0);
+            default -> box(3.0, 0.0, 2.0, 13.0, 16.0, 14.0);
+        };
+    }
+
+    private static VoxelShape skeleton_horseLying(BlockState state) {
+        return skeleton_horseHanging(state);
+    }
+
+    // Need skeleton_horse head/headmount shapes
+    private static VoxelShape skeleton_horseHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.0, 0.0, 4.0, 11.0, 6.0, 12.0);
+            case EAST -> box(4.0, 0.0, 5.0, 12.0, 6.0, 11.0);
+            case WEST -> box(4.0, 0.0, 5.0, 12.0, 6.0, 11.0);
+            default -> box(5.0, 0.0, 4.0, 11.0, 6.0, 12.0);
+        };
+    }
+
+    private static VoxelShape skeleton_horseHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    private static CarcassDefinition buildSKELETON_HORSE() {
+        return new CarcassDefinition(
+                "skeleton_horse",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:skeleton_horse")))
+                        .value(),
+                true,
+                true,
+                false,
+                true,
+                3,
+                Carcasses::skeleton_horseHanging,
+                Carcasses::skeleton_horseLying,
+                Carcasses::skeleton_horseHead,
+                Carcasses::skeleton_horseHeadMount,
+                Carcasses::skeleton_horseLying,  // no skeleton
+                // skeleton_horse drops bone
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery zombie_horse blocks.
+    private static VoxelShape zombie_horseHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.0, 0.0, 2.0, 13.0, 16.0, 14.0);
+            case EAST -> box(2.0, 0.0, 3.0, 14.0, 16.0, 13.0);
+            case WEST -> box(2.0, 0.0, 3.0, 14.0, 16.0, 13.0);
+            default -> box(3.0, 0.0, 2.0, 13.0, 16.0, 14.0);
+        };
+    }
+
+    private static VoxelShape zombie_horseLying(BlockState state) {
+        return zombie_horseHanging(state);
+    }
+
+    // Need zombie_horse head/headmount shapes
+    private static VoxelShape zombie_horseHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.0, 0.0, 4.0, 11.0, 6.0, 12.0);
+            case EAST -> box(4.0, 0.0, 5.0, 12.0, 6.0, 11.0);
+            case WEST -> box(4.0, 0.0, 5.0, 12.0, 6.0, 11.0);
+            default -> box(5.0, 0.0, 4.0, 11.0, 6.0, 12.0);
+        };
+    }
+
+    private static VoxelShape zombie_horseHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    private static CarcassDefinition buildZOMBIE_HORSE() {
+        return new CarcassDefinition(
+                "zombie_horse",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:zombie_horse")))
+                        .value(),
+                true,
+                true,
+                false,
+                true,
+                3,
+                Carcasses::zombie_horseHanging,
+                Carcasses::zombie_horseLying,
+                Carcasses::zombie_horseHead,
+                Carcasses::zombie_horseHeadMount,
+                Carcasses::zombie_horseLying,  // no skeleton
+                // zombie_horse drops rotten_flesh
+                java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery horse blocks.
+    private static VoxelShape horseHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.0, 0.0, 2.0, 13.0, 16.0, 14.0);
+            case EAST -> box(2.0, 0.0, 3.0, 14.0, 16.0, 13.0);
+            case WEST -> box(2.0, 0.0, 3.0, 14.0, 16.0, 13.0);
+            default -> box(3.0, 0.0, 2.0, 13.0, 16.0, 14.0);
+        };
+    }
+
+    private static VoxelShape horseLying(BlockState state) {
+        return horseHanging(state);
+    }
+
+    // horse has no head, head mount, skeleton, skin
+
+    private static CarcassDefinition buildHORSE() {
+        return new CarcassDefinition(
+                "horse",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:horse")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                3,
+                Carcasses::horseHanging,
+                Carcasses::horseLying,
+                Carcasses::horseLying,  // no head
+                Carcasses::horseLying,  // no head mount
+                Carcasses::horseLying,  // no skeleton
+                // horse drops leather
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
     }
 }
