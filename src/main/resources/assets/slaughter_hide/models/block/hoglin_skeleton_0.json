@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/hoglin_skeleton_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/hoglin_skeleton",
+    "particle": "slaughter_hide:block/hoglin_skeleton",
+    "hoglin_skeleton": "slaughter_hide:block/hoglin_skeleton"
+  }
+}

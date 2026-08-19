@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/hoglin_carcass_drained",
+  "textures": {
+    "all": "slaughter_hide:block/hoglin_drained",
+    "particle": "minecraft:block/nether_wart_block",
+    "hoglin": "slaughter_hide:block/hoglin_drained",
+    "hoglin_skeleton": "slaughter_hide:block/hoglin_skeleton"
+  }
+}
