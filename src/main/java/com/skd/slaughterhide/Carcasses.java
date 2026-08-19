@@ -62,6 +62,8 @@ public final class Carcasses {
     public static final CarcassDefinition BAT = buildBAT();
     /** Nineteenth: silverfish. */
     public static final CarcassDefinition SILVERFISH = buildSILVERFISH();
+    /** Twentieth: endermite. */
+    public static final CarcassDefinition ENDERMITE = buildENDERMITE();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -88,6 +90,7 @@ public final class Carcasses {
         register(DOLPHIN);
         register(BAT);
         register(SILVERFISH);
+        register(ENDERMITE);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -1323,6 +1326,83 @@ public final class Carcasses {
                 Carcasses::silverfishHeadMount,
                 Carcasses::silverfishLying,  // no skeleton
                 // silverfish drops raw_silverfish_chunks
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery endermite blocks.
+    private static VoxelShape endermiteHanging(BlockState state) {
+        int blockstate = state.getValue(CarcassBlockProperty.BLOCKSTATE);
+        if (blockstate == 1) {
+            return switch (state.getValue(CarcassBlockProperty.FACING)) {
+                case NORTH -> Shapes.or(box(5.5, 0.0, 5.0, 10.5, 4.0, 11.0), box(4.5, 0.0, 6.5, 5.5, 3.0, 9.5), box(3.5, 0.0, 7.5, 4.5, 2.0, 8.5));
+                case EAST -> Shapes.or(box(5.0, 0.0, 5.5, 11.0, 4.0, 10.5), box(6.5, 0.0, 4.5, 9.5, 3.0, 5.5), box(7.5, 0.0, 3.5, 8.5, 2.0, 4.5));
+                case WEST -> Shapes.or(box(5.0, 0.0, 5.5, 11.0, 4.0, 10.5), box(6.5, 0.0, 10.5, 9.5, 3.0, 11.5), box(7.5, 0.0, 11.5, 8.5, 2.0, 12.5));
+                default -> Shapes.or(box(5.5, 0.0, 5.0, 10.5, 4.0, 11.0), box(10.5, 0.0, 6.5, 11.5, 3.0, 9.5), box(11.5, 0.0, 7.5, 12.5, 2.0, 8.5));
+            };
+        }
+        if (blockstate == 2) {
+            return switch (state.getValue(CarcassBlockProperty.FACING)) {
+                case NORTH -> Shapes.or(box(5.5, 0.0, 5.0, 10.5, 4.0, 11.0), box(4.5, 0.0, 6.5, 5.5, 3.0, 9.5));
+                case EAST -> Shapes.or(box(5.0, 0.0, 5.5, 11.0, 4.0, 10.5), box(6.5, 0.0, 4.5, 9.5, 3.0, 5.5));
+                case WEST -> Shapes.or(box(5.0, 0.0, 5.5, 11.0, 4.0, 10.5), box(6.5, 0.0, 10.5, 9.5, 3.0, 11.5));
+                default -> Shapes.or(box(5.5, 0.0, 5.0, 10.5, 4.0, 11.0), box(10.5, 0.0, 6.5, 11.5, 3.0, 9.5));
+            };
+        }
+        if (blockstate == 3) {
+            return switch (state.getValue(CarcassBlockProperty.FACING)) {
+                case NORTH -> box(5.5, 0.0, 5.0, 10.5, 4.0, 11.0);
+                case EAST -> box(5.0, 0.0, 5.5, 11.0, 4.0, 10.5);
+                case WEST -> box(5.0, 0.0, 5.5, 11.0, 4.0, 10.5);
+                default -> box(5.5, 0.0, 5.0, 10.5, 4.0, 11.0);
+            };
+        }
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(10.5, 0.0, 6.0, 12.5, 3.0, 10.0), box(5.5, 0.0, 5.0, 10.5, 4.0, 11.0), box(4.5, 0.0, 6.5, 5.5, 3.0, 9.5), box(3.5, 0.0, 7.5, 4.5, 2.0, 8.5));
+            case EAST -> Shapes.or(box(6.0, 0.0, 10.5, 10.0, 3.0, 12.5), box(5.0, 0.0, 5.5, 11.0, 4.0, 10.5), box(6.5, 0.0, 4.5, 9.5, 3.0, 5.5), box(7.5, 0.0, 3.5, 8.5, 2.0, 4.5));
+            case WEST -> Shapes.or(box(6.0, 0.0, 3.5, 10.0, 3.0, 5.5), box(5.0, 0.0, 5.5, 11.0, 4.0, 10.5), box(6.5, 0.0, 10.5, 9.5, 3.0, 11.5), box(7.5, 0.0, 11.5, 8.5, 2.0, 12.5));
+            default -> Shapes.or(box(3.5, 0.0, 6.0, 5.5, 3.0, 10.0), box(5.5, 0.0, 5.0, 10.5, 4.0, 11.0), box(10.5, 0.0, 6.5, 11.5, 3.0, 9.5), box(11.5, 0.0, 7.5, 12.5, 2.0, 8.5));
+        };
+    }
+
+    private static VoxelShape endermiteLying(BlockState state) {
+        return endermiteHanging(state);
+    }
+
+    private static VoxelShape endermiteHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(6.0, 0.0, 7.0, 10.0, 3.0, 9.0);
+            case EAST -> box(7.0, 0.0, 6.0, 9.0, 3.0, 10.0);
+            case WEST -> box(7.0, 0.0, 6.0, 9.0, 3.0, 10.0);
+            default -> box(6.0, 0.0, 7.0, 10.0, 3.0, 9.0);
+        };
+    }
+
+    private static VoxelShape endermiteHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.0, 0.0, 5.7, 11.0, 7.0, 11.0);
+            case EAST -> box(5.0, 0.0, 5.0, 10.3, 7.0, 11.0);
+            case WEST -> box(5.7, 0.0, 5.0, 11.0, 7.0, 11.0);
+            default -> box(5.0, 0.0, 5.0, 11.0, 7.0, 10.3);
+        };
+    }
+
+    // endermite has no skeleton
+
+    private static CarcassDefinition buildENDERMITE() {
+        return new CarcassDefinition(
+                "endermite",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:endermite")))
+                        .value(),
+                true,
+                true,
+                false,
+                Carcasses::endermiteHanging,
+                Carcasses::endermiteLying,
+                Carcasses::endermiteHead,
+                Carcasses::endermiteHeadMount,
+                Carcasses::endermiteLying,  // no skeleton
+                // endermite drops raw_endermite_chunks
                 java.util.List.of(net.minecraft.world.item.Items.BONE));
     }
 }
