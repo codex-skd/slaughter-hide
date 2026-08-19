@@ -65,6 +65,10 @@ public final class ModBlocks {
         registerFamily(Carcasses.SKELETON_HORSE);
         registerFamily(Carcasses.ZOMBIE_HORSE);
         registerFamily(Carcasses.HORSE);
+        registerFamily(Carcasses.BROWN_LLAMA);
+        registerFamily(Carcasses.WHITE_LLAMA);
+        registerFamily(Carcasses.CREAMY_LLAMA);
+        registerFamily(Carcasses.GRAY_LLAMA);
     }
 
     private ModBlocks() {
