@@ -94,6 +94,8 @@ public final class ModItems {
     public static final DeferredItem<Item> BAT_SKIN = item("bat_skin", Item::new);
     public static final DeferredItem<Item> BAT_WING = item("bat_wing", Item::new);
     public static final DeferredItem<Item> RAW_BAT_MEAT = item("raw_bat_meat", Item::new);
+    // Silverfish
+    public static final DeferredItem<Item> RAW_SILVERFISH_CHUNKS = item("raw_silverfish_chunks", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -264,6 +266,15 @@ public final class ModItems {
     public static final DeferredItem<Item> BAT_HEAD_MOUNT = blockItem("bat_head_mount", new Item.Properties());
     public static final DeferredItem<Item> BAT_SKELETON = blockItem("bat_skeleton", new Item.Properties().stacksTo(8));
 
+    // Silverfish
+    public static final DeferredItem<Item> SILVERFISH_CARCASS =
+            placementItem("silverfish_carcass", Carcasses.SILVERFISH, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SILVERFISH_CARCASS =
+            placementItem("drained_silverfish_carcass", Carcasses.SILVERFISH, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> SILVERFISH_HEAD = blockItem("silverfish_head", new Item.Properties());
+    public static final DeferredItem<Item> SILVERFISH_HEAD_MOUNT = blockItem("silverfish_head_mount", new Item.Properties());
+    // Silverfish has no skeleton
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -363,6 +374,11 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.BAT.mobId(), BAT_HEAD);
         MOUNT_BY_MOB.put(Carcasses.BAT.mobId(), BAT_HEAD_MOUNT);
         SKELETON_BY_MOB.put(Carcasses.BAT.mobId(), BAT_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.SILVERFISH.mobId(), SILVERFISH_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SILVERFISH.mobId(), DRAINED_SILVERFISH_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.SILVERFISH.mobId(), SILVERFISH_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.SILVERFISH.mobId(), SILVERFISH_HEAD_MOUNT);
+        // Silverfish has no skeleton
     }
 
     private ModItems() {

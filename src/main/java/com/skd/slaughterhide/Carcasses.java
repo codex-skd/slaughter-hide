@@ -60,6 +60,8 @@ public final class Carcasses {
     public static final CarcassDefinition DOLPHIN = buildDOLPHIN();
     /** Eighteenth: bat. */
     public static final CarcassDefinition BAT = buildBAT();
+    /** Nineteenth: silverfish. */
+    public static final CarcassDefinition SILVERFISH = buildSILVERFISH();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -85,6 +87,7 @@ public final class Carcasses {
         register(ZOGLIN);
         register(DOLPHIN);
         register(BAT);
+        register(SILVERFISH);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -1268,6 +1271,58 @@ public final class Carcasses {
                 Carcasses::batHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? batSkeletonHanging(state) : batSkeletonLying(state),
                 // bat drops raw_bat_meat
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery silverfish blocks.
+    private static VoxelShape silverfishHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(-0.5, 0.0, 4.0, 16.5, 5.0, 11.0);
+            case EAST -> box(5.0, 0.0, -0.5, 12.0, 5.0, 16.5);
+            case WEST -> box(4.0, 0.0, -0.5, 11.0, 5.0, 16.5);
+            default -> box(-0.5, 0.0, 5.0, 16.5, 5.0, 12.0);
+        };
+    }
+
+    private static VoxelShape silverfishLying(BlockState state) {
+        return silverfishHanging(state);
+    }
+
+    private static VoxelShape silverfishHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(6.55, 0.0, 7.0, 9.55, 2.0, 9.0);
+            case EAST -> box(7.0, 0.0, 6.55, 9.0, 2.0, 9.55);
+            case WEST -> box(7.0, 0.0, 6.45, 9.0, 2.0, 9.45);
+            default -> box(6.45, 0.0, 7.0, 9.45, 2.0, 9.0);
+        };
+    }
+
+    private static VoxelShape silverfishHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.0, 0.0, 5.7, 11.0, 7.0, 11.0);
+            case EAST -> box(5.0, 0.0, 5.0, 10.3, 7.0, 11.0);
+            case WEST -> box(5.7, 0.0, 5.0, 11.0, 7.0, 11.0);
+            default -> box(5.0, 0.0, 5.0, 11.0, 7.0, 10.3);
+        };
+    }
+
+    // silverfish has no skeleton
+
+    private static CarcassDefinition buildSILVERFISH() {
+        return new CarcassDefinition(
+                "silverfish",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:silverfish")))
+                        .value(),
+                true,
+                true,
+                false,
+                Carcasses::silverfishHanging,
+                Carcasses::silverfishLying,
+                Carcasses::silverfishHead,
+                Carcasses::silverfishHeadMount,
+                Carcasses::silverfishLying,  // no skeleton
+                // silverfish drops raw_silverfish_chunks
                 java.util.List.of(net.minecraft.world.item.Items.BONE));
     }
 }
