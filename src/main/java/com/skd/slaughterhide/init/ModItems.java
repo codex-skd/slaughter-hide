@@ -90,6 +90,10 @@ public final class ModItems {
     // Dolphin
     public static final DeferredItem<Item> DOLPHIN_SKIN = item("dolphin_skin", Item::new);
     public static final DeferredItem<Item> RAW_DOLPHIN_MEAT = item("raw_dolphin_meat", Item::new);
+    // Bat
+    public static final DeferredItem<Item> BAT_SKIN = item("bat_skin", Item::new);
+    public static final DeferredItem<Item> BAT_WING = item("bat_wing", Item::new);
+    public static final DeferredItem<Item> RAW_BAT_MEAT = item("raw_bat_meat", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -251,6 +255,15 @@ public final class ModItems {
     public static final DeferredItem<Item> DOLPHIN_HEAD_MOUNT = blockItem("dolphin_head_mount", new Item.Properties());
     public static final DeferredItem<Item> DOLPHIN_SKELETON = blockItem("dolphin_skeleton", new Item.Properties().stacksTo(8));
 
+    // Bat
+    public static final DeferredItem<Item> BAT_CARCASS =
+            placementItem("bat_carcass", Carcasses.BAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_BAT_CARCASS =
+            placementItem("drained_bat_carcass", Carcasses.BAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> BAT_HEAD = blockItem("bat_head", new Item.Properties());
+    public static final DeferredItem<Item> BAT_HEAD_MOUNT = blockItem("bat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> BAT_SKELETON = blockItem("bat_skeleton", new Item.Properties().stacksTo(8));
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -345,6 +358,11 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.DOLPHIN.mobId(), DOLPHIN_HEAD);
         MOUNT_BY_MOB.put(Carcasses.DOLPHIN.mobId(), DOLPHIN_HEAD_MOUNT);
         SKELETON_BY_MOB.put(Carcasses.DOLPHIN.mobId(), DOLPHIN_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.BAT.mobId(), BAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.BAT.mobId(), DRAINED_BAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.BAT.mobId(), BAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.BAT.mobId(), BAT_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.BAT.mobId(), BAT_SKELETON);
     }
 
     private ModItems() {
@@ -406,6 +424,9 @@ public final class ModItems {
             case "dolphin_head" -> ModBlocks.headFor(Carcasses.DOLPHIN.mobId());
             case "dolphin_head_mount" -> ModBlocks.mountFor(Carcasses.DOLPHIN.mobId());
             case "dolphin_skeleton" -> ModBlocks.skeletonFor(Carcasses.DOLPHIN.mobId());
+            case "bat_head" -> ModBlocks.headFor(Carcasses.BAT.mobId());
+            case "bat_head_mount" -> ModBlocks.mountFor(Carcasses.BAT.mobId());
+            case "bat_skeleton" -> ModBlocks.skeletonFor(Carcasses.BAT.mobId());
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

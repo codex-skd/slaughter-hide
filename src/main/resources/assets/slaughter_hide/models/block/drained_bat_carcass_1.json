@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/bat_carcass_hanging_headless",
+  "textures": {
+    "all": "slaughter_hide:block/bat",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/bat"
+  }
+}

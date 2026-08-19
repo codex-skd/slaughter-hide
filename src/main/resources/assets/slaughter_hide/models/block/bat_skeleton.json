@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/bat_skeleton",
+  "textures": {
+    "all": "slaughter_hide:block/bat_skeleton",
+    "particle": "slaughter_hide:block/bat_skeleton",
+    "0": "slaughter_hide:block/bat_skeleton"
+  }
+}
