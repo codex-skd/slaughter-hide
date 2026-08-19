@@ -1,6 +1,7 @@
 package com.skd.slaughterhide;
 
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -28,6 +29,8 @@ public record CarcassDefinition(
         boolean hasHead,
         boolean hasHeadMount,
         boolean hasSkeleton,
+        boolean hasSkin,
+        int numCuts,
         Function<BlockState, VoxelShape> freshCarcassShape,
         Function<BlockState, VoxelShape> drainedCarcassShape,
         Function<BlockState, VoxelShape> headShape,
@@ -56,5 +59,41 @@ public record CarcassDefinition(
 
     public ResourceKey<LootTable> cutDropTable(int index) {
         return dropTable("cut_" + index + "_drop");
+    }
+
+    /**
+     * Computes the drained blockstate stage for a given cut step.
+     * Stages are mapped as: 0=untouched, then head(if hasHead), skin(if hasSkin), cut_1...cut_N.
+     */
+    public Map<String, Integer> stageMap() {
+        var map = new java.util.LinkedHashMap<String, Integer>();
+        int stage = 0;
+        map.put("untouched", stage);
+        stage += 10; // gap like original
+
+        if (hasHead) {
+            map.put("head_cut", stage);
+            stage += 1;
+        }
+        if (hasSkin) {
+            map.put("skinned", stage);
+            stage += 1;
+        }
+        for (int i = 1; i <= numCuts; i++) {
+            map.put("cut_" + i, stage);
+            stage += 1;
+        }
+        map.put("removed", stage);
+        return map;
+    }
+
+    /** Returns the stage value for a named step. */
+    public int stage(String name) {
+        return stageMap().getOrDefault(name, -1);
+    }
+
+    /** Returns all used stage values for blockstate definition. */
+    public int[] usedStages() {
+        return stageMap().values().stream().mapToInt(i -> i).toArray();
     }
 }
