@@ -58,6 +58,8 @@ public final class Carcasses {
     public static final CarcassDefinition ZOGLIN = buildZOGLIN();
     /** Seventeenth: dolphin. */
     public static final CarcassDefinition DOLPHIN = buildDOLPHIN();
+    /** Eighteenth: bat. */
+    public static final CarcassDefinition BAT = buildBAT();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -82,6 +84,7 @@ public final class Carcasses {
         register(HOGLIN);
         register(ZOGLIN);
         register(DOLPHIN);
+        register(BAT);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -1203,5 +1206,68 @@ public final class Carcasses {
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? dolphinSkeletonHanging(state) : dolphinSkeletonLying(state),
                 // dolphin drops raw_dolphin_meat
                 java.util.List.of(net.minecraft.world.item.Items.COD));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery bat blocks.
+    private static VoxelShape batHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(7.25, 11.45594, 7.13094, 8.75, 12.95594, 8.63094), box(7.25, 12.95594, 7.13094, 8.75, 15.95594, 8.63094));
+            case EAST -> Shapes.or(box(7.36906, 11.45594, 7.25, 8.86906, 12.95594, 8.75), box(7.36906, 12.95594, 7.25, 8.86906, 15.95594, 8.75));
+            case WEST -> Shapes.or(box(7.13094, 11.45594, 7.25, 8.63094, 12.95594, 8.75), box(7.13094, 12.95594, 7.25, 8.63094, 15.95594, 8.75));
+            default -> Shapes.or(box(7.25, 11.45594, 7.36906, 8.75, 12.95594, 8.86906), box(7.25, 12.95594, 7.36906, 8.75, 15.95594, 8.86906));
+        };
+    }
+
+    private static VoxelShape batLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(7.25, -0.04994, 6.62506, 8.75, 1.45006, 9.62506);
+            case EAST -> box(6.37494, -0.04994, 7.25, 9.37494, 1.45006, 8.75);
+            case WEST -> box(6.62506, -0.04994, 7.25, 9.62506, 1.45006, 8.75);
+            default -> box(7.25, -0.04994, 6.37494, 8.75, 1.45006, 9.37494);
+        };
+    }
+
+    private static VoxelShape batHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(7.25, -0.01244, 7.31256, 8.75, 1.48756, 8.81256), box(8.25, 1.23756, 7.56256, 9.0, 2.23756, 7.81256), box(7.0, 1.23756, 7.56256, 7.75, 2.23756, 7.81256));
+            case EAST -> Shapes.or(box(7.18744, -0.01244, 7.25, 8.68744, 1.48756, 8.75), box(8.18744, 1.23756, 8.25, 8.43744, 2.23756, 9.0), box(8.18744, 1.23756, 7.0, 8.43744, 2.23756, 7.75));
+            case WEST -> Shapes.or(box(7.31256, -0.01244, 7.25, 8.81256, 1.48756, 8.75), box(7.56256, 1.23756, 7.0, 7.81256, 2.23756, 7.75), box(7.56256, 1.23756, 8.25, 7.81256, 2.23756, 9.0));
+            default -> Shapes.or(box(7.25, -0.01244, 7.18744, 8.75, 1.48756, 8.68744), box(7.0, 1.23756, 8.18744, 7.75, 2.23756, 8.43744), box(8.25, 1.23756, 8.18744, 9.0, 2.23756, 8.43744));
+        };
+    }
+
+    private static VoxelShape batHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.0, 0.0, 5.7, 11.0, 7.0, 11.0);
+            case EAST -> box(5.0, 0.0, 5.0, 10.3, 7.0, 11.0);
+            case WEST -> box(5.7, 0.0, 5.0, 11.0, 7.0, 11.0);
+            default -> box(5.0, 0.0, 5.0, 11.0, 7.0, 10.3);
+        };
+    }
+
+    private static VoxelShape batSkeletonHanging(BlockState state) {
+        return batHanging(state);
+    }
+
+    private static VoxelShape batSkeletonLying(BlockState state) {
+        return batLying(state);
+    }
+
+    private static CarcassDefinition buildBAT() {
+        return new CarcassDefinition(
+                "bat",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:bat")))
+                        .value(),
+                true,
+                true,
+                true,
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? batHanging(state) : batLying(state),
+                Carcasses::batLying,
+                Carcasses::batHead,
+                Carcasses::batHeadMount,
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? batSkeletonHanging(state) : batSkeletonLying(state),
+                // bat drops raw_bat_meat
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
     }
 }

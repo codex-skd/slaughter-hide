@@ -28,6 +28,7 @@ MOBS = [
     ("hoglin", "hoglin", True),
     ("zoglin", "zoglin", False),        # NO skeleton
     ("dolphin", "dolphin", True),
+    ("bat", "bat", True),               # standard
 ]
 
 # Special naming rules for polar_bear (original -> target)
