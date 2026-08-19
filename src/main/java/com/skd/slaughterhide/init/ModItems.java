@@ -392,6 +392,22 @@ public final class ModItems {
     public static final DeferredItem<Item> GRAY_LLAMA_HEAD_MOUNT = blockItem("gray_llama_head_mount", new Item.Properties());
     // Gray Llama has no skeleton
 
+    // Squid
+    public static final DeferredItem<Item> SQUID_CARCASS =
+            placementItem("squid_carcass", Carcasses.SQUID, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SQUID_CARCASS =
+            placementItem("drained_squid_carcass", Carcasses.SQUID, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> SQUID_HEAD = blockItem("squid_head", new Item.Properties());
+    // Squid has no head mount, no skeleton
+
+    // Glow Squid
+    public static final DeferredItem<Item> GLOW_SQUID_CARCASS =
+            placementItem("glow_squid_carcass", Carcasses.GLOW_SQUID, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_GLOW_SQUID_CARCASS =
+            placementItem("drained_glow_squid_carcass", Carcasses.GLOW_SQUID, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> GLOW_SQUID_HEAD = blockItem("glow_squid_head", new Item.Properties());
+    // Glow Squid has no head mount, no skeleton
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -555,6 +571,14 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.GRAY_LLAMA.mobId(), GRAY_LLAMA_HEAD);
         MOUNT_BY_MOB.put(Carcasses.GRAY_LLAMA.mobId(), GRAY_LLAMA_HEAD_MOUNT);
         // Gray Llama has no skeleton
+        FRESH_BY_MOB.put(Carcasses.SQUID.mobId(), SQUID_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SQUID.mobId(), DRAINED_SQUID_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.SQUID.mobId(), SQUID_HEAD);
+        // Squid has no head mount, no skeleton
+        FRESH_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), GLOW_SQUID_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), DRAINED_GLOW_SQUID_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), GLOW_SQUID_HEAD);
+        // Glow Squid has no head mount, no skeleton
     }
 
     private ModItems() {
@@ -644,6 +668,10 @@ public final class ModItems {
             case "gray_llama_head" -> ModBlocks.headFor(Carcasses.GRAY_LLAMA.mobId());
             case "gray_llama_head_mount" -> ModBlocks.mountFor(Carcasses.GRAY_LLAMA.mobId());
             // Gray Llama has no skeleton
+            case "squid_head" -> ModBlocks.headFor(Carcasses.SQUID.mobId());
+            // Squid has no head mount
+            case "glow_squid_head" -> ModBlocks.headFor(Carcasses.GLOW_SQUID.mobId());
+            // Glow Squid has no head mount
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

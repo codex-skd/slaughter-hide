@@ -92,6 +92,10 @@ public final class Carcasses {
     public static final CarcassDefinition CREAMY_LLAMA = buildCREAMY_LLAMA();
     /** Thirty-fourth: gray_llama. */
     public static final CarcassDefinition GRAY_LLAMA = buildGRAY_LLAMA();
+    /** Thirty-fifth: squid. */
+    public static final CarcassDefinition SQUID = buildSQUID();
+    /** Thirty-sixth: glowsquid. */
+    public static final CarcassDefinition GLOW_SQUID = buildGLOW_SQUID();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -133,6 +137,8 @@ public final class Carcasses {
         register(WHITE_LLAMA);
         register(CREAMY_LLAMA);
         register(GRAY_LLAMA);
+        register(SQUID);
+        register(GLOW_SQUID);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -2056,5 +2062,105 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::llamaLying,  // no skeleton
                 // gray_llama drops raw_llama_steak
                 java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery squid blocks.
+    private static VoxelShape squidHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(2.0, 3.1, 0.7, 14.0, 19.1, 12.7);
+            case EAST -> box(3.3, 3.1, 2.0, 15.3, 19.1, 14.0);
+            case WEST -> box(0.7, 3.1, 2.0, 12.7, 19.1, 14.0);
+            default -> box(2.0, 3.1, 3.3, 14.0, 19.1, 15.3);
+        };
+    }
+
+    private static VoxelShape squidLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.0, 0.0, 2.0, 11.0, 6.0, 10.0);
+            case EAST -> box(6.0, 0.0, 5.0, 14.0, 6.0, 11.0);
+            case WEST -> box(2.0, 0.0, 5.0, 10.0, 6.0, 11.0);
+            default -> box(5.0, 0.0, 6.0, 11.0, 6.0, 14.0);
+        };
+    }
+
+    private static VoxelShape squidHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(2.0, 0.1, 2.1, 14.0, 16.1, 14.1);
+            case EAST -> box(1.9, 0.1, 2.0, 13.9, 16.1, 14.0);
+            case WEST -> box(2.1, 0.1, 2.0, 14.1, 16.1, 14.0);
+            default -> box(2.0, 0.1, 1.9, 14.0, 16.1, 13.9);
+        };
+    }
+
+    // squid has no head mount, no skeleton, no skin
+
+    private static CarcassDefinition buildSQUID() {
+        return new CarcassDefinition(
+                "squid",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:squid")))
+                        .value(),
+                true,
+                false,
+                false,
+                false,
+                2,
+                Carcasses::squidHanging,
+                Carcasses::squidLying,
+                Carcasses::squidHead,
+                Carcasses::squidLying,  // no head mount
+                Carcasses::squidLying,  // no skeleton
+                // squid drops ink_sac
+                java.util.List.of(net.minecraft.world.item.Items.INK_SAC));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery glowsquid blocks.
+    private static VoxelShape glow_squidHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(2.0, 3.1, 0.7, 14.0, 19.1, 12.7);
+            case EAST -> box(3.3, 3.1, 2.0, 15.3, 19.1, 14.0);
+            case WEST -> box(0.7, 3.1, 2.0, 12.7, 19.1, 14.0);
+            default -> box(2.0, 3.1, 3.3, 14.0, 19.1, 15.3);
+        };
+    }
+
+    private static VoxelShape glow_squidLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.0, 0.0, 2.0, 11.0, 6.0, 10.0);
+            case EAST -> box(6.0, 0.0, 5.0, 14.0, 6.0, 11.0);
+            case WEST -> box(2.0, 0.0, 5.0, 10.0, 6.0, 11.0);
+            default -> box(5.0, 0.0, 6.0, 11.0, 6.0, 14.0);
+        };
+    }
+
+    private static VoxelShape glow_squidHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(2.0, 0.1, 2.1, 14.0, 16.1, 14.1);
+            case EAST -> box(1.9, 0.1, 2.0, 13.9, 16.1, 14.0);
+            case WEST -> box(2.1, 0.1, 2.0, 14.1, 16.1, 14.0);
+            default -> box(2.0, 0.1, 1.9, 14.0, 16.1, 13.9);
+        };
+    }
+
+    // glowsquid has no head mount, no skeleton, no skin
+
+    private static CarcassDefinition buildGLOW_SQUID() {
+        return new CarcassDefinition(
+                "glow_squid",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:glow_squid")))
+                        .value(),
+                true,
+                false,
+                false,
+                false,
+                2,
+                Carcasses::glow_squidHanging,
+                Carcasses::glow_squidLying,
+                Carcasses::glow_squidHead,
+                Carcasses::glow_squidLying,  // no head mount
+                Carcasses::glow_squidLying,  // no skeleton
+                // glowsquid drops glow_ink_sac
+                java.util.List.of(net.minecraft.world.item.Items.GLOW_INK_SAC));
     }
 }

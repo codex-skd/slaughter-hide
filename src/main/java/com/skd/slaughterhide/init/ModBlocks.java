@@ -69,6 +69,8 @@ public final class ModBlocks {
         registerFamily(Carcasses.WHITE_LLAMA);
         registerFamily(Carcasses.CREAMY_LLAMA);
         registerFamily(Carcasses.GRAY_LLAMA);
+        registerFamily(Carcasses.SQUID);
+        registerFamily(Carcasses.GLOW_SQUID);
     }
 
     private ModBlocks() {
