@@ -244,6 +244,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 // The sheep carcass uses the same boxes as the pig's: blockstate 1
                 // is hanging, 0 is the relocatable lying pose.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pigHanging(state) : pigLying(state),
@@ -265,6 +267,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 // Fresh carcass: blockstate 1 is the "hung to bleed" pose, 0 is the relocatable lying pose.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pigHanging(state) : pigLying(state),
                 // Drained carcass only ever uses cut stages {0,6,7,8,9}; all of those are the lying pose.
@@ -286,6 +290,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 // Fresh carcass: blockstate 1 is the "hung to bleed" pose, 0 is the relocatable lying pose.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? hanging(state) : lying(state),
                 // Drained carcass only ever uses cut stages {0,6,7,8,9}; all of those are the lying pose.
@@ -364,6 +370,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 // Fresh carcass: blockstate 1 is the "hung to bleed" pose, 0 is the relocatable lying pose.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? chickenHanging(state) : chickenLying(state),
                 // Drained carcass only ever uses cut stages {0,6,7,8,9}; all of those are the lying pose.
@@ -446,6 +454,8 @@ public final class Carcasses {
                 true,
                 true,
                 false,
+                true,
+                3,
                 // Fresh carcass: blockstate 1 is the "hung to bleed" pose, 0 is the relocatable lying pose.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? rabbitHanging(state) : rabbitLying(state),
                 // Drained carcass only ever uses cut stages {0,6,7,8,9}; all of those are the lying pose.
@@ -503,6 +513,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? goatHanging(state) : goatLying(state),
                 Carcasses::goatLying,
                 Carcasses::goatHead,
@@ -574,6 +586,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? foxHanging(state) : foxLying(state),
                 Carcasses::foxLying,
                 Carcasses::foxHead,
@@ -645,6 +659,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? wolfHanging(state) : wolfLying(state),
                 Carcasses::wolfLying,
                 Carcasses::wolfHead,
@@ -710,6 +726,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? camelHanging(state) : camelLying(state),
                 Carcasses::camelLying,
                 Carcasses::camelHead,
@@ -764,7 +782,7 @@ public final class Carcasses {
         return donkeyLying(state);
     }
 
-    private static CarcassDefinition buildDONKEY() {
+private static CarcassDefinition buildDONKEY() {
         return new CarcassDefinition(
                 "donkey",
                 BuiltInRegistries.ENTITY_TYPE.getOrThrow(
@@ -773,6 +791,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? donkeyHanging(state) : donkeyLying(state),
                 Carcasses::donkeyLying,
                 Carcasses::donkeyHead,
@@ -836,6 +856,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? muleHanging(state) : muleLying(state),
                 Carcasses::muleLying,
                 Carcasses::muleHead,
@@ -899,6 +921,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? ocelotHanging(state) : ocelotLying(state),
                 Carcasses::ocelotLying,
                 Carcasses::ocelotHead,
@@ -962,6 +986,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pandaHanging(state) : pandaLying(state),
                 Carcasses::pandaLying,
                 Carcasses::pandaHead,
@@ -1025,6 +1051,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? polar_bearHanging(state) : polar_bearLying(state),
                 Carcasses::polar_bearLying,
                 Carcasses::polar_bearHead,
@@ -1088,6 +1116,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? hoglinHanging(state) : hoglinLying(state),
                 Carcasses::hoglinLying,
                 Carcasses::hoglinHead,
@@ -1145,6 +1175,8 @@ public final class Carcasses {
                 true,
                 true,
                 false,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? zoglinHanging(state) : zoglinLying(state),
                 Carcasses::zoglinLying,
                 Carcasses::zoglinHead,
@@ -1208,6 +1240,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? dolphinHanging(state) : dolphinLying(state),
                 Carcasses::dolphinLying,
                 Carcasses::dolphinHead,
@@ -1271,6 +1305,8 @@ public final class Carcasses {
                 true,
                 true,
                 true,
+                true,
+                3,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? batHanging(state) : batLying(state),
                 Carcasses::batLying,
                 Carcasses::batHead,
@@ -1323,6 +1359,8 @@ public final class Carcasses {
                 true,
                 true,
                 false,
+                false,
+                3,
                 Carcasses::silverfishHanging,
                 Carcasses::silverfishLying,
                 Carcasses::silverfishHead,
@@ -1400,6 +1438,8 @@ public final class Carcasses {
                 true,
                 true,
                 false,
+                false,
+                3,
                 Carcasses::endermiteHanging,
                 Carcasses::endermiteLying,
                 Carcasses::endermiteHead,
@@ -1443,6 +1483,8 @@ public final class Carcasses {
                 true,
                 false,
                 false,
+                false,
+                2,
                 Carcasses::beeHanging,
                 Carcasses::beeLying,
                 Carcasses::beeHead,
