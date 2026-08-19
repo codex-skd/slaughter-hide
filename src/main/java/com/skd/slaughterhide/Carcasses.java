@@ -84,6 +84,14 @@ public final class Carcasses {
     public static final CarcassDefinition ZOMBIE_HORSE = buildZOMBIE_HORSE();
     /** Thirtieth: horse. */
     public static final CarcassDefinition HORSE = buildHORSE();
+    /** Thirty-first: brown_llama. */
+    public static final CarcassDefinition BROWN_LLAMA = buildBROWN_LLAMA();
+    /** Thirty-second: white_llama. */
+    public static final CarcassDefinition WHITE_LLAMA = buildWHITE_LLAMA();
+    /** Thirty-third: creamy_llama. */
+    public static final CarcassDefinition CREAMY_LLAMA = buildCREAMY_LLAMA();
+    /** Thirty-fourth: gray_llama. */
+    public static final CarcassDefinition GRAY_LLAMA = buildGRAY_LLAMA();
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -121,6 +129,10 @@ public final class Carcasses {
         register(SKELETON_HORSE);
         register(ZOMBIE_HORSE);
         register(HORSE);
+        register(BROWN_LLAMA);
+        register(WHITE_LLAMA);
+        register(CREAMY_LLAMA);
+        register(GRAY_LLAMA);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -1923,6 +1935,126 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::horseLying,  // no head mount
                 Carcasses::horseLying,  // no skeleton
                 // horse drops leather
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery llama blocks.
+    // All 4 variants (brown, white, creamy, gray) share the same shapes.
+    private static VoxelShape llamaHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.6325, -3.10669, 8.73919, 13.6325, 14.89331, 18.73919);
+            case EAST -> box(-2.73919, -3.10669, 1.6325, 7.26081, 14.89331, 13.6325);
+            case WEST -> box(8.73919, -3.10669, 2.3675, 18.73919, 14.89331, 14.3675);
+            default -> box(2.3675, -3.10669, -2.73919, 14.3675, 14.89331, 7.26081);
+        };
+    }
+
+    private static VoxelShape llamaLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(-4.25, 4.0, 1.75, 13.75, 14.0, 13.75);
+            case EAST -> box(2.25, 4.0, -4.25, 14.25, 14.0, 13.75);
+            case WEST -> box(1.75, 4.0, 2.25, 13.75, 14.0, 20.25);
+            default -> box(2.25, 4.0, 2.25, 20.25, 14.0, 14.25);
+        };
+    }
+
+    private static VoxelShape llamaHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(6.03535, 4.26585, 1.55178, 10.03535, 8.26585, 10.55178), box(4.04035, 0.26585, 5.55178, 12.01535, 9.26585, 11.55178), box(4.03535, 9.26585, 7.55178, 7.03535, 12.26585, 9.55178), box(9.03535, 9.26585, 7.55178, 12.03535, 12.26585, 9.55178));
+            case EAST -> Shapes.or(box(5.44822, 4.26585, 6.03535, 14.44822, 8.26585, 10.03535), box(4.44822, 0.26585, 4.04035, 10.44822, 9.26585, 12.01535), box(6.44822, 9.26585, 4.03535, 8.44822, 12.26585, 7.03535), box(6.44822, 9.26585, 9.03535, 8.44822, 12.26585, 12.03535));
+            case WEST -> Shapes.or(box(1.55178, 4.26585, 5.96465, 10.55178, 8.26585, 9.96465), box(5.55178, 0.26585, 3.98465, 11.55178, 9.26585, 11.95965), box(7.55178, 9.26585, 8.96465, 9.55178, 12.26585, 11.96465), box(7.55178, 9.26585, 3.96465, 9.55178, 12.26585, 6.96465));
+            default -> Shapes.or(box(5.96465, 4.26585, 5.44822, 9.96465, 8.26585, 14.44822), box(3.98465, 0.26585, 4.44822, 11.95965, 9.26585, 10.44822), box(8.96465, 9.26585, 6.44822, 11.96465, 12.26585, 8.44822), box(3.96465, 9.26585, 6.44822, 6.96465, 12.26585, 8.44822));
+        };
+    }
+
+    private static VoxelShape llamaHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    // llama variants have no skeleton
+
+    private static CarcassDefinition buildBROWN_LLAMA() {
+        return new CarcassDefinition(
+                "brown_llama",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:llama")))
+                        .value(),
+                true,
+                true,
+                false,
+                true,
+                3,
+                Carcasses::llamaHanging,
+                Carcasses::llamaLying,
+                Carcasses::llamaHead,
+                Carcasses::llamaHeadMount,
+                Carcasses::llamaLying,  // no skeleton
+                // brown_llama drops raw_llama_steak
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+    }
+
+    private static CarcassDefinition buildWHITE_LLAMA() {
+        return new CarcassDefinition(
+                "white_llama",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:llama")))
+                        .value(),
+                true,
+                true,
+                false,
+                true,
+                3,
+                Carcasses::llamaHanging,
+                Carcasses::llamaLying,
+                Carcasses::llamaHead,
+                Carcasses::llamaHeadMount,
+                Carcasses::llamaLying,  // no skeleton
+                // white_llama drops raw_llama_steak
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+    }
+
+    private static CarcassDefinition buildCREAMY_LLAMA() {
+        return new CarcassDefinition(
+                "creamy_llama",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:llama")))
+                        .value(),
+                true,
+                true,
+                false,
+                true,
+                3,
+                Carcasses::llamaHanging,
+                Carcasses::llamaLying,
+                Carcasses::llamaHead,
+                Carcasses::llamaHeadMount,
+                Carcasses::llamaLying,  // no skeleton
+                // creamy_llama drops raw_llama_steak
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+    }
+
+    private static CarcassDefinition buildGRAY_LLAMA() {
+        return new CarcassDefinition(
+                "gray_llama",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:llama")))
+                        .value(),
+                true,
+                true,
+                false,
+                true,
+                3,
+                Carcasses::llamaHanging,
+                Carcasses::llamaLying,
+                Carcasses::llamaHead,
+                Carcasses::llamaHeadMount,
+                Carcasses::llamaLying,  // no skeleton
+                // gray_llama drops raw_llama_steak
                 java.util.List.of(net.minecraft.world.item.Items.LEATHER));
     }
 }
