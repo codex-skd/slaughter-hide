@@ -54,6 +54,7 @@ public final class ModBlocks {
         registerFamily(Carcasses.ZOGLIN);
         registerFamily(Carcasses.DOLPHIN);
         registerFamily(Carcasses.BAT);
+        registerFamily(Carcasses.SILVERFISH);
     }
 
     private ModBlocks() {
