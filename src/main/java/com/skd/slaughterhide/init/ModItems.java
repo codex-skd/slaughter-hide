@@ -96,6 +96,8 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_BAT_MEAT = item("raw_bat_meat", Item::new);
     // Silverfish
     public static final DeferredItem<Item> RAW_SILVERFISH_CHUNKS = item("raw_silverfish_chunks", Item::new);
+    // Endermite
+    public static final DeferredItem<Item> RAW_ENDERMITE_CHUNKS = item("raw_endermite_chunks", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -275,6 +277,15 @@ public final class ModItems {
     public static final DeferredItem<Item> SILVERFISH_HEAD_MOUNT = blockItem("silverfish_head_mount", new Item.Properties());
     // Silverfish has no skeleton
 
+    // Endermite
+    public static final DeferredItem<Item> ENDERMITE_CARCASS =
+            placementItem("endermite_carcass", Carcasses.ENDERMITE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_ENDERMITE_CARCASS =
+            placementItem("drained_endermite_carcass", Carcasses.ENDERMITE, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> ENDERMITE_HEAD = blockItem("endermite_head", new Item.Properties());
+    public static final DeferredItem<Item> ENDERMITE_HEAD_MOUNT = blockItem("endermite_head_mount", new Item.Properties());
+    // Endermite has no skeleton
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -379,6 +390,11 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.SILVERFISH.mobId(), SILVERFISH_HEAD);
         MOUNT_BY_MOB.put(Carcasses.SILVERFISH.mobId(), SILVERFISH_HEAD_MOUNT);
         // Silverfish has no skeleton
+        FRESH_BY_MOB.put(Carcasses.ENDERMITE.mobId(), ENDERMITE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.ENDERMITE.mobId(), DRAINED_ENDERMITE_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.ENDERMITE.mobId(), ENDERMITE_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.ENDERMITE.mobId(), ENDERMITE_HEAD_MOUNT);
+        // Endermite has no skeleton
     }
 
     private ModItems() {
@@ -443,6 +459,12 @@ public final class ModItems {
             case "bat_head" -> ModBlocks.headFor(Carcasses.BAT.mobId());
             case "bat_head_mount" -> ModBlocks.mountFor(Carcasses.BAT.mobId());
             case "bat_skeleton" -> ModBlocks.skeletonFor(Carcasses.BAT.mobId());
+            case "silverfish_head" -> ModBlocks.headFor(Carcasses.SILVERFISH.mobId());
+            case "silverfish_head_mount" -> ModBlocks.mountFor(Carcasses.SILVERFISH.mobId());
+            // silverfish has no skeleton
+            case "endermite_head" -> ModBlocks.headFor(Carcasses.ENDERMITE.mobId());
+            case "endermite_head_mount" -> ModBlocks.mountFor(Carcasses.ENDERMITE.mobId());
+            // endermite has no skeleton
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };
