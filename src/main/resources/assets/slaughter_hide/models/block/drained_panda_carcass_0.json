@@ -1,0 +1,10 @@
+{
+  "parent": "slaughter_hide:custom/hanging_panda_drained_carcass",
+  "textures": {
+    "all": "slaughter_hide:block/panda_hanging",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/panda_hanging",
+    "1": "slaughter_hide:block/panda_skeleton",
+    "2": "slaughter_hide:block/inner_blood"
+  }
+}

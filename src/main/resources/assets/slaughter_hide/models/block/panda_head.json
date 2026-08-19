@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/panda_head",
+  "textures": {
+    "all": "slaughter_hide:block/panda_hanging",
+    "particle": "slaughter_hide:block/panda_hanging",
+    "0": "slaughter_hide:block/panda_hanging"
+  }
+}

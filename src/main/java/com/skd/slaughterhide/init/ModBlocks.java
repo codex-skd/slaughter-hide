@@ -44,6 +44,15 @@ public final class ModBlocks {
         registerFamily(Carcasses.GOAT);
         registerFamily(Carcasses.FOX);
         registerFamily(Carcasses.WOLF);
+        registerFamily(Carcasses.CAMEL);
+        registerFamily(Carcasses.DONKEY);
+        registerFamily(Carcasses.MULE);
+        registerFamily(Carcasses.OCELOT);
+        registerFamily(Carcasses.PANDA);
+        registerFamily(Carcasses.POLAR_BEAR);
+        registerFamily(Carcasses.HOGLIN);
+        registerFamily(Carcasses.ZOGLIN);
+        registerFamily(Carcasses.DOLPHIN);
     }
 
     private ModBlocks() {

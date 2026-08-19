@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/zoglin_carcass_cut_1_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/skinned_zoglin",
+    "particle": "minecraft:block/nether_wart_block",
+    "hoglin": "slaughter_hide:block/skinned_zoglin",
+    "hoglin_skeleton": "slaughter_hide:block/zoglin_skeleton"
+  }
+}

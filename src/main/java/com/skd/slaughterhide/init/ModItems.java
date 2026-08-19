@@ -64,6 +64,32 @@ public final class ModItems {
     // Wolf
     public static final DeferredItem<Item> WOLF_PELT = item("wolf_pelt", Item::new);
     public static final DeferredItem<Item> RAW_WOLF_MEAT = item("raw_wolf_meat", Item::new);
+    // Camel
+    public static final DeferredItem<Item> CAMEL_SKIN = item("camel_skin", Item::new);
+    public static final DeferredItem<Item> RAW_CAMEL_MEAT = item("raw_camel_meat", Item::new);
+    // Donkey
+    public static final DeferredItem<Item> DONKEY_SKIN = item("donkey_skin", Item::new);
+    public static final DeferredItem<Item> RAW_DONKEY_STEAK = item("raw_donkey_steak", Item::new);
+    // Mule
+    public static final DeferredItem<Item> MULE_SKIN = item("mule_skin", Item::new);
+    public static final DeferredItem<Item> RAW_MULE_STEAK = item("raw_mule_steak", Item::new);
+    // Ocelot
+    public static final DeferredItem<Item> OCELOT_SKIN = item("ocelot_skin", Item::new);
+    public static final DeferredItem<Item> RAW_OCELOT_MEAT = item("raw_ocelot_meat", Item::new);
+    // Panda
+    public static final DeferredItem<Item> PANDA_SKIN = item("panda_skin", Item::new);
+    public static final DeferredItem<Item> RAW_PANDA_STEAK = item("raw_panda_steak", Item::new);
+    // Polar Bear
+    public static final DeferredItem<Item> POLAR_BEAR_SKIN = item("polar_bear_skin", Item::new);
+    public static final DeferredItem<Item> RAW_POLAR_BEAR_MEAT = item("raw_polar_bear_meat", Item::new);
+    // Hoglin
+    public static final DeferredItem<Item> HOGLIN_SKIN = item("hoglin_skin", Item::new);
+    public static final DeferredItem<Item> RAW_HOGLIN_CHUNK = item("raw_hoglin_chunk", Item::new);
+    // Zoglin
+    public static final DeferredItem<Item> ZOGLIN_SKIN = item("zoglin_skin", Item::new);
+    // Dolphin
+    public static final DeferredItem<Item> DOLPHIN_SKIN = item("dolphin_skin", Item::new);
+    public static final DeferredItem<Item> RAW_DOLPHIN_MEAT = item("raw_dolphin_meat", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -144,6 +170,87 @@ public final class ModItems {
     public static final DeferredItem<Item> WOLF_HEAD_MOUNT = blockItem("wolf_head_mount", new Item.Properties());
     public static final DeferredItem<Item> WOLF_SKELETON = blockItem("wolf_skeleton", new Item.Properties().stacksTo(8));
 
+    // Camel
+    public static final DeferredItem<Item> CAMEL_CARCASS =
+            placementItem("camel_carcass", Carcasses.CAMEL, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_CAMEL_CARCASS =
+            placementItem("drained_camel_carcass", Carcasses.CAMEL, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> CAMEL_HEAD = blockItem("camel_head", new Item.Properties());
+    public static final DeferredItem<Item> CAMEL_HEAD_MOUNT = blockItem("camel_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> CAMEL_SKELETON = blockItem("camel_skeleton", new Item.Properties().stacksTo(8));
+
+    // Donkey
+    public static final DeferredItem<Item> DONKEY_CARCASS =
+            placementItem("donkey_carcass", Carcasses.DONKEY, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_DONKEY_CARCASS =
+            placementItem("drained_donkey_carcass", Carcasses.DONKEY, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DONKEY_HEAD = blockItem("donkey_head", new Item.Properties());
+    public static final DeferredItem<Item> DONKEY_HEAD_MOUNT = blockItem("donkey_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> DONKEY_SKELETON = blockItem("donkey_skeleton", new Item.Properties().stacksTo(8));
+
+    // Mule
+    public static final DeferredItem<Item> MULE_CARCASS =
+            placementItem("mule_carcass", Carcasses.MULE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_MULE_CARCASS =
+            placementItem("drained_mule_carcass", Carcasses.MULE, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> MULE_HEAD = blockItem("mule_head", new Item.Properties());
+    public static final DeferredItem<Item> MULE_HEAD_MOUNT = blockItem("mule_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> MULE_SKELETON = blockItem("mule_skeleton", new Item.Properties().stacksTo(8));
+
+    // Ocelot
+    public static final DeferredItem<Item> OCELOT_CARCASS =
+            placementItem("ocelot_carcass", Carcasses.OCELOT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_OCELOT_CARCASS =
+            placementItem("drained_ocelot_carcass", Carcasses.OCELOT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> OCELOT_HEAD = blockItem("ocelot_head", new Item.Properties());
+    public static final DeferredItem<Item> OCELOT_HEAD_MOUNT = blockItem("ocelot_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> OCELOT_SKELETON = blockItem("ocelot_skeleton", new Item.Properties().stacksTo(8));
+
+    // Panda
+    public static final DeferredItem<Item> PANDA_CARCASS =
+            placementItem("panda_carcass", Carcasses.PANDA, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_PANDA_CARCASS =
+            placementItem("drained_panda_carcass", Carcasses.PANDA, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> PANDA_HEAD = blockItem("panda_head", new Item.Properties());
+    public static final DeferredItem<Item> PANDA_HEAD_MOUNT = blockItem("panda_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> PANDA_SKELETON = blockItem("panda_skeleton", new Item.Properties().stacksTo(8));
+
+    // Polar Bear
+    public static final DeferredItem<Item> POLAR_BEAR_CARCASS =
+            placementItem("polar_bear_carcass", Carcasses.POLAR_BEAR, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_POLAR_BEAR_CARCASS =
+            placementItem("drained_polar_bear_carcass", Carcasses.POLAR_BEAR, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> POLAR_BEAR_HEAD = blockItem("polar_bear_head", new Item.Properties());
+    public static final DeferredItem<Item> POLAR_BEAR_HEAD_MOUNT = blockItem("polar_bear_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> POLAR_BEAR_SKELETON = blockItem("polar_bear_skeleton", new Item.Properties().stacksTo(8));
+
+    // Hoglin
+    public static final DeferredItem<Item> HOGLIN_CARCASS =
+            placementItem("hoglin_carcass", Carcasses.HOGLIN, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_HOGLIN_CARCASS =
+            placementItem("drained_hoglin_carcass", Carcasses.HOGLIN, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> HOGLIN_HEAD = blockItem("hoglin_head", new Item.Properties());
+    public static final DeferredItem<Item> HOGLIN_HEAD_MOUNT = blockItem("hoglin_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> HOGLIN_SKELETON = blockItem("hoglin_skeleton", new Item.Properties().stacksTo(8));
+
+    // Zoglin
+    public static final DeferredItem<Item> ZOGLIN_CARCASS =
+            placementItem("zoglin_carcass", Carcasses.ZOGLIN, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_ZOGLIN_CARCASS =
+            placementItem("drained_zoglin_carcass", Carcasses.ZOGLIN, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> ZOGLIN_HEAD = blockItem("zoglin_head", new Item.Properties());
+    public static final DeferredItem<Item> ZOGLIN_HEAD_MOUNT = blockItem("zoglin_head_mount", new Item.Properties());
+    // Zoglin has no skeleton
+
+    // Dolphin
+    public static final DeferredItem<Item> DOLPHIN_CARCASS =
+            placementItem("dolphin_carcass", Carcasses.DOLPHIN, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_DOLPHIN_CARCASS =
+            placementItem("drained_dolphin_carcass", Carcasses.DOLPHIN, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DOLPHIN_HEAD = blockItem("dolphin_head", new Item.Properties());
+    public static final DeferredItem<Item> DOLPHIN_HEAD_MOUNT = blockItem("dolphin_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> DOLPHIN_SKELETON = blockItem("dolphin_skeleton", new Item.Properties().stacksTo(8));
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -193,6 +300,51 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.WOLF.mobId(), WOLF_HEAD);
         MOUNT_BY_MOB.put(Carcasses.WOLF.mobId(), WOLF_HEAD_MOUNT);
         SKELETON_BY_MOB.put(Carcasses.WOLF.mobId(), WOLF_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.CAMEL.mobId(), CAMEL_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.CAMEL.mobId(), DRAINED_CAMEL_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.CAMEL.mobId(), CAMEL_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.CAMEL.mobId(), CAMEL_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.CAMEL.mobId(), CAMEL_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.DONKEY.mobId(), DONKEY_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.DONKEY.mobId(), DRAINED_DONKEY_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.DONKEY.mobId(), DONKEY_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.DONKEY.mobId(), DONKEY_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.DONKEY.mobId(), DONKEY_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.MULE.mobId(), MULE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.MULE.mobId(), DRAINED_MULE_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.MULE.mobId(), MULE_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.MULE.mobId(), MULE_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.MULE.mobId(), MULE_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.OCELOT.mobId(), OCELOT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.OCELOT.mobId(), DRAINED_OCELOT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.OCELOT.mobId(), OCELOT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.OCELOT.mobId(), OCELOT_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.OCELOT.mobId(), OCELOT_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.PANDA.mobId(), PANDA_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.PANDA.mobId(), DRAINED_PANDA_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.PANDA.mobId(), PANDA_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.PANDA.mobId(), PANDA_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.PANDA.mobId(), PANDA_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), POLAR_BEAR_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), DRAINED_POLAR_BEAR_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), POLAR_BEAR_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), POLAR_BEAR_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), POLAR_BEAR_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.HOGLIN.mobId(), HOGLIN_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.HOGLIN.mobId(), DRAINED_HOGLIN_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.HOGLIN.mobId(), HOGLIN_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.HOGLIN.mobId(), HOGLIN_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.HOGLIN.mobId(), HOGLIN_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.ZOGLIN.mobId(), ZOGLIN_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.ZOGLIN.mobId(), DRAINED_ZOGLIN_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.ZOGLIN.mobId(), ZOGLIN_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.ZOGLIN.mobId(), ZOGLIN_HEAD_MOUNT);
+        // Zoglin has no skeleton
+        FRESH_BY_MOB.put(Carcasses.DOLPHIN.mobId(), DOLPHIN_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.DOLPHIN.mobId(), DRAINED_DOLPHIN_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.DOLPHIN.mobId(), DOLPHIN_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.DOLPHIN.mobId(), DOLPHIN_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.DOLPHIN.mobId(), DOLPHIN_SKELETON);
     }
 
     private ModItems() {
@@ -227,6 +379,33 @@ public final class ModItems {
             case "wolf_head" -> ModBlocks.headFor(Carcasses.WOLF.mobId());
             case "wolf_head_mount" -> ModBlocks.mountFor(Carcasses.WOLF.mobId());
             case "wolf_skeleton" -> ModBlocks.skeletonFor(Carcasses.WOLF.mobId());
+            case "camel_head" -> ModBlocks.headFor(Carcasses.CAMEL.mobId());
+            case "camel_head_mount" -> ModBlocks.mountFor(Carcasses.CAMEL.mobId());
+            case "camel_skeleton" -> ModBlocks.skeletonFor(Carcasses.CAMEL.mobId());
+            case "donkey_head" -> ModBlocks.headFor(Carcasses.DONKEY.mobId());
+            case "donkey_head_mount" -> ModBlocks.mountFor(Carcasses.DONKEY.mobId());
+            case "donkey_skeleton" -> ModBlocks.skeletonFor(Carcasses.DONKEY.mobId());
+            case "mule_head" -> ModBlocks.headFor(Carcasses.MULE.mobId());
+            case "mule_head_mount" -> ModBlocks.mountFor(Carcasses.MULE.mobId());
+            case "mule_skeleton" -> ModBlocks.skeletonFor(Carcasses.MULE.mobId());
+            case "ocelot_head" -> ModBlocks.headFor(Carcasses.OCELOT.mobId());
+            case "ocelot_head_mount" -> ModBlocks.mountFor(Carcasses.OCELOT.mobId());
+            case "ocelot_skeleton" -> ModBlocks.skeletonFor(Carcasses.OCELOT.mobId());
+            case "panda_head" -> ModBlocks.headFor(Carcasses.PANDA.mobId());
+            case "panda_head_mount" -> ModBlocks.mountFor(Carcasses.PANDA.mobId());
+            case "panda_skeleton" -> ModBlocks.skeletonFor(Carcasses.PANDA.mobId());
+            case "polar_bear_head" -> ModBlocks.headFor(Carcasses.POLAR_BEAR.mobId());
+            case "polar_bear_head_mount" -> ModBlocks.mountFor(Carcasses.POLAR_BEAR.mobId());
+            case "polar_bear_skeleton" -> ModBlocks.skeletonFor(Carcasses.POLAR_BEAR.mobId());
+            case "hoglin_head" -> ModBlocks.headFor(Carcasses.HOGLIN.mobId());
+            case "hoglin_head_mount" -> ModBlocks.mountFor(Carcasses.HOGLIN.mobId());
+            case "hoglin_skeleton" -> ModBlocks.skeletonFor(Carcasses.HOGLIN.mobId());
+            case "zoglin_head" -> ModBlocks.headFor(Carcasses.ZOGLIN.mobId());
+            case "zoglin_head_mount" -> ModBlocks.mountFor(Carcasses.ZOGLIN.mobId());
+            // zoglin has no skeleton
+            case "dolphin_head" -> ModBlocks.headFor(Carcasses.DOLPHIN.mobId());
+            case "dolphin_head_mount" -> ModBlocks.mountFor(Carcasses.DOLPHIN.mobId());
+            case "dolphin_skeleton" -> ModBlocks.skeletonFor(Carcasses.DOLPHIN.mobId());
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };
