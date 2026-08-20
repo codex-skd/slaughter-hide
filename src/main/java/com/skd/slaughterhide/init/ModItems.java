@@ -102,6 +102,8 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_ENDERMAN_STEAK = item("raw_enderman_steak", Item::new);
     // Strider
     public static final DeferredItem<Item> RAW_STRIDER_MEAT = item("raw_strider_meat", Item::new);
+    // Sniffer
+    public static final DeferredItem<Item> RAW_SNIFFER_STEAK = item("raw_sniffer_steak", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -540,6 +542,14 @@ public final class ModItems {
     public static final DeferredItem<Item> DRAINED_STRIDER_CARCASS =
             placementItem("drained_strider_carcass", Carcasses.STRIDER, true, new Item.Properties().stacksTo(8));
     // Strider has no head, head mount, skeleton
+
+    // Sniffer
+    public static final DeferredItem<Item> SNIFFER_CARCASS =
+            placementItem("sniffer_carcass", Carcasses.SNIFFER, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SNIFFER_CARCASS =
+            placementItem("drained_sniffer_carcass", Carcasses.SNIFFER, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> SNIFFER_HEAD = blockItem("sniffer_head", new Item.Properties());
+    // Sniffer has no head mount, skeleton
 
     // Blue Axolotl
     public static final DeferredItem<Item> BLUE_AXOLOTL_CARCASS =
@@ -1162,6 +1172,8 @@ public final class ModItems {
             case "enderman_head" -> ModBlocks.headFor(Carcasses.ENDERMAN.mobId());
             case "enderman_head_mount" -> ModBlocks.mountFor(Carcasses.ENDERMAN.mobId());
             // Enderman has no skeleton
+            case "sniffer_head" -> ModBlocks.headFor(Carcasses.SNIFFER.mobId());
+            // Sniffer has no head mount, skeleton
             case "creeper_head" -> ModBlocks.headFor(Carcasses.CREEPER.mobId());
             case "creeper_head_mount" -> ModBlocks.mountFor(Carcasses.CREEPER.mobId());
             case "creeper_skeleton" -> ModBlocks.skeletonFor(Carcasses.CREEPER.mobId());
