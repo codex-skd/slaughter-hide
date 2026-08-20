@@ -408,6 +408,18 @@ public final class ModItems {
     public static final DeferredItem<Item> GLOW_SQUID_HEAD = blockItem("glow_squid_head", new Item.Properties());
     // Glow Squid has no head mount, no skeleton
 
+    // Creeper
+    public static final DeferredItem<Item> CREEPER_CARCASS =
+            placementItem("creeper_carcass", Carcasses.CREEPER, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_CREEPER_CARCASS =
+            placementItem("drained_creeper_carcass", Carcasses.CREEPER, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> CREEPER_HEAD = blockItem("creeper_head", new Item.Properties());
+    public static final DeferredItem<Item> CREEPER_HEAD_MOUNT = blockItem("creeper_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> CREEPER_SKELETON = blockItem("creeper_skeleton", new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> CREEPER_SKIN = item("creeper_skin", Item::new);
+    public static final DeferredItem<Item> RAW_CREEPER_STEAK = item("raw_creeper_steak", Item::new);
+    public static final DeferredItem<Item> RAW_CREEPER_LEG = item("raw_creeper_leg", Item::new);
+
     // Cat variants (11 variants, all share ocelot shapes, have head + head_mount + skin, no skeleton)
     // all_black_cat (variant 0)
     public static final DeferredItem<Item> ALL_BLACK_CAT_CARCASS =
@@ -724,6 +736,11 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.WHITE_CAT.mobId(), WHITE_CAT_HEAD);
         MOUNT_BY_MOB.put(Carcasses.WHITE_CAT.mobId(), WHITE_CAT_HEAD_MOUNT);
         // white_cat has no skeleton
+        FRESH_BY_MOB.put(Carcasses.CREEPER.mobId(), CREEPER_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.CREEPER.mobId(), DRAINED_CREEPER_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.CREEPER.mobId(), CREEPER_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.CREEPER.mobId(), CREEPER_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.CREEPER.mobId(), CREEPER_SKELETON);
     }
 
     private ModItems() {
@@ -850,6 +867,9 @@ public final class ModItems {
             case "white_cat_head" -> ModBlocks.headFor(Carcasses.WHITE_CAT.mobId());
             case "white_cat_head_mount" -> ModBlocks.mountFor(Carcasses.WHITE_CAT.mobId());
             // white_cat has no skeleton
+            case "creeper_head" -> ModBlocks.headFor(Carcasses.CREEPER.mobId());
+            case "creeper_head_mount" -> ModBlocks.mountFor(Carcasses.CREEPER.mobId());
+            case "creeper_skeleton" -> ModBlocks.skeletonFor(Carcasses.CREEPER.mobId());
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

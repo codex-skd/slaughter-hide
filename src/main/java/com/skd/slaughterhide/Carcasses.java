@@ -96,6 +96,8 @@ public final class Carcasses {
     public static final CarcassDefinition SQUID = buildSQUID();
     /** Thirty-sixth: glowsquid. */
     public static final CarcassDefinition GLOW_SQUID = buildGLOW_SQUID();
+    /** Thirty-seventh: creeper. */
+    public static final CarcassDefinition CREEPER = buildCREEPER();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
@@ -178,6 +180,7 @@ public final class Carcasses {
         register(GRAY_LLAMA);
         register(SQUID);
         register(GLOW_SQUID);
+        register(CREEPER);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -2238,5 +2241,72 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::glow_squidLying,  // no skeleton
                 // glowsquid drops glow_ink_sac
                 java.util.List.of(net.minecraft.world.item.Items.GLOW_INK_SAC));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery creeper blocks.
+    private static VoxelShape creeperHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.73558, 7.43269, 5.69711, 12.73558, 19.43269, 9.69711);
+            case EAST -> box(6.30289, 7.43269, 4.73558, 10.30289, 19.43269, 12.73558);
+            case WEST -> box(5.69711, 7.43269, 3.26442, 9.69711, 19.43269, 11.26442);
+            default -> box(3.26442, 7.43269, 6.30289, 11.26442, 19.43269, 10.30289);
+        };
+    }
+
+    private static VoxelShape creeperLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(2.3, 0.25961, 3.95961, 14.3, 4.25961, 11.95961);
+            case EAST -> box(4.04039, 0.25961, 2.3, 12.04039, 4.25961, 14.3);
+            case WEST -> box(3.95961, 0.25961, 1.7, 11.95961, 4.25961, 13.7);
+            default -> box(1.7, 0.25961, 4.04039, 13.7, 4.25961, 12.04039);
+        };
+    }
+
+    // Creeper head uses vanilla minecraft:creeper_head item, no custom head block needed
+    private static VoxelShape creeperHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    private static VoxelShape creeperSkeletonHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.73558, 7.43269, 5.69711, 12.73558, 19.43269, 9.69711);
+            case EAST -> box(6.30289, 7.43269, 4.73558, 10.30289, 19.43269, 12.73558);
+            case WEST -> box(5.69711, 7.43269, 3.26442, 9.69711, 19.43269, 11.26442);
+            default -> box(3.26442, 7.43269, 6.30289, 11.26442, 19.43269, 10.30289);
+        };
+    }
+
+    private static VoxelShape creeperSkeletonLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(2.3, 0.25961, 3.95961, 14.3, 4.25961, 11.95961);
+            case EAST -> box(4.04039, 0.25961, 2.3, 12.04039, 4.25961, 14.3);
+            case WEST -> box(3.95961, 0.25961, 1.7, 11.95961, 4.25961, 13.7);
+            default -> box(1.7, 0.25961, 4.04039, 13.7, 4.25961, 12.04039);
+        };
+    }
+
+    private static CarcassDefinition buildCREEPER() {
+        return new CarcassDefinition(
+                "creeper",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:creeper")))
+                        .value(),
+                true,
+                true,
+                true,
+                true,
+                3,
+                Carcasses::creeperHanging,
+                Carcasses::creeperLying,
+                Carcasses::ocelotLying,  // uses vanilla minecraft:creeper_head item, no custom head block
+                Carcasses::creeperHeadMount,
+                Carcasses::creeperSkeletonHanging,
+                // creeper drops raw_creeper_steak
+                java.util.List.of(net.minecraft.world.item.Items.TNT));
     }
 }
