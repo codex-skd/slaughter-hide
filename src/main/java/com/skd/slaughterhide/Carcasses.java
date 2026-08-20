@@ -102,6 +102,18 @@ public final class Carcasses {
     public static final CarcassDefinition SPIDER = buildSPIDER();
     /** Thirty-ninth: cave_spider. */
     public static final CarcassDefinition CAVE_SPIDER = buildCAVE_SPIDER();
+    /** Fortieth: blue_axolotl. */
+    public static final CarcassDefinition BLUE_AXOLOTL = buildBLUE_AXOLOTL();
+    /** Forty-first: pink_axolotl. */
+    public static final CarcassDefinition PINK_AXOLOTL = buildPINK_AXOLOTL();
+    /** Forty-second: brown_axolotl. */
+    public static final CarcassDefinition BROWN_AXOLOTL = buildBROWN_AXOLOTL();
+    /** Forty-third: cyan_axolotl. */
+    public static final CarcassDefinition CYAN_AXOLOTL = buildCYAN_AXOLOTL();
+    /** Forty-fourth: gold_axolotl. */
+    public static final CarcassDefinition GOLD_AXOLOTL = buildGOLD_AXOLOTL();
+    /** Forty-fifth: pufferfish. */
+    public static final CarcassDefinition PUFFERFISH = buildPUFFERFISH();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
@@ -187,6 +199,12 @@ public final class Carcasses {
         register(CREEPER);
         register(SPIDER);
         register(CAVE_SPIDER);
+        register(BLUE_AXOLOTL);
+        register(PINK_AXOLOTL);
+        register(BROWN_AXOLOTL);
+        register(CYAN_AXOLOTL);
+        register(GOLD_AXOLOTL);
+        register(PUFFERFISH);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -2413,5 +2431,182 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::cave_spiderLying,  // no skeleton
                 // cave_spider drops string
                 java.util.List.of(net.minecraft.world.item.Items.STRING));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery axolotl blocks.
+    // All 5 axolotl variants share the same shapes.
+    private static VoxelShape axolotlHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(6.25, -3.5, 5.05, 10.25, 6.5, 13.05);
+            case EAST -> box(2.95, -3.5, 6.25, 10.95, 6.5, 10.25);
+            case WEST -> box(5.05, -3.5, 5.75, 13.05, 6.5, 9.75);
+            default -> box(5.75, -3.5, 2.95, 9.75, 6.5, 10.95);
+        };
+    }
+
+    private static VoxelShape axolotlLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.75, 0.1, 4.75, 13.75, 4.1, 12.75);
+            case EAST -> box(3.25, 0.1, 3.75, 11.25, 4.1, 13.75);
+            case WEST -> box(4.75, 0.1, 2.25, 12.75, 4.1, 12.25);
+            default -> box(2.25, 0.1, 3.25, 12.25, 4.1, 11.25);
+        };
+    }
+
+    private static VoxelShape axolotlHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.0, 0.0, 5.5, 12.0, 5.0, 10.5);
+            case EAST -> box(5.5, 0.0, 4.0, 10.5, 5.0, 12.0);
+            case WEST -> box(5.5, 0.0, 4.0, 10.5, 5.0, 12.0);
+            default -> box(4.0, 0.0, 5.5, 12.0, 5.0, 10.5);
+        };
+    }
+
+    private static VoxelShape axolotlHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    private static VoxelShape axolotlSkeletonHanging(BlockState state) {
+        return axolotlHanging(state);
+    }
+
+    private static VoxelShape axolotlSkeletonLying(BlockState state) {
+        return axolotlLying(state);
+    }
+
+    // Axolotl variants have no standard cuts (0 cuts), but have head, head_mount, skeleton, and skin
+    private static CarcassDefinition buildBLUE_AXOLOTL() {
+        return new CarcassDefinition(
+                "blue_axolotl",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
+                        .value(),
+                true,
+                true,
+                true,
+                true,
+                0,
+                Carcasses::axolotlHanging,
+                Carcasses::axolotlLying,
+                Carcasses::axolotlHead,
+                Carcasses::axolotlHeadMount,
+                Carcasses::axolotlSkeletonHanging,
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    private static CarcassDefinition buildPINK_AXOLOTL() {
+        return new CarcassDefinition(
+                "pink_axolotl",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
+                        .value(),
+                true,
+                true,
+                true,
+                true,
+                0,
+                Carcasses::axolotlHanging,
+                Carcasses::axolotlLying,
+                Carcasses::axolotlHead,
+                Carcasses::axolotlHeadMount,
+                Carcasses::axolotlSkeletonHanging,
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    private static CarcassDefinition buildBROWN_AXOLOTL() {
+        return new CarcassDefinition(
+                "brown_axolotl",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
+                        .value(),
+                true,
+                true,
+                true,
+                true,
+                0,
+                Carcasses::axolotlHanging,
+                Carcasses::axolotlLying,
+                Carcasses::axolotlHead,
+                Carcasses::axolotlHeadMount,
+                Carcasses::axolotlSkeletonHanging,
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    private static CarcassDefinition buildCYAN_AXOLOTL() {
+        return new CarcassDefinition(
+                "cyan_axolotl",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
+                        .value(),
+                true,
+                true,
+                true,
+                true,
+                0,
+                Carcasses::axolotlHanging,
+                Carcasses::axolotlLying,
+                Carcasses::axolotlHead,
+                Carcasses::axolotlHeadMount,
+                Carcasses::axolotlSkeletonHanging,
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    private static CarcassDefinition buildGOLD_AXOLOTL() {
+        return new CarcassDefinition(
+                "gold_axolotl",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
+                        .value(),
+                true,
+                true,
+                true,
+                true,
+                0,
+                Carcasses::axolotlHanging,
+                Carcasses::axolotlLying,
+                Carcasses::axolotlHead,
+                Carcasses::axolotlHeadMount,
+                Carcasses::axolotlSkeletonHanging,
+                java.util.List.of(net.minecraft.world.item.Items.BONE));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery pufferfish blocks.
+    private static VoxelShape pufferfishHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(3.0, 0.0, 3.0, 13.0, 6.0, 13.0);
+            case EAST -> box(3.0, 0.0, 3.0, 13.0, 6.0, 13.0);
+            case WEST -> box(3.0, 0.0, 3.0, 13.0, 6.0, 13.0);
+            default -> box(3.0, 0.0, 3.0, 13.0, 6.0, 13.0);
+        };
+    }
+
+    private static VoxelShape pufferfishLying(BlockState state) {
+        return pufferfishHanging(state);
+    }
+
+    // pufferfish has no head, head mount, skeleton, skin
+
+    private static CarcassDefinition buildPUFFERFISH() {
+        return new CarcassDefinition(
+                "pufferfish",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:pufferfish")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                2,
+                Carcasses::pufferfishHanging,
+                Carcasses::pufferfishLying,
+                Carcasses::pufferfishLying,  // no head
+                Carcasses::pufferfishLying,  // no head mount
+                Carcasses::pufferfishLying,  // no skeleton
+                java.util.List.of(net.minecraft.world.item.Items.PUFFERFISH));
     }
 }

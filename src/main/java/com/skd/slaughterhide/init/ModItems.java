@@ -408,6 +408,60 @@ public final class ModItems {
     public static final DeferredItem<Item> GLOW_SQUID_HEAD = blockItem("glow_squid_head", new Item.Properties());
     // Glow Squid has no head mount, no skeleton
 
+    // Blue Axolotl
+    public static final DeferredItem<Item> BLUE_AXOLOTL_CARCASS =
+            placementItem("blue_axolotl_carcass", Carcasses.BLUE_AXOLOTL, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_BLUE_AXOLOTL_CARCASS =
+            placementItem("drained_blue_axolotl_carcass", Carcasses.BLUE_AXOLOTL, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> BLUE_AXOLOTL_HEAD = blockItem("blue_axolotl_head", new Item.Properties());
+    public static final DeferredItem<Item> BLUE_AXOLOTL_HEAD_MOUNT = blockItem("blue_axolotl_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> BLUE_AXOLOTL_SKELETON = blockItem("blue_axolotl_skeleton", new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> BLUE_AXOLOTL_SKIN = item("blue_axolotl_skin", Item::new);
+    // Pink Axolotl
+    public static final DeferredItem<Item> PINK_AXOLOTL_CARCASS =
+            placementItem("pink_axolotl_carcass", Carcasses.PINK_AXOLOTL, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_PINK_AXOLOTL_CARCASS =
+            placementItem("drained_pink_axolotl_carcass", Carcasses.PINK_AXOLOTL, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> PINK_AXOLOTL_HEAD = blockItem("pink_axolotl_head", new Item.Properties());
+    public static final DeferredItem<Item> PINK_AXOLOTL_HEAD_MOUNT = blockItem("pink_axolotl_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> PINK_AXOLOTL_SKELETON = blockItem("pink_axolotl_skeleton", new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> PINK_AXOLOTL_SKIN = item("pink_axolotl_skin", Item::new);
+    // Brown Axolotl
+    public static final DeferredItem<Item> BROWN_AXOLOTL_CARCASS =
+            placementItem("brown_axolotl_carcass", Carcasses.BROWN_AXOLOTL, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_BROWN_AXOLOTL_CARCASS =
+            placementItem("drained_brown_axolotl_carcass", Carcasses.BROWN_AXOLOTL, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> BROWN_AXOLOTL_HEAD = blockItem("brown_axolotl_head", new Item.Properties());
+    public static final DeferredItem<Item> BROWN_AXOLOTL_HEAD_MOUNT = blockItem("brown_axolotl_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> BROWN_AXOLOTL_SKELETON = blockItem("brown_axolotl_skeleton", new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> BROWN_AXOLOTL_SKIN = item("brown_axolotl_skin", Item::new);
+    // Cyan Axolotl
+    public static final DeferredItem<Item> CYAN_AXOLOTL_CARCASS =
+            placementItem("cyan_axolotl_carcass", Carcasses.CYAN_AXOLOTL, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_CYAN_AXOLOTL_CARCASS =
+            placementItem("drained_cyan_axolotl_carcass", Carcasses.CYAN_AXOLOTL, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> CYAN_AXOLOTL_HEAD = blockItem("cyan_axolotl_head", new Item.Properties());
+    public static final DeferredItem<Item> CYAN_AXOLOTL_HEAD_MOUNT = blockItem("cyan_axolotl_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> CYAN_AXOLOTL_SKELETON = blockItem("cyan_axolotl_skeleton", new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> CYAN_AXOLOTL_SKIN = item("cyan_axolotl_skin", Item::new);
+    // Gold Axolotl
+    public static final DeferredItem<Item> GOLD_AXOLOTL_CARCASS =
+            placementItem("gold_axolotl_carcass", Carcasses.GOLD_AXOLOTL, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_GOLD_AXOLOTL_CARCASS =
+            placementItem("drained_gold_axolotl_carcass", Carcasses.GOLD_AXOLOTL, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> GOLD_AXOLOTL_HEAD = blockItem("gold_axolotl_head", new Item.Properties());
+    public static final DeferredItem<Item> GOLD_AXOLOTL_HEAD_MOUNT = blockItem("gold_axolotl_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> GOLD_AXOLOTL_SKELETON = blockItem("gold_axolotl_skeleton", new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> GOLD_AXOLOTL_SKIN = item("gold_axolotl_skin", Item::new);
+    // Pufferfish
+    public static final DeferredItem<Item> PUFFERFISH_CARCASS =
+            placementItem("pufferfish_carcass", Carcasses.PUFFERFISH, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_PUFFERFISH_CARCASS =
+            placementItem("drained_pufferfish_carcass", Carcasses.PUFFERFISH, true, new Item.Properties().stacksTo(8));
+    // Pufferfish has no head, head mount, skeleton
+    public static final DeferredItem<Item> PUFFERFISH_SPIKE = item("pufferfish_spike", Item::new);
+    public static final DeferredItem<Item> RAW_PUFFERFISH = item("raw_pufferfish", Item::new);
+
     // Spider
     public static final DeferredItem<Item> SPIDER_CARCASS =
             placementItem("spider_carcass", Carcasses.SPIDER, false, new Item.Properties().stacksTo(8));
@@ -769,6 +823,35 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.CREEPER.mobId(), CREEPER_HEAD);
         MOUNT_BY_MOB.put(Carcasses.CREEPER.mobId(), CREEPER_HEAD_MOUNT);
         SKELETON_BY_MOB.put(Carcasses.CREEPER.mobId(), CREEPER_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.BLUE_AXOLOTL.mobId(), BLUE_AXOLOTL_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.BLUE_AXOLOTL.mobId(), DRAINED_BLUE_AXOLOTL_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.BLUE_AXOLOTL.mobId(), BLUE_AXOLOTL_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.BLUE_AXOLOTL.mobId(), BLUE_AXOLOTL_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.BLUE_AXOLOTL.mobId(), BLUE_AXOLOTL_SKELETON);
+        // blue_axolotl has no skin entry in map (skin items are handled separately)
+        FRESH_BY_MOB.put(Carcasses.PINK_AXOLOTL.mobId(), PINK_AXOLOTL_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.PINK_AXOLOTL.mobId(), DRAINED_PINK_AXOLOTL_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.PINK_AXOLOTL.mobId(), PINK_AXOLOTL_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.PINK_AXOLOTL.mobId(), PINK_AXOLOTL_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.PINK_AXOLOTL.mobId(), PINK_AXOLOTL_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.BROWN_AXOLOTL.mobId(), BROWN_AXOLOTL_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.BROWN_AXOLOTL.mobId(), DRAINED_BROWN_AXOLOTL_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.BROWN_AXOLOTL.mobId(), BROWN_AXOLOTL_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.BROWN_AXOLOTL.mobId(), BROWN_AXOLOTL_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.BROWN_AXOLOTL.mobId(), BROWN_AXOLOTL_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.CYAN_AXOLOTL.mobId(), CYAN_AXOLOTL_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.CYAN_AXOLOTL.mobId(), DRAINED_CYAN_AXOLOTL_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.CYAN_AXOLOTL.mobId(), CYAN_AXOLOTL_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.CYAN_AXOLOTL.mobId(), CYAN_AXOLOTL_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.CYAN_AXOLOTL.mobId(), CYAN_AXOLOTL_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.GOLD_AXOLOTL.mobId(), GOLD_AXOLOTL_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.GOLD_AXOLOTL.mobId(), DRAINED_GOLD_AXOLOTL_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.GOLD_AXOLOTL.mobId(), GOLD_AXOLOTL_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.GOLD_AXOLOTL.mobId(), GOLD_AXOLOTL_HEAD_MOUNT);
+        SKELETON_BY_MOB.put(Carcasses.GOLD_AXOLOTL.mobId(), GOLD_AXOLOTL_SKELETON);
+        FRESH_BY_MOB.put(Carcasses.PUFFERFISH.mobId(), PUFFERFISH_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.PUFFERFISH.mobId(), DRAINED_PUFFERFISH_CARCASS);
+        // Pufferfish has no head, head mount, skeleton
     }
 
     private ModItems() {
@@ -904,6 +987,22 @@ public final class ModItems {
             case "creeper_head" -> ModBlocks.headFor(Carcasses.CREEPER.mobId());
             case "creeper_head_mount" -> ModBlocks.mountFor(Carcasses.CREEPER.mobId());
             case "creeper_skeleton" -> ModBlocks.skeletonFor(Carcasses.CREEPER.mobId());
+            case "blue_axolotl_head" -> ModBlocks.headFor(Carcasses.BLUE_AXOLOTL.mobId());
+            case "blue_axolotl_head_mount" -> ModBlocks.mountFor(Carcasses.BLUE_AXOLOTL.mobId());
+            case "blue_axolotl_skeleton" -> ModBlocks.skeletonFor(Carcasses.BLUE_AXOLOTL.mobId());
+            case "pink_axolotl_head" -> ModBlocks.headFor(Carcasses.PINK_AXOLOTL.mobId());
+            case "pink_axolotl_head_mount" -> ModBlocks.mountFor(Carcasses.PINK_AXOLOTL.mobId());
+            case "pink_axolotl_skeleton" -> ModBlocks.skeletonFor(Carcasses.PINK_AXOLOTL.mobId());
+            case "brown_axolotl_head" -> ModBlocks.headFor(Carcasses.BROWN_AXOLOTL.mobId());
+            case "brown_axolotl_head_mount" -> ModBlocks.mountFor(Carcasses.BROWN_AXOLOTL.mobId());
+            case "brown_axolotl_skeleton" -> ModBlocks.skeletonFor(Carcasses.BROWN_AXOLOTL.mobId());
+            case "cyan_axolotl_head" -> ModBlocks.headFor(Carcasses.CYAN_AXOLOTL.mobId());
+            case "cyan_axolotl_head_mount" -> ModBlocks.mountFor(Carcasses.CYAN_AXOLOTL.mobId());
+            case "cyan_axolotl_skeleton" -> ModBlocks.skeletonFor(Carcasses.CYAN_AXOLOTL.mobId());
+            case "gold_axolotl_head" -> ModBlocks.headFor(Carcasses.GOLD_AXOLOTL.mobId());
+            case "gold_axolotl_head_mount" -> ModBlocks.mountFor(Carcasses.GOLD_AXOLOTL.mobId());
+            case "gold_axolotl_skeleton" -> ModBlocks.skeletonFor(Carcasses.GOLD_AXOLOTL.mobId());
+            // Pufferfish has no head, head mount, skeleton
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };
