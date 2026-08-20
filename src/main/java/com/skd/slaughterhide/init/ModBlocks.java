@@ -71,6 +71,18 @@ public final class ModBlocks {
         registerFamily(Carcasses.GRAY_LLAMA);
         registerFamily(Carcasses.SQUID);
         registerFamily(Carcasses.GLOW_SQUID);
+        // Cat variants (11 variants, all share ocelot shapes, have head+head_mount+skin, no skeleton, 0 cuts)
+        registerFamily(Carcasses.ALL_BLACK_CAT);
+        registerFamily(Carcasses.BLACK_CAT);
+        registerFamily(Carcasses.BSHORTHAIR_CAT);
+        registerFamily(Carcasses.CALICO_CAT);
+        registerFamily(Carcasses.JELLIE_CAT);
+        registerFamily(Carcasses.PERSIAN_CAT);
+        registerFamily(Carcasses.RAGDOLL_CAT);
+        registerFamily(Carcasses.RED_CAT);
+        registerFamily(Carcasses.SIAMESE_CAT);
+        registerFamily(Carcasses.TABBY_CAT);
+        registerFamily(Carcasses.WHITE_CAT);
     }
 
     private ModBlocks() {
