@@ -152,6 +152,8 @@ public final class Carcasses {
     // ===== SPECIAL MOBS =====
     /** Enderman carcass (8 cuts). */
     public static final CarcassDefinition ENDERMAN = buildENDERMAN();
+    /** Strider carcass (3 cuts). */
+    public static final CarcassDefinition STRIDER = buildSTRIDER();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
@@ -258,6 +260,7 @@ public final class Carcasses {
         register(PIGLIN_BRUTE);
         register(RAVAGER);
         register(ENDERMAN);
+        register(STRIDER);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -3493,14 +3496,54 @@ private static CarcassDefinition buildRAVAGER() {
             case WEST -> box(8.0, 0.0, 4.0, 16.0, 8.0, 12.0);
             default -> box(4.0, 0.0, 0.0, 12.0, 8.0, 4.0);
         };
-    }
-
-    private static VoxelShape endermanHeadMount(BlockState state) {
+    }    private static VoxelShape endermanHeadMount(BlockState state) {
         return switch (state.getValue(CarcassBlockProperty.FACING)) {
             case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
             case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
             case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
             default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    // ===== STRIDER =====
+
+    private static CarcassDefinition buildSTRIDER() {
+        return new CarcassDefinition(
+                "strider",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:strider")))
+                        .value(),
+            false,
+            false,
+            false,
+            false,
+            3,
+            Carcasses::striderHanging,
+            Carcasses::striderLying,
+            Carcasses::striderLying,  // no head
+            Carcasses::striderLying,  // no head mount
+            Carcasses::striderLying,  // no skeleton
+            // strider drops string
+            java.util.List.of(net.minecraft.world.item.Items.STRING),
+            null);
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery strider blocks.
+    private static VoxelShape striderHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(0.0, 6.0, -5.0, 16.0, 20.0, 11.0);
+            case EAST -> box(5.0, 6.0, 0.0, 21.0, 20.0, 16.0);
+            case WEST -> box(-5.0, 6.0, 0.0, 11.0, 20.0, 16.0);
+            default -> box(0.0, 6.0, 5.0, 16.0, 20.0, 21.0);
+        };
+    }
+
+    private static VoxelShape striderLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(0.0, 4.0, 0.0, 16.0, 18.0, 16.0);
+            case EAST -> box(0.0, 4.0, 0.0, 16.0, 18.0, 16.0);
+            case WEST -> box(0.0, 4.0, 0.0, 16.0, 18.0, 16.0);
+            default -> box(0.0, 4.0, 0.0, 16.0, 18.0, 16.0);
         };
     }
 }

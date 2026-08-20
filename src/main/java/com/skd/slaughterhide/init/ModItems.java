@@ -100,6 +100,8 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_ENDERMITE_CHUNKS = item("raw_endermite_chunks", Item::new);
     // Enderman
     public static final DeferredItem<Item> RAW_ENDERMAN_STEAK = item("raw_enderman_steak", Item::new);
+    // Strider
+    public static final DeferredItem<Item> RAW_STRIDER_MEAT = item("raw_strider_meat", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -531,6 +533,13 @@ public final class ModItems {
     public static final DeferredItem<Item> ENDERMAN_HEAD = blockItem("enderman_head", new Item.Properties());
     public static final DeferredItem<Item> ENDERMAN_HEAD_MOUNT = blockItem("enderman_head_mount", new Item.Properties());
     // Enderman has no skeleton
+
+    // Strider
+    public static final DeferredItem<Item> STRIDER_CARCASS =
+            placementItem("strider_carcass", Carcasses.STRIDER, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_STRIDER_CARCASS =
+            placementItem("drained_strider_carcass", Carcasses.STRIDER, true, new Item.Properties().stacksTo(8));
+    // Strider has no head, head mount, skeleton
 
     // Blue Axolotl
     public static final DeferredItem<Item> BLUE_AXOLOTL_CARCASS =
