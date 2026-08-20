@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/drowned_corpse_cut_2_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/drowned_drained",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/drowned_drained"
+  }
+}

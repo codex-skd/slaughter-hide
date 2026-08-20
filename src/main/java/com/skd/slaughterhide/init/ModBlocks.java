@@ -4,6 +4,7 @@ import com.skd.slaughterhide.CarcassDefinition;
 import com.skd.slaughterhide.Carcasses;
 import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.block.CarcassBlock;
+import com.skd.slaughterhide.block.CorpseBlock;
 import com.skd.slaughterhide.block.DrainedCarcassBlock;
 import com.skd.slaughterhide.block.HeadMountBlock;
 import com.skd.slaughterhide.block.HookBlock;
@@ -31,6 +32,7 @@ public final class ModBlocks {
     private static final Map<String, DeferredBlock<Block>> HEADS = new HashMap<>();
     private static final Map<String, DeferredBlock<Block>> MOUNTS = new HashMap<>();
     private static final Map<String, DeferredBlock<Block>> SKELETONS = new HashMap<>();
+    private static final Map<String, DeferredBlock<CorpseBlock>> CORPSE = new HashMap<>();
 
     /** Global attachment point a carcass item hangs from, see HookPlacementHandler. */
     public static final DeferredBlock<HookBlock> HOOK = register("hook", HookBlock::new);
@@ -123,6 +125,13 @@ public final class ModBlocks {
         }
     }
 
+    private static void registerCorpseFamily(CarcassDefinition definition) {
+        String mob = definition.mobId();
+        DeferredBlock<CorpseBlock> corpse = register(mob + "_corpse",
+                props -> new CorpseBlock(props, definition.corpseShapes()));
+        CORPSE.put(mob, corpse);
+    }
+
     private static <T extends Block> DeferredBlock<T> register(String name, Function<BlockBehaviour.Properties, T> factory) {
         return REGISTRY.registerBlock(name, factory);
     }
@@ -164,5 +173,16 @@ public final class ModBlocks {
         return java.util.stream.Stream.concat(FRESH.values().stream(), DRAINED.values().stream())
                 .map(DeferredBlock::get)
                 .toArray(Block[]::new);
+    }
+
+    /** Every corpse block, for the corpse block entity type. */
+    public static Block[] corpseBlocks() {
+        return CORPSE.values().stream()
+                .map(DeferredBlock::get)
+                .toArray(Block[]::new);
+    }
+
+    public static DeferredBlock<CorpseBlock> corpseFor(String mobId) {
+        return CORPSE.get(mobId);
     }
 }
