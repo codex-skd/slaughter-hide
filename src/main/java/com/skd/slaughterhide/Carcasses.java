@@ -149,6 +149,10 @@ public final class Carcasses {
     /** Ravager corpse. */
     public static final CarcassDefinition RAVAGER = buildRAVAGER();
 
+    // ===== SPECIAL MOBS =====
+    /** Enderman carcass (8 cuts). */
+    public static final CarcassDefinition ENDERMAN = buildENDERMAN();
+
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
     public static final CarcassDefinition ALL_BLACK_CAT = buildCatVariant("all_black_cat", 0);
@@ -253,6 +257,7 @@ public final class Carcasses {
         register(PIGLIN);
         register(PIGLIN_BRUTE);
         register(RAVAGER);
+        register(ENDERMAN);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -3437,4 +3442,65 @@ private static CarcassDefinition buildRAVAGER() {
             // ravager drops saddle
             java.util.List.of(net.minecraft.world.item.Items.SADDLE),
             Carcasses::ravagerCorpse);
-}}
+    }
+
+    // ===== SPECIAL MOBS =====
+
+    private static CarcassDefinition buildENDERMAN() {
+        return new CarcassDefinition(
+                "enderman",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:enderman")))
+                        .value(),
+            true,
+            true,
+            false,
+            false,
+            8,
+            Carcasses::endermanHanging,
+            Carcasses::endermanLying,
+            Carcasses::endermanHead,
+            Carcasses::endermanHeadMount,
+            Carcasses::endermanLying,  // no skeleton
+            // enderman drops ender_pearl
+            java.util.List.of(net.minecraft.world.item.Items.ENDER_PEARL),
+            null);
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery enderman blocks.
+    private static VoxelShape endermanHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.0, 8.0, 5.0, 12.0, 20.0, 9.0);
+            case EAST -> box(7.0, 8.0, 4.0, 11.0, 20.0, 12.0);
+            case WEST -> box(5.0, 8.0, 4.0, 9.0, 20.0, 12.0);
+            default -> box(4.0, 8.0, 7.0, 12.0, 20.0, 11.0);
+        };
+    }
+
+    private static VoxelShape endermanLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.0, 2.0, 12.0, 12.0, 14.0, 16.0);
+            case EAST -> box(0.0, 2.0, 4.0, 4.0, 14.0, 12.0);
+            case WEST -> box(12.0, 2.0, 4.0, 16.0, 14.0, 12.0);
+            default -> box(4.0, 2.0, 0.0, 12.0, 14.0, 4.0);
+        };
+    }
+
+    private static VoxelShape endermanHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.0, 0.0, 12.0, 12.0, 8.0, 16.0);
+            case EAST -> box(0.0, 0.0, 4.0, 8.0, 8.0, 12.0);
+            case WEST -> box(8.0, 0.0, 4.0, 16.0, 8.0, 12.0);
+            default -> box(4.0, 0.0, 0.0, 12.0, 8.0, 4.0);
+        };
+    }
+
+    private static VoxelShape endermanHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+}
