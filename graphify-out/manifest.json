@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/Carcasses.java": {
-    "mtime": 1787258224.0637114,
-    "ast_hash": "7d459f4ed4e180da8bb394bc28069aef",
+    "mtime": 1787259874.2956355,
+    "ast_hash": "d5fc370dea61768227e97bace4ffc430",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/ServerWorkScheduler.java": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787258002.182837,
-    "ast_hash": "9167c0836bca4c1e91ef73cab69ce156",
+    "mtime": 1787260079.6600165,
+    "ast_hash": "4d2bf64a8fa91be62fed104a8160f1a6",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787258077.617891,
-    "ast_hash": "fbb1c1bf55f9c8320c3eb626a67d9cb8",
+    "mtime": 1787260131.9064302,
+    "ast_hash": "f79256dc9b93750af4f9df3053bc47aa",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -7987,6 +7987,91 @@
   "src/main/resources/assets/slaughter_hide/textures/block/strider_drained.png": {
     "mtime": 1787258597.098697,
     "ast_hash": "49917d5c875dfb2f607af6db0150816f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/drained_sniffer_carcass_block.json": {
+    "mtime": 1787260166.479517,
+    "ast_hash": "559e080169e1084d56779915e8923c5b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/sniffer_carcass_block.json": {
+    "mtime": 1787260166.3802938,
+    "ast_hash": "f5d9c9dfeaca4397205fbf476088f09e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/sniffer_head.json": {
+    "mtime": 1787260166.6028948,
+    "ast_hash": "105fd7330007afdb0bc4806e005d3893",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_sniffer_carcass_block.json": {
+    "mtime": 1787260191.7775204,
+    "ast_hash": "d66bd9eae1d45429f63129a7147a6a10",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/sniffer_carcass_block.json": {
+    "mtime": 1787260191.6507971,
+    "ast_hash": "6a3b8dd234ee80fa7a84c1ede4e0db9f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/sniffer_head.json": {
+    "mtime": 1787260191.9750164,
+    "ast_hash": "2ed58d54dfb9ad898ec9d68dbc368f14",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_sniffer_carcass_block.json": {
+    "mtime": 1787260201.4592075,
+    "ast_hash": "a21c74b8faa923f22f1d117efffb9277",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_carcass_block.json": {
+    "mtime": 1787260201.3599079,
+    "ast_hash": "64e67dfbb3879a3ba75d6aaba024bd21",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_carcass_loot.json": {
+    "mtime": 1787260201.536462,
+    "ast_hash": "64bce99464ab22855d77e3b47d17be5d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_cut_1_drop.json": {
+    "mtime": 1787260201.6272676,
+    "ast_hash": "b9b41a49735dffb454c1b056891ef38d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_cut_2_drop.json": {
+    "mtime": 1787260201.7408748,
+    "ast_hash": "dd68796c9550f7e90689a52ef5ee5cb6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_cut_3_drop.json": {
+    "mtime": 1787260201.8276868,
+    "ast_hash": "b9cfa9e6db139d0bbea4e355669e572e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_fur_drop.json": {
+    "mtime": 1787260202.0886693,
+    "ast_hash": "e7e3ad877345ee479f1ddf30697fa057",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_head.json": {
+    "mtime": 1787260201.9270368,
+    "ast_hash": "78daa285b1723f971f734349889e099b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_head_drop.json": {
+    "mtime": 1787260202.0148385,
+    "ast_hash": "6764a0dadd1b3ea15e8a766303c34824",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.25.md": {
+    "mtime": 1787260373.3983502,
+    "ast_hash": "5c06684141f4942687baf72a0d1e5ce6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/sniffer.png": {
+    "mtime": 1787260276.703004,
+    "ast_hash": "5bfa10e38d907e3f60d7228275a7cf52",
     "semantic_hash": ""
   }
 }
