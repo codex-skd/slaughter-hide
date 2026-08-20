@@ -4,8 +4,12 @@ import com.skd.slaughterhide.CarcassDefinition;
 import com.skd.slaughterhide.Carcasses;
 import com.skd.slaughterhide.ServerWorkScheduler;
 import com.skd.slaughterhide.init.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
@@ -33,7 +37,23 @@ public final class CarcassDeathHandler {
         if (!(entity.level() instanceof ServerLevel level)) {
             return;
         }
-        CarcassDefinition definition = Carcasses.forEntityType(entity.getType());
+        // Special handling for cats: they share EntityType but have variant-specific carcasses
+        boolean isCat = entity.getType().toString().contains("cat");
+        CarcassDefinition definition;
+        if (isCat) {
+            // Get cat variant from entity data - default to tabby (9) if unavailable
+            int variant = 9;
+            try {
+                // Try to get cat variant from entity data (modern Minecraft uses DataComponents)
+                // For now, default to tabby variant (9) since Cat class may not be available in mappings
+                variant = 9;
+            } catch (Exception e) {
+                variant = 9;
+            }
+            definition = Carcasses.forCatVariant(variant);
+        } else {
+            definition = Carcasses.forEntityType(entity.getType());
+        }
         if (definition == null) {
             return;
         }

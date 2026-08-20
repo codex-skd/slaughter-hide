@@ -408,6 +408,96 @@ public final class ModItems {
     public static final DeferredItem<Item> GLOW_SQUID_HEAD = blockItem("glow_squid_head", new Item.Properties());
     // Glow Squid has no head mount, no skeleton
 
+    // Cat variants (11 variants, all share ocelot shapes, have head + head_mount + skin, no skeleton)
+    // all_black_cat (variant 0)
+    public static final DeferredItem<Item> ALL_BLACK_CAT_CARCASS =
+            placementItem("all_black_cat_carcass", Carcasses.ALL_BLACK_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_ALL_BLACK_CAT_CARCASS =
+            placementItem("drained_all_black_cat_carcass", Carcasses.ALL_BLACK_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> ALL_BLACK_CAT_HEAD = blockItem("all_black_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> ALL_BLACK_CAT_HEAD_MOUNT = blockItem("all_black_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> ALL_BLACK_CAT_SKIN = item("all_black_cat_skin", Item::new);
+    // Black Cat (variant 1)
+    public static final DeferredItem<Item> BLACK_CAT_CARCASS =
+            placementItem("black_cat_carcass", Carcasses.BLACK_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_BLACK_CAT_CARCASS =
+            placementItem("drained_black_cat_carcass", Carcasses.BLACK_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> BLACK_CAT_HEAD = blockItem("black_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> BLACK_CAT_HEAD_MOUNT = blockItem("black_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> BLACK_CAT_SKIN = item("black_cat_skin", Item::new);
+    // British Shorthair (variant 2)
+    public static final DeferredItem<Item> BSHORTHAIR_CAT_CARCASS =
+            placementItem("bshorthair_cat_carcass", Carcasses.BSHORTHAIR_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_BSHORTHAIR_CAT_CARCASS =
+            placementItem("drained_bshorthair_cat_carcass", Carcasses.BSHORTHAIR_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> BSHORTHAIR_CAT_HEAD = blockItem("bshorthair_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> BSHORTHAIR_CAT_HEAD_MOUNT = blockItem("bshorthair_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> BSHORTHAIR_CAT_SKIN = item("bshorthair_cat_skin", Item::new);
+    // Calico (variant 3)
+    public static final DeferredItem<Item> CALICO_CAT_CARCASS =
+            placementItem("calico_cat_carcass", Carcasses.CALICO_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_CALICO_CAT_CARCASS =
+            placementItem("drained_calico_cat_carcass", Carcasses.CALICO_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> CALICO_CAT_HEAD = blockItem("calico_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> CALICO_CAT_HEAD_MOUNT = blockItem("calico_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> CALICO_CAT_SKIN = item("calico_cat_skin", Item::new);
+    // Jellie (variant 4)
+    public static final DeferredItem<Item> JELLIE_CAT_CARCASS =
+            placementItem("jellie_cat_carcass", Carcasses.JELLIE_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_JELLIE_CAT_CARCASS =
+            placementItem("drained_jellie_cat_carcass", Carcasses.JELLIE_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> JELLIE_CAT_HEAD = blockItem("jellie_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> JELLIE_CAT_HEAD_MOUNT = blockItem("jellie_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> JELLIE_CAT_SKIN = item("jellie_cat_skin", Item::new);
+    // Persian (variant 5)
+    public static final DeferredItem<Item> PERSIAN_CAT_CARCASS =
+            placementItem("persian_cat_carcass", Carcasses.PERSIAN_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_PERSIAN_CAT_CARCASS =
+            placementItem("drained_persian_cat_carcass", Carcasses.PERSIAN_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> PERSIAN_CAT_HEAD = blockItem("persian_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> PERSIAN_CAT_HEAD_MOUNT = blockItem("persian_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> PERSIAN_CAT_SKIN = item("persian_cat_skin", Item::new);
+    // Ragdoll (variant 6)
+    public static final DeferredItem<Item> RAGDOLL_CAT_CARCASS =
+            placementItem("ragdoll_cat_carcass", Carcasses.RAGDOLL_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_RAGDOLL_CAT_CARCASS =
+            placementItem("drained_ragdoll_cat_carcass", Carcasses.RAGDOLL_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> RAGDOLL_CAT_HEAD = blockItem("ragdoll_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> RAGDOLL_CAT_HEAD_MOUNT = blockItem("ragdoll_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> RAGDOLL_CAT_SKIN = item("ragdoll_cat_skin", Item::new);
+    // Red Cat (variant 7)
+    public static final DeferredItem<Item> RED_CAT_CARCASS =
+            placementItem("red_cat_carcass", Carcasses.RED_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_RED_CAT_CARCASS =
+            placementItem("drained_red_cat_carcass", Carcasses.RED_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> RED_CAT_HEAD = blockItem("red_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> RED_CAT_HEAD_MOUNT = blockItem("red_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> RED_CAT_SKIN = item("red_cat_skin", Item::new);
+    // Siamese (variant 8)
+    public static final DeferredItem<Item> SIAMESE_CAT_CARCASS =
+            placementItem("siamese_cat_carcass", Carcasses.SIAMESE_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SIAMESE_CAT_CARCASS =
+            placementItem("drained_siamese_cat_carcass", Carcasses.SIAMESE_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> SIAMESE_CAT_HEAD = blockItem("siamese_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> SIAMESE_CAT_HEAD_MOUNT = blockItem("siamese_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> SIAMESE_CAT_SKIN = item("siamese_cat_skin", Item::new);
+    // Tabby (variant 9)
+    public static final DeferredItem<Item> TABBY_CAT_CARCASS =
+            placementItem("tabby_cat_carcass", Carcasses.TABBY_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_TABBY_CAT_CARCASS =
+            placementItem("drained_tabby_cat_carcass", Carcasses.TABBY_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> TABBY_CAT_HEAD = blockItem("tabby_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> TABBY_CAT_HEAD_MOUNT = blockItem("tabby_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> TABBY_CAT_SKIN = item("tabby_cat_skin", Item::new);
+    // White Cat (variant 10)
+    public static final DeferredItem<Item> WHITE_CAT_CARCASS =
+            placementItem("white_cat_carcass", Carcasses.WHITE_CAT, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_WHITE_CAT_CARCASS =
+            placementItem("drained_white_cat_carcass", Carcasses.WHITE_CAT, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> WHITE_CAT_HEAD = blockItem("white_cat_head", new Item.Properties());
+    public static final DeferredItem<Item> WHITE_CAT_HEAD_MOUNT = blockItem("white_cat_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> WHITE_CAT_SKIN = item("white_cat_skin", Item::new);
+
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
     /** Per-mob carcass item, useful for lookup in generified handlers. */
@@ -579,6 +669,61 @@ public final class ModItems {
         DRAINED_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), DRAINED_GLOW_SQUID_CARCASS);
         HEAD_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), GLOW_SQUID_HEAD);
         // Glow Squid has no head mount, no skeleton
+        FRESH_BY_MOB.put(Carcasses.ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.ALL_BLACK_CAT.mobId(), DRAINED_ALL_BLACK_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT_HEAD_MOUNT);
+        // all_black_cat has no skeleton
+        FRESH_BY_MOB.put(Carcasses.BLACK_CAT.mobId(), BLACK_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.BLACK_CAT.mobId(), DRAINED_BLACK_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.BLACK_CAT.mobId(), BLACK_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.BLACK_CAT.mobId(), BLACK_CAT_HEAD_MOUNT);
+        // black_cat has no skeleton
+        FRESH_BY_MOB.put(Carcasses.BSHORTHAIR_CAT.mobId(), BSHORTHAIR_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.BSHORTHAIR_CAT.mobId(), DRAINED_BSHORTHAIR_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.BSHORTHAIR_CAT.mobId(), BSHORTHAIR_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.BSHORTHAIR_CAT.mobId(), BSHORTHAIR_CAT_HEAD_MOUNT);
+        // bshorthair has no skeleton
+        FRESH_BY_MOB.put(Carcasses.CALICO_CAT.mobId(), CALICO_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.CALICO_CAT.mobId(), DRAINED_CALICO_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.CALICO_CAT.mobId(), CALICO_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.CALICO_CAT.mobId(), CALICO_CAT_HEAD_MOUNT);
+        // calico has no skeleton
+        FRESH_BY_MOB.put(Carcasses.JELLIE_CAT.mobId(), JELLIE_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.JELLIE_CAT.mobId(), DRAINED_JELLIE_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.JELLIE_CAT.mobId(), JELLIE_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.JELLIE_CAT.mobId(), JELLIE_CAT_HEAD_MOUNT);
+        // jellie has no skeleton
+        FRESH_BY_MOB.put(Carcasses.PERSIAN_CAT.mobId(), PERSIAN_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.PERSIAN_CAT.mobId(), DRAINED_PERSIAN_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.PERSIAN_CAT.mobId(), PERSIAN_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.PERSIAN_CAT.mobId(), PERSIAN_CAT_HEAD_MOUNT);
+        // persian has no skeleton
+        FRESH_BY_MOB.put(Carcasses.RAGDOLL_CAT.mobId(), RAGDOLL_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.RAGDOLL_CAT.mobId(), DRAINED_RAGDOLL_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.RAGDOLL_CAT.mobId(), RAGDOLL_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.RAGDOLL_CAT.mobId(), RAGDOLL_CAT_HEAD_MOUNT);
+        // ragdoll has no skeleton
+        FRESH_BY_MOB.put(Carcasses.RED_CAT.mobId(), RED_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.RED_CAT.mobId(), DRAINED_RED_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.RED_CAT.mobId(), RED_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.RED_CAT.mobId(), RED_CAT_HEAD_MOUNT);
+        // red_cat has no skeleton
+        FRESH_BY_MOB.put(Carcasses.SIAMESE_CAT.mobId(), SIAMESE_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SIAMESE_CAT.mobId(), DRAINED_SIAMESE_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.SIAMESE_CAT.mobId(), SIAMESE_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.SIAMESE_CAT.mobId(), SIAMESE_CAT_HEAD_MOUNT);
+        // siamese has no skeleton
+        FRESH_BY_MOB.put(Carcasses.TABBY_CAT.mobId(), TABBY_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.TABBY_CAT.mobId(), DRAINED_TABBY_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.TABBY_CAT.mobId(), TABBY_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.TABBY_CAT.mobId(), TABBY_CAT_HEAD_MOUNT);
+        // tabby has no skeleton
+        FRESH_BY_MOB.put(Carcasses.WHITE_CAT.mobId(), WHITE_CAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.WHITE_CAT.mobId(), DRAINED_WHITE_CAT_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.WHITE_CAT.mobId(), WHITE_CAT_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.WHITE_CAT.mobId(), WHITE_CAT_HEAD_MOUNT);
+        // white_cat has no skeleton
     }
 
     private ModItems() {
@@ -672,6 +817,39 @@ public final class ModItems {
             // Squid has no head mount
             case "glow_squid_head" -> ModBlocks.headFor(Carcasses.GLOW_SQUID.mobId());
             // Glow Squid has no head mount
+            case "all_black_cat_head" -> ModBlocks.headFor(Carcasses.ALL_BLACK_CAT.mobId());
+            case "all_black_cat_head_mount" -> ModBlocks.mountFor(Carcasses.ALL_BLACK_CAT.mobId());
+            // all_black_cat has no skeleton
+            case "black_cat_head" -> ModBlocks.headFor(Carcasses.BLACK_CAT.mobId());
+            case "black_cat_head_mount" -> ModBlocks.mountFor(Carcasses.BLACK_CAT.mobId());
+            // black_cat has no skeleton
+            case "bshorthair_cat_head" -> ModBlocks.headFor(Carcasses.BSHORTHAIR_CAT.mobId());
+            case "bshorthair_cat_head_mount" -> ModBlocks.mountFor(Carcasses.BSHORTHAIR_CAT.mobId());
+            // bshorthair has no skeleton
+            case "calico_cat_head" -> ModBlocks.headFor(Carcasses.CALICO_CAT.mobId());
+            case "calico_cat_head_mount" -> ModBlocks.mountFor(Carcasses.CALICO_CAT.mobId());
+            // calico has no skeleton
+            case "jellie_cat_head" -> ModBlocks.headFor(Carcasses.JELLIE_CAT.mobId());
+            case "jellie_cat_head_mount" -> ModBlocks.mountFor(Carcasses.JELLIE_CAT.mobId());
+            // jellie has no skeleton
+            case "persian_cat_head" -> ModBlocks.headFor(Carcasses.PERSIAN_CAT.mobId());
+            case "persian_cat_head_mount" -> ModBlocks.mountFor(Carcasses.PERSIAN_CAT.mobId());
+            // persian has no skeleton
+            case "ragdoll_cat_head" -> ModBlocks.headFor(Carcasses.RAGDOLL_CAT.mobId());
+            case "ragdoll_cat_head_mount" -> ModBlocks.mountFor(Carcasses.RAGDOLL_CAT.mobId());
+            // ragdoll has no skeleton
+            case "red_cat_head" -> ModBlocks.headFor(Carcasses.RED_CAT.mobId());
+            case "red_cat_head_mount" -> ModBlocks.mountFor(Carcasses.RED_CAT.mobId());
+            // red_cat has no skeleton
+            case "siamese_cat_head" -> ModBlocks.headFor(Carcasses.SIAMESE_CAT.mobId());
+            case "siamese_cat_head_mount" -> ModBlocks.mountFor(Carcasses.SIAMESE_CAT.mobId());
+            // siamese has no skeleton
+            case "tabby_cat_head" -> ModBlocks.headFor(Carcasses.TABBY_CAT.mobId());
+            case "tabby_cat_head_mount" -> ModBlocks.mountFor(Carcasses.TABBY_CAT.mobId());
+            // tabby has no skeleton
+            case "white_cat_head" -> ModBlocks.headFor(Carcasses.WHITE_CAT.mobId());
+            case "white_cat_head_mount" -> ModBlocks.mountFor(Carcasses.WHITE_CAT.mobId());
+            // white_cat has no skeleton
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

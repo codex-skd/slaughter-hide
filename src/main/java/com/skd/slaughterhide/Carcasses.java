@@ -97,6 +97,45 @@ public final class Carcasses {
     /** Thirty-sixth: glowsquid. */
     public static final CarcassDefinition GLOW_SQUID = buildGLOW_SQUID();
 
+    // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
+    /** Cat variant: all_black_cat (variant 0) */
+    public static final CarcassDefinition ALL_BLACK_CAT = buildCatVariant("all_black_cat", 0);
+    /** Cat variant: black_cat (variant 1) */
+    public static final CarcassDefinition BLACK_CAT = buildCatVariant("black_cat", 1);
+    /** Cat variant: bshorthair (variant 2) */
+    public static final CarcassDefinition BSHORTHAIR_CAT = buildCatVariant("bshorthair", 2);
+    /** Cat variant: calico (variant 3) */
+    public static final CarcassDefinition CALICO_CAT = buildCatVariant("calico", 3);
+    /** Cat variant: jellie (variant 4) */
+    public static final CarcassDefinition JELLIE_CAT = buildCatVariant("jellie", 4);
+    /** Cat variant: persian (variant 5) */
+    public static final CarcassDefinition PERSIAN_CAT = buildCatVariant("persian", 5);
+    /** Cat variant: ragdoll (variant 6) */
+    public static final CarcassDefinition RAGDOLL_CAT = buildCatVariant("ragdoll", 6);
+    /** Cat variant: red_cat (variant 7) */
+    public static final CarcassDefinition RED_CAT = buildCatVariant("red_cat", 7);
+    /** Cat variant: siamese (variant 8) */
+    public static final CarcassDefinition SIAMESE_CAT = buildCatVariant("siamese", 8);
+    /** Cat variant: tabby (variant 9) */
+    public static final CarcassDefinition TABBY_CAT = buildCatVariant("tabby", 9);
+    /** Cat variant: white_cat (variant 10) */
+    public static final CarcassDefinition WHITE_CAT = buildCatVariant("white_cat", 10);
+
+    /** Map of cat variant ID -> CarcassDefinition for all 11 cat variants. */
+    public static final Map<Integer, CarcassDefinition> CAT_VARIANTS = new java.util.HashMap<>(java.util.Map.ofEntries(
+            java.util.Map.entry(0, ALL_BLACK_CAT),
+            java.util.Map.entry(1, BLACK_CAT),
+            java.util.Map.entry(2, BSHORTHAIR_CAT),
+            java.util.Map.entry(3, CALICO_CAT),
+            java.util.Map.entry(4, JELLIE_CAT),
+            java.util.Map.entry(5, PERSIAN_CAT),
+            java.util.Map.entry(6, RAGDOLL_CAT),
+            java.util.Map.entry(7, RED_CAT),
+            java.util.Map.entry(8, SIAMESE_CAT),
+            java.util.Map.entry(9, TABBY_CAT),
+            java.util.Map.entry(10, WHITE_CAT)
+    ));
+
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
         BY_MOB_ID.put(definition.mobId(), definition);
@@ -139,6 +178,18 @@ public final class Carcasses {
         register(GRAY_LLAMA);
         register(SQUID);
         register(GLOW_SQUID);
+        // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
+        BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
+        BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
+        BY_MOB_ID.put(BSHORTHAIR_CAT.mobId(), BSHORTHAIR_CAT);
+        BY_MOB_ID.put(CALICO_CAT.mobId(), CALICO_CAT);
+        BY_MOB_ID.put(JELLIE_CAT.mobId(), JELLIE_CAT);
+        BY_MOB_ID.put(PERSIAN_CAT.mobId(), PERSIAN_CAT);
+        BY_MOB_ID.put(RAGDOLL_CAT.mobId(), RAGDOLL_CAT);
+        BY_MOB_ID.put(RED_CAT.mobId(), RED_CAT);
+        BY_MOB_ID.put(SIAMESE_CAT.mobId(), SIAMESE_CAT);
+        BY_MOB_ID.put(TABBY_CAT.mobId(), TABBY_CAT);
+        BY_MOB_ID.put(WHITE_CAT.mobId(), WHITE_CAT);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -2064,7 +2115,32 @@ private static CarcassDefinition buildDONKEY() {
                 java.util.List.of(net.minecraft.world.item.Items.LEATHER));
     }
 
-    // Shapes below are ported 1:1 from the original Butchery squid blocks.
+    // ===== CAT VARIANT BUILDER (all variants share ocelot shapes) =====
+    private static CarcassDefinition buildCatVariant(String mobId, int variant) {
+        return new CarcassDefinition(
+                mobId,
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:cat")))
+                        .value(),
+                true,
+                true,
+                false,
+                true,
+                0,  // cats have no meat cuts, only head + skin
+                Carcasses::ocelotHanging,
+                Carcasses::ocelotLying,
+                Carcasses::ocelotHead,
+                Carcasses::ocelotHeadMount,
+                Carcasses::ocelotLying,  // no skeleton
+                // cats don't have vanilla drops
+                java.util.List.of());
+    }
+
+    /** Returns the carcass definition for a specific cat variant (0-10). */
+    public static CarcassDefinition forCatVariant(int variant) {
+        return CAT_VARIANTS.getOrDefault(variant, CAT_VARIANTS.get(9)); // default to tabby
+    }
+// Shapes below are ported 1:1 from the original Butchery squid blocks.
     private static VoxelShape squidHanging(BlockState state) {
         return switch (state.getValue(CarcassBlockProperty.FACING)) {
             case NORTH -> box(2.0, 3.1, 0.7, 14.0, 19.1, 12.7);
