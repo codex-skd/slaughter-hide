@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/Carcasses.java": {
-    "mtime": 1787238632.6101694,
-    "ast_hash": "016a97d1950c73e65ed435ff1758b545",
+    "mtime": 1787255211.4496858,
+    "ast_hash": "3c754b45cabec6bf99a399eac002f3f1",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/ServerWorkScheduler.java": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787228925.4182794,
-    "ast_hash": "15f86561262c9079b829e8a604516651",
+    "mtime": 1787255274.6351666,
+    "ast_hash": "74b25b3d6b342adca0654cc63f6604dd",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787229331.5750906,
-    "ast_hash": "9726fcf01a7deb1d5f2a415f42c67e2d",
+    "mtime": 1787255781.2014792,
+    "ast_hash": "b44f474685c3e872876925f1b3d6a82b",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -7762,6 +7762,166 @@
   "src/main/resources/assets/slaughter_hide/textures/item/zoglin_skin.png": {
     "mtime": 318207600.0,
     "ast_hash": "03f1741cc57911c79cb30e8af6d9efa3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/drained_enderman_carcass.json": {
+    "mtime": 1787255477.9200943,
+    "ast_hash": "78b422b3ab98a3d74c32e268e6bca6ac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/enderman_carcass.json": {
+    "mtime": 1787255477.8262432,
+    "ast_hash": "7473f98c30b13522f1b23b071b58f52f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/enderman_head.json": {
+    "mtime": 1787255478.0096662,
+    "ast_hash": "1c6f161f2b924a9cf414336d74045faa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/enderman_head_mount.json": {
+    "mtime": 1787255478.106299,
+    "ast_hash": "bc46cfd89564f58ed830278329f6ca1c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/hanging_drained_enderman_carcass.json": {
+    "mtime": 1787255478.2872157,
+    "ast_hash": "ea986346b7d2cf301d9354c7c7ed0735",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/hanging_enderman_carcass.json": {
+    "mtime": 1787255478.216004,
+    "ast_hash": "383ad94f57216682e043de0a4b433183",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_enderman_carcass.json": {
+    "mtime": 1787255552.4554324,
+    "ast_hash": "c7c2597123645018e15fc4a0f503752b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/enderman_carcass.json": {
+    "mtime": 1787255548.013968,
+    "ast_hash": "c7c2597123645018e15fc4a0f503752b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/enderman_head.json": {
+    "mtime": 1787255556.898094,
+    "ast_hash": "71127fd5042d15d054c12908119f670d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/enderman_head_mount.json": {
+    "mtime": 1787255562.0166967,
+    "ast_hash": "4ba76e7e410bc4e22a512e265cc4e24e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/hanging_drained_enderman_carcass.json": {
+    "mtime": 1787255571.530504,
+    "ast_hash": "c7c2597123645018e15fc4a0f503752b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/hanging_enderman_carcass.json": {
+    "mtime": 1787255566.6018763,
+    "ast_hash": "c7c2597123645018e15fc4a0f503752b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_enderman_carcass.json": {
+    "mtime": 1787255586.4452076,
+    "ast_hash": "7634691eef8c0321c83e4bad244a7ad6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_carcass.json": {
+    "mtime": 1787255582.3770795,
+    "ast_hash": "9d57196a5cd8657e90812bf75c38e364",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_carcass_loot.json": {
+    "mtime": 1787255590.481591,
+    "ast_hash": "e6719754d251fcf030429793b738a2b4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_1_drop.json": {
+    "mtime": 1787255594.511873,
+    "ast_hash": "880b52a4478fa482317e7230694f7580",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_2_drop.json": {
+    "mtime": 1787255599.195011,
+    "ast_hash": "95c05c5c52eaa876222f0e73d91e41ee",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_3_drop.json": {
+    "mtime": 1787255604.7503953,
+    "ast_hash": "bef2c616c9e8914e00d7bf33cc7eac95",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_4_drop.json": {
+    "mtime": 1787255609.051958,
+    "ast_hash": "eaddcfc8ead897423af19f23764d7bcd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_5_drop.json": {
+    "mtime": 1787255613.8178926,
+    "ast_hash": "41f04a62537ab2a9d88d5f0ef8291cff",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_6_drop.json": {
+    "mtime": 1787255618.1807408,
+    "ast_hash": "81a449ed9ee5daeda673367d6bdc7f26",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_7_drop.json": {
+    "mtime": 1787255622.6116562,
+    "ast_hash": "2ffd85763e54b1ffab8a32bff546670d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_8_drop.json": {
+    "mtime": 1787255627.0613346,
+    "ast_hash": "8593486e493072c5f6291b9e498d714d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_head.json": {
+    "mtime": 1787255632.7997398,
+    "ast_hash": "45d3283e4f1257fc91be46ae1706cea5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_head_drop.json": {
+    "mtime": 1787255637.0990636,
+    "ast_hash": "a079febc0846eb3c97714fe575538cdd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_head_mount.json": {
+    "mtime": 1787255641.6407833,
+    "ast_hash": "107d29e573538afee1e4d2a1fff66628",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/hanging_drained_enderman_carcass.json": {
+    "mtime": 1787255650.4313412,
+    "ast_hash": "188c2cd95f6b7f07d8c597e2494f677c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/hanging_enderman_carcass.json": {
+    "mtime": 1787255645.9466524,
+    "ast_hash": "44b22278ca8136954b06b4bade39d428",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.23.md": {
+    "mtime": 1787255985.187176,
+    "ast_hash": "73129177645aa6f7c8e56babf114c687",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/enderman.png": {
+    "mtime": 1787255716.4306607,
+    "ast_hash": "c712c11c813a7d1e3c5d966abd1cb026",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/enderman_2.png": {
+    "mtime": 1787255722.3680377,
+    "ast_hash": "8f9418e16f63508032bd154cb9e951a8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/enderman_head.png": {
+    "mtime": 1787255726.923545,
+    "ast_hash": "fd90737c89c5d13c360d0e982ab7a181",
     "semantic_hash": ""
   }
 }
