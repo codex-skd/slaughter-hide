@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/husk_head",
+  "textures": {
+    "all": "slaughter_hide:block/husk",
+    "particle": "minecraft:block/sand",
+    "0": "slaughter_hide:block/husk"
+  }
+}

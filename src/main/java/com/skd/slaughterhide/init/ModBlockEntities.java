@@ -2,6 +2,7 @@ package com.skd.slaughterhide.init;
 
 import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.block.entity.CarcassBlockEntity;
+import com.skd.slaughterhide.block.entity.CorpseBlockEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -24,6 +25,11 @@ public final class ModBlockEntities {
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CarcassBlockEntity>> CARCASS =
             REGISTRY.register("carcass",
                     () -> new BlockEntityType<>(CarcassBlockEntity::new, ModBlocks.carcassBlocks()));
+
+    // Corpse block entity for humanoid mobs (container-based, 9 slots)
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CorpseBlockEntity>> CORPSE =
+            REGISTRY.register("corpse",
+                    () -> new BlockEntityType<>(CorpseBlockEntity::new, ModBlocks.corpseBlocks()));
 
     private ModBlockEntities() {
     }

@@ -127,6 +127,28 @@ public final class Carcasses {
     /** Fifty-first: small_magma_cube. */
     public static final CarcassDefinition SMALL_MAGMA_CUBE = buildSMALL_MAGMA_CUBE();
 
+    // ===== CORPSE BLOCK MOBS (humanoids with organ harvesting) =====
+    /** Zombie corpse. */
+    public static final CarcassDefinition ZOMBIE = buildZOMBIE();
+    /** Skeleton corpse. */
+    public static final CarcassDefinition SKELETON = buildSKELETON();
+    /** Drowned corpse. */
+    public static final CarcassDefinition DROWNED = buildDROWNED();
+    /** Husk corpse. */
+    public static final CarcassDefinition HUSK = buildHUSK();
+    /** Vindicator corpse. */
+    public static final CarcassDefinition VINDICATOR = buildVINDICATOR();
+    /** Evoker corpse. */
+    public static final CarcassDefinition EVOKER = buildEVOKER();
+    /** Witch corpse. */
+    public static final CarcassDefinition WITCH = buildWITCH();
+    /** Piglin corpse. */
+    public static final CarcassDefinition PIGLIN = buildPIGLIN();
+    /** Piglin Brute corpse. */
+    public static final CarcassDefinition PIGLIN_BRUTE = buildPIGLIN_BRUTE();
+    /** Ravager corpse. */
+    public static final CarcassDefinition RAVAGER = buildRAVAGER();
+
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
     public static final CarcassDefinition ALL_BLACK_CAT = buildCatVariant("all_black_cat", 0);
@@ -221,6 +243,16 @@ public final class Carcasses {
         register(MAGMA_CUBE);
         register(MEDIUM_SLIME);
         register(SMALL_SLIME);
+        register(ZOMBIE);
+        register(SKELETON);
+        register(DROWNED);
+        register(HUSK);
+        register(VINDICATOR);
+        register(EVOKER);
+        register(WITCH);
+        register(PIGLIN);
+        register(PIGLIN_BRUTE);
+        register(RAVAGER);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -2783,4 +2815,626 @@ private static CarcassDefinition buildDONKEY() {
                 java.util.List.of(net.minecraft.world.item.Items.MAGMA_CREAM),
                 null);
     }
+
+    // Shapes below are ported 1:1 from the original Butchery zombie corpse blocks.
+    private static VoxelShape zombieHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(3.9, 8.0, 5.0, 11.9, 20.0, 9.0), box(-0.09316, 7.90942, 4.93632, 3.90684, 19.90942, 8.93632), box(11.90684, 8.09058, 5.06368, 15.90684, 20.09058, 9.06368), box(3.90567, -4.0, 4.99206, 7.90567, 8.0, 8.99206), box(7.90932, -3.99464, 5.0, 11.90932, 8.00536, 9.0));
+            case EAST -> Shapes.or(box(7.0, 8.0, 3.9, 11.0, 20.0, 11.9), box(7.06368, 7.90942, -0.09316, 11.06368, 19.90942, 3.90684), box(6.93632, 8.09058, 11.90684, 10.93632, 20.09058, 15.90684), box(7.00794, -4.0, 3.90567, 11.00794, 8.0, 7.90567), box(7.0, -3.99464, 7.90932, 11.0, 8.00536, 11.90932));
+            case WEST -> Shapes.or(box(5.0, 8.0, 4.1, 9.0, 20.0, 12.1), box(4.93632, 7.90942, 12.09316, 8.93632, 19.90942, 16.09316), box(5.06368, 8.09058, 0.09316, 9.06368, 20.09058, 4.09316), box(4.99206, -4.0, 8.09433, 8.99206, 8.0, 12.09433), box(5.0, -3.99464, 4.09068, 9.0, 8.00536, 8.09068));
+            default -> Shapes.or(box(4.1, 8.0, 7.0, 12.1, 20.0, 11.0), box(12.09316, 7.90942, 7.06368, 16.09316, 19.90942, 11.06368), box(0.09316, 8.09058, 6.93632, 4.09316, 20.09058, 10.93632), box(8.09433, -4.0, 7.00794, 12.09433, 8.0, 11.00794), box(4.09068, -3.99464, 7.0, 8.09068, 8.00536, 11.0));
+    };
 }
+
+private static VoxelShape zombieLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(3.9, 4.0, 10.0, 11.9, 16.0, 14.0);
+        case EAST -> box(2.0, 4.0, 3.9, 6.0, 16.0, 11.9);
+        case WEST -> box(10.0, 4.0, 4.1, 14.0, 16.0, 12.1);
+        default -> box(4.1, 4.0, 2.0, 12.1, 16.0, 6.0);
+    };
+}
+
+private static VoxelShape zombieHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape zombieHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape zombieCorpse(BlockState state) {
+    return zombieHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery skeleton corpse blocks.
+private static VoxelShape skeletonHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> Shapes.or(box(4.0, 7.025, 5.175, 12.0, 19.025, 9.175), box(4.0, 2.025, 10.175, 12.0, 14.025, 14.175), box(1.825, 2.025, 4.0, 5.825, 14.025, 12.0), box(10.175, 2.025, 4.0, 14.175, 14.025, 12.0));
+        case EAST -> Shapes.or(box(6.825, 7.025, 4.0, 10.825, 19.025, 12.0), box(1.825, 2.025, 4.0, 5.825, 14.025, 12.0), box(10.175, 2.025, 4.0, 14.175, 14.025, 12.0));
+        case WEST -> Shapes.or(box(5.175, 7.025, 4.0, 9.175, 19.025, 12.0), box(5.175, 2.025, 4.0, 9.175, 14.025, 12.0), box(10.175, 2.025, 4.0, 14.175, 14.025, 12.0));
+        default -> Shapes.or(box(4.0, 7.025, 5.175, 12.0, 19.025, 9.175), box(4.0, 2.025, 10.175, 12.0, 14.025, 14.175), box(2.025, 2.025, 4.0, 5.825, 14.025, 12.0), box(12.0, 2.025, 4.0, 14.175, 14.025, 12.0));
+    };
+}
+
+private static VoxelShape skeletonLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 2.025, 10.175, 12.0, 14.025, 14.175);
+        case EAST -> box(1.825, 2.025, 4.0, 5.825, 14.025, 12.0);
+        case WEST -> box(10.175, 2.025, 4.0, 14.175, 14.025, 12.0);
+        default -> box(4.0, 2.025, 1.825, 12.0, 14.025, 5.825);
+    };
+}
+
+private static VoxelShape skeletonHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape skeletonHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape skeletonCorpse(BlockState state) {
+    return skeletonHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery drowned corpse blocks.
+private static VoxelShape drownedHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> Shapes.or(box(3.9, 8.0, 5.0, 11.9, 20.0, 9.0), box(-0.09316, 7.90942, 4.93632, 3.90684, 19.90942, 8.93632), box(11.90684, 8.09058, 5.06368, 15.90684, 20.09058, 9.06368), box(3.90567, -4.0, 4.99206, 7.90567, 8.0, 8.99206), box(7.90932, -3.99464, 5.0, 11.90932, 8.00536, 9.0));
+        case EAST -> Shapes.or(box(7.0, 8.0, 3.9, 11.0, 20.0, 11.9), box(7.06368, 7.90942, -0.09316, 11.06368, 19.90942, 3.90684), box(6.93632, 8.09058, 11.90684, 10.93632, 20.09058, 15.90684), box(7.00794, -4.0, 3.90567, 11.00794, 8.0, 7.90567), box(7.0, -3.99464, 7.90932, 11.0, 8.00536, 11.90932));
+        case WEST -> Shapes.or(box(5.0, 8.0, 4.1, 9.0, 20.0, 12.1), box(4.93632, 7.90942, 12.09316, 8.93632, 19.90942, 16.09316), box(5.06368, 8.09058, 0.09316, 9.06368, 20.09058, 4.09316), box(4.99206, -4.0, 8.09433, 8.99206, 8.0, 12.09433), box(5.0, -3.99464, 4.09068, 9.0, 8.00536, 8.09068));
+        default -> Shapes.or(box(4.1, 8.0, 7.0, 12.1, 20.0, 11.0), box(12.09316, 7.90942, 7.06368, 16.09316, 19.90942, 11.06368), box(0.09316, 8.09058, 6.93632, 4.09316, 20.09058, 10.93632), box(8.09433, -4.0, 7.00794, 12.09433, 8.0, 11.00794), box(4.09068, -3.99464, 7.0, 8.09068, 8.00536, 11.0));
+    };
+}
+
+private static VoxelShape drownedLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(3.9, 4.0, 10.0, 11.9, 16.0, 14.0);
+        case EAST -> box(2.0, 4.0, 3.9, 6.0, 16.0, 11.9);
+        case WEST -> box(10.0, 4.0, 4.1, 14.0, 16.0, 12.1);
+        default -> box(4.1, 4.0, 2.0, 12.1, 16.0, 6.0);
+    };
+}
+
+private static VoxelShape drownedHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape drownedHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape drownedCorpse(BlockState state) {
+    return drownedHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery husk corpse blocks.
+private static VoxelShape huskHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> Shapes.or(box(3.9, 8.0, 5.0, 11.9, 20.0, 9.0), box(-0.09316, 7.90942, 4.93632, 3.90684, 19.90942, 8.93632), box(11.90684, 8.09058, 5.06368, 15.90684, 20.09058, 9.06368), box(3.90567, -4.0, 4.99206, 7.90567, 8.0, 8.99206), box(7.90932, -3.99464, 5.0, 11.90932, 8.00536, 9.0));
+        case EAST -> Shapes.or(box(7.0, 8.0, 3.9, 11.0, 20.0, 11.9), box(7.06368, 7.90942, -0.09316, 11.06368, 19.90942, 3.90684), box(6.93632, 8.09058, 11.90684, 10.93632, 20.09058, 15.90684), box(7.00794, -4.0, 3.90567, 11.00794, 8.0, 7.90567), box(7.0, -3.99464, 7.90932, 11.0, 8.00536, 11.90932));
+        case WEST -> Shapes.or(box(5.0, 8.0, 4.1, 9.0, 20.0, 12.1), box(4.93632, 7.90942, 12.09316, 8.93632, 19.90942, 16.09316), box(5.06368, 8.09058, 0.09316, 9.06368, 20.09058, 4.09316), box(4.99206, -4.0, 8.09433, 8.99206, 8.0, 12.09433), box(5.0, -3.99464, 4.09068, 9.0, 8.00536, 8.09068));
+        default -> Shapes.or(box(4.1, 8.0, 7.0, 12.1, 20.0, 11.0), box(12.09316, 7.90942, 7.06368, 16.09316, 19.90942, 11.06368), box(0.09316, 8.09058, 6.93632, 4.09316, 20.09058, 10.93632), box(8.09433, -4.0, 7.00794, 12.09433, 8.0, 11.00794), box(4.09068, -3.99464, 7.0, 8.09068, 8.00536, 11.0));
+    };
+}
+
+private static VoxelShape huskLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(3.9, 4.0, 10.0, 11.9, 16.0, 14.0);
+        case EAST -> box(2.0, 4.0, 3.9, 6.0, 16.0, 11.9);
+        case WEST -> box(10.0, 4.0, 4.1, 14.0, 16.0, 12.1);
+        default -> box(4.1, 4.0, 2.0, 12.1, 16.0, 6.0);
+    };
+}
+
+private static VoxelShape huskHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape huskHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape huskCorpse(BlockState state) {
+    return huskHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery vindicator corpse blocks.
+private static VoxelShape vindicatorHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.001, 8.0, 4.0, 11.999, 20.0, 10.0);
+        case EAST -> box(6.0, 8.0, 4.001, 12.0, 20.0, 11.999);
+        case WEST -> box(4.0, 8.0, 4.001, 10.0, 20.0, 11.999);
+        default -> box(4.001, 8.0, 6.0, 11.999, 20.0, 12.0);
+    };
+}
+
+private static VoxelShape vindicatorLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.001, 4.0, 8.0, 11.999, 16.0, 14.0);
+        case EAST -> box(2.0, 4.0, 4.001, 8.0, 16.0, 11.999);
+        case WEST -> box(8.0, 4.0, 4.001, 14.0, 16.0, 11.999);
+        default -> box(4.001, 4.0, 2.0, 11.999, 16.0, 8.0);
+    };
+}
+
+private static VoxelShape vindicatorHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape vindicatorHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape vindicatorCorpse(BlockState state) {
+    return vindicatorHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery evoker corpse blocks.
+private static VoxelShape evokerHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.001, 8.0, 4.0, 11.999, 20.0, 10.0);
+        case EAST -> box(6.0, 8.0, 4.001, 12.0, 20.0, 11.999);
+        case WEST -> box(4.0, 8.0, 4.001, 10.0, 20.0, 11.999);
+        default -> box(4.001, 8.0, 6.0, 11.999, 20.0, 12.0);
+    };
+}
+
+private static VoxelShape evokerLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.001, 4.0, 8.0, 11.999, 16.0, 14.0);
+        case EAST -> box(2.0, 4.0, 4.001, 8.0, 16.0, 11.999);
+        case WEST -> box(8.0, 4.0, 4.001, 14.0, 16.0, 11.999);
+        default -> box(4.001, 4.0, 2.0, 11.999, 16.0, 8.0);
+    };
+}
+
+private static VoxelShape evokerHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape evokerHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape evokerCorpse(BlockState state) {
+    return evokerHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery witch corpse blocks.
+private static VoxelShape witchHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.001, 7.1, 4.0, 11.999, 19.1, 10.0);
+        case EAST -> box(6.0, 7.1, 4.001, 12.0, 19.1, 11.999);
+        case WEST -> box(4.0, 7.1, 4.001, 10.0, 19.1, 11.999);
+        default -> box(4.001, 7.1, 6.0, 11.999, 19.1, 12.0);
+    };
+}
+
+private static VoxelShape witchLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.5, 4.0, 8.0, 11.5, 16.0, 14.0);
+        case EAST -> box(2.5, 4.0, 4.5, 10.5, 16.0, 11.5);
+        case WEST -> box(5.5, 4.0, 4.5, 12.5, 16.0, 11.5);
+        default -> box(4.5, 4.0, 4.5, 11.5, 16.0, 11.5);
+    };
+}
+
+private static VoxelShape witchHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape witchHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape witchCorpse(BlockState state) {
+    return witchHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery piglin corpse blocks.
+private static VoxelShape piglinHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> Shapes.or(box(3.9, 8.0, 5.0, 11.9, 20.0, 9.0), box(-0.09316, 7.90942, 4.93632, 3.90684, 19.90942, 8.93632), box(11.90684, 8.09058, 5.06368, 15.90684, 20.09058, 9.06368), box(3.90567, -4.0, 4.99206, 7.90567, 8.0, 8.99206), box(7.90932, -3.99464, 5.0, 11.90932, 8.00536, 9.0));
+        case EAST -> Shapes.or(box(7.0, 8.0, 3.9, 11.0, 20.0, 11.9), box(7.06368, 7.90942, -0.09316, 11.06368, 19.90942, 3.90684), box(6.93632, 8.09058, 11.90684, 10.93632, 20.09058, 15.90684), box(7.00794, -4.0, 3.90567, 11.00794, 8.0, 7.90567), box(7.0, -3.99464, 7.90932, 11.0, 8.00536, 11.90932));
+        case WEST -> Shapes.or(box(5.0, 8.0, 4.1, 9.0, 20.0, 12.1), box(4.93632, 7.90942, 12.09316, 8.93632, 19.90942, 16.09316), box(5.06368, 8.09058, 0.09316, 9.06368, 20.09058, 4.09316), box(4.99206, -4.0, 8.09433, 8.99206, 8.0, 12.09433), box(5.0, -3.99464, 4.09068, 9.0, 8.00536, 8.09068));
+        default -> Shapes.or(box(4.1, 8.0, 7.0, 12.1, 20.0, 11.0), box(12.09316, 7.90942, 7.06368, 16.09316, 19.90942, 11.06368), box(0.09316, 8.09058, 6.93632, 4.09316, 20.09058, 10.93632), box(8.09433, -4.0, 7.00794, 12.09433, 8.0, 11.00794), box(4.09068, -3.99464, 7.0, 8.09068, 8.00536, 11.0));
+    };
+}
+
+private static VoxelShape piglinLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(3.9, 4.0, 10.0, 11.9, 16.0, 14.0);
+        case EAST -> box(2.0, 4.0, 3.9, 6.0, 16.0, 11.9);
+        case WEST -> box(10.0, 4.0, 4.1, 14.0, 16.0, 12.1);
+        default -> box(4.1, 4.0, 2.0, 12.1, 16.0, 6.0);
+    };
+}
+
+private static VoxelShape piglinHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape piglinHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape piglinCorpse(BlockState state) {
+    return piglinHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery piglin brute corpse blocks.
+private static VoxelShape piglinBruteHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(3.75, 7.75, 4.75, 12.25, 20.25, 9.25);
+        case EAST -> box(6.75, 7.75, 3.75, 11.25, 20.25, 12.25);
+        case WEST -> box(4.75, 7.75, 3.75, 9.25, 20.25, 12.25);
+        default -> box(3.75, 7.75, 6.75, 12.25, 20.25, 11.25);
+    };
+}
+
+private static VoxelShape piglinBruteLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(3.75, 3.75, 9.75, 12.25, 16.25, 14.25);
+        case EAST -> box(1.75, 3.75, 3.75, 6.25, 16.25, 12.25);
+        case WEST -> box(9.75, 3.75, 3.75, 14.25, 16.25, 12.25);
+        default -> box(3.75, 3.75, 1.75, 12.25, 16.25, 6.25);
+    };
+}
+
+private static VoxelShape piglinBruteHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(4.0, 0.0, 6.0, 12.0, 8.0, 14.0);
+        case EAST -> box(2.0, 0.0, 4.0, 10.0, 8.0, 12.0);
+        case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+    };
+}
+
+private static VoxelShape piglinBruteHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape piglinBruteCorpse(BlockState state) {
+    return piglinBruteHanging(state);
+}
+
+// Shapes below are ported 1:1 from the original Butchery ravager corpse blocks.
+private static VoxelShape ravagerHanging(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> Shapes.or(box(3.0, 10.0, 2.0, 13.0, 22.0, 14.0), box(2.0, 10.0, 2.0, 14.0, 22.0, 14.0));
+        case EAST -> Shapes.or(box(2.0, 10.0, 3.0, 14.0, 22.0, 13.0), box(2.0, 10.0, 2.0, 14.0, 22.0, 14.0));
+        case WEST -> Shapes.or(box(2.0, 10.0, 2.0, 12.0, 22.0, 13.0), box(2.0, 10.0, 2.0, 12.0, 22.0, 13.0));
+        default -> Shapes.or(box(3.0, 10.0, 2.0, 13.0, 22.0, 14.0), box(2.0, 10.0, 2.0, 14.0, 22.0, 14.0));
+    };
+}
+
+private static VoxelShape ravagerLying(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> Shapes.or(box(3.0, 4.0, 2.0, 13.0, 14.0, 14.0), box(2.0, 4.0, 2.0, 14.0, 14.0, 14.0));
+        case EAST -> Shapes.or(box(2.0, 4.0, 3.0, 14.0, 14.0, 13.0), box(2.0, 4.0, 2.0, 14.0, 14.0, 14.0));
+        case WEST -> Shapes.or(box(2.0, 4.0, 2.0, 12.0, 14.0, 13.0), box(2.0, 4.0, 2.0, 12.0, 14.0, 13.0));
+        default -> Shapes.or(box(3.0, 4.0, 2.0, 13.0, 14.0, 14.0), box(2.0, 4.0, 2.0, 14.0, 14.0, 14.0));
+    };
+}
+
+private static VoxelShape ravagerHead(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(5.0, 0.0, 7.0, 11.0, 8.0, 13.0);
+        case EAST -> box(3.0, 0.0, 5.0, 11.0, 8.0, 11.0);
+        case WEST -> box(5.0, 0.0, 5.0, 11.0, 8.0, 11.0);
+        default -> box(5.0, 0.0, 7.0, 11.0, 8.0, 13.0);
+    };
+}
+
+private static VoxelShape ravagerHeadMount(BlockState state) {
+    return switch (state.getValue(CarcassBlockProperty.FACING)) {
+        case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+        case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+        case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+        default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+    };
+}
+
+private static VoxelShape ravagerCorpse(BlockState state) {
+    return ravagerHanging(state);
+}
+
+
+
+// ===== CORPSE BLOCK BUILDERS (humanoid mobs with organ harvesting) =====
+private static CarcassDefinition buildZOMBIE() {
+    return new CarcassDefinition(
+            "zombie",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:zombie")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::zombieHanging,
+            Carcasses::zombieLying,
+            Carcasses::zombieHead,
+            Carcasses::zombieHeadMount,
+            Carcasses::zombieLying,  // no skeleton
+            // zombie drops rotten_flesh
+            java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH),
+            Carcasses::zombieCorpse);
+}
+
+private static CarcassDefinition buildSKELETON() {
+    return new CarcassDefinition(
+            "skeleton",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:skeleton")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::skeletonHanging,
+            Carcasses::skeletonLying,
+            Carcasses::skeletonHead,
+            Carcasses::skeletonHeadMount,
+            Carcasses::skeletonLying,  // no skeleton
+            // skeleton drops bone
+            java.util.List.of(net.minecraft.world.item.Items.BONE),
+            Carcasses::skeletonCorpse);
+}
+
+private static CarcassDefinition buildDROWNED() {
+    return new CarcassDefinition(
+            "drowned",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:drowned")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::drownedHanging,
+            Carcasses::drownedLying,
+            Carcasses::drownedHead,
+            Carcasses::drownedHeadMount,
+            Carcasses::drownedLying,  // no skeleton
+            // drowned drops rotten_flesh
+            java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH),
+            Carcasses::drownedCorpse);
+}
+
+private static CarcassDefinition buildHUSK() {
+    return new CarcassDefinition(
+            "husk",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:husk")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::huskHanging,
+            Carcasses::huskLying,
+            Carcasses::huskHead,
+            Carcasses::huskHeadMount,
+            Carcasses::huskLying,  // no skeleton
+            // husk drops rotten_flesh
+            java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH),
+            Carcasses::huskCorpse);
+}
+
+private static CarcassDefinition buildVINDICATOR() {
+    return new CarcassDefinition(
+            "vindicator",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:vindicator")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::vindicatorHanging,
+            Carcasses::vindicatorLying,
+            Carcasses::vindicatorHead,
+            Carcasses::vindicatorHeadMount,
+            Carcasses::vindicatorLying,  // no skeleton
+            // vindicator drops emerald
+            java.util.List.of(net.minecraft.world.item.Items.EMERALD),
+            Carcasses::vindicatorCorpse);
+}
+
+private static CarcassDefinition buildEVOKER() {
+    return new CarcassDefinition(
+            "evoker",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:evoker")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::evokerHanging,
+            Carcasses::evokerLying,
+            Carcasses::evokerHead,
+            Carcasses::evokerHeadMount,
+            Carcasses::evokerLying,  // no skeleton
+            // evoker drops emerald
+            java.util.List.of(net.minecraft.world.item.Items.EMERALD),
+            Carcasses::evokerCorpse);
+}
+
+private static CarcassDefinition buildWITCH() {
+    return new CarcassDefinition(
+            "witch",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:witch")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::witchHanging,
+            Carcasses::witchLying,
+            Carcasses::witchHead,
+            Carcasses::witchHeadMount,
+            Carcasses::witchLying,  // no skeleton
+            // witch drops potion
+            java.util.List.of(net.minecraft.world.item.Items.POTION),
+            Carcasses::witchCorpse);
+}
+
+private static CarcassDefinition buildPIGLIN() {
+    return new CarcassDefinition(
+            "piglin",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:piglin")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::piglinHanging,
+            Carcasses::piglinLying,
+            Carcasses::piglinHead,
+            Carcasses::piglinHeadMount,
+            Carcasses::piglinLying,  // no skeleton
+            // piglin drops gold
+            java.util.List.of(net.minecraft.world.item.Items.GOLD_INGOT),
+            Carcasses::piglinCorpse);
+}
+
+private static CarcassDefinition buildPIGLIN_BRUTE() {
+    return new CarcassDefinition(
+            "piglin_brute",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:piglin_brute")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::piglinBruteHanging,
+            Carcasses::piglinBruteLying,
+            Carcasses::piglinBruteHead,
+            Carcasses::piglinBruteHeadMount,
+            Carcasses::piglinBruteLying,  // no skeleton
+            // piglin_brute drops gold
+            java.util.List.of(net.minecraft.world.item.Items.GOLD_INGOT),
+            Carcasses::piglinBruteCorpse);
+}
+
+private static CarcassDefinition buildRAVAGER() {
+    return new CarcassDefinition(
+            "ravager",
+            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:ravager")))
+                    .value(),
+            true,
+            true,
+            false,
+            true,
+            3,
+            Carcasses::ravagerHanging,
+            Carcasses::ravagerLying,
+            Carcasses::ravagerHead,
+            Carcasses::ravagerHeadMount,
+            Carcasses::ravagerLying,  // no skeleton
+            // ravager drops saddle
+            java.util.List.of(net.minecraft.world.item.Items.SADDLE),
+            Carcasses::ravagerCorpse);
+}}

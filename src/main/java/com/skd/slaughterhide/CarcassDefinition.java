@@ -97,4 +97,9 @@ public record CarcassDefinition(
     public int[] usedStages() {
         return stageMap().values().stream().mapToInt(i -> i).toArray();
     }
+
+    /** Returns the corpse shape function for CorpseBlock mobs. */
+    public Function<BlockState, VoxelShape> corpseShapes() {
+        return corpseShape;
+    }
 }

@@ -450,6 +450,77 @@ public final class ModItems {
             placementItem("drained_small_magma_cube_carcass", Carcasses.SMALL_MAGMA_CUBE, true, new Item.Properties().stacksTo(8));
     // Small Magma Cube has no head, head mount, skeleton
 
+    // Corpse blocks (humanoid mobs with organ harvesting)
+    // Zombie
+    public static final DeferredItem<Item> ZOMBIE_CORPSE =
+            placementItem("zombie_corpse", Carcasses.ZOMBIE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_ZOMBIE_CORPSE =
+            placementItem("drained_zombie_corpse", Carcasses.ZOMBIE, true, new Item.Properties().stacksTo(8));
+    // Zombie has no head, head mount, skeleton
+
+    // Skeleton
+    public static final DeferredItem<Item> SKELETON_CORPSE =
+            placementItem("skeleton_corpse", Carcasses.SKELETON, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SKELETON_CORPSE =
+            placementItem("drained_skeleton_corpse", Carcasses.SKELETON, true, new Item.Properties().stacksTo(8));
+    // Skeleton has no head, head mount, skeleton
+
+    // Drowned
+    public static final DeferredItem<Item> DROWNED_CORPSE =
+            placementItem("drowned_corpse", Carcasses.DROWNED, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_DROWNED_CORPSE =
+            placementItem("drained_drowned_corpse", Carcasses.DROWNED, true, new Item.Properties().stacksTo(8));
+    // Drowned has no head, head mount, skeleton
+
+    // Husk
+    public static final DeferredItem<Item> HUSK_CORPSE =
+            placementItem("husk_corpse", Carcasses.HUSK, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_HUSK_CORPSE =
+            placementItem("drained_husk_corpse", Carcasses.HUSK, true, new Item.Properties().stacksTo(8));
+    // Husk has no head, head mount, skeleton
+
+    // Vindicator
+    public static final DeferredItem<Item> VINDICATOR_CORPSE =
+            placementItem("vindicator_corpse", Carcasses.VINDICATOR, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_VINDICATOR_CORPSE =
+            placementItem("drained_vindicator_corpse", Carcasses.VINDICATOR, true, new Item.Properties().stacksTo(8));
+    // Vindicator has no head, head mount, skeleton
+
+    // Evoker
+    public static final DeferredItem<Item> EVOKER_CORPSE =
+            placementItem("evoker_corpse", Carcasses.EVOKER, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_EVOKER_CORPSE =
+            placementItem("drained_evoker_corpse", Carcasses.EVOKER, true, new Item.Properties().stacksTo(8));
+    // Evoker has no head, head mount, skeleton
+
+    // Witch
+    public static final DeferredItem<Item> WITCH_CORPSE =
+            placementItem("witch_corpse", Carcasses.WITCH, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_WITCH_CORPSE =
+            placementItem("drained_witch_corpse", Carcasses.WITCH, true, new Item.Properties().stacksTo(8));
+    // Witch has no head, head mount, skeleton
+
+    // Piglin
+    public static final DeferredItem<Item> PIGLIN_CORPSE =
+            placementItem("piglin_corpse", Carcasses.PIGLIN, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_PIGLIN_CORPSE =
+            placementItem("drained_piglin_corpse", Carcasses.PIGLIN, true, new Item.Properties().stacksTo(8));
+    // Piglin has no head, head mount, skeleton
+
+    // Piglin Brute
+    public static final DeferredItem<Item> PIGLIN_BRUTE_CORPSE =
+            placementItem("piglin_brute_corpse", Carcasses.PIGLIN_BRUTE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_PIGLIN_BRUTE_CORPSE =
+            placementItem("drained_piglin_brute_corpse", Carcasses.PIGLIN_BRUTE, true, new Item.Properties().stacksTo(8));
+    // Piglin Brute has no head, head mount, skeleton
+
+    // Ravager
+    public static final DeferredItem<Item> RAVAGER_CORPSE =
+            placementItem("ravager_corpse", Carcasses.RAVAGER, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_RAVAGER_CORPSE =
+            placementItem("drained_ravager_corpse", Carcasses.RAVAGER, true, new Item.Properties().stacksTo(8));
+    // Ravager has no head, head mount, skeleton
+
     // Blue Axolotl
     public static final DeferredItem<Item> BLUE_AXOLOTL_CARCASS =
             placementItem("blue_axolotl_carcass", Carcasses.BLUE_AXOLOTL, false, new Item.Properties().stacksTo(8));
@@ -912,6 +983,18 @@ public final class ModItems {
         FRESH_BY_MOB.put(Carcasses.PUFFERFISH.mobId(), PUFFERFISH_CARCASS);
         DRAINED_BY_MOB.put(Carcasses.PUFFERFISH.mobId(), DRAINED_PUFFERFISH_CARCASS);
         // Pufferfish has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.SLIME.mobId(), SLIME_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SLIME.mobId(), DRAINED_SLIME_CARCASS);
+        // Slime has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.MEDIUM_SLIME.mobId(), MEDIUM_SLIME_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.MEDIUM_SLIME.mobId(), DRAINED_MEDIUM_SLIME_CARCASS);
+        // Medium Slime has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.SMALL_SLIME.mobId(), SMALL_SLIME_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SMALL_SLIME.mobId(), DRAINED_SMALL_SLIME_CARCASS);
+        // Small Slime has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.MAGMA_CUBE.mobId(), MAGMA_CUBE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.MAGMA_CUBE.mobId(), DRAINED_MAGMA_CUBE_CARCASS);
+        // Magma Cube has no head, head mount, skeleton
     }
 
     private ModItems() {
@@ -1075,6 +1158,16 @@ public final class ModItems {
             case "gold_axolotl_head_mount" -> ModBlocks.mountFor(Carcasses.GOLD_AXOLOTL.mobId());
             case "gold_axolotl_skeleton" -> ModBlocks.skeletonFor(Carcasses.GOLD_AXOLOTL.mobId());
             // Pufferfish has no head, head mount, skeleton
+            case "zombie_corpse" -> ModBlocks.corpseFor(Carcasses.ZOMBIE.mobId());
+            case "skeleton_corpse" -> ModBlocks.corpseFor(Carcasses.SKELETON.mobId());
+            case "drowned_corpse" -> ModBlocks.corpseFor(Carcasses.DROWNED.mobId());
+            case "husk_corpse" -> ModBlocks.corpseFor(Carcasses.HUSK.mobId());
+            case "vindicator_corpse" -> ModBlocks.corpseFor(Carcasses.VINDICATOR.mobId());
+            case "evoker_corpse" -> ModBlocks.corpseFor(Carcasses.EVOKER.mobId());
+            case "witch_corpse" -> ModBlocks.corpseFor(Carcasses.WITCH.mobId());
+            case "piglin_corpse" -> ModBlocks.corpseFor(Carcasses.PIGLIN.mobId());
+            case "piglin_brute_corpse" -> ModBlocks.corpseFor(Carcasses.PIGLIN_BRUTE.mobId());
+            case "ravager_corpse" -> ModBlocks.corpseFor(Carcasses.RAVAGER.mobId());
             case "hook" -> ModBlocks.HOOK;
             default -> throw new IllegalArgumentException("No block registered for item " + name);
         };

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "slaughter_hide:block/witch_head"
+    },
+    "facing=east": {
+      "model": "slaughter_hide:block/witch_head",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "slaughter_hide:block/witch_head",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "slaughter_hide:block/witch_head",
+      "y": 270
+    }
+  }
+}

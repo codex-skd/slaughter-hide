@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/piglin_brute_cut_1_corpse_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/hanging_piglin_brute_drained_armorless",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/hanging_piglin_brute_drained"
+  }
+}
