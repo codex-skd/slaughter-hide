@@ -408,6 +408,48 @@ public final class ModItems {
     public static final DeferredItem<Item> GLOW_SQUID_HEAD = blockItem("glow_squid_head", new Item.Properties());
     // Glow Squid has no head mount, no skeleton
 
+    // Slime
+    public static final DeferredItem<Item> SLIME_CARCASS =
+            placementItem("slime_carcass", Carcasses.SLIME, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SLIME_CARCASS =
+            placementItem("drained_slime_carcass", Carcasses.SLIME, true, new Item.Properties().stacksTo(8));
+    // Slime has no head, head mount, skeleton
+
+    // Medium Slime
+    public static final DeferredItem<Item> MEDIUM_SLIME_CARCASS =
+            placementItem("medium_slime_carcass", Carcasses.MEDIUM_SLIME, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_MEDIUM_SLIME_CARCASS =
+            placementItem("drained_medium_slime_carcass", Carcasses.MEDIUM_SLIME, true, new Item.Properties().stacksTo(8));
+    // Medium Slime has no head, head mount, skeleton
+
+    // Small Slime
+    public static final DeferredItem<Item> SMALL_SLIME_CARCASS =
+            placementItem("small_slime_carcass", Carcasses.SMALL_SLIME, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SMALL_SLIME_CARCASS =
+            placementItem("drained_small_slime_carcass", Carcasses.SMALL_SLIME, true, new Item.Properties().stacksTo(8));
+    // Small Slime has no head, head mount, skeleton
+
+    // Magma Cube
+    public static final DeferredItem<Item> MAGMA_CUBE_CARCASS =
+            placementItem("magma_cube_carcass", Carcasses.MAGMA_CUBE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_MAGMA_CUBE_CARCASS =
+            placementItem("drained_magma_cube_carcass", Carcasses.MAGMA_CUBE, true, new Item.Properties().stacksTo(8));
+    // Magma Cube has no head, head mount, skeleton
+
+    // Medium Magma Cube
+    public static final DeferredItem<Item> MEDIUM_MAGMA_CUBE_CARCASS =
+            placementItem("medium_magma_cube_carcass", Carcasses.MEDIUM_MAGMA_CUBE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_MEDIUM_MAGMA_CUBE_CARCASS =
+            placementItem("drained_medium_magma_cube_carcass", Carcasses.MEDIUM_MAGMA_CUBE, true, new Item.Properties().stacksTo(8));
+    // Medium Magma Cube has no head, head mount, skeleton
+
+    // Small Magma Cube
+    public static final DeferredItem<Item> SMALL_MAGMA_CUBE_CARCASS =
+            placementItem("small_magma_cube_carcass", Carcasses.SMALL_MAGMA_CUBE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SMALL_MAGMA_CUBE_CARCASS =
+            placementItem("drained_small_magma_cube_carcass", Carcasses.SMALL_MAGMA_CUBE, true, new Item.Properties().stacksTo(8));
+    // Small Magma Cube has no head, head mount, skeleton
+
     // Blue Axolotl
     public static final DeferredItem<Item> BLUE_AXOLOTL_CARCASS =
             placementItem("blue_axolotl_carcass", Carcasses.BLUE_AXOLOTL, false, new Item.Properties().stacksTo(8));
@@ -753,6 +795,24 @@ public final class ModItems {
         DRAINED_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), DRAINED_GLOW_SQUID_CARCASS);
         HEAD_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), GLOW_SQUID_HEAD);
         // Glow Squid has no head mount, no skeleton
+        FRESH_BY_MOB.put(Carcasses.SLIME.mobId(), SLIME_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SLIME.mobId(), DRAINED_SLIME_CARCASS);
+        // Slime has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.MEDIUM_SLIME.mobId(), MEDIUM_SLIME_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.MEDIUM_SLIME.mobId(), DRAINED_MEDIUM_SLIME_CARCASS);
+        // Medium Slime has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.SMALL_SLIME.mobId(), SMALL_SLIME_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SMALL_SLIME.mobId(), DRAINED_SMALL_SLIME_CARCASS);
+        // Small Slime has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.MAGMA_CUBE.mobId(), MAGMA_CUBE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.MAGMA_CUBE.mobId(), DRAINED_MAGMA_CUBE_CARCASS);
+        // Magma Cube has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.MEDIUM_MAGMA_CUBE.mobId(), MEDIUM_MAGMA_CUBE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.MEDIUM_MAGMA_CUBE.mobId(), DRAINED_MEDIUM_MAGMA_CUBE_CARCASS);
+        // Medium Magma Cube has no head, head mount, skeleton
+        FRESH_BY_MOB.put(Carcasses.SMALL_MAGMA_CUBE.mobId(), SMALL_MAGMA_CUBE_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SMALL_MAGMA_CUBE.mobId(), DRAINED_SMALL_MAGMA_CUBE_CARCASS);
+        // Small Magma Cube has no head, head mount, skeleton
         FRESH_BY_MOB.put(Carcasses.SPIDER.mobId(), SPIDER_CARCASS);
         DRAINED_BY_MOB.put(Carcasses.SPIDER.mobId(), DRAINED_SPIDER_CARCASS);
         HEAD_BY_MOB.put(Carcasses.SPIDER.mobId(), SPIDER_HEAD);
@@ -951,6 +1011,18 @@ public final class ModItems {
             case "cave_spider_head" -> ModBlocks.headFor(Carcasses.CAVE_SPIDER.mobId());
             case "cave_spider_head_mount" -> ModBlocks.mountFor(Carcasses.CAVE_SPIDER.mobId());
             // Cave Spider has no skeleton
+            case "slime_head" -> ModBlocks.headFor(Carcasses.SLIME.mobId());
+            // Slime has no head mount, no skeleton
+            case "medium_slime_head" -> ModBlocks.headFor(Carcasses.MEDIUM_SLIME.mobId());
+            // Medium Slime has no head mount, no skeleton
+            case "small_slime_head" -> ModBlocks.headFor(Carcasses.SMALL_SLIME.mobId());
+            // Small Slime has no head mount, no skeleton
+            case "magma_cube_head" -> ModBlocks.headFor(Carcasses.MAGMA_CUBE.mobId());
+            // Magma Cube has no head mount, no skeleton
+            case "medium_magma_cube_head" -> ModBlocks.headFor(Carcasses.MEDIUM_MAGMA_CUBE.mobId());
+            // Medium Magma Cube has no head mount, no skeleton
+            case "small_magma_cube_head" -> ModBlocks.headFor(Carcasses.SMALL_MAGMA_CUBE.mobId());
+            // Small Magma Cube has no head mount, no skeleton
             case "all_black_cat_head" -> ModBlocks.headFor(Carcasses.ALL_BLACK_CAT.mobId());
             case "all_black_cat_head_mount" -> ModBlocks.mountFor(Carcasses.ALL_BLACK_CAT.mobId());
             // all_black_cat has no skeleton
