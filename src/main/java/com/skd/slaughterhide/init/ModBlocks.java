@@ -80,6 +80,13 @@ public final class ModBlocks {
         registerFamily(Carcasses.CYAN_AXOLOTL);
         registerFamily(Carcasses.GOLD_AXOLOTL);
         registerFamily(Carcasses.PUFFERFISH);
+        registerFamily(Carcasses.SLIME);
+        registerFamily(Carcasses.MAGMA_CUBE);
+        registerFamily(Carcasses.MEDIUM_SLIME);
+        registerFamily(Carcasses.SMALL_SLIME);
+        registerFamily(Carcasses.MAGMA_CUBE);
+        registerFamily(Carcasses.MEDIUM_MAGMA_CUBE);
+        registerFamily(Carcasses.SMALL_MAGMA_CUBE);
         // Cat variants (11 variants, all share ocelot shapes, have head+head_mount+skin, no skeleton, 0 cuts)
         registerFamily(Carcasses.ALL_BLACK_CAT);
         registerFamily(Carcasses.BLACK_CAT);

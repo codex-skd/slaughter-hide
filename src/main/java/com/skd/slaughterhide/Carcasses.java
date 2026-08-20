@@ -112,8 +112,20 @@ public final class Carcasses {
     public static final CarcassDefinition CYAN_AXOLOTL = buildCYAN_AXOLOTL();
     /** Forty-fourth: gold_axolotl. */
     public static final CarcassDefinition GOLD_AXOLOTL = buildGOLD_AXOLOTL();
-    /** Forty-fifth: pufferfish. */
+/** Forty-fifth: pufferfish. */
     public static final CarcassDefinition PUFFERFISH = buildPUFFERFISH();
+    /** Forty-sixth: slime. */
+    public static final CarcassDefinition SLIME = buildSLIME();
+    /** Forty-seventh: medium_slime. */
+    public static final CarcassDefinition MEDIUM_SLIME = buildMEDIUM_SLIME();
+    /** Forty-eighth: small_slime. */
+    public static final CarcassDefinition SMALL_SLIME = buildSMALL_SLIME();
+    /** Forty-ninth: magma_cube. */
+    public static final CarcassDefinition MAGMA_CUBE = buildMAGMA_CUBE_LARGE();
+    /** Fiftieth: medium_magma_cube. */
+    public static final CarcassDefinition MEDIUM_MAGMA_CUBE = buildMEDIUM_MAGMA_CUBE();
+    /** Fifty-first: small_magma_cube. */
+    public static final CarcassDefinition SMALL_MAGMA_CUBE = buildSMALL_MAGMA_CUBE();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
@@ -205,6 +217,10 @@ public final class Carcasses {
         register(CYAN_AXOLOTL);
         register(GOLD_AXOLOTL);
         register(PUFFERFISH);
+        register(SLIME);
+        register(MAGMA_CUBE);
+        register(MEDIUM_SLIME);
+        register(SMALL_SLIME);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -378,7 +394,7 @@ public final class Carcasses {
                 // Skeleton: blockstate 1 hung, 0 lying, same boxes as the fresh carcass.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pigHanging(state) : pigLying(state),
                 // The carcass replaces the sheep's vanilla mutton drop.
-                java.util.List.of(net.minecraft.world.item.Items.MUTTON));
+                java.util.List.of(net.minecraft.world.item.Items.MUTTON), null);
     }
 
     private static CarcassDefinition buildPig() {
@@ -401,7 +417,7 @@ public final class Carcasses {
                 // Skeleton: blockstate 1 hung, 0 lying, same boxes as the fresh pig carcass.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pigHanging(state) : pigLying(state),
                 // The original sweeps the pig's vanilla porkchop drop; the carcass replaces it.
-                java.util.List.of(net.minecraft.world.item.Items.PORKCHOP));
+                java.util.List.of(net.minecraft.world.item.Items.PORKCHOP), null);
     }
 
     private static CarcassDefinition buildCow() {
@@ -424,7 +440,7 @@ public final class Carcasses {
                 // Skeleton: blockstate 1 hung, 0 lying, same boxes as the fresh carcass.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? hanging(state) : lying(state),
                 // The carcass replaces the vanilla beef/leather drops, which are swept on death.
-                java.util.List.of(net.minecraft.world.item.Items.BEEF, net.minecraft.world.item.Items.LEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.BEEF, net.minecraft.world.item.Items.LEATHER), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery chicken blocks.
@@ -504,7 +520,7 @@ public final class Carcasses {
                 // Skeleton: blockstate 1 hung, 0 lying, same boxes as the fresh carcass.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? chickenSkeletonHanging(state) : chickenSkeletonLying(state),
                 // The carcass replaces the chicken's vanilla drops (chicken, feather).
-                java.util.List.of(net.minecraft.world.item.Items.CHICKEN, net.minecraft.world.item.Items.FEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.CHICKEN, net.minecraft.world.item.Items.FEATHER), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery rabbit blocks.
@@ -588,7 +604,7 @@ public final class Carcasses {
                 // Skeleton: blockstate 1 hung, 0 lying, same boxes as the fresh carcass.
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? rabbitSkeletonHanging(state) : rabbitSkeletonLying(state),
                 // The carcass replaces the rabbit's vanilla drops (rabbit, rabbit_hide, rabbit_foot).
-                java.util.List.of(net.minecraft.world.item.Items.RABBIT, net.minecraft.world.item.Items.RABBIT_HIDE, net.minecraft.world.item.Items.RABBIT_FOOT));
+                java.util.List.of(net.minecraft.world.item.Items.RABBIT, net.minecraft.world.item.Items.RABBIT_HIDE, net.minecraft.world.item.Items.RABBIT_FOOT), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery goat blocks.
@@ -644,7 +660,7 @@ public final class Carcasses {
                 Carcasses::goatHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? goatSkeletonHanging(state) : goatSkeletonLying(state),
                 // Goat drops mutton like sheep
-                java.util.List.of(net.minecraft.world.item.Items.MUTTON));
+                java.util.List.of(net.minecraft.world.item.Items.MUTTON), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery fox blocks.
@@ -717,7 +733,7 @@ public final class Carcasses {
                 Carcasses::foxHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? foxSkeletonHanging(state) : foxSkeletonLying(state),
                 // Fox drops raw_fox_meat
-                java.util.List.of(net.minecraft.world.item.Items.SWEET_BERRIES)); // Fox doesn't have a vanilla meat drop, using sweet berries as placeholder
+                java.util.List.of(net.minecraft.world.item.Items.SWEET_BERRIES), null); // Fox doesn't have a vanilla meat drop, using sweet berries as placeholder
     }
 
     // Shapes below are ported 1:1 from the original Butchery wolf blocks.
@@ -790,7 +806,7 @@ public final class Carcasses {
                 Carcasses::wolfHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? wolfSkeletonHanging(state) : wolfSkeletonLying(state),
                 // Wolf drops wolf_pelt
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     // ===== NEW MOBS (camel through dolphin) =====
@@ -857,7 +873,7 @@ public final class Carcasses {
                 Carcasses::camelHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? camelSkeletonHanging(state) : camelSkeletonLying(state),
                 // camel drops raw_camel_meat
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery donkey blocks.
@@ -922,7 +938,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::donkeyHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? donkeySkeletonHanging(state) : donkeySkeletonLying(state),
                 // donkey drops raw_donkey_steak
-                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery mule blocks.
@@ -987,7 +1003,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::muleHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? muleSkeletonHanging(state) : muleSkeletonLying(state),
                 // mule drops raw_mule_steak
-                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery ocelot blocks.
@@ -1052,7 +1068,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::ocelotHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? ocelotSkeletonHanging(state) : ocelotSkeletonLying(state),
                 // ocelot drops raw_ocelot_meat
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery panda blocks.
@@ -1117,7 +1133,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::pandaHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pandaSkeletonHanging(state) : pandaSkeletonLying(state),
                 // panda drops raw_panda_steak
-                java.util.List.of(net.minecraft.world.item.Items.BAMBOO));
+                java.util.List.of(net.minecraft.world.item.Items.BAMBOO), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery polar_bear blocks.
@@ -1182,7 +1198,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::polar_bearHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? polar_bearSkeletonHanging(state) : polar_bearSkeletonLying(state),
                 // polar_bear drops raw_polar_bear_meat
-                java.util.List.of(net.minecraft.world.item.Items.COD));
+                java.util.List.of(net.minecraft.world.item.Items.COD), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery hoglin blocks.
@@ -1247,7 +1263,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::hoglinHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? hoglinSkeletonHanging(state) : hoglinSkeletonLying(state),
                 // hoglin drops raw_hoglin_chunk
-                java.util.List.of(net.minecraft.world.item.Items.PORKCHOP));
+                java.util.List.of(net.minecraft.world.item.Items.PORKCHOP), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery zoglin blocks.
@@ -1306,7 +1322,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::zoglinHeadMount,
                 Carcasses::zoglinLying,  // no skeleton
                 // zoglin drops minecraft:rotten_flesh
-                java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH));
+                java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery dolphin blocks.
@@ -1371,7 +1387,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::dolphinHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? dolphinSkeletonHanging(state) : dolphinSkeletonLying(state),
                 // dolphin drops raw_dolphin_meat
-                java.util.List.of(net.minecraft.world.item.Items.COD));
+                java.util.List.of(net.minecraft.world.item.Items.COD), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery bat blocks.
@@ -1436,7 +1452,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::batHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? batSkeletonHanging(state) : batSkeletonLying(state),
                 // bat drops raw_bat_meat
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery silverfish blocks.
@@ -1490,7 +1506,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::silverfishHeadMount,
                 Carcasses::silverfishLying,  // no skeleton
                 // silverfish drops raw_silverfish_chunks
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery endermite blocks.
@@ -1569,7 +1585,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::endermiteHeadMount,
                 Carcasses::endermiteLying,  // no skeleton
                 // endermite drops raw_endermite_chunks
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery bee blocks.
@@ -1614,7 +1630,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::beeLying,  // no head mount
                 Carcasses::beeLying,  // no skeleton
                 // bee drops honey_stomach
-                java.util.List.of(net.minecraft.world.item.Items.HONEY_BOTTLE));
+                java.util.List.of(net.minecraft.world.item.Items.HONEY_BOTTLE), null);
     }
 
     // ===== NEW MOBS (cod through horse) =====
@@ -1657,7 +1673,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::codLying,  // no head mount
                 Carcasses::codLying,  // no skeleton
                 // cod drops cod
-                java.util.List.of(net.minecraft.world.item.Items.COD));
+                java.util.List.of(net.minecraft.world.item.Items.COD), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery salmon blocks.
@@ -1698,7 +1714,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::salmonLying,  // no head mount
                 Carcasses::salmonLying,  // no skeleton
                 // salmon drops salmon
-                java.util.List.of(net.minecraft.world.item.Items.SALMON));
+                java.util.List.of(net.minecraft.world.item.Items.SALMON), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery phantom blocks.
@@ -1763,7 +1779,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::phantomHeadMount,
                 Carcasses::phantomSkeletonHanging,
                 // phantom drops phantom_membrane
-                java.util.List.of(net.minecraft.world.item.Items.PHANTOM_MEMBRANE));
+                java.util.List.of(net.minecraft.world.item.Items.PHANTOM_MEMBRANE), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery shulker blocks.
@@ -1799,7 +1815,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::shulkerLying,  // no head mount
                 Carcasses::shulkerLying,  // no skeleton
                 // shulker drops shulker_shell
-                java.util.List.of(net.minecraft.world.item.Items.SHULKER_SHELL));
+                java.util.List.of(net.minecraft.world.item.Items.SHULKER_SHELL), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery guardian blocks.
@@ -1840,7 +1856,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::guardianLying,  // no head mount
                 Carcasses::guardianLying,  // no skeleton
                 // guardian drops prismarine_shard
-                java.util.List.of(net.minecraft.world.item.Items.PRISMARINE_SHARD));
+                java.util.List.of(net.minecraft.world.item.Items.PRISMARINE_SHARD), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery elder_guardian blocks.
@@ -1876,7 +1892,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::elder_guardianLying,  // no head mount
                 Carcasses::elder_guardianLying,  // no skeleton
                 // elder_guardian drops prismarine_crystals
-                java.util.List.of(net.minecraft.world.item.Items.PRISMARINE_CRYSTALS));
+                java.util.List.of(net.minecraft.world.item.Items.PRISMARINE_CRYSTALS), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery skeleton_horse blocks.
@@ -1930,7 +1946,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::skeleton_horseHeadMount,
                 Carcasses::skeleton_horseLying,  // no skeleton
                 // skeleton_horse drops bone
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery zombie_horse blocks.
@@ -1983,7 +1999,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::zombie_horseHeadMount,
                 Carcasses::zombie_horseLying,  // no skeleton
                 // zombie_horse drops rotten_flesh
-                java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH));
+                java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery horse blocks.
@@ -2019,7 +2035,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::horseLying,  // no head mount
                 Carcasses::horseLying,  // no skeleton
                 // horse drops leather
-                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery llama blocks.
@@ -2079,7 +2095,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::llamaHeadMount,
                 Carcasses::llamaLying,  // no skeleton
                 // brown_llama drops raw_llama_steak
-                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER), null);
     }
 
     private static CarcassDefinition buildWHITE_LLAMA() {
@@ -2099,7 +2115,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::llamaHeadMount,
                 Carcasses::llamaLying,  // no skeleton
                 // white_llama drops raw_llama_steak
-                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER), null);
     }
 
     private static CarcassDefinition buildCREAMY_LLAMA() {
@@ -2119,7 +2135,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::llamaHeadMount,
                 Carcasses::llamaLying,  // no skeleton
                 // creamy_llama drops raw_llama_steak
-                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER), null);
     }
 
     private static CarcassDefinition buildGRAY_LLAMA() {
@@ -2139,7 +2155,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::llamaHeadMount,
                 Carcasses::llamaLying,  // no skeleton
                 // gray_llama drops raw_llama_steak
-                java.util.List.of(net.minecraft.world.item.Items.LEATHER));
+                java.util.List.of(net.minecraft.world.item.Items.LEATHER), null);
     }
 
     // ===== CAT VARIANT BUILDER (all variants share ocelot shapes) =====
@@ -2160,7 +2176,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::ocelotHeadMount,
                 Carcasses::ocelotLying,  // no skeleton
                 // cats don't have vanilla drops
-                java.util.List.of());
+                java.util.List.of(), null);
     }
 
     /** Returns the carcass definition for a specific cat variant (0-10). */
@@ -2214,7 +2230,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::squidLying,  // no head mount
                 Carcasses::squidLying,  // no skeleton
                 // squid drops ink_sac
-                java.util.List.of(net.minecraft.world.item.Items.INK_SAC));
+                java.util.List.of(net.minecraft.world.item.Items.INK_SAC), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery glowsquid blocks.
@@ -2264,7 +2280,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::glow_squidLying,  // no head mount
                 Carcasses::glow_squidLying,  // no skeleton
                 // glowsquid drops glow_ink_sac
-                java.util.List.of(net.minecraft.world.item.Items.GLOW_INK_SAC));
+                java.util.List.of(net.minecraft.world.item.Items.GLOW_INK_SAC), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery creeper blocks.
@@ -2331,7 +2347,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::creeperHeadMount,
                 Carcasses::creeperSkeletonHanging,
                 // creeper drops raw_creeper_steak
-                java.util.List.of(net.minecraft.world.item.Items.TNT));
+                java.util.List.of(net.minecraft.world.item.Items.TNT), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery spider blocks.
@@ -2391,7 +2407,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::spiderHeadMount,
                 Carcasses::spiderLying,  // no skeleton
                 // spider drops spider_eye
-                java.util.List.of(net.minecraft.world.item.Items.SPIDER_EYE));
+                java.util.List.of(net.minecraft.world.item.Items.SPIDER_EYE), null);
     }
 
     // cave_spider uses the same shapes as spider
@@ -2430,7 +2446,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::cave_spiderHeadMount,
                 Carcasses::cave_spiderLying,  // no skeleton
                 // cave_spider drops string
-                java.util.List.of(net.minecraft.world.item.Items.STRING));
+                java.util.List.of(net.minecraft.world.item.Items.STRING), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery axolotl blocks.
@@ -2496,7 +2512,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::axolotlHead,
                 Carcasses::axolotlHeadMount,
                 Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     private static CarcassDefinition buildPINK_AXOLOTL() {
@@ -2515,7 +2531,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::axolotlHead,
                 Carcasses::axolotlHeadMount,
                 Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     private static CarcassDefinition buildBROWN_AXOLOTL() {
@@ -2534,7 +2550,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::axolotlHead,
                 Carcasses::axolotlHeadMount,
                 Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     private static CarcassDefinition buildCYAN_AXOLOTL() {
@@ -2553,7 +2569,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::axolotlHead,
                 Carcasses::axolotlHeadMount,
                 Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     private static CarcassDefinition buildGOLD_AXOLOTL() {
@@ -2572,7 +2588,7 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::axolotlHead,
                 Carcasses::axolotlHeadMount,
                 Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE));
+                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
     }
 
     // Shapes below are ported 1:1 from the original Butchery pufferfish blocks.
@@ -2607,6 +2623,164 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::pufferfishLying,  // no head
                 Carcasses::pufferfishLying,  // no head mount
                 Carcasses::pufferfishLying,  // no skeleton
-                java.util.List.of(net.minecraft.world.item.Items.PUFFERFISH));
+                java.util.List.of(net.minecraft.world.item.Items.PUFFERFISH), null);
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery slime blocks.
+    private static VoxelShape slimeHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.0, 0.0, 4.0, 12.0, 12.0, 12.0);
+            case EAST -> box(4.0, 0.0, 4.0, 12.0, 12.0, 12.0);
+            case WEST -> box(4.0, 0.0, 4.0, 12.0, 12.0, 12.0);
+            default -> box(4.0, 0.0, 4.0, 12.0, 12.0, 12.0);
+        };
+    }
+
+    private static VoxelShape slimeLying(BlockState state) {
+        return slimeHanging(state);
+    }
+
+    // slime has no head, head mount, skeleton, skin
+
+    private static CarcassDefinition buildSLIME() {
+        return new CarcassDefinition(
+                "slime",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:slime")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                4,
+                Carcasses::slimeHanging,
+                Carcasses::slimeLying,
+                Carcasses::slimeLying,  // no head
+                Carcasses::slimeLying,  // no head mount
+                Carcasses::slimeLying,  // no skeleton
+                // slime drops slime_chunks
+                java.util.List.of(net.minecraft.world.item.Items.SLIME_BALL),
+                null);
+    }
+
+    private static CarcassDefinition buildMEDIUM_SLIME() {
+        return new CarcassDefinition(
+                "medium_slime",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:slime")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                4,
+                Carcasses::slimeHanging,
+                Carcasses::slimeLying,
+                Carcasses::slimeLying,  // no head
+                Carcasses::slimeLying,  // no head mount
+                Carcasses::slimeLying,  // no skeleton
+                // medium_slime drops slime_chunks
+                java.util.List.of(net.minecraft.world.item.Items.SLIME_BALL),
+                null);
+    }
+
+    private static CarcassDefinition buildSMALL_SLIME() {
+        return new CarcassDefinition(
+                "small_slime",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:slime")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                4,
+                Carcasses::slimeHanging,
+                Carcasses::slimeLying,
+                Carcasses::slimeLying,  // no head
+                Carcasses::slimeLying,  // no head mount
+                Carcasses::slimeLying,  // no skeleton
+                // small_slime drops slime_chunks
+                java.util.List.of(net.minecraft.world.item.Items.SLIME_BALL),
+                null);
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery magma_cube blocks.
+    private static VoxelShape magma_cubeHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0), box(2.0, 2.0, 2.0, 14.0, 14.0, 14.0));
+            case EAST -> Shapes.or(box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0), box(2.0, 2.0, 2.0, 14.0, 14.0, 14.0));
+            case WEST -> Shapes.or(box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0), box(2.0, 2.0, 2.0, 14.0, 14.0, 14.0));
+            default -> Shapes.or(box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0), box(2.0, 2.0, 2.0, 14.0, 14.0, 14.0));
+        };
+    }
+
+    private static VoxelShape magma_cubeLying(BlockState state) {
+        return magma_cubeHanging(state);
+    }
+
+    // magma_cube has no head, head mount, skeleton, skin
+
+    private static CarcassDefinition buildMAGMA_CUBE_LARGE() {
+        return new CarcassDefinition(
+                "magma_cube",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:magma_cube")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                4,
+                Carcasses::magma_cubeHanging,
+                Carcasses::magma_cubeLying,
+                Carcasses::magma_cubeLying,  // no head
+                Carcasses::magma_cubeLying,  // no head mount
+                Carcasses::magma_cubeLying,  // no skeleton
+                // magma_cube drops magma_cream
+                java.util.List.of(net.minecraft.world.item.Items.MAGMA_CREAM),
+                null);
+    }
+
+    private static CarcassDefinition buildMEDIUM_MAGMA_CUBE() {
+        return new CarcassDefinition(
+                "medium_magma_cube",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:magma_cube")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                4,
+                Carcasses::magma_cubeHanging,
+                Carcasses::magma_cubeLying,
+                Carcasses::magma_cubeLying,  // no head
+                Carcasses::magma_cubeLying,  // no head mount
+                Carcasses::magma_cubeLying,  // no skeleton
+                // medium_magma_cube drops magma_cream
+                java.util.List.of(net.minecraft.world.item.Items.MAGMA_CREAM),
+                null);
+    }
+
+    private static CarcassDefinition buildSMALL_MAGMA_CUBE() {
+        return new CarcassDefinition(
+                "small_magma_cube",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:magma_cube")))
+                        .value(),
+                false,
+                false,
+                false,
+                false,
+                4,
+                Carcasses::magma_cubeHanging,
+                Carcasses::magma_cubeLying,
+                Carcasses::magma_cubeLying,  // no head
+                Carcasses::magma_cubeLying,  // no head mount
+                Carcasses::magma_cubeLying,  // no skeleton
+                // small_magma_cube drops magma_cream
+                java.util.List.of(net.minecraft.world.item.Items.MAGMA_CREAM),
+                null);
     }
 }

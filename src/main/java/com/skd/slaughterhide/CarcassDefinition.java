@@ -36,7 +36,8 @@ public record CarcassDefinition(
         Function<BlockState, VoxelShape> headShape,
         Function<BlockState, VoxelShape> headMountShape,
         Function<BlockState, VoxelShape> skeletonShape,
-        List<Item> sweptVanillaItems) {
+        List<Item> sweptVanillaItems,
+        Function<BlockState, VoxelShape> corpseShape) {
 
     /** Registry name for a block of this mob, e.g. {@code cow_carcass}. */
     public Identifier blockId(String suffix) {
