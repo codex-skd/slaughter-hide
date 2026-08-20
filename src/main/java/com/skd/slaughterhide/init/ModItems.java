@@ -98,6 +98,8 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_SILVERFISH_CHUNKS = item("raw_silverfish_chunks", Item::new);
     // Endermite
     public static final DeferredItem<Item> RAW_ENDERMITE_CHUNKS = item("raw_endermite_chunks", Item::new);
+    // Enderman
+    public static final DeferredItem<Item> RAW_ENDERMAN_STEAK = item("raw_enderman_steak", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -520,6 +522,15 @@ public final class ModItems {
     public static final DeferredItem<Item> DRAINED_RAVAGER_CORPSE =
             placementItem("drained_ravager_corpse", Carcasses.RAVAGER, true, new Item.Properties().stacksTo(8));
     // Ravager has no head, head mount, skeleton
+
+    // Enderman
+    public static final DeferredItem<Item> ENDERMAN_CARCASS =
+            placementItem("enderman_carcass", Carcasses.ENDERMAN, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_ENDERMAN_CARCASS =
+            placementItem("drained_enderman_carcass", Carcasses.ENDERMAN, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> ENDERMAN_HEAD = blockItem("enderman_head", new Item.Properties());
+    public static final DeferredItem<Item> ENDERMAN_HEAD_MOUNT = blockItem("enderman_head_mount", new Item.Properties());
+    // Enderman has no skeleton
 
     // Blue Axolotl
     public static final DeferredItem<Item> BLUE_AXOLOTL_CARCASS =
@@ -1139,6 +1150,9 @@ public final class ModItems {
             case "white_cat_head" -> ModBlocks.headFor(Carcasses.WHITE_CAT.mobId());
             case "white_cat_head_mount" -> ModBlocks.mountFor(Carcasses.WHITE_CAT.mobId());
             // white_cat has no skeleton
+            case "enderman_head" -> ModBlocks.headFor(Carcasses.ENDERMAN.mobId());
+            case "enderman_head_mount" -> ModBlocks.mountFor(Carcasses.ENDERMAN.mobId());
+            // Enderman has no skeleton
             case "creeper_head" -> ModBlocks.headFor(Carcasses.CREEPER.mobId());
             case "creeper_head_mount" -> ModBlocks.mountFor(Carcasses.CREEPER.mobId());
             case "creeper_skeleton" -> ModBlocks.skeletonFor(Carcasses.CREEPER.mobId());
