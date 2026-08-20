@@ -98,6 +98,10 @@ public final class Carcasses {
     public static final CarcassDefinition GLOW_SQUID = buildGLOW_SQUID();
     /** Thirty-seventh: creeper. */
     public static final CarcassDefinition CREEPER = buildCREEPER();
+    /** Thirty-eighth: spider. */
+    public static final CarcassDefinition SPIDER = buildSPIDER();
+    /** Thirty-ninth: cave_spider. */
+    public static final CarcassDefinition CAVE_SPIDER = buildCAVE_SPIDER();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
@@ -181,6 +185,8 @@ public final class Carcasses {
         register(SQUID);
         register(GLOW_SQUID);
         register(CREEPER);
+        register(SPIDER);
+        register(CAVE_SPIDER);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -2308,5 +2314,104 @@ private static CarcassDefinition buildDONKEY() {
                 Carcasses::creeperSkeletonHanging,
                 // creeper drops raw_creeper_steak
                 java.util.List.of(net.minecraft.world.item.Items.TNT));
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery spider blocks.
+    // Both spider and cave_spider share these shapes.
+    private static VoxelShape spiderHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(5.3, 20.0, 4.0, 10.8, 24.5, 8.0), box(5.7, 12.5, 5.2, 10.2, 19.3, 9.2), box(4.3, 5.3, 1.2, 11.8, 14.3, 10.0));
+            case EAST -> Shapes.or(box(8.0, 20.0, 5.3, 12.0, 24.5, 10.8), box(6.8, 12.5, 5.7, 10.8, 19.3, 10.2), box(6.0, 5.3, 4.3, 14.8, 14.3, 11.8));
+            case WEST -> Shapes.or(box(4.0, 20.0, 5.2, 8.0, 24.5, 10.7), box(5.2, 12.5, 5.8, 9.2, 19.3, 10.3), box(1.2, 5.3, 4.2, 10.0, 14.3, 11.7));
+            default -> Shapes.or(box(5.2, 20.0, 8.0, 10.7, 24.5, 12.0), box(5.8, 12.5, 6.8, 10.3, 19.3, 10.8), box(4.2, 5.3, 6.0, 11.7, 14.3, 14.8));
+        };
+    }
+
+    private static VoxelShape spiderLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(5.87276, 0.075, 5.57276, 10.37276, 4.575, 10.07276);
+            case EAST -> box(5.92724, 0.075, 5.87276, 10.42724, 4.575, 10.37276);
+            case WEST -> box(5.57276, 0.075, 5.62724, 10.07276, 4.575, 10.12724);
+            default -> box(5.62724, 0.075, 5.92724, 10.12724, 4.575, 10.42724);
+        };
+    }
+
+    private static VoxelShape spiderHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+            case EAST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+            case WEST -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+            default -> box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0);
+        };
+    }
+
+    private static VoxelShape spiderHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
+        };
+    }
+
+    // spider has no skeleton
+
+    private static CarcassDefinition buildSPIDER() {
+        return new CarcassDefinition(
+                "spider",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:spider")))
+                        .value(),
+                true,
+                true,
+                false,
+                false,
+                3,
+                Carcasses::spiderHanging,
+                Carcasses::spiderLying,
+                Carcasses::spiderHead,
+                Carcasses::spiderHeadMount,
+                Carcasses::spiderLying,  // no skeleton
+                // spider drops spider_eye
+                java.util.List.of(net.minecraft.world.item.Items.SPIDER_EYE));
+    }
+
+    // cave_spider uses the same shapes as spider
+    private static VoxelShape cave_spiderHanging(BlockState state) {
+        return spiderHanging(state);
+    }
+
+    private static VoxelShape cave_spiderLying(BlockState state) {
+        return spiderLying(state);
+    }
+
+    private static VoxelShape cave_spiderHead(BlockState state) {
+        return spiderHead(state);
+    }
+
+    private static VoxelShape cave_spiderHeadMount(BlockState state) {
+        return spiderHeadMount(state);
+    }
+
+    // cave_spider has no skeleton
+
+    private static CarcassDefinition buildCAVE_SPIDER() {
+        return new CarcassDefinition(
+                "cave_spider",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:cave_spider")))
+                        .value(),
+                true,
+                true,
+                false,
+                false,
+                3,
+                Carcasses::cave_spiderHanging,
+                Carcasses::cave_spiderLying,
+                Carcasses::cave_spiderHead,
+                Carcasses::cave_spiderHeadMount,
+                Carcasses::cave_spiderLying,  // no skeleton
+                // cave_spider drops string
+                java.util.List.of(net.minecraft.world.item.Items.STRING));
     }
 }

@@ -408,6 +408,24 @@ public final class ModItems {
     public static final DeferredItem<Item> GLOW_SQUID_HEAD = blockItem("glow_squid_head", new Item.Properties());
     // Glow Squid has no head mount, no skeleton
 
+    // Spider
+    public static final DeferredItem<Item> SPIDER_CARCASS =
+            placementItem("spider_carcass", Carcasses.SPIDER, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_SPIDER_CARCASS =
+            placementItem("drained_spider_carcass", Carcasses.SPIDER, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> SPIDER_HEAD = blockItem("spider_head", new Item.Properties());
+    public static final DeferredItem<Item> SPIDER_HEAD_MOUNT = blockItem("spider_head_mount", new Item.Properties());
+    // Spider has no skeleton
+
+    // Cave Spider
+    public static final DeferredItem<Item> CAVE_SPIDER_CARCASS =
+            placementItem("cave_spider_carcass", Carcasses.CAVE_SPIDER, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_CAVE_SPIDER_CARCASS =
+            placementItem("drained_cave_spider_carcass", Carcasses.CAVE_SPIDER, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> CAVE_SPIDER_HEAD = blockItem("cave_spider_head", new Item.Properties());
+    public static final DeferredItem<Item> CAVE_SPIDER_HEAD_MOUNT = blockItem("cave_spider_head_mount", new Item.Properties());
+    // Cave Spider has no skeleton
+
     // Creeper
     public static final DeferredItem<Item> CREEPER_CARCASS =
             placementItem("creeper_carcass", Carcasses.CREEPER, false, new Item.Properties().stacksTo(8));
@@ -681,6 +699,16 @@ public final class ModItems {
         DRAINED_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), DRAINED_GLOW_SQUID_CARCASS);
         HEAD_BY_MOB.put(Carcasses.GLOW_SQUID.mobId(), GLOW_SQUID_HEAD);
         // Glow Squid has no head mount, no skeleton
+        FRESH_BY_MOB.put(Carcasses.SPIDER.mobId(), SPIDER_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.SPIDER.mobId(), DRAINED_SPIDER_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.SPIDER.mobId(), SPIDER_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.SPIDER.mobId(), SPIDER_HEAD_MOUNT);
+        // Spider has no skeleton
+        FRESH_BY_MOB.put(Carcasses.CAVE_SPIDER.mobId(), CAVE_SPIDER_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.CAVE_SPIDER.mobId(), DRAINED_CAVE_SPIDER_CARCASS);
+        HEAD_BY_MOB.put(Carcasses.CAVE_SPIDER.mobId(), CAVE_SPIDER_HEAD);
+        MOUNT_BY_MOB.put(Carcasses.CAVE_SPIDER.mobId(), CAVE_SPIDER_HEAD_MOUNT);
+        // Cave Spider has no skeleton
         FRESH_BY_MOB.put(Carcasses.ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT_CARCASS);
         DRAINED_BY_MOB.put(Carcasses.ALL_BLACK_CAT.mobId(), DRAINED_ALL_BLACK_CAT_CARCASS);
         HEAD_BY_MOB.put(Carcasses.ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT_HEAD);
@@ -834,6 +862,12 @@ public final class ModItems {
             // Squid has no head mount
             case "glow_squid_head" -> ModBlocks.headFor(Carcasses.GLOW_SQUID.mobId());
             // Glow Squid has no head mount
+            case "spider_head" -> ModBlocks.headFor(Carcasses.SPIDER.mobId());
+            case "spider_head_mount" -> ModBlocks.mountFor(Carcasses.SPIDER.mobId());
+            // Spider has no skeleton
+            case "cave_spider_head" -> ModBlocks.headFor(Carcasses.CAVE_SPIDER.mobId());
+            case "cave_spider_head_mount" -> ModBlocks.mountFor(Carcasses.CAVE_SPIDER.mobId());
+            // Cave Spider has no skeleton
             case "all_black_cat_head" -> ModBlocks.headFor(Carcasses.ALL_BLACK_CAT.mobId());
             case "all_black_cat_head_mount" -> ModBlocks.mountFor(Carcasses.ALL_BLACK_CAT.mobId());
             // all_black_cat has no skeleton
