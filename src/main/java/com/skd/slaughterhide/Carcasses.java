@@ -154,6 +154,8 @@ public final class Carcasses {
     public static final CarcassDefinition ENDERMAN = buildENDERMAN();
     /** Strider carcass (3 cuts). */
     public static final CarcassDefinition STRIDER = buildSTRIDER();
+    /** Sniffer carcass (3 cuts + fur). */
+    public static final CarcassDefinition SNIFFER = buildSNIFFER();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
@@ -261,6 +263,7 @@ public final class Carcasses {
         register(RAVAGER);
         register(ENDERMAN);
         register(STRIDER);
+        register(SNIFFER);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -3544,6 +3547,48 @@ private static CarcassDefinition buildRAVAGER() {
             case EAST -> box(0.0, 4.0, 0.0, 16.0, 18.0, 16.0);
             case WEST -> box(0.0, 4.0, 0.0, 16.0, 18.0, 16.0);
             default -> box(0.0, 4.0, 0.0, 16.0, 18.0, 16.0);
+        };
+    }
+
+    // ===== SNIFFER =====
+
+    private static CarcassDefinition buildSNIFFER() {
+        return new CarcassDefinition(
+                "sniffer",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:sniffer")))
+                        .value(),
+            true,
+            false,
+            false,
+            true,
+            3,
+            Carcasses::snifferCarcass,
+            Carcasses::snifferCarcass,
+            Carcasses::snifferHead,
+            Carcasses::snifferCarcass,  // no head mount
+            Carcasses::snifferCarcass,  // no skeleton
+            // sniffer drops torchflower_seeds
+            java.util.List.of(net.minecraft.world.item.Items.TORCHFLOWER_SEEDS),
+            null);
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery sniffer blocks.
+    private static VoxelShape snifferCarcass(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            case WEST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            default -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+        };
+    }
+
+    private static VoxelShape snifferHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            case WEST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            default -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
         };
     }
 }

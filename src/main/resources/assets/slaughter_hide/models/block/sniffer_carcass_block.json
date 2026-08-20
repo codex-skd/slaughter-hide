@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "slaughter_hide:block/sniffer",
+    "particle": "minecraft:block/nether_wart_block"
+  }
+}
