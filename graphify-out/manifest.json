@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/Carcasses.java": {
-    "mtime": 1787255211.4496858,
-    "ast_hash": "3c754b45cabec6bf99a399eac002f3f1",
+    "mtime": 1787258224.0637114,
+    "ast_hash": "7d459f4ed4e180da8bb394bc28069aef",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/ServerWorkScheduler.java": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787255274.6351666,
-    "ast_hash": "74b25b3d6b342adca0654cc63f6604dd",
+    "mtime": 1787258002.182837,
+    "ast_hash": "9167c0836bca4c1e91ef73cab69ce156",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787255781.2014792,
-    "ast_hash": "b44f474685c3e872876925f1b3d6a82b",
+    "mtime": 1787258077.617891,
+    "ast_hash": "fbb1c1bf55f9c8320c3eb626a67d9cb8",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -7922,6 +7922,71 @@
   "src/main/resources/assets/slaughter_hide/textures/block/enderman_head.png": {
     "mtime": 1787255726.923545,
     "ast_hash": "fd90737c89c5d13c360d0e982ab7a181",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/drained_strider_carcass.json": {
+    "mtime": 1787258430.4058874,
+    "ast_hash": "ec612e9fb24a2a53c0fef3515d3559fb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/strider_carcass.json": {
+    "mtime": 1787258418.9794664,
+    "ast_hash": "c259344108d6119843f4bcade58ba472",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/strider_carcass.json": {
+    "mtime": 1787258468.8381014,
+    "ast_hash": "38356cbc9b6d390dae402c229f25fe26",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/strider_carcass_0.json": {
+    "mtime": 1787258483.8043544,
+    "ast_hash": "7af393401250fdefa8882b352c86dae3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_strider_carcass.json": {
+    "mtime": 1787258581.4064493,
+    "ast_hash": "300fd3b305d11d665e8c4b237f587cbe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_carcass.json": {
+    "mtime": 1787258527.5911033,
+    "ast_hash": "c283900b5fa28d0930b08fbb66c756c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_carcass_loot.json": {
+    "mtime": 1787258545.1240263,
+    "ast_hash": "3ab84d683d33f1034b68fce040af1b8a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_cut_1_drop.json": {
+    "mtime": 1787258565.1137712,
+    "ast_hash": "55c677ae60f2ec29220c07b0cb8fa5d0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_cut_2_drop.json": {
+    "mtime": 1787258577.9342763,
+    "ast_hash": "333df8745b7ee4aa502e5309362baf04",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_cut_3_drop.json": {
+    "mtime": 1787258578.2049718,
+    "ast_hash": "cc2a12aa987da34d4a95b55ef9e1eb4c",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.24.md": {
+    "mtime": 1787258676.562226,
+    "ast_hash": "c1ec6c7c0dd4924ff328a614dd86a48d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/strider.png": {
+    "mtime": 1787258596.9286468,
+    "ast_hash": "812396bc6950282c55ab8541e43a541f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/strider_drained.png": {
+    "mtime": 1787258597.098697,
+    "ast_hash": "49917d5c875dfb2f607af6db0150816f",
     "semantic_hash": ""
   }
 }

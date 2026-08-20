@@ -43,6 +43,7 @@
   "41": ".spiderLying",
   "42": ".horseHanging",
   "43": ".shulkerHanging",
+  "44": ".axolotlLying",
   "45": "add_corpse_builders.py",
   "46": "build.gradle",
   "47": "project_description.md",
@@ -54,5 +55,17 @@
   "53": "0.0.0-beta.6.md",
   "54": "settings.gradle",
   "55": "update_carcasses2.py",
-  "56": "update_carcasses_final.py"
+  "56": "update_carcasses_final.py",
+  "57": ".spiderHead",
+  "58": ".spiderLying",
+  "59": ".drownedHanging",
+  "60": ".endermiteHanging",
+  "61": ".horseHanging",
+  "62": ".magma_cubeHanging",
+  "63": ".phantomLying",
+  "64": ".pufferfishHanging",
+  "65": ".shulkerHanging",
+  "66": ".zombie_horseHanging",
+  "67": ".zombieHanging",
+  "68": "0.0.0-beta.24.md"
 }

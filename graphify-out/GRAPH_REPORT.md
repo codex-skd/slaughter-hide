@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-20)
 
 ## Corpus Check
-- 1404 files · ~658,812 words
+- 1415 files · ~660,332 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 801 nodes · 2108 edges · 56 communities (52 shown, 4 thin omitted)
+- 805 nodes · 2118 edges · 69 communities (65 shown, 4 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `942feb0f`
+- Built from commit: `9ec910ba`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,12 +37,13 @@
 - CarcassLoot.java
 - CarcassDefinition.java
 - .dropTable
+- .batHanging
 - CLAUDE.md — slaughter_hide (26.2)
 - gradlew
 
 ## God Nodes (most connected - your core abstractions)
-1. `Carcasses` - 296 edges
-2. `CarcassDefinition` - 117 edges
+1. `Carcasses` - 299 edges
+2. `CarcassDefinition` - 118 edges
 3. `CorpseBlockEntity` - 26 edges
 4. `ModBlocks` - 23 edges
 5. `DrainedCarcassBlock` - 21 edges
@@ -67,15 +68,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (56 total, 4 thin omitted)
+## Communities (69 total, 4 thin omitted)
 
 ### Community 1 - "CarcassBlockEntity"
-Cohesion: 0.07
-Nodes (25): BlockEntity, Blocks, ClientboundBlockEntityDataPacket, CompoundTag, Provider, CarcassBlockEntity, BlockPos, BlockState (+17 more)
+Cohesion: 0.06
+Nodes (28): BlockEntity, Blocks, ClientboundBlockEntityDataPacket, CompoundTag, Provider, CarcassBlockEntity, BlockPos, BlockState (+20 more)
 
 ### Community 2 - "ModBlocks"
-Cohesion: 0.10
-Nodes (16): DeferredItem, Item, ItemInstance, ItemStackTemplate, SoundEvent, HookPlacementHandler, Item, RightClickBlock (+8 more)
+Cohesion: 0.19
+Nodes (7): Item, SoundEvent, HookPlacementHandler, Item, RightClickBlock, SubscribeEvent, CarcassPlacementItem
 
 ### Community 5 - "CorpseBlockEntity"
 Cohesion: 0.10
@@ -90,24 +91,24 @@ Cohesion: 0.06
 Nodes (33): Arquitectura idiomática propuesta (reemplaza ~330 clases de bloque + ~293 procedures), Assets (`assets/butchery/`), `block/` (456 clases), Catálogo Fase 0 — series vs mecánicas únicas (COMPLETADO 2026-08-15), Contexto y tamaño real del mod original, Código (clases `.class`, sin contar internas `$`), Datos (`data/butchery/`), Decisiones confirmadas por el usuario (2026-08-15) (+25 more)
 
 ### Community 8 - "DrainedCarcassBlock"
-Cohesion: 0.06
-Nodes (37): DeferredBlock, EntityBlock, Items, CarcassBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos (+29 more)
+Cohesion: 0.17
+Nodes (17): Items, DrainedCarcassBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder (+9 more)
 
 ### Community 10 - "CorpseBlock"
-Cohesion: 0.20
-Nodes (15): CorpseBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext (+7 more)
+Cohesion: 0.10
+Nodes (19): DeferredBlock, EntityBlock, CorpseBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState (+11 more)
 
 ### Community 11 - "CarcassDeathHandler.java"
-Cohesion: 0.15
-Nodes (11): Entity, IntObjectPair, LivingDeathEvent, Post, EntityType, CarcassDeathHandler, ServerLevel, SubscribeEvent (+3 more)
+Cohesion: 0.08
+Nodes (21): DeferredItem, Entity, Identifier, IntObjectPair, ItemInstance, ItemStackTemplate, LivingDeathEvent, Post (+13 more)
 
 ### Community 12 - "Changelog — Slaughter & Hide"
 Cohesion: 0.11
 Nodes (18): [0.0.0-beta.1] - 2026-08-14, [0.0.0-beta.2] - 2026-08-15, [0.0.0-beta.3] - 2026-08-15, [0.0.0-beta.4] - 2026-08-18, [0.0.0-beta.5] - 2026-08-18, [0.0.0-beta.6] - 2026-08-18, Add, Add (+10 more)
 
 ### Community 13 - "SlaughterHide.java"
-Cohesion: 0.12
-Nodes (15): ConfigValue, CreativeModeTab, FMLConstructModEvent, IEventBus, Mod, ModConfigSpec, Builder, SlaughterHideConfig (+7 more)
+Cohesion: 0.15
+Nodes (12): ConfigValue, CreativeModeTab, FMLConstructModEvent, IEventBus, Mod, ModConfigSpec, Builder, SlaughterHideConfig (+4 more)
 
 ### Community 14 - "port_assets.py"
 Cohesion: 0.15
@@ -138,8 +139,12 @@ Cohesion: 0.39
 Nodes (5): CarcassLoot, BlockPos, LootTable, ResourceKey, ServerLevel
 
 ### Community 21 - "CarcassDefinition.java"
-Cohesion: 0.29
-Nodes (5): Identifier, BlockState, EntityType, Item, VoxelShape
+Cohesion: 0.40
+Nodes (4): BlockState, EntityType, Item, VoxelShape
+
+### Community 23 - ".batHanging"
+Cohesion: 0.18
+Nodes (16): CarcassBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext (+8 more)
 
 ### Community 37 - "CLAUDE.md — slaughter_hide (26.2)"
 Cohesion: 0.50
@@ -157,17 +162,17 @@ Nodes (3): gradlew script, die(), warn()
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CarcassDefinition` connect `CarcassDefinition` to `CarcassBlockEntity`, `ModBlocks`, `Carcasses`, `Block`, `DrainedCarcassBlock`, `CarcassDeathHandler.java`, `SkeletonBlock.java`, `TrophyHeadBlock.java`, `CarcassDefinition.java`, `.dropTable`, `.batHanging`, `.buildCAMEL`, `.buildChicken`, `.buildDOLPHIN`, `.buildDONKEY`, `.buildFox`, `.buildGoat`, `.buildHOGLIN`, `.buildMULE`, `.buildOCELOT`, `.buildPANDA`, `.buildPOLAR_BEAR`, `.buildRabbit`, `.buildWolf`, `.pigHanging`, `.stageMap`?**
-  _High betweenness centrality (0.370) - this node is a cross-community bridge._
-- **Why does `Carcasses` connect `Carcasses` to `VoxelShape`, `CarcassBlockEntity`, `CarcassDefinition`, `DrainedCarcassBlock`, `CarcassBlock`, `CarcassDeathHandler.java`, `.batHanging`, `.buildCAMEL`, `.buildChicken`, `.buildDOLPHIN`, `.buildDONKEY`, `.buildFox`, `.buildGoat`, `.buildHOGLIN`, `.buildMULE`, `.buildOCELOT`, `.buildPANDA`, `.buildPOLAR_BEAR`, `.buildRabbit`, `.buildWolf`, `.pigHanging`, `.spiderLying`, `.horseHanging`?**
-  _High betweenness centrality (0.281) - this node is a cross-community bridge._
+- **Why does `CarcassDefinition` connect `CarcassDefinition` to `CarcassBlockEntity`, `ModBlocks`, `Carcasses`, `Block`, `DrainedCarcassBlock`, `CorpseBlock`, `CarcassDeathHandler.java`, `SkeletonBlock.java`, `TrophyHeadBlock.java`, `CarcassDefinition.java`, `.dropTable`, `.batHanging`, `.buildCAMEL`, `.buildChicken`, `.buildDOLPHIN`, `.buildDONKEY`, `.buildFox`, `.buildGoat`, `.buildHOGLIN`, `.buildMULE`, `.buildOCELOT`, `.buildPANDA`, `.buildPOLAR_BEAR`, `.buildRabbit`, `.buildWolf`, `.pigHanging`, `.stageMap`?**
+  _High betweenness centrality (0.369) - this node is a cross-community bridge._
+- **Why does `Carcasses` connect `Carcasses` to `VoxelShape`, `CarcassBlockEntity`, `CarcassDefinition`, `CarcassBlock`, `CarcassDeathHandler.java`, `.buildCAMEL`, `.buildChicken`, `.buildDOLPHIN`, `.buildDONKEY`, `.buildFox`, `.buildGoat`, `.buildHOGLIN`, `.buildMULE`, `.buildOCELOT`, `.buildPANDA`, `.buildPOLAR_BEAR`, `.buildRabbit`, `.buildWolf`, `.pigHanging`, `.spiderLying`, `.horseHanging`, `.axolotlLying`, `.spiderHead`, `.spiderLying`, `.drownedHanging`, `.endermiteHanging`, `.horseHanging`, `.magma_cubeHanging`, `.phantomLying`, `.pufferfishHanging`, `.shulkerHanging`, `.zombie_horseHanging`, `.zombieHanging`?**
+  _High betweenness centrality (0.282) - this node is a cross-community bridge._
 - **Why does `CorpseBlockEntity` connect `CorpseBlockEntity` to `CarcassBlockEntity`?**
   _High betweenness centrality (0.041) - this node is a cross-community bridge._
 - **What connects `Format a box tuple as box(x1, y1, z1, x2, y2, z2)`, `Format a list of boxes for a facing direction.`, `Generate a static VoxelShape method.` to the rest of the system?**
   _71 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `VoxelShape` be split into smaller, more focused modules?**
-  _Cohesion score 0.05012313486889758 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0626858842370167 - nodes in this community are weakly interconnected._
 - **Should `CarcassBlockEntity` be split into smaller, more focused modules?**
-  _Cohesion score 0.07164404223227752 - nodes in this community are weakly interconnected._
-- **Should `ModBlocks` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06370543541788427 - nodes in this community are weakly interconnected._
+- **Should `Carcasses` be split into smaller, more focused modules?**
+  _Cohesion score 0.05580693815987934 - nodes in this community are weakly interconnected._
