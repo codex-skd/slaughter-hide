@@ -156,6 +156,8 @@ public final class Carcasses {
     public static final CarcassDefinition STRIDER = buildSTRIDER();
     /** Sniffer carcass (3 cuts + fur). */
     public static final CarcassDefinition SNIFFER = buildSNIFFER();
+    /** Turtle carcass (7 cuts). */
+    public static final CarcassDefinition TURTLE = buildTURTLE();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
@@ -264,6 +266,7 @@ public final class Carcasses {
         register(ENDERMAN);
         register(STRIDER);
         register(SNIFFER);
+        register(TURTLE);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
         BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
         BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
@@ -3589,6 +3592,66 @@ private static CarcassDefinition buildRAVAGER() {
             case EAST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
             case WEST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
             default -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+        };
+    }
+
+    // ===== TURTLE =====
+
+    private static CarcassDefinition buildTURTLE() {
+        return new CarcassDefinition(
+                "turtle",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:turtle")))
+                        .value(),
+            true,
+            true,
+            false,
+            true,
+            7,
+            Carcasses::turtleHanging,
+            Carcasses::turtleLying,
+            Carcasses::turtleHead,
+            Carcasses::turtleHeadMount,
+            Carcasses::turtleLying,  // no skeleton
+            // turtle drops scute
+            java.util.List.of(net.minecraft.world.item.Items.SEAGRASS),
+            null);
+    }
+
+    // Shapes below are ported 1:1 from the original Butchery turtle blocks.
+    private static VoxelShape turtleHanging(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(2.525, -0.38925, 5.85592, 13.525, 17.61075, 9.85592), box(-1.475, -1.38925, 0.85592, 17.525, 18.61075, 6.85592));
+            case EAST -> Shapes.or(box(6.14408, -0.38925, 2.525, 10.14408, 17.61075, 13.525), box(9.14408, -1.38925, -1.475, 15.14408, 18.61075, 17.525));
+            case WEST -> Shapes.or(box(5.85592, -0.38925, 2.475, 9.85592, 17.61075, 13.475), box(0.85592, -1.38925, -1.525, 6.85592, 18.61075, 17.475));
+            default -> Shapes.or(box(2.475, -0.38925, 6.14408, 13.475, 17.61075, 10.14408), box(-1.525, -1.38925, 9.14408, 17.475, 18.61075, 15.14408));
+        };
+    }
+
+    private static VoxelShape turtleLying(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> Shapes.or(box(-2.00075, 3.07843, -0.94983, 17.99925, 9.07843, 18.05017), box(-1.00075, 0.07843, 3.05017, 16.99925, 4.07843, 14.05017));
+            case EAST -> Shapes.or(box(-2.05017, 3.07843, -2.00075, 16.94983, 9.07843, 17.99925), box(1.94983, 0.07843, -1.00075, 12.94983, 4.07843, 16.99925));
+            case WEST -> Shapes.or(box(-0.94983, 3.07843, -1.99925, 18.05017, 9.07843, 18.00075), box(3.05017, 0.07843, -0.99925, 14.05017, 4.07843, 17.00075));
+            default -> Shapes.or(box(-1.99925, 3.07843, -2.05017, 18.00075, 9.07843, 16.94983), box(-0.99925, 0.07843, 1.94983, 17.00075, 4.07843, 12.94983));
+        };
+    }
+
+    private static VoxelShape turtleHead(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            case WEST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+            default -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+        };
+    }
+
+    private static VoxelShape turtleHeadMount(BlockState state) {
+        return switch (state.getValue(CarcassBlockProperty.FACING)) {
+            case NORTH -> box(1.0, 0.0, 12.0, 15.0, 16.0, 16.0);
+            case EAST -> box(0.0, 0.0, 1.0, 4.0, 16.0, 15.0);
+            case WEST -> box(12.0, 0.0, 1.0, 16.0, 16.0, 15.0);
+            default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
         };
     }
 }

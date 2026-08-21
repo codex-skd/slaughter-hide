@@ -104,6 +104,9 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_STRIDER_MEAT = item("raw_strider_meat", Item::new);
     // Sniffer
     public static final DeferredItem<Item> RAW_SNIFFER_STEAK = item("raw_sniffer_steak", Item::new);
+    // Turtle
+    public static final DeferredItem<Item> RAW_TURTLE_MEAT = item("raw_turtle_meat", Item::new);
+    public static final DeferredItem<Item> TURTLE_SHELL_FRAGMENT = item("turtle_shell_fragment", Item::new);
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -550,6 +553,15 @@ public final class ModItems {
             placementItem("drained_sniffer_carcass", Carcasses.SNIFFER, true, new Item.Properties().stacksTo(8));
     public static final DeferredItem<Item> SNIFFER_HEAD = blockItem("sniffer_head", new Item.Properties());
     // Sniffer has no head mount, skeleton
+
+    // Turtle
+    public static final DeferredItem<Item> TURTLE_CARCASS =
+            placementItem("turtle_carcass", Carcasses.TURTLE, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_TURTLE_CARCASS =
+            placementItem("drained_turtle_carcass", Carcasses.TURTLE, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> TURTLE_HEAD = blockItem("turtle_head", new Item.Properties());
+    public static final DeferredItem<Item> TURTLE_HEAD_MOUNT = blockItem("turtle_head_mount", new Item.Properties());
+    // Turtle has no skeleton
 
     // Blue Axolotl
     public static final DeferredItem<Item> BLUE_AXOLOTL_CARCASS =
@@ -1174,6 +1186,9 @@ public final class ModItems {
             // Enderman has no skeleton
             case "sniffer_head" -> ModBlocks.headFor(Carcasses.SNIFFER.mobId());
             // Sniffer has no head mount, skeleton
+            case "turtle_head" -> ModBlocks.headFor(Carcasses.TURTLE.mobId());
+            case "turtle_head_mount" -> ModBlocks.mountFor(Carcasses.TURTLE.mobId());
+            // Turtle has no skeleton
             case "creeper_head" -> ModBlocks.headFor(Carcasses.CREEPER.mobId());
             case "creeper_head_mount" -> ModBlocks.mountFor(Carcasses.CREEPER.mobId());
             case "creeper_skeleton" -> ModBlocks.skeletonFor(Carcasses.CREEPER.mobId());

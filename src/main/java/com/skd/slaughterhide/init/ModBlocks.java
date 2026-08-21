@@ -91,6 +91,7 @@ public final class ModBlocks {
         registerFamily(Carcasses.ENDERMAN);
         registerFamily(Carcasses.STRIDER);
         registerFamily(Carcasses.SNIFFER);
+        registerFamily(Carcasses.TURTLE);
         // Cat variants (11 variants, all share ocelot shapes, have head+head_mount+skin, no skeleton, 0 cuts)
         registerFamily(Carcasses.ALL_BLACK_CAT);
         registerFamily(Carcasses.BLACK_CAT);
