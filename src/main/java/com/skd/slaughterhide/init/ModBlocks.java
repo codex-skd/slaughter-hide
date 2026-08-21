@@ -92,6 +92,17 @@ public final class ModBlocks {
         registerFamily(Carcasses.STRIDER);
         registerFamily(Carcasses.SNIFFER);
         registerFamily(Carcasses.TURTLE);
+        // CorpseBlock humanoids (organ harvesting)
+        registerCorpseFamily(Carcasses.ZOMBIE);
+        registerCorpseFamily(Carcasses.SKELETON);
+        registerCorpseFamily(Carcasses.DROWNED);
+        registerCorpseFamily(Carcasses.HUSK);
+        registerCorpseFamily(Carcasses.VINDICATOR);
+        registerCorpseFamily(Carcasses.EVOKER);
+        registerCorpseFamily(Carcasses.WITCH);
+        registerCorpseFamily(Carcasses.PIGLIN);
+        registerCorpseFamily(Carcasses.PIGLIN_BRUTE);
+        registerCorpseFamily(Carcasses.RAVAGER);
         // Cat variants (11 variants, all share ocelot shapes, have head+head_mount+skin, no skeleton, 0 cuts)
         registerFamily(Carcasses.ALL_BLACK_CAT);
         registerFamily(Carcasses.BLACK_CAT);
