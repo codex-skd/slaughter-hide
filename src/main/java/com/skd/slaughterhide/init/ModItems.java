@@ -25,6 +25,38 @@ public final class ModItems {
 
     public static final DeferredItem<Item> IRON_CLEAVER = item("iron_cleaver", ButcherToolItem::new);
     public static final DeferredItem<Item> IRON_SKINNING_KNIFE = item("iron_skinning_knife", ButcherToolItem::new);
+    public static final DeferredItem<Item> IRON_HACKSAW = item("iron_hacksaw", ButcherToolItem::new);
+    public static final DeferredItem<Item> IRON_HAMMER = item("iron_hammer", ButcherToolItem::new);
+
+    // Copper tier
+    public static final DeferredItem<Item> COPPER_CLEAVER = item("copper_cleaver", ButcherToolItem::new);
+    public static final DeferredItem<Item> COPPER_SKINNING_KNIFE = item("copper_skinning_knife", ButcherToolItem::new);
+    public static final DeferredItem<Item> COPPER_HACKSAW = item("copper_hacksaw", ButcherToolItem::new);
+    public static final DeferredItem<Item> COPPER_HAMMER = item("copper_hammer", ButcherToolItem::new);
+
+    // Gold tier
+    public static final DeferredItem<Item> GOLD_CLEAVER = item("gold_cleaver", ButcherToolItem::new);
+    public static final DeferredItem<Item> GOLD_SKINNING_KNIFE = item("gold_skinning_knife", ButcherToolItem::new);
+    public static final DeferredItem<Item> GOLD_HACKSAW = item("gold_hacksaw", ButcherToolItem::new);
+    public static final DeferredItem<Item> GOLD_HAMMER = item("gold_hammer", ButcherToolItem::new);
+
+    // Diamond tier
+    public static final DeferredItem<Item> DIAMOND_CLEAVER = item("diamond_cleaver", ButcherToolItem::new);
+    public static final DeferredItem<Item> DIAMOND_SKINNING_KNIFE = item("diamond_skinning_knife", ButcherToolItem::new);
+    public static final DeferredItem<Item> DIAMOND_HACKSAW = item("diamond_hacksaw", ButcherToolItem::new);
+    public static final DeferredItem<Item> DIAMOND_HAMMER = item("diamond_hammer", ButcherToolItem::new);
+
+    // Netherite tier
+    public static final DeferredItem<Item> NETHERITE_CLEAVER = item("netherite_cleaver", ButcherToolItem::new);
+    public static final DeferredItem<Item> NETHERITE_SKINNING_KNIFE = item("netherite_skinning_knife", ButcherToolItem::new);
+    public static final DeferredItem<Item> NETHERITE_HACKSAW = item("netherite_hacksaw", ButcherToolItem::new);
+    public static final DeferredItem<Item> NETHERITE_HAMMER = item("netherite_hammer", ButcherToolItem::new);
+
+    // Bone tier
+    public static final DeferredItem<Item> BONE_CLEAVER = item("bone_cleaver", ButcherToolItem::new);
+    public static final DeferredItem<Item> BONE_SKINNING_KNIFE = item("bone_skinning_knife", ButcherToolItem::new);
+    public static final DeferredItem<Item> BONE_HACKSAW = item("bone_hacksaw", ButcherToolItem::new);
+    public static final DeferredItem<Item> BONE_HAMMER = item("bone_hammer", ButcherToolItem::new);
 
     public static final DeferredItem<Item> COW_SKIN = item("cow_skin", Item::new);
     public static final DeferredItem<Item> PIG_SKIN = item("pig_skin", Item::new);
