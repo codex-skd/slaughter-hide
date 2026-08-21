@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/Carcasses.java": {
-    "mtime": 1787259874.2956355,
-    "ast_hash": "d5fc370dea61768227e97bace4ffc430",
+    "mtime": 1787268668.9226635,
+    "ast_hash": "1378932f486c318bc3a3603167b536bb",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/ServerWorkScheduler.java": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787260079.6600165,
-    "ast_hash": "4d2bf64a8fa91be62fed104a8160f1a6",
+    "mtime": 1787268760.000295,
+    "ast_hash": "b48f5725b77136de2413adb7f13cad05",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787260131.9064302,
-    "ast_hash": "f79256dc9b93750af4f9df3053bc47aa",
+    "mtime": 1787268799.759333,
+    "ast_hash": "17b0c90845b5f5cabe698e0772722f63",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -8072,6 +8072,231 @@
   "src/main/resources/assets/slaughter_hide/textures/block/sniffer.png": {
     "mtime": 1787260276.703004,
     "ast_hash": "5bfa10e38d907e3f60d7228275a7cf52",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/drained_turtle_carcass.json": {
+    "mtime": 1787268826.5104136,
+    "ast_hash": "c6e52a58a6d3d4786c3d834bf4ad035a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/turtle_carcass.json": {
+    "mtime": 1787268826.3795767,
+    "ast_hash": "74312da4c086db88e001f9719a431e65",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/turtle_head.json": {
+    "mtime": 1787268826.6286795,
+    "ast_hash": "69a5389e7b92e182725d5cdccaa0263d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/turtle_head_mount.json": {
+    "mtime": 1787268826.7526076,
+    "ast_hash": "8e3e32b9548e00b3a7d6ef73114930d2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass.json": {
+    "mtime": 1787298776.594098,
+    "ast_hash": "e492ab98188d63a51ac7f4596512f5bc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_0.json": {
+    "mtime": 1787298776.6731856,
+    "ast_hash": "231705f9265cef21bfff69b41c1efc55",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_1.json": {
+    "mtime": 1787298776.751827,
+    "ast_hash": "7db358566a6c411cfb14ab9aafb6aac5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_10.json": {
+    "mtime": 1787298776.8289335,
+    "ast_hash": "dbfd75f3ce4d17d62f59b3187bb700ac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_11.json": {
+    "mtime": 1787298776.9073868,
+    "ast_hash": "362b08f07331b04d16144d3799a1b0c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_12.json": {
+    "mtime": 1787298776.9854496,
+    "ast_hash": "80722ba7c194c8a70299a19ea2a53ed1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_13.json": {
+    "mtime": 1787298777.0634725,
+    "ast_hash": "f0c319cac4ef33bad0a804389a5b1e96",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_14.json": {
+    "mtime": 1787298777.1418202,
+    "ast_hash": "726eae23d754802d375ae5600895944e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_15.json": {
+    "mtime": 1787298777.2192032,
+    "ast_hash": "734f70e47ffe9674f4ea00f611357bd5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_16.json": {
+    "mtime": 1787298777.2868211,
+    "ast_hash": "49480a8e53638cab785c027e59b742f1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_2.json": {
+    "mtime": 1787298777.3659804,
+    "ast_hash": "77d01220e54a40307c1ffdae51b71e4e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_3.json": {
+    "mtime": 1787298777.449885,
+    "ast_hash": "74b164d4310f1417f588d899b1f5ce51",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_4.json": {
+    "mtime": 1787298777.5193486,
+    "ast_hash": "115b2b6be9f170f48080a1d46fb1bd98",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_5.json": {
+    "mtime": 1787298777.585416,
+    "ast_hash": "751eb3d15ce3378ee7843857c6e7196f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_6.json": {
+    "mtime": 1787298777.6533763,
+    "ast_hash": "72756da758783ff25b992e595465683d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_7.json": {
+    "mtime": 1787298777.7192273,
+    "ast_hash": "f64e7167b04121b76dde0805bb467ecb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_8.json": {
+    "mtime": 1787298777.803077,
+    "ast_hash": "84aa2d709f0fbbc8027afca6ae9164d3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/drained_turtle_carcass_9.json": {
+    "mtime": 1787298777.8943548,
+    "ast_hash": "beb571e39a4c92dc8c45962bacd0bee3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/empty_turtle_shell.json": {
+    "mtime": 1787298778.1388984,
+    "ast_hash": "f05b6a38558206d8c5c7a4cf537b47a4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/turtle_carcass.json": {
+    "mtime": 1787298776.4392905,
+    "ast_hash": "8b3ee453b9536f47eefed8848e0843c2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/turtle_carcass_0.json": {
+    "mtime": 1787298776.5159292,
+    "ast_hash": "bd9c008e3c1cd949375d1e1d749aa841",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/turtle_head.json": {
+    "mtime": 1787298777.9911013,
+    "ast_hash": "88b294ab668e2a607d15227819ee763d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/turtle_head_mount.json": {
+    "mtime": 1787298778.0707765,
+    "ast_hash": "0970768a8fdd0c4bf2ae12bbc7cc520b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_turtle_carcass.json": {
+    "mtime": 1787298823.4110637,
+    "ast_hash": "cca5a7785c5fd9d161cf5d5bbba881de",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/empty_turtle_shell.json": {
+    "mtime": 1787298824.859042,
+    "ast_hash": "5e1d6ff8ac5abb407d7c8419d9055058",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_carcass.json": {
+    "mtime": 1787298823.220587,
+    "ast_hash": "220193747eea9d6c5735d77d16c0eb6f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_carcass_loot.json": {
+    "mtime": 1787298823.4837916,
+    "ast_hash": "92a08a05314d6622118a44b27d0e43cc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_1_drop.json": {
+    "mtime": 1787298823.565436,
+    "ast_hash": "d72158466d86234a1dfd4da5c38e2efe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_2_drop.json": {
+    "mtime": 1787298823.642048,
+    "ast_hash": "9c39dba7eeb98250ec3801af29acba48",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_3_drop.json": {
+    "mtime": 1787298824.0779343,
+    "ast_hash": "743eec8c8aebcd31bd6961eb9c06eb93",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_4_drop.json": {
+    "mtime": 1787298824.1455054,
+    "ast_hash": "f2e09c0c8b473827e39c1a81a60b7cda",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_5_drop.json": {
+    "mtime": 1787298824.2139492,
+    "ast_hash": "2a7f65ff54a37254d1a07fce28344c0f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_6_drop.json": {
+    "mtime": 1787298824.2997634,
+    "ast_hash": "e77923bee8d8591a462c9b2c68288a18",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_7_drop.json": {
+    "mtime": 1787298824.3772607,
+    "ast_hash": "9b7bcb329e46c324c1a3eecf5cb9e669",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_head.json": {
+    "mtime": 1787298824.4682522,
+    "ast_hash": "c3dcb5ca7e5aa4e432642d8f36930d23",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_head_drop.json": {
+    "mtime": 1787298824.5460622,
+    "ast_hash": "69b157ca052a424a60cf37d709f4753b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_head_mount.json": {
+    "mtime": 1787298824.6359923,
+    "ast_hash": "2f5159c7f6f34a7eae0bded14c95d286",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_leg_drop.json": {
+    "mtime": 1787298824.7387166,
+    "ast_hash": "4dcba96eab2d0d055177d40f424d9fd2",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.26.md": {
+    "mtime": 1787298910.391786,
+    "ast_hash": "981b643b717a7540a7df37853bd7efae",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/turtle.png": {
+    "mtime": 1787298838.3373733,
+    "ast_hash": "7a85e32703b025c6d64ac6ba3f1eaec7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/turtle_drained.png": {
+    "mtime": 1787298838.424956,
+    "ast_hash": "4456b0695af490635519a561c6ed25b7",
     "semantic_hash": ""
   }
 }
