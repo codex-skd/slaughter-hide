@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/turtle_break_6_carcass",
+  "textures": {
+    "all": "slaughter_hide:block/turtle",
+    "particle": "slaughter_hide:block/turtle",
+    "0": "slaughter_hide:block/turtle_drained",
+    "1": "slaughter_hide:block/inner"
+  }
+}
