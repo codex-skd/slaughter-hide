@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-21)
 
 ## Corpus Check
-- 1855 files · ~673,298 words
+- 1858 files · ~673,673 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 816 nodes · 2146 edges · 63 communities (60 shown, 3 thin omitted)
+- 819 nodes · 2146 edges · 68 communities (65 shown, 3 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `93751bb9`
+- Built from commit: `d8b2e4ac`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -66,7 +66,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (63 total, 3 thin omitted)
+## Communities (68 total, 3 thin omitted)
 
 ### Community 1 - "CarcassBlockEntity"
 Cohesion: 0.07
@@ -157,15 +157,15 @@ Nodes (3): gradlew script, die(), warn()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `CarcassDefinition` connect `CarcassDefinition` to `CarcassBlockEntity`, `ModBlocks`, `Carcasses`, `Block`, `DrainedCarcassBlock`, `CarcassBlock`, `CarcassDeathHandler.java`, `TrophyHeadBlock.java`, `CarcassDefinition.java`, `.batHanging`, `.buildCAMEL`, `.buildChicken`, `.buildDOLPHIN`, `.buildDONKEY`, `.buildFox`, `.buildGoat`, `.buildHOGLIN`, `.buildMULE`, `.buildOCELOT`, `.buildPANDA`, `.buildPOLAR_BEAR`, `.buildRabbit`, `.buildWolf`, `.pigHanging`, `.stageMap`?**
-  _High betweenness centrality (0.367) - this node is a cross-community bridge._
-- **Why does `Carcasses` connect `Carcasses` to `VoxelShape`, `CarcassBlockEntity`, `CarcassDefinition`, `DrainedCarcassBlock`, `CarcassDeathHandler.java`, `.batHanging`, `.buildCAMEL`, `.buildChicken`, `.buildDOLPHIN`, `.buildDONKEY`, `.buildFox`, `.buildGoat`, `.buildHOGLIN`, `.buildMULE`, `.buildOCELOT`, `.buildPANDA`, `.buildPOLAR_BEAR`, `.buildRabbit`, `.buildWolf`, `.pigHanging`, `.axolotlLying`, `.horseHanging`, `.phantomLying`, `.zombie_horseHanging`, `.zombieHanging`, `.ravagerHanging`, `.silverfishHanging`?**
-  _High betweenness centrality (0.284) - this node is a cross-community bridge._
+  _High betweenness centrality (0.365) - this node is a cross-community bridge._
+- **Why does `Carcasses` connect `Carcasses` to `VoxelShape`, `CarcassBlockEntity`, `CarcassDefinition`, `DrainedCarcassBlock`, `CarcassDeathHandler.java`, `.batHanging`, `.buildCAMEL`, `.buildChicken`, `.buildDOLPHIN`, `.buildDONKEY`, `.buildFox`, `.buildGoat`, `.buildHOGLIN`, `.buildMULE`, `.buildOCELOT`, `.buildPANDA`, `.buildPOLAR_BEAR`, `.buildRabbit`, `.buildWolf`, `.pigHanging`, `.phantomHanging`, `.spiderHead`, `.axolotlLying`, `.huskHanging`, `.phantomLying`, `.zombie_horseHanging`, `.zombieHanging`, `.ravagerHanging`, `.silverfishHanging`?**
+  _High betweenness centrality (0.282) - this node is a cross-community bridge._
 - **Why does `CorpseBlockEntity` connect `CorpseBlockEntity` to `CarcassBlockEntity`?**
   _High betweenness centrality (0.040) - this node is a cross-community bridge._
 - **What connects `Format a box tuple as box(x1, y1, z1, x2, y2, z2)`, `Format a list of boxes for a facing direction.`, `Generate a static VoxelShape method.` to the rest of the system?**
   _71 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `VoxelShape` be split into smaller, more focused modules?**
-  _Cohesion score 0.050974512743628186 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05185530197174352 - nodes in this community are weakly interconnected._
 - **Should `CarcassBlockEntity` be split into smaller, more focused modules?**
   _Cohesion score 0.07164404223227752 - nodes in this community are weakly interconnected._
 - **Should `ModBlocks` be split into smaller, more focused modules?**
