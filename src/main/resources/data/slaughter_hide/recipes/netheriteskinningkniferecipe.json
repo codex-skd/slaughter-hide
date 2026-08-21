@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "slaughter_hide:diamond_skinning_knife",
+  "base": "minecraft:netherite_upgrade_smithing_template",
+  "addition": "minecraft:netherite_ingot",
+  "result": {
+    "id": "slaughter_hide:netherite_skinning_knife"
+  }
+}

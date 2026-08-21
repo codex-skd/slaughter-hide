@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "experience": 1.7,
+  "cookingtime": 110,
+  "ingredient": "slaughter_hide:raw_witch_meat",
+  "result": {
+    "id": "slaughter_hide:cooked_witch_meat"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "slaughter_hide:dragon_smithing_template",
+  "base": "slaughter_hide:large_empty_head_mount",
+  "addition": "minecraft:crying_obsidian",
+  "result": {
+    "id": "slaughter_hide:empty_dragon_trimmed_head_mount"
+  }
+}

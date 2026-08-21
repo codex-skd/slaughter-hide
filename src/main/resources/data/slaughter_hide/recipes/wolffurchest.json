@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": "#forge:fur",
+    "b": "minecraft:leather_chestplate"
+  },
+  "result": {
+    "id": "slaughter_hide:fur_suit_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "pork",
+  "category": "misc",
+  "experience": 0.6,
+  "cookingtime": 210,
+  "ingredient": "slaughter_hide:raw_pork_belly",
+  "result": {
+    "id": "slaughter_hide:cooked_pork_belly"
+  }
+}

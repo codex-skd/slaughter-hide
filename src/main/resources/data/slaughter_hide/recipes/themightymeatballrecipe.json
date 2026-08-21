@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "a": "slaughter_hide:raw_enderman_steak",
+    "b": "slaughter_hide:raw_warden_meat",
+    "c": "slaughter_hide:raw_elder_guardian_meat",
+    "d": "slaughter_hide:raw_sniffer_steak",
+    "e": "slaughter_hide:raw_ravager_meat",
+    "f": "slaughter_hide:raw_witch_meat",
+    "g": "slaughter_hide:raw_shulker_meat",
+    "h": "slaughter_hide:raw_strider_meat",
+    "i": "slaughter_hide:raw_dragon_meat"
+  },
+  "result": {
+    "id": "slaughter_hide:themightymeatball",
+    "count": 1
+  }
+}

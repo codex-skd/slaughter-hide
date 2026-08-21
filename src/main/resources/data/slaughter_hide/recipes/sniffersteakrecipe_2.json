@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "sniffer",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": "slaughter_hide:raw_sniffer_steak",
+  "result": {
+    "id": "slaughter_hide:cooked_sniffer_steak"
+  }
+}

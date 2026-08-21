@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "enderman",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 125,
+  "ingredient": "slaughter_hide:raw_enderman_steak",
+  "result": {
+    "id": "slaughter_hide:cooked_enderman_steak"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "dragon",
+  "category": "misc",
+  "experience": 1.3,
+  "cookingtime": 500,
+  "ingredient": "slaughter_hide:raw_dragon_meat",
+  "result": {
+    "id": "slaughter_hide:cooked_dragon_meat"
+  }
+}

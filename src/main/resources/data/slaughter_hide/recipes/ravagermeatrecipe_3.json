@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "ravager",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 325,
+  "ingredient": "slaughter_hide:raw_ravager_meat",
+  "result": {
+    "id": "slaughter_hide:cooked_ravager_meat"
+  }
+}

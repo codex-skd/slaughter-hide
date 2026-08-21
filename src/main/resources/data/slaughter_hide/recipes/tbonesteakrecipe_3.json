@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "beef",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 250,
+  "ingredient": "slaughter_hide:raw_tbone_steak",
+  "result": {
+    "id": "slaughter_hide:cooked_tbone_steak"
+  }
+}
