@@ -1,6 +1,5 @@
 package com.skd.slaughterhide;
 
-import com.skd.slaughterhide.init.ModItems;
 import java.util.Map;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
