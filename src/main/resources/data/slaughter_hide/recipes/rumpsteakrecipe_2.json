@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "beef",
+  "category": "misc",
+  "experience": 0.75,
+  "cookingtime": 227,
+  "ingredient": "slaughter_hide:raw_rump_steak",
+  "result": {
+    "id": "slaughter_hide:cooked_rump_steak"
+  }
+}

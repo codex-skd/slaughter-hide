@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "mule",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": "slaughter_hide:raw_mule_steak",
+  "result": {
+    "id": "slaughter_hide:cooked_mule_steak"
+  }
+}

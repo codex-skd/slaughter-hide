@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "slaughter_hide:deep_smithing_template",
+  "base": "slaughter_hide:large_empty_head_mount",
+  "addition": "minecraft:sculk_sensor",
+  "result": {
+    "id": "slaughter_hide:empty_warden_trimmed_head_mount"
+  }
+}

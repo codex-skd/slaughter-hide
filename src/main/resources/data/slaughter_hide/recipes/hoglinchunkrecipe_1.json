@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "hoglin",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 300,
+  "ingredient": "slaughter_hide:raw_hoglin_chunk",
+  "result": {
+    "id": "slaughter_hide:cooked_hoglin_chunk"
+  }
+}

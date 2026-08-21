@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "beef",
+  "category": "misc",
+  "experience": 0.55,
+  "cookingtime": 245,
+  "ingredient": "slaughter_hide:raw_ribeye_steak",
+  "result": {
+    "id": "slaughter_hide:cooked_ribeye_steak"
+  }
+}

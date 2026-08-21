@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "llama",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 200,
+  "ingredient": "slaughter_hide:raw_llama_steak",
+  "result": {
+    "id": "slaughter_hide:cooked_llama_steak"
+  }
+}

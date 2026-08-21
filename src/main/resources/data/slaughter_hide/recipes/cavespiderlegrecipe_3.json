@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 600,
+  "ingredient": "slaughter_hide:raw_cave_spider_leg",
+  "result": {
+    "id": "slaughter_hide:cooked_cave_spider_leg"
+  }
+}
