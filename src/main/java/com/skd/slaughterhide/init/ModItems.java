@@ -84,12 +84,12 @@ public final class ModItems {
     public static final DeferredItem<Item> WISHBONE = item("wishbone", Item::new);
     // Goat (uses lamb cuts + hooves)
     public static final DeferredItem<Item> GOAT_SKIN = item("goat_skin", Item::new);
-    public static final DeferredItem<Item> RAW_LEG_OF_LAMB_GOAT = item("raw_leg_of_lamb", Item::new);
-    public static final DeferredItem<Item> RAW_LAMB_SHOULDER_GOAT = item("raw_lamb_shoulder", Item::new);
-    public static final DeferredItem<Item> RAW_LAMB_RIB_GOAT = item("raw_lamb_rib", Item::new);
-    public static final DeferredItem<Item> RAW_LAMB_SIRLOIN_GOAT = item("raw_lamb_sirloin", Item::new);
-    public static final DeferredItem<Item> RAW_LAMB_LOIN_GOAT = item("raw_lamb_loin", Item::new);
-    public static final DeferredItem<Item> HOOF_GOAT = item("hoof", Item::new);
+    public static final DeferredItem<Item> RAW_LEG_OF_LAMB_GOAT = item("raw_leg_of_lamb_goat", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_SHOULDER_GOAT = item("raw_lamb_shoulder_goat", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_RIB_GOAT = item("raw_lamb_rib_goat", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_SIRLOIN_GOAT = item("raw_lamb_sirloin_goat", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_LOIN_GOAT = item("raw_lamb_loin_goat", Item::new);
+    public static final DeferredItem<Item> HOOF_GOAT = item("hoof_goat", Item::new);
     // Fox
     public static final DeferredItem<Item> FOX_SKIN = item("fox_skin", Item::new);
     public static final DeferredItem<Item> RAW_FOX_MEAT = item("raw_fox_meat", Item::new);
