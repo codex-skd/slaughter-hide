@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/SlaughterHide.java": {
-    "mtime": 1787006315.5144,
-    "ast_hash": "1837b5b753e916806b26e8ffd2cb00ed",
+    "mtime": 1787300090.6303146,
+    "ast_hash": "88c1598f9576c9fc4f7f05765a788870",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/CarcassBlock.java": {
@@ -140,7 +140,7 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787268760.000295,
+    "mtime": 1787300090.631845,
     "ast_hash": "b48f5725b77136de2413adb7f13cad05",
     "semantic_hash": ""
   },
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787268799.759333,
-    "ast_hash": "17b0c90845b5f5cabe698e0772722f63",
+    "mtime": 1787300510.1070807,
+    "ast_hash": "a42d84cf2d7ef6db14e8d60828484c8c",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -8297,6 +8297,1921 @@
   "src/main/resources/assets/slaughter_hide/textures/block/turtle_drained.png": {
     "mtime": 1787298838.424956,
     "ast_hash": "4456b0695af490635519a561c6ed25b7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/blood.json": {
+    "mtime": 1787299873.3233042,
+    "ast_hash": "7a37ff5d3dfc5e8107ae04697ca6f83a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/blood.json": {
+    "mtime": 1787299892.438665,
+    "ast_hash": "db88b7dfd0c4c7a512551790f1c3a79e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/acaciabutcherstablerecipe.json": {
+    "mtime": 1787300224.3873549,
+    "ast_hash": "e3c5147e3103a8be41eccec0a666da26",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/acaciacounterrecipe.json": {
+    "mtime": 1787300224.464219,
+    "ast_hash": "99c78dce6f9a8cddb608951866cca336",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/acaciadisplayrecipe.json": {
+    "mtime": 1787300224.5266,
+    "ast_hash": "b8ca55a117504a38b0b60e927602f9e0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/animalfatcandlerecipe.json": {
+    "mtime": 1787300224.6220906,
+    "ast_hash": "5f02d3620bfe6c01d1f9318b7ce1ddda",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/basinrecipe.json": {
+    "mtime": 1787300224.7165084,
+    "ast_hash": "5b92b970c6e1540c4c1b84e8aff1f700",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/batmeatrecipe_1.json": {
+    "mtime": 1787300224.8037379,
+    "ast_hash": "664c5478e535632dcab16e3b429ea409",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/batmeatrecipe_2.json": {
+    "mtime": 1787300224.870358,
+    "ast_hash": "95d02c8bf397d95f14e9325968db3e86",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/batmeatrecipe_3.json": {
+    "mtime": 1787300224.9295554,
+    "ast_hash": "43b6307c783063b5d17e6ca7dd6e68d1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bear_rug_recipe.json": {
+    "mtime": 1787300224.990519,
+    "ast_hash": "3562439f4b6c635872b93617c9752c55",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/beebackmeatrecipe_1.json": {
+    "mtime": 1787300225.0543299,
+    "ast_hash": "31f3989927624eadfc054b4f96693fbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/beebackmeatrecipe_2.json": {
+    "mtime": 1787300225.1250672,
+    "ast_hash": "ad7e1ce0f64c8055541b73299b026768",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/beebackmeatrecipe_3.json": {
+    "mtime": 1787300225.202193,
+    "ast_hash": "ba2a62496a7747b863a88855af4aaa3e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/beefconversion.json": {
+    "mtime": 1787300225.2645504,
+    "ast_hash": "446821e30b4095992937f73dfc42f32e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/beefmincerecipe_1.json": {
+    "mtime": 1787300225.3243458,
+    "ast_hash": "b1ee13f7e8c923d57967ab829bbd450e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/beefmincerecipe_2.json": {
+    "mtime": 1787300225.387772,
+    "ast_hash": "d7a87af07501adfb9af042386622f348",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/beefmincerecipe_3.json": {
+    "mtime": 1787300225.4502735,
+    "ast_hash": "b7c7d05ecef7a873fb4972504762d20a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/birchbutcherstablerecipe.json": {
+    "mtime": 1787300225.5102541,
+    "ast_hash": "7fb0eff4464d766985820014d8483f09",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/birchcounterrecipe.json": {
+    "mtime": 1787300225.574008,
+    "ast_hash": "36d01b86532293527cc7c237e85549c9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/birchdisplayrecipe.json": {
+    "mtime": 1787300225.6422615,
+    "ast_hash": "d4e82d8eb51756328a1d425500c9c5f0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/blackcanopyrecipe.json": {
+    "mtime": 1787300225.7178102,
+    "ast_hash": "2981b50aa15d09d2d8f215256dbb167b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bloodgraterecipe.json": {
+    "mtime": 1787300225.7954166,
+    "ast_hash": "4890d92795a374470a4461d7b83fbec1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bloodsausagerecipe_1.json": {
+    "mtime": 1787300225.8577645,
+    "ast_hash": "aaa5d63bf353728681c352e3dde45f02",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bloodsausagerecipe_2.json": {
+    "mtime": 1787300225.91959,
+    "ast_hash": "56958c90f26517be4538411c28296b77",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bloodsausagerecipe_3.json": {
+    "mtime": 1787300225.9836776,
+    "ast_hash": "7a14e1d903de9c21c9cb235027569377",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/blueaxolotlrecipe_1.json": {
+    "mtime": 1787300226.0504408,
+    "ast_hash": "2d7b0a86734ac9f3017af2e4bff8807b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/blueaxolotlrecipe_2.json": {
+    "mtime": 1787300226.1179037,
+    "ast_hash": "059836311f43ce9132980a2b97cd1c31",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/blueaxolotlrecipe_3.json": {
+    "mtime": 1787300226.174323,
+    "ast_hash": "822941f66c22a7de77210fbae6919dcd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bluecanopyrecipe.json": {
+    "mtime": 1787300226.236612,
+    "ast_hash": "2085ef1b49ee88c16c9c82afe023e08a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bonebarrelcrafting.json": {
+    "mtime": 1787300226.313367,
+    "ast_hash": "7f788b8a7e4a0993a361fa58d09e906b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bonecleaverrecipe.json": {
+    "mtime": 1787300226.3768518,
+    "ast_hash": "ee1fef697101f19b815ec21aae0b4452",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bonehacksawrecipe.json": {
+    "mtime": 1787300226.4253647,
+    "ast_hash": "ffe95ba156f1865df88375af63eb630a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bonehammerrecipe.json": {
+    "mtime": 1787300226.4880154,
+    "ast_hash": "842ae578e057148500189c691d986d86",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/boneskinningkniferecipe.json": {
+    "mtime": 1787300226.566039,
+    "ast_hash": "86e94c81e5ecfd783f90adc39b7910b2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bottledhoneyrecipe.json": {
+    "mtime": 1787300226.6293368,
+    "ast_hash": "b904f9feb9601b659cc21062c4d970ab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/brownaxolotlrecipe_1.json": {
+    "mtime": 1787300226.704664,
+    "ast_hash": "4c6746b9436993647c025590cabf8d5a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/brownaxolotlrecipe_2.json": {
+    "mtime": 1787300226.797357,
+    "ast_hash": "85d2a66568489ab3f49445fce0561eab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/brownaxolotlrecipe_3.json": {
+    "mtime": 1787300226.8971043,
+    "ast_hash": "684de8810e7b4858bde18c5af51ab7ef",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/browncanopyrecipe.json": {
+    "mtime": 1787300226.9594193,
+    "ast_hash": "9441c32035ea5e4d088512d2ffb678c2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/butchersapronrecipe.json": {
+    "mtime": 1787300227.0192544,
+    "ast_hash": "c51e9cf83e3adc79e1b5b1cda69a2181",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/butchersfloorsign.json": {
+    "mtime": 1787300227.084988,
+    "ast_hash": "6750194e0cc9c27382639cccd487b621",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/butcherspapersrecipe.json": {
+    "mtime": 1787300227.14581,
+    "ast_hash": "5669626481688a99c6f408771956516e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/butcherstatuerecipe.json": {
+    "mtime": 1787300227.2097588,
+    "ast_hash": "355de06c3f8fb194cf42c286694a6a66",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/camelmeatrecipe_1.json": {
+    "mtime": 1787300227.2718174,
+    "ast_hash": "322e8d7031c8017018dcf42ec4b83b3e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/camelmeatrecipe_2.json": {
+    "mtime": 1787300227.3368225,
+    "ast_hash": "b4dce46c40110105ae5ad9b97d10c381",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/camelmeatrecipe_3.json": {
+    "mtime": 1787300227.414407,
+    "ast_hash": "7b5045ffc32a1518a978ebd3e34ab2b9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cashregisterrecipe.json": {
+    "mtime": 1787300227.479666,
+    "ast_hash": "aaff772311b19fbe994bd8bb92f4233b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/catmeatrecipe.json": {
+    "mtime": 1787300227.5405614,
+    "ast_hash": "f6f065b3f300c8724324073e9b13d574",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/catmeatrecipe_2.json": {
+    "mtime": 1787300227.6061814,
+    "ast_hash": "317fa8bf6499c310c7ed186b24c34318",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/catmeatrecipe_3.json": {
+    "mtime": 1787300227.678794,
+    "ast_hash": "cf0d4581460d405050767e860f2b59d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cavespiderlegrecipe_1.json": {
+    "mtime": 1787300227.7617145,
+    "ast_hash": "0f60ada966efa4dc02126b1d65e959ff",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cavespiderlegrecipe_2.json": {
+    "mtime": 1787300227.8288255,
+    "ast_hash": "fab5cdeacb0ba63154ccfdb61ce0a286",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cavespiderlegrecipe_3.json": {
+    "mtime": 1787300227.8908665,
+    "ast_hash": "f275ae4ee196df61fd693d26e2ddb910",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenlegrecipe_1.json": {
+    "mtime": 1787300227.9673297,
+    "ast_hash": "7e7f8a92c31773a93793e1efeceed063",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenlegrecipe_2.json": {
+    "mtime": 1787300228.0296834,
+    "ast_hash": "7fdf892290d00443df0a138fc62ba102",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenlegrecipe_3.json": {
+    "mtime": 1787300228.0937574,
+    "ast_hash": "3468fea5a586654910eb12d3e5c7d554",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenwingrecipe_1.json": {
+    "mtime": 1787300228.1537547,
+    "ast_hash": "54312b64fbc523cb72ee128bfcb9a8d8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenwingrecipe_2.json": {
+    "mtime": 1787300228.218935,
+    "ast_hash": "2f564b1e73301c03a3ef112060c15b67",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenwingrecipe_3.json": {
+    "mtime": 1787300228.2807143,
+    "ast_hash": "577fa03be07748969eb58a94e027453d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chucksteakrecipe_1.json": {
+    "mtime": 1787300228.3290863,
+    "ast_hash": "203e00273cd0ce0a9b3c88defa2bd446",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chucksteakrecipe_2.json": {
+    "mtime": 1787300228.3919528,
+    "ast_hash": "ae9bd3280a77256cacd09bccd8c6ab7c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chucksteakrecipe_3.json": {
+    "mtime": 1787300228.4720588,
+    "ast_hash": "c6f9ca8d4d2b97538001af00866a3afd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/codbarrel_crafting.json": {
+    "mtime": 1787300228.5349991,
+    "ast_hash": "67a329ff7ea8efd0e6cb1b9340a8f2dc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/codfillet_recipe_1.json": {
+    "mtime": 1787300228.5803678,
+    "ast_hash": "910511dad88bfb48be1d5a39431a4e01",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/codfillet_recipe_2.json": {
+    "mtime": 1787300228.640819,
+    "ast_hash": "9e1fad0049b9f41cac18721657770a64",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/codfillet_recipe_3.json": {
+    "mtime": 1787300228.7248652,
+    "ast_hash": "591125f776156322d4b2c64c311915db",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cookingdragonmeat_1.json": {
+    "mtime": 1787300228.7815802,
+    "ast_hash": "cbd87d517666bef8247f55b57d570e81",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cookingdragonmeat_2.json": {
+    "mtime": 1787300228.8599632,
+    "ast_hash": "fef3c0462616e825570c9aba677e0ac4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cookingdragonmeat_3.json": {
+    "mtime": 1787300228.9651399,
+    "ast_hash": "00f88c365aa2f4bc7312f3f5a84ad1ba",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/coppercleaverrecipe.json": {
+    "mtime": 1787300229.036363,
+    "ast_hash": "99c0ba760d3c1ea71ba5d51e2364b63d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/copperhacksawrecipe.json": {
+    "mtime": 1787300229.0967457,
+    "ast_hash": "163941d7d5b32c24b1b493f8a506fc00",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/copperhammerrecipe.json": {
+    "mtime": 1787300229.1592314,
+    "ast_hash": "1dc3b91459f3f364aac330dd27d431f4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/copperskinningkniferecipe.json": {
+    "mtime": 1787300229.2242732,
+    "ast_hash": "152bc35459b866ce05ae7295e4d7371d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/creeper_steakrecipe_1.json": {
+    "mtime": 1787300229.2902286,
+    "ast_hash": "a81a393a1e7284c975416bd5bd656988",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/creeper_steakrecipe_2.json": {
+    "mtime": 1787300229.3530264,
+    "ast_hash": "9000ba5d718da0aceb716616f0b48a40",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/creeper_steakrecipe_3.json": {
+    "mtime": 1787300229.416452,
+    "ast_hash": "4d25d57ae9f69e2cdf535b21819bb9e5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/creeperlegrecipe_1.json": {
+    "mtime": 1787300229.478853,
+    "ast_hash": "0db7024f693738342eea4aa273c5c6f9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/creeperlegrecipe_2.json": {
+    "mtime": 1787300229.5425286,
+    "ast_hash": "078e86b5234f87fbb7ae84e3decc8766",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/creeperlegrecipe_3.json": {
+    "mtime": 1787300229.603752,
+    "ast_hash": "c2727a31d50b90f2ce3a2c28c7bcac10",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/crimsonbutcherstablerecipe.json": {
+    "mtime": 1787300229.667675,
+    "ast_hash": "23ff246402f0b1b433c3627603aaa5be",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/crimsoncounterrecipe.json": {
+    "mtime": 1787300229.728698,
+    "ast_hash": "0dbff69ed5e913fcdc959fb77058eb08",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/crimsondisplayrecipe.json": {
+    "mtime": 1787300229.7916286,
+    "ast_hash": "65306dfd43b93505a8edff4672c1ccd8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cyanaxolotlrecipe_1.json": {
+    "mtime": 1787300229.85566,
+    "ast_hash": "5865b2881a0fdfc054947636cd4a901d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cyanaxolotlrecipe_2.json": {
+    "mtime": 1787300229.9192598,
+    "ast_hash": "f2f3a54b3185e02aa6d83abe6a0b05ca",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cyanaxolotlrecipe_3.json": {
+    "mtime": 1787300229.97683,
+    "ast_hash": "d6896d75ac89e4e3b1d6f31f6acaf7e5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cyancanopyrecipe.json": {
+    "mtime": 1787300230.0423577,
+    "ast_hash": "46d979d5612b182f02a9a10d42914385",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/darkoakbutcherstablerecipe.json": {
+    "mtime": 1787300230.0906858,
+    "ast_hash": "1f37db9da553a0f6e76205c75f94d6ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/darkoakcounterrecipe.json": {
+    "mtime": 1787300230.153595,
+    "ast_hash": "21fd520a0ab2c55e1793c20571cf1f76",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/darkoakdisplayrecipe.json": {
+    "mtime": 1787300230.215701,
+    "ast_hash": "202381caf466ec65fe371b1132e022c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/deepsmithingtemplaterecipe.json": {
+    "mtime": 1787300230.2814312,
+    "ast_hash": "2037a2c3108211400ab9b9daac3b9684",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/diamondcleaverrecipe.json": {
+    "mtime": 1787300230.342488,
+    "ast_hash": "5111583d1859b112b976e27442b648b3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/diamondhacksawrecipe.json": {
+    "mtime": 1787300230.4091334,
+    "ast_hash": "5ef5e6f42c2d56a974a882011530e72b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/diamondhammerrecipe.json": {
+    "mtime": 1787300230.4731402,
+    "ast_hash": "230f5ce4782716102eace7b5ff5a983a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/diamondskinningkniferecipe.json": {
+    "mtime": 1787300230.5490139,
+    "ast_hash": "a24852b157b3ee3cf7bea42b39b1f394",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/diorite_brickslabrecipe.json": {
+    "mtime": 1787300230.6123362,
+    "ast_hash": "9f12aae2bf8ad8ab57315465b6bd54e3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dioritebricksrecipe.json": {
+    "mtime": 1787300230.6773517,
+    "ast_hash": "bec1516d2afa4112a8cdc574c47df26a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dioritebrickstairsrecipe.json": {
+    "mtime": 1787300230.7231648,
+    "ast_hash": "d24e8a99c4291017c05946add5582f9c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dioritebrickwallrecipe.json": {
+    "mtime": 1787300230.8021307,
+    "ast_hash": "5f9972cd152e5df039a6f4009921165c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dolphinmeatrecipe_1.json": {
+    "mtime": 1787300230.8688693,
+    "ast_hash": "64bcd2c7366051cb1ddb3faad5a0e714",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dolphinmeatrecipe_2.json": {
+    "mtime": 1787300230.9447289,
+    "ast_hash": "4defe6af33728ad8e7acb97cf207e302",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dolphinmeatrecipe_3.json": {
+    "mtime": 1787300231.048769,
+    "ast_hash": "e92a54b1e2c385753e5e4099b48861bf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/donkeysteakrecipe_1.json": {
+    "mtime": 1787300231.0971558,
+    "ast_hash": "03d939117650cb71bac17fbad994c8a1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/donkeysteakrecipe_2.json": {
+    "mtime": 1787300231.160281,
+    "ast_hash": "ba772b32d17f6de0bf715cca82fb6bbf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/donkeysteakrecipe_3.json": {
+    "mtime": 1787300231.222718,
+    "ast_hash": "b3c1d5fa9f318531ba9f9278476d243b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dragon_boots_recipe.json": {
+    "mtime": 1787300231.2852724,
+    "ast_hash": "176ca9a4c34ab5da37628ebfe35f8d26",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dragonbonegrinding.json": {
+    "mtime": 1787300231.3523202,
+    "ast_hash": "5ea7d5d84805e0a8ac436c3982ea564e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dragonchestplaterecipe.json": {
+    "mtime": 1787300231.4105563,
+    "ast_hash": "9243a92e31333dc3a316467bad4391ed",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dragonhelmetrecipe.json": {
+    "mtime": 1787300231.4747775,
+    "ast_hash": "8ad60d954f1431fdf6e9db329a38d7d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dragonleggingsrecipe.json": {
+    "mtime": 1787300231.5413868,
+    "ast_hash": "492af59dbae3a0abe5343250cc1271fb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dragonscaleblockrecipe.json": {
+    "mtime": 1787300231.6135554,
+    "ast_hash": "07476d4560feb9cbab21bfbb71aa2d7a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dragonscaleingotrecipe.json": {
+    "mtime": 1787300231.69243,
+    "ast_hash": "0909963d14580e930d16528004fcab00",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/dragonsmithingtemplaterecipe.json": {
+    "mtime": 1787300231.7715087,
+    "ast_hash": "eb9e6d19ea48d4c9c798c48ec2d87713",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/elderguardianmeatrecipe_1.json": {
+    "mtime": 1787300231.8348017,
+    "ast_hash": "c3604342aeec9d213d2347fde402f076",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/elderguardianmeatrecipe_2.json": {
+    "mtime": 1787300231.8983715,
+    "ast_hash": "95237bcbe2047e7b94715da7446da6cb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/elderguardianmeatrecipe_3.json": {
+    "mtime": 1787300231.9600606,
+    "ast_hash": "5480f7e1933dabedfdf7486bb48bb48c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/emptyheadmounttrim.json": {
+    "mtime": 1787300232.0235672,
+    "ast_hash": "92d448c7c92e5dda230ea376fdf9260a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/emptywardenheadmounttrim.json": {
+    "mtime": 1787300232.0994084,
+    "ast_hash": "2c119c0ae5fe50b33a194e9df25f629d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanheartrecipe.json": {
+    "mtime": 1787300232.1631823,
+    "ast_hash": "00b614cbdd079e6f81305ea2d1d71ba5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanintestinesrecipe_1.json": {
+    "mtime": 1787300232.2252924,
+    "ast_hash": "39ce2b1f3b0a7043b9aa0d0cf6d74f0f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanintestinesrecipe_2.json": {
+    "mtime": 1787300232.2883606,
+    "ast_hash": "97d22a6002b7169d34450e483132cf54",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanintestinesrecipe_3.json": {
+    "mtime": 1787300232.354844,
+    "ast_hash": "b46d0d3b66b423caeb8f7f41b86c3595",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermankidneyrecipe_1.json": {
+    "mtime": 1787300232.4137454,
+    "ast_hash": "d36ff4cf65f300dee75c6c8788198682",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermankidneyrecipe_2.json": {
+    "mtime": 1787300232.4820957,
+    "ast_hash": "f8367ae3d12926a901fa47836e16e5f7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermankidneyrecipe_3.json": {
+    "mtime": 1787300232.5428963,
+    "ast_hash": "0392a382edf4b4527bf0be226df48549",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanliverrecipe_1.json": {
+    "mtime": 1787300232.6061897,
+    "ast_hash": "dfd10d90b05737e5673a50bb554f1de7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanliverrecipe_2.json": {
+    "mtime": 1787300232.6865885,
+    "ast_hash": "4aa999adb3491b5c35ad9b8863b96dd0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanliverrecipe_3.json": {
+    "mtime": 1787300232.7327847,
+    "ast_hash": "52975c204a7cc9e5883a05867857a7a1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanlungsrecipe_1.json": {
+    "mtime": 1787300232.7938495,
+    "ast_hash": "6ad0fec4150d275946034e93db2519f5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanlungsrecipe_2.json": {
+    "mtime": 1787300232.8607936,
+    "ast_hash": "6f2d856016603a604b6bec0c67afda5f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanlungsrecipe_3.json": {
+    "mtime": 1787300232.9201937,
+    "ast_hash": "8daa5a1f8fd3a70088e317efb32a4c02",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanrecipe_1.json": {
+    "mtime": 1787300232.9872317,
+    "ast_hash": "fed35d43dfa68f46a09d1ad602c2e9df",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanrecipe_2.json": {
+    "mtime": 1787300233.0489967,
+    "ast_hash": "287a4385cd5bf53ca12fe36572624e58",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanrecipe_3.json": {
+    "mtime": 1787300233.138371,
+    "ast_hash": "65b04cfb1a1da807bf26cb9a2aa22adf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanstomachrecipe_1.json": {
+    "mtime": 1787300233.235345,
+    "ast_hash": "82986f1d163ae9a29677122c87711865",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanstomachrecipe_2.json": {
+    "mtime": 1787300233.2965696,
+    "ast_hash": "b27d7f25a46899534e39850fced48ef4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermanstomachrecipe_3.json": {
+    "mtime": 1787300233.3435502,
+    "ast_hash": "da90098be4860fcdb77e82243856c6a2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermitechunksrecipe_1.json": {
+    "mtime": 1787300233.4071715,
+    "ast_hash": "dbd03f1724d99cd09cb67fe78d48c9d6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermitechunksrecipe_2.json": {
+    "mtime": 1787300233.4731903,
+    "ast_hash": "5cdd1d86f743a541b6fc811f3dbd1304",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/endermitechunksrecipe_3.json": {
+    "mtime": 1787300233.5309365,
+    "ast_hash": "54c013d9d0e3a75ef0e5cd62bf291800",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/evokermeatrecipe_1.json": {
+    "mtime": 1787300233.5960217,
+    "ast_hash": "91f07d63cfac331eeaf4d0ee99fb1b48",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/evokermeatrecipe_2.json": {
+    "mtime": 1787300233.6600852,
+    "ast_hash": "c9f0e5fbe9df148735a97de84f034897",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/evokermeatrecipe_3.json": {
+    "mtime": 1787300233.7234793,
+    "ast_hash": "1c5b57906f84de55a7ea733ebc0956b8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/foxmeatrecipe_1.json": {
+    "mtime": 1787300233.7871866,
+    "ast_hash": "758d9b9da31483d8697f57ef14ed8ed5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/foxmeatrecipe_2.json": {
+    "mtime": 1787300233.8657596,
+    "ast_hash": "52fa02933e7a304c37792257b987a2e8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/foxmeatrecipe_3.json": {
+    "mtime": 1787300233.9235866,
+    "ast_hash": "63b8a702f5cdc46805dd16459dd6a296",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/freezercrafting.json": {
+    "mtime": 1787300233.9726188,
+    "ast_hash": "fd9251675585f594744b697ba251935a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/goat_rug_recipe.json": {
+    "mtime": 1787300234.0349765,
+    "ast_hash": "5275d32f6e7868ba70892ff248fdb274",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/goldaxolotlrecipe_1.json": {
+    "mtime": 1787300234.0979047,
+    "ast_hash": "04f3666117c673b51e8a18293d99edb2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/goldaxolotlrecipe_2.json": {
+    "mtime": 1787300234.1567795,
+    "ast_hash": "aa2bd2bb94fd19123e495f099fb92af0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/goldaxolotlrecipe_3.json": {
+    "mtime": 1787300234.2356756,
+    "ast_hash": "727c86d76a34bd6baf23ab4fcb4bb0ee",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/goldcleaverrecipe.json": {
+    "mtime": 1787300234.2967756,
+    "ast_hash": "9ff34bdc8337315e1589e1dd9d8a72ea",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/goldhacksawrecipe.json": {
+    "mtime": 1787300234.3604724,
+    "ast_hash": "c1a582fa798c112098ba15edf8753210",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/goldhammerrecipe.json": {
+    "mtime": 1787300234.423691,
+    "ast_hash": "8862ce837373f439f93658ef34cf1969",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/goldskinningkniferecipe.json": {
+    "mtime": 1787300234.4714062,
+    "ast_hash": "b288a010cba93c8e02c2d733fdb3065a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/graycanopyrecipe.json": {
+    "mtime": 1787300234.534761,
+    "ast_hash": "e0b29fcf6fb6fb5ce83dfb249195a544",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/grayfroglegrecipe_1.json": {
+    "mtime": 1787300234.5962105,
+    "ast_hash": "b4b797713bf92cbac9d870218a98f2c6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/grayfroglegrecipe_2.json": {
+    "mtime": 1787300234.6599245,
+    "ast_hash": "644f9bc3e41012461d59414c2d652a6b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/grayfroglegrecipe_3.json": {
+    "mtime": 1787300234.7743964,
+    "ast_hash": "23d374a0b3828d57c26d71553412e0a6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/greencanopyrecipe.json": {
+    "mtime": 1787300234.8684657,
+    "ast_hash": "2658c0950b1dd4fdffd6c2ee57673116",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/greenfroglegrecipe_1.json": {
+    "mtime": 1787300234.9418125,
+    "ast_hash": "d680bfd6cc22e41de0ced3b24315516f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/greenfroglegrecipe_2.json": {
+    "mtime": 1787300235.018641,
+    "ast_hash": "b0c89894c112c4da627f8b04375e3175",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/greenfroglegrecipe_3.json": {
+    "mtime": 1787300235.0833576,
+    "ast_hash": "6904bd15de688d1e5e5dce2f91024021",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/guardianmeatrecipe_1.json": {
+    "mtime": 1787300235.1588552,
+    "ast_hash": "95fd3f4ad105710eae2df1828cfa8d2b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/guardianmeatrecipe_2.json": {
+    "mtime": 1787300235.2649913,
+    "ast_hash": "c7182a3525c670dbf2a5143e93009a3f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/guardianmeatrecipe_3.json": {
+    "mtime": 1787300235.338973,
+    "ast_hash": "1a28608356f4d663cfb31eea3b9fc66c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/guide.json": {
+    "mtime": 1787300235.4286568,
+    "ast_hash": "70c5f4f37236eeb218e20e1a7a20d66a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/headmountrecipe.json": {
+    "mtime": 1787300235.4965324,
+    "ast_hash": "b869ce1cfdc4ed941beb0633d3a2a93e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/heartrecipe_1.json": {
+    "mtime": 1787300235.5748825,
+    "ast_hash": "aca189ca8139d66e17d60d41c1f6c2c3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/heartrecipe_2.json": {
+    "mtime": 1787300235.6583436,
+    "ast_hash": "3a55a0947c2228e2e692023e3aa0b8d0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/heartrecipe_3.json": {
+    "mtime": 1787300235.7315514,
+    "ast_hash": "2ef952a8e92e33ee4adec62cbf6468ac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/hoglinchunkrecipe_1.json": {
+    "mtime": 1787300235.8075776,
+    "ast_hash": "353715a273445f9373c5941cc44ecc61",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/hoglinchunkrecipe_2.json": {
+    "mtime": 1787300235.8688695,
+    "ast_hash": "6eefadfbeec2a5320fe308a06cd84053",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/hoglinchunkrecipe_3.json": {
+    "mtime": 1787300235.9311745,
+    "ast_hash": "2d95b359eaf07a1c5dc74cf53e2f01d0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/hookrecipe.json": {
+    "mtime": 1787300235.9932146,
+    "ast_hash": "2f22fc07063fad1b525f15393788faff",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/horsemeatrecipe_1.json": {
+    "mtime": 1787300236.058399,
+    "ast_hash": "ded0d98f6ee216533299309e91557abe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/horsemeatrecipe_2.json": {
+    "mtime": 1787300236.102928,
+    "ast_hash": "336ce6e71cfff913b0ab31c09607eaf2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/horsemeatrecipe_3.json": {
+    "mtime": 1787300236.1707866,
+    "ast_hash": "26c535a3906154a432b60e17be5b4b49",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/humanmeatrecipe_1.json": {
+    "mtime": 1787300236.2299306,
+    "ast_hash": "1393bf06629431252d0223615c6ad9ea",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/humanmeatrecipe_2.json": {
+    "mtime": 1787300236.294079,
+    "ast_hash": "40a58500470b77cdea879768d2c9630b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/humanmeatrecipe_3.json": {
+    "mtime": 1787300236.3692226,
+    "ast_hash": "ec62ffdf882cd43c1a2c41ef5b79f18b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/intestinesrecipe_1.json": {
+    "mtime": 1787300236.4552553,
+    "ast_hash": "4583ce45072f3128051b6d7cb5e427d9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/intestinesrecipe_2.json": {
+    "mtime": 1787300236.5144918,
+    "ast_hash": "29d14fb123d57f0531a7cd2578e932e0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/intestinesrecipe_3.json": {
+    "mtime": 1787300236.5618458,
+    "ast_hash": "73b6b1ce6c3d053c16170214df932903",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ironcleaverrecipe.json": {
+    "mtime": 1787300236.6272304,
+    "ast_hash": "85aefb8ef739b0d6518b08729f036391",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ironhacksawrecipe.json": {
+    "mtime": 1787300236.690604,
+    "ast_hash": "01bee0cfdd1dd03e46a30c3c4fd48d0e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ironhammerrecipe.json": {
+    "mtime": 1787300236.7557955,
+    "ast_hash": "45a5b5a2b1f32810048234bc8c1f8e78",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ironskinningkniferecipe.json": {
+    "mtime": 1787300236.806312,
+    "ast_hash": "fdd9f83c1764f11cc26f09bdae2b4fab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/jarrecipe.json": {
+    "mtime": 1787300236.8776753,
+    "ast_hash": "5ec8fa2b18d8dbc6f9790cf7598c2741",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/junglebutcherstablerecipe.json": {
+    "mtime": 1787300236.951617,
+    "ast_hash": "b8a44747f5aa59f06de9c7d99ed09f72",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/junglecounterrecipe.json": {
+    "mtime": 1787300237.0122545,
+    "ast_hash": "e7ad22b6b8fb4b4066ec0c001ec20f0f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/jungledisplayrecipe.json": {
+    "mtime": 1787300237.0885067,
+    "ast_hash": "9998b6ce3510faa3e825600b78b03f10",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/kidneyrecipe_1.json": {
+    "mtime": 1787300237.1863565,
+    "ast_hash": "054fb74238fb9e99a063e4e56e457a0c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/kidneyrecipe_2.json": {
+    "mtime": 1787300237.260172,
+    "ast_hash": "14902d0021f57b1fadc67413fb718332",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/kidneyrecipe_3.json": {
+    "mtime": 1787300237.3383472,
+    "ast_hash": "c28f2123fc738c341a583923ae8df0b3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambloinrecipe_1.json": {
+    "mtime": 1787300237.413499,
+    "ast_hash": "3267c9eb7c36c2353efa1aa3a3972fb9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambloinrecipe_2.json": {
+    "mtime": 1787300237.522643,
+    "ast_hash": "af285b22b7728937717facdcb4cae822",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambloinrecipe_3.json": {
+    "mtime": 1787300237.5910475,
+    "ast_hash": "dd6e0c4dc86a9fcce69d6d8f0a9d2de9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambmincerecipe_1.json": {
+    "mtime": 1787300237.6517262,
+    "ast_hash": "7a3691bbb8e9a38c878dde3f1bca02ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambmincerecipe_2.json": {
+    "mtime": 1787300237.7150853,
+    "ast_hash": "8d1fcce1ba82b74d33a74bcf29133858",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambmincerecipe_3.json": {
+    "mtime": 1787300237.7994974,
+    "ast_hash": "8cc90f8dc600bc8f12cca8c1cc3bc848",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambribrecipe_1.json": {
+    "mtime": 1787300237.8721495,
+    "ast_hash": "16b5b7a6a223fff5993148efb3cef3c8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambribrecipe_2.json": {
+    "mtime": 1787300237.9353628,
+    "ast_hash": "f2773bc9674d9935e9deb4cadc07cb49",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambribrecipe_3.json": {
+    "mtime": 1787300237.998037,
+    "ast_hash": "4d8be7ae7971df22e2b0a98675f57372",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambshoulderrecipe_1.json": {
+    "mtime": 1787300238.0618129,
+    "ast_hash": "c39391759c6ede888f8264f467162920",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambshoulderrecipe_2.json": {
+    "mtime": 1787300238.1316693,
+    "ast_hash": "ccc326264b5fed1a9f93373758c06e85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambshoulderrecipe_3.json": {
+    "mtime": 1787300238.19054,
+    "ast_hash": "f641939fbc0985a7b339c14bc29dde36",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambsirloinrecipe_1.json": {
+    "mtime": 1787300238.2500527,
+    "ast_hash": "cfbe835d70e48ee2d0e97d7a6b37a43c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambsirloinrecipe_2.json": {
+    "mtime": 1787300238.314796,
+    "ast_hash": "c70698e4fbff6346147f0c677b436adc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lambsirloinrecipe_3.json": {
+    "mtime": 1787300238.378906,
+    "ast_hash": "165c78387cc4397a384ea6d91b7265e8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/largeheadmountrecipe.json": {
+    "mtime": 1787300238.43967,
+    "ast_hash": "efa6c2ab618f7e215164a0ae2d8dbc46",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/legoflambrecipe_1.json": {
+    "mtime": 1787300238.5047286,
+    "ast_hash": "6e78ecc76098e1e26f1c01d2c18841b8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/legoflambrecipe_2.json": {
+    "mtime": 1787300238.5795062,
+    "ast_hash": "eb2b10c0936219b9baf25c043f5ef15a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/legoflambrecipe_3.json": {
+    "mtime": 1787300238.649089,
+    "ast_hash": "9da976a50fbf76f128489f72148d019d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lightbluecanopyrecipe.json": {
+    "mtime": 1787300238.7098813,
+    "ast_hash": "82510bb22e6ba0164d337fe79401ec82",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lightgraycanopyrecipe.json": {
+    "mtime": 1787300238.7732298,
+    "ast_hash": "683a6919b4444179d30a5664a6325eb6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/limecanopyrecipe.json": {
+    "mtime": 1787300238.8533723,
+    "ast_hash": "9df833561facd5dfeb282fc93a17b9c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/liverrecipe_1.json": {
+    "mtime": 1787300238.9173295,
+    "ast_hash": "705e5c5318a9bcc5d722901d88e214c5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/liverrecipe_2.json": {
+    "mtime": 1787300238.979876,
+    "ast_hash": "659aa6929b7baa9872763eb7c18d3230",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/liverrecipe_3.json": {
+    "mtime": 1787300239.0314147,
+    "ast_hash": "774bb6dc5f33426ed24085840828052e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/llamasteakrecipe_1.json": {
+    "mtime": 1787300239.119534,
+    "ast_hash": "097a6b3710366b90ac0730210f2d0a57",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/llamasteakrecipe_2.json": {
+    "mtime": 1787300239.1831276,
+    "ast_hash": "60a51bfd16e749eb598c1bc139b809fc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/llamasteakrecipe_3.json": {
+    "mtime": 1787300239.2472918,
+    "ast_hash": "e979c7b651d28ea9bfc4e49f8320f79d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lungsrecipe_1.json": {
+    "mtime": 1787300239.3208146,
+    "ast_hash": "1b5e1458f436920beb56d778bbfa1579",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lungsrecipe_2.json": {
+    "mtime": 1787300239.4002795,
+    "ast_hash": "7a5c87622db8d77ee3994ade4d370825",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lungsrecipe_3.json": {
+    "mtime": 1787300239.4762335,
+    "ast_hash": "edc14dafc459fc9b5e42f39b8ec30665",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/magentacanopyrecipe.json": {
+    "mtime": 1787300239.554523,
+    "ast_hash": "721a5143c5193002d6649f46b01fd4cc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/mangrovebutcherstablerecipe.json": {
+    "mtime": 1787300239.6243746,
+    "ast_hash": "c9ae011c2b88eefec71f3afff1794766",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/maskrecyclerecipe.json": {
+    "mtime": 1787300239.680082,
+    "ast_hash": "93070a193cb61c9e65afae29f0b8b494",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/meatgrinderrecipe.json": {
+    "mtime": 1787300239.743484,
+    "ast_hash": "719f8cfdc42a0b642b71b73fdbfaa8a0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/metalbutcherstablerecipe.json": {
+    "mtime": 1787300239.8068044,
+    "ast_hash": "dde74ccfcbe41f3890329ad46f69955f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/metaltrayrecipe.json": {
+    "mtime": 1787300239.888673,
+    "ast_hash": "9eef137631e03dca23d6c5ebe318d17b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/mulesteakrecipe_1.json": {
+    "mtime": 1787300239.9563034,
+    "ast_hash": "23817970e4d8799f2089a6c72e7e4846",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/mulesteakrecipe_2.json": {
+    "mtime": 1787300240.029179,
+    "ast_hash": "bd389664dd7f4e086ba82e0b3059b6c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/mulesteakrecipe_3.json": {
+    "mtime": 1787300240.1078007,
+    "ast_hash": "8088389924eeb51822bc6c6c377babe9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/muttonconversion.json": {
+    "mtime": 1787300240.1700122,
+    "ast_hash": "d14102d6fa60e5aefbe95f4e7979843a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/netheritecleaverrecipe.json": {
+    "mtime": 1787300240.2620285,
+    "ast_hash": "6ce110667ceda96138391523c529a6f2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/netheritehacksawrecipe.json": {
+    "mtime": 1787300240.3445387,
+    "ast_hash": "9d27cc0a5ca55b7e20374acafe5a1f9b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/netheritehammerrecipe.json": {
+    "mtime": 1787300240.4196327,
+    "ast_hash": "a98534878802405266c66ae1d459d6f3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/netheriteskinningkniferecipe.json": {
+    "mtime": 1787300240.4991157,
+    "ast_hash": "c5bd184b66e9079b0cb2a079f95dad23",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/oakbutcherstablerecipe.json": {
+    "mtime": 1787300240.5618935,
+    "ast_hash": "22acfef88c455868ff8f67e906a8fb39",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/oakcounterrecipe.json": {
+    "mtime": 1787300240.6216156,
+    "ast_hash": "14c46069144fbedbd243ed9c271ade71",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/oakdisplayrecipe.json": {
+    "mtime": 1787300240.69749,
+    "ast_hash": "bab437694e126f95476ce0678070d305",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ocelotmeatrecipe_1.json": {
+    "mtime": 1787300240.7665765,
+    "ast_hash": "4bbeaff73b67682ae1cf16789538e2af",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ocelotmeatrecipe_2.json": {
+    "mtime": 1787300240.844607,
+    "ast_hash": "3ac259199dd9d15bb2203d2ae4ccc810",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ocelotmeatrecipe_3.json": {
+    "mtime": 1787300240.906626,
+    "ast_hash": "f956ec2a5bd11a30f6b28b96b682fbda",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/orangecanopyrecipe.json": {
+    "mtime": 1787300240.968446,
+    "ast_hash": "102a0092ebcd751cdad412c3bdda5c73",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/orangefroglegrecipe_1.json": {
+    "mtime": 1787300241.0291586,
+    "ast_hash": "a6e045ba9d8bae68c8d1c153f6c14646",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/orangefroglegrecipe_2.json": {
+    "mtime": 1787300241.0767038,
+    "ast_hash": "b0bc3ff317a067e0b1a580283d1464ee",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/orangefroglegrecipe_3.json": {
+    "mtime": 1787300241.1433606,
+    "ast_hash": "4424fa3c7c3c71d98207d442b734f95d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pandarugrecipe.json": {
+    "mtime": 1787300241.220781,
+    "ast_hash": "2fb43cc6f531d797760d08ee0a7be665",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pandasteakrecipe_1.json": {
+    "mtime": 1787300241.2819915,
+    "ast_hash": "e5b040fef5fedf9e296c19ca925e3978",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pandasteakrecipe_2.json": {
+    "mtime": 1787300241.348578,
+    "ast_hash": "e4bdb893abf1f4ee0a1a00628d1d44ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pandasteakrecipe_3.json": {
+    "mtime": 1787300241.412087,
+    "ast_hash": "ebf52cf73142121430935eb99d99ac5d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pestle_and_mortar_recipe.json": {
+    "mtime": 1787300241.4888682,
+    "ast_hash": "026b3cf45e32ee61ad14989da4b76f01",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pigskinrecipe_1.json": {
+    "mtime": 1787300241.5510077,
+    "ast_hash": "297c4c4a2254d0776296b5b6f39d41af",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pigskinrecipe_2.json": {
+    "mtime": 1787300241.62386,
+    "ast_hash": "c6b370971241391debe498c49f9a91b7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pigskinrecipe_3.json": {
+    "mtime": 1787300241.6883905,
+    "ast_hash": "e1c5a91da6e8ca75a8a7fc0eba847398",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pillagermeatrecipe_1.json": {
+    "mtime": 1787300241.7832499,
+    "ast_hash": "04c55aa91c0631e0df79ee315df124fc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pillagermeatrecipe_2.json": {
+    "mtime": 1787300241.8785312,
+    "ast_hash": "599a889b777eff2560094190ecd5d5f2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pillagermeatrecipe_3.json": {
+    "mtime": 1787300241.9392312,
+    "ast_hash": "bb96a9db6d6d20dc20d14f17ed9bd792",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pinkaxolotlrecipe_1.json": {
+    "mtime": 1787300242.0038097,
+    "ast_hash": "9a77db4468ced45a22e9b4e2ca620033",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pinkaxolotlrecipe_2.json": {
+    "mtime": 1787300242.064387,
+    "ast_hash": "9225919b63841cbaecd2f20c14182d40",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pinkaxolotlrecipe_3.json": {
+    "mtime": 1787300242.130972,
+    "ast_hash": "525bd620365ed6bcc2af1f430f072476",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pinkcanopyrecipe.json": {
+    "mtime": 1787300242.1943262,
+    "ast_hash": "debbe5fe24ad47a2d46ae649b8aea3ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/polarbearmeatrecipe_1.json": {
+    "mtime": 1787300242.259874,
+    "ast_hash": "7f359a3cd4f6fc839d066db658d6945c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/polarbearmeatrecipe_2.json": {
+    "mtime": 1787300242.326761,
+    "ast_hash": "5ed32bc5b759dbdc2dc86c1b15ef0118",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/polarbearmeatrecipe_3.json": {
+    "mtime": 1787300242.388936,
+    "ast_hash": "2acc77a53071fb700bfd830c347c2479",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkbellyrecipe_1.json": {
+    "mtime": 1787300242.4488587,
+    "ast_hash": "4dd5e110f985aec5b5e04e2689ba9a2e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkbellyrecipe_2.json": {
+    "mtime": 1787300242.5117157,
+    "ast_hash": "ed80729cd50110ad7ef21154566dbf46",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkbellyrecipe_3.json": {
+    "mtime": 1787300242.575487,
+    "ast_hash": "e980f78a20bff74df31ec1862565f2f8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkconversion.json": {
+    "mtime": 1787300242.641153,
+    "ast_hash": "be7454fbe54346b132ca67edbbf76808",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkhamrecipe_1.json": {
+    "mtime": 1787300242.7026253,
+    "ast_hash": "8d1642766b19edf46d77d097608ae929",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkhamrecipe_2.json": {
+    "mtime": 1787300242.7723742,
+    "ast_hash": "686df4d8cf9c6f9d07fdb2d7a0bd1710",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkhamrecipe_3.json": {
+    "mtime": 1787300242.8435009,
+    "ast_hash": "32d2f3067c1117da9ac2a58e6b4833af",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porklegrecipe_1.json": {
+    "mtime": 1787300242.9077175,
+    "ast_hash": "1a23b544adc9dbf8fa50d61c03f06580",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porklegrecipe_2.json": {
+    "mtime": 1787300242.9713962,
+    "ast_hash": "1a25466a4b552d8968b54679070ae54e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porklegrecipe_3.json": {
+    "mtime": 1787300243.029283,
+    "ast_hash": "e86a0de807e2b5054db755cd53a4d995",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkloinrecipe_1.json": {
+    "mtime": 1787300243.0917995,
+    "ast_hash": "7e1859def3f38c7028a42efe50a7dbda",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkloinrecipe_2.json": {
+    "mtime": 1787300243.1580334,
+    "ast_hash": "74156a9610e50f0f9ca264b84d32014b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkloinrecipe_3.json": {
+    "mtime": 1787300243.2192183,
+    "ast_hash": "f86948fc6b136900448d96a4a28c7de4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkshoulderrecipe_1.json": {
+    "mtime": 1787300243.282009,
+    "ast_hash": "2a6f31f1f92145c15af4e1129e468e0b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkshoulderrecipe_2.json": {
+    "mtime": 1787300243.3498871,
+    "ast_hash": "8e98d7c731419b96064cd018d90b349c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/porkshoulderrecipe_3.json": {
+    "mtime": 1787300243.4046712,
+    "ast_hash": "5830289061d7c6c5f603daa3f8125297",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pufferfishrecipe_1.json": {
+    "mtime": 1787300243.5131829,
+    "ast_hash": "da70e63e77c62f6ffd2db9bde08e385c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pufferfishrecipe_2.json": {
+    "mtime": 1787300243.583908,
+    "ast_hash": "f051d42286b3ad5d8b76892c3bc20cf8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pufferfishrecipe_3.json": {
+    "mtime": 1787300243.6448798,
+    "ast_hash": "0f5b49f7989fbdb243a6639a6587a1a3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/purplecanopyrecipe.json": {
+    "mtime": 1787300243.724633,
+    "ast_hash": "2e07b778ff090f9e2358bbfe5756d345",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ragrecipe.json": {
+    "mtime": 1787300243.7859685,
+    "ast_hash": "73f5380d3b8399b14e9f84af58731d4e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ravagermeatrecipe_1.json": {
+    "mtime": 1787300243.8641264,
+    "ast_hash": "2a1224fe0a9742faec29d21d125c7800",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ravagermeatrecipe_2.json": {
+    "mtime": 1787300243.9591436,
+    "ast_hash": "e5cc3ef5a4926a7acb80f5122a1533ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ravagermeatrecipe_3.json": {
+    "mtime": 1787300244.0556004,
+    "ast_hash": "d215d6f1887fbad558069643452f8736",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/redcanopyrecipe.json": {
+    "mtime": 1787300244.1194344,
+    "ast_hash": "6e131038c110452625f2f6c72e6cb7e0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/reversedragonscaleblockrecipe.json": {
+    "mtime": 1787300244.182045,
+    "ast_hash": "58b84129d155d479283b3be2acc55f12",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ribeyesteakrecipe_1.json": {
+    "mtime": 1787300244.24419,
+    "ast_hash": "c5172c11fb6000b069155ca29d3f4113",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ribeyesteakrecipe_2.json": {
+    "mtime": 1787300244.3064191,
+    "ast_hash": "de365bf5a3a70452d4bb3cc3ee43ef28",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/ribeyesteakrecipe_3.json": {
+    "mtime": 1787300244.3706727,
+    "ast_hash": "140755a5c7a95b202129955401f0bd13",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/robesrecyclerecipe.json": {
+    "mtime": 1787300244.433058,
+    "ast_hash": "c5cd520c9bed91d60afebf44dae8790d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/roperecipe.json": {
+    "mtime": 1787300244.4948716,
+    "ast_hash": "c45a7561760788ba94a30129a2adbefd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/rumpsteakrecipe_1.json": {
+    "mtime": 1787300244.5589356,
+    "ast_hash": "de1914d78871ba122c07cbd8726ee3f9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/rumpsteakrecipe_2.json": {
+    "mtime": 1787300244.6216588,
+    "ast_hash": "787de52ed82a03364340bdb4ef86bdcd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/rumpsteakrecipe_3.json": {
+    "mtime": 1787300244.6989396,
+    "ast_hash": "428aeb8b945fbcd505dc81d4692a0be8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/salmon_barrel_crafting.json": {
+    "mtime": 1787300244.762588,
+    "ast_hash": "70d9a55db819250c86b77d784558bcfe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/salmonrecipe_1.json": {
+    "mtime": 1787300244.8387434,
+    "ast_hash": "a317165b1b84cb6a182437c204909583",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/salmonrecipe_2.json": {
+    "mtime": 1787300244.903119,
+    "ast_hash": "bfdbd6200648139480a13ca3df48887c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/salmonrecipe_3.json": {
+    "mtime": 1787300244.9664872,
+    "ast_hash": "9ec3a5ff2a412f7533e6d00b1b4e83b4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/saltblockrecipe.json": {
+    "mtime": 1787300245.0288515,
+    "ast_hash": "d6ca51a0ea61b36be478508bb0dc7452",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sausageattachmentrecipe.json": {
+    "mtime": 1787300245.1056006,
+    "ast_hash": "c0b315f124bebaf3f0c06a902515b81f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sausagerecipe_1.json": {
+    "mtime": 1787300245.1788816,
+    "ast_hash": "e9293f4b02d523fb826164b340f221d8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sausagerecipe_2.json": {
+    "mtime": 1787300245.2664092,
+    "ast_hash": "1db239f041f21a21c9a43f3a59fc065a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sausagerecipe_3.json": {
+    "mtime": 1787300245.3290412,
+    "ast_hash": "a6014ed499af22b30f1615377f2e5ffb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/shulkermeatrecipe_1.json": {
+    "mtime": 1787300245.3937957,
+    "ast_hash": "0e92edc49c564c845e0c6720750d3fd9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/shulkermeatrecipe_2.json": {
+    "mtime": 1787300245.4547853,
+    "ast_hash": "f76d8ee33b15e477cfab5e2400d78b2f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/shulkermeatrecipe_3.json": {
+    "mtime": 1787300245.5140605,
+    "ast_hash": "922e8840a4e91ff4e844ab4e8a1eba24",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/silverfishrecipe_1.json": {
+    "mtime": 1787300245.5801616,
+    "ast_hash": "feb83de4e879bfd8e37a79bbb2883d6f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/silverfishrecipe_2.json": {
+    "mtime": 1787300245.658497,
+    "ast_hash": "839a379befc5085afa10c13e57f17c6c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/silverfishrecipe_3.json": {
+    "mtime": 1787300245.7365437,
+    "ast_hash": "3ddbd4d51cb7b1a8e736e59abf897177",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sirloinrecipe_1.json": {
+    "mtime": 1787300245.7995565,
+    "ast_hash": "b1c0b623cb089fd85129356726a82390",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sirloinrecipe_2.json": {
+    "mtime": 1787300245.8625042,
+    "ast_hash": "ec1ef6c9e23ad3579efea413805eab71",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sirloinrecipe_3.json": {
+    "mtime": 1787300245.9424615,
+    "ast_hash": "b89af682c94ce677b3d369d6d6473211",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/skinrackrecipe.json": {
+    "mtime": 1787300246.0048404,
+    "ast_hash": "9a8b070c4bf288d6103079af192ff96d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/smallheadmountrecipe.json": {
+    "mtime": 1787300246.083834,
+    "ast_hash": "2e5cd226f88c02c098596599729e9a06",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sniffersteakrecipe_1.json": {
+    "mtime": 1787300246.1902866,
+    "ast_hash": "2af45b307e8cd32084d87e5d677957dc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sniffersteakrecipe_2.json": {
+    "mtime": 1787300246.2574182,
+    "ast_hash": "e6e865fb193e02c6b1aca17a9489ca5e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sniffersteakrecipe_3.json": {
+    "mtime": 1787300246.3243163,
+    "ast_hash": "bffe969f6018c457885310f121fdf57f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/spiderlegrecipe_1.json": {
+    "mtime": 1787300246.3866932,
+    "ast_hash": "2a8eeb087ed3bb0eec2866b5499cabfd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/spiderlegrecipe_2.json": {
+    "mtime": 1787300246.4494069,
+    "ast_hash": "a385157ad707927afb01dc47f3e6e5b4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/spiderlegrecipe_3.json": {
+    "mtime": 1787300246.514127,
+    "ast_hash": "2964fdfb019295942d170aa523ab6294",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/spiketraprecipe.json": {
+    "mtime": 1787300246.5763762,
+    "ast_hash": "1296b3cbadff994657b76962631120b8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/spitroastrecipe.json": {
+    "mtime": 1787300246.638886,
+    "ast_hash": "7af6da8e0269916056655cf9940b0c61",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/spongerecipe.json": {
+    "mtime": 1787300246.702523,
+    "ast_hash": "aa47e029bfe3b719241db44f274f4b46",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sprucebutcherstablerecipe.json": {
+    "mtime": 1787300246.7738187,
+    "ast_hash": "134a7c6be0bb1d8211577764f5f0c1e1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sprucecounterrecipe.json": {
+    "mtime": 1787300246.8450336,
+    "ast_hash": "c1099ed63b42ed2581889d9a101ecb94",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sprucedisplayrecipe.json": {
+    "mtime": 1787300246.906756,
+    "ast_hash": "da455538f8542fdbbb04ec1a80676c88",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/stomachrecipe_1.json": {
+    "mtime": 1787300246.9735696,
+    "ast_hash": "44a1d3f518e485ab006ebfeeba32dae5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/stomachrecipe_2.json": {
+    "mtime": 1787300247.0383518,
+    "ast_hash": "b239f41c953833e14f8a4bd7e09e0b44",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/stomachrecipe_3.json": {
+    "mtime": 1787300247.100268,
+    "ast_hash": "9d331c789cfe4b4a0a37e65a103d8ff1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/stridermeatrecipe_1.json": {
+    "mtime": 1787300247.1648338,
+    "ast_hash": "7a9a22f02ee719d2137709a1bb4084e2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/stridermeatrecipe_2.json": {
+    "mtime": 1787300247.2261765,
+    "ast_hash": "928a9c24273ecd52334c632015d81dea",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/stridermeatrecipe_3.json": {
+    "mtime": 1787300247.29322,
+    "ast_hash": "f581db6a14cf6305ccf078f50c90d61a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/taxidermystationrecipe.json": {
+    "mtime": 1787300247.355837,
+    "ast_hash": "445563dfe4e604444385abcd75e839d0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/tbonesteakrecipe_1.json": {
+    "mtime": 1787300247.4189923,
+    "ast_hash": "56bf978ac4f3173c1b475687d5eb3f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/tbonesteakrecipe_2.json": {
+    "mtime": 1787300247.4795547,
+    "ast_hash": "f9eef13b4f3f55ed9ed6ef4fca7877f0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/tbonesteakrecipe_3.json": {
+    "mtime": 1787300247.5434146,
+    "ast_hash": "32f8e23a80e4d01da375ce0468fc5b3d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/tentaclesrecipe_1.json": {
+    "mtime": 1787300247.6058633,
+    "ast_hash": "aa310bc7c9a5194a023a6d0802eaa734",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/tentaclesrecipe_2.json": {
+    "mtime": 1787300247.673083,
+    "ast_hash": "48b8c36c2a3d327492a0d3d5dea10d03",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/tentaclesrecipe_3.json": {
+    "mtime": 1787300247.7480855,
+    "ast_hash": "46f0f64503c57889a9e2af180f0e1f90",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/themightymeatballrecipe.json": {
+    "mtime": 1787300247.8135095,
+    "ast_hash": "2a2c8d0a6aab1dabac54f92491b3375d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/turtlebootsrecipe.json": {
+    "mtime": 1787300247.8809984,
+    "ast_hash": "0765a294008c30c05f40187dd58c8da4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/turtlechestplaterecipe.json": {
+    "mtime": 1787300247.94029,
+    "ast_hash": "b1e0ca150fdca854403f647b6f9d1f1e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/turtleleggingsrecipe.json": {
+    "mtime": 1787300248.0047717,
+    "ast_hash": "13ed264847481f047ffe1ff6508c2849",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/turtlemeatrecipe_1.json": {
+    "mtime": 1787300248.0821016,
+    "ast_hash": "8caedcff2d56dbfcb7541114cb653907",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/turtlemeatrecipe_2.json": {
+    "mtime": 1787300248.1443014,
+    "ast_hash": "5681b1e5d7a7d9730e2448a38f9e8fe9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/turtlemeatrecipe_3.json": {
+    "mtime": 1787300248.223276,
+    "ast_hash": "78f513b9c059ae5b49adc46f0691afb3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/turtleshellfragmentrecipe.json": {
+    "mtime": 1787300248.3338332,
+    "ast_hash": "618ddac213faa1df1aab074048fdf2d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/villagersteakrecipe_1.json": {
+    "mtime": 1787300248.4023986,
+    "ast_hash": "82595003e39864309510262f42cf47af",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/villagersteakrecipe_2.json": {
+    "mtime": 1787300248.464865,
+    "ast_hash": "c4b6816e966fc0732490130067cc86d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/villagersteakrecipe_3.json": {
+    "mtime": 1787300248.5254104,
+    "ast_hash": "544a69be7b0c4a16f23dd4bdb0dcdbd9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/vindicatormeatrecipe_1.json": {
+    "mtime": 1787300248.5909665,
+    "ast_hash": "228ba1d99268b064e864d172cfa0bf26",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/vindicatormeatrecipe_2.json": {
+    "mtime": 1787300248.6385548,
+    "ast_hash": "b2dcd559ef08d55fd4da63432b0a055d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/vindicatormeatrecipe_3.json": {
+    "mtime": 1787300248.7024436,
+    "ast_hash": "087989e190f8ea8c808351d859328d7f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wardenmeatrecipe_1.json": {
+    "mtime": 1787300248.767972,
+    "ast_hash": "2efa34a6e70d326a02f69797c402bfd2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wardenmeatrecipe_2.json": {
+    "mtime": 1787300248.8304553,
+    "ast_hash": "a3dca1459865057e0f15d9a0c5b74a3d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wardenmeatrecipe_3.json": {
+    "mtime": 1787300248.8922791,
+    "ast_hash": "a640d2c756345004537db4e972e18569",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/warpedbutcherstablerecipe.json": {
+    "mtime": 1787300248.9583898,
+    "ast_hash": "c1289b185fd46165c3644c720cf4dbf6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/warpedcounterrecipe.json": {
+    "mtime": 1787300249.0345078,
+    "ast_hash": "1ce0ba0e40f862adfe741fe04e59ada0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/warpeddisplayrecipe.json": {
+    "mtime": 1787300249.0995839,
+    "ast_hash": "a9817a7b04385e380e7380a190cdcce4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wetspongerecipe.json": {
+    "mtime": 1787300249.1618576,
+    "ast_hash": "c1e012e83d415945a41881b88bdee5b9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wishbone_recipe.json": {
+    "mtime": 1787300249.2108073,
+    "ast_hash": "b110ea0cff4082f4ce80a29a094abf21",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/witchmeatrecipe_1.json": {
+    "mtime": 1787300249.2744887,
+    "ast_hash": "12584db10f30ac73e76707eea88637d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/witchmeatrecipe_2.json": {
+    "mtime": 1787300249.333955,
+    "ast_hash": "a4bc4cbc61be4657d781c63d2a2679a9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/witchmeatrecipe_3.json": {
+    "mtime": 1787300249.4002876,
+    "ast_hash": "3d2a6298f090982dfe33cf920fc4425c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wolffurboots.json": {
+    "mtime": 1787300249.4615521,
+    "ast_hash": "a37da51ef8fc2382b9bc2ad03793f2af",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wolffurchest.json": {
+    "mtime": 1787300249.5246005,
+    "ast_hash": "9294203104943fc3f9d325527e07f0ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wolffurhelmet.json": {
+    "mtime": 1787300249.5885556,
+    "ast_hash": "f24fa03484b00b8b48066eedf3d6ca58",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wolffurleggings.json": {
+    "mtime": 1787300249.6521292,
+    "ast_hash": "a516b7f51f2503eaf10df82a1fb9b5fe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wolfmeatrecipe_1.json": {
+    "mtime": 1787300249.7177145,
+    "ast_hash": "1352169529a074bacd5552bf91789c32",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wolfmeatrecipe_2.json": {
+    "mtime": 1787300249.781114,
+    "ast_hash": "57d1275b4123a8d1a7d49e8cda016f54",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/wolfmeatrecipe_3.json": {
+    "mtime": 1787300249.8390217,
+    "ast_hash": "1ee7337d489c12a52716e9e45be69078",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/yellowcanopyrecipe.json": {
+    "mtime": 1787300249.9061973,
+    "ast_hash": "328923d92eee95d541821650faa6a0c3",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.27.md": {
+    "mtime": 1787300635.7846434,
+    "ast_hash": "9d20ef559831145535c6391efcff8389",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/blood_flow.png": {
+    "mtime": 1787299897.1953788,
+    "ast_hash": "460b7e06a85e3705a920bbc58070238f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/blood_still.png": {
+    "mtime": 1787299897.0587277,
+    "ast_hash": "0a666151b29e524b60dd22bc6372bb32",
     "semantic_hash": ""
   }
 }
