@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/turtle_break_5_carcass_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/turtle_drained",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/turtle_drained",
+    "1": "slaughter_hide:block/inner"
+  }
+}

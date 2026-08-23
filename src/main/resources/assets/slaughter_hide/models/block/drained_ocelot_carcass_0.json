@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/ocelot_carcass_drained_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/ocelot",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/ocelot"
+  }
+}

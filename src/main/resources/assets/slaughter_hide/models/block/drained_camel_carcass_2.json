@@ -1,0 +1,7 @@
+{
+  "parent": "slaughter_hide:custom/camel_carcass_headless_skinned_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/camel_skinned",
+    "particle": "slaughter_hide:block/camel_skinned"
+  }
+}

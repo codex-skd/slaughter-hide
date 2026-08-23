@@ -1,0 +1,254 @@
+package com.skd.slaughterhide.init;
+
+import com.skd.slaughterhide.CarcassDefinition;
+import com.skd.slaughterhide.Carcasses;
+import com.skd.slaughterhide.SlaughterHide;
+import com.skd.slaughterhide.block.CarcassBlock;
+import com.skd.slaughterhide.block.CorpseBlock;
+import com.skd.slaughterhide.block.DrainedCarcassBlock;
+import com.skd.slaughterhide.block.HeadMountBlock;
+import com.skd.slaughterhide.block.HookBlock;
+import com.skd.slaughterhide.block.RopeBlock;
+import com.skd.slaughterhide.block.SkeletonBlock;
+import com.skd.slaughterhide.block.TrophyHeadBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Function;
+
+/**
+ * Block registrations. The generic carcass family is registered straight from
+ * the {@link CarcassDefinition} table instead of one class per mob, so adding
+ * a mob means adding a definition entry (plus its assets), nothing else.
+ */
+public final class ModBlocks {
+    public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(SlaughterHide.MOD_ID);
+
+    private static final Map<String, DeferredBlock<CarcassBlock>> FRESH = new HashMap<>();
+    private static final Map<String, DeferredBlock<DrainedCarcassBlock>> DRAINED = new HashMap<>();
+    private static final Map<String, DeferredBlock<Block>> HEADS = new HashMap<>();
+    private static final Map<String, DeferredBlock<Block>> MOUNTS = new HashMap<>();
+    private static final Map<String, DeferredBlock<Block>> SKELETONS = new HashMap<>();
+    private static final Map<String, DeferredBlock<CorpseBlock>> CORPSE = new HashMap<>();
+
+    /** Mobs that have drained carcass blockstate JSONs/assets. */
+    private static final Set<String> HAS_DRAINED_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey",
+            "enderman", "fox", "goat", "hoglin", "mule", "ocelot",
+            "panda", "pig", "polar_bear", "rabbit", "sheep", "sniffer",
+            "strider", "turtle", "wolf", "zoglin"
+    );
+
+    /** Mobs that have head blockstate JSONs/assets. */
+    private static final Set<String> HAS_HEAD_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey", "drowned",
+            "enderman", "endermite", "evoker", "fox", "goat", "hoglin", "husk",
+            "mule", "ocelot", "panda", "pig", "piglin_brute", "polar_bear",
+            "rabbit", "ravager", "sheep", "silverfish", "sniffer", "turtle",
+            "vindicator", "witch", "wolf", "zoglin"
+    );
+
+    /** Mobs that have head_mount blockstate JSONs/assets. */
+    private static final Set<String> HAS_HEAD_MOUNT_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey", "drowned",
+            "enderman", "endermite", "evoker", "fox", "goat", "hoglin", "husk",
+            "mule", "ocelot", "panda", "pig", "piglin", "rabbit", "ravager",
+            "sheep", "silverfish", "skeleton", "turtle", "vindicator", "witch",
+            "wolf", "zoglin", "zombie"
+    );
+
+    /** Mobs that have skeleton blockstate JSONs/assets. */
+    private static final Set<String> HAS_SKELETON_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey", "fox",
+            "goat", "hoglin", "mule", "ocelot", "panda", "pig", "piglin",
+            "sheep", "wolf", "polar_bear"
+    );
+
+    /** Mobs that have corpse blockstate JSONs/assets. */
+    private static final Set<String> HAS_CORPSE_ASSETS = Set.of(
+            "drowned", "evoker", "husk", "piglin", "piglin_brute",
+            "skeleton", "vindicator", "witch", "zombie"
+    );
+
+    /** Global attachment point a carcass item hangs from, see HookPlacementHandler. */
+    public static final DeferredBlock<HookBlock> HOOK = register("hook", HookBlock::new);
+
+    /** Alternative attachment point a carcass item can hang from (rope). */
+    public static final DeferredBlock<RopeBlock> ROPE = register("rope", RopeBlock::new);
+
+    static {
+        registerFamily(Carcasses.COW);
+        registerFamily(Carcasses.PIG);
+        registerFamily(Carcasses.SHEEP);
+        registerFamily(Carcasses.CHICKEN);
+        registerFamily(Carcasses.RABBIT);
+        registerFamily(Carcasses.GOAT);
+        registerFamily(Carcasses.FOX);
+        registerFamily(Carcasses.WOLF);
+        registerFamily(Carcasses.CAMEL);
+        registerFamily(Carcasses.DONKEY);
+        registerFamily(Carcasses.MULE);
+        registerFamily(Carcasses.OCELOT);
+        registerFamily(Carcasses.PANDA);
+        registerFamily(Carcasses.POLAR_BEAR);
+        registerFamily(Carcasses.HOGLIN);
+        registerFamily(Carcasses.ZOGLIN);
+        registerFamily(Carcasses.DOLPHIN);
+        registerFamily(Carcasses.BAT);
+        registerFamily(Carcasses.SILVERFISH);
+        registerFamily(Carcasses.ENDERMITE);
+        registerFamily(Carcasses.COD);
+        registerFamily(Carcasses.SALMON);
+        registerFamily(Carcasses.PHANTOM);
+        registerFamily(Carcasses.SHULKER);
+        registerFamily(Carcasses.GUARDIAN);
+        registerFamily(Carcasses.ELDER_GUARDIAN);
+        registerFamily(Carcasses.SKELETON_HORSE);
+        registerFamily(Carcasses.ZOMBIE_HORSE);
+        registerFamily(Carcasses.HORSE);
+        registerFamily(Carcasses.BROWN_LLAMA);
+        registerFamily(Carcasses.WHITE_LLAMA);
+        registerFamily(Carcasses.CREAMY_LLAMA);
+        registerFamily(Carcasses.GRAY_LLAMA);
+        registerFamily(Carcasses.SQUID);
+        registerFamily(Carcasses.GLOW_SQUID);
+        registerFamily(Carcasses.CREEPER);
+        registerFamily(Carcasses.SPIDER);
+        registerFamily(Carcasses.CAVE_SPIDER);
+        registerFamily(Carcasses.BLUE_AXOLOTL);
+        registerFamily(Carcasses.PINK_AXOLOTL);
+        registerFamily(Carcasses.BROWN_AXOLOTL);
+        registerFamily(Carcasses.CYAN_AXOLOTL);
+        registerFamily(Carcasses.GOLD_AXOLOTL);
+        registerFamily(Carcasses.PUFFERFISH);
+        registerFamily(Carcasses.SLIME);
+        registerFamily(Carcasses.MAGMA_CUBE);
+        registerFamily(Carcasses.MEDIUM_SLIME);
+        registerFamily(Carcasses.SMALL_SLIME);
+        registerFamily(Carcasses.MEDIUM_MAGMA_CUBE);
+        registerFamily(Carcasses.SMALL_MAGMA_CUBE);
+        registerFamily(Carcasses.ENDERMAN);
+        registerFamily(Carcasses.STRIDER);
+        registerFamily(Carcasses.SNIFFER);
+        registerFamily(Carcasses.TURTLE);
+        // CorpseBlock humanoids (organ harvesting)
+        registerCorpseFamily(Carcasses.ZOMBIE);
+        registerCorpseFamily(Carcasses.SKELETON);
+        registerCorpseFamily(Carcasses.DROWNED);
+        registerCorpseFamily(Carcasses.HUSK);
+        registerCorpseFamily(Carcasses.VINDICATOR);
+        registerCorpseFamily(Carcasses.EVOKER);
+        registerCorpseFamily(Carcasses.WITCH);
+        registerCorpseFamily(Carcasses.PIGLIN);
+        registerCorpseFamily(Carcasses.PIGLIN_BRUTE);
+        registerCorpseFamily(Carcasses.RAVAGER);
+        // Cat variants (11 variants, all share ocelot shapes, have head+head_mount+skin, no skeleton, 0 cuts)
+        registerFamily(Carcasses.ALL_BLACK_CAT);
+        registerFamily(Carcasses.BLACK_CAT);
+        registerFamily(Carcasses.BSHORTHAIR_CAT);
+        registerFamily(Carcasses.CALICO_CAT);
+        registerFamily(Carcasses.JELLIE_CAT);
+        registerFamily(Carcasses.PERSIAN_CAT);
+        registerFamily(Carcasses.RAGDOLL_CAT);
+        registerFamily(Carcasses.RED_CAT);
+        registerFamily(Carcasses.SIAMESE_CAT);
+        registerFamily(Carcasses.TABBY_CAT);
+        registerFamily(Carcasses.WHITE_CAT);
+    }
+
+    private ModBlocks() {
+    }
+
+    private static void registerFamily(CarcassDefinition definition) {
+        String mob = definition.mobId();
+        DeferredBlock<CarcassBlock> fresh = register(mob + "_carcass",
+                props -> new CarcassBlock(props, definition));
+        FRESH.put(mob, fresh);
+        if (HAS_DRAINED_ASSETS.contains(mob)) {
+            DeferredBlock<DrainedCarcassBlock> drained = register("drained_" + mob + "_carcass",
+                    props -> new DrainedCarcassBlock(props, definition));
+            DRAINED.put(mob, drained);
+        }
+        if (HAS_HEAD_ASSETS.contains(mob)) {
+            HEADS.put(mob, register(mob + "_head", props -> new TrophyHeadBlock(props, definition)));
+        }
+        if (HAS_HEAD_MOUNT_ASSETS.contains(mob)) {
+            MOUNTS.put(mob, register(mob + "_head_mount", props -> new HeadMountBlock(props, definition)));
+        }
+        if (HAS_SKELETON_ASSETS.contains(mob)) {
+            SKELETONS.put(mob, register(mob + "_skeleton", props -> new SkeletonBlock(props, definition)));
+        }
+    }
+
+    private static void registerCorpseFamily(CarcassDefinition definition) {
+        String mob = definition.mobId();
+        if (HAS_CORPSE_ASSETS.contains(mob)) {
+            DeferredBlock<CorpseBlock> corpse = register(mob + "_corpse",
+                    props -> new CorpseBlock(props, definition.corpseShapes()));
+            CORPSE.put(mob, corpse);
+        }
+    }
+
+    private static <T extends Block> DeferredBlock<T> register(String name, Function<BlockBehaviour.Properties, T> factory) {
+        return REGISTRY.registerBlock(name, factory);
+    }
+
+    public static DeferredBlock<CarcassBlock> freshFor(String mobId) {
+        return FRESH.get(mobId);
+    }
+
+    public static DeferredBlock<DrainedCarcassBlock> drainedFor(String mobId) {
+        return DRAINED.get(mobId);
+    }
+
+    public static DeferredBlock<RopeBlock> ropeFor(String mobId) {
+        return ROPE;
+    }
+
+    public static DeferredBlock<Block> headFor(String mobId) {
+        return HEADS.get(mobId);
+    }
+
+    public static DeferredBlock<Block> mountFor(String mobId) {
+        return MOUNTS.get(mobId);
+    }
+
+    public static DeferredBlock<Block> skeletonFor(String mobId) {
+        return SKELETONS.get(mobId);
+    }
+
+    public static Map<String, DeferredBlock<Block>> allHeads() {
+        return HEADS;
+    }
+
+    public static Map<String, DeferredBlock<CarcassBlock>> allFresh() {
+        return FRESH;
+    }
+
+    public static Map<String, DeferredBlock<DrainedCarcassBlock>> allDrained() {
+        return DRAINED;
+    }
+
+    /** Every fresh and drained carcass block, for the shared block entity type. */
+    public static Block[] carcassBlocks() {
+        return java.util.stream.Stream.concat(FRESH.values().stream(), DRAINED.values().stream())
+                .map(DeferredBlock::get)
+                .toArray(Block[]::new);
+    }
+
+    /** Every corpse block, for the corpse block entity type. */
+    public static Block[] corpseBlocks() {
+        return CORPSE.values().stream()
+                .map(DeferredBlock::get)
+                .toArray(Block[]::new);
+    }
+
+    public static DeferredBlock<CorpseBlock> corpseFor(String mobId) {
+        return CORPSE.get(mobId);
+    }
+}

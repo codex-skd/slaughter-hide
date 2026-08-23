@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "facing=north,blockstate=0": {
+      "model": "slaughter_hide:block/drained_pig_carcass"
+    },
+    "facing=north,blockstate=6": {
+      "model": "slaughter_hide:block/drained_pig_carcass_5"
+    },
+    "facing=north,blockstate=7": {
+      "model": "slaughter_hide:block/drained_pig_carcass_6"
+    },
+    "facing=north,blockstate=8": {
+      "model": "slaughter_hide:block/drained_pig_carcass_7"
+    },
+    "facing=north,blockstate=9": {
+      "model": "slaughter_hide:block/drained_pig_carcass_8"
+    },
+    "facing=east,blockstate=0": {
+      "model": "slaughter_hide:block/drained_pig_carcass",
+      "y": 90
+    },
+    "facing=east,blockstate=6": {
+      "model": "slaughter_hide:block/drained_pig_carcass_5",
+      "y": 90
+    },
+    "facing=east,blockstate=7": {
+      "model": "slaughter_hide:block/drained_pig_carcass_6",
+      "y": 90
+    },
+    "facing=east,blockstate=8": {
+      "model": "slaughter_hide:block/drained_pig_carcass_7",
+      "y": 90
+    },
+    "facing=east,blockstate=9": {
+      "model": "slaughter_hide:block/drained_pig_carcass_8",
+      "y": 90
+    },
+    "facing=south,blockstate=0": {
+      "model": "slaughter_hide:block/drained_pig_carcass",
+      "y": 180
+    },
+    "facing=south,blockstate=6": {
+      "model": "slaughter_hide:block/drained_pig_carcass_5",
+      "y": 180
+    },
+    "facing=south,blockstate=7": {
+      "model": "slaughter_hide:block/drained_pig_carcass_6",
+      "y": 180
+    },
+    "facing=south,blockstate=8": {
+      "model": "slaughter_hide:block/drained_pig_carcass_7",
+      "y": 180
+    },
+    "facing=south,blockstate=9": {
+      "model": "slaughter_hide:block/drained_pig_carcass_8",
+      "y": 180
+    },
+    "facing=west,blockstate=0": {
+      "model": "slaughter_hide:block/drained_pig_carcass",
+      "y": 270
+    },
+    "facing=west,blockstate=6": {
+      "model": "slaughter_hide:block/drained_pig_carcass_5",
+      "y": 270
+    },
+    "facing=west,blockstate=7": {
+      "model": "slaughter_hide:block/drained_pig_carcass_6",
+      "y": 270
+    },
+    "facing=west,blockstate=8": {
+      "model": "slaughter_hide:block/drained_pig_carcass_7",
+      "y": 270
+    },
+    "facing=west,blockstate=9": {
+      "model": "slaughter_hide:block/drained_pig_carcass_8",
+      "y": 270
+    }
+  }
+}

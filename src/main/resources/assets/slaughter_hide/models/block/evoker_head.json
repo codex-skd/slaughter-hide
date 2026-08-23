@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/evoker_head",
+  "textures": {
+    "all": "slaughter_hide:block/evoker",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/evoker"
+  }
+}

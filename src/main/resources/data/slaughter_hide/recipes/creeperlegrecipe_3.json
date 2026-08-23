@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "creeper",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": "slaughter_hide:raw_creeper_leg",
+  "result": {
+    "id": "slaughter_hide:cooked_creeper_leg"
+  }
+}

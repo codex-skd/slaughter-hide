@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": "slaughter_hide:elder_guardian_spike",
+    "b": "minecraft:smooth_stone_slab"
+  },
+  "result": {
+    "id": "slaughter_hide:spike_trap",
+    "count": 1
+  }
+}

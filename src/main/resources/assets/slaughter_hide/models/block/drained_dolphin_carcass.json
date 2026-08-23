@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/dolphin_drained_carcass",
+  "textures": {
+    "all": "slaughter_hide:block/dolphin",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/dolphin",
+    "1": "slaughter_hide:block/dolphin_skeleton"
+  }
+}

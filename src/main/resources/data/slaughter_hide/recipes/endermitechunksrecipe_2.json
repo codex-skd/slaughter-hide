@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "endermite",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": "slaughter_hide:raw_endermite_chunks",
+  "result": {
+    "id": "slaughter_hide:cooked_endermite_chunks"
+  }
+}

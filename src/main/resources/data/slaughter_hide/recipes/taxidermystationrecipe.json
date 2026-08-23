@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "butchery",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "bb",
+    "bb"
+  ],
+  "key": {
+    "a": "#slaughter_hide:skins",
+    "b": "#minecraft:planks"
+  },
+  "result": {
+    "id": "slaughter_hide:taxidermy_table",
+    "count": 1
+  }
+}

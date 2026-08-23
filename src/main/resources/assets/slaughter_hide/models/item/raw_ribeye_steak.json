@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "slaughter_hide:item/raw_ribeye_steak"
+  }
+}

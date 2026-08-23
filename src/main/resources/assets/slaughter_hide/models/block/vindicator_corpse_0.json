@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/vindicator_corpse_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/vindicator",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/vindicator"
+  }
+}

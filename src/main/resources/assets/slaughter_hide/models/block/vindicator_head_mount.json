@@ -1,0 +1,11 @@
+{
+  "parent": "slaughter_hide:custom/vindicator_head_mount",
+  "textures": {
+    "all": "slaughter_hide:block/vindicator",
+    "particle": "slaughter_hide:block/vindicator",
+    "0": "minecraft:block/spruce_planks",
+    "1": "minecraft:block/dark_oak_planks",
+    "2": "minecraft:block/gold_block",
+    "3": "slaughter_hide:block/vindicator"
+  }
+}

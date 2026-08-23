@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/witch_corpse_armless_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/witch_drained_hanging",
+    "particle": "slaughter_hide:block/witch_drained",
+    "0": "slaughter_hide:block/witch_drained_hanging"
+  }
+}

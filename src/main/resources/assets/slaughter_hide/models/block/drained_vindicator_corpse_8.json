@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/vindicator_corpse_cut_2",
+  "textures": {
+    "all": "slaughter_hide:block/placed_armorless_vindicator",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/placed_armorless_vindicator"
+  }
+}

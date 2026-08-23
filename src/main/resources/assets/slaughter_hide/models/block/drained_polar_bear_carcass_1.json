@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/polarbear_carcass_headless_hanging",
+  "textures": {
+    "all": "slaughter_hide:block/drained_polarbear_hanging",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/drained_polarbear_hanging",
+    "skeleton": "slaughter_hide:block/polarbear_skeleton"
+  }
+}

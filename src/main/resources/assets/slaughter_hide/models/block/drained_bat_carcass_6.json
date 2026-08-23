@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/bat_carcass_headless_skinned",
+  "textures": {
+    "all": "slaughter_hide:block/bat_skinned",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/bat_skinned"
+  }
+}

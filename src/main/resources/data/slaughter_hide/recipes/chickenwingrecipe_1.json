@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "chicken",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 150,
+  "ingredient": "slaughter_hide:raw_chicken_wing",
+  "result": {
+    "id": "slaughter_hide:cooked_chicken_wing"
+  }
+}

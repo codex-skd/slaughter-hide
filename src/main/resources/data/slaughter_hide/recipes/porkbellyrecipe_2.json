@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "pork",
+  "category": "misc",
+  "experience": 0.6,
+  "cookingtime": 105,
+  "ingredient": "slaughter_hide:raw_pork_belly",
+  "result": {
+    "id": "slaughter_hide:cooked_pork_belly"
+  }
+}

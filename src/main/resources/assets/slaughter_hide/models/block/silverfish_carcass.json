@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/silverfish_carcass",
+  "textures": {
+    "all": "slaughter_hide:block/silverfish",
+    "particle": "slaughter_hide:block/silverfish",
+    "0": "slaughter_hide:block/silverfish"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "slaughter_hide:item/iron_skinning_knife"
+  }
+}

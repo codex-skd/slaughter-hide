@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": "#slaughter_hide:raw_beef"
+  },
+  "result": {
+    "id": "minecraft:beef",
+    "count": 1
+  }
+}
