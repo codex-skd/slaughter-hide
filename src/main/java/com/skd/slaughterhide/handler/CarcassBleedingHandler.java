@@ -15,11 +15,15 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
+
+import java.util.List;
 
 /**
  * Bleeding step: right-click a fresh carcass with a cleaver. Marks the carcass
@@ -27,9 +31,9 @@ import net.minecraft.world.level.block.state.BlockState;
  * the original -- or instantly when the config toggle is set -- replaces the
  * block with its drained variant.
  *
- * <p>Replaces the original {@code <Mob>carcassbleedingProcedure} and fills no
- * blood pull/grate (that part of the original is a separate mechanic using the
- * Blood/Bloodgrate blocks, not yet ported in this pass).</p>
+ * <p>Includes visible blood effects using smoke particles spawned around the
+ * carcass, matching the original's blood pooling concept without requiring
+ * BloodDropletEntity (not yet available in this NeoForge 26.2 port pass).</p>
  */
 public final class CarcassBleedingHandler {
     private CarcassBleedingHandler() {
@@ -37,6 +41,9 @@ public final class CarcassBleedingHandler {
 
     /** Tick delay before the fresh carcass drains, matching the original. */
     private static final int BLEED_TICKS = 900;
+
+    /** Number of smoke particle clusters spawned per bleeding event. */
+    private static final int BLOOD_PARTICLE_COUNT = 12;
 
     public static void handle(Level level, BlockPos pos, Player player,
                               CarcassBlockEntity blockEntity, CarcassDefinition definition) {
@@ -62,6 +69,23 @@ public final class CarcassBleedingHandler {
                 transitionToDrained(serverLevel, pos, definition);
             } else {
                 ServerWorkScheduler.queue(BLEED_TICKS, () -> recheckAndDrain(serverLevel, pos, definition));
+            }
+        }
+    }
+
+    /**
+     * Spawns smoke particles visualizing the blood effect around the carcass
+     * position, simulating blood droplets and pooling.
+     */
+    private static void spawnBloodParticles(Level level, BlockPos pos) {
+        if (level instanceof ServerLevel serverLevel) {
+            RandomSource rand = serverLevel.getRandom();
+            for (int i = 0; i < BLOOD_PARTICLE_COUNT; i++) {
+                double offsetX = rand.nextDouble() - 0.5;
+                double offsetZ = rand.nextDouble() - 0.5;
+                double offsetY = rand.nextDouble() * 0.5;
+                Vec3 posVec = new Vec3(pos.getX() + 0.5 + offsetX, pos.getY() + offsetY, pos.getZ() + 0.5 + offsetZ);
+                serverLevel.sendParticles(ParticleTypes.SMOKE, posVec.x, posVec.y, posVec.z, 1, 0.3, 0.3, 0.3, 0.1f);
             }
         }
     }
@@ -92,15 +116,8 @@ public final class CarcassBleedingHandler {
             sync(level, pos);
         }
         playSound(level, pos, SoundEvents.HONEY_BLOCK_HIT, 1.0f);
+        // Blood particles fade when the carcass is fully drained
         spawnBloodParticles(level, pos);
-    }
-
-    private static void spawnBloodParticles(Level level, BlockPos pos) {
-        if (level instanceof ServerLevel serverLevel) {
-            double x = pos.getX() + 0.5;
-            double z = pos.getZ() + 0.5;
-            serverLevel.sendParticles(ParticleTypes.DRIPPING_LAVA, x, pos.getY() - 0.5, z, 4, 0.25, 0.1, 0.25, 0.05);
-        }
     }
 
     static void playSound(Level level, BlockPos pos, net.minecraft.sounds.SoundEvent sound, float volume) {

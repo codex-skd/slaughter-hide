@@ -1620,7 +1620,7 @@ private static CarcassDefinition buildDONKEY() {
                                 ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:endermite")))
                         .value(),
                 true,
-                true,
+                false,
                 false,
                 false,
                 3,

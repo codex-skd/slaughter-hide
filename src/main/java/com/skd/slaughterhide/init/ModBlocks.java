@@ -8,6 +8,7 @@ import com.skd.slaughterhide.block.CorpseBlock;
 import com.skd.slaughterhide.block.DrainedCarcassBlock;
 import com.skd.slaughterhide.block.HeadMountBlock;
 import com.skd.slaughterhide.block.HookBlock;
+import com.skd.slaughterhide.block.RopeBlock;
 import com.skd.slaughterhide.block.SkeletonBlock;
 import com.skd.slaughterhide.block.TrophyHeadBlock;
 import net.minecraft.world.level.block.Block;
@@ -17,6 +18,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.Function;
 
 /**
@@ -34,8 +36,50 @@ public final class ModBlocks {
     private static final Map<String, DeferredBlock<Block>> SKELETONS = new HashMap<>();
     private static final Map<String, DeferredBlock<CorpseBlock>> CORPSE = new HashMap<>();
 
+    /** Mobs that have drained carcass blockstate JSONs/assets. */
+    private static final Set<String> HAS_DRAINED_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey",
+            "enderman", "fox", "goat", "hoglin", "mule", "ocelot",
+            "panda", "pig", "polar_bear", "rabbit", "sheep", "sniffer",
+            "strider", "turtle", "wolf", "zoglin"
+    );
+
+    /** Mobs that have head blockstate JSONs/assets. */
+    private static final Set<String> HAS_HEAD_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey", "drowned",
+            "enderman", "endermite", "evoker", "fox", "goat", "hoglin", "husk",
+            "mule", "ocelot", "panda", "pig", "piglin_brute", "polar_bear",
+            "rabbit", "ravager", "sheep", "silverfish", "sniffer", "turtle",
+            "vindicator", "witch", "wolf", "zoglin"
+    );
+
+    /** Mobs that have head_mount blockstate JSONs/assets. */
+    private static final Set<String> HAS_HEAD_MOUNT_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey", "drowned",
+            "enderman", "endermite", "evoker", "fox", "goat", "hoglin", "husk",
+            "mule", "ocelot", "panda", "pig", "piglin", "rabbit", "ravager",
+            "sheep", "silverfish", "skeleton", "turtle", "vindicator", "witch",
+            "wolf", "zoglin", "zombie"
+    );
+
+    /** Mobs that have skeleton blockstate JSONs/assets. */
+    private static final Set<String> HAS_SKELETON_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey", "fox",
+            "goat", "hoglin", "mule", "ocelot", "panda", "pig", "piglin",
+            "sheep", "wolf", "polar_bear"
+    );
+
+    /** Mobs that have corpse blockstate JSONs/assets. */
+    private static final Set<String> HAS_CORPSE_ASSETS = Set.of(
+            "drowned", "evoker", "husk", "piglin", "piglin_brute",
+            "skeleton", "vindicator", "witch", "zombie"
+    );
+
     /** Global attachment point a carcass item hangs from, see HookPlacementHandler. */
     public static final DeferredBlock<HookBlock> HOOK = register("hook", HookBlock::new);
+
+    /** Alternative attachment point a carcass item can hang from (rope). */
+    public static final DeferredBlock<RopeBlock> ROPE = register("rope", RopeBlock::new);
 
     static {
         registerFamily(Carcasses.COW);
@@ -124,26 +168,30 @@ public final class ModBlocks {
         String mob = definition.mobId();
         DeferredBlock<CarcassBlock> fresh = register(mob + "_carcass",
                 props -> new CarcassBlock(props, definition));
-        DeferredBlock<DrainedCarcassBlock> drained = register("drained_" + mob + "_carcass",
-                props -> new DrainedCarcassBlock(props, definition));
         FRESH.put(mob, fresh);
-        DRAINED.put(mob, drained);
-        if (definition.hasHead()) {
+        if (HAS_DRAINED_ASSETS.contains(mob)) {
+            DeferredBlock<DrainedCarcassBlock> drained = register("drained_" + mob + "_carcass",
+                    props -> new DrainedCarcassBlock(props, definition));
+            DRAINED.put(mob, drained);
+        }
+        if (HAS_HEAD_ASSETS.contains(mob)) {
             HEADS.put(mob, register(mob + "_head", props -> new TrophyHeadBlock(props, definition)));
         }
-        if (definition.hasHeadMount()) {
+        if (HAS_HEAD_MOUNT_ASSETS.contains(mob)) {
             MOUNTS.put(mob, register(mob + "_head_mount", props -> new HeadMountBlock(props, definition)));
         }
-        if (definition.hasSkeleton()) {
+        if (HAS_SKELETON_ASSETS.contains(mob)) {
             SKELETONS.put(mob, register(mob + "_skeleton", props -> new SkeletonBlock(props, definition)));
         }
     }
 
     private static void registerCorpseFamily(CarcassDefinition definition) {
         String mob = definition.mobId();
-        DeferredBlock<CorpseBlock> corpse = register(mob + "_corpse",
-                props -> new CorpseBlock(props, definition.corpseShapes()));
-        CORPSE.put(mob, corpse);
+        if (HAS_CORPSE_ASSETS.contains(mob)) {
+            DeferredBlock<CorpseBlock> corpse = register(mob + "_corpse",
+                    props -> new CorpseBlock(props, definition.corpseShapes()));
+            CORPSE.put(mob, corpse);
+        }
     }
 
     private static <T extends Block> DeferredBlock<T> register(String name, Function<BlockBehaviour.Properties, T> factory) {
@@ -156,6 +204,10 @@ public final class ModBlocks {
 
     public static DeferredBlock<DrainedCarcassBlock> drainedFor(String mobId) {
         return DRAINED.get(mobId);
+    }
+
+    public static DeferredBlock<RopeBlock> ropeFor(String mobId) {
+        return ROPE;
     }
 
     public static DeferredBlock<Block> headFor(String mobId) {

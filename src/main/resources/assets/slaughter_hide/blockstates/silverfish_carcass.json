@@ -1,8 +1,16 @@
 {
   "variants": {
-    "facing=east,blockstate=0": {
-      "model": "slaughter_hide:block/silverfish_carcass",
-      "y": 90
+    "facing=north,blockstate=1": {
+      "model": "slaughter_hide:block/silverfish_carcass_0"
+    },
+    "facing=north,blockstate=2": {
+      "model": "slaughter_hide:block/silverfish_carcass_1"
+    },
+    "facing=north,blockstate=3": {
+      "model": "slaughter_hide:block/silverfish_carcass_2"
+    },
+    "facing=north,blockstate=0": {
+      "model": "slaughter_hide:block/silverfish_carcass"
     },
     "facing=east,blockstate=1": {
       "model": "slaughter_hide:block/silverfish_carcass_0",
@@ -16,21 +24,9 @@
       "model": "slaughter_hide:block/silverfish_carcass_2",
       "y": 90
     },
-    "facing=north,blockstate=0": {
-      "model": "slaughter_hide:block/silverfish_carcass"
-    },
-    "facing=north,blockstate=1": {
-      "model": "slaughter_hide:block/silverfish_carcass_0"
-    },
-    "facing=north,blockstate=2": {
-      "model": "slaughter_hide:block/silverfish_carcass_1"
-    },
-    "facing=north,blockstate=3": {
-      "model": "slaughter_hide:block/silverfish_carcass_2"
-    },
-    "facing=south,blockstate=0": {
+    "facing=east,blockstate=0": {
       "model": "slaughter_hide:block/silverfish_carcass",
-      "y": 180
+      "y": 90
     },
     "facing=south,blockstate=1": {
       "model": "slaughter_hide:block/silverfish_carcass_0",
@@ -44,9 +40,9 @@
       "model": "slaughter_hide:block/silverfish_carcass_2",
       "y": 180
     },
-    "facing=west,blockstate=0": {
+    "facing=south,blockstate=0": {
       "model": "slaughter_hide:block/silverfish_carcass",
-      "y": 270
+      "y": 180
     },
     "facing=west,blockstate=1": {
       "model": "slaughter_hide:block/silverfish_carcass_0",
@@ -58,6 +54,10 @@
     },
     "facing=west,blockstate=3": {
       "model": "slaughter_hide:block/silverfish_carcass_2",
+      "y": 270
+    },
+    "facing=west,blockstate=0": {
+      "model": "slaughter_hide:block/silverfish_carcass",
       "y": 270
     }
   }
