@@ -790,6 +790,9 @@ public final class ModItems {
 
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
+    /** Alternative attachment point a carcass item can hang from (rope). */
+    public static final DeferredItem<Item> ROPE = blockItem("rope", new Item.Properties());
+
     /** Per-mob carcass item, useful for lookup in generified handlers. */
     private static final Map<String, DeferredItem<Item>> FRESH_BY_MOB = new HashMap<>();
     private static final Map<String, DeferredItem<Item>> DRAINED_BY_MOB = new HashMap<>();
@@ -1279,6 +1282,7 @@ public final class ModItems {
             case "piglin_brute_corpse" -> ModBlocks.corpseFor(Carcasses.PIGLIN_BRUTE.mobId());
             case "ravager_corpse" -> ModBlocks.corpseFor(Carcasses.RAVAGER.mobId());
             case "hook" -> ModBlocks.HOOK;
+            case "rope" -> ModBlocks.ROPE;
             default -> null;
         };
         return REGISTRY.registerItem(name,
@@ -1315,5 +1319,9 @@ public final class ModItems {
 
     public static Map<String, DeferredItem<Item>> mountItems() {
         return MOUNT_BY_MOB;
+    }
+
+    public static Map<String, DeferredItem<Item>> skeletonItems() {
+        return SKELETON_BY_MOB;
     }
 }
