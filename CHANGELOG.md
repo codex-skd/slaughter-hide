@@ -1,5 +1,12 @@
 # Changelog — Slaughter & Hide
 
+## [Unreleased]
+
+### Fix
+
+- `ENDERMAN`/`TURTLE` declaraban `numCuts=8`/`7` en `Carcasses.java`, pero `CarcassCutupHandler` siempre estuvo hardcodeado a exactamente 3 cortes — las loot tables `cut_4` en adelante eran inalcanzables desde el juego (sin crash, solo contenido incompleto). Corregido el dato a `numCuts=3` para reflejar la realidad; no se ha generalizado el handler (decisión deliberada, ver `docs/ROADMAP_SLAUGHTER_HIDE.md`, Fase 3.4b1.5).
+- `ravager_carcass`/`pufferfish_carcass` se registraban sin blockstate/modelo real (el original nombra estos assets `ravager.json`/`pufferfish.json`, sin sufijo). Copiado/remapeado el asset con el nombre correcto para ambos; el ciclo de despiece bespoke real de Ravager (cabeza + 4 patas + cuerpo, con seguimiento por NBT) sigue sin portar — descartado deliberadamente, documentado como limitación conocida.
+
 ## [0.0.0-beta.31] - 2026-08-24
 
 ### Add
