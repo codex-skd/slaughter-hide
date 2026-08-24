@@ -250,7 +250,24 @@ Al triar el batch B2 aparecieron dos hallazgos que cambian el alcance:
 
 **Resultado**: se cierra el batch B2 en su forma original (~16-22 bloques "GUI") sin tocar `CarcassCutupHandler`/`CarcassDefinition`. Los 12 bloques realmente simples del batch B2 (`Basin`, `Brain`, `Cashregisterblock`, `Skinrack`, `Woodenspitrotisserie`, `Jar`, `Metaltray`, set `Irongolem`×5) siguen pendientes de portar como contenido nuevo genuino — ver Fase 3.4b2.
 
-## Fase 3.4b2 — Batch B2: ~16 bloques con GUI completa (PENDIENTE, sin planificar en detalle)
+## Fase 3.4b2a — Batch "simple" del batch B2: 7 bloques (COMPLETADO 2026-08-25)
+
+`Basin`, `Brain`, `Cashregisterblock`, `Skinrack`, `Woodenspitrotisserie`, `Jar`, `Metaltray` — confirmados sin GUI real (mismo hallazgo del contenedor vestigial de 9 slots ya visto en el sistema de carcasas). Delegado a `nemotron-3-ultra-550b-a55b`, 6 reanudaciones por sobrecarga transitoria de Nvidia. La parte Java (lo que requiere criterio) quedó bien hecha en general, pero con dos categorías de problemas corregidos por Claude:
+
+1. **85 errores de compilación** (imports de API incorrectos, tipos `LevelAccessor`/`Level`/`ServerLevel` mal mezclados, `hurtAndBreak`/`scheduleTick`/`broadcastBreakEvent` con firmas equivocadas para esta versión, paquete real de `Zombie` es `net.minecraft.world.entity.monster.zombie.Zombie` no `...monster.Zombie`, `MoveToBlockGoal` necesita `PathfinderMob` no `Mob` e `isValidTarget(LevelReader, BlockPos)` no `(Level, BlockPos)`).
+2. **~30 referencias a ítems inventados** que no existen en `ModItems` (18 órganos, `coin`, `crackling`, ~15 pieles de caballo/llama/mooshroom) — el modelo asumió que existían en vez de verificarlos contra el código real como se le pidió explícitamente en el prompt. Simplificados los handlers afectados (`JarInteractionHandler`, `CashRegisterInteractionHandler`, `SkinRackInteractionHandler`, `WoodenSpitRotisserieInteractionHandler`) para no depender de ítems inexistentes, documentado inline como limitación conocida en vez de registrar ~30 ítems nuevos (fuera de alcance).
+
+**Excluido del batch**: `Irongolem`+`arms`/`body`/`head`/`legs` (5 bloques) — su `IronGolemCutUpProcedure` decompilada tiene 2044 líneas (más grande que Ravager), es otro mob-boss bespoke completo con reensamblaje (`RepairgolemProcedure`, 405 líneas), no contenido decorativo. Mismo tratamiento que Ravager: documentado, no portado, ver Fase 3.4b1.5.
+
+### Hallazgo importante sin resolver: `loot_tables/` (plural) probablemente rota en todo el mod
+
+Al mover las loot tables de `basin`/`brain`/`cash_register_block` (que la delegación escribió en `data/slaughter_hide/loot_tables/blocks/`, plural) a la ruta singular correcta, apareció que **esa carpeta plural ya contenía cientos de archivos previos**: todos los corpses humanoides (zombie, drowned, husk, piglin, piglin_brute, evoker, witch, vindicator, skeleton), los mobs especiales (enderman, silverfish, endermite, sniffer, strider, turtle) y los `ravager_leg_N_drop`/`ravager_body_drop` documentados en la Fase 3.4b1.5.
+
+**Verificado contra el jar vanilla de MC 26.2**: la carpeta real del datapack es `data/minecraft/loot_table/` — **singular**. Es la misma convención que ya usan cow/pig/sheep y todo lo portado en esta sesión (batch A, B1, B2a). Si esto se confirma, significa que **una parte sustancial de los 74 mobs** (todos los humanoides + los 4 mobs "especiales") **nunca ha dropeado el contenido real de sus cortes en el juego** — probablemente vacío y silencioso (mismo comportamiento sin-crash ya confirmado para `CarcassLoot.spawn` con loot tables inexistentes), no un crash, así que ha podido pasar desapercibido en las pruebas de humo del cliente.
+
+**Pendiente de decidir con el usuario**: alcance real del problema (¿son literalmente TODOS los archivos de esa carpeta duplicados o hay contenido único no presente en `loot_table/` singular?), y si se corrige con un `git mv` masivo de `loot_tables/` → `loot_table/` (mecánico, bajo riesgo) o se investiga caso por caso primero.
+
+## Fase 3.4b2b — Batch B2: ~16 bloques con GUI completa (PENDIENTE, sin planificar en detalle)
 
 El grueso real del batch B original: `Basin`, `Blood`, `Bloodgrate`, `Bloodpuddle`, `Brain`, `Cashregisterblock`, `Freezer`, `Meatgrinder`, `Pestleandmortar`, `Skinrack`, `Taxidermytable`, `Woodenspitrotisserie`, el set de 5-6 piezas de `Irongolem`, `Ravager` (bloque base + trofeos, comprobar solape con la `CarcassDefinition` de Ravager ya existente), `Jar`, `Pufferfish`. Todos necesitan `BlockEntity` + `Container` + `MenuProvider` (pantalla de crafteo propia) y, en el caso de `Blood`/`InfectedBlood`, un fluido custom completo (bucket, source/flowing block, registro de `FlowingFluid`) — esto es sustancialmente más grande que "portar un bloque", es implementar ~16 máquinas nuevas con su GUI. Sin planificar todavía cómo trocear esta fase; probablemente necesite su propio triaje uno a uno como el que se hizo para separar A/B1/B2, y puede que amerite una sesión dedicada aparte en vez de continuar en la misma sesión que el resto del port.
 

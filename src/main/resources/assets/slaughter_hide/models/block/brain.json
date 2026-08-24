@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/brain",
+  "textures": {
+    "all": "slaughter_hide:block/brain",
+    "particle": "slaughter_hide:block/brain",
+    "3": "slaughter_hide:block/brain"
+  }
+}

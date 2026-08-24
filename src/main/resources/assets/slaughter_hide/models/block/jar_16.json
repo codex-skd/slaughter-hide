@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/end_stomach_jar",
+  "textures": {
+    "all": "slaughter_hide:block/end_organ_jar",
+    "particle": "minecraft:block/glass",
+    "0": "slaughter_hide:block/end_organ_jar"
+  }
+}

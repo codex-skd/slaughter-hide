@@ -1,0 +1,12 @@
+{
+  "parent": "slaughter_hide:custom/water_basin_5",
+  "textures": {
+    "all": "minecraft:block/water_still",
+    "particle": "minecraft:block/cauldron_inner",
+    "salted_inside": "slaughter_hide:block/cauldron_salted_inside",
+    "inside_base": "minecraft:block/cauldron_inner",
+    "top": "minecraft:block/cauldron_top",
+    "inside": "minecraft:block/cauldron_side",
+    "water": "minecraft:block/water_still"
+  }
+}

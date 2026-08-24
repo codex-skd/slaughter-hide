@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/brain_jar",
+  "textures": {
+    "all": "slaughter_hide:block/brain_jar",
+    "particle": "minecraft:block/glass",
+    "0": "slaughter_hide:block/brain_jar"
+  }
+}

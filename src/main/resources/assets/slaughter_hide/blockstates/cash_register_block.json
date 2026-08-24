@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "slaughter_hide:block/cash_register_block"
+    },
+    "facing=east": {
+      "model": "slaughter_hide:block/cash_register_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "slaughter_hide:block/cash_register_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "slaughter_hide:block/cash_register_block",
+      "y": 270
+    }
+  }
+}

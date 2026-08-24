@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/rotten_lung_jar",
+  "textures": {
+    "all": "slaughter_hide:block/rotten_organ_jar_2",
+    "particle": "minecraft:block/glass",
+    "0": "slaughter_hide:block/rotten_organ_jar_2"
+  }
+}

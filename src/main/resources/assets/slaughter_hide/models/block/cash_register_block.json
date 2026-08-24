@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "slaughter_hide:block/cash_register",
+    "particle": "slaughter_hide:block/cash_register"
+  }
+}

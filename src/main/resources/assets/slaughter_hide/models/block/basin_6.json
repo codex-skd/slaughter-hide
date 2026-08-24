@@ -1,0 +1,12 @@
+{
+  "parent": "slaughter_hide:custom/salt_basin",
+  "textures": {
+    "all": "slaughter_hide:block/salt_block",
+    "particle": "minecraft:block/cauldron_inner",
+    "salted_inside": "slaughter_hide:block/cauldron_salted_inside",
+    "inside_base": "slaughter_hide:block/salt_block",
+    "top": "minecraft:block/cauldron_top",
+    "missing": "slaughter_hide:block/",
+    "inside": "minecraft:block/cauldron_side"
+  }
+}
