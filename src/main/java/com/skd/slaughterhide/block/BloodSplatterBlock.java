@@ -25,7 +25,7 @@ import java.util.function.Function;
 public class BloodSplatterBlock extends FaceAttachedHorizontalDirectionalBlock {
     public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
     public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
-    public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 10);
+    public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 9);
     private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
     public static final MapCodec<BloodSplatterBlock> CODEC = simpleCodec(BloodSplatterBlock::new);
