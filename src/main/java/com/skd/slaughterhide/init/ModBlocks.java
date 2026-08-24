@@ -18,6 +18,10 @@ import com.skd.slaughterhide.block.IronGolemHeadMountBlock;
 import com.skd.slaughterhide.block.RavagerHeadBlock;
 import com.skd.slaughterhide.block.RavagerHeadMountBlock;
 import com.skd.slaughterhide.block.RopeBlock;
+import com.skd.slaughterhide.block.BloodSplatterBlock;
+import com.skd.slaughterhide.block.PlasticSheetBlock;
+import com.skd.slaughterhide.block.PlasticSheetCornerBlock;
+import com.skd.slaughterhide.block.SpikeTrapBlock;
 import com.skd.slaughterhide.block.SaltBlock;
 import com.skd.slaughterhide.block.SaltFormationBaseBlock;
 import com.skd.slaughterhide.block.SaltFormationFrustumBlock;
@@ -133,6 +137,12 @@ public final class ModBlocks {
     public static final DeferredBlock<RawSausagesBlock> RAW_SAUSAGES = register("raw_sausages", RawSausagesBlock::new);
     public static final DeferredBlock<RavagerHeadBlock> RAVAGER_HEAD = register("ravager_head", RavagerHeadBlock::new);
     public static final DeferredBlock<RavagerHeadMountBlock> RAVAGER_HEAD_MOUNT = register("ravager_head_mount", RavagerHeadMountBlock::new);
+
+    public static final DeferredBlock<BloodSplatterBlock> BLOOD_SPLATTER = register("blood_splatter", BloodSplatterBlock::new);
+    public static final DeferredBlock<PlasticSheetBlock> PLASTIC_SHEET = register("plastic_sheet", PlasticSheetBlock::new);
+    public static final DeferredBlock<PlasticSheetCornerBlock> PLASTIC_SHEET_CORNER = register("plastic_sheet_corner", PlasticSheetCornerBlock::new);
+    public static final DeferredBlock<SpikeTrapBlock> SPIKE_TRAP = register("spike_trap", SpikeTrapBlock::new);
+
     static {
         registerFamily(Carcasses.COW);
         registerFamily(Carcasses.PIG);

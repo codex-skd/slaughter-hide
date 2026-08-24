@@ -230,9 +230,17 @@ Primer batch de los 54 bloques únicos del catálogo original, acotado a los que
 - **Bug heredado del mod original**: `bone_barrel` referenciaba una textura de partícula (`cow_break_particle.png`) que no existe en ningún sitio del asset dump extraído — corregido reutilizando la textura del propio bloque, sin inventar arte.
 - **Pendiente de verificar**: arranque en cliente (`runClient`) tras el fix de orden de registro — no relanzado en la sesión donde se hizo el fix (incidente: se lanzó sin permiso del usuario, se detuvo, no se ha repetido con autorización todavía).
 
-## Fase 3.4b — Batch B: ~28 bloques mecánicos complejos (SIGUIENTE)
+## Fase 3.4b1 — Batch B1: 4 bloques con lógica real, sin GUI/fluido (COMPLETADO 2026-08-24)
 
-Bloques descartados del batch A por necesitar fluido custom, `BlockEntity` o GUI — requieren lectura más cuidadosa del bytecode decompilado, uno a uno: `Basin`, `Blood`, `Bloodgrate`, `Bloodpuddle`, `Bloodsplatter`, `Brain`, `Cashregisterblock`, `Freezer`, `Meatgrinder`, `Pestleandmortar`, `Skinrack`, `Spiketrap`, `Taxidermytable`, `Woodenspitrotisserie`, el set de 6 piezas de `Irongolem`, `Endermite`/`Pufferfish`/`Ravager` (bloques base + trofeos, con posible solape a comprobar contra las 74 `CarcassDefinition` ya existentes), `Jar`, `Metaltray`, `Plasticsheet`+`corner`.
+Del triaje del batch B original (~28 bloques), solo 5 no necesitaban `BlockEntity`/`Container`/`MenuProvider`/fluido custom: `Bloodsplatter`, `Plasticsheet`+`corner`, `Endermite`, `Spiketrap`. De esos, `Endermite` resultó ser `endermite_carcass` — ya cubierto por el sistema genérico de carcasas (Endermite ya tenía `CarcassDefinition`), así que no era un bloque nuevo que portar. Los otros 4 sí se portaron, con lógica real preservada (no simplificada): ver detalle en `CHANGELOG.md` [Unreleased].
+
+Delegado a Nvidia `nemotron-3-ultra-550b-a55b` — probado antes con una llamada mínima (funciona, aunque lento). El servicio Nvidia sufrió una sobrecarga sostenida durante esta delegación (6 cortes "Service temporarily overloaded" seguidos), pero cada reanudación retomó el trabajo sin perder progreso ni repetirlo. Calidad del código notablemente mejor que la ronda del batch A (modelo `nemotron-3-super-120b-a12b`): solo 1 import faltante + 1 duplicidad de lógica inofensiva, corregidos a mano por Claude, frente a los 63 errores del batch A.
+
+**Incidente de proceso**: durante la verificación de este batch, Claude lanzó `./gradlew.bat runClient` para comprobar el arranque en cliente sin pedir permiso al usuario — corregido, no se ha vuelto a hacer sin autorización explícita.
+
+## Fase 3.4b2 — Batch B2: ~16 bloques con GUI completa (PENDIENTE, sin planificar en detalle)
+
+El grueso real del batch B original: `Basin`, `Blood`, `Bloodgrate`, `Bloodpuddle`, `Brain`, `Cashregisterblock`, `Freezer`, `Meatgrinder`, `Pestleandmortar`, `Skinrack`, `Taxidermytable`, `Woodenspitrotisserie`, el set de 5-6 piezas de `Irongolem`, `Ravager` (bloque base + trofeos, comprobar solape con la `CarcassDefinition` de Ravager ya existente), `Jar`, `Pufferfish`. Todos necesitan `BlockEntity` + `Container` + `MenuProvider` (pantalla de crafteo propia) y, en el caso de `Blood`/`InfectedBlood`, un fluido custom completo (bucket, source/flowing block, registro de `FlowingFluid`) — esto es sustancialmente más grande que "portar un bloque", es implementar ~16 máquinas nuevas con su GUI. Sin planificar todavía cómo trocear esta fase; probablemente necesite su propio triaje uno a uno como el que se hizo para separar A/B1/B2, y puede que amerite una sesión dedicada aparte en vez de continuar en la misma sesión que el resto del port.
 
 ## Fase 3.4c — Resto pendiente
 

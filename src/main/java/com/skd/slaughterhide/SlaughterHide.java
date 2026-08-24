@@ -1,6 +1,7 @@
 package com.skd.slaughterhide;
 
 import com.skd.slaughterhide.config.SlaughterHideConfig;
+import com.skd.slaughterhide.handler.BloodSplatterInteractionHandler;
 import com.skd.slaughterhide.handler.CarcassDeathHandler;
 import com.skd.slaughterhide.handler.CarcassInteractionHandler;
 import com.skd.slaughterhide.handler.HookPlacementHandler;
@@ -26,6 +27,7 @@ public class SlaughterHide {
         NeoForge.EVENT_BUS.register(CarcassDeathHandler.class);
         NeoForge.EVENT_BUS.register(CarcassInteractionHandler.class);
         NeoForge.EVENT_BUS.register(HookPlacementHandler.class);
+        NeoForge.EVENT_BUS.register(BloodSplatterInteractionHandler.class);
         NeoForge.EVENT_BUS.register(ServerWorkScheduler.class);
     }
 }
