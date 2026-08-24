@@ -3,6 +3,7 @@ package com.skd.slaughterhide.init;
 import com.skd.slaughterhide.CarcassDefinition;
 import com.skd.slaughterhide.Carcasses;
 import com.skd.slaughterhide.SlaughterHide;
+import com.skd.slaughterhide.tag.ModItemTags;
 import com.skd.slaughterhide.item.ButcherToolItem;
 import com.skd.slaughterhide.item.CarcassPlacementItem;
 import net.minecraft.world.item.BlockItem;
@@ -12,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -90,6 +92,22 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_LAMB_SIRLOIN_GOAT = item("raw_lamb_sirloin_goat", Item::new);
     public static final DeferredItem<Item> RAW_LAMB_LOIN_GOAT = item("raw_lamb_loin_goat", Item::new);
     public static final DeferredItem<Item> HOOF_GOAT = item("hoof_goat", Item::new);
+    // Cooked meats (corresponding smelting/smoking recipes)
+    public static final DeferredItem<Item> COOKED_CHUCK_STEAK = item("cooked_chuck_steak", Item::new);
+    public static final DeferredItem<Item> COOKED_RIBEYE_STEAK = item("cooked_ribeye_steak", Item::new);
+    public static final DeferredItem<Item> COOKED_RUMP_STEAK = item("cooked_rump_steak", Item::new);
+    public static final DeferredItem<Item> COOKED_SIRLOIN_STEAK = item("cooked_sirloin_steak", Item::new);
+    public static final DeferredItem<Item> COOKED_TBONE_STEAK = item("cooked_tbone_steak", Item::new);
+    public static final DeferredItem<Item> COOKED_PORK_SHOULDER = item("cooked_pork_shoulder", Item::new);
+    public static final DeferredItem<Item> COOKED_PORK_LOIN = item("cooked_pork_loin", Item::new);
+    public static final DeferredItem<Item> COOKED_PORK_LEG = item("cooked_pork_leg", Item::new);
+    public static final DeferredItem<Item> COOKED_PORK_BELLY = item("cooked_pork_belly", Item::new);
+    public static final DeferredItem<Item> COOKED_HAM = item("cooked_ham", Item::new);
+    public static final DeferredItem<Item> COOKED_LEG_OF_LAMB = item("cooked_leg_of_lamb", Item::new);
+    public static final DeferredItem<Item> COOKED_LAMB_SHOULDER = item("cooked_lamb_shoulder", Item::new);
+    public static final DeferredItem<Item> COOKED_LAMB_RIB = item("cooked_lamb_rib", Item::new);
+    public static final DeferredItem<Item> COOKED_LAMB_SIRLOIN = item("cooked_lamb_sirloin", Item::new);
+    public static final DeferredItem<Item> COOKED_LAMB_LOIN = item("cooked_lamb_loin", Item::new);
     // Fox
     public static final DeferredItem<Item> FOX_SKIN = item("fox_skin", Item::new);
     public static final DeferredItem<Item> RAW_FOX_MEAT = item("raw_fox_meat", Item::new);
@@ -321,8 +339,9 @@ public final class ModItems {
     // Endermite
     public static final DeferredItem<Item> ENDERMITE_CARCASS =
             placementItem("endermite_carcass", Carcasses.ENDERMITE, false, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_ENDERMITE_CARCASS =
-            placementItem("drained_endermite_carcass", Carcasses.ENDERMITE, true, new Item.Properties().stacksTo(8));
+    // Drained endermite carcass disabled - no assets exist
+    // public static final DeferredItem<Item> DRAINED_ENDERMITE_CARCASS =
+    //         placementItem("drained_endermite_carcass", Carcasses.ENDERMITE, true, new Item.Properties().stacksTo(8));
     public static final DeferredItem<Item> ENDERMITE_HEAD = blockItem("endermite_head", new Item.Properties());
     public static final DeferredItem<Item> ENDERMITE_HEAD_MOUNT = blockItem("endermite_head_mount", new Item.Properties());
     // Endermite has no skeleton
@@ -771,12 +790,23 @@ public final class ModItems {
 
     public static final DeferredItem<Item> HOOK = blockItem("hook", new Item.Properties());
 
+    /** Alternative attachment point a carcass item can hang from (rope). */
+    public static final DeferredItem<Item> ROPE = blockItem("rope", new Item.Properties());
+
     /** Per-mob carcass item, useful for lookup in generified handlers. */
     private static final Map<String, DeferredItem<Item>> FRESH_BY_MOB = new HashMap<>();
     private static final Map<String, DeferredItem<Item>> DRAINED_BY_MOB = new HashMap<>();
     private static final Map<String, DeferredItem<Item>> HEAD_BY_MOB = new HashMap<>();
     private static final Map<String, DeferredItem<Item>> MOUNT_BY_MOB = new HashMap<>();
     private static final Map<String, DeferredItem<Item>> SKELETON_BY_MOB = new HashMap<>();
+
+    /** Mobs that have drained carcass blockstate JSONs/assets. */
+    private static final Set<String> HAS_DRAINED_ASSETS = Set.of(
+            "bat", "camel", "chicken", "cow", "dolphin", "donkey",
+            "enderman", "fox", "goat", "hoglin", "mule", "ocelot",
+            "panda", "pig", "polar_bear", "rabbit", "sheep", "sniffer",
+            "strider", "turtle", "wolf", "zoglin"
+    );
 
     static {
         FRESH_BY_MOB.put(Carcasses.COW.mobId(), COW_CARCASS);
@@ -874,7 +904,8 @@ public final class ModItems {
         MOUNT_BY_MOB.put(Carcasses.SILVERFISH.mobId(), SILVERFISH_HEAD_MOUNT);
         // Silverfish has no skeleton
         FRESH_BY_MOB.put(Carcasses.ENDERMITE.mobId(), ENDERMITE_CARCASS);
-        DRAINED_BY_MOB.put(Carcasses.ENDERMITE.mobId(), DRAINED_ENDERMITE_CARCASS);
+        // Drained endermite carcass disabled - no assets exist
+        // DRAINED_BY_MOB.put(Carcasses.ENDERMITE.mobId(), DRAINED_ENDERMITE_CARCASS);
         HEAD_BY_MOB.put(Carcasses.ENDERMITE.mobId(), ENDERMITE_HEAD);
         MOUNT_BY_MOB.put(Carcasses.ENDERMITE.mobId(), ENDERMITE_HEAD_MOUNT);
         // Endermite has no skeleton
@@ -1251,10 +1282,44 @@ public final class ModItems {
             case "piglin_brute_corpse" -> ModBlocks.corpseFor(Carcasses.PIGLIN_BRUTE.mobId());
             case "ravager_corpse" -> ModBlocks.corpseFor(Carcasses.RAVAGER.mobId());
             case "hook" -> ModBlocks.HOOK;
-            default -> throw new IllegalArgumentException("No block registered for item " + name);
+            case "rope" -> ModBlocks.ROPE;
+            case "deepslate_sulfur_ore" -> ModBlocks.DEEPSLATE_SULFUR_ORE;
+            case "sulfur_ore" -> ModBlocks.SULFUR_ORE;
+            case "diorite_brick_slab" -> ModBlocks.DIORITE_BRICK_SLAB;
+            case "diorite_brick_wall" -> ModBlocks.DIORITE_BRICK_WALL;
+            case "diorite_brick_stairs" -> ModBlocks.DIORITE_BRICK_STAIRS;
+            case "diorite_bricks" -> ModBlocks.DIORITE_BRICKS;
+            case "salt_formation_middle" -> ModBlocks.SALT_FORMATION_MIDDLE;
+            case "salt_formation_tip" -> ModBlocks.SALT_FORMATION_TIP;
+            case "salt_formation_frustum" -> ModBlocks.SALT_FORMATION_FRUSTUM;
+            case "salt_formation_base" -> ModBlocks.SALT_FORMATION_BASE;
+            case "dragon_scale_block" -> ModBlocks.DRAGON_SCALE_BLOCK;
+            case "salt_block" -> ModBlocks.SALT_BLOCK;
+            case "bone_barrel" -> ModBlocks.BONE_BARREL;
+            case "cod_barrel" -> ModBlocks.COD_BARREL;
+            case "floorstanding_sign" -> ModBlocks.FLOOR_STANDING_SIGN;
+            case "butcher_statue" -> ModBlocks.BUTCHER_STATUE;
+            case "cling_film" -> ModBlocks.CLING_FILM;
+            case "photos" -> ModBlocks.PHOTOS;
+            case "ravager_head" -> ModBlocks.RAVAGER_HEAD;
+            case "ravager_head_mount" -> ModBlocks.RAVAGER_HEAD_MOUNT;
+            case "iron_golem_head_mount" -> ModBlocks.IRON_GOLEM_HEAD_MOUNT;
+            case "cooked_blood_sausages" -> ModBlocks.COOKED_BLOOD_SAUSAGES;
+            case "cooked_sausages" -> ModBlocks.COOKED_SAUSAGES;
+            case "raw_blood_sausages" -> ModBlocks.RAW_BLOOD_SAUSAGES;
+            case "raw_sausages" -> ModBlocks.RAW_SAUSAGES;
+            case "salmon_barrel" -> ModBlocks.SALMON_BARREL;
+            case "blood_splatter" -> ModBlocks.BLOOD_SPLATTER;
+            case "plastic_sheet" -> ModBlocks.PLASTIC_SHEET;
+            case "plastic_sheet_corner" -> ModBlocks.PLASTIC_SHEET_CORNER;
+            case "spike_trap" -> ModBlocks.SPIKE_TRAP;
+            default -> null;
         };
         return REGISTRY.registerItem(name,
-                props -> new BlockItem(block.get(), props),
+                props -> {
+                    net.minecraft.world.level.block.Block b = block != null ? block.get() : null;
+                    return b != null ? new BlockItem(b, props) : new Item(props);
+                },
                 () -> properties);
     }
 
@@ -1284,5 +1349,9 @@ public final class ModItems {
 
     public static Map<String, DeferredItem<Item>> mountItems() {
         return MOUNT_BY_MOB;
+    }
+
+    public static Map<String, DeferredItem<Item>> skeletonItems() {
+        return SKELETON_BY_MOB;
     }
 }

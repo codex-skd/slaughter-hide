@@ -18,7 +18,7 @@ public final class CarcassBlockProperty {
  * uses its own property but with the same name and the same 0..9 values as the
  * original; only {0,6,7,8,9} are ever set by the cut state machine.
  */
-public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
+public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
 
 /** Cut-stage values accepted by the drained carcass block only. */
 public static final IntegerProperty DRAINED_BLOCKSTATE = IntegerProperty.create("blockstate", 0, 9);

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slaughter_hide:block/black_dragon_scales_block",
+    "up": "slaughter_hide:block/black_dragon_scales_block",
+    "north": "slaughter_hide:block/black_dragon_scales_block",
+    "east": "slaughter_hide:block/black_dragon_scales_block",
+    "south": "slaughter_hide:block/black_dragon_scales_block",
+    "west": "slaughter_hide:block/black_dragon_scales_block",
+    "particle": "slaughter_hide:block/black_dragon_scales_block"
+  }
+}

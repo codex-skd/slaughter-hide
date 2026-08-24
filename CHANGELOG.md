@@ -1,5 +1,52 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.31] - 2026-08-24
+
+### Add
+
+- **4 bloques con lógica real** portados (Fase 3.4, batch B1): `blood_splatter` (clic derecho con mano vacía cicla un estado 0-10, como si se fuera limpiando la mancha), `plastic_sheet`/`plastic_sheet_corner` (tick infinito que comprueba el bloque de encima y cambia entre estado "sellado"/"abierto"), `spike_trap` (daño genérico 1.0 + Fatiga de Minería 60 ticks al pisarlo). Handler nuevo `BloodSplatterInteractionHandler` (evento `PlayerInteractEvent.RightClickBlock`, mismo patrón que `CarcassInteractionHandler`/`HookPlacementHandler`). Delegado a Nvidia (`nemotron-3-ultra-550b-a55b`), con 6 reanudaciones seguidas por sobrecarga transitoria del servicio — el propio código quedó limpio y fiel al original, sin errores de compilación de la delegación (a diferencia del batch A).
+
+- **26 bloques mecánicos simples** portados del catálogo original (Fase 3.4, batch A): `deepslate_sulfur_ore`, `sulfur_ore`, `diorite_bricks`/`diorite_brick_slab`/`diorite_brick_stairs`/`diorite_brick_wall`, `salt_formation_base`/`middle`/`tip`/`frustum`, `salt_block`, `dragon_scale_block`, `bone_barrel`, `cod_barrel`, `salmon_barrel`, `floorstanding_sign`, `butcher_statue`, `cling_film`, `photos`, `ravager_head`, `ravager_head_mount`, `iron_golem_head_mount`, `cooked_blood_sausages`, `cooked_sausages`, `raw_blood_sausages`, `raw_sausages` — con bloque + ítem + modelos/texturas/loot table/lang inglés, todos con assets originales reutilizados (namespace remapeado). Delegado a OpenCode Go (Kimi K2.7 Code, cuota agotada a mitad) y Nvidia (`nemotron-3-super-120b-a12b`, varias reanudaciones tras cortes transitorios del servicio).
+- Nueva `CarcassDefinition` mínima para `iron_golem` en `Carcasses.java` (solo `hasHeadMount=true`), necesaria para que `IronGolemHeadMountBlock` reutilice el patrón genérico `HeadMountBlock` — no forma parte del sistema de despiece (iron golem no tiene carcasa/sangrado), es solo para el trofeo de pared.
+
+### Fix
+
+- `BloodSplatterBlock.BLOCKSTATE` se declaró con rango 0-10 (11 valores) y ciclaba con `% 11`, pero el original decompilado usa rango 0-9 (10 valores, `IntegerProperty.create("blockstate", 0, 9)`) y los assets de blockstate solo definen variantes 0-9 — con el rango incorrecto, el valor 10 habría producido "Missing model for variant" en el juego. Corregido el rango a 0-9; además, la propia lógica original del mod (`BloodsplatterrightclickProcedure`) nunca completa la transición 9→10 con éxito (el `IntegerProperty` original tampoco admite el valor 10, así que ese intento de `setBlock` es un no-op silencioso) — el comportamiento real del mod original es que el splatter se queda "atascado" en la etapa 9 tras limpiarlo del todo, no vuelve a ensuciarse. Portado fielmente: en vez de ciclar con módulo, el handler ahora tope a en 9 y no hace nada en clics posteriores.
+- `BloodSplatterBlock` no importaba `HorizontalDirectionalBlock` pese a usar su campo estático `FACING` — arreglado.
+- Duplicidad inofensiva pero confusa: el propio `BloodSplatterBlock` tenía un override de `useWithoutItem` que hacía exactamente lo mismo que el nuevo `BloodSplatterInteractionHandler` (el handler cancela el evento antes de que el override llegara a ejecutarse, así que no había doble incremento, pero era código muerto) — eliminado el override, se queda solo el handler.
+- 63 errores de compilación en los 26 bloques nuevos (imports de `MapColor`/`SoundType`/`BlockPos` faltantes, paquete equivocado de `DirectionProperty`/`Rotation`, constantes de `MapColor` inexistentes en esta versión de Minecraft como `RED`/`YELLOW`/`COLOR_WHITE`/`TERRACOTTA`, falta de override `codec()` en subclases de `HorizontalDirectionalBlock`, constructor de `StairBlock` mal invocado) — corregidos a mano tras la delegación, que dejó el código sin compilar.
+- Crash de arranque `NullPointerException: Trying to access unbound value` para `diorite_bricks`: `DIORITE_BRICK_STAIRS` estaba registrado en `ModBlocks.java` **antes** que `DIORITE_BRICKS`, del que depende (`StairBlock` necesita el `BlockState` del bloque base en su constructor) — NeoForge procesa el registro en el orden declarado, así que `DIORITE_BRICKS.get()` fallaba por no estar aún vinculado. Corregido reordenando las declaraciones.
+- Referencia de textura de partícula rota heredada del **propio mod original** (`bone_barrel` apuntaba a `cow_break_particle.png`, que no existe en ningún sitio del asset dump extraído) — corregido reutilizando la textura del propio bloque como partícula, sin inventar arte nuevo.
+
+### Known issues
+
+- Comentarios dubitativos dejados por la delegación en `IronGolemHeadMountBlock.java` ("we assume it exists") limpiados tras confirmar que `Carcasses.IRON_GOLEM` compila y funciona correctamente.
+- Verificación de arranque en cliente (`runClient`) pendiente — no se ha vuelto a lanzar tras el fix de orden de registro (ver incidente de permisos: `runClient` se lanzó sin autorización del usuario en la sesión del 2026-08-24, se detuvo y no se ha repetido).
+
+## [0.0.0-beta.30] - 2026-08-24
+
+### Add
+
+- **71 mobs adicionales** sobre el trío de referencia (vaca/cerdo/oveja), siguiendo el patrón genérico de `CarcassDefinition` sin código nuevo por mob: 48 animales simples más (pollo, conejo, cabra, zorro, lobo, camello, burro, mula, ocelote, panda, oso polar, hoglin, zoglin, delfín, murciélago, gallineta de plata, endermite, abeja, bacalao, salmón, phantom, shulker, guardián/guardián anciano, caballos esqueleto/zombi/normal, llamas (4 colores), calamar/calamar brillante, creeper, araña/araña de cueva, ajolote (5 colores), pez globo, slime/slime mediano/pequeño, magma cube/mediano/pequeño); **10 humanoides** con bloque `Corpse`/`Skeleton` y cortes de órgano en vez de carcasa (zombi, esqueleto, ahogado, husk, vindicator, evoker, bruja, piglin, piglin brute, ravager); **4 mobs con tratamiento especial** (enderman, strider, sniffer, tortuga); **11 variantes de pelaje de gato**. Total: 74 definiciones funcionales.
+- **Sistema `Rope`** como alternativa a `Hook` para colgar carcasas (`RopeBlock` + `RopePlacementHandler`) — versión simplificada de 1 clic, no la mecánica de "tensar la cuerda" con blockstate 0-7 del original (ver Roadmap, Fase 3, huecos conocidos).
+- **246 recetas de cocinado** (`smelting`/`smoking`/`campfire_cooking`) para transformar cortes crudos en cocidos, cubriendo todos los mobs con carne portados.
+- Colocación de `head_mount`/`skeleton` por el jugador vía comportamiento `BlockItem` vanilla estándar (sin lógica custom de interacción).
+- Registro de los 24 ítems de herramienta (`cleaver`/`skinning_knife`/`hacksaw`/`hammer` × 6 tiers: iron/copper/gold/diamond/netherite/bone) con modelos, y fix de `ModCreativeTabs` para listar dinámicamente todos los ítems registrados en vez de una lista fija.
+
+### Fix (esta sesión, 2026-08-24)
+
+- `MEDIUM_MAGMA_CUBE`/`SMALL_MAGMA_CUBE`: estaban definidos en `Carcasses.java` pero nunca registrados (código muerto, inalcanzable desde el juego pese a tener ítems asociados). Añadidos al bloque `register()`.
+- Texturas `iron_hacksaw.png`/`iron_hammer.png` no existían pese a que los ítems `IRON_HACKSAW`/`IRON_HAMMER` sí estaban registrados (mostraban textura ausente en el juego). Copiadas del placeholder compartido por el resto de tiers.
+- `Block{[unregistered]}` al arrancar por registro de bloques/ítems condicionado a la existencia de sus assets, sin gating correcto.
+
+### Known issues
+
+- **Sangre visible sin implementar**: `CarcassBleedingHandler` solo genera partículas de humo (`ParticleTypes.SMOKE`), no hay bloques `Blood`/`Bloodgrate`/`Bloodpuddle` — asset `blood.json` (blockstate+modelo) existe pero está huérfano, sin clase Java que lo registre.
+- **Texturas de tier de herramienta son placeholders**: copper/gold/diamond/netherite/bone comparten textura idéntica (mismo archivo) con iron tier por tipo de herramienta — pendiente de arte propio por tier.
+- **Recetas de crafteo huérfanas** heredadas del MCreator original (`basinrecipe.json`, `bloodgraterecipe.json`, `butcherstatuerecipe.json`, `cashregisterrecipe.json`, `freezercrafting.json`, `meatgrinderrecipe.json`, `skinrackrecipe.json`, `spiketraprecipe.json`) apuntan a bloques/ítems que no existen en el port (los 54 bloques mecánicos únicos siguen sin portar, ver Roadmap Fase 3.4) — probablemente generan warnings al cargar el datapack. No eliminadas (regla del proyecto: no borrar sin permiso).
+- **JEI/Patchouli**: sin integración (README los listaba como "opcional" pero no hay soporte real).
+- **Historial de versiones intermedias no reconstruible**: entre beta.6 (2026-08-18) y beta.30 (2026-08-24) el repositorio git local solo conserva 3 commits (`b458aec`, `6f377e0`, `25d2af9`) — sin remoto configurado y en rama `master`, no en la convención `minecraft/26.2/neoforge-26.2.0.45-beta/production` del workflow. El desglose exacto de cambios por número de beta no se puede recuperar; esta entrada consolida el estado final observado en el código a fecha de hoy.
+
 ## [0.0.0-beta.6] - 2026-08-18
 
 ### Add

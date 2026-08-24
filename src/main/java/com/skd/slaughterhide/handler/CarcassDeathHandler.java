@@ -41,16 +41,8 @@ public final class CarcassDeathHandler {
         boolean isCat = entity.getType().toString().contains("cat");
         CarcassDefinition definition;
         if (isCat) {
-            // Get cat variant from entity data - default to tabby (9) if unavailable
-            int variant = 9;
-            try {
-                // Try to get cat variant from entity data (modern Minecraft uses DataComponents)
-                // For now, default to tabby variant (9) since Cat class may not be available in mappings
-                variant = 9;
-            } catch (Exception e) {
-                variant = 9;
-            }
-            definition = Carcasses.forCatVariant(variant);
+            // Default to tabby variant (9) - matches original decompiled behavior
+            definition = Carcasses.forCatVariant(9);
         } else {
             definition = Carcasses.forEntityType(entity.getType());
         }
