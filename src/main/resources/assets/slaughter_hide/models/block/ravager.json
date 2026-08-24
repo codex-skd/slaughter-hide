@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "slaughter_hide:block/ravager",
+    "particle": "slaughter_hide:block/ravager"
+  }
+}

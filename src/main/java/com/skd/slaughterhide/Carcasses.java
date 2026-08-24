@@ -3467,7 +3467,7 @@ private static CarcassDefinition buildRAVAGER() {
             true,
             false,
             false,
-            8,
+            3, // CarcassCutupHandler only ever reaches cut_3; cut_4..cut_8 loot tables exist but are unreachable (known limitation, see ROADMAP)
             Carcasses::endermanHanging,
             Carcasses::endermanLying,
             Carcasses::endermanHead,
@@ -3609,7 +3609,7 @@ private static CarcassDefinition buildRAVAGER() {
             true,
             false,
             true,
-            7,
+            3, // CarcassCutupHandler only ever reaches cut_3; cut_4..cut_7 loot tables exist but are unreachable (known limitation, see ROADMAP)
             Carcasses::turtleHanging,
             Carcasses::turtleLying,
             Carcasses::turtleHead,
