@@ -252,6 +252,8 @@ public final class Carcasses {
         register(MAGMA_CUBE);
         register(MEDIUM_SLIME);
         register(SMALL_SLIME);
+        register(MEDIUM_MAGMA_CUBE);
+        register(SMALL_MAGMA_CUBE);
         register(ZOMBIE);
         register(SKELETON);
         register(DROWNED);

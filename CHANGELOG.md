@@ -1,5 +1,29 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.30] - 2026-08-24
+
+### Add
+
+- **71 mobs adicionales** sobre el trío de referencia (vaca/cerdo/oveja), siguiendo el patrón genérico de `CarcassDefinition` sin código nuevo por mob: 48 animales simples más (pollo, conejo, cabra, zorro, lobo, camello, burro, mula, ocelote, panda, oso polar, hoglin, zoglin, delfín, murciélago, gallineta de plata, endermite, abeja, bacalao, salmón, phantom, shulker, guardián/guardián anciano, caballos esqueleto/zombi/normal, llamas (4 colores), calamar/calamar brillante, creeper, araña/araña de cueva, ajolote (5 colores), pez globo, slime/slime mediano/pequeño, magma cube/mediano/pequeño); **10 humanoides** con bloque `Corpse`/`Skeleton` y cortes de órgano en vez de carcasa (zombi, esqueleto, ahogado, husk, vindicator, evoker, bruja, piglin, piglin brute, ravager); **4 mobs con tratamiento especial** (enderman, strider, sniffer, tortuga); **11 variantes de pelaje de gato**. Total: 74 definiciones funcionales.
+- **Sistema `Rope`** como alternativa a `Hook` para colgar carcasas (`RopeBlock` + `RopePlacementHandler`) — versión simplificada de 1 clic, no la mecánica de "tensar la cuerda" con blockstate 0-7 del original (ver Roadmap, Fase 3, huecos conocidos).
+- **246 recetas de cocinado** (`smelting`/`smoking`/`campfire_cooking`) para transformar cortes crudos en cocidos, cubriendo todos los mobs con carne portados.
+- Colocación de `head_mount`/`skeleton` por el jugador vía comportamiento `BlockItem` vanilla estándar (sin lógica custom de interacción).
+- Registro de los 24 ítems de herramienta (`cleaver`/`skinning_knife`/`hacksaw`/`hammer` × 6 tiers: iron/copper/gold/diamond/netherite/bone) con modelos, y fix de `ModCreativeTabs` para listar dinámicamente todos los ítems registrados en vez de una lista fija.
+
+### Fix (esta sesión, 2026-08-24)
+
+- `MEDIUM_MAGMA_CUBE`/`SMALL_MAGMA_CUBE`: estaban definidos en `Carcasses.java` pero nunca registrados (código muerto, inalcanzable desde el juego pese a tener ítems asociados). Añadidos al bloque `register()`.
+- Texturas `iron_hacksaw.png`/`iron_hammer.png` no existían pese a que los ítems `IRON_HACKSAW`/`IRON_HAMMER` sí estaban registrados (mostraban textura ausente en el juego). Copiadas del placeholder compartido por el resto de tiers.
+- `Block{[unregistered]}` al arrancar por registro de bloques/ítems condicionado a la existencia de sus assets, sin gating correcto.
+
+### Known issues
+
+- **Sangre visible sin implementar**: `CarcassBleedingHandler` solo genera partículas de humo (`ParticleTypes.SMOKE`), no hay bloques `Blood`/`Bloodgrate`/`Bloodpuddle` — asset `blood.json` (blockstate+modelo) existe pero está huérfano, sin clase Java que lo registre.
+- **Texturas de tier de herramienta son placeholders**: copper/gold/diamond/netherite/bone comparten textura idéntica (mismo archivo) con iron tier por tipo de herramienta — pendiente de arte propio por tier.
+- **Recetas de crafteo huérfanas** heredadas del MCreator original (`basinrecipe.json`, `bloodgraterecipe.json`, `butcherstatuerecipe.json`, `cashregisterrecipe.json`, `freezercrafting.json`, `meatgrinderrecipe.json`, `skinrackrecipe.json`, `spiketraprecipe.json`) apuntan a bloques/ítems que no existen en el port (los 54 bloques mecánicos únicos siguen sin portar, ver Roadmap Fase 3.4) — probablemente generan warnings al cargar el datapack. No eliminadas (regla del proyecto: no borrar sin permiso).
+- **JEI/Patchouli**: sin integración (README los listaba como "opcional" pero no hay soporte real).
+- **Historial de versiones intermedias no reconstruible**: entre beta.6 (2026-08-18) y beta.30 (2026-08-24) el repositorio git local solo conserva 3 commits (`b458aec`, `6f377e0`, `25d2af9`) — sin remoto configurado y en rama `master`, no en la convención `minecraft/26.2/neoforge-26.2.0.45-beta/production` del workflow. El desglose exacto de cambios por número de beta no se puede recuperar; esta entrada consolida el estado final observado en el código a fecha de hoy.
+
 ## [0.0.0-beta.6] - 2026-08-18
 
 ### Add
