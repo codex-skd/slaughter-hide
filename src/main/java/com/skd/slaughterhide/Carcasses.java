@@ -157,6 +157,7 @@ public final class Carcasses {
     public static final CarcassDefinition SNIFFER = buildSNIFFER();
     /** Turtle carcass (7 cuts). */
     public static final CarcassDefinition TURTLE = buildTURTLE();
+    public static final CarcassDefinition IRON_GOLEM = buildIRON_GOLEM();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
@@ -3637,8 +3638,7 @@ private static CarcassDefinition buildRAVAGER() {
             default -> Shapes.or(box(-1.99925, 3.07843, -2.05017, 18.00075, 9.07843, 16.94983), box(-0.99925, 0.07843, 1.94983, 17.00075, 4.07843, 12.94983));
         };
     }
-
-    private static VoxelShape turtleHead(BlockState state) {
+private static VoxelShape turtleHead(BlockState state) {
         return switch (state.getValue(CarcassBlockProperty.FACING)) {
             case NORTH -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
             case EAST -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
@@ -3655,4 +3655,25 @@ private static CarcassDefinition buildRAVAGER() {
             default -> box(1.0, 0.0, 0.0, 15.0, 16.0, 4.0);
         };
     }
+
+    private static CarcassDefinition buildIRON_GOLEM() {
+        return new CarcassDefinition(
+                "iron_golem",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                        ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:iron_golem")))
+                .value(),
+                false,
+                true,
+                false,
+                false,
+                0,
+                state -> Shapes.empty(),
+                state -> Shapes.empty(),
+                state -> Shapes.empty(),
+                state -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // headMountShape: simple cube
+                state -> Shapes.empty(),
+                java.util.List.of(),
+                null);
+    }
+
 }

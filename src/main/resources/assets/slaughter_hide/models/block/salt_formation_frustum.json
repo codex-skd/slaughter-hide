@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slaughter_hide:block/pointed_salt_up_frustum",
+    "particle": "slaughter_hide:block/pointed_salt_up_frustum"
+  }
+}

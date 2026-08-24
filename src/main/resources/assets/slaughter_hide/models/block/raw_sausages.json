@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/hanging_raw_sausages",
+  "textures": {
+    "all": "slaughter_hide:block/sausage_link",
+    "particle": "slaughter_hide:block/sausage_link",
+    "0": "slaughter_hide:block/sausage_link"
+  }
+}

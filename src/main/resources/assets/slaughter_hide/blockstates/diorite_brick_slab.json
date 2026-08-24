@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slaughter_hide:block/diorite_brick_slab"
+    },
+    "type=top": {
+      "model": "slaughter_hide:block/diorite_brick_slab_top"
+    },
+    "type=double": {
+      "model": "slaughter_hide:block/diorite_brick_slab_full"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/floor_sign",
+  "textures": {
+    "all": "slaughter_hide:block/floorstanding_sign",
+    "particle": "slaughter_hide:block/floorstanding_sign",
+    "1": "slaughter_hide:block/sign_writing",
+    "2": "slaughter_hide:block/floorstanding_sign"
+  }
+}

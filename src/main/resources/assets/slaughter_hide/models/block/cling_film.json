@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/cling_film",
+  "textures": {
+    "all": "slaughter_hide:block/cling_film",
+    "particle": "slaughter_hide:block/cling_film",
+    "bar": "slaughter_hide:block/roll"
+  }
+}
