@@ -1309,6 +1309,10 @@ public final class ModItems {
             case "raw_blood_sausages" -> ModBlocks.RAW_BLOOD_SAUSAGES;
             case "raw_sausages" -> ModBlocks.RAW_SAUSAGES;
             case "salmon_barrel" -> ModBlocks.SALMON_BARREL;
+            case "blood_splatter" -> ModBlocks.BLOOD_SPLATTER;
+            case "plastic_sheet" -> ModBlocks.PLASTIC_SHEET;
+            case "plastic_sheet_corner" -> ModBlocks.PLASTIC_SHEET_CORNER;
+            case "spike_trap" -> ModBlocks.SPIKE_TRAP;
             default -> null;
         };
         return REGISTRY.registerItem(name,
