@@ -6,16 +6,16 @@ Slaughter & Hide is a Minecraft 26.2 (NeoForge) mod.
 
 ## Status
 
-Repository scaffold only — porting has not started yet. The original mod is only available as a compiled JAR (no public source), so the port starts from decompiled bytecode. See the roadmap for the planned phases.
+Playable beta (`0.0.0-beta.30`). Core butchering loop is ported and generic across mobs: kill → hang from a `Hook` or `Rope` → bleed → drain → cut up in stages → drop meat/skin/head. **74 mobs** are wired up, including 51 simple animals, 10 humanoids (zombie, skeleton, drowned, husk, vindicator, evoker, witch, piglin, piglin brute, ravager) with corpse/organ drops instead of carcasses, 4 special-cased mobs (enderman, strider, sniffer, turtle), and 11 cat coat variants. Cooking recipes for raw cuts are in place (246 smelting/smoking/campfire recipes). The original mod is only available as a compiled JAR (no public source), so the port starts from decompiled bytecode. See [docs/ROADMAP_SLAUGHTER_HIDE.md](docs/ROADMAP_SLAUGHTER_HIDE.md) for what's still pending (visible blood, the 54 standalone mechanical blocks, real tool tier textures, JEI/Patchouli).
 
 ## Requirements
 
 | Component | Version |
 |---|---|
 | Minecraft | 26.2 |
-| NeoForge | 26.2.0.45-beta |
+| NeoForge | 26.2.0.57 |
 | Java | 25+ |
-| JEI | optional |
+| JEI | optional (not yet integrated) |
 
 ## Installation
 

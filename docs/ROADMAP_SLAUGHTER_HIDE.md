@@ -198,19 +198,35 @@ Tercer mob, mismo patrón mecánico exitoso que el cerdo (0 clases Java nuevas).
 - Ítems de carne con nomenclatura "lamb", no "sheep" (`raw_leg_of_lamb`, `raw_lamb_shoulder`, `raw_lamb_rib`, `raw_lamb_sirloin`, `raw_lamb_loin`) — verificado contra las loot tables reales, no asumido.
 - `./gradlew.bat build` verde. Sin probar en cliente todavía.
 
-## Fase 3 — Extender a más mobs + cerrar huecos de la vaca (SIGUIENTE)
+## Fase 3.3 — Extensión masiva a 74 mobs + huecos parciales (COMPLETADO, sin fecha exacta reconstruible — auditado 2026-08-24)
 
-Con el patrón genérico validado (`CarcassDefinition` + `Hook`), añadir un mob nuevo es en gran parte mecánico: una entrada en `Carcasses`, copiar sus assets/loot tables desde `temp/butchery-assets/` con el namespace remapeado, y sus ítems de corte específicos. Candidatos en orden de prioridad sugerido (animales "simples" primero, humanoides con cortes de intestines/kidney/etc. después, por ser más complejos):
+**Nota de proceso**: este trabajo se hizo en sesiones anteriores cuyo detalle día a día no quedó documentado aquí ni en `CHANGELOG.md` (el repo git local solo conserva 3 commits recientes, ver known issues del changelog beta.30). Esta sección se reconstruyó auditando el código real el 2026-08-24, no un log de trabajo.
 
-1. **Más mobs animales simples**: cerdo, oveja, pollo, conejo (mismo patrón que la vaca, sin cortes de humanoide).
-2. **Huecos conocidos de la vaca** (documentados como fuera de alcance en Fase 2/2.2, decidir si se cierran antes o después de sumar mobs):
-   - `Rope` como alternativa al `Hook` — pendiente de decidir si se reintenta (con más contexto/tiempo) o se descarta definitivamente.
-   - Sangre visible (`Blood`/`Bloodpuddle`/`Bloodgrate`) al sangrar.
-   - Recetas de cocinado de los cortes de vaca (crudo → cocido en hoguera/horno).
-   - Colocación de `cow_head_mount`/`cow_skeleton` por el jugador (los bloques existen, falta la interacción).
-   - Tiers de herramienta adicionales (copper/gold/diamond/netherite/bone; solo Iron existe).
-3. **Mobs humanoides** (zombie, esqueleto, piglin...) — mismo patrón pero con cortes tipo "intestines/kidney/liver/lungs/stomach/heart" en vez de "steak/chunk/mince", y bloque `corpse` en vez de `carcass`.
-4. **Los 54 bloques mecánicos únicos** del catálogo (mesa de despiece, prensa de carne, salazón, taxidermia, caja registradora...) — contenido nuevo, no repetición del patrón de carcasa.
+Con el patrón genérico validado (`CarcassDefinition` + `Hook`), el mod pasó de 3 a **74 mobs funcionales**:
+- **51 animales simples** (mismo patrón que la vaca).
+- **10 humanoides** (zombie, esqueleto, ahogado, husk, vindicator, evoker, bruja, piglin, piglin brute, ravager) — usan bloque `Corpse`/`Skeleton` en vez de `carcass`/`skeleton` genérico, con cortes tipo "intestines/kidney/liver/lungs/stomach/heart".
+- **4 mobs con tratamiento especial** (enderman 8 cortes, strider 3, sniffer 3+piel, tortuga 7).
+- **11 variantes de pelaje de gato** (comparten `EntityType` con ocelote, registradas solo en `BY_MOB_ID`).
+
+De los huecos listados en la Fase 3 original:
+- ✅ **Recetas de cocinado**: 246 recetas smelting/smoking/campfire para todos los cortes portados.
+- ✅ **Colocación de head_mount/skeleton**: funcional vía `BlockItem` vanilla estándar (sin lógica custom, pero funciona).
+- 🟡 **`Rope`**: implementado (`RopeBlock` + `RopePlacementHandler`), pero es una **versión simplificada de 1 clic** — no reproduce el ciclo de "tensar la cuerda" (blockstate 0-7) del original. Sigue sin decidirse si merece la pena reintentar la mecánica exacta.
+- 🟡 **Tiers de herramienta**: las 6 tiers (iron/copper/gold/diamond/netherite/bone) × 4 herramientas están registradas y con modelo, pero **las texturas de copper/gold/diamond/netherite/bone son placeholders** (copia byte a byte de la textura iron) — falta arte propio por tier.
+- ❌ **Sangre visible**: sigue sin implementar. `CarcassBleedingHandler` solo genera partículas de humo; no hay bloques `Blood`/`Bloodgrate`/`Bloodpuddle` (el asset `blood.json` existe pero está huérfano).
+
+**Bugs encontrados y corregidos en la auditoría del 2026-08-24** (ver `CHANGELOG.md` beta.30): `MEDIUM_MAGMA_CUBE`/`SMALL_MAGMA_CUBE` definidos pero nunca registrados (código muerto), texturas `iron_hacksaw.png`/`iron_hammer.png` inexistentes.
+
+**Pendiente sin resolver, no corregido por respetar la regla de no-borrado**: ~8 recetas de crafteo huérfanas del MCreator original apuntan a bloques nunca portados (`basinrecipe.json`, `bloodgraterecipe.json`, `butcherstatuerecipe.json`, `cashregisterrecipe.json`, `freezercrafting.json`, `meatgrinderrecipe.json`, `skinrackrecipe.json`, `spiketraprecipe.json`) — decidir si se eliminan o se implementan los bloques que faltan.
+
+## Fase 3.4 — Pendiente real (SIGUIENTE)
+
+Con la cobertura de mobs prácticamente agotada del catálogo de animales/humanoides comunes, lo que queda de la Fase 3 original es:
+
+1. **Cerrar huecos parciales**: mecánica exacta de `Rope` (tensado progresivo) si se decide reintentar, sangre visible (`Blood`/`Bloodpuddle`/`Bloodgrate`), texturas propias por tier de herramienta (actualmente placeholders).
+2. **Decidir sobre las recetas huérfanas** del MCreator original (implementar los bloques que faltan o eliminar las recetas — requiere confirmación del usuario para borrar).
+3. **Los 54 bloques mecánicos únicos** del catálogo original (mesa de despiece, prensa de carne, salazón, taxidermia, caja registradora, trampa de pinchos...) — contenido nuevo, no repetición del patrón de carcasa. Ninguno está implementado todavía (0/54).
+4. Mobs restantes del catálogo original no cubiertos por las 74 definiciones actuales (revisar contra el inventario completo de Fase 0 si se quiere paridad total con Butchery).
 
 ## Fase 4 — Cliente (renderers, pantallas, modelos de entidad)
 
