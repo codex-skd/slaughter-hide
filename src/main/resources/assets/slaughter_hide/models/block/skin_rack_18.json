@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/skin_rack_snow_fox",
+  "textures": {
+    "all": "slaughter_hide:block/snow_fox_skin",
+    "particle": "slaughter_hide:block/skin_rack",
+    "skin_rack": "slaughter_hide:block/skin_rack",
+    "skin": "slaughter_hide:block/snow_fox_skin"
+  }
+}

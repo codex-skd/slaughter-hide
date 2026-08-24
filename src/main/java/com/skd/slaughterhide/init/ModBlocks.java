@@ -41,6 +41,13 @@ import com.skd.slaughterhide.block.CookedBloodSausagesBlock;
 import com.skd.slaughterhide.block.CookedSausagesBlock;
 import com.skd.slaughterhide.block.RawBloodSausagesBlock;
 import com.skd.slaughterhide.block.RawSausagesBlock;
+import com.skd.slaughterhide.block.BasinBlock;
+import com.skd.slaughterhide.block.BrainBlock;
+import com.skd.slaughterhide.block.CashRegisterBlock;
+import com.skd.slaughterhide.block.JarBlock;
+import com.skd.slaughterhide.block.MetalTrayBlock;
+import com.skd.slaughterhide.block.SkinRackBlock;
+import com.skd.slaughterhide.block.WoodenSpitRotisserieBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -142,6 +149,14 @@ public final class ModBlocks {
     public static final DeferredBlock<PlasticSheetBlock> PLASTIC_SHEET = register("plastic_sheet", PlasticSheetBlock::new);
     public static final DeferredBlock<PlasticSheetCornerBlock> PLASTIC_SHEET_CORNER = register("plastic_sheet_corner", PlasticSheetCornerBlock::new);
     public static final DeferredBlock<SpikeTrapBlock> SPIKE_TRAP = register("spike_trap", SpikeTrapBlock::new);
+
+    public static final DeferredBlock<BasinBlock> BASIN = register("basin", BasinBlock::new);
+    public static final DeferredBlock<BrainBlock> BRAIN = register("brain", BrainBlock::new);
+    public static final DeferredBlock<CashRegisterBlock> CASH_REGISTER = register("cash_register_block", CashRegisterBlock::new);
+    public static final DeferredBlock<SkinRackBlock> SKIN_RACK = register("skin_rack", SkinRackBlock::new);
+    public static final DeferredBlock<WoodenSpitRotisserieBlock> WOODEN_SPIT_ROTISSERIE = register("wooden_spit_rotisserie", WoodenSpitRotisserieBlock::new);
+    public static final DeferredBlock<JarBlock> JAR = register("jar", JarBlock::new);
+    public static final DeferredBlock<MetalTrayBlock> METAL_TRAY = register("metal_tray", MetalTrayBlock::new);
 
     static {
         registerFamily(Carcasses.COW);

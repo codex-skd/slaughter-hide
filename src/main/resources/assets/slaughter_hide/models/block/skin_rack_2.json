@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/skin_rack_brown_mooshroom",
+  "textures": {
+    "all": "slaughter_hide:block/brown_mooshroom_skin",
+    "particle": "slaughter_hide:block/skin_rack",
+    "skin_rack": "slaughter_hide:block/skin_rack",
+    "skin": "slaughter_hide:block/brown_mooshroom_skin"
+  }
+}

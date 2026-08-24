@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+### Add
+
+- **7 bloques decorativos/con lógica ligera** portados (Fase 3.4b2, batch "simple" del batch B2): `basin` (recoge sal de las `salt_formation` con el tiempo), `brain` (atrae zombies cercanos), `cash_register_block` (cajón abre/cierra), `skin_rack` (percha para hasta 32 combinaciones de piel), `wooden_spit_rotisserie` (asador: crudo→cocido→quemado sobre una hoguera), `jar` (bote que muestra su contenido), `metal_tray` (decorativo puro). Sin `BlockEntity`/GUI real (mismo hallazgo que las carcasas: el contenedor de 9 slots es plantilla vestigial de MCreator). Delegado a Nvidia `nemotron-3-ultra-550b-a55b`, 6 reanudaciones por sobrecarga transitoria del servicio.
+- Excluido del batch: el set `Irongolem`/`arms`/`body`/`head`/`legs` — su `IronGolemCutUpProcedure` decompilada tiene **2044 líneas** (más que Ravager), es otro mob-boss bespoke completo (cortar en piezas + reensamblaje vía `RepairgolemProcedure`), no un bloque decorativo. Descartado del alcance de esta sesión, mismo tratamiento que Ravager (documentado, no portado).
+
+### Known issues
+
+- **Varios ítems que la delegación asumía existentes nunca se registraron en este port**: los 18 ítems de órgano (`heart`/`intestines`/`kidney`/`liver`/`stomach`/`lungs` y sus variantes podrida/enderman — pese a que el roadmap habla de un sistema "organ-harvesting" para humanoides, los corpses reales dropean `rotten_flesh`/`animal_fat` vanilla, no órganos), `coin` (moneda de la caja registradora), `crackling` (uno de los drops del asador), y ~15 pieles de caballo/llama/mooshroom para `skin_rack`. Las funciones que dependían de ellos se simplificaron para no referenciar ítems inexistentes (documentado inline en cada handler) en vez de inventar/registrar contenido nuevo — fuera de alcance de un pase de porting.
+- **Descubrimiento importante sin resolver todavía**: la carpeta `data/slaughter_hide/loot_tables/` (plural) contiene cientos de loot tables ya existentes (todos los corpses humanoides, Enderman, Turtle, Sniffer, Strider, Ravager) que **probablemente nunca han funcionado** — el vanilla real de MC 26.2 usa `data/minecraft/loot_table/` (singular, verificado contra el jar), la misma convención que ya usan cow/pig/sheep y los bloques de esta sesión. Alcance y plan de arreglo pendientes de decidir con el usuario, ver ROADMAP.
+
 ### Fix
 
 - `ENDERMAN`/`TURTLE` declaraban `numCuts=8`/`7` en `Carcasses.java`, pero `CarcassCutupHandler` siempre estuvo hardcodeado a exactamente 3 cortes — las loot tables `cut_4` en adelante eran inalcanzables desde el juego (sin crash, solo contenido incompleto). Corregido el dato a `numCuts=3` para reflejar la realidad; no se ha generalizado el handler (decisión deliberada, ver `docs/ROADMAP_SLAUGHTER_HIDE.md`, Fase 3.4b1.5).

@@ -698,6 +698,15 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_CREEPER_STEAK = item("raw_creeper_steak", Item::new);
     public static final DeferredItem<Item> RAW_CREEPER_LEG = item("raw_creeper_leg", Item::new);
 
+    // Basin, Brain, Cash Register, Skin Rack, Wooden Spit Rotisserie, Jar, Metal Tray (Butchery blocks)
+    public static final DeferredItem<Item> BASIN = blockItem("basin", new Item.Properties());
+    public static final DeferredItem<Item> BRAIN = blockItem("brain", new Item.Properties());
+    public static final DeferredItem<Item> CASH_REGISTER = blockItem("cash_register_block", new Item.Properties());
+    public static final DeferredItem<Item> SKIN_RACK = blockItem("skin_rack", new Item.Properties());
+    public static final DeferredItem<Item> WOODEN_SPIT_ROTISSERIE = blockItem("wooden_spit_rotisserie", new Item.Properties());
+    public static final DeferredItem<Item> JAR = blockItem("jar", new Item.Properties());
+    public static final DeferredItem<Item> METAL_TRAY = blockItem("metal_tray", new Item.Properties());
+
     // Cat variants (11 variants, all share ocelot shapes, have head + head_mount + skin, no skeleton)
     // all_black_cat (variant 0)
     public static final DeferredItem<Item> ALL_BLACK_CAT_CARCASS =
@@ -1313,6 +1322,13 @@ public final class ModItems {
             case "plastic_sheet" -> ModBlocks.PLASTIC_SHEET;
             case "plastic_sheet_corner" -> ModBlocks.PLASTIC_SHEET_CORNER;
             case "spike_trap" -> ModBlocks.SPIKE_TRAP;
+            case "basin" -> ModBlocks.BASIN;
+            case "brain" -> ModBlocks.BRAIN;
+            case "cash_register_block" -> ModBlocks.CASH_REGISTER;
+            case "skin_rack" -> ModBlocks.SKIN_RACK;
+            case "wooden_spit_rotisserie" -> ModBlocks.WOODEN_SPIT_ROTISSERIE;
+            case "jar" -> ModBlocks.JAR;
+            case "metal_tray" -> ModBlocks.METAL_TRAY;
             default -> null;
         };
         return REGISTRY.registerItem(name,
