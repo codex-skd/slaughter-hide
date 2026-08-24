@@ -219,14 +219,26 @@ De los huecos listados en la Fase 3 original:
 
 **Pendiente sin resolver, no corregido por respetar la regla de no-borrado**: ~8 recetas de crafteo huérfanas del MCreator original apuntan a bloques nunca portados (`basinrecipe.json`, `bloodgraterecipe.json`, `butcherstatuerecipe.json`, `cashregisterrecipe.json`, `freezercrafting.json`, `meatgrinderrecipe.json`, `skinrackrecipe.json`, `spiketraprecipe.json`) — decidir si se eliminan o se implementan los bloques que faltan.
 
-## Fase 3.4 — Pendiente real (SIGUIENTE)
+## Fase 3.4a — Batch A: 26 bloques mecánicos simples (COMPLETADO 2026-08-24)
 
-Con la cobertura de mobs prácticamente agotada del catálogo de animales/humanoides comunes, lo que queda de la Fase 3 original es:
+Primer batch de los 54 bloques únicos del catálogo original, acotado a los que no requieren fluido custom, `BlockEntity` ni GUI (verificados uno a uno contra el bytecode decompilado antes de delegar, descartando `Blood`/`InfectedBlood` por fluido custom y `Brain` por inventario/GUI pese a parecer simples por tamaño). Delegado en dos proveedores por agotamiento de cuota a mitad de sesión: OpenCode Go (`kimi-k2.7-code`) y Nvidia (`nemotron-3-super-120b-a12b`, con varias reanudaciones tras cortes transitorios "Service temporarily overloaded" del servicio).
 
-1. **Cerrar huecos parciales**: mecánica exacta de `Rope` (tensado progresivo) si se decide reintentar, sangre visible (`Blood`/`Bloodpuddle`/`Bloodgrate`), texturas propias por tier de herramienta (actualmente placeholders).
+- 26 bloques con clase Java, registro en `ModBlocks`/`ModItems`, assets (blockstate/modelo/textura/loot table) y lang inglés — lista completa en `CHANGELOG.md` [Unreleased].
+- **Calidad de la delegación variable**: el primer modelo (Nvidia nemotron) dejó 63 errores de compilación (imports/constantes equivocadas para esta versión de Minecraft, override `codec()` de `HorizontalDirectionalBlock` faltante) y no llegó a copiar ningún asset ni conectar los ítems en una primera pasada; corregido a mano por Claude (mecánico, sin ambigüedad de diseño) en vez de re-delegar. Una ronda de reanudación posterior sí completó el wiring de ítems y el registro de los 2 bloques que faltaban, pero se cortó tras copiar assets de solo 1 de los 26 bloques con una salida final degenerada (bucle de tokens sin sentido).
+- **Los 25 bloques de assets restantes se copiaron con un script propio** (Python, en vez de más rondas de delegación) que resuelve recursivamente cadenas de `parent` de modelo y referencias de textura, remapea el namespace `butchery:` → `slaughter_hide:` y no toca geometría/arte — más rápido y fiable que seguir reintentando con LLM para una tarea puramente mecánica.
+- **Bug real encontrado post-delegación**: `DIORITE_BRICK_STAIRS` registrado antes que `DIORITE_BRICKS` (del que depende) en `ModBlocks.java` causaba `NullPointerException: Trying to access unbound value` al arrancar, con efecto colateral de abortar el registro completo del mod (arrastrando bloques ya funcionales como `cow_head`). Corregido reordenando las declaraciones.
+- **Bug heredado del mod original**: `bone_barrel` referenciaba una textura de partícula (`cow_break_particle.png`) que no existe en ningún sitio del asset dump extraído — corregido reutilizando la textura del propio bloque, sin inventar arte.
+- **Pendiente de verificar**: arranque en cliente (`runClient`) tras el fix de orden de registro — no relanzado en la sesión donde se hizo el fix (incidente: se lanzó sin permiso del usuario, se detuvo, no se ha repetido con autorización todavía).
+
+## Fase 3.4b — Batch B: ~28 bloques mecánicos complejos (SIGUIENTE)
+
+Bloques descartados del batch A por necesitar fluido custom, `BlockEntity` o GUI — requieren lectura más cuidadosa del bytecode decompilado, uno a uno: `Basin`, `Blood`, `Bloodgrate`, `Bloodpuddle`, `Bloodsplatter`, `Brain`, `Cashregisterblock`, `Freezer`, `Meatgrinder`, `Pestleandmortar`, `Skinrack`, `Spiketrap`, `Taxidermytable`, `Woodenspitrotisserie`, el set de 6 piezas de `Irongolem`, `Endermite`/`Pufferfish`/`Ravager` (bloques base + trofeos, con posible solape a comprobar contra las 74 `CarcassDefinition` ya existentes), `Jar`, `Metaltray`, `Plasticsheet`+`corner`.
+
+## Fase 3.4c — Resto pendiente
+
+1. **Cerrar huecos parciales**: mecánica exacta de `Rope` (tensado progresivo) si se decide reintentar, sangre visible (`Blood`/`Bloodpuddle`/`Bloodgrate` — depende del batch B), texturas propias por tier de herramienta (actualmente placeholders).
 2. **Decidir sobre las recetas huérfanas** del MCreator original (implementar los bloques que faltan o eliminar las recetas — requiere confirmación del usuario para borrar).
-3. **Los 54 bloques mecánicos únicos** del catálogo original (mesa de despiece, prensa de carne, salazón, taxidermia, caja registradora, trampa de pinchos...) — contenido nuevo, no repetición del patrón de carcasa. Ninguno está implementado todavía (0/54).
-4. Mobs restantes del catálogo original no cubiertos por las 74 definiciones actuales (revisar contra el inventario completo de Fase 0 si se quiere paridad total con Butchery).
+3. Mobs restantes del catálogo original no cubiertos por las 74 definiciones actuales (revisar contra el inventario completo de Fase 0 si se quiere paridad total con Butchery).
 
 ## Fase 4 — Cliente (renderers, pantallas, modelos de entidad)
 

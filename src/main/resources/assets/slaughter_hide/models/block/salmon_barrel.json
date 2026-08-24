@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/salmon_barrel",
+  "textures": {
+    "all": "slaughter_hide:block/salmon_barrel",
+    "particle": "slaughter_hide:block/salmon_barrel",
+    "0": "slaughter_hide:block/salmon_barrel"
+  }
+}

@@ -1,5 +1,23 @@
 # Changelog — Slaughter & Hide
 
+## [Unreleased]
+
+### Add
+
+- **26 bloques mecánicos simples** portados del catálogo original (Fase 3.4, batch A): `deepslate_sulfur_ore`, `sulfur_ore`, `diorite_bricks`/`diorite_brick_slab`/`diorite_brick_stairs`/`diorite_brick_wall`, `salt_formation_base`/`middle`/`tip`/`frustum`, `salt_block`, `dragon_scale_block`, `bone_barrel`, `cod_barrel`, `salmon_barrel`, `floorstanding_sign`, `butcher_statue`, `cling_film`, `photos`, `ravager_head`, `ravager_head_mount`, `iron_golem_head_mount`, `cooked_blood_sausages`, `cooked_sausages`, `raw_blood_sausages`, `raw_sausages` — con bloque + ítem + modelos/texturas/loot table/lang inglés, todos con assets originales reutilizados (namespace remapeado). Delegado a OpenCode Go (Kimi K2.7 Code, cuota agotada a mitad) y Nvidia (`nemotron-3-super-120b-a12b`, varias reanudaciones tras cortes transitorios del servicio).
+- Nueva `CarcassDefinition` mínima para `iron_golem` en `Carcasses.java` (solo `hasHeadMount=true`), necesaria para que `IronGolemHeadMountBlock` reutilice el patrón genérico `HeadMountBlock` — no forma parte del sistema de despiece (iron golem no tiene carcasa/sangrado), es solo para el trofeo de pared.
+
+### Fix
+
+- 63 errores de compilación en los 26 bloques nuevos (imports de `MapColor`/`SoundType`/`BlockPos` faltantes, paquete equivocado de `DirectionProperty`/`Rotation`, constantes de `MapColor` inexistentes en esta versión de Minecraft como `RED`/`YELLOW`/`COLOR_WHITE`/`TERRACOTTA`, falta de override `codec()` en subclases de `HorizontalDirectionalBlock`, constructor de `StairBlock` mal invocado) — corregidos a mano tras la delegación, que dejó el código sin compilar.
+- Crash de arranque `NullPointerException: Trying to access unbound value` para `diorite_bricks`: `DIORITE_BRICK_STAIRS` estaba registrado en `ModBlocks.java` **antes** que `DIORITE_BRICKS`, del que depende (`StairBlock` necesita el `BlockState` del bloque base en su constructor) — NeoForge procesa el registro en el orden declarado, así que `DIORITE_BRICKS.get()` fallaba por no estar aún vinculado. Corregido reordenando las declaraciones.
+- Referencia de textura de partícula rota heredada del **propio mod original** (`bone_barrel` apuntaba a `cow_break_particle.png`, que no existe en ningún sitio del asset dump extraído) — corregido reutilizando la textura del propio bloque como partícula, sin inventar arte nuevo.
+
+### Known issues
+
+- Comentarios dubitativos dejados por la delegación en `IronGolemHeadMountBlock.java` ("we assume it exists") limpiados tras confirmar que `Carcasses.IRON_GOLEM` compila y funciona correctamente.
+- Verificación de arranque en cliente (`runClient`) pendiente — no se ha vuelto a lanzar tras el fix de orden de registro (ver incidente de permisos: `runClient` se lanzó sin autorización del usuario en la sesión del 2026-08-24, se detuvo y no se ha repetido).
+
 ## [0.0.0-beta.30] - 2026-08-24
 
 ### Add

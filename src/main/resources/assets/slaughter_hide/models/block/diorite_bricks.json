@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slaughter_hide:block/diorite_bricks",
+    "up": "slaughter_hide:block/diorite_bricks",
+    "north": "slaughter_hide:block/diorite_bricks",
+    "east": "slaughter_hide:block/diorite_bricks",
+    "south": "slaughter_hide:block/diorite_bricks",
+    "west": "slaughter_hide:block/diorite_bricks",
+    "particle": "slaughter_hide:block/diorite_bricks"
+  }
+}

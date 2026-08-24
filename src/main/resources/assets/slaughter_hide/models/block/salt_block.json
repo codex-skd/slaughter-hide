@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slaughter_hide:block/salt_block",
+    "up": "slaughter_hide:block/salt_block",
+    "north": "slaughter_hide:block/salt_block",
+    "east": "slaughter_hide:block/salt_block",
+    "south": "slaughter_hide:block/salt_block",
+    "west": "slaughter_hide:block/salt_block",
+    "particle": "slaughter_hide:block/salt_block"
+  }
+}
