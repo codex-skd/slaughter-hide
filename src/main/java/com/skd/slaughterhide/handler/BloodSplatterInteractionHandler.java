@@ -42,8 +42,10 @@ public final class BloodSplatterInteractionHandler {
             return;
         }
         int current = state.getValue(BloodSplatterBlock.BLOCKSTATE);
-        int next = (current + 1) % 11;
-        level.setBlock(pos, state.setValue(BloodSplatterBlock.BLOCKSTATE, next), 3);
+        if (current >= 9) {
+            return;
+        }
+        level.setBlock(pos, state.setValue(BloodSplatterBlock.BLOCKSTATE, current + 1), 3);
         event.setCanceled(true);
         player.swing(InteractionHand.MAIN_HAND);
     }
