@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/Carcasses.java": {
-    "mtime": 1787590251.7272158,
-    "ast_hash": "0fb929d7543f19f049495c6908238a76",
+    "mtime": 1787610448.1536498,
+    "ast_hash": "d4531d14df94ba0ce223334df80fd175",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/ServerWorkScheduler.java": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787590251.8117528,
-    "ast_hash": "edad3badd2e35c703a2e7b0153f4a1ba",
+    "mtime": 1787614243.3373985,
+    "ast_hash": "726fc2fd4f105642c37c1deb901d3e5b",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787590251.8117528,
-    "ast_hash": "5a54aa0a9a656fd4efffacd018e0def5",
+    "mtime": 1787614314.380694,
+    "ast_hash": "962c7f58f9e8a26097b2881d488e1b13",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -1090,8 +1090,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/en_us.json": {
-    "mtime": 1787590251.8148859,
-    "ast_hash": "2fcb3e4f08b163c065a51df8354ea22f",
+    "mtime": 1787615472.1346169,
+    "ast_hash": "49ead7b4d17e971a79d5090268986a1b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/es_es.json": {
@@ -6339,461 +6339,6 @@
     "ast_hash": "7720da1c546769afe43a8ae5cf28c746",
     "semantic_hash": ""
   },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_drowned_corpse.json": {
-    "mtime": 1787589983.2372067,
-    "ast_hash": "28876d58dc2d4772fb2fe48ecbb7c3b9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_evoker_corpse.json": {
-    "mtime": 1787589983.2384028,
-    "ast_hash": "f58ed5ceea0afc254be92179092c8aa1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_husk_corpse.json": {
-    "mtime": 1787589983.2384028,
-    "ast_hash": "66fc15fb39dd0ea61a811b8548026f14",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_piglin_brute_corpse.json": {
-    "mtime": 1787589983.2384028,
-    "ast_hash": "c2d1d525fea424eb87696294f97cd95f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_piglin_corpse.json": {
-    "mtime": 1787589983.2384028,
-    "ast_hash": "f3f2a8885bc3a401c2df202304cbedcd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_vindicator_corpse.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "183d4bd73c61f6b68098d4d8188825d8",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_witch_corpse.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "3ddc4bf834e3301f86d8a2e6662c3747",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_zombie_corpse.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "b2594283f86083ecf5cc54d22c19e5e4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drowned_carcass_loot.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "3f0adacde47ff01347fbc05883136ea7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drowned_corpse.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "fc064be3b965699bd69e47701ba67a5b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drowned_cut_1_drop.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "60e131e13d4d0d34d58266573e8f2dca",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drowned_cut_2_drop.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "7e1be03efffe51a920e206670fab5651",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drowned_cut_3_drop.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "9e078673722a654e08387ed840c9dc40",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drowned_head.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "edfb04603c4649e80ccfb7665c43f321",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drowned_head_drop.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "6c4f37c4a904ed58f76ceaf3db105c45",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drowned_head_mount.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "381abcfccfbfc39f48613f2c9ead1e82",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_carcass_loot.json": {
-    "mtime": 1787589983.2448335,
-    "ast_hash": "c63bd7c6aac01ad9e0e878773becce8c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_corpse.json": {
-    "mtime": 1787589983.2448335,
-    "ast_hash": "b3e1b5c420c7b42a805d5b7658368053",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_cut_1_drop.json": {
-    "mtime": 1787589983.2448335,
-    "ast_hash": "eac2ae3df2420bb25e99b99cbb6627d9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_cut_2_drop.json": {
-    "mtime": 1787589983.2448335,
-    "ast_hash": "ae0295aaf4626bdcf7c6683a3956c7fd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_cut_3_drop.json": {
-    "mtime": 1787589983.2448335,
-    "ast_hash": "58dd0de187ea4c3c1b2b9e969b87f992",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_head.json": {
-    "mtime": 1787589983.2448335,
-    "ast_hash": "d1fa3bdecb8f1b0f453290fc95cc32ca",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_head_drop.json": {
-    "mtime": 1787589983.2463355,
-    "ast_hash": "6944ffff323a9b6837bf41022b1ad3cf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_head_mount.json": {
-    "mtime": 1787589983.2463355,
-    "ast_hash": "437581177cb5ee7b939ccfe469af4c0e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/evoker_skin_drop.json": {
-    "mtime": 1787589983.2463355,
-    "ast_hash": "7a9f9d02c3ee0edbb454b088f5a54cf3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/husk_carcass_loot.json": {
-    "mtime": 1787589983.2463355,
-    "ast_hash": "40b7fbe16e27f408b34e23754d367ffe",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/husk_corpse.json": {
-    "mtime": 1787589983.2473342,
-    "ast_hash": "1f2b2eefcead433f9eb826f54f68c4ab",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/husk_cut_1_drop.json": {
-    "mtime": 1787589983.2473342,
-    "ast_hash": "396bd452ec1c4f8e5f82cc68a2bc1175",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/husk_cut_2_drop.json": {
-    "mtime": 1787589983.2473342,
-    "ast_hash": "c3954258132a4add4f246ff9713f4a7f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/husk_cut_3_drop.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "3e219cc08e6742d30797e519f24f5621",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/husk_head.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "4b6c4f2efd7839bf98d79013893b9663",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/husk_head_drop.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "1c111b3245b439703eec5109545dc796",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/husk_head_mount.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "bb4be93c62d181a8fe92ab1d4c7f29c4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_armor_drop.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "2c2e7d8f26c5ed67b305ad7934c5f423",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_carcass_loot.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "ae1991d18dfe4f0207d0544293d0accc",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_corpse.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "828024b7f57f09b30be2300bd33f0de7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_cut_1_drop.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "bb960daf7bfb6d5f22b3c205b9f3c364",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_cut_2_drop.json": {
-    "mtime": 1787589983.2484393,
-    "ast_hash": "aafa45fa2b450867eadcae9c2bc541eb",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_cut_3_drop.json": {
-    "mtime": 1787589983.2499685,
-    "ast_hash": "ec981c1348e27d00f19b87cee13141cc",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_head.json": {
-    "mtime": 1787589983.2499685,
-    "ast_hash": "2e22961a9e8e596ce99a24305285df90",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_head_drop.json": {
-    "mtime": 1787589983.2499685,
-    "ast_hash": "ff952426a6f39d9e90c57489fe22dd0a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_brute_head_mount.json": {
-    "mtime": 1787589983.2499685,
-    "ast_hash": "d34a7418180a053ef0940fdf5fc35dfa",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_corpse.json": {
-    "mtime": 1787589983.2499685,
-    "ast_hash": "8015c03d350a3f21c951852abc097ad7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_corpse_loot.json": {
-    "mtime": 1787589983.250978,
-    "ast_hash": "0e6628605b8cd030480ec1415bf77b54",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_cut_1_drop.json": {
-    "mtime": 1787589983.250978,
-    "ast_hash": "5c0e283d4f8d36839b68c590fdf20e7f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_cut_2_drop.json": {
-    "mtime": 1787589983.250978,
-    "ast_hash": "efddb046b733a14df5e32a6efc8a9c19",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_cut_3_drop.json": {
-    "mtime": 1787589983.2519836,
-    "ast_hash": "ea8856e5c765a1cd44ed58216dcda472",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_hanging_cut_2_drop.json": {
-    "mtime": 1787589983.2519836,
-    "ast_hash": "789dd229a1e2157b18298070d7fe661a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_hanging_cut_3_drop.json": {
-    "mtime": 1787589983.2529786,
-    "ast_hash": "9c8e1cea193edb8a8b8c9445632dad14",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_head_drop.json": {
-    "mtime": 1787589983.2529786,
-    "ast_hash": "ace74a934c41a489b47d11ab538c3559",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/piglin_head_mount.json": {
-    "mtime": 1787589983.2529786,
-    "ast_hash": "c48da8c4d3471910717ab48e1f1f8edb",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/ravager_body_drop.json": {
-    "mtime": 1787589983.2529786,
-    "ast_hash": "374ba647c18efdf5258d0cd7a80c6d65",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/ravager_head.json": {
-    "mtime": 1787589983.2544484,
-    "ast_hash": "fa988bf613051485a92bdb8abaa44eff",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/ravager_head_drop.json": {
-    "mtime": 1787589983.2544484,
-    "ast_hash": "07c840ec0d9f7f3815cc02145f02eaee",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/ravager_head_mount.json": {
-    "mtime": 1787589983.2544484,
-    "ast_hash": "303700c3f5fb92b81f4780d2785d6fa5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/ravager_leg_1_drop.json": {
-    "mtime": 1787589983.2544484,
-    "ast_hash": "ac4f8e2005eed2fb439e60d30df3301c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/ravager_leg_2_drop.json": {
-    "mtime": 1787589983.2544484,
-    "ast_hash": "682b5a9c00fbf7692e5663afb613b0b1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/ravager_leg_3_drop.json": {
-    "mtime": 1787589983.2544484,
-    "ast_hash": "4412fb0e048714896e9e4bb20e9b3734",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/ravager_leg_4_drop.json": {
-    "mtime": 1787589983.255466,
-    "ast_hash": "fbb89244c53b2df767e1f3e3d73e56c3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/skeleton_corpse.json": {
-    "mtime": 1787589983.2559676,
-    "ast_hash": "bb622665d4c033d2f61f230fdb9d4774",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/skeleton_corpse_loot.json": {
-    "mtime": 1787589983.2559676,
-    "ast_hash": "592373a22ada63b8c798c82c3e4f5e5f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/skeleton_cut_1_drop.json": {
-    "mtime": 1787589983.257478,
-    "ast_hash": "044cc2aead5affd03f80e723d6f1f2b5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/skeleton_cut_2_drop.json": {
-    "mtime": 1787589983.257478,
-    "ast_hash": "1472e195b2d7b3963424ad01bc2dafb9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/skeleton_cut_3_drop.json": {
-    "mtime": 1787589983.257478,
-    "ast_hash": "91453d3d0b55c2cfbdbd7ec0b729795d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/skeleton_head_drop.json": {
-    "mtime": 1787589983.257478,
-    "ast_hash": "44909e8160ec9c716b697b6f6e9a528f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/skeleton_head_mount.json": {
-    "mtime": 1787589983.257478,
-    "ast_hash": "77ecb6d24aa245f221e6ad462050e9b5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_corpse.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "d1980f65e0c0271a7bbf3d88a06ad7eb",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_corpse_loot.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "5d8175b5baf837ed3675e74aff21593d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_cut_1_drop.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "21cbbfab0f3b59b493c51d921cdc10c1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_cut_2_drop.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "7316980841a647274395c763fff2dea2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_cut_3_drop.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "8447756553d959bac1185db612e827e8",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_head.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "315f5f9b28093059dd7a325e000910e9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_head_drop.json": {
-    "mtime": 1787589983.2635446,
-    "ast_hash": "83d07c40cefb60c12050dbf6a614d90e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_head_mount.json": {
-    "mtime": 1787589983.2635446,
-    "ast_hash": "21a548b20e49936312bcf1ab337d363f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/vindicator_skin_drop.json": {
-    "mtime": 1787589983.2635446,
-    "ast_hash": "1a780c09b062c6522819e7e4b0115353",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_corpse.json": {
-    "mtime": 1787589983.2635446,
-    "ast_hash": "5ecc99dacf9078ef5c11e9db6a9a5d33",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_corpse_loot.json": {
-    "mtime": 1787589983.2635446,
-    "ast_hash": "6685d898e59206690e3138687fafadb6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_cut_1_drop.json": {
-    "mtime": 1787589983.2635446,
-    "ast_hash": "179d2a6ed6a23e35e2a3f8dcb0d49cfa",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_cut_2_drop.json": {
-    "mtime": 1787589983.2635446,
-    "ast_hash": "55e6a8480974026fa276a0f837174e40",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_cut_3_drop.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "7aa4e7709149aad9e99e9726f5967734",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_head.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "6a7ebfc63282a8135ffa7a9bad801f09",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_head_drop.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "3e0bd00b224d97416b522c7918e1751a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_head_mount.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "00e59597c20065152a3b5ee6d937d345",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/witch_skin_drop.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "b04f57eb9c06d2b776deae83b221c118",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/zombie_carcass_loot.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "46d8bfb1aa40f4b379dbc21c66ada409",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/zombie_corpse.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "03a8ac55d9d23c7f57270520772e09c8",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/zombie_cut_1_drop.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "7f637844f4c51473a90c6f219f34b6ad",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/zombie_cut_2_drop.json": {
-    "mtime": 1787589983.2647872,
-    "ast_hash": "4e9d98ced631b79c4b56dd4443604763",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/zombie_cut_3_drop.json": {
-    "mtime": 1787589983.2662895,
-    "ast_hash": "a300ecd05b2f9bcf8d34b18ca3048267",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/zombie_head_drop.json": {
-    "mtime": 1787589983.2662895,
-    "ast_hash": "4878b501d04c4110a6cc5b805d7f093f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/zombie_head_mount.json": {
-    "mtime": 1787589983.2662895,
-    "ast_hash": "1e56ea98b061e8db0edaa090b035a5ce",
-    "semantic_hash": ""
-  },
   "src/main/resources/data/slaughter_hide/tags/item/butcher_tool_repair_items.json": {
     "mtime": 1787589983.3394492,
     "ast_hash": "5938ef8de80007c18917b99bdad09f86",
@@ -6820,8 +6365,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787590251.9408078,
-    "ast_hash": "8cbd5b68ee5096f147fc1d001da6771c",
+    "mtime": 1787619608.828922,
+    "ast_hash": "d0da9f89d2f212f21571fbd2a79830d3",
     "semantic_hash": ""
   },
   "README.md": {
@@ -6835,8 +6380,8 @@
     "semantic_hash": ""
   },
   "docs/ROADMAP_SLAUGHTER_HIDE.md": {
-    "mtime": 1787590251.8096712,
-    "ast_hash": "20186268658b9f954f7b62383f93db9c",
+    "mtime": 1787619559.467389,
+    "ast_hash": "1a66d5e93e298f97c15d9c754c3edeca",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SLAUGHTER_HIDE_26-2.md": {
@@ -7824,86 +7369,6 @@
     "ast_hash": "df36d4c63aa38590f983cc7654d61463",
     "semantic_hash": ""
   },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_enderman_carcass.json": {
-    "mtime": 1787589983.2384028,
-    "ast_hash": "c6ce779d96f9f7a1b5ad8dea2fc9bcba",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_carcass.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "bfa8e6e3e0ff952c8f7a1e98a49bce31",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_carcass_loot.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "d1157104584b7b640cfc223895d16db9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_1_drop.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "1d863dcb897338eb741472ee147a387a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_2_drop.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "49c81fb8ac10b4793fb89f36c96260f2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_3_drop.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "a4c739006965c24c01a4ffb565d0b365",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_4_drop.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "400f650857acd2e50ee54fd8b5a9b0a0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_5_drop.json": {
-    "mtime": 1787589983.242579,
-    "ast_hash": "ceafa87b1c3668aefc1393848f4d409d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_6_drop.json": {
-    "mtime": 1787589983.242579,
-    "ast_hash": "67d1be959b2877efa60ab9e34784a5e1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_7_drop.json": {
-    "mtime": 1787589983.242579,
-    "ast_hash": "d451797a176ea019ed9883c0fd66f961",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_cut_8_drop.json": {
-    "mtime": 1787589983.242579,
-    "ast_hash": "545d76e9a8968ab0cf0acf858fa63f8a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_head.json": {
-    "mtime": 1787589983.242579,
-    "ast_hash": "38c0c69ca40792b9f8ea0b5bb27f5530",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_head_drop.json": {
-    "mtime": 1787589983.242579,
-    "ast_hash": "42e1bded7d7a71991f52dcf6e2c07c5a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/enderman_head_mount.json": {
-    "mtime": 1787589983.2435775,
-    "ast_hash": "515639e6d23ca80bbaa80396c3c6f6ff",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/hanging_drained_enderman_carcass.json": {
-    "mtime": 1787589983.2463355,
-    "ast_hash": "3d49f10301c7bbed8919e8420b6919b4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/hanging_enderman_carcass.json": {
-    "mtime": 1787589983.2463355,
-    "ast_hash": "34cd1fa53e8459ac3d3e72abd6d1d125",
-    "semantic_hash": ""
-  },
   "docs/curseforge/versions/0.0.0-beta.23.md": {
     "mtime": 1787589982.7721522,
     "ast_hash": "42ab38ddab0a28c5fe021f75302272c8",
@@ -7942,36 +7407,6 @@
   "src/main/resources/assets/slaughter_hide/models/block/strider_carcass_0.json": {
     "mtime": 1787589982.9709706,
     "ast_hash": "114c36c587e33d13bdac37c6d6e21604",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_strider_carcass.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "191e73ce591b84e4b6569efcaaf9fa41",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_carcass.json": {
-    "mtime": 1787589983.2584977,
-    "ast_hash": "c60d52ef3b8292f808658b74ab0afe6c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_carcass_loot.json": {
-    "mtime": 1787589983.2595098,
-    "ast_hash": "41ac6659aa8ad34744e9996e488a0cd7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_cut_1_drop.json": {
-    "mtime": 1787589983.2595098,
-    "ast_hash": "2710d330f276098f169cc1b6f7ec2682",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_cut_2_drop.json": {
-    "mtime": 1787589983.2595098,
-    "ast_hash": "fa1da3fd5145f8fc45797299295a9bae",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/strider_cut_3_drop.json": {
-    "mtime": 1787589983.2595098,
-    "ast_hash": "9a41ecd33869593147f1887995a15395",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.24.md": {
@@ -8017,51 +7452,6 @@
   "src/main/resources/assets/slaughter_hide/models/block/sniffer_head.json": {
     "mtime": 1787589982.9693744,
     "ast_hash": "74e2d03cfc33886d3a3974704a393b3c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_sniffer_carcass_block.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "b21e92c184a0cc2d456dd98e907ae083",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_carcass_block.json": {
-    "mtime": 1787589983.257478,
-    "ast_hash": "415e97d99d3a0c10459bba6e523e9659",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_carcass_loot.json": {
-    "mtime": 1787589983.257478,
-    "ast_hash": "7c42cefc0f12fe6f71c8551ddffcd1e1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_cut_1_drop.json": {
-    "mtime": 1787589983.257478,
-    "ast_hash": "068e56a07cfbb1230a0309c2453ce41d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_cut_2_drop.json": {
-    "mtime": 1787589983.2584977,
-    "ast_hash": "8a8fc26f56b8b596dd8aca7281d45531",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_cut_3_drop.json": {
-    "mtime": 1787589983.2584977,
-    "ast_hash": "e18f9f2798030fb7a5ab0098a5938f5e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_fur_drop.json": {
-    "mtime": 1787589983.2584977,
-    "ast_hash": "863c42ef5905f70385f09f03e26de814",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_head.json": {
-    "mtime": 1787589983.2584977,
-    "ast_hash": "ac568ffc3a59b7533f940d1e7b295685",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/sniffer_head_drop.json": {
-    "mtime": 1787589983.2584977,
-    "ast_hash": "398d1f028d43a3e216824ccb772cfdc4",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.25.md": {
@@ -8207,81 +7597,6 @@
   "src/main/resources/assets/slaughter_hide/models/block/turtle_head_mount.json": {
     "mtime": 1787589982.971997,
     "ast_hash": "acb6933fdd12c5002ebff668b57151f6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/drained_turtle_carcass.json": {
-    "mtime": 1787589983.2394276,
-    "ast_hash": "470c28d2299447039586a7f70fb544a9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/empty_turtle_shell.json": {
-    "mtime": 1787589983.2409294,
-    "ast_hash": "3ea0bf1f29dbf1fe79ee57ef20f06c7e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_carcass.json": {
-    "mtime": 1787589983.2595098,
-    "ast_hash": "600b8d8e26cd161b3f43e29174a71ecd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_carcass_loot.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "7b1bfd6b038c1a8ab4569d418f432caf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_1_drop.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "00d74c092e4c7fdb9fb98d7961f04fc9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_2_drop.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "d0aa2b433cb99a543cd4e49cca7173b5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_3_drop.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "1a94f8ff7fa4eb1d3f01baa2d6ccd61e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_4_drop.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "a258dc7c43a716790c814e5ccdacc962",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_5_drop.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "b457ef8530a17cb7513d6bedce3291e8",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_6_drop.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "0d77e0a08bf51f1f3b20c98017ca9082",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_cut_7_drop.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "196721c9e6f6477e84f11b575b93852a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_head.json": {
-    "mtime": 1787589983.2605062,
-    "ast_hash": "5fc12cd2d8f250c2e0b0a5e13ed6f3ac",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_head_drop.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "269a640a65b9cde7f98ce47acc2d7f33",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_head_mount.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "b394e9a7d5e764df275d0f9b6e9351a0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/turtle_leg_drop.json": {
-    "mtime": 1787589983.2620087,
-    "ast_hash": "bb7c6f0a1744d280f447e92629d03f10",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.26.md": {
@@ -11549,91 +10864,6 @@
     "ast_hash": "edab88ebc3d03ffd8c5cb9729ac22f51",
     "semantic_hash": ""
   },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_carcass.json": {
-    "mtime": 1787590251.6247263,
-    "ast_hash": "e5691a00e881c912f2386750b9f66847",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_carcass_loot.json": {
-    "mtime": 1787590251.6247263,
-    "ast_hash": "6d4d1f2a439b89e5e31456f03b3564e5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_cut_1_drop.json": {
-    "mtime": 1787590251.6247263,
-    "ast_hash": "c80a34951c84e0b9dc5c6988247c7767",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_cut_2_drop.json": {
-    "mtime": 1787590251.6247263,
-    "ast_hash": "7ec1f46f8c8b19f3420ba2290d1f13a9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_cut_3_drop.json": {
-    "mtime": 1787590251.6247263,
-    "ast_hash": "c07bfb3bdc876b47cd3274288bf9cf61",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_cut_4_drop.json": {
-    "mtime": 1787590251.6247263,
-    "ast_hash": "d87fadfe8e131c7e8e013636365b34ae",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_head.json": {
-    "mtime": 1787590251.6263344,
-    "ast_hash": "53c03a9af03b6569f3ae21f956b92467",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_head_drop.json": {
-    "mtime": 1787590251.6263344,
-    "ast_hash": "be857ec44c35477e1ee3b75e3d8c5863",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/endermite_head_mount.json": {
-    "mtime": 1787590251.6263344,
-    "ast_hash": "c90688d6722d71e4d8fbde9d11dcad0d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/silverfish_carcass.json": {
-    "mtime": 1787590251.6263344,
-    "ast_hash": "91768d63814b24b3e5888cba972595b9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/silverfish_carcass_loot.json": {
-    "mtime": 1787590251.6263344,
-    "ast_hash": "23b24703f5f4b11a584497afab1afde9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/silverfish_cut_1_drop.json": {
-    "mtime": 1787590251.6263344,
-    "ast_hash": "d36b0eea62828541a32cb217ab667227",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/silverfish_cut_2_drop.json": {
-    "mtime": 1787590251.6277952,
-    "ast_hash": "ebc2d9b4295f92d4bec19dc316d8621a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/silverfish_cut_3_drop.json": {
-    "mtime": 1787590251.6277952,
-    "ast_hash": "1ec224871fe707925db56b28796d2d1e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/silverfish_head.json": {
-    "mtime": 1787590251.6277952,
-    "ast_hash": "40574a58c05c002053fc0f206f9a15e7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/silverfish_head_drop.json": {
-    "mtime": 1787590251.6277952,
-    "ast_hash": "af3b9c375b292c04706722849e24208b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/loot_tables/blocks/silverfish_head_mount.json": {
-    "mtime": 1787590251.6277952,
-    "ast_hash": "ee1a86bc27a7b6601e9b659957a8fb22",
-    "semantic_hash": ""
-  },
   "docs/curseforge/versions/0.0.0-beta.31.md": {
     "mtime": 1787590251.9408078,
     "ast_hash": "e45729ecaf01bfb81e8dee7c81ce79bd",
@@ -11932,6 +11162,1706 @@
   "src/main/resources/assets/slaughter_hide/textures/item/rope.png": {
     "mtime": 1787590251.673774,
     "ast_hash": "43bf315f6325104d4f8c5a1d17c0b81c",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/BasinBlock.java": {
+    "mtime": 1787615218.0698595,
+    "ast_hash": "1cdb2dddd91bef5ef9e0d8f02143deeb",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/BrainBlock.java": {
+    "mtime": 1787613337.129252,
+    "ast_hash": "1a4622efaf08517c0c5fb37d9d9df47d",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/CashRegisterBlock.java": {
+    "mtime": 1787613591.3708966,
+    "ast_hash": "9ed346fd414880f68bd3e6d6d38857b2",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/JarBlock.java": {
+    "mtime": 1787614014.7761922,
+    "ast_hash": "7e28d08c7df83a04e1313282707b8423",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/MetalTrayBlock.java": {
+    "mtime": 1787614160.4414806,
+    "ast_hash": "29d6b3581981eee88ea4eea0d34901d6",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/SkinRackBlock.java": {
+    "mtime": 1787613779.181096,
+    "ast_hash": "6c573c0c38a2688ab2c0bbafd7e4c242",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/WoodenSpitRotisserieBlock.java": {
+    "mtime": 1787613937.4846957,
+    "ast_hash": "8b57d461f0df7f1b729deae67d7ae775",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/handler/BasinInteractionHandler.java": {
+    "mtime": 1787613257.2754428,
+    "ast_hash": "85d1f9632c69a3ebdc2eb4a7a6aa9d3e",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/handler/BasinUpdateTickHandler.java": {
+    "mtime": 1787615101.5323887,
+    "ast_hash": "bc8d854da06176a764d5a2270db524d2",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/handler/BrainAttractHandler.java": {
+    "mtime": 1787615131.8531418,
+    "ast_hash": "229a503b63d4ac134ca73a84669b6f53",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/handler/CashRegisterInteractionHandler.java": {
+    "mtime": 1787615087.2449112,
+    "ast_hash": "05db71d51fe54df8a24918e4cda4d691",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/handler/JarInteractionHandler.java": {
+    "mtime": 1787615029.597929,
+    "ast_hash": "ad2b6cf881f73fb7ee7cd53fde739d3a",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/handler/SkinRackInteractionHandler.java": {
+    "mtime": 1787615003.2213237,
+    "ast_hash": "619093a1f0b8ff8d1990400922a39203",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/handler/WoodenSpitRotisserieInteractionHandler.java": {
+    "mtime": 1787615245.8106344,
+    "ast_hash": "d254a94f86cad5cc834fd6adfabeaed6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/basin.json": {
+    "mtime": 1787614365.9393032,
+    "ast_hash": "64317d439b86d369d59b2450140ac18c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/brain.json": {
+    "mtime": 1787614435.0486903,
+    "ast_hash": "c44d52b67b3234dd0975cda10bf1c2b7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/cash_register_block.json": {
+    "mtime": 1787614464.3941188,
+    "ast_hash": "9b91f1219522fda4639ed67eb23304b9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/jar.json": {
+    "mtime": 1787615299.5833664,
+    "ast_hash": "041c4d04e49cf3244be70710fde49771",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/metal_tray.json": {
+    "mtime": 1787615300.391523,
+    "ast_hash": "3334ac41bf6e08ac96619543cdd419a1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/pufferfish_carcass.json": {
+    "mtime": 1787610503.452729,
+    "ast_hash": "589f03e3be96206c26f15af190cb419b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/ravager_carcass.json": {
+    "mtime": 1787610503.4334922,
+    "ast_hash": "cee3f11689527bc41e851bc5dbb97ece",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/skin_rack.json": {
+    "mtime": 1787614549.5075767,
+    "ast_hash": "d698597f51ff034ce743fa38d21fe9a5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/wooden_spit_rotisserie.json": {
+    "mtime": 1787615299.3438134,
+    "ast_hash": "5c2e7fdfdb2038e5d70bc62fa7ae5887",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/jar.json": {
+    "mtime": 1787615300.373711,
+    "ast_hash": "84998b9ebb075f69357eafbccee2077e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/metal_tray.json": {
+    "mtime": 1787615300.4240508,
+    "ast_hash": "1f9c6fa4d70a6ffdb2efcd9b45ea7b97",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/skin_rack.json": {
+    "mtime": 1787615299.323763,
+    "ast_hash": "82d40b4c86dd41d5ccdf68081b08295a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/wooden_spit_rotisserie.json": {
+    "mtime": 1787615299.5619075,
+    "ast_hash": "0483956c00eae4d5c46d8d3b706542a3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/basin.json": {
+    "mtime": 1787614370.9841025,
+    "ast_hash": "fd7b7bbfba75d59353703b784d286fd9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/basin_0.json": {
+    "mtime": 1787614379.4376054,
+    "ast_hash": "04d1eb2aa90abfce076e1f8b98aaf967",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/basin_1.json": {
+    "mtime": 1787614386.604699,
+    "ast_hash": "96ab10f41297e596c3351c04488c8e79",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/basin_2.json": {
+    "mtime": 1787614392.6922476,
+    "ast_hash": "854967c3ed3e16eaf326d92a1d5b49e9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/basin_3.json": {
+    "mtime": 1787614408.1627593,
+    "ast_hash": "9e2b5a3fdad637aa80b92dde8aec8516",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/basin_4.json": {
+    "mtime": 1787614411.8149827,
+    "ast_hash": "50160816ff8e2a1133a4bf7b424ee1ed",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/basin_5.json": {
+    "mtime": 1787614414.9048162,
+    "ast_hash": "88a96147bcfc00f789ae4d01c28cb794",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/basin_6.json": {
+    "mtime": 1787614416.2827797,
+    "ast_hash": "4d3b6214107d34fad8a0edb7fe20f164",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/brain.json": {
+    "mtime": 1787614436.617627,
+    "ast_hash": "2ac088a4bacca46e72658488bde0f2aa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/cash_register_block.json": {
+    "mtime": 1787614465.299203,
+    "ast_hash": "8a9b195683f131f42805b342f28ae035",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar.json": {
+    "mtime": 1787615300.2939413,
+    "ast_hash": "7e8b40362c6837b72e3ee4f4f932f52c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_0.json": {
+    "mtime": 1787615300.2629654,
+    "ast_hash": "8ead3389b530f37a4a4a2b6712a31257",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_1.json": {
+    "mtime": 1787615299.958629,
+    "ast_hash": "eead930a0f000e4f1769c3dbb44eaafd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_10.json": {
+    "mtime": 1787615299.8932452,
+    "ast_hash": "0c41cbc019bda952cf7fe7544726afa3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_11.json": {
+    "mtime": 1787615299.92123,
+    "ast_hash": "88779eec1f089e0077a9163ed83172cd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_12.json": {
+    "mtime": 1787615299.6719933,
+    "ast_hash": "62a90c40d749d3a9b1507879659c39c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_13.json": {
+    "mtime": 1787615300.3341162,
+    "ast_hash": "74d5cff4434d9117306762e2969d98b6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_14.json": {
+    "mtime": 1787615300.18898,
+    "ast_hash": "c878b2c03921a8c0b2feb2ded265ba6c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_15.json": {
+    "mtime": 1787615300.1198423,
+    "ast_hash": "ada94e4ef81f6c61137a55a73033caeb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_16.json": {
+    "mtime": 1787615299.7506545,
+    "ast_hash": "fb6161933727ac62d721c953eca37da4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_17.json": {
+    "mtime": 1787615299.9845693,
+    "ast_hash": "c9d5b6e55ac5bc738b0b922277c39529",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_18.json": {
+    "mtime": 1787615300.0707974,
+    "ast_hash": "13e13fc65b84c7b509a5d4db74747529",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_2.json": {
+    "mtime": 1787615300.0376577,
+    "ast_hash": "96126d8d9276d84f7fd8def69da644fa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_3.json": {
+    "mtime": 1787615300.15276,
+    "ast_hash": "7598da0d631d32428a45d456795d9ffd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_4.json": {
+    "mtime": 1787615299.8519535,
+    "ast_hash": "7a58e1944f2b63637c7b2f2e8f41121d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_5.json": {
+    "mtime": 1787615299.7896316,
+    "ast_hash": "28e6f333b34c62f174be095529d5ab1f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_6.json": {
+    "mtime": 1787615300.2269392,
+    "ast_hash": "538020dd8aa8024520387ccb80ecc587",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_7.json": {
+    "mtime": 1787615299.7215354,
+    "ast_hash": "e552c0647e69c1397ce0a9debcd99a95",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_8.json": {
+    "mtime": 1787615299.5979362,
+    "ast_hash": "828f0c3baefcaccd4da15f2f0397aceb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jar_9.json": {
+    "mtime": 1787615299.6416466,
+    "ast_hash": "13f2790a3bfab10dbe2e81e1c4c4befc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/metal_tray.json": {
+    "mtime": 1787615300.3931396,
+    "ast_hash": "cd1261b8a9c3c959d7f2316db6625f11",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/pufferfish.json": {
+    "mtime": 1787610503.612723,
+    "ast_hash": "392286428eb43dc3da4f9f374ea1ff7b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/pufferfish_0.json": {
+    "mtime": 1787610503.4662714,
+    "ast_hash": "5f8a5700d1cfd3e7d8c1834c29c33544",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/pufferfish_1.json": {
+    "mtime": 1787610503.6461422,
+    "ast_hash": "53351e966954de7fb0d270fbba856e24",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/pufferfish_2.json": {
+    "mtime": 1787610503.6296751,
+    "ast_hash": "800ccf70682cea0f783a13692c602ba5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/ravager.json": {
+    "mtime": 1787610503.4512656,
+    "ast_hash": "8ee28d26cd79883fab95fdf117b5ea15",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack.json": {
+    "mtime": 1787614597.0435307,
+    "ast_hash": "b177361be6b4f04052a1f1a1d723cfbc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_0.json": {
+    "mtime": 1787614622.8690648,
+    "ast_hash": "509837c60c6e9389bf98d2327c86a1f7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_1.json": {
+    "mtime": 1787615298.3154643,
+    "ast_hash": "01d62a26afad5b16c35181c976e8dd9c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_10.json": {
+    "mtime": 1787615298.4520223,
+    "ast_hash": "4633a6f57506d47c51ac121a8bd4f19a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_11.json": {
+    "mtime": 1787615299.0034187,
+    "ast_hash": "fb4c55c88b28955909d31fe39b925ed4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_12.json": {
+    "mtime": 1787615299.087656,
+    "ast_hash": "62e8bb1c3abda71434bdc3283a08cad1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_13.json": {
+    "mtime": 1787615298.80444,
+    "ast_hash": "272e4a828cb08cf041df2d9458d2b667",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_14.json": {
+    "mtime": 1787615298.6746178,
+    "ast_hash": "ca7b126e5481184267cfd4879d3795d0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_15.json": {
+    "mtime": 1787615298.6293826,
+    "ast_hash": "822540cec4bf3998d6f5b7b6c4b83908",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_16.json": {
+    "mtime": 1787615298.2036843,
+    "ast_hash": "63dacc10349c53d55aa5f957ff40cf22",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_17.json": {
+    "mtime": 1787615298.8695772,
+    "ast_hash": "df7d1c1b7c419237191b22f74c843663",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_18.json": {
+    "mtime": 1787615299.036285,
+    "ast_hash": "d1b048bfbcc75c6ca6ebd1f1c3c674c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_19.json": {
+    "mtime": 1787615298.5350478,
+    "ast_hash": "d2473b16e9e308886774ef1e4fa8d9a1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_2.json": {
+    "mtime": 1787615298.9392476,
+    "ast_hash": "2278bc86f0e762f33c9da91fafc3b2ab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_20.json": {
+    "mtime": 1787615298.4948611,
+    "ast_hash": "43dbcbebda90c9b0cf45c2c789984516",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_21.json": {
+    "mtime": 1787615299.2806203,
+    "ast_hash": "fce738d886defb3d45c378e8f599ea99",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_22.json": {
+    "mtime": 1787615299.1585286,
+    "ast_hash": "ec3ca856cc1c4a880ad36db6ee2e1fdd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_23.json": {
+    "mtime": 1787615298.5883052,
+    "ast_hash": "7c96823a11c29bcede95b90d912f27e1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_24.json": {
+    "mtime": 1787615298.899487,
+    "ast_hash": "7fd8a72912955c254a685a3a06bed150",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_25.json": {
+    "mtime": 1787615298.8317082,
+    "ast_hash": "558173d14edc2a315236fbd3f4453f25",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_26.json": {
+    "mtime": 1787615298.1376176,
+    "ast_hash": "cb5113f29e8dad688bf9dd2ff3af4d82",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_27.json": {
+    "mtime": 1787615298.287105,
+    "ast_hash": "3fce34abc5655f5c965635e7cc2d1d6d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_28.json": {
+    "mtime": 1787615299.2048657,
+    "ast_hash": "602fa7aadd05f59752459db93059fa8d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_29.json": {
+    "mtime": 1787615298.7636673,
+    "ast_hash": "72dd449c2d4cd5c44258f3da54df8f8c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_3.json": {
+    "mtime": 1787615299.1185486,
+    "ast_hash": "ff64009795122cb36c96b256a62ce9bc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_30.json": {
+    "mtime": 1787615298.702141,
+    "ast_hash": "fde3406755d95b5607dfac21af0550d6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_4.json": {
+    "mtime": 1787615299.2346196,
+    "ast_hash": "f25604e1fffff8aaad4f1fcd9ffc4122",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_5.json": {
+    "mtime": 1787615298.4085248,
+    "ast_hash": "d1c10d6d3aeb182521691c991b1deda1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_6.json": {
+    "mtime": 1787615298.2466793,
+    "ast_hash": "df1726ac781471e87fa8896ed8979ba3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_7.json": {
+    "mtime": 1787615298.7336626,
+    "ast_hash": "91f2e881341e93ff861dafbc471782fa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_8.json": {
+    "mtime": 1787615298.97506,
+    "ast_hash": "113d1ed1b8c1838454cc4faff15c8855",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/skin_rack_9.json": {
+    "mtime": 1787615298.354526,
+    "ast_hash": "937b9ddd3ffe7bee612b1379e740871a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/wooden_spit_rotisserie.json": {
+    "mtime": 1787615299.5274613,
+    "ast_hash": "7be39e5c03a31dddab0f4258b8cc38ca",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/wooden_spit_rotisserie_0.json": {
+    "mtime": 1787615299.3567717,
+    "ast_hash": "fda7e287edf69cfa43cf64d663d342d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/wooden_spit_rotisserie_1.json": {
+    "mtime": 1787615299.4815419,
+    "ast_hash": "c01da0cf96bd1b45d129f8ea9fd1e6c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/wooden_spit_rotisserie_2.json": {
+    "mtime": 1787615299.4228325,
+    "ast_hash": "18b8e8473819b4909e62a515d874dad3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/brain_jar.json": {
+    "mtime": 1787615300.0904245,
+    "ast_hash": "e7a22c55ac548ffff367881158f67c72",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/end_heart_jar.json": {
+    "mtime": 1787615299.6916466,
+    "ast_hash": "1451fdb9fafb2cf33c3e5248db6d8bf0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/end_intestines_jar.json": {
+    "mtime": 1787615300.354032,
+    "ast_hash": "9d42e578e1122493b86fdc0c19777246",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/end_kidney_jar.json": {
+    "mtime": 1787615300.209156,
+    "ast_hash": "a0348656e506180edd7a2bec299ae604",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/end_liver_jar.json": {
+    "mtime": 1787615300.1360192,
+    "ast_hash": "13471e9ecf998b4108698b5b8a1198b1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/end_lung_jar.json": {
+    "mtime": 1787615300.004699,
+    "ast_hash": "1451fdb9fafb2cf33c3e5248db6d8bf0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/end_stomach_jar.json": {
+    "mtime": 1787615299.7726893,
+    "ast_hash": "b47d2d427b1195ac6f25a19a9ef74a02",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/heart_jar.json": {
+    "mtime": 1787615300.281018,
+    "ast_hash": "1451fdb9fafb2cf33c3e5248db6d8bf0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/intestines_jar.json": {
+    "mtime": 1787615299.9717388,
+    "ast_hash": "9d42e578e1122493b86fdc0c19777246",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/jar.json": {
+    "mtime": 1787615300.3190136,
+    "ast_hash": "c6a0d3d6700e0ee7fbf60e5d680f9273",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/kidney_jar.json": {
+    "mtime": 1787615300.0552068,
+    "ast_hash": "a0348656e506180edd7a2bec299ae604",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/liver_jar.json": {
+    "mtime": 1787615300.1685076,
+    "ast_hash": "13471e9ecf998b4108698b5b8a1198b1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/lung_jar.json": {
+    "mtime": 1787615299.812272,
+    "ast_hash": "1451fdb9fafb2cf33c3e5248db6d8bf0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/metal_tray.json": {
+    "mtime": 1787615300.410926,
+    "ast_hash": "e6a7d29493e9b1a3bf1527dd2f056ffa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/rotten_heart_jar.json": {
+    "mtime": 1787615300.2447834,
+    "ast_hash": "1451fdb9fafb2cf33c3e5248db6d8bf0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/rotten_intestines_jar.json": {
+    "mtime": 1787615299.737233,
+    "ast_hash": "9d42e578e1122493b86fdc0c19777246",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/rotten_kidney_jar.json": {
+    "mtime": 1787615299.6167092,
+    "ast_hash": "a0348656e506180edd7a2bec299ae604",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/rotten_liver_jar.json": {
+    "mtime": 1787615299.659635,
+    "ast_hash": "13471e9ecf998b4108698b5b8a1198b1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/rotten_lung_jar.json": {
+    "mtime": 1787615299.9373627,
+    "ast_hash": "1451fdb9fafb2cf33c3e5248db6d8bf0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/rotten_stomach_jar.json": {
+    "mtime": 1787615299.9075992,
+    "ast_hash": "b47d2d427b1195ac6f25a19a9ef74a02",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack.json": {
+    "mtime": 1787615298.5761034,
+    "ast_hash": "b14b28394cdd07b41460dacad54187ac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_bat.json": {
+    "mtime": 1787615298.3905997,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_black_horse.json": {
+    "mtime": 1787615298.3319378,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_brown_llama_skin.json": {
+    "mtime": 1787615299.2968194,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_brown_mooshroom.json": {
+    "mtime": 1787615298.9534829,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_camel.json": {
+    "mtime": 1787615298.7191603,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_chestnut_horse.json": {
+    "mtime": 1787615299.133668,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_cow.json": {
+    "mtime": 1787615298.3041794,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_creamy_horse.json": {
+    "mtime": 1787615299.249732,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_creamy_llama_skin.json": {
+    "mtime": 1787615299.1760964,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_creeper.json": {
+    "mtime": 1787615298.4243586,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_dark_brown_horse.json": {
+    "mtime": 1787615298.263472,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_dolphin.json": {
+    "mtime": 1787615298.7486117,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_donkey.json": {
+    "mtime": 1787615298.9905872,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_fox.json": {
+    "mtime": 1787615298.3730762,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_gray_horse.json": {
+    "mtime": 1787615298.4671385,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_gray_llama_skin.json": {
+    "mtime": 1787615298.6025157,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_hoglin.json": {
+    "mtime": 1787615299.0220308,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_leather.json": {
+    "mtime": 1787615298.7804556,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_mule.json": {
+    "mtime": 1787615299.1046562,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_ocelot.json": {
+    "mtime": 1787615298.8185349,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_panda.json": {
+    "mtime": 1787615298.6885464,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_pig.json": {
+    "mtime": 1787615298.6473076,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_polarbear_skin.json": {
+    "mtime": 1787615298.5106747,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_red_mooshroom.json": {
+    "mtime": 1787615298.2206073,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_salted.json": {
+    "mtime": 1787615298.8459222,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_sheep.json": {
+    "mtime": 1787615298.888883,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_snow_fox.json": {
+    "mtime": 1787615299.0533483,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_wet.json": {
+    "mtime": 1787615298.1626818,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_white_horse.json": {
+    "mtime": 1787615298.5478163,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_white_llama_skin.json": {
+    "mtime": 1787615298.9149437,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/skin_rack_zoglin.json": {
+    "mtime": 1787615299.2213416,
+    "ast_hash": "f00f2372cec88dd8e1907edb0be777ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/spit_roast.json": {
+    "mtime": 1787615299.5474584,
+    "ast_hash": "3e8b2571b7d5b0ef294beda9da06ba37",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/spit_roast_burnt_pig.json": {
+    "mtime": 1787615299.4473767,
+    "ast_hash": "c4895e40ddf9df8d7f017e5885a47224",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/spit_roast_cooked_pig.json": {
+    "mtime": 1787615299.4991422,
+    "ast_hash": "c4895e40ddf9df8d7f017e5885a47224",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/spit_roast_raw_pig.json": {
+    "mtime": 1787615299.379958,
+    "ast_hash": "c4895e40ddf9df8d7f017e5885a47224",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/stomach_jar.json": {
+    "mtime": 1787615299.8696966,
+    "ast_hash": "b47d2d427b1195ac6f25a19a9ef74a02",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/basin.json": {
+    "mtime": 1787614422.0855591,
+    "ast_hash": "2dbc782024090ea99a1957c7a0b69e11",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/brain.json": {
+    "mtime": 1787614444.0057938,
+    "ast_hash": "9320af7067d69191734228145c7744fd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/cash_register_block.json": {
+    "mtime": 1787614466.088164,
+    "ast_hash": "9eaa86fc0828bd5d3435a0fd9273b623",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/jar.json": {
+    "mtime": 1787615300.3870363,
+    "ast_hash": "fd2b5dfc57965e2e3acfbc70a07cade3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/metal_tray.json": {
+    "mtime": 1787615300.4260478,
+    "ast_hash": "196aeea05112d73c658ae0b648b0fedb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/skin_rack.json": {
+    "mtime": 1787615299.3393693,
+    "ast_hash": "edf12fb36ac5bfb2619905193a31efcd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/wooden_spit_rotisserie.json": {
+    "mtime": 1787615299.5795379,
+    "ast_hash": "72704513e2fcd1e944d08ae0adf63782",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/basin.json": {
+    "mtime": 1787614427.9240646,
+    "ast_hash": "2c225f69cd7c331f1eadb80ed602d66b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/brain.json": {
+    "mtime": 1787614445.5744793,
+    "ast_hash": "0503a6806438d9695f5753882e173970",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/cash_register_block.json": {
+    "mtime": 1787614467.4888208,
+    "ast_hash": "a273079af88afe4c1ab5344f49eee317",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_drowned_corpse.json": {
+    "mtime": 1787589983.2372067,
+    "ast_hash": "28876d58dc2d4772fb2fe48ecbb7c3b9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_enderman_carcass.json": {
+    "mtime": 1787589983.2384028,
+    "ast_hash": "c6ce779d96f9f7a1b5ad8dea2fc9bcba",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_evoker_corpse.json": {
+    "mtime": 1787589983.2384028,
+    "ast_hash": "f58ed5ceea0afc254be92179092c8aa1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_husk_corpse.json": {
+    "mtime": 1787589983.2384028,
+    "ast_hash": "66fc15fb39dd0ea61a811b8548026f14",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_piglin_brute_corpse.json": {
+    "mtime": 1787589983.2384028,
+    "ast_hash": "c2d1d525fea424eb87696294f97cd95f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_piglin_corpse.json": {
+    "mtime": 1787589983.2384028,
+    "ast_hash": "f3f2a8885bc3a401c2df202304cbedcd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_sniffer_carcass_block.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "b21e92c184a0cc2d456dd98e907ae083",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_strider_carcass.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "191e73ce591b84e4b6569efcaaf9fa41",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_turtle_carcass.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "470c28d2299447039586a7f70fb544a9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_vindicator_corpse.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "183d4bd73c61f6b68098d4d8188825d8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_witch_corpse.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "3ddc4bf834e3301f86d8a2e6662c3747",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_zombie_corpse.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "b2594283f86083ecf5cc54d22c19e5e4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drowned_carcass_loot.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "3f0adacde47ff01347fbc05883136ea7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drowned_corpse.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "fc064be3b965699bd69e47701ba67a5b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drowned_cut_1_drop.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "60e131e13d4d0d34d58266573e8f2dca",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drowned_cut_2_drop.json": {
+    "mtime": 1787589983.2394276,
+    "ast_hash": "7e1be03efffe51a920e206670fab5651",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drowned_cut_3_drop.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "9e078673722a654e08387ed840c9dc40",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drowned_head.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "edfb04603c4649e80ccfb7665c43f321",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drowned_head_drop.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "6c4f37c4a904ed58f76ceaf3db105c45",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drowned_head_mount.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "381abcfccfbfc39f48613f2c9ead1e82",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/empty_turtle_shell.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "3ea0bf1f29dbf1fe79ee57ef20f06c7e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_carcass.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "bfa8e6e3e0ff952c8f7a1e98a49bce31",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_carcass_loot.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "d1157104584b7b640cfc223895d16db9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_cut_1_drop.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "1d863dcb897338eb741472ee147a387a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_cut_2_drop.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "49c81fb8ac10b4793fb89f36c96260f2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_cut_3_drop.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "a4c739006965c24c01a4ffb565d0b365",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_cut_4_drop.json": {
+    "mtime": 1787589983.2409294,
+    "ast_hash": "400f650857acd2e50ee54fd8b5a9b0a0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_cut_5_drop.json": {
+    "mtime": 1787589983.242579,
+    "ast_hash": "ceafa87b1c3668aefc1393848f4d409d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_cut_6_drop.json": {
+    "mtime": 1787589983.242579,
+    "ast_hash": "67d1be959b2877efa60ab9e34784a5e1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_cut_7_drop.json": {
+    "mtime": 1787589983.242579,
+    "ast_hash": "d451797a176ea019ed9883c0fd66f961",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_cut_8_drop.json": {
+    "mtime": 1787589983.242579,
+    "ast_hash": "545d76e9a8968ab0cf0acf858fa63f8a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_head.json": {
+    "mtime": 1787589983.242579,
+    "ast_hash": "38c0c69ca40792b9f8ea0b5bb27f5530",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_head_drop.json": {
+    "mtime": 1787589983.242579,
+    "ast_hash": "42e1bded7d7a71991f52dcf6e2c07c5a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/enderman_head_mount.json": {
+    "mtime": 1787589983.2435775,
+    "ast_hash": "515639e6d23ca80bbaa80396c3c6f6ff",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/endermite_cut_4_drop.json": {
+    "mtime": 1787590251.6247263,
+    "ast_hash": "d87fadfe8e131c7e8e013636365b34ae",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_carcass_loot.json": {
+    "mtime": 1787589983.2448335,
+    "ast_hash": "c63bd7c6aac01ad9e0e878773becce8c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_corpse.json": {
+    "mtime": 1787589983.2448335,
+    "ast_hash": "b3e1b5c420c7b42a805d5b7658368053",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_cut_1_drop.json": {
+    "mtime": 1787589983.2448335,
+    "ast_hash": "eac2ae3df2420bb25e99b99cbb6627d9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_cut_2_drop.json": {
+    "mtime": 1787589983.2448335,
+    "ast_hash": "ae0295aaf4626bdcf7c6683a3956c7fd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_cut_3_drop.json": {
+    "mtime": 1787589983.2448335,
+    "ast_hash": "58dd0de187ea4c3c1b2b9e969b87f992",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_head.json": {
+    "mtime": 1787589983.2448335,
+    "ast_hash": "d1fa3bdecb8f1b0f453290fc95cc32ca",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_head_drop.json": {
+    "mtime": 1787589983.2463355,
+    "ast_hash": "6944ffff323a9b6837bf41022b1ad3cf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_head_mount.json": {
+    "mtime": 1787589983.2463355,
+    "ast_hash": "437581177cb5ee7b939ccfe469af4c0e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/evoker_skin_drop.json": {
+    "mtime": 1787589983.2463355,
+    "ast_hash": "7a9f9d02c3ee0edbb454b088f5a54cf3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/hanging_drained_enderman_carcass.json": {
+    "mtime": 1787589983.2463355,
+    "ast_hash": "3d49f10301c7bbed8919e8420b6919b4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/hanging_enderman_carcass.json": {
+    "mtime": 1787589983.2463355,
+    "ast_hash": "34cd1fa53e8459ac3d3e72abd6d1d125",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/husk_carcass_loot.json": {
+    "mtime": 1787589983.2463355,
+    "ast_hash": "40b7fbe16e27f408b34e23754d367ffe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/husk_corpse.json": {
+    "mtime": 1787589983.2473342,
+    "ast_hash": "1f2b2eefcead433f9eb826f54f68c4ab",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/husk_cut_1_drop.json": {
+    "mtime": 1787589983.2473342,
+    "ast_hash": "396bd452ec1c4f8e5f82cc68a2bc1175",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/husk_cut_2_drop.json": {
+    "mtime": 1787589983.2473342,
+    "ast_hash": "c3954258132a4add4f246ff9713f4a7f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/husk_cut_3_drop.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "3e219cc08e6742d30797e519f24f5621",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/husk_head.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "4b6c4f2efd7839bf98d79013893b9663",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/husk_head_drop.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "1c111b3245b439703eec5109545dc796",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/husk_head_mount.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "bb4be93c62d181a8fe92ab1d4c7f29c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/jar.json": {
+    "mtime": 1787615300.3900025,
+    "ast_hash": "7cc6b9eff7748d6811618b0e1c7d3d7d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/metal_tray.json": {
+    "mtime": 1787615300.4285934,
+    "ast_hash": "e764ada4b1ba4c483b2d29a17320fa9b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_armor_drop.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "2c2e7d8f26c5ed67b305ad7934c5f423",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_carcass_loot.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "ae1991d18dfe4f0207d0544293d0accc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_corpse.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "828024b7f57f09b30be2300bd33f0de7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_cut_1_drop.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "bb960daf7bfb6d5f22b3c205b9f3c364",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_cut_2_drop.json": {
+    "mtime": 1787589983.2484393,
+    "ast_hash": "aafa45fa2b450867eadcae9c2bc541eb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_cut_3_drop.json": {
+    "mtime": 1787589983.2499685,
+    "ast_hash": "ec981c1348e27d00f19b87cee13141cc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_head.json": {
+    "mtime": 1787589983.2499685,
+    "ast_hash": "2e22961a9e8e596ce99a24305285df90",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_head_drop.json": {
+    "mtime": 1787589983.2499685,
+    "ast_hash": "ff952426a6f39d9e90c57489fe22dd0a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_brute_head_mount.json": {
+    "mtime": 1787589983.2499685,
+    "ast_hash": "d34a7418180a053ef0940fdf5fc35dfa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_corpse.json": {
+    "mtime": 1787589983.2499685,
+    "ast_hash": "8015c03d350a3f21c951852abc097ad7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_corpse_loot.json": {
+    "mtime": 1787589983.250978,
+    "ast_hash": "0e6628605b8cd030480ec1415bf77b54",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_cut_1_drop.json": {
+    "mtime": 1787589983.250978,
+    "ast_hash": "5c0e283d4f8d36839b68c590fdf20e7f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_cut_2_drop.json": {
+    "mtime": 1787589983.250978,
+    "ast_hash": "efddb046b733a14df5e32a6efc8a9c19",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_cut_3_drop.json": {
+    "mtime": 1787589983.2519836,
+    "ast_hash": "ea8856e5c765a1cd44ed58216dcda472",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_hanging_cut_2_drop.json": {
+    "mtime": 1787589983.2519836,
+    "ast_hash": "789dd229a1e2157b18298070d7fe661a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_hanging_cut_3_drop.json": {
+    "mtime": 1787589983.2529786,
+    "ast_hash": "9c8e1cea193edb8a8b8c9445632dad14",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_head_drop.json": {
+    "mtime": 1787589983.2529786,
+    "ast_hash": "ace74a934c41a489b47d11ab538c3559",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/piglin_head_mount.json": {
+    "mtime": 1787589983.2529786,
+    "ast_hash": "c48da8c4d3471910717ab48e1f1f8edb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/ravager_body_drop.json": {
+    "mtime": 1787589983.2529786,
+    "ast_hash": "374ba647c18efdf5258d0cd7a80c6d65",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/ravager_head_drop.json": {
+    "mtime": 1787589983.2544484,
+    "ast_hash": "07c840ec0d9f7f3815cc02145f02eaee",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/ravager_leg_1_drop.json": {
+    "mtime": 1787589983.2544484,
+    "ast_hash": "ac4f8e2005eed2fb439e60d30df3301c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/ravager_leg_2_drop.json": {
+    "mtime": 1787589983.2544484,
+    "ast_hash": "682b5a9c00fbf7692e5663afb613b0b1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/ravager_leg_3_drop.json": {
+    "mtime": 1787589983.2544484,
+    "ast_hash": "4412fb0e048714896e9e4bb20e9b3734",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/ravager_leg_4_drop.json": {
+    "mtime": 1787589983.255466,
+    "ast_hash": "fbb89244c53b2df767e1f3e3d73e56c3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/skeleton_corpse.json": {
+    "mtime": 1787589983.2559676,
+    "ast_hash": "bb622665d4c033d2f61f230fdb9d4774",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/skeleton_corpse_loot.json": {
+    "mtime": 1787589983.2559676,
+    "ast_hash": "592373a22ada63b8c798c82c3e4f5e5f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/skeleton_cut_1_drop.json": {
+    "mtime": 1787589983.257478,
+    "ast_hash": "044cc2aead5affd03f80e723d6f1f2b5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/skeleton_cut_2_drop.json": {
+    "mtime": 1787589983.257478,
+    "ast_hash": "1472e195b2d7b3963424ad01bc2dafb9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/skeleton_cut_3_drop.json": {
+    "mtime": 1787589983.257478,
+    "ast_hash": "91453d3d0b55c2cfbdbd7ec0b729795d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/skeleton_head_drop.json": {
+    "mtime": 1787589983.257478,
+    "ast_hash": "44909e8160ec9c716b697b6f6e9a528f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/skeleton_head_mount.json": {
+    "mtime": 1787589983.257478,
+    "ast_hash": "77ecb6d24aa245f221e6ad462050e9b5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/skin_rack.json": {
+    "mtime": 1787615299.3419278,
+    "ast_hash": "a0dabc1d597af43aee3860c5155b6381",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/sniffer_carcass_block.json": {
+    "mtime": 1787589983.257478,
+    "ast_hash": "415e97d99d3a0c10459bba6e523e9659",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/sniffer_carcass_loot.json": {
+    "mtime": 1787589983.257478,
+    "ast_hash": "7c42cefc0f12fe6f71c8551ddffcd1e1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/sniffer_cut_1_drop.json": {
+    "mtime": 1787589983.257478,
+    "ast_hash": "068e56a07cfbb1230a0309c2453ce41d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/sniffer_cut_2_drop.json": {
+    "mtime": 1787589983.2584977,
+    "ast_hash": "8a8fc26f56b8b596dd8aca7281d45531",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/sniffer_cut_3_drop.json": {
+    "mtime": 1787589983.2584977,
+    "ast_hash": "e18f9f2798030fb7a5ab0098a5938f5e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/sniffer_fur_drop.json": {
+    "mtime": 1787589983.2584977,
+    "ast_hash": "863c42ef5905f70385f09f03e26de814",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/sniffer_head.json": {
+    "mtime": 1787589983.2584977,
+    "ast_hash": "ac568ffc3a59b7533f940d1e7b295685",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/sniffer_head_drop.json": {
+    "mtime": 1787589983.2584977,
+    "ast_hash": "398d1f028d43a3e216824ccb772cfdc4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/strider_carcass.json": {
+    "mtime": 1787589983.2584977,
+    "ast_hash": "c60d52ef3b8292f808658b74ab0afe6c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/strider_carcass_loot.json": {
+    "mtime": 1787589983.2595098,
+    "ast_hash": "41ac6659aa8ad34744e9996e488a0cd7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/strider_cut_1_drop.json": {
+    "mtime": 1787589983.2595098,
+    "ast_hash": "2710d330f276098f169cc1b6f7ec2682",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/strider_cut_2_drop.json": {
+    "mtime": 1787589983.2595098,
+    "ast_hash": "fa1da3fd5145f8fc45797299295a9bae",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/strider_cut_3_drop.json": {
+    "mtime": 1787589983.2595098,
+    "ast_hash": "9a41ecd33869593147f1887995a15395",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_carcass.json": {
+    "mtime": 1787589983.2595098,
+    "ast_hash": "600b8d8e26cd161b3f43e29174a71ecd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_carcass_loot.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "7b1bfd6b038c1a8ab4569d418f432caf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_cut_1_drop.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "00d74c092e4c7fdb9fb98d7961f04fc9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_cut_2_drop.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "d0aa2b433cb99a543cd4e49cca7173b5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_cut_3_drop.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "1a94f8ff7fa4eb1d3f01baa2d6ccd61e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_cut_4_drop.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "a258dc7c43a716790c814e5ccdacc962",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_cut_5_drop.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "b457ef8530a17cb7513d6bedce3291e8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_cut_6_drop.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "0d77e0a08bf51f1f3b20c98017ca9082",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_cut_7_drop.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "196721c9e6f6477e84f11b575b93852a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_head.json": {
+    "mtime": 1787589983.2605062,
+    "ast_hash": "5fc12cd2d8f250c2e0b0a5e13ed6f3ac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_head_drop.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "269a640a65b9cde7f98ce47acc2d7f33",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_head_mount.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "b394e9a7d5e764df275d0f9b6e9351a0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/turtle_leg_drop.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "bb7c6f0a1744d280f447e92629d03f10",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_corpse.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "d1980f65e0c0271a7bbf3d88a06ad7eb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_corpse_loot.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "5d8175b5baf837ed3675e74aff21593d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_cut_1_drop.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "21cbbfab0f3b59b493c51d921cdc10c1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_cut_2_drop.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "7316980841a647274395c763fff2dea2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_cut_3_drop.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "8447756553d959bac1185db612e827e8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_head.json": {
+    "mtime": 1787589983.2620087,
+    "ast_hash": "315f5f9b28093059dd7a325e000910e9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_head_drop.json": {
+    "mtime": 1787589983.2635446,
+    "ast_hash": "83d07c40cefb60c12050dbf6a614d90e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_head_mount.json": {
+    "mtime": 1787589983.2635446,
+    "ast_hash": "21a548b20e49936312bcf1ab337d363f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/vindicator_skin_drop.json": {
+    "mtime": 1787589983.2635446,
+    "ast_hash": "1a780c09b062c6522819e7e4b0115353",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_corpse.json": {
+    "mtime": 1787589983.2635446,
+    "ast_hash": "5ecc99dacf9078ef5c11e9db6a9a5d33",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_corpse_loot.json": {
+    "mtime": 1787589983.2635446,
+    "ast_hash": "6685d898e59206690e3138687fafadb6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_cut_1_drop.json": {
+    "mtime": 1787589983.2635446,
+    "ast_hash": "179d2a6ed6a23e35e2a3f8dcb0d49cfa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_cut_2_drop.json": {
+    "mtime": 1787589983.2635446,
+    "ast_hash": "55e6a8480974026fa276a0f837174e40",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_cut_3_drop.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "7aa4e7709149aad9e99e9726f5967734",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_head.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "6a7ebfc63282a8135ffa7a9bad801f09",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_head_drop.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "3e0bd00b224d97416b522c7918e1751a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_head_mount.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "00e59597c20065152a3b5ee6d937d345",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/witch_skin_drop.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "b04f57eb9c06d2b776deae83b221c118",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/wooden_spit_rotisserie.json": {
+    "mtime": 1787615299.581048,
+    "ast_hash": "9dfe5cfd931fef445a9ca311ed86d904",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/zombie_carcass_loot.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "46d8bfb1aa40f4b379dbc21c66ada409",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/zombie_corpse.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "03a8ac55d9d23c7f57270520772e09c8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/zombie_cut_1_drop.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "7f637844f4c51473a90c6f219f34b6ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/zombie_cut_2_drop.json": {
+    "mtime": 1787589983.2647872,
+    "ast_hash": "4e9d98ced631b79c4b56dd4443604763",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/zombie_cut_3_drop.json": {
+    "mtime": 1787589983.2662895,
+    "ast_hash": "a300ecd05b2f9bcf8d34b18ca3048267",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/zombie_head_drop.json": {
+    "mtime": 1787589983.2662895,
+    "ast_hash": "4878b501d04c4110a6cc5b805d7f093f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/zombie_head_mount.json": {
+    "mtime": 1787589983.2662895,
+    "ast_hash": "1e56ea98b061e8db0edaa090b035a5ce",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.32.md": {
+    "mtime": 1787619605.1375918,
+    "ast_hash": "fbca66c375ebeee0b42da1ca2886522f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/black_horse_skin.png": {
+    "mtime": 1787615298.3447404,
+    "ast_hash": "6af67858432b546f6d7764ddb1992663",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/brain_jar.png": {
+    "mtime": 1787615300.1074271,
+    "ast_hash": "2c4784f609812baa4ede1b1a0221e003",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/brown_llama_skin.png": {
+    "mtime": 1787615299.3098352,
+    "ast_hash": "90d03947fe61270786d2049de1bc121f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/brown_mooshroom_skin.png": {
+    "mtime": 1787615298.965338,
+    "ast_hash": "51458e813d84a87d752cced6064fe0d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/chestnut_horse_skin.png": {
+    "mtime": 1787615299.1442852,
+    "ast_hash": "b410cd3b3d4fec9bed60a708f2709a1b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/cow_skin.png": {
+    "mtime": 1787615298.313956,
+    "ast_hash": "2cc1767b6149205fd6991ee39a89c2b0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/creamy_horse_skin.png": {
+    "mtime": 1787615299.2646897,
+    "ast_hash": "92ac5e0a1c2b9862cf6d5085d7a78935",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/creamy_llama_skin.png": {
+    "mtime": 1787615299.1937892,
+    "ast_hash": "f04686984d667f3a644abc3b2171b95a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/creeper_skin.png": {
+    "mtime": 1787615298.4397209,
+    "ast_hash": "0925ef3948f6e7e195c6a536f9064e86",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/dark_brown_horse_skin.png": {
+    "mtime": 1787615298.2745893,
+    "ast_hash": "591bd43c5a1fa36a89c0aba721db70da",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/end_organ_jar.png": {
+    "mtime": 1787615299.7063,
+    "ast_hash": "89324e3635c0ddbcf6c8c2d385c597de",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/end_organ_jar_2.png": {
+    "mtime": 1787615300.0224674,
+    "ast_hash": "a4ce9c0f51bb2d268c73ec280c183995",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/gray_horse_skin.png": {
+    "mtime": 1787615298.4812875,
+    "ast_hash": "68b465b3eb2600d73d5f489d2ae31f05",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/gray_llama_skin.png": {
+    "mtime": 1787615298.6168802,
+    "ast_hash": "a7e4707bfa53c8645facb90694fe2cfe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/leather_rack.png": {
+    "mtime": 1787615298.7910552,
+    "ast_hash": "a732d1a567ae30eeefeff22f3217f8c8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/organ_jar.png": {
+    "mtime": 1787615299.881073,
+    "ast_hash": "b999319b277bfd7197652d09fdab0e29",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/organ_jar_2.png": {
+    "mtime": 1787615299.8351123,
+    "ast_hash": "7c30be1b0e74d0e3d9f9de9b8df43ca8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/pig_skin.png": {
+    "mtime": 1787615298.6606452,
+    "ast_hash": "472e55181aa301cd6e4ea6b0ea4ad39a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/polarbear_skin.png": {
+    "mtime": 1787615298.5233033,
+    "ast_hash": "4b75d201df353da0e7106b0d07a907da",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/pufferfish.png": {
+    "mtime": 1787610503.5972292,
+    "ast_hash": "23e3083599533239b62183ab729bc341",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/red_mooshroom_skin.png": {
+    "mtime": 1787615298.2349927,
+    "ast_hash": "df3e939875b10dd299003a0c9bbc348e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/rotten_organ_jar.png": {
+    "mtime": 1787615299.6267698,
+    "ast_hash": "62506fc09c5e802b3218e74493154813",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/rotten_organ_jar_2.png": {
+    "mtime": 1787615299.9471357,
+    "ast_hash": "0693256b9becb2c2fcf7b2a7b6a8f0ac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/salted_skin.png": {
+    "mtime": 1787615298.8564012,
+    "ast_hash": "f22e9dee6b20eec698e657bcd3ec4e13",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/skin_rack.png": {
+    "mtime": 1787615298.1916544,
+    "ast_hash": "186629a803aa551f50cbf435f0883442",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/snow_fox_skin.png": {
+    "mtime": 1787615299.0713775,
+    "ast_hash": "1e88a38ff5575ff84241cd7c5d6c0746",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/spit_roast.png": {
+    "mtime": 1787615299.4077785,
+    "ast_hash": "ee0822e2414350f048a52a6b6b00e9fe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/spit_roast_pig.png": {
+    "mtime": 1787615299.392136,
+    "ast_hash": "cd8b9f0b83bb70f7c259133201e1d292",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/spit_roast_pig_burnt.png": {
+    "mtime": 1787615299.4590673,
+    "ast_hash": "1821efd937948d93398d77cd3285d4cd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/spit_roast_pig_cooked.png": {
+    "mtime": 1787615299.5137146,
+    "ast_hash": "a9d660d4cac8354b84c4225b2a6382ee",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wet_skin.png": {
+    "mtime": 1787615298.1769452,
+    "ast_hash": "29dd785a126609ef7c5d060c85a3a4ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/white_horse_skin.png": {
+    "mtime": 1787615298.5604608,
+    "ast_hash": "d24fba4c5801fc0842347ea54b8d4ebf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/white_llama_skin.png": {
+    "mtime": 1787615298.9259017,
+    "ast_hash": "49fd922b29d351b4acb933a45cc925d9",
     "semantic_hash": ""
   }
 }
