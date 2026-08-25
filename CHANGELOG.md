@@ -1,6 +1,6 @@
 # Changelog — Slaughter & Hide
 
-## [Unreleased]
+## [0.0.0-beta.32] - 2026-08-25
 
 ### Add
 
