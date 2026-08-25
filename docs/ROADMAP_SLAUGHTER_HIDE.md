@@ -2,6 +2,16 @@
 
 > Documento vivo. Se actualiza según avanza el port. Ver `docs/WORKFLOW_SLAUGHTER_HIDE_26-2.md` para el flujo operativo del repo.
 
+## 🎯 SIGUIENTE PASO (actualizado 2026-08-25, fin de sesión)
+
+**Fase 3.4b2b — Batch B2: ~16 bloques con GUI completa.** Es lo único de la Fase 3.4 que queda por triar/planificar en detalle antes de delegar: `Basin`... no, ya hecho — quedan `Freezer`, `Meatgrinder`, `Pestleandmortar`, `Taxidermytable` (las 4 con Menu+Screen real, lo más complejo) y el subsistema de sangre visible (`Blood`+`InfectedBlood` fluido custom, `Bloodgrate`+`Bloodpuddle`). Ver detalle completo en Fase 3.4b2b más abajo.
+
+**Antes de delegar nada de eso, dos cosas pendientes de una sesión anterior que conviene revisar primero** (bajo riesgo, alto valor, no se ha hecho todavía por falta de tiempo, no por estar bloqueadas):
+1. `Irongolem`+`arms`/`body`/`head`/`legs` (5 bloques) — mecánica bespoke tipo Ravager (`IronGolemCutUpProcedure`, 2044 líneas, corte + reensamblaje vía `RepairgolemProcedure`). Igual que Ravager: decidir si merece un port completo dedicado o se documenta como limitación permanente.
+2. Verificar en cliente real (`runClient`, **pedir permiso explícito al usuario antes de lanzarlo**, incidente ya documentado en Fase 3.4b1) que el fix de `loot_tables/`→`loot_table/` (commit `45ee135`) realmente hace que los mobs humanoides/especiales dropeen contenido al despiezarlos — nunca se ha probado en juego, solo verificado a nivel de archivos.
+
+**No urgente pero pendiente**: huecos menores documentados en Fase 3 (Rope real con tensado progresivo, texturas propias por tier de herramienta en vez de placeholders, recetas de crafteo huérfanas del MCreator original).
+
 ## Contexto y tamaño real del mod original
 
 `butchery-5.2-neoforge-26.1.2.jar` está generado con [MCreator](https://mcreator.net/) (paquete `net.mcreator.butchery`). No hay fuente pública — solo el `.jar` compilado. Inventario extraído directamente del jar:
