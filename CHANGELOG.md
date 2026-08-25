@@ -1,5 +1,17 @@
 # Changelog — Slaughter & Hide
 
+## [Unreleased]
+
+### Add
+
+- **Mecanismo de corte real para los 9 mobs humanoides con corpse** (`drowned`, `evoker`, `husk`, `piglin`, `piglin_brute`, `skeleton`, `vindicator`, `witch`, `zombie`) — hasta ahora `CorpseBlock` no tenía ninguna lógica de despiece (clic derecho abría un cofre vacío heredado de MCreator, vestigial). Nuevo `CorpseInteractionHandler` con 8 etapas: cabeza → piel → 3 cortes (loot tables por mob, ya existentes) → 3 órganos (`organs_drop_1/2/3`, tabla compartida entre los 9 mobs). `CorpseBlock`/`CorpseBlockEntity` ahora llevan el `CarcassDefinition` del mob, igual que el sistema de carcasas de animales.
+- **12 ítems de órgano nuevos** (`heart`, `intestines`, `kidney`, `liver`, `lungs`, `stomach` + variantes `rotten_`) con modelo/textura/lang — nunca se habían registrado pese a que las loot tables de corpse ya los referenciaban desde antes.
+- `CorpseBlockEntity` reescrito eliminando el contenedor vestigial de 9 slots (`Container`/`WorldlyContainer`/`MenuProvider`/`ChestMenu`) que secuestraba cualquier clic derecho — mismo patrón ya aplicado a `CarcassBlockEntity`.
+
+### Delegación (nota de proceso)
+
+Implementado con OpenCode Go tras varios intentos fallidos con distintos modelos: `ox-alpha-free` se colgó 4+ horas sin salida; `muse-spark-1.2-contributor` falló 2 veces de forma reproducible con un bug de la integración (`tool_search` mal formado, además dejando el historial de sesión "envenenado" e impidiendo reanudar con `-c`). Terminado con éxito por `mimo-v2.5`. Catálogo de modelos actualizado con ambos hallazgos en `codex-docs/reference/opencode-go-models/INDEX.md`.
+
 ## [0.0.0-beta.32] - 2026-08-25
 
 ### Add

@@ -698,6 +698,20 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_CREEPER_STEAK = item("raw_creeper_steak", Item::new);
     public static final DeferredItem<Item> RAW_CREEPER_LEG = item("raw_creeper_leg", Item::new);
 
+    // Organs (shared corpse drops + rotten variants)
+    public static final DeferredItem<Item> HEART = item("heart", Item::new);
+    public static final DeferredItem<Item> INTESTINES = item("intestines", Item::new);
+    public static final DeferredItem<Item> KIDNEY = item("kidney", Item::new);
+    public static final DeferredItem<Item> LIVER = item("liver", Item::new);
+    public static final DeferredItem<Item> LUNGS = item("lungs", Item::new);
+    public static final DeferredItem<Item> STOMACH = item("stomach", Item::new);
+    public static final DeferredItem<Item> ROTTEN_HEART = item("rotten_heart", Item::new);
+    public static final DeferredItem<Item> ROTTEN_INTESTINES = item("rotten_intestines", Item::new);
+    public static final DeferredItem<Item> ROTTEN_KIDNEY = item("rotten_kidney", Item::new);
+    public static final DeferredItem<Item> ROTTEN_LIVER = item("rotten_liver", Item::new);
+    public static final DeferredItem<Item> ROTTEN_LUNGS = item("rotten_lungs", Item::new);
+    public static final DeferredItem<Item> ROTTEN_STOMACH = item("rotten_stomach", Item::new);
+
     // Basin, Brain, Cash Register, Skin Rack, Wooden Spit Rotisserie, Jar, Metal Tray (Butchery blocks)
     public static final DeferredItem<Item> BASIN = blockItem("basin", new Item.Properties());
     public static final DeferredItem<Item> BRAIN = blockItem("brain", new Item.Properties());

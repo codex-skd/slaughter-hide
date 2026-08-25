@@ -266,7 +266,7 @@ public final class ModBlocks {
         String mob = definition.mobId();
         if (HAS_CORPSE_ASSETS.contains(mob)) {
             DeferredBlock<CorpseBlock> corpse = register(mob + "_corpse",
-                    props -> new CorpseBlock(props, definition.corpseShapes()));
+                    props -> new CorpseBlock(props, definition, definition.corpseShapes()));
             CORPSE.put(mob, corpse);
         }
     }

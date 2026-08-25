@@ -1,12 +1,7 @@
 package com.skd.slaughterhide.block;
 
 import com.skd.slaughterhide.CarcassDefinition;
-import com.skd.slaughterhide.init.ModBlockEntities;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.NonNullList;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -16,11 +11,9 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -29,24 +22,41 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.function.Function;
 
 /**
- * Generic corpse block for humanoid mobs. Uses a container-based BlockEntity
- * to store organs during the butchering process.
+ * Generic corpse block for humanoid mobs. Uses a minimal BlockEntity for
+ * client sync; progression is encoded in the {@code blockstate} property.
  */
-public class CorpseBlock extends Block implements net.minecraft.world.level.block.EntityBlock {
+public class CorpseBlock extends Block implements EntityBlock {
 
     public static final net.minecraft.world.level.block.state.properties.EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
-    /** 0 = fresh, 1 = hanging */
-    public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
+    /** 0 = lying/fresh, 1 = hanging (ready to cut) */
+    public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 9);
+
+    /** Cutting stages: 1 = hanging, then 2..9 are progressive cuts. */
+    public static final int STAGE_HANGING = 1;
+    public static final int STAGE_HEAD_CUT = 2;
+    public static final int STAGE_SKINNED = 3;
+    public static final int STAGE_CUT_1 = 4;
+    public static final int STAGE_CUT_2 = 5;
+    public static final int STAGE_CUT_3 = 6;
+    public static final int STAGE_ORGANS_1 = 7;
+    public static final int STAGE_ORGANS_2 = 8;
+    public static final int STAGE_ORGANS_3 = 9;
 
     private final java.util.function.Function<BlockState, VoxelShape> shapes;
+    private final CarcassDefinition definition;
 
-    public CorpseBlock(BlockBehaviour.Properties properties, java.util.function.Function<BlockState, VoxelShape> shapes) {
+    public CorpseBlock(BlockBehaviour.Properties properties, CarcassDefinition definition, java.util.function.Function<BlockState, VoxelShape> shapes) {
         super(properties.sound(SoundType.HONEY_BLOCK).strength(1.0f, 10.0f).noOcclusion()
                 .isRedstoneConductor((bs, br, bp) -> false));
+        this.definition = definition;
         this.shapes = shapes;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(BLOCKSTATE, 0));
+    }
+
+    public CarcassDefinition getDefinition() {
+        return definition;
     }
 
     @Override
@@ -84,6 +94,8 @@ public class CorpseBlock extends Block implements net.minecraft.world.level.bloc
 
     @Override
     public net.minecraft.world.level.block.entity.BlockEntity newBlockEntity(net.minecraft.core.BlockPos pos, BlockState state) {
-        return new com.skd.slaughterhide.block.entity.CorpseBlockEntity(pos, state);
+        com.skd.slaughterhide.block.entity.CorpseBlockEntity entity = new com.skd.slaughterhide.block.entity.CorpseBlockEntity(pos, state);
+        entity.remember(definition);
+        return entity;
     }
 }

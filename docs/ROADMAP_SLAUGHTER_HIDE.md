@@ -2,13 +2,20 @@
 
 > Documento vivo. Se actualiza según avanza el port. Ver `docs/WORKFLOW_SLAUGHTER_HIDE_26-2.md` para el flujo operativo del repo.
 
-## 🎯 SIGUIENTE PASO (actualizado 2026-08-25, fin de sesión)
+## 🎯 SIGUIENTE PASO (actualizado 2026-08-25, sesión "corte de corpses")
 
-**Fase 3.4b2b — Batch B2: ~16 bloques con GUI completa.** Es lo único de la Fase 3.4 que queda por triar/planificar en detalle antes de delegar: `Basin`... no, ya hecho — quedan `Freezer`, `Meatgrinder`, `Pestleandmortar`, `Taxidermytable` (las 4 con Menu+Screen real, lo más complejo) y el subsistema de sangre visible (`Blood`+`InfectedBlood` fluido custom, `Bloodgrate`+`Bloodpuddle`). Ver detalle completo en Fase 3.4b2b más abajo.
+**Verificar en cliente real (con permiso del usuario) el mecanismo de corte de corpses recién implementado** — matar un zombie/piglin/etc., colgarlo, clic con cleaver/skinning knife 8 veces y confirmar que suelta cabeza→piel→3 cortes→3 órganos y el bloque desaparece al final. Nunca probado en juego, solo compilado. Si funciona, es un buen momento para bump de versión + CurseForge (siguiendo el mismo workflow de sesiones anteriores).
 
-**Antes de delegar nada de eso, dos cosas pendientes de una sesión anterior que conviene revisar primero** (bajo riesgo, alto valor, no se ha hecho todavía por falta de tiempo, no por estar bloqueadas):
-1. `Irongolem`+`arms`/`body`/`head`/`legs` (5 bloques) — mecánica bespoke tipo Ravager (`IronGolemCutUpProcedure`, 2044 líneas, corte + reensamblaje vía `RepairgolemProcedure`). Igual que Ravager: decidir si merece un port completo dedicado o se documenta como limitación permanente.
-2. Verificar en cliente real (`runClient`, **pedir permiso explícito al usuario antes de lanzarlo**, incidente ya documentado en Fase 3.4b1) que el fix de `loot_tables/`→`loot_table/` (commit `45ee135`) realmente hace que los mobs humanoides/especiales dropeen contenido al despiezarlos — nunca se ha probado en juego, solo verificado a nivel de archivos.
+**Hallazgos de esta sesión ya resueltos** (no repetir):
+1. ✅ **Corte de corpses humanoides implementado** (los 9 mobs: drowned, evoker, husk, piglin, piglin_brute, skeleton, vindicator, witch, zombie) — antes no tenían ninguna lógica de despiece. Ver CHANGELOG [Unreleased].
+2. ✅ **Ramas de GitLab corregidas**: `neo_version` llevaba tiempo en `26.2.0.57` pero se seguía commiteando en la rama `neoforge-26.2.0.45-beta` (nunca se creó la rama nueva cuando se bumpeó, mucho antes de esta sesión). Creadas `minecraft/26.2/neoforge-26.2.0.57/production` + `/main`, documentación corregida. **A partir de ahora trabajar en la rama `neoforge-26.2.0.57`**, la vieja queda como histórica.
+3. ✅ **Catálogo `opencode-go-models/INDEX.md` corregido tras usarlo mal una vez** — recordar SIEMPRE consultarlo antes de elegir modelo de OpenCode Go (no improvisar por precio/memoria propia).
+
+**Pendiente de sesiones anteriores, todavía sin hacer** (bajo riesgo, alto valor):
+1. `Irongolem`+`arms`/`body`/`head`/`legs` (5 bloques) — mecánica bespoke tipo Ravager (`IronGolemCutUpProcedure`, 2044 líneas, corte + reensamblaje vía `RepairgolemProcedure`). Decidir si merece un port completo dedicado o se documenta como limitación permanente.
+2. **Fase 3.4b2b — Batch B2 restante**: `Freezer`, `Meatgrinder`, `Pestleandmortar`, `Taxidermytable` (GUI real) + subsistema de sangre visible (`Blood`/`InfectedBlood` fluido custom, `Bloodgrate`/`Bloodpuddle`). Ver detalle más abajo.
+
+**Descubierto hoy, aún sin auditar**: al revisar en cliente real se vio que **~68% de los ítems del mod (285 de 416) no tienen traducción** (muestran la clave cruda `item.slaughter_hide.xxx`) y varios ítems como `cooked_sirloin_steak` no tienen ningún asset (ni modelo ni textura) pese a estar registrados — hueco preexistente de todo el rollout de los 74 mobs, no de esta sesión. Sin auditar en profundidad ni priorizado todavía.
 
 **No urgente pero pendiente**: huecos menores documentados en Fase 3 (Rope real con tensado progresivo, texturas propias por tier de herramienta en vez de placeholders, recetas de crafteo huérfanas del MCreator original).
 
