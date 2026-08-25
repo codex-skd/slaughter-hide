@@ -83,7 +83,7 @@ El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mo
 ## Rama
 
 ```
-minecraft/26.2/neoforge-26.2.0.45-beta/production
+minecraft/26.2/neoforge-26.2.0.57/production
 ```
 
 ## Tag
