@@ -6365,8 +6365,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787741376.6470065,
-    "ast_hash": "dbf9f162eea591899efc7008b695ce34",
+    "mtime": 1787748329.4440153,
+    "ast_hash": "9e325a890427578eeb0466d6916dc973",
     "semantic_hash": ""
   },
   "README.md": {
@@ -17467,6 +17467,11 @@
   "src/main/resources/assets/slaughter_hide/textures/item/wolf_meat.png": {
     "mtime": 1787745315.832563,
     "ast_hash": "84d0d0154d5a65b2a892ab608770b98c",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.34.md": {
+    "mtime": 1787748347.463993,
+    "ast_hash": "ca2abfeb9e89d7f343a9752ac22fb20d",
     "semantic_hash": ""
   }
 }
