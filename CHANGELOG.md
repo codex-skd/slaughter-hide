@@ -1,5 +1,17 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.35] - 2026-08-26
+
+### Changed (BREAKING)
+
+- **Scope reduced to farm animals only (13 mobs)** — removed ~64 carcass families for hostile/strange/nether/end mobs (10 humanoid corpses with organ system, 11 cats, 5 axolotls, and 40+ other wild/hostile mobs). Kept only: cow, pig, sheep, chicken, rabbit, goat, horse, donkey, mule, and 4 llama variants. Orphaned item definitions, blockstate registrations and creative tab entries removed with them.
+
+### Fix
+
+- **6 legacy item models** that used pre-1.21.4 `parent` format directly in `items/` (bird_foot, raw_chicken_leg/wing, wishbone, silverfish/endermite chunks) now correctly split into `models/item/` geometry + `items/` definition — they were showing as missing textures despite having assets.
+- **154 missing translation entries** added for remaining farm items (carcass/head/skeleton/skin variants etc.) — previously showed raw keys like `item.slaughter_hide.goat_carcass`.
+- **681 out-of-bounds UVs** clamped across 95 custom models (closed freezer, every skin_rack variant, all head mounts) — MC 26.2 now bakes strictly and these had thrown `Cannot compute translucency out of bounds`, causing whole models to fail.
+
 ## [0.0.0-beta.34] - 2026-08-26
 
 ### Fix
