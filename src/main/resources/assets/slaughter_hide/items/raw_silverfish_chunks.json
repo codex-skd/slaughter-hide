@@ -1,0 +1,25 @@
+{
+  "model": {
+    "type": "slaughter_hide:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "slaughter_hide:raw_silverfish_chunks/multiple"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "slaughter_hide:item/raw_silverfish_chunks_0"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "slaughter_hide:item/raw_silverfish_chunks"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/white_cat_head",
+  "textures": {
+    "all": "slaughter_hide:block/white_cat",
+    "particle": "slaughter_hide:block/white_cat",
+    "0": "slaughter_hide:block/white_cat"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/medium_magma_carcass",
+  "textures": {
+    "all": "slaughter_hide:block/magmacube",
+    "particle": "slaughter_hide:block/magmacube",
+    "0": "slaughter_hide:block/magmacube"
+  }
+}

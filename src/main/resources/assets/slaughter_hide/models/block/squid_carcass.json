@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/squid_carcass",
+  "textures": {
+    "all": "slaughter_hide:block/squid",
+    "particle": "minecraft:block/powder_snow",
+    "0": "slaughter_hide:block/squid"
+  }
+}

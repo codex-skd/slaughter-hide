@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/blue_axolotl_carcass",
+  "textures": {
+    "all": "slaughter_hide:block/blue_axolotl",
+    "particle": "minecraft:block/nether_wart_block",
+    "0": "slaughter_hide:block/blue_axolotl",
+    "1": "slaughter_hide:block/inner_blood"
+  }
+}

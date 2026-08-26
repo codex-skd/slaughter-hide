@@ -1,0 +1,7 @@
+{
+  "parent": "slaughter_hide:custom/sniffer",
+  "textures": {
+    "0": "slaughter_hide:block/sniffer",
+    "particle": "slaughter_hide:item/sniffer"
+  }
+}

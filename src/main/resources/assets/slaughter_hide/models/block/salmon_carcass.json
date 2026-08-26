@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/salmon_corpse",
+  "textures": {
+    "all": "slaughter_hide:block/salmon",
+    "particle": "minecraft:block/nether_wart_block",
+    "3": "slaughter_hide:block/salmon"
+  }
+}

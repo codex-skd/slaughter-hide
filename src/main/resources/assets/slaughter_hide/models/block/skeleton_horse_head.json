@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/skeleton_horse_head",
+  "textures": {
+    "all": "slaughter_hide:block/skeleton_horse",
+    "particle": "slaughter_hide:block/skeleton_horse",
+    "0": "slaughter_hide:block/skeleton_horse"
+  }
+}

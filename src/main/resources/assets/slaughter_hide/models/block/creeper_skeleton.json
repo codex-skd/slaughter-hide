@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/creeper_skeleton",
+  "textures": {
+    "all": "slaughter_hide:block/creeper_skeleton",
+    "particle": "slaughter_hide:block/creeper_skeleton",
+    "0": "slaughter_hide:block/creeper_skeleton"
+  }
+}

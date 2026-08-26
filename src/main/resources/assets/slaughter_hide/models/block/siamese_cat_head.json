@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/siamese_cat_head",
+  "textures": {
+    "all": "slaughter_hide:block/siamese",
+    "particle": "slaughter_hide:block/siamese",
+    "0": "slaughter_hide:block/siamese"
+  }
+}
