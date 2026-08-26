@@ -8,9 +8,24 @@
 - **12 ítems de órgano nuevos** (`heart`, `intestines`, `kidney`, `liver`, `lungs`, `stomach` + variantes `rotten_`) con modelo/textura/lang — nunca se habían registrado pese a que las loot tables de corpse ya los referenciaban desde antes.
 - `CorpseBlockEntity` reescrito eliminando el contenedor vestigial de 9 slots (`Container`/`WorldlyContainer`/`MenuProvider`/`ChestMenu`) que secuestraba cualquier clic derecho — mismo patrón ya aplicado a `CarcassBlockEntity`.
 
+### Add (sesión 2026-08-26 — Freezer)
+
+- **Freezer portado** (Fase 3.4b2b, primera de las 4 máquinas GUI): bloque con inventario real de 27 slots (3×9, mismo layout que el `FreezerinventoryMenu` original) persistido en su `FreezerBlockEntity`. Primer registro de `MenuType` del port (`ModMenus`) con pantalla propia (`FreezerScreen`) usando la textura GUI generada. Al clic derecho se abre la tapa (blockstate 0→1) con sonido de trampilla de hierro y ráfagas de humo frío, y todo se revierte al cerrar la GUI (`FreezerMenu.removed()`), igual que los procedures `Freezerguiopened/guisisclosed` originales — incluido el detalle de que **con shift pulsado la GUI se abre sin animación** (guard `!isShiftKeyDown` del procedure original).
+- **Primer sistema de partículas del port**: `ModParticleTypes` + `freezersmoke` (SimpleParticleType) con provider cliente `FreezerSmokeParticle`, port 1:1 de la decompilada `FreezersmokeParticle` (gravedad −0.1, vida 32±8 ticks, ciclo de 8 sprites a razón de 1/6 tick, capa OPAQUE) y las 8 texturas originales. Se genera en las 4 posiciones/dispersiones exactas del procedure de apertura.
+- Soporte de comparador: el freezer emite señal redstone proporcional al contenido (`getAnalogOutputSignal`, como el original).
+- Assets completos para los **6 estados visuales** del blockstate (0-5): blockstate JSON con las 24 variantes facing×blockstate, modelos wrapper `freezer_0..4` sobre los customs `freezer_open`/`freezer_left(_open)`/`freezer_right(_open)` recién copiados. En el original solo 0-1 son alcanzables por código (abierto/cerrado); 2-5 existen para comandos/debug y se portan por fidelidad.
+- Receta de crafteo (hierro ×2 + hormigón blanco ×5 + redstone, remapeada 1:1 del `freezercrafting.json` original), loot table de bloque e ítem con modelo 3D en mano/inventario.
+
+### Fix (sesión 2026-08-26 — Freezer)
+
+- Propiedades del bloque corregidas a las del original decompilado: `strength(1.0, 10.0)` + `noOcclusion()` + `isRedstoneConductor(false)` (la delegación había puesto `3.5/6.0` sin flags de oclusión). `propagatesSkylightDown=true` también portado. El sonido metálico y `mapColor(METAL)` se mantienen como mejora deliberada del port (el original no especifica soundType → piedra por defecto de MCreator).
+- Fuente de sonido `NEUTRAL` (como los procedures originales), no `BLOCKS`.
+
 ### Delegación (nota de proceso)
 
 Implementado con OpenCode Go tras varios intentos fallidos con distintos modelos: `ox-alpha-free` se colgó 4+ horas sin salida; `muse-spark-1.2-contributor` falló 2 veces de forma reproducible con un bug de la integración (`tool_search` mal formado, además dejando el historial de sesión "envenenado" e impidiendo reanudar con `-c`). Terminado con éxito por `mimo-v2.5`. Catálogo de modelos actualizado con ambos hallazgos en `codex-docs/reference/opencode-go-models/INDEX.md`.
+
+> Nota sesión 2026-08-26: la delegación dejó el Freezer a medias (compilaba pero con blockstate 0-1 en vez de 0-5, sin comparador, sin partículas, sin guard de shift, propiedades incorrectas). Completado y corregido leyendo el original decompilado directamente.
 
 ## [0.0.0-beta.32] - 2026-08-25
 

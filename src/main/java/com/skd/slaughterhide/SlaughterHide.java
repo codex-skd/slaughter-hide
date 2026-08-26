@@ -10,6 +10,8 @@ import com.skd.slaughterhide.init.ModBlockEntities;
 import com.skd.slaughterhide.init.ModBlocks;
 import com.skd.slaughterhide.init.ModCreativeTabs;
 import com.skd.slaughterhide.init.ModItems;
+import com.skd.slaughterhide.init.ModMenus;
+import com.skd.slaughterhide.init.ModParticleTypes;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
@@ -22,8 +24,11 @@ public class SlaughterHide {
         ModBlocks.REGISTRY.register(modEventBus);
         ModItems.REGISTRY.register(modEventBus);
         ModBlockEntities.REGISTRY.register(modEventBus);
+        ModMenus.REGISTRY.register(modEventBus);
+        ModParticleTypes.REGISTRY.register(modEventBus);
         ModCreativeTabs.REGISTRY.register(modEventBus);
         modEventBus.addListener(SlaughterHideConfig::registerCommon);
+        modEventBus.addListener(ClientSetup::onRegisterMenuScreens);
 
         NeoForge.EVENT_BUS.register(CarcassDeathHandler.class);
         NeoForge.EVENT_BUS.register(CarcassInteractionHandler.class);

@@ -1,0 +1,7 @@
+{
+  "parent": "slaughter_hide:custom/freezer_left",
+  "textures": {
+    "all": "slaughter_hide:block/freezer",
+    "particle": "slaughter_hide:block/freezer"
+  }
+}

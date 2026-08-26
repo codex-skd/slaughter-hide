@@ -2,22 +2,46 @@
 
 > Documento vivo. Se actualiza según avanza el port. Ver `docs/WORKFLOW_SLAUGHTER_HIDE_26-2.md` para el flujo operativo del repo.
 
-## 🎯 SIGUIENTE PASO (actualizado 2026-08-25, sesión "corte de corpses")
+## 🎯 SIGUIENTE PASO (actualizado 2026-08-26, sesión "Freezer completado")
 
-**Verificar en cliente real (con permiso del usuario) el mecanismo de corte de corpses recién implementado** — matar un zombie/piglin/etc., colgarlo, clic con cleaver/skinning knife 8 veces y confirmar que suelta cabeza→piel→3 cortes→3 órganos y el bloque desaparece al final. Nunca probado en juego, solo compilado. Si funciona, es un buen momento para bump de versión + CurseForge (siguiendo el mismo workflow de sesiones anteriores).
+**No hay instancia de test disponible de momento** — la verificación en cliente real del corte de corpses y del Freezer queda pendiente hasta que el usuario tenga una instancia lista. No repetir el despliegue de jars a instancias sin confirmación explícita de la ruta (ver incidente más abajo).
+
+**Siguiente frente de trabajo**: elegir entre el resto del Batch B2b (Meatgrinder/Pestleandmortar/Taxidermytable + sangre visible) o la auditoría de traducciones/assets (~68% de ítems sin traducir). Ver secciones "Pendiente" más abajo. El Freezer (primera máquina GUI, con su partícula `freezersmoke`) está completo en working tree — pendiente de commit y de prueba en cliente.
 
 **Hallazgos de esta sesión ya resueltos** (no repetir):
-1. ✅ **Corte de corpses humanoides implementado** (los 9 mobs: drowned, evoker, husk, piglin, piglin_brute, skeleton, vindicator, witch, zombie) — antes no tenían ninguna lógica de despiece. Ver CHANGELOG [Unreleased].
+1. ✅ **Corte de corpses humanoides implementado** (los 9 mobs: drowned, evoker, husk, piglin, piglin_brute, skeleton, vindicator, witch, zombie) — antes no tenían ninguna lógica de despiece. Ver CHANGELOG [Unreleased]. **Aún sin probar en cliente real** (sin instancia de test disponible).
 2. ✅ **Ramas de GitLab corregidas**: `neo_version` llevaba tiempo en `26.2.0.57` pero se seguía commiteando en la rama `neoforge-26.2.0.45-beta` (nunca se creó la rama nueva cuando se bumpeó, mucho antes de esta sesión). Creadas `minecraft/26.2/neoforge-26.2.0.57/production` + `/main`, documentación corregida. **A partir de ahora trabajar en la rama `neoforge-26.2.0.57`**, la vieja queda como histórica.
 3. ✅ **Catálogo `opencode-go-models/INDEX.md` corregido tras usarlo mal una vez** — recordar SIEMPRE consultarlo antes de elegir modelo de OpenCode Go (no improvisar por precio/memoria propia).
+4. ✅ **Iron Golem: decisión de alcance tomada — NO se porta.** Ver sección dedicada más abajo con el análisis técnico y el motivo.
+5. ✅ **Freezer completado (2026-08-26)**: la delegación lo dejó a medias; esta sesión añadió blockstate 0-5 fiel con las 24 variantes y los 4 modelos custom restantes (`freezer_left/right(_open)`), comparador, guard de shift en la animación, propiedades correctas del original (strength 1.0/10.0 + noOcclusion) y el subsistema de partículas `ModParticleTypes` + `FreezerSmokeParticle` (port 1:1 con las 8 texturas originales). Ver CHANGELOG [Unreleased].
+
+**Incidente a no repetir**: en la sesión anterior se copió el jar de prueba a una instancia de CurseForge (`EnchantVenture`, sin el prefijo `(Test)`) sin confirmar antes con el usuario que esa ruta era la correcta — resultó ser la instancia principal/limpia del usuario, no una de test. **Nunca desplegar un build a una ruta de instancia sin que el usuario la haya confirmado explícitamente en esa sesión**, aunque una ruta parecida haya funcionado antes.
 
 **Pendiente de sesiones anteriores, todavía sin hacer** (bajo riesgo, alto valor):
-1. `Irongolem`+`arms`/`body`/`head`/`legs` (5 bloques) — mecánica bespoke tipo Ravager (`IronGolemCutUpProcedure`, 2044 líneas, corte + reensamblaje vía `RepairgolemProcedure`). Decidir si merece un port completo dedicado o se documenta como limitación permanente.
-2. **Fase 3.4b2b — Batch B2 restante**: `Freezer`, `Meatgrinder`, `Pestleandmortar`, `Taxidermytable` (GUI real) + subsistema de sangre visible (`Blood`/`InfectedBlood` fluido custom, `Bloodgrate`/`Bloodpuddle`). Ver detalle más abajo.
+1. ~~`Irongolem`+`arms`/`body`/`head`/`legs`~~ — **descartado, ver sección "Iron Golem — no soportado" más abajo.**
+2. **Fase 3.4b2b — Batch B2 restante**: ~~`Freezer`~~ (**completado 2026-08-26**, ver CHANGELOG), `Meatgrinder`, `Pestleandmortar`, `Taxidermytable` (GUI real) + subsistema de sangre visible (`Blood`/`InfectedBlood` fluido custom, `Bloodgrate`/`Bloodpuddle`). Ver detalle más abajo.
 
 **Descubierto hoy, aún sin auditar**: al revisar en cliente real se vio que **~68% de los ítems del mod (285 de 416) no tienen traducción** (muestran la clave cruda `item.slaughter_hide.xxx`) y varios ítems como `cooked_sirloin_steak` no tienen ningún asset (ni modelo ni textura) pese a estar registrados — hueco preexistente de todo el rollout de los 74 mobs, no de esta sesión. Sin auditar en profundidad ni priorizado todavía.
 
 **No urgente pero pendiente**: huecos menores documentados en Fase 3 (Rope real con tensado progresivo, texturas propias por tier de herramienta en vez de placeholders, recetas de crafteo huérfanas del MCreator original).
+
+## Iron Golem — NO soportado (decisión 2026-08-25)
+
+**Decisión**: no se porta la mecánica del Iron Golem (`Irongolem`, `Irongolemarms`, `Irongolembody`, `Irongolemhead`, `Irongolemlegs` + sus variantes `Repaired*`). Se documenta como limitación permanente conocida del port.
+
+**Análisis técnico** (leído directamente de `temp/butchery-src/net/mcreator/butchery/procedures/{IronGolemCutUpProcedure,RepairgolemProcedure,RepairedIronGolemCutUpProcedure}.java`, sin fiarse de un resumen previo de Ollama que resultó incorrecto — ver nota abajo):
+
+- **Corte** (`IronGolemCutUpProcedure`, 2044 líneas): el bloque `iron_golem` tiene 4 etapas (cabeza→brazos→cuerpo→piernas). A diferencia del resto del mod (1 golpe = 1 etapa, patrón ya genérico en `CarcassCutupHandler`/`CorpseInteractionHandler`), aquí **cada etapa exige 3 golpes** con un hacha de sierra (tag `c:hacksaw`, **no dado de alta todavía** en este port) antes de soltar el loot table de esa parte, usando un contador NBT (`golemSaw`) en vez de un blockstate simple. Cada parte obtenida (`iron_golem_arms/body/legs`) se coloca como bloque independiente y **se puede volver a cortar** en 3 golpes más para chatarra (`cut_1/2/3_drop`).
+- **Reparación** (`RepairgolemProcedure`, 405 líneas): clic con lingotes de hierro (3 golpes, contador NBT `golemRepaired`) sobre el golem ya cortado lo transforma en `repaired_iron_golem`, que tiene su propia familia de bloques (`arms/body/head/legs`) también re-cortables.
+- **`RepairedIronGolemCutUpProcedure`** (2042 líneas) es casi un espejo del de corte normal, aplicado a la familia reparada.
+
+**Motivo de no portarlo**:
+1. Tag de herramienta nuevo (`c:hacksaw`) no existente en el mod actual — habría que darlo de alta y decidir su receta/textura.
+2. El contador de 3 golpes por etapa es un patrón de máquina de estados **distinto** al ya genérico (`CarcassCutupHandler`, 1 golpe = 1 etapa) — no reutilizable sin escribir una tercera máquina de estados dedicada.
+3. Volumen: ~10 clases de bloque + ~10 block entities + 3 handlers bespoke (corte + reparación + drop-al-morir), solo para **un mob**, que además es un mob vanilla reutilizado (no un boss exclusivo del mod original).
+4. Relación coste/valor desproporcionada frente al resto del catálogo (74 mobs ya cubiertos con el sistema genérico de carcasas).
+
+**Nota de proceso**: un primer intento de resumir `IronGolemCutUpProcedure.java` (2044 líneas) vía el pre-filtrado con Ollama (`qwen2.5-coder:7b`, ver regla en `CLAUDE.md`) dio un resumen **incorrecto** (mencionaba pico de hierro/diamante y encantamiento Looting, que no existen en este procedure — probablemente truncó el contexto y alucinó un patrón genérico de Minecraft). Se descartó y se leyó el archivo real directamente (con `Read` + `Grep` selectivo por líneas clave) para tomar la decisión. Si se vuelve a usar el pre-filtrado de Ollama en archivos de este tamaño, **verificar el resumen contra el código real antes de confiar en él para decisiones de diseño**.
 
 ## Contexto y tamaño real del mod original
 

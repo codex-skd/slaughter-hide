@@ -3,7 +3,9 @@ package com.skd.slaughterhide.init;
 import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.block.entity.CarcassBlockEntity;
 import com.skd.slaughterhide.block.entity.CorpseBlockEntity;
+import com.skd.slaughterhide.block.entity.FreezerBlockEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -30,6 +32,12 @@ public final class ModBlockEntities {
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CorpseBlockEntity>> CORPSE =
             REGISTRY.register("corpse",
                     () -> new BlockEntityType<>(CorpseBlockEntity::new, ModBlocks.corpseBlocks()));
+
+    // Freezer block entity (27-slot cold-storage container)
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FreezerBlockEntity>> FREEZER =
+            REGISTRY.register("freezer",
+                    () -> new BlockEntityType<>(FreezerBlockEntity::new,
+                            new Block[]{ModBlocks.FREEZER.get()}));
 
     private ModBlockEntities() {
     }
