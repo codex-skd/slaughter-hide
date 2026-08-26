@@ -28,20 +28,20 @@ public final class SkinRackInteractionHandler {
 
     // Map skin items to their blockstate values (1-31, 0 is empty)
     private static int getSkinState(ItemStack stack) {
-        if (stack.is(ModItems.DONKEY_SKIN.get())) return 9;
-        if (stack.is(ModItems.MULE_SKIN.get())) return 13;
+        if (stack.is(ModItems.GOAT_SKIN.get())) return 5;
         if (stack.is(ModItems.PIG_SKIN.get())) return 16;
         if (stack.is(ModItems.SHEEP_SKIN.get())) return 18;
         if (stack.is(ModItems.COW_SKIN.get())) return 28;
+        if (stack.is(ModItems.POLAR_BEAR_SKIN.get())) return 21;
         return 0;
     }
 
     private static ItemStack getSkinItem(int state) {
         return switch (state) {
-            case 9 -> new ItemStack(ModItems.DONKEY_SKIN.get());
-            case 13 -> new ItemStack(ModItems.MULE_SKIN.get());
+            case 5 -> new ItemStack(ModItems.GOAT_SKIN.get());
             case 16 -> new ItemStack(ModItems.PIG_SKIN.get());
             case 18 -> new ItemStack(ModItems.SHEEP_SKIN.get());
+            case 21 -> new ItemStack(ModItems.POLAR_BEAR_SKIN.get());
             case 28 -> new ItemStack(ModItems.COW_SKIN.get());
             default -> ItemStack.EMPTY;
         };

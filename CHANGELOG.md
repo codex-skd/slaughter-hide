@@ -1,5 +1,17 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.36] - 2026-08-26
+
+### Changed (BREAKING)
+
+- **Scope cut from 13 to 7 mobs** — removed horse family (horse, donkey, mule) and 4 llama variants (brown/white/creamy/gray). Kept: cow, pig, sheep, chicken, rabbit, goat + polar bear (only non-farm kept per request). Orphaned carcass definitions, blocks, items (carcass/head/mount/skeleton), skin mappings, FOOD tab RAW steaks and 60 lang keys removed with them. Skin set is now 5 (cow/pig/sheep/goat/polar bear — chicken/rabbit produce meat directly).
+
+### Fix
+
+- **FOOD tab crash fixed** for 7-mob scope: removed `RAW_DONKEY_STEAK`/`RAW_MULE_STEAK` references that no longer exist in `ModItems` after the horse-family cut (`cannot find symbol` at `ModCreativeTabs.java:89`).
+- **Carcasses.java 7-mob stabilization**: polar bear `buildPOLAR_BEAR()` + 6 voxel shapes correctly restored without duplicating dead-code shapes left over from the 77-mob dump at `a53a769`; static `register()` block now lists the 7 in consistent order. Previous attempts had `buildPOLAR_BEAR` duplicated and 12 polar shapes.
+- **Lang sync**: `en_us.json`/`es_es.json` 300 → 240 keys (60 horse/llama keys removed).
+
 ## [0.0.0-beta.35] - 2026-08-26
 
 ### Changed (BREAKING)

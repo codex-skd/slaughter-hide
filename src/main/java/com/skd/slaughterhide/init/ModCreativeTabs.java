@@ -54,14 +54,13 @@ public final class ModCreativeTabs {
                                 ModItems.IRON_CLEAVER, ModItems.IRON_SKINNING_KNIFE, ModItems.IRON_HACKSAW, ModItems.IRON_HAMMER,
                                 ModItems.GOLD_CLEAVER, ModItems.GOLD_SKINNING_KNIFE, ModItems.GOLD_HACKSAW, ModItems.GOLD_HAMMER,
                                 ModItems.DIAMOND_CLEAVER, ModItems.DIAMOND_SKINNING_KNIFE, ModItems.DIAMOND_HACKSAW, ModItems.DIAMOND_HAMMER,
-                                ModItems.NETHERITE_CLEAVER, ModItems.NETHERITE_SKINNING_KNIFE, ModItems.NETHERITE_HACKSAW, ModItems.NETHERITE_HAMMER,
-                                ModItems.BONE_CLEAVER, ModItems.BONE_SKINNING_KNIFE, ModItems.BONE_HACKSAW, ModItems.BONE_HAMMER
+                                ModItems.NETHERITE_CLEAVER, ModItems.NETHERITE_SKINNING_KNIFE, ModItems.NETHERITE_HACKSAW, ModItems.NETHERITE_HAMMER
                         ).forEach(item -> output.accept(item.get()));
 
-                        // Skins (farm animals only)
+                        // Skins (farm animals only - 5 skins for 7 mobs)
                         Stream.of(
                                 ModItems.COW_SKIN, ModItems.PIG_SKIN, ModItems.SHEEP_SKIN,
-                                ModItems.GOAT_SKIN, ModItems.DONKEY_SKIN, ModItems.MULE_SKIN
+                                ModItems.GOAT_SKIN, ModItems.POLAR_BEAR_SKIN
                         ).forEach(item -> output.accept(item.get()));
 
                         // Other items
@@ -86,8 +85,7 @@ public final class ModCreativeTabs {
                                 ModItems.RAW_CHICKEN_LEG, ModItems.RAW_CHICKEN_WING,
                                 ModItems.RAW_LEG_OF_LAMB_GOAT, ModItems.RAW_LAMB_SHOULDER_GOAT,
                                 ModItems.RAW_LAMB_RIB_GOAT, ModItems.RAW_LAMB_SIRLOIN_GOAT,
-                                ModItems.RAW_LAMB_LOIN_GOAT,
-                                ModItems.RAW_DONKEY_STEAK, ModItems.RAW_MULE_STEAK
+                                ModItems.RAW_LAMB_LOIN_GOAT
                         ).filter(item -> item != null).forEach(item -> output.accept(item.get()));
 
                         // Cooked meats (if they exist)

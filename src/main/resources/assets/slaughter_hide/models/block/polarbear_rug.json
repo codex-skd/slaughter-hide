@@ -1,0 +1,9 @@
+{
+  "parent": "slaughter_hide:custom/bear_rug",
+  "textures": {
+    "all": "slaughter_hide:block/polar_bear_rug_copy",
+    "particle": "slaughter_hide:block/sheep_break_particle",
+    "0": "slaughter_hide:block/polar_bear_rug_copy",
+    "1": "slaughter_hide:block/polarbear"
+  }
+}

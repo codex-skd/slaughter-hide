@@ -55,10 +55,6 @@ public final class ModItems {
     public static final DeferredItem<Item> NETHERITE_HAMMER = item("netherite_hammer", ButcherToolItem::new);
 
     // Bone tier
-    public static final DeferredItem<Item> BONE_CLEAVER = item("bone_cleaver", ButcherToolItem::new);
-    public static final DeferredItem<Item> BONE_SKINNING_KNIFE = item("bone_skinning_knife", ButcherToolItem::new);
-    public static final DeferredItem<Item> BONE_HACKSAW = item("bone_hacksaw", ButcherToolItem::new);
-    public static final DeferredItem<Item> BONE_HAMMER = item("bone_hammer", ButcherToolItem::new);
 
     public static final DeferredItem<Item> COW_SKIN = item("cow_skin", Item::new);
     public static final DeferredItem<Item> PIG_SKIN = item("pig_skin", Item::new);
@@ -115,11 +111,7 @@ public final class ModItems {
     // Camel
     public static final DeferredItem<Item> RAW_CAMEL_MEAT = item("raw_camel_meat", Item::new);
     // Donkey
-    public static final DeferredItem<Item> DONKEY_SKIN = item("donkey_skin", Item::new);
-    public static final DeferredItem<Item> RAW_DONKEY_STEAK = item("raw_donkey_steak", Item::new);
     // Mule
-    public static final DeferredItem<Item> MULE_SKIN = item("mule_skin", Item::new);
-    public static final DeferredItem<Item> RAW_MULE_STEAK = item("raw_mule_steak", Item::new);
     // Ocelot
     public static final DeferredItem<Item> RAW_OCELOT_MEAT = item("raw_ocelot_meat", Item::new);
     // Panda
@@ -204,6 +196,15 @@ public final class ModItems {
     public static final DeferredItem<Item> GOAT_HEAD_MOUNT = blockItem("goat_head_mount", new Item.Properties());
     public static final DeferredItem<Item> GOAT_SKELETON = blockItem("goat_skeleton", new Item.Properties().stacksTo(8));
 
+    public static final DeferredItem<Item> POLAR_BEAR_CARCASS =
+            placementItem("polar_bear_carcass", Carcasses.POLAR_BEAR, false, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> DRAINED_POLAR_BEAR_CARCASS =
+            placementItem("drained_polar_bear_carcass", Carcasses.POLAR_BEAR, true, new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> POLAR_BEAR_HEAD = blockItem("polar_bear_head", new Item.Properties());
+    public static final DeferredItem<Item> POLAR_BEAR_HEAD_MOUNT = blockItem("polar_bear_head_mount", new Item.Properties());
+    public static final DeferredItem<Item> POLAR_BEAR_SKELETON = blockItem("polar_bear_skeleton", new Item.Properties().stacksTo(8));
+    public static final DeferredItem<Item> POLAR_BEAR_SKIN = blockItem("polar_bear_skin", new Item.Properties());
+
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
 
@@ -213,22 +214,8 @@ public final class ModItems {
     // Camel
 
     // Donkey
-    public static final DeferredItem<Item> DONKEY_CARCASS =
-            placementItem("donkey_carcass", Carcasses.DONKEY, false, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_DONKEY_CARCASS =
-            placementItem("drained_donkey_carcass", Carcasses.DONKEY, true, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DONKEY_HEAD = blockItem("donkey_head", new Item.Properties());
-    public static final DeferredItem<Item> DONKEY_HEAD_MOUNT = blockItem("donkey_head_mount", new Item.Properties());
-    public static final DeferredItem<Item> DONKEY_SKELETON = blockItem("donkey_skeleton", new Item.Properties().stacksTo(8));
 
     // Mule
-    public static final DeferredItem<Item> MULE_CARCASS =
-            placementItem("mule_carcass", Carcasses.MULE, false, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_MULE_CARCASS =
-            placementItem("drained_mule_carcass", Carcasses.MULE, true, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> MULE_HEAD = blockItem("mule_head", new Item.Properties());
-    public static final DeferredItem<Item> MULE_HEAD_MOUNT = blockItem("mule_head_mount", new Item.Properties());
-    public static final DeferredItem<Item> MULE_SKELETON = blockItem("mule_skeleton", new Item.Properties().stacksTo(8));
 
     // Ocelot
 
@@ -277,46 +264,18 @@ public final class ModItems {
     // Zombie Horse has no skeleton
 
     // Horse
-    public static final DeferredItem<Item> HORSE_CARCASS =
-            placementItem("horse_carcass", Carcasses.HORSE, false, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_HORSE_CARCASS =
-            placementItem("drained_horse_carcass", Carcasses.HORSE, true, new Item.Properties().stacksTo(8));
     // Horse has no head, head mount, skeleton
 
     // Brown Llama
-    public static final DeferredItem<Item> BROWN_LLAMA_CARCASS =
-            placementItem("brown_llama_carcass", Carcasses.BROWN_LLAMA, false, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_BROWN_LLAMA_CARCASS =
-            placementItem("drained_brown_llama_carcass", Carcasses.BROWN_LLAMA, true, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> BROWN_LLAMA_HEAD = blockItem("brown_llama_head", new Item.Properties());
-    public static final DeferredItem<Item> BROWN_LLAMA_HEAD_MOUNT = blockItem("brown_llama_head_mount", new Item.Properties());
     // Brown Llama has no skeleton
 
     // White Llama
-    public static final DeferredItem<Item> WHITE_LLAMA_CARCASS =
-            placementItem("white_llama_carcass", Carcasses.WHITE_LLAMA, false, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_WHITE_LLAMA_CARCASS =
-            placementItem("drained_white_llama_carcass", Carcasses.WHITE_LLAMA, true, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> WHITE_LLAMA_HEAD = blockItem("white_llama_head", new Item.Properties());
-    public static final DeferredItem<Item> WHITE_LLAMA_HEAD_MOUNT = blockItem("white_llama_head_mount", new Item.Properties());
     // White Llama has no skeleton
 
     // Creamy Llama
-    public static final DeferredItem<Item> CREAMY_LLAMA_CARCASS =
-            placementItem("creamy_llama_carcass", Carcasses.CREAMY_LLAMA, false, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_CREAMY_LLAMA_CARCASS =
-            placementItem("drained_creamy_llama_carcass", Carcasses.CREAMY_LLAMA, true, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> CREAMY_LLAMA_HEAD = blockItem("creamy_llama_head", new Item.Properties());
-    public static final DeferredItem<Item> CREAMY_LLAMA_HEAD_MOUNT = blockItem("creamy_llama_head_mount", new Item.Properties());
     // Creamy Llama has no skeleton
 
     // Gray Llama
-    public static final DeferredItem<Item> GRAY_LLAMA_CARCASS =
-            placementItem("gray_llama_carcass", Carcasses.GRAY_LLAMA, false, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> DRAINED_GRAY_LLAMA_CARCASS =
-            placementItem("drained_gray_llama_carcass", Carcasses.GRAY_LLAMA, true, new Item.Properties().stacksTo(8));
-    public static final DeferredItem<Item> GRAY_LLAMA_HEAD = blockItem("gray_llama_head", new Item.Properties());
-    public static final DeferredItem<Item> GRAY_LLAMA_HEAD_MOUNT = blockItem("gray_llama_head_mount", new Item.Properties());
     // Gray Llama has no skeleton
 
     // Squid
@@ -488,21 +447,15 @@ public final class ModItems {
         HEAD_BY_MOB.put(Carcasses.RABBIT.mobId(), RABBIT_HEAD);
         MOUNT_BY_MOB.put(Carcasses.RABBIT.mobId(), RABBIT_HEAD_MOUNT);
         FRESH_BY_MOB.put(Carcasses.GOAT.mobId(), GOAT_CARCASS);
+        FRESH_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), POLAR_BEAR_CARCASS);
         DRAINED_BY_MOB.put(Carcasses.GOAT.mobId(), DRAINED_GOAT_CARCASS);
+        DRAINED_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), DRAINED_POLAR_BEAR_CARCASS);
         HEAD_BY_MOB.put(Carcasses.GOAT.mobId(), GOAT_HEAD);
+        HEAD_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), POLAR_BEAR_HEAD);
         MOUNT_BY_MOB.put(Carcasses.GOAT.mobId(), GOAT_HEAD_MOUNT);
+        MOUNT_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), POLAR_BEAR_HEAD_MOUNT);
         SKELETON_BY_MOB.put(Carcasses.GOAT.mobId(), GOAT_SKELETON);
-        FRESH_BY_MOB.put(Carcasses.DONKEY.mobId(), DONKEY_CARCASS);
-        DRAINED_BY_MOB.put(Carcasses.DONKEY.mobId(), DRAINED_DONKEY_CARCASS);
-        HEAD_BY_MOB.put(Carcasses.DONKEY.mobId(), DONKEY_HEAD);
-        MOUNT_BY_MOB.put(Carcasses.DONKEY.mobId(), DONKEY_HEAD_MOUNT);
-        SKELETON_BY_MOB.put(Carcasses.DONKEY.mobId(), DONKEY_SKELETON);
-        FRESH_BY_MOB.put(Carcasses.MULE.mobId(), MULE_CARCASS);
-        DRAINED_BY_MOB.put(Carcasses.MULE.mobId(), DRAINED_MULE_CARCASS);
-        HEAD_BY_MOB.put(Carcasses.MULE.mobId(), MULE_HEAD);
-        MOUNT_BY_MOB.put(Carcasses.MULE.mobId(), MULE_HEAD_MOUNT);
-        SKELETON_BY_MOB.put(Carcasses.MULE.mobId(), MULE_SKELETON);
-        // Zoglin has no skeleton
+        SKELETON_BY_MOB.put(Carcasses.POLAR_BEAR.mobId(), POLAR_BEAR_SKELETON);        // Zoglin has no skeleton
         // Silverfish has no skeleton
         // Drained endermite carcass disabled - no assets exist
         // Endermite has no skeleton
@@ -513,30 +466,7 @@ public final class ModItems {
         // Guardian has no head, head mount, skeleton, skin
         // Elder Guardian has no head, head mount, skeleton, skin
         // Skeleton Horse has no skeleton
-        // Zombie Horse has no skeleton
-        FRESH_BY_MOB.put(Carcasses.HORSE.mobId(), HORSE_CARCASS);
-        DRAINED_BY_MOB.put(Carcasses.HORSE.mobId(), DRAINED_HORSE_CARCASS);
-        // Horse has no head, head mount, skeleton
-        FRESH_BY_MOB.put(Carcasses.BROWN_LLAMA.mobId(), BROWN_LLAMA_CARCASS);
-        DRAINED_BY_MOB.put(Carcasses.BROWN_LLAMA.mobId(), DRAINED_BROWN_LLAMA_CARCASS);
-        HEAD_BY_MOB.put(Carcasses.BROWN_LLAMA.mobId(), BROWN_LLAMA_HEAD);
-        MOUNT_BY_MOB.put(Carcasses.BROWN_LLAMA.mobId(), BROWN_LLAMA_HEAD_MOUNT);
-        // Brown Llama has no skeleton
-        FRESH_BY_MOB.put(Carcasses.WHITE_LLAMA.mobId(), WHITE_LLAMA_CARCASS);
-        DRAINED_BY_MOB.put(Carcasses.WHITE_LLAMA.mobId(), DRAINED_WHITE_LLAMA_CARCASS);
-        HEAD_BY_MOB.put(Carcasses.WHITE_LLAMA.mobId(), WHITE_LLAMA_HEAD);
-        MOUNT_BY_MOB.put(Carcasses.WHITE_LLAMA.mobId(), WHITE_LLAMA_HEAD_MOUNT);
-        // White Llama has no skeleton
-        FRESH_BY_MOB.put(Carcasses.CREAMY_LLAMA.mobId(), CREAMY_LLAMA_CARCASS);
-        DRAINED_BY_MOB.put(Carcasses.CREAMY_LLAMA.mobId(), DRAINED_CREAMY_LLAMA_CARCASS);
-        HEAD_BY_MOB.put(Carcasses.CREAMY_LLAMA.mobId(), CREAMY_LLAMA_HEAD);
-        MOUNT_BY_MOB.put(Carcasses.CREAMY_LLAMA.mobId(), CREAMY_LLAMA_HEAD_MOUNT);
-        // Creamy Llama has no skeleton
-        FRESH_BY_MOB.put(Carcasses.GRAY_LLAMA.mobId(), GRAY_LLAMA_CARCASS);
-        DRAINED_BY_MOB.put(Carcasses.GRAY_LLAMA.mobId(), DRAINED_GRAY_LLAMA_CARCASS);
-        HEAD_BY_MOB.put(Carcasses.GRAY_LLAMA.mobId(), GRAY_LLAMA_HEAD);
-        MOUNT_BY_MOB.put(Carcasses.GRAY_LLAMA.mobId(), GRAY_LLAMA_HEAD_MOUNT);
-        // Gray Llama has no skeleton
+        // Zombie Horse has no skeleton        // Horse has no head, head mount, skeleton        // Brown Llama has no skeleton        // White Llama has no skeleton        // Creamy Llama has no skeleton        // Gray Llama has no skeleton
         // Squid has no head mount, no skeleton
         // Glow Squid has no head mount, no skeleton
         // Slime has no head, head mount, skeleton
@@ -592,27 +522,12 @@ public final class ModItems {
             case "goat_head" -> ModBlocks.headFor(Carcasses.GOAT.mobId());
             case "goat_head_mount" -> ModBlocks.mountFor(Carcasses.GOAT.mobId());
             case "goat_skeleton" -> ModBlocks.skeletonFor(Carcasses.GOAT.mobId());
-            case "donkey_head" -> ModBlocks.headFor(Carcasses.DONKEY.mobId());
-            case "donkey_head_mount" -> ModBlocks.mountFor(Carcasses.DONKEY.mobId());
-            case "donkey_skeleton" -> ModBlocks.skeletonFor(Carcasses.DONKEY.mobId());
-            case "mule_head" -> ModBlocks.headFor(Carcasses.MULE.mobId());
-            case "mule_head_mount" -> ModBlocks.mountFor(Carcasses.MULE.mobId());
-            case "mule_skeleton" -> ModBlocks.skeletonFor(Carcasses.MULE.mobId());
-            // zoglin has no skeleton
+            case "polar_bear_head" -> ModBlocks.headFor(Carcasses.POLAR_BEAR.mobId());
+            case "polar_bear_head_mount" -> ModBlocks.mountFor(Carcasses.POLAR_BEAR.mobId());
+            case "polar_bear_skeleton" -> ModBlocks.skeletonFor(Carcasses.POLAR_BEAR.mobId());            // zoglin has no skeleton
             // silverfish has no skeleton
             // endermite has no skeleton
-            case "brown_llama_head" -> ModBlocks.headFor(Carcasses.BROWN_LLAMA.mobId());
-            case "brown_llama_head_mount" -> ModBlocks.mountFor(Carcasses.BROWN_LLAMA.mobId());
-            // Brown Llama has no skeleton
-            case "white_llama_head" -> ModBlocks.headFor(Carcasses.WHITE_LLAMA.mobId());
-            case "white_llama_head_mount" -> ModBlocks.mountFor(Carcasses.WHITE_LLAMA.mobId());
-            // White Llama has no skeleton
-            case "creamy_llama_head" -> ModBlocks.headFor(Carcasses.CREAMY_LLAMA.mobId());
-            case "creamy_llama_head_mount" -> ModBlocks.mountFor(Carcasses.CREAMY_LLAMA.mobId());
-            // Creamy Llama has no skeleton
-            case "gray_llama_head" -> ModBlocks.headFor(Carcasses.GRAY_LLAMA.mobId());
-            case "gray_llama_head_mount" -> ModBlocks.mountFor(Carcasses.GRAY_LLAMA.mobId());
-            // Gray Llama has no skeleton
+            // Brown Llama has no skeleton            // White Llama has no skeleton            // Creamy Llama has no skeleton            // Gray Llama has no skeleton
             // Squid has no head mount
             // Glow Squid has no head mount
             // Spider has no skeleton

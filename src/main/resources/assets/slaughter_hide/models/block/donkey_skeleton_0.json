@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/hanging_skeleton_horse_carcass",
-  "textures": {
-    "all": "slaughter_hide:block/skeleton_horse",
-    "particle": "slaughter_hide:block/skeleton_horse",
-    "0": "slaughter_hide:block/skeleton_horse"
-  }
-}

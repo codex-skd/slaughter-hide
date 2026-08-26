@@ -35,13 +35,12 @@ public final class Carcasses {
     public static final CarcassDefinition RABBIT = buildRabbit();
     /** Sixth fully-playable mob: goat. */
     public static final CarcassDefinition GOAT = buildGoat();
+    public static final CarcassDefinition POLAR_BEAR = buildPOLAR_BEAR();
     /** Seventh fully-playable mob: fox. */
     /** Eighth fully-playable mob: wolf. */
     /** Ninth: camel. */
     /** Tenth: donkey. */
-    public static final CarcassDefinition DONKEY = buildDONKEY();
     /** Eleventh: mule. */
-    public static final CarcassDefinition MULE = buildMULE();
     /** Twelfth: ocelot. */
     /** Thirteenth: panda. */
     /** Fourteenth: polar_bear. */
@@ -61,15 +60,10 @@ public final class Carcasses {
     /** Twenty-eighth: skeleton_horse. */
     /** Twenty-ninth: zombie_horse. */
     /** Thirtieth: horse. */
-    public static final CarcassDefinition HORSE = buildHORSE();
     /** Thirty-first: brown_llama. */
-    public static final CarcassDefinition BROWN_LLAMA = buildBROWN_LLAMA();
     /** Thirty-second: white_llama. */
-    public static final CarcassDefinition WHITE_LLAMA = buildWHITE_LLAMA();
     /** Thirty-third: creamy_llama. */
-    public static final CarcassDefinition CREAMY_LLAMA = buildCREAMY_LLAMA();
     /** Thirty-fourth: gray_llama. */
-    public static final CarcassDefinition GRAY_LLAMA = buildGRAY_LLAMA();
     /** Thirty-fifth: squid. */
     /** Thirty-sixth: glowsquid. */
     /** Thirty-seventh: creeper. */
@@ -117,6 +111,26 @@ public final class Carcasses {
     /** Cat variant: red_cat (variant 7) */
 
 
+    private static CarcassDefinition buildPOLAR_BEAR() {
+        return new CarcassDefinition(
+                "polar_bear",
+                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
+                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:polar_bear")))
+                        .value(),
+                true,
+                true,
+                true,
+                true,
+                3,
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? polar_bearHanging(state) : polar_bearLying(state),
+                Carcasses::polar_bearLying,
+                Carcasses::polar_bearHead,
+                Carcasses::polar_bearHeadMount,
+                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? polar_bearSkeletonHanging(state) : polar_bearSkeletonLying(state),
+                // polar_bear drops raw_polar_bear_meat
+                java.util.List.of(net.minecraft.world.item.Items.COD), null);
+    }
+
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
         BY_MOB_ID.put(definition.mobId(), definition);
@@ -129,14 +143,7 @@ public final class Carcasses {
         register(CHICKEN);
         register(RABBIT);
         register(GOAT);
-        register(DONKEY);
-        register(MULE);
-        register(HORSE);
-        register(BROWN_LLAMA);
-        register(WHITE_LLAMA);
-        register(CREAMY_LLAMA);
-        register(GRAY_LLAMA);
-        // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
+        register(POLAR_BEAR);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {

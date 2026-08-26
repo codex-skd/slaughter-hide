@@ -1,9 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/drained_gray_llama_carcass",
-  "textures": {
-    "all": "slaughter_hide:block/gray_llama",
-    "particle": "minecraft:block/nether_wart_block",
-    "0": "slaughter_hide:block/gray_llama",
-    "1": "slaughter_hide:block/llama_skeleton"
-  }
-}

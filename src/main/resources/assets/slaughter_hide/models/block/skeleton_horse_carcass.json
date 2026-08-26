@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/skeleton_horse_carcass",
-  "textures": {
-    "all": "slaughter_hide:block/skeleton_horse",
-    "particle": "minecraft:block/bone_block_side",
-    "0": "slaughter_hide:block/skeleton_horse"
-  }
-}

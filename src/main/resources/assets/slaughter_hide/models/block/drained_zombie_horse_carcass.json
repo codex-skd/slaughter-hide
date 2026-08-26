@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/zombie_horse_carcass_drained",
-  "textures": {
-    "all": "slaughter_hide:block/drained_horse_zombie",
-    "particle": "minecraft:block/nether_wart_block",
-    "0": "slaughter_hide:block/drained_horse_zombie"
-  }
-}
