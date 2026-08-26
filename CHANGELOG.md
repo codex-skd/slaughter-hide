@@ -1,5 +1,13 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.34] - 2026-08-26
+
+### Fix
+
+- **Cientos de ítems sin textura en el creativo arreglados**: MC 26.2 exige una definición de modelo de ítem en `items/<id>.json` para renderizar cualquier ítem — tener solo `models/item/<id>.json` (formato pre-1.21.4) ya no basta y el juego lo ignoraba en silencio. Generadas las 308 definiciones que faltaban: 288 portadas del asset dump original de Butchery con remap de namespace, y 20 vía mapa de alias para ítems cuyo nombre difiere entre mods (`*_cat_skin`→`*_cat_fur`, `bshorthair_cat_*`→`british_shorthair_*`/`shorthair_cat_*`, caballo genérico→variante `regular_chestnut`, skeletons de axolotl de color→`axolotl_skeleton` compartido, `creeper_head`→modelo vanilla).
+- **58 ítems sin assets ni en el original** quedan con icono de barrera como placeholder visible hasta decidir su contenido: mayormente `drained_*` de peces/slimes/magma cubes que nunca existieron como ítem en Butchery, los 5 skins de axolotl, cortes de cabra (`raw_lamb_*_goat`, `hoof_goat`) y los corpse items de ravager.
+- **Crash del bake de modelos con UVs fuera de rango** (herencia MCreator): MC 26.2 hornea los modelos estrictamente y lanzaba `Cannot compute translucency out of bounds` en vez de tolerar coordenadas fuera de la textura como versiones anteriores — afectaba al Freezer cerrado, toda la familia `skin_rack` y todos los head mounts (mostraban modelo ausente en mano/inventario). Clampeadas 681 componentes UV en 95 modelos custom.
+
 ## [0.0.0-beta.33] - 2026-08-26
 
 ### Add
