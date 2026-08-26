@@ -5,7 +5,7 @@
     "semantic_hash": ""
   },
   "build.gradle": {
-    "mtime": 1787589982.7681453,
+    "mtime": 1787738074.365255,
     "ast_hash": "8a2d38fc3e4770396c8de3dd954362a5",
     "semantic_hash": ""
   },
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/SlaughterHide.java": {
-    "mtime": 1787590251.8096712,
-    "ast_hash": "e93a95e1600560359c54e8386802a479",
+    "mtime": 1787737003.0569363,
+    "ast_hash": "dc296f593a845e870180e5dc78a416e6",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/CarcassBlock.java": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/CorpseBlock.java": {
-    "mtime": 1787589982.8263464,
-    "ast_hash": "6b83782e838f470e6688098d073a6dd1",
+    "mtime": 1787685465.5631921,
+    "ast_hash": "21bbef5f4a56a4e483c725ed2bca21b0",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/DrainedCarcassBlock.java": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/entity/CorpseBlockEntity.java": {
-    "mtime": 1787589982.83183,
-    "ast_hash": "6a02b27cbbdf66cbf72dc2335b2f712e",
+    "mtime": 1787685479.1708548,
+    "ast_hash": "00dba3437819b342f5764b4a38a108d8",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/config/SlaughterHideConfig.java": {
@@ -135,23 +135,23 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlockEntities.java": {
-    "mtime": 1787589982.835344,
-    "ast_hash": "c6d921b4481e0d1a85e3176fe956cb77",
+    "mtime": 1787701501.1650674,
+    "ast_hash": "44d3694aec0b54bfe9689a0dfcddc7d5",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787614243.3373985,
-    "ast_hash": "726fc2fd4f105642c37c1deb901d3e5b",
+    "mtime": 1787698854.5476446,
+    "ast_hash": "e25fdc56ba0c502f76d0dd5bfeb20d20",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
-    "mtime": 1787590251.644299,
-    "ast_hash": "68509359a62c052ed6e224293e8e5ba2",
+    "mtime": 1787698883.7485485,
+    "ast_hash": "de3e34ac239bdabed54c0bb3de9f5e3d",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787614314.380694,
-    "ast_hash": "962c7f58f9e8a26097b2881d488e1b13",
+    "mtime": 1787698874.3932612,
+    "ast_hash": "d966a333f1d21acdf7f94fbd0c217e0c",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -1090,8 +1090,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/en_us.json": {
-    "mtime": 1787615472.1346169,
-    "ast_hash": "49ead7b4d17e971a79d5090268986a1b",
+    "mtime": 1787698995.8670022,
+    "ast_hash": "e3b00a346b55b73585dcb107f653853c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/es_es.json": {
@@ -6365,13 +6365,13 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787619608.828922,
-    "ast_hash": "d0da9f89d2f212f21571fbd2a79830d3",
+    "mtime": 1787741376.6470065,
+    "ast_hash": "dbf9f162eea591899efc7008b695ce34",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1787590251.6970348,
-    "ast_hash": "9c127e43449197f594bc882de2bca99f",
+    "mtime": 1787741409.5824692,
+    "ast_hash": "fcb4d35c2e264ea95d40bdc1f49fbb7e",
     "semantic_hash": ""
   },
   "carcasses_new.txt": {
@@ -6380,13 +6380,13 @@
     "semantic_hash": ""
   },
   "docs/ROADMAP_SLAUGHTER_HIDE.md": {
-    "mtime": 1787619559.467389,
-    "ast_hash": "1a66d5e93e298f97c15d9c754c3edeca",
+    "mtime": 1787738290.752566,
+    "ast_hash": "38cbac51e773e3fe46be4b82599bd5d2",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SLAUGHTER_HIDE_26-2.md": {
-    "mtime": 1787589982.7702656,
-    "ast_hash": "8a1b7eef35302ced5983d327ccf5fe03",
+    "mtime": 1787673910.604675,
+    "ast_hash": "f6e7d5f8e5400fe9b0be3c1e14aa8a36",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -6395,8 +6395,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1787589982.7702656,
-    "ast_hash": "33819f3a0b72912cf1d6131a6dd894da",
+    "mtime": 1787673881.5727794,
+    "ast_hash": "9e8b689e8bfe959c42414a54987ca429",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.2.md": {
@@ -12862,6 +12862,391 @@
   "src/main/resources/assets/slaughter_hide/textures/block/white_llama_skin.png": {
     "mtime": 1787615298.9259017,
     "ast_hash": "49fd922b29d351b4acb933a45cc925d9",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/ClientSetup.java": {
+    "mtime": 1787736992.6559286,
+    "ast_hash": "74ceef48cc3195070cb255c04cf8320d",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/FreezerBlock.java": {
+    "mtime": 1787736950.017154,
+    "ast_hash": "d9354888fac06fa5c36a106f69391e6a",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/entity/FreezerBlockEntity.java": {
+    "mtime": 1787701443.9802496,
+    "ast_hash": "964750351cde168ecae4a578eab13e4d",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/client/particle/FreezerSmokeParticle.java": {
+    "mtime": 1787736963.2529385,
+    "ast_hash": "f7b36d488f3e222f558e37fff3b6248c",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/handler/CorpseInteractionHandler.java": {
+    "mtime": 1787685638.6499765,
+    "ast_hash": "9a7023600de8f6694bd64f12e5fddf00",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/init/ModMenus.java": {
+    "mtime": 1787698844.1511686,
+    "ast_hash": "fbfd51a0276e2f1add2ea7587263e0a7",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/init/ModParticleTypes.java": {
+    "mtime": 1787736956.4159415,
+    "ast_hash": "b97bcd8e7ebddb76154080162cf6b6e0",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/menu/FreezerMenu.java": {
+    "mtime": 1787737006.7987487,
+    "ast_hash": "657cf845ed13e6d9b3a36a7700eb8cfd",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/menu/FreezerScreen.java": {
+    "mtime": 1787701711.8412578,
+    "ast_hash": "91dc3d0d010c8715a2188fda46fcc577",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/freezer.json": {
+    "mtime": 1787737023.3156562,
+    "ast_hash": "6f21809721c9bd9bddf49a2deb8649c6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/freezer.json": {
+    "mtime": 1787698978.3463576,
+    "ast_hash": "bfc80c7d9a47f6c5c448ac5efebcce97",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/heart.json": {
+    "mtime": 1787685395.3814738,
+    "ast_hash": "38350f8ee338d40721b9b6a461a15ad4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/intestines.json": {
+    "mtime": 1787685397.199451,
+    "ast_hash": "8c538b8371e824e6bab3538072c74a4e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/kidney.json": {
+    "mtime": 1787685397.6533806,
+    "ast_hash": "3e7f25861402321f1c0b2bc94d89721e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/liver.json": {
+    "mtime": 1787685398.5361302,
+    "ast_hash": "fe63836f7e78e1801405dbb8f7ba7c47",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/lungs.json": {
+    "mtime": 1787685399.4203048,
+    "ast_hash": "800975525daa530639bb0415b1db6dee",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/rotten_heart.json": {
+    "mtime": 1787685401.462771,
+    "ast_hash": "f26e5ecbfe55eeae749df91370fcc90c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/rotten_intestines.json": {
+    "mtime": 1787685402.5083334,
+    "ast_hash": "7a08dff7404f4917ba6cf629b98c6f9b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/rotten_kidney.json": {
+    "mtime": 1787685403.5140536,
+    "ast_hash": "98f44ce5edca6c30d563db860bbaf452",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/rotten_liver.json": {
+    "mtime": 1787685404.7099035,
+    "ast_hash": "9e1a1e69e0fbb465b5cff85c225e11d6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/rotten_lungs.json": {
+    "mtime": 1787685405.8251686,
+    "ast_hash": "99c1b7219dee8102b357b6c0af57e540",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/rotten_stomach.json": {
+    "mtime": 1787685406.8152702,
+    "ast_hash": "7c6bbd3daf73135355fd0d6d047aea09",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/stomach.json": {
+    "mtime": 1787685400.3452077,
+    "ast_hash": "37bc441ae87e2598c438daefc76f81a5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/freezer.json": {
+    "mtime": 1787698970.6580627,
+    "ast_hash": "785fd23e833f3261c29996a1db4d8ffd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/freezer_1.json": {
+    "mtime": 1787737023.311957,
+    "ast_hash": "7c7ff9030f0a41d1399beceefd3e95b2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/freezer_2.json": {
+    "mtime": 1787737023.3126037,
+    "ast_hash": "8a877088c15c58eebd97febfff6ed40e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/freezer_3.json": {
+    "mtime": 1787737023.3126037,
+    "ast_hash": "dddcb47d7e1bcb4a5087c248c450b835",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/freezer_4.json": {
+    "mtime": 1787737023.3136172,
+    "ast_hash": "fea915f99441f218607abe48a1779c33",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/freezer_open.json": {
+    "mtime": 1787698972.12492,
+    "ast_hash": "f82669d7b6541a8bbc71003a6e23667e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/freezer.json": {
+    "mtime": 1787698962.3281953,
+    "ast_hash": "5ea04fd65b5bcea868c8783458f7646b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/freezer_left.json": {
+    "mtime": 1787737022.9853473,
+    "ast_hash": "43ee3c09ac41de376e95a675ab46bfce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/freezer_left_open.json": {
+    "mtime": 1787737023.0668814,
+    "ast_hash": "2022dd27acd49e239f973ff97e691190",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/freezer_open.json": {
+    "mtime": 1787698963.6267455,
+    "ast_hash": "64b4e5ad144d9832bc52bdf2c5ffb5f4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/freezer_right.json": {
+    "mtime": 1787737023.0333645,
+    "ast_hash": "a47295762cf7e62e79751aa3ea0b6c12",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/freezer_right_open.json": {
+    "mtime": 1787737023.1145923,
+    "ast_hash": "900c4285ee62df5d71be234729e278b5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/freezer.json": {
+    "mtime": 1787698980.6871848,
+    "ast_hash": "c7d1a8d9c4ed4bc5cb641513a5d30394",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/heart.json": {
+    "mtime": 1787685377.6726465,
+    "ast_hash": "41cb8b07cfdec436386d6f3cc667b41b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/intestines.json": {
+    "mtime": 1787685378.4404356,
+    "ast_hash": "6bddb5792d27015eacaf24350c22af35",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/kidney.json": {
+    "mtime": 1787685379.7303805,
+    "ast_hash": "6244e501eceb31db9e472753b93d19da",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/liver.json": {
+    "mtime": 1787685380.382478,
+    "ast_hash": "bc59d5254f59df7bd17bfb9f527f2273",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/lungs.json": {
+    "mtime": 1787685381.8072853,
+    "ast_hash": "721e385d9ce08486ccbc06a1bc59ba2b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/rotten_heart.json": {
+    "mtime": 1787685384.3051555,
+    "ast_hash": "a992099a83b36ba83068f82e5e16a3f8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/rotten_intestines.json": {
+    "mtime": 1787685384.5347123,
+    "ast_hash": "75372535f07078187c587853a88d9d8d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/rotten_kidney.json": {
+    "mtime": 1787685385.8971162,
+    "ast_hash": "2d4992bd228b10b64425166d1e51cd08",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/rotten_liver.json": {
+    "mtime": 1787685386.9696622,
+    "ast_hash": "94d0c048c64e6d08194695d16ba43e0a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/rotten_lungs.json": {
+    "mtime": 1787685388.1071315,
+    "ast_hash": "0ac9fc83e175e427465d66dca1e625e3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/rotten_stomach.json": {
+    "mtime": 1787685389.070758,
+    "ast_hash": "95778eeb661e8539293cdb344ae90629",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/stomach.json": {
+    "mtime": 1787685382.5992143,
+    "ast_hash": "59bcd6658a22260d3168252c00d3b0d9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/particles/freezersmoke.json": {
+    "mtime": 1787737038.0833645,
+    "ast_hash": "782a3b35767680a947718847a135cfef",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/freezer.json": {
+    "mtime": 1787698987.427494,
+    "ast_hash": "1f9750128b58ea95007f9ddd94b802d3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/organs_drop_1.json": {
+    "mtime": 1787658760.8369844,
+    "ast_hash": "b3a2bfb868c46be409c7ddcf9fd8eef7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/organs_drop_2.json": {
+    "mtime": 1787658760.8797226,
+    "ast_hash": "38ae0f43e7726cdeda052c2f34568b72",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/organs_drop_3.json": {
+    "mtime": 1787658760.9171777,
+    "ast_hash": "30b364a7c2591af29131f96be13d737d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipe/freezer.json": {
+    "mtime": 1787698989.2809718,
+    "ast_hash": "8b1c620abdef2c99b1a720fccc003deb",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.33.md": {
+    "mtime": 1787741397.5359747,
+    "ast_hash": "552ce54464379a14b800d592cc193adc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/freezer.png": {
+    "mtime": 1787698925.763112,
+    "ast_hash": "9b0b91f4b0a00346473d4c25168241a2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/gui/container/freezer.png": {
+    "mtime": 1787698926.1010523,
+    "ast_hash": "913fb566405065490a1206ef8fbe6c56",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/heart.png": {
+    "mtime": 1787685706.108776,
+    "ast_hash": "e63c1a9f203b5e24d065c3dfb028ced3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/intestines.png": {
+    "mtime": 1787685706.1625338,
+    "ast_hash": "4b890efdaea2078ba6707e5bc2ad359d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/kidney.png": {
+    "mtime": 1787685706.2060258,
+    "ast_hash": "ef0a07c05d14f3a3f89ec1dbb5579973",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/liver.png": {
+    "mtime": 1787685706.2534633,
+    "ast_hash": "0c01f53b77f8b704f9f134b980626f2e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/lungs.png": {
+    "mtime": 1787685706.3019695,
+    "ast_hash": "a6c8478dbbc699fdb6bdb4a92274d188",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/rotten_heart.png": {
+    "mtime": 1787685706.3922546,
+    "ast_hash": "9f0ba3bb18ff95a2ebcaf5efef823710",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/rotten_intestines.png": {
+    "mtime": 1787685706.4268346,
+    "ast_hash": "9e689a85c4ef3e8d50bf809749b93a05",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/rotten_kidney.png": {
+    "mtime": 1787685706.456715,
+    "ast_hash": "606cafaeecb41e91571d23637f7ee111",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/rotten_liver.png": {
+    "mtime": 1787685706.504839,
+    "ast_hash": "23a2b923c00dd069dc70242f06f47867",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/rotten_lungs.png": {
+    "mtime": 1787685706.5467057,
+    "ast_hash": "71855c6436ce2853267f2a0a90553420",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/rotten_stomach.png": {
+    "mtime": 1787685706.5938983,
+    "ast_hash": "621a997fe37a9b8f1f4bf82983e19db3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/stomach.png": {
+    "mtime": 1787685706.3467755,
+    "ast_hash": "58d26c7379e05f09631e405854c4dafe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_1.png": {
+    "mtime": 1787737038.140035,
+    "ast_hash": "cb06981641aaf2d42b6211c250edab29",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_2.png": {
+    "mtime": 1787737038.1544511,
+    "ast_hash": "c22101bf68f39902d5c77f9f83a90c02",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_3.png": {
+    "mtime": 1787737038.1697247,
+    "ast_hash": "2976476ef37d0d542728b819e8073f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_4.png": {
+    "mtime": 1787737038.1855407,
+    "ast_hash": "7bb1bcd963a5ce97310c3b228d3943c7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_5.png": {
+    "mtime": 1787737038.1990013,
+    "ast_hash": "2ebea0476175a9dcc69f2aec3f32e4fd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_6.png": {
+    "mtime": 1787737038.2145085,
+    "ast_hash": "b3f03a7f79d981d52d757b9cd1786c57",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_7.png": {
+    "mtime": 1787737038.2294643,
+    "ast_hash": "e516e6e076e4e742e0a1ff3420db3de4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_8.png": {
+    "mtime": 1787737038.2430885,
+    "ast_hash": "f7dfbc49e5721b91cd71ae9d2c8ba5a1",
     "semantic_hash": ""
   }
 }
