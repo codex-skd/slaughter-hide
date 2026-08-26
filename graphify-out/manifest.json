@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/entity/CorpseBlockEntity.java": {
-    "mtime": 1787685479.1708548,
-    "ast_hash": "00dba3437819b342f5764b4a38a108d8",
+    "mtime": 1787759149.3254356,
+    "ast_hash": "02aeeea67b693b91f03035710b96d9e2",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/config/SlaughterHideConfig.java": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlockEntities.java": {
-    "mtime": 1787701501.1650674,
-    "ast_hash": "44d3694aec0b54bfe9689a0dfcddc7d5",
+    "mtime": 1787759030.6559446,
+    "ast_hash": "9c162491d7862445cd5408d9e5e5f5c9",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
@@ -1090,8 +1090,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/es_es.json": {
-    "mtime": 1787589982.8918648,
-    "ast_hash": "42770e142efe00ac113898aa37042106",
+    "mtime": 1787760008.6007552,
+    "ast_hash": "1eddf3c2aa92d3804085e3347d84273d",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/bat_carcass.json": {
