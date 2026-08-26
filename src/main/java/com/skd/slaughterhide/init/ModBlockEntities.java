@@ -28,10 +28,7 @@ public final class ModBlockEntities {
             REGISTRY.register("carcass",
                     () -> new BlockEntityType<>(CarcassBlockEntity::new, ModBlocks.carcassBlocks()));
 
-    // Corpse block entity for humanoid mobs (container-based, 9 slots)
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CorpseBlockEntity>> CORPSE =
-            REGISTRY.register("corpse",
-                    () -> new BlockEntityType<>(CorpseBlockEntity::new, ModBlocks.corpseBlocks()));
+    // Corpse block entity removed with farm-only scope (no humanoid corpses)
 
     // Freezer block entity (27-slot cold-storage container)
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FreezerBlockEntity>> FREEZER =

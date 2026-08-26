@@ -22,7 +22,7 @@ public class CorpseBlockEntity extends BlockEntity {
     private static final String TAG_MOB = "mobId";
 
     public CorpseBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.CORPSE.get(), pos, state);
+        super(ModBlockEntities.CARCASS.get(), pos, state);
     }
 
     public String getMobId() {
