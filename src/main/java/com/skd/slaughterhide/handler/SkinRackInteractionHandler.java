@@ -28,45 +28,21 @@ public final class SkinRackInteractionHandler {
 
     // Map skin items to their blockstate values (1-31, 0 is empty)
     private static int getSkinState(ItemStack stack) {
-        // Only mob-skin items that actually exist in this port are mapped here.
-        // The original mod also has horse/llama/mooshroom-variant skins, but
-        // those mobs' skins were never ported in earlier sessions -- left out
-        // rather than invented.
-        if (stack.is(ModItems.BAT_SKIN.get())) return 1;
-        if (stack.is(ModItems.CREEPER_SKIN.get())) return 6;
-        if (stack.is(ModItems.DOLPHIN_SKIN.get())) return 8;
         if (stack.is(ModItems.DONKEY_SKIN.get())) return 9;
-        if (stack.is(ModItems.FOX_SKIN.get())) return 10;
-        if (stack.is(ModItems.HOGLIN_SKIN.get())) return 12;
         if (stack.is(ModItems.MULE_SKIN.get())) return 13;
-        if (stack.is(ModItems.OCELOT_SKIN.get())) return 14;
-        if (stack.is(ModItems.PANDA_SKIN.get())) return 15;
         if (stack.is(ModItems.PIG_SKIN.get())) return 16;
         if (stack.is(ModItems.SHEEP_SKIN.get())) return 18;
-        if (stack.is(ModItems.POLAR_BEAR_SKIN.get())) return 21;
         if (stack.is(ModItems.COW_SKIN.get())) return 28;
-        if (stack.is(ModItems.ZOGLIN_SKIN.get())) return 29;
-        if (stack.is(ModItems.CAMEL_SKIN.get())) return 31;
         return 0;
     }
 
     private static ItemStack getSkinItem(int state) {
         return switch (state) {
-            case 1 -> new ItemStack(ModItems.BAT_SKIN.get());
-            case 6 -> new ItemStack(ModItems.CREEPER_SKIN.get());
-            case 8 -> new ItemStack(ModItems.DOLPHIN_SKIN.get());
             case 9 -> new ItemStack(ModItems.DONKEY_SKIN.get());
-            case 10 -> new ItemStack(ModItems.FOX_SKIN.get());
-            case 12 -> new ItemStack(ModItems.HOGLIN_SKIN.get());
             case 13 -> new ItemStack(ModItems.MULE_SKIN.get());
-            case 14 -> new ItemStack(ModItems.OCELOT_SKIN.get());
-            case 15 -> new ItemStack(ModItems.PANDA_SKIN.get());
             case 16 -> new ItemStack(ModItems.PIG_SKIN.get());
             case 18 -> new ItemStack(ModItems.SHEEP_SKIN.get());
-            case 21 -> new ItemStack(ModItems.POLAR_BEAR_SKIN.get());
             case 28 -> new ItemStack(ModItems.COW_SKIN.get());
-            case 29 -> new ItemStack(ModItems.ZOGLIN_SKIN.get());
-            case 31 -> new ItemStack(ModItems.CAMEL_SKIN.get());
             default -> ItemStack.EMPTY;
         };
     }

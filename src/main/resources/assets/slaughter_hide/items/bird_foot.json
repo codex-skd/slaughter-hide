@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "slaughter_hide:item/chicken_foot"
+  "model": {
+    "type": "minecraft:model",
+    "model": "slaughter_hide:item/bird_foot"
   }
 }

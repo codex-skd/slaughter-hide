@@ -19,6 +19,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
  */
 public class RavagerHeadMountBlock extends HeadMountBlock {
     public RavagerHeadMountBlock(Properties properties) {
-        super(properties, Carcasses.RAVAGER);
+        super(properties, Carcasses.COW);
     }
 }

@@ -37,15 +37,7 @@ public final class CarcassDeathHandler {
         if (!(entity.level() instanceof ServerLevel level)) {
             return;
         }
-        // Special handling for cats: they share EntityType but have variant-specific carcasses
-        boolean isCat = entity.getType().toString().contains("cat");
-        CarcassDefinition definition;
-        if (isCat) {
-            // Default to tabby variant (9) - matches original decompiled behavior
-            definition = Carcasses.forCatVariant(9);
-        } else {
-            definition = Carcasses.forEntityType(entity.getType());
-        }
+        CarcassDefinition definition = Carcasses.forEntityType(entity.getType());
         if (definition == null) {
             return;
         }

@@ -36,51 +36,30 @@ public final class Carcasses {
     /** Sixth fully-playable mob: goat. */
     public static final CarcassDefinition GOAT = buildGoat();
     /** Seventh fully-playable mob: fox. */
-    public static final CarcassDefinition FOX = buildFox();
     /** Eighth fully-playable mob: wolf. */
-    public static final CarcassDefinition WOLF = buildWolf();
     /** Ninth: camel. */
-    public static final CarcassDefinition CAMEL = buildCAMEL();
     /** Tenth: donkey. */
     public static final CarcassDefinition DONKEY = buildDONKEY();
     /** Eleventh: mule. */
     public static final CarcassDefinition MULE = buildMULE();
     /** Twelfth: ocelot. */
-    public static final CarcassDefinition OCELOT = buildOCELOT();
     /** Thirteenth: panda. */
-    public static final CarcassDefinition PANDA = buildPANDA();
     /** Fourteenth: polar_bear. */
-    public static final CarcassDefinition POLAR_BEAR = buildPOLAR_BEAR();
     /** Fifteenth: hoglin. */
-    public static final CarcassDefinition HOGLIN = buildHOGLIN();
     /** Sixteenth: zoglin. */
-    public static final CarcassDefinition ZOGLIN = buildZOGLIN();
     /** Seventeenth: dolphin. */
-    public static final CarcassDefinition DOLPHIN = buildDOLPHIN();
     /** Eighteenth: bat. */
-    public static final CarcassDefinition BAT = buildBAT();
     /** Nineteenth: silverfish. */
-    public static final CarcassDefinition SILVERFISH = buildSILVERFISH();
     /** Twentieth: endermite. */
-    public static final CarcassDefinition ENDERMITE = buildENDERMITE();
     /** Twenty-first: bee. */
-    public static final CarcassDefinition BEE = buildBEE();
     /** Twenty-second: cod. */
-    public static final CarcassDefinition COD = buildCOD();
     /** Twenty-third: salmon. */
-    public static final CarcassDefinition SALMON = buildSALMON();
     /** Twenty-fourth: phantom. */
-    public static final CarcassDefinition PHANTOM = buildPHANTOM();
     /** Twenty-fifth: shulker. */
-    public static final CarcassDefinition SHULKER = buildSHULKER();
     /** Twenty-sixth: guardian. */
-    public static final CarcassDefinition GUARDIAN = buildGUARDIAN();
     /** Twenty-seventh: elder_guardian. */
-    public static final CarcassDefinition ELDER_GUARDIAN = buildELDER_GUARDIAN();
     /** Twenty-eighth: skeleton_horse. */
-    public static final CarcassDefinition SKELETON_HORSE = buildSKELETON_HORSE();
     /** Twenty-ninth: zombie_horse. */
-    public static final CarcassDefinition ZOMBIE_HORSE = buildZOMBIE_HORSE();
     /** Thirtieth: horse. */
     public static final CarcassDefinition HORSE = buildHORSE();
     /** Thirty-first: brown_llama. */
@@ -92,111 +71,51 @@ public final class Carcasses {
     /** Thirty-fourth: gray_llama. */
     public static final CarcassDefinition GRAY_LLAMA = buildGRAY_LLAMA();
     /** Thirty-fifth: squid. */
-    public static final CarcassDefinition SQUID = buildSQUID();
     /** Thirty-sixth: glowsquid. */
-    public static final CarcassDefinition GLOW_SQUID = buildGLOW_SQUID();
     /** Thirty-seventh: creeper. */
-    public static final CarcassDefinition CREEPER = buildCREEPER();
     /** Thirty-eighth: spider. */
-    public static final CarcassDefinition SPIDER = buildSPIDER();
     /** Thirty-ninth: cave_spider. */
-    public static final CarcassDefinition CAVE_SPIDER = buildCAVE_SPIDER();
     /** Fortieth: blue_axolotl. */
-    public static final CarcassDefinition BLUE_AXOLOTL = buildBLUE_AXOLOTL();
     /** Forty-first: pink_axolotl. */
-    public static final CarcassDefinition PINK_AXOLOTL = buildPINK_AXOLOTL();
     /** Forty-second: brown_axolotl. */
-    public static final CarcassDefinition BROWN_AXOLOTL = buildBROWN_AXOLOTL();
     /** Forty-third: cyan_axolotl. */
-    public static final CarcassDefinition CYAN_AXOLOTL = buildCYAN_AXOLOTL();
     /** Forty-fourth: gold_axolotl. */
-    public static final CarcassDefinition GOLD_AXOLOTL = buildGOLD_AXOLOTL();
 /** Forty-fifth: pufferfish. */
-    public static final CarcassDefinition PUFFERFISH = buildPUFFERFISH();
     /** Forty-sixth: slime. */
-    public static final CarcassDefinition SLIME = buildSLIME();
     /** Forty-seventh: medium_slime. */
-    public static final CarcassDefinition MEDIUM_SLIME = buildMEDIUM_SLIME();
     /** Forty-eighth: small_slime. */
-    public static final CarcassDefinition SMALL_SLIME = buildSMALL_SLIME();
     /** Forty-ninth: magma_cube. */
-    public static final CarcassDefinition MAGMA_CUBE = buildMAGMA_CUBE_LARGE();
     /** Fiftieth: medium_magma_cube. */
-    public static final CarcassDefinition MEDIUM_MAGMA_CUBE = buildMEDIUM_MAGMA_CUBE();
     /** Fifty-first: small_magma_cube. */
-    public static final CarcassDefinition SMALL_MAGMA_CUBE = buildSMALL_MAGMA_CUBE();
 
     // ===== CORPSE BLOCK MOBS (humanoids with organ harvesting) =====
     /** Zombie corpse. */
-    public static final CarcassDefinition ZOMBIE = buildZOMBIE();
     /** Skeleton corpse. */
-    public static final CarcassDefinition SKELETON = buildSKELETON();
     /** Drowned corpse. */
-    public static final CarcassDefinition DROWNED = buildDROWNED();
     /** Husk corpse. */
-    public static final CarcassDefinition HUSK = buildHUSK();
     /** Vindicator corpse. */
-    public static final CarcassDefinition VINDICATOR = buildVINDICATOR();
     /** Evoker corpse. */
-    public static final CarcassDefinition EVOKER = buildEVOKER();
     /** Witch corpse. */
-    public static final CarcassDefinition WITCH = buildWITCH();
     /** Piglin corpse. */
-    public static final CarcassDefinition PIGLIN = buildPIGLIN();
     /** Piglin Brute corpse. */
-    public static final CarcassDefinition PIGLIN_BRUTE = buildPIGLIN_BRUTE();
     /** Ravager corpse. */
-    public static final CarcassDefinition RAVAGER = buildRAVAGER();
 
     // ===== SPECIAL MOBS =====
     /** Enderman carcass (8 cuts). */
-    public static final CarcassDefinition ENDERMAN = buildENDERMAN();
     /** Strider carcass (3 cuts). */
-    public static final CarcassDefinition STRIDER = buildSTRIDER();
     /** Sniffer carcass (3 cuts + fur). */
-    public static final CarcassDefinition SNIFFER = buildSNIFFER();
     /** Turtle carcass (7 cuts). */
-    public static final CarcassDefinition TURTLE = buildTURTLE();
-    public static final CarcassDefinition IRON_GOLEM = buildIRON_GOLEM();
 
     // ===== CAT VARIANTS (11 variants, all share ocelot shapes) =====
     /** Cat variant: all_black_cat (variant 0) */
-    public static final CarcassDefinition ALL_BLACK_CAT = buildCatVariant("all_black_cat", 0);
     /** Cat variant: black_cat (variant 1) */
-    public static final CarcassDefinition BLACK_CAT = buildCatVariant("black_cat", 1);
     /** Cat variant: bshorthair (variant 2) */
-    public static final CarcassDefinition BSHORTHAIR_CAT = buildCatVariant("bshorthair", 2);
     /** Cat variant: calico (variant 3) */
-    public static final CarcassDefinition CALICO_CAT = buildCatVariant("calico", 3);
     /** Cat variant: jellie (variant 4) */
-    public static final CarcassDefinition JELLIE_CAT = buildCatVariant("jellie", 4);
     /** Cat variant: persian (variant 5) */
-    public static final CarcassDefinition PERSIAN_CAT = buildCatVariant("persian", 5);
     /** Cat variant: ragdoll (variant 6) */
-    public static final CarcassDefinition RAGDOLL_CAT = buildCatVariant("ragdoll", 6);
     /** Cat variant: red_cat (variant 7) */
-    public static final CarcassDefinition RED_CAT = buildCatVariant("red_cat", 7);
-    /** Cat variant: siamese (variant 8) */
-    public static final CarcassDefinition SIAMESE_CAT = buildCatVariant("siamese", 8);
-    /** Cat variant: tabby (variant 9) */
-    public static final CarcassDefinition TABBY_CAT = buildCatVariant("tabby", 9);
-    /** Cat variant: white_cat (variant 10) */
-    public static final CarcassDefinition WHITE_CAT = buildCatVariant("white_cat", 10);
 
-    /** Map of cat variant ID -> CarcassDefinition for all 11 cat variants. */
-    public static final Map<Integer, CarcassDefinition> CAT_VARIANTS = new java.util.HashMap<>(java.util.Map.ofEntries(
-            java.util.Map.entry(0, ALL_BLACK_CAT),
-            java.util.Map.entry(1, BLACK_CAT),
-            java.util.Map.entry(2, BSHORTHAIR_CAT),
-            java.util.Map.entry(3, CALICO_CAT),
-            java.util.Map.entry(4, JELLIE_CAT),
-            java.util.Map.entry(5, PERSIAN_CAT),
-            java.util.Map.entry(6, RAGDOLL_CAT),
-            java.util.Map.entry(7, RED_CAT),
-            java.util.Map.entry(8, SIAMESE_CAT),
-            java.util.Map.entry(9, TABBY_CAT),
-            java.util.Map.entry(10, WHITE_CAT)
-    ));
 
     private static void register(CarcassDefinition definition) {
         BY_ENTITY.put(definition.entityType(), definition);
@@ -210,77 +129,14 @@ public final class Carcasses {
         register(CHICKEN);
         register(RABBIT);
         register(GOAT);
-        register(FOX);
-        register(WOLF);
-        register(CAMEL);
         register(DONKEY);
         register(MULE);
-        register(OCELOT);
-        register(PANDA);
-        register(POLAR_BEAR);
-        register(HOGLIN);
-        register(ZOGLIN);
-        register(DOLPHIN);
-        register(BAT);
-        register(SILVERFISH);
-        register(ENDERMITE);
-        register(BEE);
-        register(COD);
-        register(SALMON);
-        register(PHANTOM);
-        register(SHULKER);
-        register(GUARDIAN);
-        register(ELDER_GUARDIAN);
-        register(SKELETON_HORSE);
-        register(ZOMBIE_HORSE);
         register(HORSE);
         register(BROWN_LLAMA);
         register(WHITE_LLAMA);
         register(CREAMY_LLAMA);
         register(GRAY_LLAMA);
-        register(SQUID);
-        register(GLOW_SQUID);
-        register(CREEPER);
-        register(SPIDER);
-        register(CAVE_SPIDER);
-        register(BLUE_AXOLOTL);
-        register(PINK_AXOLOTL);
-        register(BROWN_AXOLOTL);
-        register(CYAN_AXOLOTL);
-        register(GOLD_AXOLOTL);
-        register(PUFFERFISH);
-        register(SLIME);
-        register(MAGMA_CUBE);
-        register(MEDIUM_SLIME);
-        register(SMALL_SLIME);
-        register(MEDIUM_MAGMA_CUBE);
-        register(SMALL_MAGMA_CUBE);
-        register(ZOMBIE);
-        register(SKELETON);
-        register(DROWNED);
-        register(HUSK);
-        register(VINDICATOR);
-        register(EVOKER);
-        register(WITCH);
-        register(PIGLIN);
-        register(PIGLIN_BRUTE);
-        register(RAVAGER);
-        register(ENDERMAN);
-        register(STRIDER);
-        register(SNIFFER);
-        register(TURTLE);
         // Cat variants: only add to BY_MOB_ID (share EntityType with OCELOT)
-        BY_MOB_ID.put(ALL_BLACK_CAT.mobId(), ALL_BLACK_CAT);
-        BY_MOB_ID.put(BLACK_CAT.mobId(), BLACK_CAT);
-        BY_MOB_ID.put(BSHORTHAIR_CAT.mobId(), BSHORTHAIR_CAT);
-        BY_MOB_ID.put(CALICO_CAT.mobId(), CALICO_CAT);
-        BY_MOB_ID.put(JELLIE_CAT.mobId(), JELLIE_CAT);
-        BY_MOB_ID.put(PERSIAN_CAT.mobId(), PERSIAN_CAT);
-        BY_MOB_ID.put(RAGDOLL_CAT.mobId(), RAGDOLL_CAT);
-        BY_MOB_ID.put(RED_CAT.mobId(), RED_CAT);
-        BY_MOB_ID.put(SIAMESE_CAT.mobId(), SIAMESE_CAT);
-        BY_MOB_ID.put(TABBY_CAT.mobId(), TABBY_CAT);
-        BY_MOB_ID.put(WHITE_CAT.mobId(), WHITE_CAT);
     }
 
     public static CarcassDefinition forEntityType(EntityType<?> entityType) {
@@ -764,25 +620,6 @@ public final class Carcasses {
         return foxLying(state);
     }
 
-    private static CarcassDefinition buildFox() {
-        return new CarcassDefinition(
-                "fox",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:fox")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? foxHanging(state) : foxLying(state),
-                Carcasses::foxLying,
-                Carcasses::foxHead,
-                Carcasses::foxHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? foxSkeletonHanging(state) : foxSkeletonLying(state),
-                // Fox drops raw_fox_meat
-                java.util.List.of(net.minecraft.world.item.Items.SWEET_BERRIES), null); // Fox doesn't have a vanilla meat drop, using sweet berries as placeholder
-    }
 
     // Shapes below are ported 1:1 from the original Butchery wolf blocks.
     private static VoxelShape wolfHanging(BlockState state) {
@@ -837,25 +674,6 @@ public final class Carcasses {
         return wolfLying(state);
     }
 
-    private static CarcassDefinition buildWolf() {
-        return new CarcassDefinition(
-                "wolf",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:wolf")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? wolfHanging(state) : wolfLying(state),
-                Carcasses::wolfLying,
-                Carcasses::wolfHead,
-                Carcasses::wolfHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? wolfSkeletonHanging(state) : wolfSkeletonLying(state),
-                // Wolf drops wolf_pelt
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
     // ===== NEW MOBS (camel through dolphin) =====
 
@@ -904,25 +722,6 @@ public final class Carcasses {
         return camelLying(state);
     }
 
-    private static CarcassDefinition buildCAMEL() {
-        return new CarcassDefinition(
-                "camel",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:camel")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? camelHanging(state) : camelLying(state),
-                Carcasses::camelLying,
-                Carcasses::camelHead,
-                Carcasses::camelHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? camelSkeletonHanging(state) : camelSkeletonLying(state),
-                // camel drops raw_camel_meat
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery donkey blocks.
     private static VoxelShape donkeyHanging(BlockState state) {
@@ -1099,25 +898,6 @@ private static CarcassDefinition buildDONKEY() {
         return ocelotLying(state);
     }
 
-    private static CarcassDefinition buildOCELOT() {
-        return new CarcassDefinition(
-                "ocelot",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:ocelot")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? ocelotHanging(state) : ocelotLying(state),
-                Carcasses::ocelotLying,
-                Carcasses::ocelotHead,
-                Carcasses::ocelotHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? ocelotSkeletonHanging(state) : ocelotSkeletonLying(state),
-                // ocelot drops raw_ocelot_meat
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery panda blocks.
     private static VoxelShape pandaHanging(BlockState state) {
@@ -1164,25 +944,6 @@ private static CarcassDefinition buildDONKEY() {
         return pandaLying(state);
     }
 
-    private static CarcassDefinition buildPANDA() {
-        return new CarcassDefinition(
-                "panda",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:panda")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pandaHanging(state) : pandaLying(state),
-                Carcasses::pandaLying,
-                Carcasses::pandaHead,
-                Carcasses::pandaHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? pandaSkeletonHanging(state) : pandaSkeletonLying(state),
-                // panda drops raw_panda_steak
-                java.util.List.of(net.minecraft.world.item.Items.BAMBOO), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery polar_bear blocks.
     private static VoxelShape polar_bearHanging(BlockState state) {
@@ -1229,25 +990,6 @@ private static CarcassDefinition buildDONKEY() {
         return polar_bearLying(state);
     }
 
-    private static CarcassDefinition buildPOLAR_BEAR() {
-        return new CarcassDefinition(
-                "polar_bear",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:polar_bear")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? polar_bearHanging(state) : polar_bearLying(state),
-                Carcasses::polar_bearLying,
-                Carcasses::polar_bearHead,
-                Carcasses::polar_bearHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? polar_bearSkeletonHanging(state) : polar_bearSkeletonLying(state),
-                // polar_bear drops raw_polar_bear_meat
-                java.util.List.of(net.minecraft.world.item.Items.COD), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery hoglin blocks.
     private static VoxelShape hoglinHanging(BlockState state) {
@@ -1294,25 +1036,6 @@ private static CarcassDefinition buildDONKEY() {
         return hoglinLying(state);
     }
 
-    private static CarcassDefinition buildHOGLIN() {
-        return new CarcassDefinition(
-                "hoglin",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:hoglin")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? hoglinHanging(state) : hoglinLying(state),
-                Carcasses::hoglinLying,
-                Carcasses::hoglinHead,
-                Carcasses::hoglinHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? hoglinSkeletonHanging(state) : hoglinSkeletonLying(state),
-                // hoglin drops raw_hoglin_chunk
-                java.util.List.of(net.minecraft.world.item.Items.PORKCHOP), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery zoglin blocks.
     private static VoxelShape zoglinHanging(BlockState state) {
@@ -1353,25 +1076,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // zoglin has no skeleton
 
-    private static CarcassDefinition buildZOGLIN() {
-        return new CarcassDefinition(
-                "zoglin",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:zoglin")))
-                        .value(),
-                true,
-                true,
-                false,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? zoglinHanging(state) : zoglinLying(state),
-                Carcasses::zoglinLying,
-                Carcasses::zoglinHead,
-                Carcasses::zoglinHeadMount,
-                Carcasses::zoglinLying,  // no skeleton
-                // zoglin drops minecraft:rotten_flesh
-                java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery dolphin blocks.
     private static VoxelShape dolphinHanging(BlockState state) {
@@ -1418,25 +1122,6 @@ private static CarcassDefinition buildDONKEY() {
         return dolphinLying(state);
     }
 
-    private static CarcassDefinition buildDOLPHIN() {
-        return new CarcassDefinition(
-                "dolphin",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:dolphin")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? dolphinHanging(state) : dolphinLying(state),
-                Carcasses::dolphinLying,
-                Carcasses::dolphinHead,
-                Carcasses::dolphinHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? dolphinSkeletonHanging(state) : dolphinSkeletonLying(state),
-                // dolphin drops raw_dolphin_meat
-                java.util.List.of(net.minecraft.world.item.Items.COD), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery bat blocks.
     private static VoxelShape batHanging(BlockState state) {
@@ -1483,25 +1168,6 @@ private static CarcassDefinition buildDONKEY() {
         return batLying(state);
     }
 
-    private static CarcassDefinition buildBAT() {
-        return new CarcassDefinition(
-                "bat",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:bat")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? batHanging(state) : batLying(state),
-                Carcasses::batLying,
-                Carcasses::batHead,
-                Carcasses::batHeadMount,
-                state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? batSkeletonHanging(state) : batSkeletonLying(state),
-                // bat drops raw_bat_meat
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery silverfish blocks.
     private static VoxelShape silverfishHanging(BlockState state) {
@@ -1537,25 +1203,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // silverfish has no skeleton
 
-    private static CarcassDefinition buildSILVERFISH() {
-        return new CarcassDefinition(
-                "silverfish",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:silverfish")))
-                        .value(),
-                true,
-                true,
-                false,
-                false,
-                3,
-                Carcasses::silverfishHanging,
-                Carcasses::silverfishLying,
-                Carcasses::silverfishHead,
-                Carcasses::silverfishHeadMount,
-                Carcasses::silverfishLying,  // no skeleton
-                // silverfish drops raw_silverfish_chunks
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery endermite blocks.
     private static VoxelShape endermiteHanging(BlockState state) {
@@ -1616,25 +1263,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // endermite has no skeleton
 
-    private static CarcassDefinition buildENDERMITE() {
-        return new CarcassDefinition(
-                "endermite",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:endermite")))
-                        .value(),
-                true,
-                false,
-                false,
-                false,
-                3,
-                Carcasses::endermiteHanging,
-                Carcasses::endermiteLying,
-                Carcasses::endermiteHead,
-                Carcasses::endermiteHeadMount,
-                Carcasses::endermiteLying,  // no skeleton
-                // endermite drops raw_endermite_chunks
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery bee blocks.
     private static VoxelShape beeHanging(BlockState state) {
@@ -1661,25 +1289,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // bee has no head mount, no skeleton
 
-    private static CarcassDefinition buildBEE() {
-        return new CarcassDefinition(
-                "bee",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:bee")))
-                        .value(),
-                true,
-                false,
-                false,
-                false,
-                2,
-                Carcasses::beeHanging,
-                Carcasses::beeLying,
-                Carcasses::beeHead,
-                Carcasses::beeLying,  // no head mount
-                Carcasses::beeLying,  // no skeleton
-                // bee drops honey_stomach
-                java.util.List.of(net.minecraft.world.item.Items.HONEY_BOTTLE), null);
-    }
 
     // ===== NEW MOBS (cod through horse) =====
 
@@ -1704,25 +1313,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // cod has no head, head mount, skeleton, skin
 
-    private static CarcassDefinition buildCOD() {
-        return new CarcassDefinition(
-                "cod",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:cod")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                1,
-                Carcasses::codHanging,
-                Carcasses::codLying,
-                Carcasses::codLying,  // no head
-                Carcasses::codLying,  // no head mount
-                Carcasses::codLying,  // no skeleton
-                // cod drops cod
-                java.util.List.of(net.minecraft.world.item.Items.COD), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery salmon blocks.
     private static VoxelShape salmonHanging(BlockState state) {
@@ -1745,25 +1335,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // salmon has no head, head mount, skeleton, skin
 
-    private static CarcassDefinition buildSALMON() {
-        return new CarcassDefinition(
-                "salmon",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:salmon")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                1,
-                Carcasses::salmonHanging,
-                Carcasses::salmonLying,
-                Carcasses::salmonLying,  // no head
-                Carcasses::salmonLying,  // no head mount
-                Carcasses::salmonLying,  // no skeleton
-                // salmon drops salmon
-                java.util.List.of(net.minecraft.world.item.Items.SALMON), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery phantom blocks.
     private static VoxelShape phantomHanging(BlockState state) {
@@ -1810,25 +1381,6 @@ private static CarcassDefinition buildDONKEY() {
         return phantomLying(state);
     }
 
-    private static CarcassDefinition buildPHANTOM() {
-        return new CarcassDefinition(
-                "phantom",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:phantom")))
-                        .value(),
-                true,
-                true,
-                true,
-                false,
-                6,
-                Carcasses::phantomHanging,
-                Carcasses::phantomLying,
-                Carcasses::phantomHead,
-                Carcasses::phantomHeadMount,
-                Carcasses::phantomSkeletonHanging,
-                // phantom drops phantom_membrane
-                java.util.List.of(net.minecraft.world.item.Items.PHANTOM_MEMBRANE), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery shulker blocks.
     private static VoxelShape shulkerHanging(BlockState state) {
@@ -1846,25 +1398,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // shulker has no head, head mount, skeleton, skin
 
-    private static CarcassDefinition buildSHULKER() {
-        return new CarcassDefinition(
-                "shulker",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:shulker")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                3,
-                Carcasses::shulkerHanging,
-                Carcasses::shulkerLying,
-                Carcasses::shulkerLying,  // no head
-                Carcasses::shulkerLying,  // no head mount
-                Carcasses::shulkerLying,  // no skeleton
-                // shulker drops shulker_shell
-                java.util.List.of(net.minecraft.world.item.Items.SHULKER_SHELL), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery guardian blocks.
     private static VoxelShape guardianHanging(BlockState state) {
@@ -1887,25 +1420,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // guardian has no head, head mount, skeleton, skin (has spike_drop instead)
 
-    private static CarcassDefinition buildGUARDIAN() {
-        return new CarcassDefinition(
-                "guardian",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:guardian")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                3,
-                Carcasses::guardianHanging,
-                Carcasses::guardianLying,
-                Carcasses::guardianLying,  // no head
-                Carcasses::guardianLying,  // no head mount
-                Carcasses::guardianLying,  // no skeleton
-                // guardian drops prismarine_shard
-                java.util.List.of(net.minecraft.world.item.Items.PRISMARINE_SHARD), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery elder_guardian blocks.
     private static VoxelShape elder_guardianHanging(BlockState state) {
@@ -1923,25 +1437,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // elder_guardian has no head, head mount, skeleton, skin
 
-    private static CarcassDefinition buildELDER_GUARDIAN() {
-        return new CarcassDefinition(
-                "elder_guardian",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:elder_guardian")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                4,
-                Carcasses::elder_guardianHanging,
-                Carcasses::elder_guardianLying,
-                Carcasses::elder_guardianLying,  // no head
-                Carcasses::elder_guardianLying,  // no head mount
-                Carcasses::elder_guardianLying,  // no skeleton
-                // elder_guardian drops prismarine_crystals
-                java.util.List.of(net.minecraft.world.item.Items.PRISMARINE_CRYSTALS), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery skeleton_horse blocks.
     // Need to extract shapes from SkeletonhorsecarcassBlock
@@ -1977,25 +1472,6 @@ private static CarcassDefinition buildDONKEY() {
         };
     }
 
-    private static CarcassDefinition buildSKELETON_HORSE() {
-        return new CarcassDefinition(
-                "skeleton_horse",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:skeleton_horse")))
-                        .value(),
-                true,
-                true,
-                false,
-                true,
-                3,
-                Carcasses::skeleton_horseHanging,
-                Carcasses::skeleton_horseLying,
-                Carcasses::skeleton_horseHead,
-                Carcasses::skeleton_horseHeadMount,
-                Carcasses::skeleton_horseLying,  // no skeleton
-                // skeleton_horse drops bone
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery zombie_horse blocks.
     private static VoxelShape zombie_horseHanging(BlockState state) {
@@ -2030,25 +1506,6 @@ private static CarcassDefinition buildDONKEY() {
         };
     }
 
-    private static CarcassDefinition buildZOMBIE_HORSE() {
-        return new CarcassDefinition(
-                "zombie_horse",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:zombie_horse")))
-                        .value(),
-                true,
-                true,
-                false,
-                true,
-                3,
-                Carcasses::zombie_horseHanging,
-                Carcasses::zombie_horseLying,
-                Carcasses::zombie_horseHead,
-                Carcasses::zombie_horseHeadMount,
-                Carcasses::zombie_horseLying,  // no skeleton
-                // zombie_horse drops rotten_flesh
-                java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery horse blocks.
     private static VoxelShape horseHanging(BlockState state) {
@@ -2228,9 +1685,6 @@ private static CarcassDefinition buildDONKEY() {
     }
 
     /** Returns the carcass definition for a specific cat variant (0-10). */
-    public static CarcassDefinition forCatVariant(int variant) {
-        return CAT_VARIANTS.getOrDefault(variant, CAT_VARIANTS.get(9)); // default to tabby
-    }
 // Shapes below are ported 1:1 from the original Butchery squid blocks.
     private static VoxelShape squidHanging(BlockState state) {
         return switch (state.getValue(CarcassBlockProperty.FACING)) {
@@ -2261,25 +1715,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // squid has no head mount, no skeleton, no skin
 
-    private static CarcassDefinition buildSQUID() {
-        return new CarcassDefinition(
-                "squid",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:squid")))
-                        .value(),
-                true,
-                false,
-                false,
-                false,
-                2,
-                Carcasses::squidHanging,
-                Carcasses::squidLying,
-                Carcasses::squidHead,
-                Carcasses::squidLying,  // no head mount
-                Carcasses::squidLying,  // no skeleton
-                // squid drops ink_sac
-                java.util.List.of(net.minecraft.world.item.Items.INK_SAC), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery glowsquid blocks.
     private static VoxelShape glow_squidHanging(BlockState state) {
@@ -2311,25 +1746,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // glowsquid has no head mount, no skeleton, no skin
 
-    private static CarcassDefinition buildGLOW_SQUID() {
-        return new CarcassDefinition(
-                "glow_squid",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:glow_squid")))
-                        .value(),
-                true,
-                false,
-                false,
-                false,
-                2,
-                Carcasses::glow_squidHanging,
-                Carcasses::glow_squidLying,
-                Carcasses::glow_squidHead,
-                Carcasses::glow_squidLying,  // no head mount
-                Carcasses::glow_squidLying,  // no skeleton
-                // glowsquid drops glow_ink_sac
-                java.util.List.of(net.minecraft.world.item.Items.GLOW_INK_SAC), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery creeper blocks.
     private static VoxelShape creeperHanging(BlockState state) {
@@ -2378,25 +1794,6 @@ private static CarcassDefinition buildDONKEY() {
         };
     }
 
-    private static CarcassDefinition buildCREEPER() {
-        return new CarcassDefinition(
-                "creeper",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:creeper")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                3,
-                Carcasses::creeperHanging,
-                Carcasses::creeperLying,
-                Carcasses::ocelotLying,  // uses vanilla minecraft:creeper_head item, no custom head block
-                Carcasses::creeperHeadMount,
-                Carcasses::creeperSkeletonHanging,
-                // creeper drops raw_creeper_steak
-                java.util.List.of(net.minecraft.world.item.Items.TNT), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery spider blocks.
     // Both spider and cave_spider share these shapes.
@@ -2438,25 +1835,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // spider has no skeleton
 
-    private static CarcassDefinition buildSPIDER() {
-        return new CarcassDefinition(
-                "spider",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:spider")))
-                        .value(),
-                true,
-                true,
-                false,
-                false,
-                3,
-                Carcasses::spiderHanging,
-                Carcasses::spiderLying,
-                Carcasses::spiderHead,
-                Carcasses::spiderHeadMount,
-                Carcasses::spiderLying,  // no skeleton
-                // spider drops spider_eye
-                java.util.List.of(net.minecraft.world.item.Items.SPIDER_EYE), null);
-    }
 
     // cave_spider uses the same shapes as spider
     private static VoxelShape cave_spiderHanging(BlockState state) {
@@ -2477,25 +1855,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // cave_spider has no skeleton
 
-    private static CarcassDefinition buildCAVE_SPIDER() {
-        return new CarcassDefinition(
-                "cave_spider",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:cave_spider")))
-                        .value(),
-                true,
-                true,
-                false,
-                false,
-                3,
-                Carcasses::cave_spiderHanging,
-                Carcasses::cave_spiderLying,
-                Carcasses::cave_spiderHead,
-                Carcasses::cave_spiderHeadMount,
-                Carcasses::cave_spiderLying,  // no skeleton
-                // cave_spider drops string
-                java.util.List.of(net.minecraft.world.item.Items.STRING), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery axolotl blocks.
     // All 5 axolotl variants share the same shapes.
@@ -2544,100 +1903,10 @@ private static CarcassDefinition buildDONKEY() {
     }
 
     // Axolotl variants have no standard cuts (0 cuts), but have head, head_mount, skeleton, and skin
-    private static CarcassDefinition buildBLUE_AXOLOTL() {
-        return new CarcassDefinition(
-                "blue_axolotl",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                0,
-                Carcasses::axolotlHanging,
-                Carcasses::axolotlLying,
-                Carcasses::axolotlHead,
-                Carcasses::axolotlHeadMount,
-                Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
-    private static CarcassDefinition buildPINK_AXOLOTL() {
-        return new CarcassDefinition(
-                "pink_axolotl",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                0,
-                Carcasses::axolotlHanging,
-                Carcasses::axolotlLying,
-                Carcasses::axolotlHead,
-                Carcasses::axolotlHeadMount,
-                Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
-    private static CarcassDefinition buildBROWN_AXOLOTL() {
-        return new CarcassDefinition(
-                "brown_axolotl",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                0,
-                Carcasses::axolotlHanging,
-                Carcasses::axolotlLying,
-                Carcasses::axolotlHead,
-                Carcasses::axolotlHeadMount,
-                Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
-    private static CarcassDefinition buildCYAN_AXOLOTL() {
-        return new CarcassDefinition(
-                "cyan_axolotl",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                0,
-                Carcasses::axolotlHanging,
-                Carcasses::axolotlLying,
-                Carcasses::axolotlHead,
-                Carcasses::axolotlHeadMount,
-                Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
-    private static CarcassDefinition buildGOLD_AXOLOTL() {
-        return new CarcassDefinition(
-                "gold_axolotl",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:axolotl")))
-                        .value(),
-                true,
-                true,
-                true,
-                true,
-                0,
-                Carcasses::axolotlHanging,
-                Carcasses::axolotlLying,
-                Carcasses::axolotlHead,
-                Carcasses::axolotlHeadMount,
-                Carcasses::axolotlSkeletonHanging,
-                java.util.List.of(net.minecraft.world.item.Items.BONE), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery pufferfish blocks.
     private static VoxelShape pufferfishHanging(BlockState state) {
@@ -2655,24 +1924,6 @@ private static CarcassDefinition buildDONKEY() {
 
     // pufferfish has no head, head mount, skeleton, skin
 
-    private static CarcassDefinition buildPUFFERFISH() {
-        return new CarcassDefinition(
-                "pufferfish",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:pufferfish")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                2,
-                Carcasses::pufferfishHanging,
-                Carcasses::pufferfishLying,
-                Carcasses::pufferfishLying,  // no head
-                Carcasses::pufferfishLying,  // no head mount
-                Carcasses::pufferfishLying,  // no skeleton
-                java.util.List.of(net.minecraft.world.item.Items.PUFFERFISH), null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery slime blocks.
     private static VoxelShape slimeHanging(BlockState state) {
@@ -2690,68 +1941,8 @@ private static CarcassDefinition buildDONKEY() {
 
     // slime has no head, head mount, skeleton, skin
 
-    private static CarcassDefinition buildSLIME() {
-        return new CarcassDefinition(
-                "slime",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:slime")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                4,
-                Carcasses::slimeHanging,
-                Carcasses::slimeLying,
-                Carcasses::slimeLying,  // no head
-                Carcasses::slimeLying,  // no head mount
-                Carcasses::slimeLying,  // no skeleton
-                // slime drops slime_chunks
-                java.util.List.of(net.minecraft.world.item.Items.SLIME_BALL),
-                null);
-    }
 
-    private static CarcassDefinition buildMEDIUM_SLIME() {
-        return new CarcassDefinition(
-                "medium_slime",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:slime")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                4,
-                Carcasses::slimeHanging,
-                Carcasses::slimeLying,
-                Carcasses::slimeLying,  // no head
-                Carcasses::slimeLying,  // no head mount
-                Carcasses::slimeLying,  // no skeleton
-                // medium_slime drops slime_chunks
-                java.util.List.of(net.minecraft.world.item.Items.SLIME_BALL),
-                null);
-    }
 
-    private static CarcassDefinition buildSMALL_SLIME() {
-        return new CarcassDefinition(
-                "small_slime",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:slime")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                4,
-                Carcasses::slimeHanging,
-                Carcasses::slimeLying,
-                Carcasses::slimeLying,  // no head
-                Carcasses::slimeLying,  // no head mount
-                Carcasses::slimeLying,  // no skeleton
-                // small_slime drops slime_chunks
-                java.util.List.of(net.minecraft.world.item.Items.SLIME_BALL),
-                null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery magma_cube blocks.
     private static VoxelShape magma_cubeHanging(BlockState state) {
@@ -2790,47 +1981,7 @@ private static CarcassDefinition buildDONKEY() {
                 null);
     }
 
-    private static CarcassDefinition buildMEDIUM_MAGMA_CUBE() {
-        return new CarcassDefinition(
-                "medium_magma_cube",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:magma_cube")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                4,
-                Carcasses::magma_cubeHanging,
-                Carcasses::magma_cubeLying,
-                Carcasses::magma_cubeLying,  // no head
-                Carcasses::magma_cubeLying,  // no head mount
-                Carcasses::magma_cubeLying,  // no skeleton
-                // medium_magma_cube drops magma_cream
-                java.util.List.of(net.minecraft.world.item.Items.MAGMA_CREAM),
-                null);
-    }
 
-    private static CarcassDefinition buildSMALL_MAGMA_CUBE() {
-        return new CarcassDefinition(
-                "small_magma_cube",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:magma_cube")))
-                        .value(),
-                false,
-                false,
-                false,
-                false,
-                4,
-                Carcasses::magma_cubeHanging,
-                Carcasses::magma_cubeLying,
-                Carcasses::magma_cubeLying,  // no head
-                Carcasses::magma_cubeLying,  // no head mount
-                Carcasses::magma_cubeLying,  // no skeleton
-                // small_magma_cube drops magma_cream
-                java.util.List.of(net.minecraft.world.item.Items.MAGMA_CREAM),
-                null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery zombie corpse blocks.
     private static VoxelShape zombieHanging(BlockState state) {
@@ -3245,238 +2396,18 @@ private static VoxelShape ravagerCorpse(BlockState state) {
 
 
 // ===== CORPSE BLOCK BUILDERS (humanoid mobs with organ harvesting) =====
-private static CarcassDefinition buildZOMBIE() {
-    return new CarcassDefinition(
-            "zombie",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:zombie")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::zombieHanging,
-            Carcasses::zombieLying,
-            Carcasses::zombieHead,
-            Carcasses::zombieHeadMount,
-            Carcasses::zombieLying,  // no skeleton
-            // zombie drops rotten_flesh
-            java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH),
-            Carcasses::zombieCorpse);
-}
 
-private static CarcassDefinition buildSKELETON() {
-    return new CarcassDefinition(
-            "skeleton",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:skeleton")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::skeletonHanging,
-            Carcasses::skeletonLying,
-            Carcasses::skeletonHead,
-            Carcasses::skeletonHeadMount,
-            Carcasses::skeletonLying,  // no skeleton
-            // skeleton drops bone
-            java.util.List.of(net.minecraft.world.item.Items.BONE),
-            Carcasses::skeletonCorpse);
-}
 
-private static CarcassDefinition buildDROWNED() {
-    return new CarcassDefinition(
-            "drowned",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:drowned")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::drownedHanging,
-            Carcasses::drownedLying,
-            Carcasses::drownedHead,
-            Carcasses::drownedHeadMount,
-            Carcasses::drownedLying,  // no skeleton
-            // drowned drops rotten_flesh
-            java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH),
-            Carcasses::drownedCorpse);
-}
 
-private static CarcassDefinition buildHUSK() {
-    return new CarcassDefinition(
-            "husk",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:husk")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::huskHanging,
-            Carcasses::huskLying,
-            Carcasses::huskHead,
-            Carcasses::huskHeadMount,
-            Carcasses::huskLying,  // no skeleton
-            // husk drops rotten_flesh
-            java.util.List.of(net.minecraft.world.item.Items.ROTTEN_FLESH),
-            Carcasses::huskCorpse);
-}
 
-private static CarcassDefinition buildVINDICATOR() {
-    return new CarcassDefinition(
-            "vindicator",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:vindicator")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::vindicatorHanging,
-            Carcasses::vindicatorLying,
-            Carcasses::vindicatorHead,
-            Carcasses::vindicatorHeadMount,
-            Carcasses::vindicatorLying,  // no skeleton
-            // vindicator drops emerald
-            java.util.List.of(net.minecraft.world.item.Items.EMERALD),
-            Carcasses::vindicatorCorpse);
-}
 
-private static CarcassDefinition buildEVOKER() {
-    return new CarcassDefinition(
-            "evoker",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:evoker")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::evokerHanging,
-            Carcasses::evokerLying,
-            Carcasses::evokerHead,
-            Carcasses::evokerHeadMount,
-            Carcasses::evokerLying,  // no skeleton
-            // evoker drops emerald
-            java.util.List.of(net.minecraft.world.item.Items.EMERALD),
-            Carcasses::evokerCorpse);
-}
 
-private static CarcassDefinition buildWITCH() {
-    return new CarcassDefinition(
-            "witch",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:witch")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::witchHanging,
-            Carcasses::witchLying,
-            Carcasses::witchHead,
-            Carcasses::witchHeadMount,
-            Carcasses::witchLying,  // no skeleton
-            // witch drops potion
-            java.util.List.of(net.minecraft.world.item.Items.POTION),
-            Carcasses::witchCorpse);
-}
 
-private static CarcassDefinition buildPIGLIN() {
-    return new CarcassDefinition(
-            "piglin",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:piglin")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::piglinHanging,
-            Carcasses::piglinLying,
-            Carcasses::piglinHead,
-            Carcasses::piglinHeadMount,
-            Carcasses::piglinLying,  // no skeleton
-            // piglin drops gold
-            java.util.List.of(net.minecraft.world.item.Items.GOLD_INGOT),
-            Carcasses::piglinCorpse);
-}
 
-private static CarcassDefinition buildPIGLIN_BRUTE() {
-    return new CarcassDefinition(
-            "piglin_brute",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:piglin_brute")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::piglinBruteHanging,
-            Carcasses::piglinBruteLying,
-            Carcasses::piglinBruteHead,
-            Carcasses::piglinBruteHeadMount,
-            Carcasses::piglinBruteLying,  // no skeleton
-            // piglin_brute drops gold
-            java.util.List.of(net.minecraft.world.item.Items.GOLD_INGOT),
-            Carcasses::piglinBruteCorpse);
-}
 
-private static CarcassDefinition buildRAVAGER() {
-    return new CarcassDefinition(
-            "ravager",
-            BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                            ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:ravager")))
-                    .value(),
-            true,
-            true,
-            false,
-            true,
-            3,
-            Carcasses::ravagerHanging,
-            Carcasses::ravagerLying,
-            Carcasses::ravagerHead,
-            Carcasses::ravagerHeadMount,
-            Carcasses::ravagerLying,  // no skeleton
-            // ravager drops saddle
-            java.util.List.of(net.minecraft.world.item.Items.SADDLE),
-            Carcasses::ravagerCorpse);
-    }
 
     // ===== SPECIAL MOBS =====
 
-    private static CarcassDefinition buildENDERMAN() {
-        return new CarcassDefinition(
-                "enderman",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:enderman")))
-                        .value(),
-            true,
-            true,
-            false,
-            false,
-            3, // CarcassCutupHandler only ever reaches cut_3; cut_4..cut_8 loot tables exist but are unreachable (known limitation, see ROADMAP)
-            Carcasses::endermanHanging,
-            Carcasses::endermanLying,
-            Carcasses::endermanHead,
-            Carcasses::endermanHeadMount,
-            Carcasses::endermanLying,  // no skeleton
-            // enderman drops ender_pearl
-            java.util.List.of(net.minecraft.world.item.Items.ENDER_PEARL),
-            null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery enderman blocks.
     private static VoxelShape endermanHanging(BlockState state) {
@@ -3515,26 +2446,6 @@ private static CarcassDefinition buildRAVAGER() {
 
     // ===== STRIDER =====
 
-    private static CarcassDefinition buildSTRIDER() {
-        return new CarcassDefinition(
-                "strider",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:strider")))
-                        .value(),
-            false,
-            false,
-            false,
-            false,
-            3,
-            Carcasses::striderHanging,
-            Carcasses::striderLying,
-            Carcasses::striderLying,  // no head
-            Carcasses::striderLying,  // no head mount
-            Carcasses::striderLying,  // no skeleton
-            // strider drops string
-            java.util.List.of(net.minecraft.world.item.Items.STRING),
-            null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery strider blocks.
     private static VoxelShape striderHanging(BlockState state) {
@@ -3557,26 +2468,6 @@ private static CarcassDefinition buildRAVAGER() {
 
     // ===== SNIFFER =====
 
-    private static CarcassDefinition buildSNIFFER() {
-        return new CarcassDefinition(
-                "sniffer",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:sniffer")))
-                        .value(),
-            true,
-            false,
-            false,
-            true,
-            3,
-            Carcasses::snifferCarcass,
-            Carcasses::snifferCarcass,
-            Carcasses::snifferHead,
-            Carcasses::snifferCarcass,  // no head mount
-            Carcasses::snifferCarcass,  // no skeleton
-            // sniffer drops torchflower_seeds
-            java.util.List.of(net.minecraft.world.item.Items.TORCHFLOWER_SEEDS),
-            null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery sniffer blocks.
     private static VoxelShape snifferCarcass(BlockState state) {
@@ -3599,26 +2490,6 @@ private static CarcassDefinition buildRAVAGER() {
 
     // ===== TURTLE =====
 
-    private static CarcassDefinition buildTURTLE() {
-        return new CarcassDefinition(
-                "turtle",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                                ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:turtle")))
-                        .value(),
-            true,
-            true,
-            false,
-            true,
-            3, // CarcassCutupHandler only ever reaches cut_3; cut_4..cut_7 loot tables exist but are unreachable (known limitation, see ROADMAP)
-            Carcasses::turtleHanging,
-            Carcasses::turtleLying,
-            Carcasses::turtleHead,
-            Carcasses::turtleHeadMount,
-            Carcasses::turtleLying,  // no skeleton
-            // turtle drops scute
-            java.util.List.of(net.minecraft.world.item.Items.SEAGRASS),
-            null);
-    }
 
     // Shapes below are ported 1:1 from the original Butchery turtle blocks.
     private static VoxelShape turtleHanging(BlockState state) {
@@ -3656,24 +2527,5 @@ private static VoxelShape turtleHead(BlockState state) {
         };
     }
 
-    private static CarcassDefinition buildIRON_GOLEM() {
-        return new CarcassDefinition(
-                "iron_golem",
-                BuiltInRegistries.ENTITY_TYPE.getOrThrow(
-                        ResourceKey.create(Registries.ENTITY_TYPE, Identifier.parse("minecraft:iron_golem")))
-                .value(),
-                false,
-                true,
-                false,
-                false,
-                0,
-                state -> Shapes.empty(),
-                state -> Shapes.empty(),
-                state -> Shapes.empty(),
-                state -> box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // headMountShape: simple cube
-                state -> Shapes.empty(),
-                java.util.List.of(),
-                null);
-    }
 
 }

@@ -23,7 +23,7 @@ public class IronGolemHeadMountBlock extends HeadMountBlock {
     public static final BooleanProperty REPAIRED = BooleanProperty.create("repaired");
 
     public IronGolemHeadMountBlock(Properties properties) {
-        super(properties, Carcasses.IRON_GOLEM);
+        super(properties, Carcasses.COW);
         registerDefaultState(stateDefinition.any()
                 .setValue(CarcassBlockProperty.FACING, Direction.NORTH)
                 .setValue(REPAIRED, false));

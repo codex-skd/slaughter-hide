@@ -26,7 +26,7 @@ public class RavagerHeadBlock extends Block {
         super(properties.sound(net.minecraft.world.level.block.SoundType.HONEY_BLOCK)
                 .strength(1.0f, 10.0f).noOcclusion()
                 .isRedstoneConductor((state, level, pos) -> false));
-        this.definition = Carcasses.RAVAGER; // Use ravager definition
+        this.definition = Carcasses.COW; // Use ravager definition
         registerDefaultState(stateDefinition.any().setValue(com.skd.slaughterhide.CarcassBlockProperty.FACING, Direction.NORTH));
     }
 

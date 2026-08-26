@@ -58,29 +58,14 @@ public final class ModCreativeTabs {
                                 ModItems.BONE_CLEAVER, ModItems.BONE_SKINNING_KNIFE, ModItems.BONE_HACKSAW, ModItems.BONE_HAMMER
                         ).forEach(item -> output.accept(item.get()));
 
-                        // Skins (only those that exist)
+                        // Skins (farm animals only)
                         Stream.of(
                                 ModItems.COW_SKIN, ModItems.PIG_SKIN, ModItems.SHEEP_SKIN,
-                                ModItems.GOAT_SKIN, ModItems.FOX_SKIN,
-                                ModItems.CAMEL_SKIN, ModItems.DONKEY_SKIN, ModItems.MULE_SKIN,
-                                ModItems.OCELOT_SKIN, ModItems.PANDA_SKIN, ModItems.POLAR_BEAR_SKIN,
-                                ModItems.HOGLIN_SKIN, ModItems.ZOGLIN_SKIN, ModItems.DOLPHIN_SKIN,
-                                ModItems.BAT_SKIN,
-                                ModItems.BLUE_AXOLOTL_SKIN, ModItems.PINK_AXOLOTL_SKIN,
-                                ModItems.BROWN_AXOLOTL_SKIN, ModItems.CYAN_AXOLOTL_SKIN,
-                                ModItems.GOLD_AXOLOTL_SKIN, ModItems.CREEPER_SKIN,
-                                ModItems.ALL_BLACK_CAT_SKIN, ModItems.BLACK_CAT_SKIN,
-                                ModItems.BSHORTHAIR_CAT_SKIN, ModItems.CALICO_CAT_SKIN,
-                                ModItems.JELLIE_CAT_SKIN, ModItems.PERSIAN_CAT_SKIN,
-                                ModItems.RAGDOLL_CAT_SKIN, ModItems.RED_CAT_SKIN,
-                                ModItems.SIAMESE_CAT_SKIN, ModItems.TABBY_CAT_SKIN,
-                                ModItems.WHITE_CAT_SKIN
+                                ModItems.GOAT_SKIN, ModItems.DONKEY_SKIN, ModItems.MULE_SKIN
                         ).forEach(item -> output.accept(item.get()));
 
                         // Other items
                         output.accept(ModItems.ANIMAL_FAT.get());
-                        output.accept(ModItems.HOOF.get());
-                        output.accept(ModItems.RAW_FOX_MEAT.get());
                     })
                     .build());
 
@@ -90,7 +75,7 @@ public final class ModCreativeTabs {
                     .title(Component.translatable("item_group.slaughter_hide.slaughter_hide_food"))
                     .icon(() -> new ItemStack(ModItems.RAW_TBONE_STEAK.get()))
                     .displayItems((parameters, output) -> {
-                        // All raw meats that exist
+                        // Farm meats only
                         Stream.of(
                                 ModItems.RAW_CHUCK_STEAK, ModItems.RAW_RIBEYE_STEAK, ModItems.RAW_RUMP_STEAK,
                                 ModItems.RAW_SIRLOIN_STEAK, ModItems.RAW_TBONE_STEAK,
@@ -102,15 +87,7 @@ public final class ModCreativeTabs {
                                 ModItems.RAW_LEG_OF_LAMB_GOAT, ModItems.RAW_LAMB_SHOULDER_GOAT,
                                 ModItems.RAW_LAMB_RIB_GOAT, ModItems.RAW_LAMB_SIRLOIN_GOAT,
                                 ModItems.RAW_LAMB_LOIN_GOAT,
-                                ModItems.RAW_FOX_MEAT, ModItems.RAW_WOLF_MEAT, ModItems.RAW_CAMEL_MEAT,
-                                ModItems.RAW_DONKEY_STEAK, ModItems.RAW_MULE_STEAK,
-                                ModItems.RAW_OCELOT_MEAT, ModItems.RAW_PANDA_STEAK,
-                                ModItems.RAW_POLAR_BEAR_MEAT, ModItems.RAW_HOGLIN_CHUNK,
-                                ModItems.RAW_DOLPHIN_MEAT, ModItems.RAW_BAT_MEAT,
-                                ModItems.RAW_SILVERFISH_CHUNKS, ModItems.RAW_ENDERMITE_CHUNKS,
-                                ModItems.RAW_ENDERMAN_STEAK, ModItems.RAW_STRIDER_MEAT,
-                                ModItems.RAW_SNIFFER_STEAK, ModItems.RAW_TURTLE_MEAT,
-                                ModItems.RAW_PUFFERFISH
+                                ModItems.RAW_DONKEY_STEAK, ModItems.RAW_MULE_STEAK
                         ).filter(item -> item != null).forEach(item -> output.accept(item.get()));
 
                         // Cooked meats (if they exist)
