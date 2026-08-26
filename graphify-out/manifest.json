@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/Carcasses.java": {
-    "mtime": 1787610448.1536498,
-    "ast_hash": "d4531d14df94ba0ce223334df80fd175",
+    "mtime": 1787756695.4149787,
+    "ast_hash": "ed98d540996e478f7f667ceccf6a6f7c",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/ServerWorkScheduler.java": {
@@ -115,8 +115,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/CarcassDeathHandler.java": {
-    "mtime": 1787590251.6222258,
-    "ast_hash": "054ae081d1b29d22d93969e9c58fcf50",
+    "mtime": 1787756732.797824,
+    "ast_hash": "7d7aa3e042fdccec120d5b7bb4ab9f05",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/CarcassInteractionHandler.java": {
@@ -140,18 +140,18 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787698854.5476446,
-    "ast_hash": "e25fdc56ba0c502f76d0dd5bfeb20d20",
+    "mtime": 1787756667.1429844,
+    "ast_hash": "de392782cf5c8b774c1890f529ef44c1",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
-    "mtime": 1787698883.7485485,
-    "ast_hash": "de3e34ac239bdabed54c0bb3de9f5e3d",
+    "mtime": 1787756984.742887,
+    "ast_hash": "872db9d2caa43cf456f72545b64fa3b0",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787698874.3932612,
-    "ast_hash": "d966a333f1d21acdf7f94fbd0c217e0c",
+    "mtime": 1787756842.3473275,
+    "ast_hash": "79e50f02c4b7bfa674434802e4ed4872",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -835,8 +835,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/bird_foot.json": {
-    "mtime": 1787589982.874475,
-    "ast_hash": "66124236c4cf85574fae24e3703abf56",
+    "mtime": 1787754008.624318,
+    "ast_hash": "0a00868dce9a6353baae5fc98b561d46",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/chicken_carcass.json": {
@@ -969,19 +969,14 @@
     "ast_hash": "66f143f2959552ab443f950ca13dce6b",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/rabbit_skeleton.json": {
-    "mtime": 1787589982.8830988,
-    "ast_hash": "b2131fbd62989d0f7300fefdcf81cf7b",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/raw_chicken_leg.json": {
-    "mtime": 1787589982.8854177,
-    "ast_hash": "2162e4266e6910467b6300c607db54f7",
+    "mtime": 1787754008.624318,
+    "ast_hash": "439d64710e8208fcca3fe67635deb4ac",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/raw_chicken_wing.json": {
-    "mtime": 1787589982.8854177,
-    "ast_hash": "70c7198af680639558abc22d4f357117",
+    "mtime": 1787754008.6265528,
+    "ast_hash": "3830cb83ffd220d4b1256b852f7db2d3",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/raw_chuck_steak.json": {
@@ -1085,13 +1080,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/wishbone.json": {
-    "mtime": 1787589982.8908682,
-    "ast_hash": "57b9057e3c44119714d17706bba50ede",
+    "mtime": 1787754008.6265528,
+    "ast_hash": "00ae2b807d63b071ad5e12f751627f68",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/en_us.json": {
-    "mtime": 1787698995.8670022,
-    "ast_hash": "e3b00a346b55b73585dcb107f653853c",
+    "mtime": 1787757264.455353,
+    "ast_hash": "0228e8bbbc3753cfa967db661d807a3b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/es_es.json": {
@@ -6365,13 +6360,13 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787748329.4440153,
-    "ast_hash": "9e325a890427578eeb0466d6916dc973",
+    "mtime": 1787757409.637914,
+    "ast_hash": "83937efac9fdd888950f122f8a673bfe",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1787741409.5824692,
-    "ast_hash": "fcb4d35c2e264ea95d40bdc1f49fbb7e",
+    "mtime": 1787757344.3719692,
+    "ast_hash": "08f21208b06d4217af557595e6c7a4a6",
     "semantic_hash": ""
   },
   "carcasses_new.txt": {
@@ -9615,8 +9610,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/IronGolemHeadMountBlock.java": {
-    "mtime": 1787590251.7303455,
-    "ast_hash": "818d8c5028bfa4df24dfa0bf80913991",
+    "mtime": 1787756529.6825063,
+    "ast_hash": "c32a4ea6eeb008df05b0ca6f7734a1db",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/PhotosBlock.java": {
@@ -9635,13 +9630,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/RavagerHeadBlock.java": {
-    "mtime": 1787590251.7303455,
-    "ast_hash": "362782dacdb97f85ff1945e82ddcdd60",
+    "mtime": 1787756529.683007,
+    "ast_hash": "f25a989d2a5c5c0ee5432fefba9f00d4",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/RavagerHeadMountBlock.java": {
-    "mtime": 1787590251.7303455,
-    "ast_hash": "9bfaa41318ccd06452ae13114b470906",
+    "mtime": 1787756529.6840062,
+    "ast_hash": "23f36a7a2842f245196b3ddc929e4086",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/RawBloodSausagesBlock.java": {
@@ -9847,151 +9842,6 @@
   "src/main/resources/assets/slaughter_hide/blockstates/sulfur_ore.json": {
     "mtime": 1787590251.7382822,
     "ast_hash": "537acd3548d5f8da8dbf6dda21f69859",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/blood_splatter.json": {
-    "mtime": 1787590251.8138895,
-    "ast_hash": "fdeffda93bc22f2665cd88fafaf0f4ca",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bone_barrel.json": {
-    "mtime": 1787590251.7392838,
-    "ast_hash": "a80fbe97600e3911befea0a3f866626c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/butcher_statue.json": {
-    "mtime": 1787590251.7392838,
-    "ast_hash": "6c298961203f84f5785fd946f30629e9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cling_film.json": {
-    "mtime": 1787590251.7392838,
-    "ast_hash": "be55445299743b6f31ff5bfa890e88cf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cod_barrel.json": {
-    "mtime": 1787590251.7392838,
-    "ast_hash": "3b5021c969ae38be52bf6f907f5c7f49",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cooked_blood_sausages.json": {
-    "mtime": 1787590251.7392838,
-    "ast_hash": "93e82b02c3f18e9daf95f5d506ca8bd1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cooked_sausages.json": {
-    "mtime": 1787590251.7392838,
-    "ast_hash": "8ef487efacc96f49c23fe9499a4607be",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/diorite_brick_slab.json": {
-    "mtime": 1787590251.7403023,
-    "ast_hash": "236fd0788aad33bde5a8a39c69e162a3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/diorite_brick_stairs.json": {
-    "mtime": 1787590251.7403023,
-    "ast_hash": "8cfef2c83be71627c023f54711b4116b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/diorite_brick_wall.json": {
-    "mtime": 1787590251.7403023,
-    "ast_hash": "daeb250d66c2e12694551c277176ef4a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/diorite_bricks.json": {
-    "mtime": 1787590251.7403023,
-    "ast_hash": "8a4ed523ed980a9e489bd2ada1245af9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/dragon_scale_block.json": {
-    "mtime": 1787590251.7403023,
-    "ast_hash": "2de77a1e472b0b01b36dceb27ff08463",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/floorstanding_sign.json": {
-    "mtime": 1787590251.7403023,
-    "ast_hash": "2fe0e98cce33ef61463213e896168245",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/iron_golem_head_mount.json": {
-    "mtime": 1787590251.741299,
-    "ast_hash": "3348951008929699c051eed2df0a2f95",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/photos.json": {
-    "mtime": 1787590251.741299,
-    "ast_hash": "2675272142aa68d545d644a8db3ba93e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/plastic_sheet.json": {
-    "mtime": 1787590251.8138895,
-    "ast_hash": "03d13d1a24b07226a03d917851d61855",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/plastic_sheet_corner.json": {
-    "mtime": 1787590251.8138895,
-    "ast_hash": "eea2f22ce5d1d0969b46ad3631983afc",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ravager_head.json": {
-    "mtime": 1787590251.741299,
-    "ast_hash": "e980c89f77a32a9947c0f3e59d5efa36",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ravager_head_mount.json": {
-    "mtime": 1787590251.741299,
-    "ast_hash": "f2297510c1a57d8007025e541164f832",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_blood_sausages.json": {
-    "mtime": 1787590251.741299,
-    "ast_hash": "839c68f334ee26cd0dc224a9eb5ad045",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_sausages.json": {
-    "mtime": 1787590251.741299,
-    "ast_hash": "527150c5450df365c9443c163155bc6c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/salmon_barrel.json": {
-    "mtime": 1787590251.7422955,
-    "ast_hash": "99eac99c2e4d350a8e947e2cde0ddeac",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/salt_block.json": {
-    "mtime": 1787590251.7422955,
-    "ast_hash": "68f2527f16a77fffc9c74b6d44bf2344",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/salt_formation_base.json": {
-    "mtime": 1787590251.7422955,
-    "ast_hash": "55cd58d11fe9c608aa31cacb1c93ff64",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/salt_formation_frustum.json": {
-    "mtime": 1787590251.7422955,
-    "ast_hash": "fb280640ea10917f610325850504dcf8",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/salt_formation_middle.json": {
-    "mtime": 1787590251.7422955,
-    "ast_hash": "7b900f6f9c55ce5927f3a5ac48286894",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/salt_formation_tip.json": {
-    "mtime": 1787590251.7422955,
-    "ast_hash": "85398b68d0ae83355853e91c50203e4f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/spike_trap.json": {
-    "mtime": 1787590251.8138895,
-    "ast_hash": "b9378fbc8f29491c45d03415b8d799e9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/sulfur_ore.json": {
-    "mtime": 1787590251.743292,
-    "ast_hash": "8d658aaf909306333416862e93acf3cf",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/blood_splatter.json": {
@@ -11225,8 +11075,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/SkinRackInteractionHandler.java": {
-    "mtime": 1787615003.2213237,
-    "ast_hash": "619093a1f0b8ff8d1990400922a39203",
+    "mtime": 1787756925.0554168,
+    "ast_hash": "da270bc929c1804aa52f58e547d98285",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/WoodenSpitRotisserieInteractionHandler.java": {
@@ -13249,104 +13099,9 @@
     "ast_hash": "f7dfbc49e5721b91cd71ae9d2c8ba5a1",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/all_black_cat_carcass.json": {
-    "mtime": 1787745306.0930307,
-    "ast_hash": "7adf79923aa187e21447beca6e0ea04a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/all_black_cat_head.json": {
-    "mtime": 1787745306.157777,
-    "ast_hash": "feae873f840cf12107480194e425f262",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/all_black_cat_head_mount.json": {
-    "mtime": 1787745306.1951568,
-    "ast_hash": "c4e6838673f8928e774940d50a122ea1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/all_black_cat_skin.json": {
-    "mtime": 1787745442.7225673,
-    "ast_hash": "be1fd5991237a4776975fbff6f6f9d1e",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/basin.json": {
     "mtime": 1787745306.234592,
     "ast_hash": "a97cb80e9a4b79c555c90d7a13149344",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bat_carcass.json": {
-    "mtime": 1787745306.2428727,
-    "ast_hash": "026f1e5cc4bd6018389c63dca05b4f42",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bat_head.json": {
-    "mtime": 1787745306.250543,
-    "ast_hash": "7eb58631e19ab6c3d679eab5230abc07",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bat_head_mount.json": {
-    "mtime": 1787745306.2605598,
-    "ast_hash": "b3477fe387d528792dc8f3c95ae1b8bc",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bat_skeleton.json": {
-    "mtime": 1787745306.2704298,
-    "ast_hash": "49c85fb33c6ae658fa123c150a45bf48",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bat_skin.json": {
-    "mtime": 1787745306.2774546,
-    "ast_hash": "da1258a8ae6ff2e791902e5cbe79d1e4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bat_wing.json": {
-    "mtime": 1787745306.2858667,
-    "ast_hash": "09042c7abf26ec96ceaa845790f8f8f9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/black_cat_carcass.json": {
-    "mtime": 1787745306.3087106,
-    "ast_hash": "3a6863821fc3012b231ef68b6121cc0b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/black_cat_head.json": {
-    "mtime": 1787745306.350708,
-    "ast_hash": "9275ce9671a38539de4dfc3959bed845",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/black_cat_head_mount.json": {
-    "mtime": 1787745306.3753889,
-    "ast_hash": "36b409e3142ef7023fa430f66241fd46",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/black_cat_skin.json": {
-    "mtime": 1787745442.7399917,
-    "ast_hash": "268c560bde2b7ab71e18e6dc4c947a65",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/blue_axolotl_carcass.json": {
-    "mtime": 1787745306.4124262,
-    "ast_hash": "413ab6db583cf1b69037cab014e03e61",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/blue_axolotl_head.json": {
-    "mtime": 1787745306.4629178,
-    "ast_hash": "798c37ec74765cd6aee21f47a8252ae7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/blue_axolotl_head_mount.json": {
-    "mtime": 1787745306.515139,
-    "ast_hash": "d421f213071348e1b31c39fe720cac93",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/blue_axolotl_skeleton.json": {
-    "mtime": 1787745442.8658571,
-    "ast_hash": "aa9226d1807542ea26c2b0ffe796caa6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/blue_axolotl_skin.json": {
-    "mtime": 1787745306.5452685,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/bone_cleaver.json": {
@@ -13374,31 +13129,6 @@
     "ast_hash": "a8dc031072c4d3aa8810a7c3bdfcaca8",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/brown_axolotl_carcass.json": {
-    "mtime": 1787745306.5927536,
-    "ast_hash": "6cb8c5a43902bddee8a5d017340bb050",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/brown_axolotl_head.json": {
-    "mtime": 1787745306.9641168,
-    "ast_hash": "2ffabaaeb7b012faae150c848de8ff98",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/brown_axolotl_head_mount.json": {
-    "mtime": 1787745307.0042057,
-    "ast_hash": "83a764fdb99be668a924fa3fb54a206f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/brown_axolotl_skeleton.json": {
-    "mtime": 1787745442.867357,
-    "ast_hash": "aa9226d1807542ea26c2b0ffe796caa6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/brown_axolotl_skin.json": {
-    "mtime": 1787745307.03663,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/brown_llama_carcass.json": {
     "mtime": 1787745307.04918,
     "ast_hash": "601d33b157b9ed43e0c10b7894573372",
@@ -13414,94 +13144,9 @@
     "ast_hash": "200aa554ec666fe571ca9fa61a8ba57b",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/bshorthair_cat_carcass.json": {
-    "mtime": 1787745307.2122226,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bshorthair_cat_head.json": {
-    "mtime": 1787745307.213223,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bshorthair_cat_head_mount.json": {
-    "mtime": 1787745307.2142253,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/bshorthair_cat_skin.json": {
-    "mtime": 1787745442.7512598,
-    "ast_hash": "d51584b15a48a12a33b9c2a569a84b97",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/calico_cat_carcass.json": {
-    "mtime": 1787745307.2243905,
-    "ast_hash": "3674d5bc88b972567fce0994ed2cf741",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/calico_cat_head.json": {
-    "mtime": 1787745307.2717004,
-    "ast_hash": "e33df2e3d5771d6e93a3adaa1fb2241c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/calico_cat_head_mount.json": {
-    "mtime": 1787745307.3741815,
-    "ast_hash": "f6e21d21020a23782b6e8691baf95a9c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/calico_cat_skin.json": {
-    "mtime": 1787745442.7716622,
-    "ast_hash": "86af6aa813083f024cf1a056ec5e9687",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/camel_carcass.json": {
-    "mtime": 1787745307.4175692,
-    "ast_hash": "757965172feb55076f232c62c87523f0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/camel_head.json": {
-    "mtime": 1787745307.4520147,
-    "ast_hash": "5346c36ba5c5fa85e1c7195dd6c3c81a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/camel_head_mount.json": {
-    "mtime": 1787745307.459963,
-    "ast_hash": "aad8baac62bd9be2c6d68e20c1f4bb08",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/camel_skeleton.json": {
-    "mtime": 1787745307.469377,
-    "ast_hash": "2845ea1634408f5c99c58a9756ca651f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/camel_skin.json": {
-    "mtime": 1787745307.4794984,
-    "ast_hash": "173a03c9fd4a67f2a2e0490f9853e9bb",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/cash_register_block.json": {
     "mtime": 1787745307.4876616,
     "ast_hash": "065c92ea9015510573ab33eb0b818120",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cave_spider_carcass.json": {
-    "mtime": 1787745307.4993372,
-    "ast_hash": "a432169c67b1880a8893a0645a05862a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cave_spider_head.json": {
-    "mtime": 1787745307.6525435,
-    "ast_hash": "ed9511a1ec8aac93292702efe72d1131",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cave_spider_head_mount.json": {
-    "mtime": 1787745307.6947033,
-    "ast_hash": "848a3639cb3b1c5815665ae0e9bb55e0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cod_carcass.json": {
-    "mtime": 1787745307.7549977,
-    "ast_hash": "88d806564b131772faf25d5a642009d5",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/cooked_chuck_steak.json": {
@@ -13614,56 +13259,6 @@
     "ast_hash": "911e7eb661955ef69f1ec9d8b87545b7",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/creeper_carcass.json": {
-    "mtime": 1787745308.6037023,
-    "ast_hash": "2af0c98c2776418b534775d1c4767d5b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/creeper_head.json": {
-    "mtime": 1787745442.9073572,
-    "ast_hash": "de9f7d005599d335712c7c42441c38a4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/creeper_head_mount.json": {
-    "mtime": 1787745308.6788585,
-    "ast_hash": "09fc61cc366c82bcf10b68a9338ff141",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/creeper_skeleton.json": {
-    "mtime": 1787745308.7374609,
-    "ast_hash": "ea3b48646813c8582684fa41a5d8ac72",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/creeper_skin.json": {
-    "mtime": 1787745308.8152716,
-    "ast_hash": "98a3645e410f5c486730dede19feadf0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cyan_axolotl_carcass.json": {
-    "mtime": 1787745308.842846,
-    "ast_hash": "57712c55bc0ee9050e3ef304d2e6cc62",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cyan_axolotl_head.json": {
-    "mtime": 1787745309.0077703,
-    "ast_hash": "0cbf1a8106a02bb810433e69743c6b97",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cyan_axolotl_head_mount.json": {
-    "mtime": 1787745309.0407846,
-    "ast_hash": "3c820da060bb3d6f00af284c1b41b7a1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cyan_axolotl_skeleton.json": {
-    "mtime": 1787745442.867357,
-    "ast_hash": "aa9226d1807542ea26c2b0ffe796caa6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/cyan_axolotl_skin.json": {
-    "mtime": 1787745309.3825147,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/diamond_cleaver.json": {
     "mtime": 1787745309.617365,
     "ast_hash": "d957205117669eb0afdd4f53c4577d92",
@@ -13682,31 +13277,6 @@
   "src/main/resources/assets/slaughter_hide/items/diamond_skinning_knife.json": {
     "mtime": 1787745309.648762,
     "ast_hash": "e736ced8cb4e022de4f3d50969f1181a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/dolphin_carcass.json": {
-    "mtime": 1787745309.6551735,
-    "ast_hash": "ec95f5bd8e8e0be2307d6eda6d9de3ce",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/dolphin_head.json": {
-    "mtime": 1787745309.6647916,
-    "ast_hash": "d39dc10cf6ab415f73a0be3a35948e48",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/dolphin_head_mount.json": {
-    "mtime": 1787745309.672957,
-    "ast_hash": "95ae76fa3be59e50622f071da8a36a15",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/dolphin_skeleton.json": {
-    "mtime": 1787745309.6798308,
-    "ast_hash": "8ba229c8d9596e568f95936dd96b784e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/dolphin_skin.json": {
-    "mtime": 1787745309.6905959,
-    "ast_hash": "d35a55341b78325c51975dde98e379c8",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/donkey_carcass.json": {
@@ -13734,59 +13304,9 @@
     "ast_hash": "0afed400915cc7dfcd7321d7101053d7",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/drained_all_black_cat_carcass.json": {
-    "mtime": 1787745309.7460535,
-    "ast_hash": "ce387a586b5deaba7ed3f42f299a6654",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_bat_carcass.json": {
-    "mtime": 1787745309.7643397,
-    "ast_hash": "9a0c75fb8e17687922c1acca5911d072",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_black_cat_carcass.json": {
-    "mtime": 1787745309.77346,
-    "ast_hash": "e2f00ddf5fd2db87c71be38d390946e7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_blue_axolotl_carcass.json": {
-    "mtime": 1787745309.7922473,
-    "ast_hash": "44b65e796eab226e05d41acdfbdd518a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_brown_axolotl_carcass.json": {
-    "mtime": 1787745309.8359604,
-    "ast_hash": "7c15632dd06293eb1e1659bb3f60e476",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/drained_brown_llama_carcass.json": {
     "mtime": 1787745310.1620898,
     "ast_hash": "fa09ca2c2b947008cd98a0f8f92364eb",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_bshorthair_cat_carcass.json": {
-    "mtime": 1787745310.20293,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_calico_cat_carcass.json": {
-    "mtime": 1787745310.2120368,
-    "ast_hash": "ee48136252cc3c51d2bab0a0e5711920",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_camel_carcass.json": {
-    "mtime": 1787745310.2348962,
-    "ast_hash": "31a9a98b6179ac4db29a8218ab78b990",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_cave_spider_carcass.json": {
-    "mtime": 1787745310.5963616,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_cod_carcass.json": {
-    "mtime": 1787745310.5976539,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/drained_creamy_llama_carcass.json": {
@@ -13794,59 +13314,9 @@
     "ast_hash": "7bbc5e3b863bf933a49f3a6ffb5818f8",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/drained_creeper_carcass.json": {
-    "mtime": 1787745310.6530044,
-    "ast_hash": "7f0dacfa10057fd7633defd0002b0e77",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_cyan_axolotl_carcass.json": {
-    "mtime": 1787745310.9349618,
-    "ast_hash": "67e0447706643d837a3fb0cee40c2cf4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_dolphin_carcass.json": {
-    "mtime": 1787745310.977055,
-    "ast_hash": "e00bd217a005d4bde88087490056168b",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/drained_donkey_carcass.json": {
     "mtime": 1787745310.9860156,
     "ast_hash": "829ddf65b3696a7de450cc8711d0f7a2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_drowned_corpse.json": {
-    "mtime": 1787745310.9960506,
-    "ast_hash": "01d344cd645f11007e203227a56d6c36",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_elder_guardian_carcass.json": {
-    "mtime": 1787745311.0235448,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_enderman_carcass.json": {
-    "mtime": 1787745311.0320115,
-    "ast_hash": "d19098fad82f5e18cc044b5d0b6a408e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_endermite_carcass.json": {
-    "mtime": 1787745311.039926,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_evoker_corpse.json": {
-    "mtime": 1787745311.0474615,
-    "ast_hash": "24faf712a2de3baccb0bc9c141bc19c9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_fox_carcass.json": {
-    "mtime": 1787745311.1057692,
-    "ast_hash": "22a7ce85a52bac21ea878b3f7511db22",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_glow_squid_carcass.json": {
-    "mtime": 1787745311.1057692,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/drained_goat_carcass.json": {
@@ -13854,24 +13324,9 @@
     "ast_hash": "50eada3b1a4bf835ad84ba9f078ed0a2",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/drained_gold_axolotl_carcass.json": {
-    "mtime": 1787745311.1272006,
-    "ast_hash": "3c8ab1971fe45ac12b668992d1bccda6",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/drained_gray_llama_carcass.json": {
     "mtime": 1787745311.1855712,
     "ast_hash": "2fcccca44600669d66f5d19d318bba04",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_guardian_carcass.json": {
-    "mtime": 1787745311.2317061,
-    "ast_hash": "7e01415f5f8198264c8cfe93cbda2c8c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_hoglin_carcass.json": {
-    "mtime": 1787745311.4053016,
-    "ast_hash": "b76e007e77543880605bd3b0dc2492a3",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/drained_horse_carcass.json": {
@@ -13879,289 +13334,14 @@
     "ast_hash": "9f3d47a291898cc18dcf1c7642d6965e",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/drained_husk_corpse.json": {
-    "mtime": 1787745311.4158454,
-    "ast_hash": "99e48990c3031021d71341f18c15aef0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_jellie_cat_carcass.json": {
-    "mtime": 1787745311.4487133,
-    "ast_hash": "aaa2df83e7649e775ad9467a45c7e058",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_magma_cube_carcass.json": {
-    "mtime": 1787745311.8197079,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_medium_magma_cube_carcass.json": {
-    "mtime": 1787745311.8208106,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_medium_slime_carcass.json": {
-    "mtime": 1787745311.8208106,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/drained_mule_carcass.json": {
     "mtime": 1787745311.8299856,
     "ast_hash": "46acbc9753ac1cdb7543de01e0465383",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/drained_ocelot_carcass.json": {
-    "mtime": 1787745311.8386042,
-    "ast_hash": "6f509c1aebf17cb3768f51552587333b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_panda_carcass.json": {
-    "mtime": 1787745311.8556478,
-    "ast_hash": "18969d02f4d7c304462ea1b29b765494",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_persian_cat_carcass.json": {
-    "mtime": 1787745311.867071,
-    "ast_hash": "39a03558cba120c3da3d5fe6afe80573",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_phantom_carcass.json": {
-    "mtime": 1787745311.9093578,
-    "ast_hash": "aa50df983b1a22d74eaea98d8119c8bf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_piglin_brute_corpse.json": {
-    "mtime": 1787745311.950827,
-    "ast_hash": "a49da8e11b49f5f4f109871c08ea6b0b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_piglin_corpse.json": {
-    "mtime": 1787745311.9891286,
-    "ast_hash": "29d4b9d95fd3b0f0b6dba9f98b36fada",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_pink_axolotl_carcass.json": {
-    "mtime": 1787745312.0272436,
-    "ast_hash": "5378e854bbdef5b9fd26b83184b3e1b3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_polar_bear_carcass.json": {
-    "mtime": 1787745312.0871336,
-    "ast_hash": "83e44ec4ccd5ace00c946aa1ef6f92f5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_pufferfish_carcass.json": {
-    "mtime": 1787745312.0876336,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_ragdoll_cat_carcass.json": {
-    "mtime": 1787745312.0961645,
-    "ast_hash": "5b336c666c5ad74befc0a67d746951d9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_ravager_corpse.json": {
-    "mtime": 1787745312.1401665,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_red_cat_carcass.json": {
-    "mtime": 1787745312.1475167,
-    "ast_hash": "501aacd909d93637201e1af0554054db",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_salmon_carcass.json": {
-    "mtime": 1787745312.1874416,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_shulker_carcass.json": {
-    "mtime": 1787745312.1885884,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_siamese_cat_carcass.json": {
-    "mtime": 1787745312.2544274,
-    "ast_hash": "854cce1604981c84a46f3e84a38e8188",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_silverfish_carcass.json": {
-    "mtime": 1787745312.2944002,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_skeleton_corpse.json": {
-    "mtime": 1787745312.2949,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_skeleton_horse_carcass.json": {
-    "mtime": 1787745312.2954,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_slime_carcass.json": {
-    "mtime": 1787745312.2964005,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_small_magma_cube_carcass.json": {
-    "mtime": 1787745312.2969003,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_small_slime_carcass.json": {
-    "mtime": 1787745312.297401,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_sniffer_carcass.json": {
-    "mtime": 1787745312.30693,
-    "ast_hash": "afcef96f01b5d7078cf6d1a703890201",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_spider_carcass.json": {
-    "mtime": 1787745312.3402755,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_squid_carcass.json": {
-    "mtime": 1787745312.3402755,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_strider_carcass.json": {
-    "mtime": 1787745312.3507893,
-    "ast_hash": "039b71f075e8b0bf89f085783ff643fa",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_tabby_cat_carcass.json": {
-    "mtime": 1787745312.3915527,
-    "ast_hash": "0bae9e09b83525c37d6e419b627abc53",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_turtle_carcass.json": {
-    "mtime": 1787745312.438725,
-    "ast_hash": "1e16f0a01f1cfede1e0b0e9e24fb3cc4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_vindicator_corpse.json": {
-    "mtime": 1787745312.4949803,
-    "ast_hash": "8316d8b54043c3595304c7f118d9d162",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_white_cat_carcass.json": {
-    "mtime": 1787745312.540326,
-    "ast_hash": "912b0c65d0eed79913437b15f688e3b9",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/drained_white_llama_carcass.json": {
     "mtime": 1787745312.6061773,
     "ast_hash": "7ba4736248b50f8441f128b0c0f8fd0d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_witch_corpse.json": {
-    "mtime": 1787745312.652062,
-    "ast_hash": "75fb7d54e236798edb35109efdd410e0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_wolf_carcass.json": {
-    "mtime": 1787745312.7141664,
-    "ast_hash": "38ddb9b11abe27143999e88490f4b864",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_zoglin_carcass.json": {
-    "mtime": 1787745312.728969,
-    "ast_hash": "962c81ae45e0a8c54edf3674e294c116",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_zombie_corpse.json": {
-    "mtime": 1787745312.7426927,
-    "ast_hash": "1d85b0e62ff3afdc280ec8b1b6c5d71a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drained_zombie_horse_carcass.json": {
-    "mtime": 1787745312.787996,
-    "ast_hash": "4096daef024eb928a0dae1755a447fa2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/drowned_corpse.json": {
-    "mtime": 1787745312.8497846,
-    "ast_hash": "e60ffb340ceabd7d8803a4f4c9305db1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/elder_guardian_carcass.json": {
-    "mtime": 1787745312.8885567,
-    "ast_hash": "b5c0da44acd80676e26339b235adc1da",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/enderman_carcass.json": {
-    "mtime": 1787745312.9154048,
-    "ast_hash": "771ad4edd85a0d25239bfa16810b6e44",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/enderman_head.json": {
-    "mtime": 1787745312.933886,
-    "ast_hash": "36f8928fe2efad88f655b1b918027230",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/enderman_head_mount.json": {
-    "mtime": 1787745312.9804318,
-    "ast_hash": "f4843aa1e88af9af9f80d675b8e24f13",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/endermite_carcass.json": {
-    "mtime": 1787745313.0190103,
-    "ast_hash": "4a5dc9a5ec986c5485864faf738cb5cd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/endermite_head.json": {
-    "mtime": 1787745313.0278254,
-    "ast_hash": "aa54a28a556f85f26980e37fca96ac84",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/endermite_head_mount.json": {
-    "mtime": 1787745313.0363128,
-    "ast_hash": "6c09e7dfa181f06ef6dcf0d478f621a1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/evoker_corpse.json": {
-    "mtime": 1787745313.0438206,
-    "ast_hash": "14536f9cd7f7f6e4703e4b12cf243474",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/fox_carcass.json": {
-    "mtime": 1787745313.0905385,
-    "ast_hash": "13ef69daca137475d371ccd92b1b768f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/fox_head.json": {
-    "mtime": 1787745313.1017509,
-    "ast_hash": "9c74a10cd751dcb8a8be18cc91e19744",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/fox_head_mount.json": {
-    "mtime": 1787745313.1122308,
-    "ast_hash": "144d5cf937a7e5bc9446c83d49801477",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/fox_skeleton.json": {
-    "mtime": 1787745313.124346,
-    "ast_hash": "396fa75a00a210995f0addca948afb4d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/fox_skin.json": {
-    "mtime": 1787745313.1333642,
-    "ast_hash": "a98cab23c636b951ac41d3accd68b431",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/glow_squid_carcass.json": {
-    "mtime": 1787745313.1458113,
-    "ast_hash": "ac441dfc4400a743c56fd578d2937952",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/glow_squid_head.json": {
-    "mtime": 1787745313.1939397,
-    "ast_hash": "0e6a56e2a8f619699da0ba8b863f8dcf",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/goat_carcass.json": {
@@ -14187,31 +13367,6 @@
   "src/main/resources/assets/slaughter_hide/items/goat_skin.json": {
     "mtime": 1787745313.2875433,
     "ast_hash": "aeb8c2115c494251fe6a4f0983d36bbd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/gold_axolotl_carcass.json": {
-    "mtime": 1787745313.3001208,
-    "ast_hash": "ea14d7936edb04e5e9f971d624a766fd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/gold_axolotl_head.json": {
-    "mtime": 1787745313.3405242,
-    "ast_hash": "7a0e47cc940715bdf498d22573d0a2d5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/gold_axolotl_head_mount.json": {
-    "mtime": 1787745313.382116,
-    "ast_hash": "8fa10b686aff82092d18ec0ef9d380c7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/gold_axolotl_skeleton.json": {
-    "mtime": 1787745442.8693643,
-    "ast_hash": "aa9226d1807542ea26c2b0ffe796caa6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/gold_axolotl_skin.json": {
-    "mtime": 1787745313.4080355,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/gold_cleaver.json": {
@@ -14249,36 +13404,6 @@
     "ast_hash": "1dd97d603e7e655873a8d70b68f8a6b2",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/guardian_carcass.json": {
-    "mtime": 1787745313.5554535,
-    "ast_hash": "3f78ee4df69fe9177ba5c092e6b222ed",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/hoglin_carcass.json": {
-    "mtime": 1787745313.5832918,
-    "ast_hash": "00c42ab96da3451c96d0d51a2c571480",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/hoglin_head.json": {
-    "mtime": 1787745313.5924773,
-    "ast_hash": "e8ff3a3d48467dd56c724087ecbb48d6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/hoglin_head_mount.json": {
-    "mtime": 1787745313.6039908,
-    "ast_hash": "fef436293dc209ba46ab001b9f667b7e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/hoglin_skeleton.json": {
-    "mtime": 1787745313.6194365,
-    "ast_hash": "7fe5d4bfacad424257b228bbe20818f2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/hoglin_skin.json": {
-    "mtime": 1787745313.6377232,
-    "ast_hash": "85e7fec7625100394d3cba76751481a8",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/hoof_goat.json": {
     "mtime": 1787745313.6392193,
     "ast_hash": "e556a8072bfde1692559de51013b54f1",
@@ -14289,11 +13414,6 @@
     "ast_hash": "96396f7d25d9079f0d51cc611e2feb87",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/husk_corpse.json": {
-    "mtime": 1787745313.6501954,
-    "ast_hash": "76bc59ed4f0e39521ae293076587d098",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/iron_hacksaw.json": {
     "mtime": 1787745313.7141664,
     "ast_hash": "637065e52079f5754649a08fa4f99215",
@@ -14302,41 +13422,6 @@
   "src/main/resources/assets/slaughter_hide/items/iron_hammer.json": {
     "mtime": 1787745313.7352731,
     "ast_hash": "18bdc90c23844f9575a3edc76591952a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/jellie_cat_carcass.json": {
-    "mtime": 1787745313.7518127,
-    "ast_hash": "7c8501e3c199d57d3ee6caa9e57e9528",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/jellie_cat_head.json": {
-    "mtime": 1787745313.7830856,
-    "ast_hash": "7e1a8f72eebe767f36712756e04e3ec9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/jellie_cat_head_mount.json": {
-    "mtime": 1787745313.827149,
-    "ast_hash": "006a8b343263d16e04ac984e29bf9415",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/jellie_cat_skin.json": {
-    "mtime": 1787745442.7840493,
-    "ast_hash": "a4a1d48c6c4f9fd99b991b4fcccd008d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/magma_cube_carcass.json": {
-    "mtime": 1787745313.8898826,
-    "ast_hash": "dc87ecdcc5a9832159f7fce277f19d21",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/medium_magma_cube_carcass.json": {
-    "mtime": 1787745313.9601297,
-    "ast_hash": "f9d1f86822dba9df41fad5380d8419bd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/medium_slime_carcass.json": {
-    "mtime": 1787745314.0121717,
-    "ast_hash": "f8a7a528bd1b25d8976155b104ae734d",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/mule_carcass.json": {
@@ -14384,191 +13469,6 @@
     "ast_hash": "da67b28d3401ee3d8f951e556c6dc7a7",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/ocelot_carcass.json": {
-    "mtime": 1787745314.1958697,
-    "ast_hash": "486c45c0efabd9517379373004a9503f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ocelot_head.json": {
-    "mtime": 1787745314.2061498,
-    "ast_hash": "b7dc7119327f1d8bcb3eb8895e769cd0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ocelot_head_mount.json": {
-    "mtime": 1787745314.2208683,
-    "ast_hash": "2e96f9588ec9a41ec817e166a9a72772",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ocelot_skeleton.json": {
-    "mtime": 1787745314.234007,
-    "ast_hash": "d6dff34b377599f68146e152d72c2f9e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ocelot_skin.json": {
-    "mtime": 1787745314.2407587,
-    "ast_hash": "8d60ec53d631eab8862a6276d63c4af2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/panda_carcass.json": {
-    "mtime": 1787745314.2584598,
-    "ast_hash": "0bab60135cbfffd8295341098d810655",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/panda_head.json": {
-    "mtime": 1787745314.2722626,
-    "ast_hash": "500a7acd1239754c9411296353fced2a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/panda_head_mount.json": {
-    "mtime": 1787745314.2864206,
-    "ast_hash": "8821a378ca81d31f94f3d786b52b77be",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/panda_skeleton.json": {
-    "mtime": 1787745314.2970421,
-    "ast_hash": "eb0dd3861411c2c82141d2645bcf55c1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/panda_skin.json": {
-    "mtime": 1787745314.3071663,
-    "ast_hash": "2ef1b8bd02650b63fb483bbec288a3c0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/persian_cat_carcass.json": {
-    "mtime": 1787745314.3216274,
-    "ast_hash": "4a57f1773f48ea5e0c5fd65e85700d42",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/persian_cat_head.json": {
-    "mtime": 1787745314.3508363,
-    "ast_hash": "72da8fbbc83f9f43d066a7c23e912ac3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/persian_cat_head_mount.json": {
-    "mtime": 1787745314.4206996,
-    "ast_hash": "8bb4d71c76721a4111abd0088fd6311f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/persian_cat_skin.json": {
-    "mtime": 1787745442.797415,
-    "ast_hash": "57f1b30cbc66416ce8bdafcb19b5228a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/phantom_carcass.json": {
-    "mtime": 1787745314.5141962,
-    "ast_hash": "680aa4a635a372996021a4953c9d1a28",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/phantom_head.json": {
-    "mtime": 1787745314.5897279,
-    "ast_hash": "e23fb6752ebb4ab7dfda3a69287ced81",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/phantom_head_mount.json": {
-    "mtime": 1787745314.640568,
-    "ast_hash": "8fe377c985b42e83a31ffc2787d229f3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/phantom_skeleton.json": {
-    "mtime": 1787745314.7103558,
-    "ast_hash": "158d84ac97cc5ac0210f856d16b060ac",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/piglin_brute_corpse.json": {
-    "mtime": 1787745314.7688963,
-    "ast_hash": "f1cd3909c06d6cfe28b88cf3df2f5267",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/piglin_corpse.json": {
-    "mtime": 1787745314.8151164,
-    "ast_hash": "08f5ddceb0e9a8dac67c9045a06e12db",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/pink_axolotl_carcass.json": {
-    "mtime": 1787745314.8697517,
-    "ast_hash": "173ba01b6bf802d000d8803803554956",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/pink_axolotl_head.json": {
-    "mtime": 1787745314.934261,
-    "ast_hash": "d5304cfaf55fbb26b290d75634af1528",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/pink_axolotl_head_mount.json": {
-    "mtime": 1787745314.982461,
-    "ast_hash": "ba8dcdd43bcfbb3d97726de93bb25b91",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/pink_axolotl_skeleton.json": {
-    "mtime": 1787745442.8668573,
-    "ast_hash": "aa9226d1807542ea26c2b0ffe796caa6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/pink_axolotl_skin.json": {
-    "mtime": 1787745315.023289,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/polar_bear_carcass.json": {
-    "mtime": 1787745315.0343616,
-    "ast_hash": "c69b33027c0482222abd04a64c84019e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/polar_bear_head.json": {
-    "mtime": 1787745315.055095,
-    "ast_hash": "acd3e635539e2ec7ad395d7841c26b85",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/polar_bear_head_mount.json": {
-    "mtime": 1787745315.056156,
-    "ast_hash": "8730337b355249b304a07dad15fd799d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/polar_bear_skeleton.json": {
-    "mtime": 1787745315.0566607,
-    "ast_hash": "930571310d8db3c95d02bfd99e018aef",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/polar_bear_skin.json": {
-    "mtime": 1787745315.0800886,
-    "ast_hash": "86e43c4755b40b966221a48f28782118",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/pufferfish_carcass.json": {
-    "mtime": 1787745442.9073572,
-    "ast_hash": "a54842d130efcc62a5e018cacd9eed52",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/pufferfish_spike.json": {
-    "mtime": 1787745315.0939987,
-    "ast_hash": "baa4f32f945a6415284e8920da5fddc5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ragdoll_cat_carcass.json": {
-    "mtime": 1787745315.124907,
-    "ast_hash": "6c6b773dfff4356f4cdef08760a8d19d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ragdoll_cat_head.json": {
-    "mtime": 1787745315.1502876,
-    "ast_hash": "1d97202277056c410c0a3f4d6acf8e70",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ragdoll_cat_head_mount.json": {
-    "mtime": 1787745315.1885521,
-    "ast_hash": "eec13cfe320969440d14068293ecbee5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ragdoll_cat_skin.json": {
-    "mtime": 1787745442.8100696,
-    "ast_hash": "8b69601a94f96d1e8ce0ef4ad47d1af4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/ravager_corpse.json": {
-    "mtime": 1787745315.2208269,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/raw_bat_meat.json": {
     "mtime": 1787745315.2332234,
     "ast_hash": "f30f01bfeb3dc32a51886b215552ae11",
@@ -14605,8 +13505,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/raw_endermite_chunks.json": {
-    "mtime": 1787745315.464385,
-    "ast_hash": "ce3f475ec0245364279d521633a80b44",
+    "mtime": 1787754008.6276286,
+    "ast_hash": "e9d409c8649a72c6bcf8e383e61e26b7",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/raw_fox_meat.json": {
@@ -14670,8 +13570,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/raw_silverfish_chunks.json": {
-    "mtime": 1787745315.6893413,
-    "ast_hash": "bf9c59dda2aaa74a553cee21548659d8",
+    "mtime": 1787754008.6276286,
+    "ast_hash": "4c20402bebcb50b4797dcfa41f33fd9a",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/raw_sniffer_steak.json": {
@@ -14684,224 +13584,14 @@
     "ast_hash": "748c65b34c8d27ceedd7dba97ada124b",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/raw_turtle_meat.json": {
-    "mtime": 1787745315.7735713,
-    "ast_hash": "7026f09f60d4c09e0ff97d040e8f44a6",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/raw_wolf_meat.json": {
     "mtime": 1787745315.8061788,
     "ast_hash": "1451e8f88bbafd0dd0fa8afdfd074942",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/red_cat_carcass.json": {
-    "mtime": 1787745315.8497076,
-    "ast_hash": "74454cbab91cd3e97202acfb1ea27f97",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/red_cat_head.json": {
-    "mtime": 1787745315.8802805,
-    "ast_hash": "4772e882261007f359d76f20df9c7a3f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/red_cat_head_mount.json": {
-    "mtime": 1787745315.916976,
-    "ast_hash": "9e47a9bf42a1a0fb46ff61b3ae5bc3d2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/red_cat_skin.json": {
-    "mtime": 1787745442.8187892,
-    "ast_hash": "9a7a0204aa3c226308a666b87fd32826",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/rope.json": {
     "mtime": 1787745315.964751,
     "ast_hash": "841a2ff72dd1d60b1c056fb341d1c549",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/salmon_carcass.json": {
-    "mtime": 1787745315.9745567,
-    "ast_hash": "7f7b319d7bcd4b67b0eed4d9d5b4f353",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/shulker_carcass.json": {
-    "mtime": 1787745316.0421233,
-    "ast_hash": "77b07bd50650ac485a21ea54c1a98045",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/siamese_cat_carcass.json": {
-    "mtime": 1787745316.103588,
-    "ast_hash": "eff22ab7ec7df26d38970063a811dcf0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/siamese_cat_head.json": {
-    "mtime": 1787745316.1265097,
-    "ast_hash": "6bdbcf390e4b580ecb9c4dc646c0014c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/siamese_cat_head_mount.json": {
-    "mtime": 1787745316.163167,
-    "ast_hash": "128bdb165173f0215d958aad7a5ca2a3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/siamese_cat_skin.json": {
-    "mtime": 1787745442.8328886,
-    "ast_hash": "b9b42e9691ea27ae8ea06af31333a7fb",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/silverfish_carcass.json": {
-    "mtime": 1787745316.2105162,
-    "ast_hash": "877f58ccae3e92d713dcb02ca189c8ae",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/silverfish_head.json": {
-    "mtime": 1787745316.2217214,
-    "ast_hash": "765335d73d9b5bb2f0da5d7ac852cadd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/silverfish_head_mount.json": {
-    "mtime": 1787745316.2321837,
-    "ast_hash": "c35db35aec1a9046b57f0e89eba4cb6e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/skeleton_corpse.json": {
-    "mtime": 1787745316.2449293,
-    "ast_hash": "00c53e1dda6cc5ff906d891dadcdd107",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/skeleton_horse_carcass.json": {
-    "mtime": 1787745316.2908351,
-    "ast_hash": "54a7a2d470daa5c34bed380714050f96",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/skeleton_horse_head.json": {
-    "mtime": 1787745316.3345447,
-    "ast_hash": "21714329323be3dd48f30a747f7287fd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/skeleton_horse_head_mount.json": {
-    "mtime": 1787745316.38267,
-    "ast_hash": "01bfbd610e43742c48a5b18813d6eb97",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/slime_carcass.json": {
-    "mtime": 1787745316.4258523,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/small_magma_cube_carcass.json": {
-    "mtime": 1787745316.4268532,
-    "ast_hash": "e556a8072bfde1692559de51013b54f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/small_slime_carcass.json": {
-    "mtime": 1787745316.4471307,
-    "ast_hash": "1b04e5dfa1577c97f38b892bf9086be1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/sniffer_carcass.json": {
-    "mtime": 1787745316.5057778,
-    "ast_hash": "40682458e8755f58827de4f0bc9f3d2a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/sniffer_head.json": {
-    "mtime": 1787745316.5200071,
-    "ast_hash": "39a94f02461588bd9c5015e122fc0e0d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/spider_carcass.json": {
-    "mtime": 1787745316.559515,
-    "ast_hash": "22376c016b95a8e72fe659e8d4b68612",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/spider_head.json": {
-    "mtime": 1787745316.6165164,
-    "ast_hash": "dbe4d4c8bf0ed5256df2df2d92c47cc3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/spider_head_mount.json": {
-    "mtime": 1787745316.6605048,
-    "ast_hash": "67d9ea2a04972b18501a727e32fe3cc2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/squid_carcass.json": {
-    "mtime": 1787745316.7051773,
-    "ast_hash": "dc7ef233bacd1e7be842c1d4e219836a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/squid_head.json": {
-    "mtime": 1787745316.758463,
-    "ast_hash": "a61973cfd9b752d29bd2c913a2f6c280",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/strider_carcass.json": {
-    "mtime": 1787745316.79699,
-    "ast_hash": "bdd399449fd3537e062e0996de3878f8",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/tabby_cat_carcass.json": {
-    "mtime": 1787745316.844647,
-    "ast_hash": "0ce6e03d9e19d501cd2f2d799c5675a7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/tabby_cat_head.json": {
-    "mtime": 1787745316.870642,
-    "ast_hash": "c7c0a037ddf1f77b400c4a2dc448f650",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/tabby_cat_head_mount.json": {
-    "mtime": 1787745316.9037285,
-    "ast_hash": "bd3aad7872d325f78c31fe1dcd24accf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/tabby_cat_skin.json": {
-    "mtime": 1787745442.8421304,
-    "ast_hash": "c2bfafbbefb62b77d26d2a9fc6032a7c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/turtle_carcass.json": {
-    "mtime": 1787745316.950741,
-    "ast_hash": "a3d26482b1f586f313ee3ea12ee97e4e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/turtle_head.json": {
-    "mtime": 1787745316.9929502,
-    "ast_hash": "1c37bd8c552d10c7d9acb9488025acec",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/turtle_head_mount.json": {
-    "mtime": 1787745317.0434952,
-    "ast_hash": "8431af40d5007e34ca13aa788932b258",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/turtle_shell_fragment.json": {
-    "mtime": 1787745317.0849292,
-    "ast_hash": "1772f8913fc5322b79995df7646588dd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/vindicator_corpse.json": {
-    "mtime": 1787745317.114737,
-    "ast_hash": "9f6e345d94061a721f968f623d0448f1",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/white_cat_carcass.json": {
-    "mtime": 1787745317.1591923,
-    "ast_hash": "77c1b934fa5ab05b89a0c01f6257c234",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/white_cat_head.json": {
-    "mtime": 1787745317.1819122,
-    "ast_hash": "e252adaa74a3f6f9324862100760d63d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/white_cat_head_mount.json": {
-    "mtime": 1787745317.2104986,
-    "ast_hash": "65f4d63ea2d4d6096799c12a59714586",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/white_cat_skin.json": {
-    "mtime": 1787745442.8527293,
-    "ast_hash": "721cd9926a22e80e6d7e4301cbc5dfe2",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/white_llama_carcass.json": {
@@ -14917,76 +13607,6 @@
   "src/main/resources/assets/slaughter_hide/items/white_llama_head_mount.json": {
     "mtime": 1787745317.3397782,
     "ast_hash": "1622214984d007eeca58070870dfc88f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/witch_corpse.json": {
-    "mtime": 1787745317.394878,
-    "ast_hash": "07f2b5b7106825badc5864db945b74ee",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/wolf_carcass.json": {
-    "mtime": 1787745317.4563167,
-    "ast_hash": "ba3bd0ad5c6d4ff7052e37f7e4d046bb",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/wolf_head.json": {
-    "mtime": 1787745317.470855,
-    "ast_hash": "9545f4a0e58cb67ad0417660d632d513",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/wolf_head_mount.json": {
-    "mtime": 1787745317.4806612,
-    "ast_hash": "2c50b7f3791a633ad5396b278f8958ef",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/wolf_pelt.json": {
-    "mtime": 1787745317.490381,
-    "ast_hash": "6b04af93457bef246d1ec42917c3863b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/wolf_skeleton.json": {
-    "mtime": 1787745317.5018015,
-    "ast_hash": "8c1477ae32ddd47d20cfdf3d56f7959a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/zoglin_carcass.json": {
-    "mtime": 1787745317.512914,
-    "ast_hash": "73b856431cfdf4e6869f75e982b18920",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/zoglin_head.json": {
-    "mtime": 1787745317.522171,
-    "ast_hash": "2c1497b8c643a595caeea7930be73202",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/zoglin_head_mount.json": {
-    "mtime": 1787745317.5344813,
-    "ast_hash": "aa40502238bc4908298e2f878469e516",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/zoglin_skin.json": {
-    "mtime": 1787745317.54266,
-    "ast_hash": "a5ed0d2e1517a6dcb98f1c6a663967d9",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/zombie_corpse.json": {
-    "mtime": 1787745317.5539,
-    "ast_hash": "aaa62bd6c61dee9538edb93ba0d12d4f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/zombie_horse_carcass.json": {
-    "mtime": 1787745317.6541204,
-    "ast_hash": "6bf45a0c18f95e46610d490b39780877",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/zombie_horse_head.json": {
-    "mtime": 1787745317.719803,
-    "ast_hash": "01cd0a97a974f6bf2ff7092b23cfdb93",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/zombie_horse_head_mount.json": {
-    "mtime": 1787745317.7630186,
-    "ast_hash": "db1b01d0add3aac96e3c05285e76b94b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/all_black_cat_carcass.json": {
@@ -17472,6 +16092,31 @@
   "docs/curseforge/versions/0.0.0-beta.34.md": {
     "mtime": 1787748347.463993,
     "ast_hash": "ca2abfeb9e89d7f343a9752ac22fb20d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/bird_foot.json": {
+    "mtime": 1787754008.624318,
+    "ast_hash": "66124236c4cf85574fae24e3703abf56",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/raw_chicken_leg.json": {
+    "mtime": 1787754008.624318,
+    "ast_hash": "2162e4266e6910467b6300c607db54f7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/raw_chicken_wing.json": {
+    "mtime": 1787754008.624318,
+    "ast_hash": "70c7198af680639558abc22d4f357117",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/wishbone.json": {
+    "mtime": 1787754008.6265528,
+    "ast_hash": "57b9057e3c44119714d17706bba50ede",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.35.md": {
+    "mtime": 1787757455.9670568,
+    "ast_hash": "abecceb24048a70b8794f812048ed47e",
     "semantic_hash": ""
   }
 }
