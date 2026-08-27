@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/spider_head",
-  "textures": {
-    "all": "slaughter_hide:block/spider",
-    "particle": "slaughter_hide:block/spider_blood",
-    "0": "slaughter_hide:block/spider"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/witch_head",
-  "textures": {
-    "all": "slaughter_hide:block/witch",
-    "particle": "slaughter_hide:block/witch",
-    "0": "slaughter_hide:block/witch"
-  }
-}

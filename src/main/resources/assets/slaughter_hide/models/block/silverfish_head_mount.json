@@ -1,9 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/silverfish_head_mount",
-  "textures": {
-    "all": "slaughter_hide:block/silverfish",
-    "particle": "slaughter_hide:block/silverfish",
-    "1": "slaughter_hide:block/head_stand",
-    "mob": "slaughter_hide:block/silverfish"
-  }
-}

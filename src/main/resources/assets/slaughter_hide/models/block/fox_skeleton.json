@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/fox_skeleton",
-  "textures": {
-    "all": "slaughter_hide:block/fox_skeleton",
-    "particle": "slaughter_hide:block/fox_skeleton",
-    "1": "slaughter_hide:block/fox_skeleton"
-  }
-}

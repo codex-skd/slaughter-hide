@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/evoker_corpse_armor_removed",
-  "textures": {
-    "all": "slaughter_hide:block/placed_armorless_evoker",
-    "particle": "minecraft:block/nether_wart_block",
-    "0": "slaughter_hide:block/placed_armorless_evoker"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/phantom_drained_carcass",
-  "textures": {
-    "all": "slaughter_hide:block/drained_phantom_carcass",
-    "particle": "minecraft:block/cherry_log",
-    "0": "slaughter_hide:block/drained_phantom_carcass"
-  }
-}

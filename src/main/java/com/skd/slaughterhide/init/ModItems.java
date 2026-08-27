@@ -80,14 +80,8 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_CHICKEN_WING = item("raw_chicken_wing", Item::new);
     public static final DeferredItem<Item> BIRD_FOOT = item("bird_foot", Item::new);
     public static final DeferredItem<Item> WISHBONE = item("wishbone", Item::new);
-    // Goat (uses lamb cuts + hooves)
+    // Goat: shares the sheep's lamb cuts and the generic hoof (see goat_cut_*_drop loot tables)
     public static final DeferredItem<Item> GOAT_SKIN = item("goat_skin", Item::new);
-    public static final DeferredItem<Item> RAW_LEG_OF_LAMB_GOAT = item("raw_leg_of_lamb_goat", Item::new);
-    public static final DeferredItem<Item> RAW_LAMB_SHOULDER_GOAT = item("raw_lamb_shoulder_goat", Item::new);
-    public static final DeferredItem<Item> RAW_LAMB_RIB_GOAT = item("raw_lamb_rib_goat", Item::new);
-    public static final DeferredItem<Item> RAW_LAMB_SIRLOIN_GOAT = item("raw_lamb_sirloin_goat", Item::new);
-    public static final DeferredItem<Item> RAW_LAMB_LOIN_GOAT = item("raw_lamb_loin_goat", Item::new);
-    public static final DeferredItem<Item> HOOF_GOAT = item("hoof_goat", Item::new);
     // Cooked meats (corresponding smelting/smoking recipes)
     public static final DeferredItem<Item> COOKED_CHUCK_STEAK = item("cooked_chuck_steak", Item::new);
     public static final DeferredItem<Item> COOKED_RIBEYE_STEAK = item("cooked_ribeye_steak", Item::new);

@@ -82,10 +82,7 @@ public final class ModCreativeTabs {
                                 ModItems.RAW_PORK_BELLY, ModItems.RAW_HAM,
                                 ModItems.RAW_LEG_OF_LAMB, ModItems.RAW_LAMB_SHOULDER, ModItems.RAW_LAMB_RIB,
                                 ModItems.RAW_LAMB_SIRLOIN, ModItems.RAW_LAMB_LOIN,
-                                ModItems.RAW_CHICKEN_LEG, ModItems.RAW_CHICKEN_WING,
-                                ModItems.RAW_LEG_OF_LAMB_GOAT, ModItems.RAW_LAMB_SHOULDER_GOAT,
-                                ModItems.RAW_LAMB_RIB_GOAT, ModItems.RAW_LAMB_SIRLOIN_GOAT,
-                                ModItems.RAW_LAMB_LOIN_GOAT
+                                ModItems.RAW_CHICKEN_LEG, ModItems.RAW_CHICKEN_WING
                         ).filter(item -> item != null).forEach(item -> output.accept(item.get()));
 
                         // Cooked meats (if they exist)

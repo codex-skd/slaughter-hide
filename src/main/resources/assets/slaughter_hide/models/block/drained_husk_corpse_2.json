@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/husk_corpse_cut_1_hanging",
-  "textures": {
-    "all": "slaughter_hide:block/husk_armless",
-    "particle": "minecraft:block/sand",
-    "0": "slaughter_hide:block/husk_armless"
-  }
-}

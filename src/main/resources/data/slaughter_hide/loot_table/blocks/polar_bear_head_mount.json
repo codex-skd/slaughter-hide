@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "slaughter_hide:blocks/polarbear_head_mount",
+  "random_sequence": "slaughter_hide:blocks/polar_bear_head_mount",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "slaughter_hide:polarbear_head_mount"
+          "name": "slaughter_hide:polar_bear_head_mount"
         }
       ]
     }

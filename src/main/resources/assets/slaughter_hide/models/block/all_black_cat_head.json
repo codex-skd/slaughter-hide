@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/all_black_cat_head",
-  "textures": {
-    "all": "slaughter_hide:block/all_black",
-    "particle": "slaughter_hide:block/all_black",
-    "0": "slaughter_hide:block/all_black"
-  }
-}

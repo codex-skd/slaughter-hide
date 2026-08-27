@@ -1,5 +1,28 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.37] - 2026-08-27
+
+### Fix
+
+- **Cabeza de Oso Polar Montada sin textura** — el bloque `polar_bear_head_mount` **nunca se registraba**: `polar_bear` faltaba en el `Set` `HAS_HEAD_MOUNT_ASSETS` de `ModBlocks.java`, así que `mountFor("polar_bear")` devolvía `null` y el `blockItem` quedaba sin bloque. Añadido `polar_bear` al set. Además el modelo custom `polarbear_head_mount.json` tenía 4 UVs fuera de rango (se re-añadió el oso en beta.36, después del clampeo masivo de UVs de beta.35) → reemplazado por la versión ya clampeada. Loot tables `polar_bear_head_mount`/`polar_bear_skeleton` apuntaban a los ítems viejos sin guion bajo (`polarbear_*`, borrados) → corregidas.
+- **Oso polar: texturas y modelos que faltaban tras re-añadirlo en beta.36** (rename `polarbear` → `polar_bear` a medias): `polar_bear_head_mount`/`polar_bear_skeleton` sin `items/<id>.json` con el nombre nuevo (creadas); `drained_polar_bear_carcass` en magenta porque `drained_polarbear(_hanging).png` no se copiaron del dump (copiadas).
+- **Piel de cabra sin textura**: `models/item/goat_skin.json` referencia `slaughter_hide:item/goat_fur`, textura no copiada del original (solo estaba `goat_skin.png`, sin usar). Copiado `goat_fur.png`.
+
+### Add
+
+- **Traducciones del oso polar** en `en_us` + `es_es` (`polar_bear_carcass`, `drained_polar_bear_carcass`, `polar_bear_head`, `polar_bear_head_mount`, `polar_bear_skeleton`, `polar_bear_skin`, bloque+item). Faltaban todas menos `raw_polar_bear_meat` (el oso se re-añadió tras el sync de traducciones de beta.35). `raw_polar_bear_meat` en `es_es` traducido ("Carne de Oso Polar Cruda").
+
+### Removed
+
+- **6 ítems `*_goat` fantasma** (`raw_leg_of_lamb_goat`, `raw_lamb_shoulder_goat`, `raw_lamb_rib_goat`, `raw_lamb_sirloin_goat`, `raw_lamb_loin_goat`, `hoof_goat`) — no existen en Butchery original, nada los usa (la cabra comparte los cortes de cordero y el `hoof` genérico). Eliminadas declaraciones en `ModItems.java`, refs en `ModCreativeTabs.java`, los 6 JSON stub y sus claves de idioma. `goat_skin` se mantiene.
+- **Limpieza masiva de residuo del recorte 77→7 mobs** (mark-and-sweep contra los IDs realmente registrados): **1822 archivos** de `assets/`+`data/` — blockstates 174→70, models/block 638→198, models/item 346→159, models/custom 552→168, textures/block 222→95, textures/item 122→91, loot_table/blocks 377→109, recipes 376→96. Sanity check: toda blockstate/itemdef de bloque o ítem registrado se conserva. Incluye la feature "rug" muerta completa (`polarbear_rug`, `goat_rug`, `panda_rug` + sus recetas) y el residuo del rename `polarbear`.
+- **22 claves de idioma huérfanas** (`en_us` + `es_es`) de bloques/ítems ya no registrados (`iron_golem_head_mount`, `ravager_head(_mount)`, `bone_*` tools, `cooked_polar_bear_meat` — este último se re-añadirá al registrar el ítem).
+- **3 clases Java muertas**: `IronGolemHeadMountBlock`, `RavagerHeadBlock`, `RavagerHeadMountBlock` (solo importadas en `ModBlocks.java`, nunca registradas) + sus imports.
+
+### Docs
+
+- `ROADMAP_SLAUGHTER_HIDE.md` actualizado al alcance real de **7 mobs** (nueva sección "ALCANCE ACTUAL"); las fases 3.3+ quedan marcadas como registro histórico. Documentada la respuesta "qué bloques del mod base faltan" (Meat Grinder / Pestle and Mortar / Taxidermy Table con GUI; sistema de sangre; mobiliario decorativo).
+
 ## [0.0.0-beta.36] - 2026-08-26
 
 ### Changed (BREAKING)

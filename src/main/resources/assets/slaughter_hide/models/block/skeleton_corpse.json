@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/skeleton_corpse",
-  "textures": {
-    "all": "slaughter_hide:block/skeleton",
-    "particle": "slaughter_hide:block/skeleton",
-    "0": "slaughter_hide:block/skeleton"
-  }
-}

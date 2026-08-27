@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/endermite_head",
-  "textures": {
-    "all": "slaughter_hide:block/endermite",
-    "particle": "slaughter_hide:block/endermite",
-    "0": "slaughter_hide:block/endermite"
-  }
-}

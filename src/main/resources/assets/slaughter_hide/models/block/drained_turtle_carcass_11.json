@@ -1,9 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/turtle_break_2_carcass",
-  "textures": {
-    "all": "slaughter_hide:block/turtle_drained",
-    "particle": "minecraft:block/nether_wart_block",
-    "0": "slaughter_hide:block/turtle_drained",
-    "1": "slaughter_hide:block/inner"
-  }
-}

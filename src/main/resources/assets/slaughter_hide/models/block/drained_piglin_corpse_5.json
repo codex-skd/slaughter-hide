@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/piglin_cut_1_corpse",
-  "textures": {
-    "all": "slaughter_hide:block/piglin_drained",
-    "particle": "minecraft:block/nether_wart_block",
-    "0": "slaughter_hide:block/piglin_drained"
-  }
-}

@@ -2,28 +2,47 @@
 
 > Documento vivo. Se actualiza según avanza el port. Ver `docs/WORKFLOW_SLAUGHTER_HIDE_26-2.md` para el flujo operativo del repo.
 
-## 🎯 SIGUIENTE PASO (actualizado 2026-08-26, sesión "Freezer completado")
+> ⚠️ **Nota de contexto (2026-08-27)**: las Fases 3.3 en adelante de este documento describen el estado de **74-77 mobs**, que ya **NO es el alcance actual**. En beta.35/beta.36 (2026-08-26) el alcance se recortó a **7 mobs**. Las secciones históricas se conservan como registro, pero el estado real es el de la sección siguiente.
 
-**No hay instancia de test disponible de momento** — la verificación en cliente real del corte de corpses y del Freezer queda pendiente hasta que el usuario tenga una instancia lista. No repetir el despliegue de jars a instancias sin confirmación explícita de la ruta (ver incidente más abajo).
+## 🎯 ALCANCE ACTUAL — 7 mobs (recorte beta.35/36, consolidado 2026-08-27)
 
-**Siguiente frente de trabajo**: elegir entre el resto del Batch B2b (Meatgrinder/Pestleandmortar/Taxidermytable + sangre visible) o la auditoría de traducciones/assets (~68% de ítems sin traducir). Ver secciones "Pendiente" más abajo. El Freezer (primera máquina GUI, con su partícula `freezersmoke`) está completo en working tree — pendiente de commit y de prueba en cliente.
+**Mobs soportados (7, todos granja + oso polar)**: `cow`, `pig`, `sheep`, `chicken`, `rabbit`, `goat`, `polar_bear`.
+Registro en `Carcasses.java` (bloque `static`) y `ModBlocks.registerFamily(...)` — exactamente estos 7, nada más. Los ~70 mobs restantes del dump original (hostiles, nether/end, acuáticos, gatos, llamas, axolotes, humanoides con `Corpse`) quedaron **fuera de alcance**.
 
-**Hallazgos de esta sesión ya resueltos** (no repetir):
-1. ✅ **Corte de corpses humanoides implementado** (los 9 mobs: drowned, evoker, husk, piglin, piglin_brute, skeleton, vindicator, witch, zombie) — antes no tenían ninguna lógica de despiece. Ver CHANGELOG [Unreleased]. **Aún sin probar en cliente real** (sin instancia de test disponible).
-2. ✅ **Ramas de GitLab corregidas**: `neo_version` llevaba tiempo en `26.2.0.57` pero se seguía commiteando en la rama `neoforge-26.2.0.45-beta` (nunca se creó la rama nueva cuando se bumpeó, mucho antes de esta sesión). Creadas `minecraft/26.2/neoforge-26.2.0.57/production` + `/main`, documentación corregida. **A partir de ahora trabajar en la rama `neoforge-26.2.0.57`**, la vieja queda como histórica.
-3. ✅ **Catálogo `opencode-go-models/INDEX.md` corregido tras usarlo mal una vez** — recordar SIEMPRE consultarlo antes de elegir modelo de OpenCode Go (no improvisar por precio/memoria propia).
-4. ✅ **Iron Golem: decisión de alcance tomada — NO se porta.** Ver sección dedicada más abajo con el análisis técnico y el motivo.
-5. ✅ **Freezer completado (2026-08-26)**: la delegación lo dejó a medias; esta sesión añadió blockstate 0-5 fiel con las 24 variantes y los 4 modelos custom restantes (`freezer_left/right(_open)`), comparador, guard de shift en la animación, propiedades correctas del original (strength 1.0/10.0 + noOcclusion) y el subsistema de partículas `ModParticleTypes` + `FreezerSmokeParticle` (port 1:1 con las 8 texturas originales). Ver CHANGELOG [Unreleased].
+### Estado del ciclo de juego por mob
 
-**Incidente a no repetir**: en la sesión anterior se copió el jar de prueba a una instancia de CurseForge (`EnchantVenture`, sin el prefijo `(Test)`) sin confirmar antes con el usuario que esa ruta era la correcta — resultó ser la instancia principal/limpia del usuario, no una de test. **Nunca desplegar un build a una ruta de instancia sin que el usuario la haya confirmado explícitamente en esa sesión**, aunque una ruta parecida haya funcionado antes.
+El "motor" (matar → carcasa colgada del `Hook`/`Rope` → sangrar con cleaver → `drained_<mob>_carcass` → cortar cabeza/piel/3 cortes → bloque desaparece) está implementado de forma genérica (`CarcassDeathHandler`, `CarcassBleedingHandler`, `CarcassCutupHandler`, `CarcassInteractionHandler`, `HookPlacementHandler`, `RopePlacementHandler`). Validado en cliente real end-to-end para **vaca** (2026-08-18) y **oso polar** (2026-08-27, tras arreglar assets). Cerdo/oveja/pollo/conejo/cabra comparten el mismo código sin clases nuevas.
 
-**Pendiente de sesiones anteriores, todavía sin hacer** (bajo riesgo, alto valor):
-1. ~~`Irongolem`+`arms`/`body`/`head`/`legs`~~ — **descartado, ver sección "Iron Golem — no soportado" más abajo.**
-2. **Fase 3.4b2b — Batch B2 restante**: ~~`Freezer`~~ (**completado 2026-08-26**, ver CHANGELOG), `Meatgrinder`, `Pestleandmortar`, `Taxidermytable` (GUI real) + subsistema de sangre visible (`Blood`/`InfectedBlood` fluido custom, `Bloodgrate`/`Bloodpuddle`). Ver detalle más abajo.
+**Huecos conocidos del ciclo (pendiente: "integrar el proceso completo" — tarea abierta 2026-08-27)**:
+- `Carcasses.buildPOLAR_BEAR()` tiene `sweptVanillaItems = List.of(Items.COD)` con un comentario que dice "drops raw_polar_bear_meat" — revisar contra `PlacepolarbearcarcassProcedure` original si el barrido correcto es COD/SALMON o la carne del mod.
+- `cooked_polar_bear_meat` **no está registrado** (sí `raw_polar_bear_meat`) — falta el ítem cocinado + su receta de fundido/ahumado/hoguera + su textura (`cooked_bear_meat.png` en el dump). Igual revisar pollo (`cooked_chicken_leg/wing`) y conejo.
+- `Rope`: versión simplificada de 1 clic, sin el ciclo de "tensar" (blockstate 0-7) del original.
+- Tiers de herramienta copper/gold/diamond/netherite: registradas, texturas = placeholder (copia de iron). Bone tier: no registrada.
+- Sangre visible: sin implementar (`CarcassBleedingHandler` solo hace partículas de humo).
 
-**Descubierto hoy, aún sin auditar**: al revisar en cliente real se vio que **~68% de los ítems del mod (285 de 416) no tienen traducción** (muestran la clave cruda `item.slaughter_hide.xxx`) y varios ítems como `cooked_sirloin_steak` no tienen ningún asset (ni modelo ni textura) pese a estar registrados — hueco preexistente de todo el rollout de los 74 mobs, no de esta sesión. Sin auditar en profundidad ni priorizado todavía.
+### Limpieza de residuo del recorte (COMPLETADO 2026-08-27)
 
-**No urgente pero pendiente**: huecos menores documentados en Fase 3 (Rope real con tensado progresivo, texturas propias por tier de herramienta en vez de placeholders, recetas de crafteo huérfanas del MCreator original).
+Mark-and-sweep de assets/datos contra los IDs realmente registrados (7 mobs + bloques standalone): **1822 archivos borrados** (blockstates 174→70, models/block 638→198, models/item 346→159, models/custom 552→168, textures/block 222→95, textures/item 122→91, loot_table/blocks 377→109, recipes 376→96) + 22 claves de idioma huérfanas + 3 clases Java muertas (`IronGolemHeadMountBlock`, `RavagerHeadBlock`, `RavagerHeadMountBlock`). Script en scratchpad; sanity check: toda blockstate/itemdef registrada se conserva. Ver CHANGELOG.
+
+**Residuo aún pendiente** (más invasivo, requiere decisión): ítems de carne/órganos de mobs cortados que siguen registrados en `ModItems.java` sin gameplay que los alcance (`raw_bat_meat`, `raw_camel_meat`, `raw_fox_meat`, `raw_wolf_meat`, `raw_ocelot_meat`, `raw_panda_steak`, `raw_hoglin_chunk`, `raw_dolphin_meat`, `raw_enderman_steak`, `raw_strider_meat`, `raw_sniffer_steak`, `raw_silverfish_chunks`, `raw_endermite_chunks`, `raw_creeper_leg/steak`, organos `heart/intestines/kidney/liver/lungs/stomach` + `rotten_*`); sistema `Corpse*` (bloques nunca registrados pero `CorpseInteractionHandler` sigue en el event bus).
+
+### Bloques del mod base — qué falta (respuesta 2026-08-27)
+
+El mod original tiene **4 bloques con GUI/menú real** (`ButcheryModMenus`): **Freezer** (✅ portado), **Meat Grinder**, **Pestle and Mortar**, **Taxidermy Table** (❌ los 3 sin portar). Además: sistema de sangre (`Blood`/`Infected Blood` fluidos + `Blood Grate` + `Blood Puddle`, ❌), y familias de mobiliario decorativo sin GUI (`<madera>_butchers_table`/`_counter`/`_butcher_display`, `canopy_<color>` ×16, ❌ cortadas). Los bloques `basin`/`brain`/`cash_register_block`/`skin_rack`/`jar`/`metal_tray`/`wooden_spit_rotisserie` están portados pero como versiones **sin GUI** (contenedor vestigial de MCreator).
+
+### Instancia de test
+
+`C:\Users\llagu\curseforge\minecraft\Instances\(Test) EnchantVenture` — confirmada por el usuario 2026-08-27. Desplegar SOLO ahí, y solo tras confirmación en la sesión (ver incidente histórico abajo).
+
+---
+
+## 🎯 SIGUIENTE PASO histórico (2026-08-26, sesión "Freezer completado") — PARCIALMENTE OBSOLETO
+
+> Conservado como registro. El alcance de 74 mobs que asume ya no aplica (ver sección de arriba).
+
+**Incidente a no repetir**: en una sesión anterior se copió el jar de prueba a una instancia de CurseForge (`EnchantVenture`, sin el prefijo `(Test)`) sin confirmar antes con el usuario que esa ruta era la correcta — resultó ser la instancia principal/limpia del usuario. **Nunca desplegar un build a una ruta de instancia sin que el usuario la haya confirmado explícitamente en esa sesión.**
+
+**No urgente pero pendiente**: Rope real con tensado progresivo, texturas propias por tier de herramienta, recetas de crafteo huérfanas del MCreator original.
 
 ## Iron Golem — NO soportado (decisión 2026-08-25)
 

@@ -1,9 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/endermite_head_mount",
-  "textures": {
-    "all": "slaughter_hide:block/endermite",
-    "particle": "slaughter_hide:block/endermite",
-    "mob": "slaughter_hide:block/endermite",
-    "1": "slaughter_hide:block/head_stand"
-  }
-}

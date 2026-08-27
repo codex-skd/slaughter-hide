@@ -1,7 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/slime_carcass.geo",
-  "textures": {
-    "all": "slaughter_hide:block/slime",
-    "particle": "slaughter_hide:block/slime"
-  }
-}

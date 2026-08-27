@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/hoglin_skeleton",
-  "textures": {
-    "all": "slaughter_hide:block/hoglin_skeleton",
-    "particle": "slaughter_hide:block/hoglin_skeleton",
-    "hoglin": "slaughter_hide:block/hoglin_skeleton"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/hanging_wolf_carcass_cut_2",
-  "textures": {
-    "all": "slaughter_hide:block/wolf_skinned",
-    "particle": "minecraft:block/nether_wart_block",
-    "1": "slaughter_hide:block/wolf_skinned"
-  }
-}

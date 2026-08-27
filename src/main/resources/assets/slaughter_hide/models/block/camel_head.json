@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/camel_head",
-  "textures": {
-    "all": "slaughter_hide:block/camel",
-    "particle": "slaughter_hide:block/camel",
-    "1": "slaughter_hide:block/camel"
-  }
-}

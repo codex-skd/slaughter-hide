@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/wolf_skeleton_hanging",
-  "textures": {
-    "all": "slaughter_hide:block/wolf_skeleton",
-    "particle": "slaughter_hide:block/wolf_skeleton",
-    "0": "slaughter_hide:block/wolf_skeleton"
-  }
-}

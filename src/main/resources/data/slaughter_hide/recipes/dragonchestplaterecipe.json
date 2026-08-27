@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smithing_transform",
-  "template": "slaughter_hide:dragon_smithing_template",
-  "base": "minecraft:netherite_chestplate",
-  "addition": "slaughter_hide:dragon_scale_ingot",
-  "result": {
-    "id": "slaughter_hide:dragon_scale_armor_chestplate"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/medium_slime_carcass",
-  "textures": {
-    "all": "slaughter_hide:block/slime",
-    "particle": "slaughter_hide:block/slime",
-    "0": "slaughter_hide:block/slime"
-  }
-}

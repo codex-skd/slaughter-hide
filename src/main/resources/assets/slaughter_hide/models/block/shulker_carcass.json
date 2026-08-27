@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/shulker_carcass",
-  "textures": {
-    "all": "slaughter_hide:block/shulker",
-    "particle": "slaughter_hide:block/shulker",
-    "0": "slaughter_hide:block/shulker"
-  }
-}

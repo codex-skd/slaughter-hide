@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/glow_squid_head",
-  "textures": {
-    "all": "slaughter_hide:block/glow_squid",
-    "particle": "minecraft:block/powder_snow",
-    "0": "slaughter_hide:block/glow_squid"
-  }
-}

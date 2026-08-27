@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/zoglin_head",
-  "textures": {
-    "all": "slaughter_hide:block/zoglin",
-    "particle": "slaughter_hide:block/zoglin",
-    "0": "slaughter_hide:block/zoglin"
-  }
-}

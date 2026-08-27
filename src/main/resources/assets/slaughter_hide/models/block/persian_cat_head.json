@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/persian_cat_head",
-  "textures": {
-    "all": "slaughter_hide:block/persian",
-    "particle": "slaughter_hide:block/persian",
-    "0": "slaughter_hide:block/persian"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/puffer_fish_pointless",
-  "textures": {
-    "all": "slaughter_hide:block/pufferfish",
-    "particle": "minecraft:block/nether_wart_block",
-    "0": "slaughter_hide:block/pufferfish"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "slaughter_hide:dragon_bone",
-  "result": {
-    "id": "slaughter_hide:spiked_dragon_bone",
-    "count": 1
-  }
-}

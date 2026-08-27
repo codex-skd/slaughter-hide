@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/tabby_cat_carcass",
-  "textures": {
-    "all": "slaughter_hide:block/tabby",
-    "particle": "minecraft:block/nether_wart_block",
-    "0": "slaughter_hide:block/tabby"
-  }
-}

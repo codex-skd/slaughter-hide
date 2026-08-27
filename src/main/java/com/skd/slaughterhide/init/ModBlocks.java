@@ -14,9 +14,6 @@ import com.skd.slaughterhide.block.DioriteBricksBlock;
 import com.skd.slaughterhide.block.DragonScaleBlock;
 import com.skd.slaughterhide.block.HeadMountBlock;
 import com.skd.slaughterhide.block.HookBlock;
-import com.skd.slaughterhide.block.IronGolemHeadMountBlock;
-import com.skd.slaughterhide.block.RavagerHeadBlock;
-import com.skd.slaughterhide.block.RavagerHeadMountBlock;
 import com.skd.slaughterhide.block.RopeBlock;
 import com.skd.slaughterhide.block.BloodSplatterBlock;
 import com.skd.slaughterhide.block.PlasticSheetBlock;
@@ -95,9 +92,9 @@ public final class ModBlocks {
     private static final Set<String> HAS_HEAD_MOUNT_ASSETS = Set.of(
             "bat", "camel", "chicken", "cow", "dolphin", "donkey", "drowned",
             "enderman", "endermite", "evoker", "fox", "goat", "hoglin", "husk",
-            "mule", "ocelot", "panda", "pig", "piglin", "rabbit", "ravager",
-            "sheep", "silverfish", "skeleton", "turtle", "vindicator", "witch",
-            "wolf", "zoglin", "zombie"
+            "mule", "ocelot", "panda", "pig", "piglin", "polar_bear", "rabbit",
+            "ravager", "sheep", "silverfish", "skeleton", "turtle", "vindicator",
+            "witch", "wolf", "zoglin", "zombie"
     );
 
     /** Mobs that have skeleton blockstate JSONs/assets. */

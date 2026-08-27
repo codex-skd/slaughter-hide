@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/jellie_cat_head",
-  "textures": {
-    "all": "slaughter_hide:block/jellie",
-    "particle": "slaughter_hide:block/jellie",
-    "0": "slaughter_hide:block/jellie"
-  }
-}

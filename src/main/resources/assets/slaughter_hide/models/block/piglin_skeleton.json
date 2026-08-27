@@ -1,8 +1,0 @@
-{
-  "parent": "slaughter_hide:custom/piglin_skeleton",
-  "textures": {
-    "all": "slaughter_hide:block/piglin_skeleton",
-    "particle": "slaughter_hide:block/piglin_skeleton",
-    "0": "slaughter_hide:block/piglin_skeleton"
-  }
-}
