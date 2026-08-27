@@ -88,7 +88,7 @@ El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mo
 | `0.0.0-beta.38` | `8748711` | 2026-08-27 (hotfix del crash de beta.37) |
 | `0.0.0-beta.39` | `8748853` | 2026-08-27 (pulido sangre + tiers herramienta) |
 | `0.0.0-beta.40` | `8748994` | 2026-08-27 (blood feel) |
-| `0.0.0-beta.41` | (pendiente) | 2026-08-27 |
+| `0.0.0-beta.41` | `8749159` | 2026-08-27 (41 bloques decoración) |
 
 ## Rama
 
