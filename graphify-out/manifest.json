@@ -90,8 +90,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/CarcassBleedingHandler.java": {
-    "mtime": 1787848923.6240218,
-    "ast_hash": "ac4e952d515a5349aa98e20669167219",
+    "mtime": 1787857907.4215822,
+    "ast_hash": "f605f08e46ff9ca89e6fc27c3ed478b0",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/CarcassCutupHandler.java": {
@@ -125,18 +125,18 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787849439.7356703,
-    "ast_hash": "6d63fbac0e46338307c41f9ce12a9997",
+    "mtime": 1787858812.336495,
+    "ast_hash": "0e761a93b5b93da107d91a2d5cfe7421",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
-    "mtime": 1787848884.2921464,
-    "ast_hash": "13ac5fb399921010a7007ab30bc84eb4",
+    "mtime": 1787858907.1425846,
+    "ast_hash": "e4c69edff4fc371dd8db0e1368e390f4",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787848875.0945773,
-    "ast_hash": "feb69e98721bcddbb1a2cc093844ee0b",
+    "mtime": 1787858883.2326608,
+    "ast_hash": "8d058eb557308bf46c6deec7f215d8c6",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -585,13 +585,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/en_us.json": {
-    "mtime": 1787849099.3471208,
-    "ast_hash": "061ef5213a759f762773fda47142752b",
+    "mtime": 1787859108.3397286,
+    "ast_hash": "24443b82ae5a6df1cc7f9a61a25b2669",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/es_es.json": {
-    "mtime": 1787849133.0868363,
-    "ast_hash": "56193d39451a3585ccc339812169bc1e",
+    "mtime": 1787859108.3412344,
+    "ast_hash": "9d6a9f3559acb1cd4b0c315cae00a83c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/chicken_carcass.json": {
@@ -1920,13 +1920,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/slaughter_hide/tags/item/cleaver.json": {
-    "mtime": 1787589983.3404498,
-    "ast_hash": "e03108f01cc1f435b5bf35334d09c46a",
+    "mtime": 1787856708.977708,
+    "ast_hash": "acd92f07d49d6f90ce3ee9ecd5993424",
     "semantic_hash": ""
   },
   "src/main/resources/data/slaughter_hide/tags/item/skinning_knives.json": {
-    "mtime": 1787589983.3404498,
-    "ast_hash": "e19ae6f6f5afe59dbe8d394e406b9d55",
+    "mtime": 1787856708.9787147,
+    "ast_hash": "f866b95a2a9296bab2817a5629b92ffe",
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
@@ -1940,8 +1940,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787849826.5221677,
-    "ast_hash": "0c77383ea1a5011997684ba47b7e92b1",
+    "mtime": 1787859529.9434257,
+    "ast_hash": "b02123472c8c96e8df91e044eec27e9a",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1950,8 +1950,8 @@
     "semantic_hash": ""
   },
   "docs/ROADMAP_SLAUGHTER_HIDE.md": {
-    "mtime": 1787831240.5065565,
-    "ast_hash": "1929811fd14146d2a03a26a5526df3f4",
+    "mtime": 1787852980.8659859,
+    "ast_hash": "fbd9c30326c8128f8ffa51b7d918c4e7",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_SLAUGHTER_HIDE_26-2.md": {
@@ -1965,8 +1965,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1787673881.5727794,
-    "ast_hash": "9e8b689e8bfe959c42414a54987ca429",
+    "mtime": 1787859569.4478507,
+    "ast_hash": "a0ecbc0b4acd4630016a41395c5184fb",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.2.md": {
@@ -2365,13 +2365,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/slaughter_hide/recipes/butchersfloorsign.json": {
-    "mtime": 1787589983.2745233,
-    "ast_hash": "45c8e67173b6d84a9fb0f22297d7bf14",
+    "mtime": 1787858968.7018652,
+    "ast_hash": "6750194e0cc9c27382639cccd487b621",
     "semantic_hash": ""
   },
   "src/main/resources/data/slaughter_hide/recipes/butcherstatuerecipe.json": {
-    "mtime": 1787589983.2745233,
-    "ast_hash": "94a86359d9c1fb32cc68e808a515fad5",
+    "mtime": 1787858968.706684,
+    "ast_hash": "355de06c3f8fb194cf42c286694a6a66",
     "semantic_hash": ""
   },
   "src/main/resources/data/slaughter_hide/recipes/chucksteakrecipe_1.json": {
@@ -5960,8 +5960,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/BloodPuddleBlock.java": {
-    "mtime": 1787849566.0624979,
-    "ast_hash": "ca1381941715b76cdb330214336b995e",
+    "mtime": 1787856811.1841123,
+    "ast_hash": "96ba2b10063062fd7d7542d7224199f4",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/MeatGrinderBlock.java": {
@@ -6005,13 +6005,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/fluid/types/BloodFluidType.java": {
-    "mtime": 1787848572.6274755,
-    "ast_hash": "f78e3d9b522ff8d0915a42cd74fe542b",
+    "mtime": 1787857831.5043976,
+    "ast_hash": "280bbc03f6bfaac47c8c8d7463c032aa",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/fluid/types/InfectedBloodFluidType.java": {
-    "mtime": 1787848576.577014,
-    "ast_hash": "4f83b6b996e6cf4b5de7432b003bd0f6",
+    "mtime": 1787857831.571237,
+    "ast_hash": "bfe7d01a6fde71c34e7d05c697956c3d",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModFluidTypes.java": {
@@ -6060,8 +6060,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/blood_grate.json": {
-    "mtime": 1787849019.5454426,
-    "ast_hash": "60ae70670f44692924708fef76abe865",
+    "mtime": 1787857858.3629322,
+    "ast_hash": "a1d2521efb63e5a52c82a67016275859",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/blood_puddle.json": {
@@ -6170,13 +6170,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/blood_grate.json": {
-    "mtime": 1787849026.3738003,
-    "ast_hash": "175638f0ba65e39ee43c812e6d7f4ef3",
+    "mtime": 1787856709.1807344,
+    "ast_hash": "20fddc6e2839ad03b6ac20eb60675a39",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/blood_puddle.json": {
-    "mtime": 1787849027.4004412,
-    "ast_hash": "175638f0ba65e39ee43c812e6d7f4ef3",
+    "mtime": 1787856709.1807344,
+    "ast_hash": "9f12c533ed173e4d670dab390eff492c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/infected_blood.json": {
@@ -6270,8 +6270,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/custom/taxidermy_table.json": {
-    "mtime": 1787847877.029266,
-    "ast_hash": "6493dce19e2d00fb42f2b2f95dd6957a",
+    "mtime": 1787857921.1142359,
+    "ast_hash": "8022cb9f812dc930b9d4ab29d045b3bf",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/custom/taxidermy_table_bounding.json": {
@@ -6290,8 +6290,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/item/blood_bucket.json": {
-    "mtime": 1787849044.4969423,
-    "ast_hash": "3071fd81b468be604d6b5631c47ab200",
+    "mtime": 1787857831.768736,
+    "ast_hash": "b981378697d81fe58048ff43478b2f07",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/item/blood_grate.json": {
@@ -6315,8 +6315,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/item/infected_blood_bucket.json": {
-    "mtime": 1787849045.491892,
-    "ast_hash": "3071fd81b468be604d6b5631c47ab200",
+    "mtime": 1787857831.9415743,
+    "ast_hash": "cb9c69990c1a4ab4cbe276f91ebba2b8",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/item/meat_grinder.json": {
@@ -6517,6 +6517,2171 @@
   "src/main/resources/assets/slaughter_hide/textures/item/sausage_attachment.png": {
     "mtime": 1787836867.5337715,
     "ast_hash": "1e1757f12b644b1a7f65525245d89478",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/ButcherDisplayBlock.java": {
+    "mtime": 1787859458.8200042,
+    "ast_hash": "b6a6a956067e734ab8eeff03e978dbf5",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/ButchersTableBlock.java": {
+    "mtime": 1787859259.6359859,
+    "ast_hash": "9a613cc396daa63749369eebedcd3b80",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/CanopyBlock.java": {
+    "mtime": 1787859300.7051923,
+    "ast_hash": "351c94a1f11cd97eed224675de5dd075",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/CounterBlock.java": {
+    "mtime": 1787859257.5072844,
+    "ast_hash": "bb447e5bb23ae6c20015462e81a36106",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/acacia_butcher_display.json": {
+    "mtime": 1787859018.7272508,
+    "ast_hash": "f079356e99d16829c7c96e1cd7b51652",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/acacia_butchers_table.json": {
+    "mtime": 1787859018.7241213,
+    "ast_hash": "ca006ab6878f1508447268fb79cafb4a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/acacia_counter.json": {
+    "mtime": 1787858966.2534168,
+    "ast_hash": "5c24fe32d57886979d01172daf30a765",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/birch_butcher_display.json": {
+    "mtime": 1787859018.7261462,
+    "ast_hash": "3c0d00cf0bfd992a16e0a64e835761eb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/birch_butchers_table.json": {
+    "mtime": 1787859018.7227378,
+    "ast_hash": "9da7208801c6b2802bb42fb4616e462a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/birch_counter.json": {
+    "mtime": 1787858966.2289598,
+    "ast_hash": "cc97cf23617fe1981221a585683cd7cf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_black.json": {
+    "mtime": 1787858966.2828815,
+    "ast_hash": "7773fcc79c31b7a668b196384a4961ba",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_blue.json": {
+    "mtime": 1787858966.2918537,
+    "ast_hash": "c56280f8dc78377e536a8163418fc198",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_brown.json": {
+    "mtime": 1787858966.2984293,
+    "ast_hash": "9e91a44ab1d36bfd2f2fd22d0e851b85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_cyan.json": {
+    "mtime": 1787858966.307314,
+    "ast_hash": "ec434995c62a9ac648ad40721280578f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_gray.json": {
+    "mtime": 1787858966.3146365,
+    "ast_hash": "7974fd9dfba34bf33e7e5d6c04c664cd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_green.json": {
+    "mtime": 1787858966.3221831,
+    "ast_hash": "17d29ac2d9c8f4ead225abeb941bc7ea",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_light_blue.json": {
+    "mtime": 1787858966.3309224,
+    "ast_hash": "2e8d836e20e07928b3e35ab8587c6729",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_light_gray.json": {
+    "mtime": 1787858966.3415315,
+    "ast_hash": "5a7abf36136e54ef341c8ecd449b89b2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_lime.json": {
+    "mtime": 1787858966.3502588,
+    "ast_hash": "4777d64a3c024e970eb2784fd75634ff",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_magenta.json": {
+    "mtime": 1787858966.357772,
+    "ast_hash": "90ac61fdc889313383a276a24934bd71",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_orange.json": {
+    "mtime": 1787858966.366325,
+    "ast_hash": "bbcb925f78e9752fe05be6b0f17f4556",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_pink.json": {
+    "mtime": 1787858966.3730805,
+    "ast_hash": "8016fcca3ece7d7880424fb48ce6eceb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_purple.json": {
+    "mtime": 1787858966.3831196,
+    "ast_hash": "5e48c401a84833c206dcc3cd29dc22f5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_red.json": {
+    "mtime": 1787858966.3854516,
+    "ast_hash": "d1e97eeea0ef843ec490d53664aefd3a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/canopy_yellow.json": {
+    "mtime": 1787858966.396454,
+    "ast_hash": "959db25f355905e568b52cdd9be4c909",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/crimson_butcher_display.json": {
+    "mtime": 1787859018.728323,
+    "ast_hash": "bb83b21da7c0ed07b7ad7bcc6a718113",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/crimson_butchers_table.json": {
+    "mtime": 1787859018.7251449,
+    "ast_hash": "839691318f279636d92a47f9a6e5f077",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/crimson_counter.json": {
+    "mtime": 1787858966.2707932,
+    "ast_hash": "2b1372625bb01bc4467d2f59d7a79967",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/dark_oak_butcher_display.json": {
+    "mtime": 1787859018.7272508,
+    "ast_hash": "62f9394267b476e7ad1ac479e4fdeb74",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/dark_oak_butchers_table.json": {
+    "mtime": 1787859018.7251449,
+    "ast_hash": "2b3b3943041eff8f5497012f8b10e6c6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/dark_oak_counter.json": {
+    "mtime": 1787858966.2629468,
+    "ast_hash": "ceb884e1659bb5569fda8b68a1ee7af0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/jungle_butcher_display.json": {
+    "mtime": 1787859018.7272508,
+    "ast_hash": "8e8c7eb79f26b3d271735a0976bef630",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/jungle_butchers_table.json": {
+    "mtime": 1787859018.7241213,
+    "ast_hash": "43142874c7786f6b109fdbc7a9b54c41",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/jungle_counter.json": {
+    "mtime": 1787858966.2454097,
+    "ast_hash": "c262e9548ef399c0284859462e1f09aa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/mangrove_butchers_table.json": {
+    "mtime": 1787859018.7251449,
+    "ast_hash": "f1e5200a37a8e3f554d7ea7f1fe08129",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/metal_butchers_table.json": {
+    "mtime": 1787859018.7261462,
+    "ast_hash": "5c3836e2e6ff12141dae8c9d074cb271",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/oak_butcher_display.json": {
+    "mtime": 1787859018.7261462,
+    "ast_hash": "306b7e5f4573a58bee21f0e17b381d43",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/oak_butchers_table.json": {
+    "mtime": 1787859018.7227378,
+    "ast_hash": "42f742d9dcd82fad2a069f65cca63095",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/oak_counter.json": {
+    "mtime": 1787858966.2212982,
+    "ast_hash": "c836d69d77a23876dbe53015b4863edf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/spruce_butcher_display.json": {
+    "mtime": 1787859018.7261462,
+    "ast_hash": "dd6035a757bae516781e798e15ac7b11",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/spruce_butchers_table.json": {
+    "mtime": 1787859018.7241213,
+    "ast_hash": "2d551621715169bd5448a7bcb6d27e7f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/spruce_counter.json": {
+    "mtime": 1787858966.2379818,
+    "ast_hash": "3b5e49732de0d41162103e761147a995",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/warped_butcher_display.json": {
+    "mtime": 1787859018.728323,
+    "ast_hash": "f0c28f9256892aafd68e6f340b644970",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/warped_butchers_table.json": {
+    "mtime": 1787859018.7251449,
+    "ast_hash": "112e1cb26922e2090e0922d173699b7f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/warped_counter.json": {
+    "mtime": 1787858966.2808816,
+    "ast_hash": "abdd365cdc0a6342785c0dd8d248f2ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/acacia_butcher_display.json": {
+    "mtime": 1787858968.443848,
+    "ast_hash": "75c76b9cbe859978974cdf0841967202",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/acacia_butchers_table.json": {
+    "mtime": 1787858968.3688006,
+    "ast_hash": "76d1b22d4c1932a9d4f27440022a0573",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/acacia_counter.json": {
+    "mtime": 1787858968.18197,
+    "ast_hash": "ad855ee26288d9e03e3adbdc69689130",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/birch_butcher_display.json": {
+    "mtime": 1787858968.4165158,
+    "ast_hash": "bc8bdf45a9f5c11d96369004eb553d1e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/birch_butchers_table.json": {
+    "mtime": 1787858968.3428228,
+    "ast_hash": "5d371a844c39304cb8f203bbfd07e8ee",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/birch_counter.json": {
+    "mtime": 1787858968.1545377,
+    "ast_hash": "4d0442cf89e02bd0e4c1293ea1c0ddca",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_black.json": {
+    "mtime": 1787858968.2085853,
+    "ast_hash": "d509f3a57c160cea5a94df698c233df0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_blue.json": {
+    "mtime": 1787858968.218582,
+    "ast_hash": "7a17f911ac4174d3d8ac9d441bec2592",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_brown.json": {
+    "mtime": 1787858968.2281053,
+    "ast_hash": "f6e72d5d36b6b4da81bea3a2d57b2ab8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_cyan.json": {
+    "mtime": 1787858968.237095,
+    "ast_hash": "61db2b974f69b44d85cc09e4a830b2da",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_gray.json": {
+    "mtime": 1787858968.2466047,
+    "ast_hash": "034235e2276ee1efc2c753d23e38d3f7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_green.json": {
+    "mtime": 1787858968.2526257,
+    "ast_hash": "18cfabd74cfcdc75a488afe155a8d8c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_light_blue.json": {
+    "mtime": 1787858968.2628238,
+    "ast_hash": "0a4f9b4219b610df7d1af2c38b6fb7b5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_light_gray.json": {
+    "mtime": 1787858968.2721455,
+    "ast_hash": "a489021e4d5a49b66aa47fdbc9ba8da6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_lime.json": {
+    "mtime": 1787858968.2801764,
+    "ast_hash": "baac1b07b407f8556e3ec16cd634837b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_magenta.json": {
+    "mtime": 1787858968.2877183,
+    "ast_hash": "a8c2f1064b04a1a197f6baef89e9d5a5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_orange.json": {
+    "mtime": 1787858968.294717,
+    "ast_hash": "12123d216af580f833e051380514af7f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_pink.json": {
+    "mtime": 1787858968.3042378,
+    "ast_hash": "85576a0439e81a2699b6ef7946706124",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_purple.json": {
+    "mtime": 1787858968.3120537,
+    "ast_hash": "1af34fef4c9668406a91cb022f5df587",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_red.json": {
+    "mtime": 1787858968.3195062,
+    "ast_hash": "0c95703223d217bb053defe7e139fcf7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/canopy_yellow.json": {
+    "mtime": 1787858968.3278792,
+    "ast_hash": "d316b4858840ee109f2c8c70ecf5e685",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/crimson_butcher_display.json": {
+    "mtime": 1787858968.4614925,
+    "ast_hash": "6b4fcbc6667ddf53d92d997e5632b7d0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/crimson_butchers_table.json": {
+    "mtime": 1787858968.3949673,
+    "ast_hash": "fbc31023623baf69686d12a66c52e845",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/crimson_counter.json": {
+    "mtime": 1787858968.1978192,
+    "ast_hash": "3525bcde2c184611ba43ad11401a6db4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/dark_oak_butcher_display.json": {
+    "mtime": 1787858968.4533687,
+    "ast_hash": "db6505b995fae95acea1bb22bb69a200",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/dark_oak_butchers_table.json": {
+    "mtime": 1787858968.3780823,
+    "ast_hash": "9d7681acedb0d2dde145722baa353856",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/dark_oak_counter.json": {
+    "mtime": 1787858968.189148,
+    "ast_hash": "7a7f6859f838d476696c198a55ef2a9b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/jungle_butcher_display.json": {
+    "mtime": 1787858968.4345102,
+    "ast_hash": "b9a20777a180044465f725a2e0757163",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/jungle_butchers_table.json": {
+    "mtime": 1787858968.3607552,
+    "ast_hash": "6bbdd3ef615c6df710b80e0cf3c64595",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/jungle_counter.json": {
+    "mtime": 1787858968.173028,
+    "ast_hash": "2be8d30db3b9b46f98cff88df48a2131",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/mangrove_butchers_table.json": {
+    "mtime": 1787858968.3861816,
+    "ast_hash": "a1488d07fd43594054d21314efdfa4c2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/metal_butchers_table.json": {
+    "mtime": 1787858968.4063277,
+    "ast_hash": "b711681eeae8cba4658784d2b06864a2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/oak_butcher_display.json": {
+    "mtime": 1787858968.407836,
+    "ast_hash": "ca929a51e98754c63b7bba0b28d97377",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/oak_butchers_table.json": {
+    "mtime": 1787858968.3303869,
+    "ast_hash": "32a13e290fb4f8bc39c4af506b4518e6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/oak_counter.json": {
+    "mtime": 1787858968.1449254,
+    "ast_hash": "0c03044a6d682293180b950a2e3f46a8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/spruce_butcher_display.json": {
+    "mtime": 1787858968.425336,
+    "ast_hash": "cf0a92420845f239061957315ae9b66a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/spruce_butchers_table.json": {
+    "mtime": 1787858968.3514724,
+    "ast_hash": "7eba18e4b544faa760d6806c13cc9d4a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/spruce_counter.json": {
+    "mtime": 1787858968.1649296,
+    "ast_hash": "04fd4f8ad5bdf0a56dbeef721a0dabb7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/warped_butcher_display.json": {
+    "mtime": 1787858968.4687917,
+    "ast_hash": "dcbc2f090cba7347174c64a05a1afaff",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/warped_butchers_table.json": {
+    "mtime": 1787858968.4042056,
+    "ast_hash": "ac22800a3a15307457cbe0bb058825ae",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/warped_counter.json": {
+    "mtime": 1787858968.2065315,
+    "ast_hash": "1bd3b6414da1c09ea196458e8e4b6604",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/acacia_butcher_display.json": {
+    "mtime": 1787858967.0976825,
+    "ast_hash": "c92972262804ee42b11241e13ceb5d8f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/acacia_butcher_display_0.json": {
+    "mtime": 1787858967.1067193,
+    "ast_hash": "321620b433c589636c931733f1487cc3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/acacia_butcher_display_1.json": {
+    "mtime": 1787858967.114234,
+    "ast_hash": "72644cf2de4181dce1ac953e331f8f88",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/acacia_butchers_table.json": {
+    "mtime": 1787858966.835706,
+    "ast_hash": "eeeefc7892b62fb41a0593a713f11949",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/acacia_butchers_table_0.json": {
+    "mtime": 1787858966.8437247,
+    "ast_hash": "fe41b9796d7adccfaf04d9c1be51e854",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/acacia_butchers_table_1.json": {
+    "mtime": 1787858966.8515015,
+    "ast_hash": "d842ccf59eb17e85c77edc8c3b2177af",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/acacia_butchers_table_2.json": {
+    "mtime": 1787858966.8598552,
+    "ast_hash": "c9853d02491d41e65526142c11a58a64",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/acacia_counter.json": {
+    "mtime": 1787858966.561595,
+    "ast_hash": "4699373ea68858c07e70ba44c963f540",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/birch_butcher_display.json": {
+    "mtime": 1787858967.0197792,
+    "ast_hash": "bdeda16669b5b76f2d2faee1cc694918",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/birch_butcher_display_0.json": {
+    "mtime": 1787858967.0289526,
+    "ast_hash": "f56a3650b1cdfb9d7f4e173812ebdd5d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/birch_butcher_display_1.json": {
+    "mtime": 1787858967.036569,
+    "ast_hash": "15130d29fcefe57bfcee0eac58625a50",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/birch_butchers_table.json": {
+    "mtime": 1787858966.7232885,
+    "ast_hash": "24dee7a422ddd57426e1849d51ab5fc6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/birch_butchers_table_0.json": {
+    "mtime": 1787858966.7305472,
+    "ast_hash": "aaf132ea1b9ec0f175a90b1926d7fd40",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/birch_butchers_table_1.json": {
+    "mtime": 1787858966.7388852,
+    "ast_hash": "9d9a1ad6dfb10a1fd2d3677ed9f3eb3b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/birch_butchers_table_2.json": {
+    "mtime": 1787858966.747223,
+    "ast_hash": "00161446c05cc8c24515d8e4c1a16717",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/birch_counter.json": {
+    "mtime": 1787858966.5385313,
+    "ast_hash": "42937d8a94bfb36ca4128eba9ac8a185",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/blood_grate_fill_1.json": {
+    "mtime": 1787857858.2450075,
+    "ast_hash": "36fa6d43b914b472fbc42337cb2a8737",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/blood_grate_fill_2.json": {
+    "mtime": 1787857858.2768877,
+    "ast_hash": "9080e692b9173b82923628f94d2c09ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/blood_grate_fill_3.json": {
+    "mtime": 1787857858.3107703,
+    "ast_hash": "0162b21edaf025e9b7471dcb9f5a7aa4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_black.json": {
+    "mtime": 1787858966.5863018,
+    "ast_hash": "745d024f2751c463f17b0d5de57a0b69",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_blue.json": {
+    "mtime": 1787858966.5942829,
+    "ast_hash": "4b44ef2920e65333a313f35f4ead55f0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_brown.json": {
+    "mtime": 1787858966.6027138,
+    "ast_hash": "e124fa6c66a01aa47d38ac53322d34b8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_cyan.json": {
+    "mtime": 1787858966.6143394,
+    "ast_hash": "55dc97a91034140bc0d53db7cdec89cf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_gray.json": {
+    "mtime": 1787858966.6244333,
+    "ast_hash": "7c1dabfbf753a7f5cba8df98b8e4ec1f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_green.json": {
+    "mtime": 1787858966.6333704,
+    "ast_hash": "1c1f0e1e00881b8b1bc53aa05f02000c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_light_blue.json": {
+    "mtime": 1787858966.6403375,
+    "ast_hash": "b2fb4610c73900200b25d125434b17f3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_light_gray.json": {
+    "mtime": 1787858966.6497233,
+    "ast_hash": "6012bde2b7cf10c683b8a475387fe9c9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_lime.json": {
+    "mtime": 1787858966.6570387,
+    "ast_hash": "e121916f2ce5a52d0b723cba5a0d0d88",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_magenta.json": {
+    "mtime": 1787858966.6645179,
+    "ast_hash": "ba33fcc294bbdac11cfb3a17997d25db",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_orange.json": {
+    "mtime": 1787858966.67451,
+    "ast_hash": "8b083246f0d00f1e87b075df7180b6c1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_pink.json": {
+    "mtime": 1787858966.6866324,
+    "ast_hash": "493f74a98f223c7affd8ef18ba5f25ef",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_purple.json": {
+    "mtime": 1787858966.695568,
+    "ast_hash": "87990373e636048d4961aa9aacc2baa5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_red.json": {
+    "mtime": 1787858966.697896,
+    "ast_hash": "0078180e00dda27523524b30ced67666",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/canopy_yellow.json": {
+    "mtime": 1787858966.707344,
+    "ast_hash": "ff9e128c9ed2019c99de609e5af84621",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/crimson_butcher_display.json": {
+    "mtime": 1787858967.1475582,
+    "ast_hash": "d2e6c992a2be290d4261d1cc37593b58",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/crimson_butcher_display_0.json": {
+    "mtime": 1787858967.1544228,
+    "ast_hash": "6aef4785498fcaacbcdc9628e0cb439d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/crimson_butcher_display_1.json": {
+    "mtime": 1787858967.1663702,
+    "ast_hash": "2fc9bb8d9dc36f7b9147fda503754006",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/crimson_butchers_table.json": {
+    "mtime": 1787858966.9272137,
+    "ast_hash": "31d39ae4f7c09ee138e3af399dcb66f2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/crimson_butchers_table_0.json": {
+    "mtime": 1787858966.9347095,
+    "ast_hash": "5102f399aeee4e38c730aa7f0bc34812",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/crimson_butchers_table_1.json": {
+    "mtime": 1787858966.9443398,
+    "ast_hash": "ff891052b8f7b5809709843bf1fd9d01",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/crimson_butchers_table_2.json": {
+    "mtime": 1787858966.950926,
+    "ast_hash": "a4279ebde5ff8498c17bd99fc90c63b3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/crimson_counter.json": {
+    "mtime": 1787858966.5742278,
+    "ast_hash": "f07529da619a77dae9aa0ebb13344b6c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/dark_oak_butcher_display.json": {
+    "mtime": 1787858967.122476,
+    "ast_hash": "de75093aa1e1e24d657c9807eed2450a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/dark_oak_butcher_display_0.json": {
+    "mtime": 1787858967.130446,
+    "ast_hash": "b750e75eae7ece0a6e58788ea6cb6ede",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/dark_oak_butcher_display_1.json": {
+    "mtime": 1787858967.140442,
+    "ast_hash": "f4e1c2e75c83830c412d67fef7ad8684",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/dark_oak_butchers_table.json": {
+    "mtime": 1787858966.8682485,
+    "ast_hash": "76668933acfe555bc7496d4f0cf4b611",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/dark_oak_butchers_table_0.json": {
+    "mtime": 1787858966.8754983,
+    "ast_hash": "5fcb7bb5a7ba283433e7bc5f37b86fbc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/dark_oak_butchers_table_1.json": {
+    "mtime": 1787858966.882219,
+    "ast_hash": "a72ab398c84634f9199634e85bdf9b5c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/dark_oak_butchers_table_2.json": {
+    "mtime": 1787858966.8925538,
+    "ast_hash": "d21ce60448e5b64d823f516ef2c681f1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/dark_oak_counter.json": {
+    "mtime": 1787858966.571723,
+    "ast_hash": "6607bc2c79f0fcb77d34b0eb23be8b5f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jungle_butcher_display.json": {
+    "mtime": 1787858967.0687473,
+    "ast_hash": "715af62e2a0bf8aab5146a20e40d363e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jungle_butcher_display_0.json": {
+    "mtime": 1787858967.0794792,
+    "ast_hash": "2bc29cd60ccc1eb264814334defd9ba2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jungle_butcher_display_1.json": {
+    "mtime": 1787858967.088941,
+    "ast_hash": "9b67e94ea28e67b17ccb83eb69bc8e67",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jungle_butchers_table.json": {
+    "mtime": 1787858966.7992494,
+    "ast_hash": "563a358a21fb77233b17ab4e3b9f22f8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jungle_butchers_table_0.json": {
+    "mtime": 1787858966.8080692,
+    "ast_hash": "05518e3fa440989e2f2eb6634c514264",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jungle_butchers_table_1.json": {
+    "mtime": 1787858966.8189735,
+    "ast_hash": "1ba7ec1585c4fb634b05cb2092c30f5b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jungle_butchers_table_2.json": {
+    "mtime": 1787858966.8271453,
+    "ast_hash": "ce505f0a0f5f5d2b366e427b1166de85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/jungle_counter.json": {
+    "mtime": 1787858966.558444,
+    "ast_hash": "be621a040eb229a5d16bbca30973db9a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/mangrove_butchers_table.json": {
+    "mtime": 1787858966.8949237,
+    "ast_hash": "2bff7d2e4e018676cd207ab1f51690db",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/mangrove_butchers_table_0.json": {
+    "mtime": 1787858966.9027007,
+    "ast_hash": "d0daf2aacfd058659fa4202106ff548a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/mangrove_butchers_table_1.json": {
+    "mtime": 1787858966.9107344,
+    "ast_hash": "767494e7e9e6a0143f287ce14c70d9ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/mangrove_butchers_table_2.json": {
+    "mtime": 1787858966.9186974,
+    "ast_hash": "0907774209b186af06eee88edf87c30c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/metal_butchers_table.json": {
+    "mtime": 1787858966.9854462,
+    "ast_hash": "cb735f2d49f83e474257bc5b3879f6f8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/metal_butchers_table_0.json": {
+    "mtime": 1787858966.9934356,
+    "ast_hash": "f1788099eb31c011d2701a19d1afb442",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/metal_butchers_table_1.json": {
+    "mtime": 1787858967.0003414,
+    "ast_hash": "e9f25d2bc2c8b4d7ae7e171c9c88ec63",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/oak_butcher_display.json": {
+    "mtime": 1787858967.0063899,
+    "ast_hash": "5ab2053e1c13a85cebf10218604bb8b8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/oak_butcher_display_0.json": {
+    "mtime": 1787858967.0085835,
+    "ast_hash": "7a550ced32d5c7ff5e961256f13b4328",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/oak_butcher_display_1.json": {
+    "mtime": 1787858967.0106452,
+    "ast_hash": "dc87256d6cd1a2209f344345575401ef",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/oak_butchers_table.json": {
+    "mtime": 1787858966.70935,
+    "ast_hash": "a74f4182553303ccbe966316a5cd0432",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/oak_butchers_table_0.json": {
+    "mtime": 1787858966.7107809,
+    "ast_hash": "690cccd9ddaa94114ef59e82945fc836",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/oak_butchers_table_1.json": {
+    "mtime": 1787858966.7127836,
+    "ast_hash": "d64508fda6ccbaad713c9d4a5e3dfd6e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/oak_butchers_table_2.json": {
+    "mtime": 1787858966.7142892,
+    "ast_hash": "b484834c7e2135e74461264658375c08",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/oak_counter.json": {
+    "mtime": 1787858966.5285566,
+    "ast_hash": "daf5ab50da131808863218b7acd85d79",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/spruce_butcher_display.json": {
+    "mtime": 1787858967.0449793,
+    "ast_hash": "155e0c08e6021efbc1a99167d6f922c6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/spruce_butcher_display_0.json": {
+    "mtime": 1787858967.0527432,
+    "ast_hash": "16f5878759793d60baf84aa59999ba93",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/spruce_butcher_display_1.json": {
+    "mtime": 1787858967.06068,
+    "ast_hash": "a9116edc76237ff7ead3f6ca112b490f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/spruce_butchers_table.json": {
+    "mtime": 1787858966.7554922,
+    "ast_hash": "64f4461d5e36bb94207e2928bb2af924",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/spruce_butchers_table_0.json": {
+    "mtime": 1787858966.7632763,
+    "ast_hash": "2f63d19b0c8a7289cc2f074c74da714f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/spruce_butchers_table_1.json": {
+    "mtime": 1787858966.7698004,
+    "ast_hash": "0aa4aa4f2148bec9fe8d5dcfe4a9697b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/spruce_butchers_table_2.json": {
+    "mtime": 1787858966.790519,
+    "ast_hash": "06a63c88d9039ad9d651502c2d289433",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/spruce_counter.json": {
+    "mtime": 1787858966.5495613,
+    "ast_hash": "c8f8a72bf46a95249aa52a0b29525667",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/warped_butcher_display.json": {
+    "mtime": 1787858967.1734483,
+    "ast_hash": "e54b221065315f0065bd1f06d5add246",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/warped_butcher_display_0.json": {
+    "mtime": 1787858967.182764,
+    "ast_hash": "7a90be3b3986aa9bac27ba93f8766b17",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/warped_butcher_display_1.json": {
+    "mtime": 1787858967.1903992,
+    "ast_hash": "8e6ea4c39852306496d7edd7f4d5db5e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/warped_butchers_table.json": {
+    "mtime": 1787858966.9584143,
+    "ast_hash": "b7c2a800b9fe2661d64084b923c293f0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/warped_butchers_table_0.json": {
+    "mtime": 1787858966.9663239,
+    "ast_hash": "65b2b9607c2de8014f5f1e30b459a464",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/warped_butchers_table_1.json": {
+    "mtime": 1787858966.9734485,
+    "ast_hash": "c8605a849014ff746e23b38f5af956c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/warped_butchers_table_2.json": {
+    "mtime": 1787858966.9844432,
+    "ast_hash": "3e4c790b915649f0c88a18081630ac8a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/warped_counter.json": {
+    "mtime": 1787858966.5830176,
+    "ast_hash": "1299b35b1df3c3379b76687e132fb433",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/acacia_counter.json": {
+    "mtime": 1787858967.2069762,
+    "ast_hash": "4f721bc878b7ad84495e03412ec00bac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/acacia_display.json": {
+    "mtime": 1787858967.694412,
+    "ast_hash": "9852da9082733075014085435f535f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/acacia_display_left_full.json": {
+    "mtime": 1787858967.704527,
+    "ast_hash": "a728902fe3fadf134bb0adaba98b07bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/acacia_display_right_full.json": {
+    "mtime": 1787858967.7213936,
+    "ast_hash": "855bf108a64843fe032ec75fa06e36d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/birch_counter.json": {
+    "mtime": 1787858967.1969564,
+    "ast_hash": "4f721bc878b7ad84495e03412ec00bac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/birch_display.json": {
+    "mtime": 1787858967.5953276,
+    "ast_hash": "9852da9082733075014085435f535f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/birch_display_left_full.json": {
+    "mtime": 1787858967.6051874,
+    "ast_hash": "a728902fe3fadf134bb0adaba98b07bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/birch_display_right_full.json": {
+    "mtime": 1787858967.6172073,
+    "ast_hash": "855bf108a64843fe032ec75fa06e36d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/blood_grate.json": {
+    "mtime": 1787856709.127817,
+    "ast_hash": "50c2665fe206541cb0d6ca2935f639d8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/blood_puddle.json": {
+    "mtime": 1787856709.1288211,
+    "ast_hash": "3a006af72ea9ccad41ed6714f39b0383",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/butchers_table.json": {
+    "mtime": 1787858967.5553129,
+    "ast_hash": "0281d519a141e9931123d8acb0e501dc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/butchers_table_left.json": {
+    "mtime": 1787858967.5563123,
+    "ast_hash": "8d4bda98bd1c82c89651af55c69e2040",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/butchers_table_right.json": {
+    "mtime": 1787858967.557627,
+    "ast_hash": "834fdf788dfc519877201bda5c2309c9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_black.json": {
+    "mtime": 1787858967.216723,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_blue.json": {
+    "mtime": 1787858967.2269273,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_brown.json": {
+    "mtime": 1787858967.2364943,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_cyan.json": {
+    "mtime": 1787858967.2461188,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_gray.json": {
+    "mtime": 1787858967.25418,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_green.json": {
+    "mtime": 1787858967.2645228,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_light_blue.json": {
+    "mtime": 1787858967.2743592,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_light_gray.json": {
+    "mtime": 1787858967.282651,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_lime.json": {
+    "mtime": 1787858967.2955573,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_magenta.json": {
+    "mtime": 1787858967.3063948,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_orange.json": {
+    "mtime": 1787858967.3152454,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_pink.json": {
+    "mtime": 1787858967.3284378,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_purple.json": {
+    "mtime": 1787858967.34514,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_red.json": {
+    "mtime": 1787858967.347649,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/canopy_yellow.json": {
+    "mtime": 1787858967.3620472,
+    "ast_hash": "ee2f2b4760b63aeef747af56b97a1f6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/crimson_counter.json": {
+    "mtime": 1787858967.2126472,
+    "ast_hash": "4f721bc878b7ad84495e03412ec00bac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/crimson_display.json": {
+    "mtime": 1787858967.7619135,
+    "ast_hash": "9852da9082733075014085435f535f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/crimson_display_left_full.json": {
+    "mtime": 1787858967.7744966,
+    "ast_hash": "a728902fe3fadf134bb0adaba98b07bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/crimson_display_right_full.json": {
+    "mtime": 1787858967.7845645,
+    "ast_hash": "855bf108a64843fe032ec75fa06e36d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/dark_oak_counter.json": {
+    "mtime": 1787858967.210187,
+    "ast_hash": "4f721bc878b7ad84495e03412ec00bac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/dark_oak_display.json": {
+    "mtime": 1787858967.7304344,
+    "ast_hash": "9852da9082733075014085435f535f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/dark_oak_display_left_full.json": {
+    "mtime": 1787858967.7417932,
+    "ast_hash": "a728902fe3fadf134bb0adaba98b07bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/dark_oak_display_right_full.json": {
+    "mtime": 1787858967.7530303,
+    "ast_hash": "855bf108a64843fe032ec75fa06e36d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/display_bounding.json": {
+    "mtime": 1787858967.822665,
+    "ast_hash": "2bd5f256b0727cd9ad75a9a94932deac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/jungle_counter.json": {
+    "mtime": 1787858967.2029605,
+    "ast_hash": "4f721bc878b7ad84495e03412ec00bac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/jungle_display.json": {
+    "mtime": 1787858967.6597023,
+    "ast_hash": "9852da9082733075014085435f535f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/jungle_display_left_full.json": {
+    "mtime": 1787858967.6710672,
+    "ast_hash": "a728902fe3fadf134bb0adaba98b07bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/jungle_display_right_full.json": {
+    "mtime": 1787858967.6828916,
+    "ast_hash": "855bf108a64843fe032ec75fa06e36d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/oak_counter.json": {
+    "mtime": 1787858967.1924863,
+    "ast_hash": "4f721bc878b7ad84495e03412ec00bac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/oak_display.json": {
+    "mtime": 1787858967.5596614,
+    "ast_hash": "9852da9082733075014085435f535f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/oak_display_left_full.json": {
+    "mtime": 1787858967.573286,
+    "ast_hash": "a728902fe3fadf134bb0adaba98b07bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/oak_display_right_full.json": {
+    "mtime": 1787858967.584266,
+    "ast_hash": "855bf108a64843fe032ec75fa06e36d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/spruce_counter.json": {
+    "mtime": 1787858967.1999605,
+    "ast_hash": "4f721bc878b7ad84495e03412ec00bac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/spruce_display.json": {
+    "mtime": 1787858967.628015,
+    "ast_hash": "9852da9082733075014085435f535f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/spruce_display_left_full.json": {
+    "mtime": 1787858967.6364896,
+    "ast_hash": "a728902fe3fadf134bb0adaba98b07bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/spruce_display_right_full.json": {
+    "mtime": 1787858967.6489034,
+    "ast_hash": "855bf108a64843fe032ec75fa06e36d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/warped_counter.json": {
+    "mtime": 1787858967.2152076,
+    "ast_hash": "4f721bc878b7ad84495e03412ec00bac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/warped_display.json": {
+    "mtime": 1787858967.7960875,
+    "ast_hash": "9852da9082733075014085435f535f0d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/warped_display_left_full.json": {
+    "mtime": 1787858967.8070557,
+    "ast_hash": "a728902fe3fadf134bb0adaba98b07bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/warped_display_right_full.json": {
+    "mtime": 1787858967.8212898,
+    "ast_hash": "855bf108a64843fe032ec75fa06e36d4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_acacia.json": {
+    "mtime": 1787858967.472574,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_acacia_center.json": {
+    "mtime": 1787858967.477295,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_acacia_left.json": {
+    "mtime": 1787858967.4798145,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_acacia_right.json": {
+    "mtime": 1787858967.482824,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_birch.json": {
+    "mtime": 1787858967.3891816,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_birch_center.json": {
+    "mtime": 1787858967.3961153,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_birch_left.json": {
+    "mtime": 1787858967.4054112,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_birch_right.json": {
+    "mtime": 1787858967.4099188,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_crimson.json": {
+    "mtime": 1787858967.5104117,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_crimson_center.json": {
+    "mtime": 1787858967.5134676,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_crimson_left.json": {
+    "mtime": 1787858967.516226,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_crimson_right.json": {
+    "mtime": 1787858967.519359,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_dark_oak.json": {
+    "mtime": 1787858967.4948387,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_dark_oak_center.json": {
+    "mtime": 1787858967.497411,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_dark_oak_left.json": {
+    "mtime": 1787858967.4994934,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_dark_oak_right.json": {
+    "mtime": 1787858967.5027125,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_jungle.json": {
+    "mtime": 1787858967.453035,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_jungle_center.json": {
+    "mtime": 1787858967.4572456,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_jungle_left.json": {
+    "mtime": 1787858967.4613087,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_jungle_right.json": {
+    "mtime": 1787858967.4634767,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_mangrove.json": {
+    "mtime": 1787858967.544671,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_mangrove_center.json": {
+    "mtime": 1787858967.548386,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_mangrove_left.json": {
+    "mtime": 1787858967.5508957,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_mangrove_right.json": {
+    "mtime": 1787858967.5532734,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_oak.json": {
+    "mtime": 1787858967.3655105,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_oak_center.json": {
+    "mtime": 1787858967.3680184,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_oak_left.json": {
+    "mtime": 1787858967.372091,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_oak_right.json": {
+    "mtime": 1787858967.3745809,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_spruce.json": {
+    "mtime": 1787858967.4225647,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_spruce_center.json": {
+    "mtime": 1787858967.4271896,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_spruce_left.json": {
+    "mtime": 1787858967.4312077,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_spruce_right.json": {
+    "mtime": 1787858967.4420178,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_warped.json": {
+    "mtime": 1787858967.528003,
+    "ast_hash": "70ebbf876f1b7469a660689830dd0acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_warped_center.json": {
+    "mtime": 1787858967.531509,
+    "ast_hash": "902981966666e8c20a192d662cfccae1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_warped_left.json": {
+    "mtime": 1787858967.5347877,
+    "ast_hash": "cd3f4c0d43faa45fbfc1ae9277203bbb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/wooden_butchers_table_warped_right.json": {
+    "mtime": 1787858967.537309,
+    "ast_hash": "7c56488485823041780934db84ab4a85",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/acacia_butcher_display.json": {
+    "mtime": 1787858968.1169033,
+    "ast_hash": "0a2bcf7818881d56c3fd3c712f869575",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/acacia_butchers_table.json": {
+    "mtime": 1787858968.0446982,
+    "ast_hash": "e9e97171ce6a49519fa3243069b99728",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/acacia_counter.json": {
+    "mtime": 1787858967.8622558,
+    "ast_hash": "a095abdd1844d6bd69781c24340cf508",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/birch_butcher_display.json": {
+    "mtime": 1787858968.0912576,
+    "ast_hash": "d3eb75ab33b1e0ced125b7c29658b7b6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/birch_butchers_table.json": {
+    "mtime": 1787858968.019604,
+    "ast_hash": "794a570eb35633e107554b64bfb8c8b5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/birch_counter.json": {
+    "mtime": 1787858967.8363883,
+    "ast_hash": "8c9a4718a2330f2a5128c296ca13d526",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_black.json": {
+    "mtime": 1787858967.891467,
+    "ast_hash": "c324b85679fdbe15d605a7ebfa53a8ae",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_blue.json": {
+    "mtime": 1787858967.9002886,
+    "ast_hash": "4d1e29a3565ec65cc82766475d14f3a0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_brown.json": {
+    "mtime": 1787858967.9103613,
+    "ast_hash": "da67a9571508d770c2650a99f504e2cc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_cyan.json": {
+    "mtime": 1787858967.9194946,
+    "ast_hash": "556d6d5cb8677b70373da6b7f9e010bd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_gray.json": {
+    "mtime": 1787858967.9265273,
+    "ast_hash": "d3e07e687d989dade32cf11a6e77f454",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_green.json": {
+    "mtime": 1787858967.9354506,
+    "ast_hash": "b1fdaf3de9dabea6cc60c6a0949a054c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_light_blue.json": {
+    "mtime": 1787858967.9435098,
+    "ast_hash": "95f49c6c862ab73c62fdf530e060de61",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_light_gray.json": {
+    "mtime": 1787858967.9515352,
+    "ast_hash": "c2e73e34fded93dca0a226756f718aa0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_lime.json": {
+    "mtime": 1787858967.9588673,
+    "ast_hash": "654cf1b27aa8b385cf78d08665003961",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_magenta.json": {
+    "mtime": 1787858967.967868,
+    "ast_hash": "c94c03a20b8ff117174e9f2579bb8f8b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_orange.json": {
+    "mtime": 1787858967.9771044,
+    "ast_hash": "7edec3021eae1bf6b4724c310948eeaf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_pink.json": {
+    "mtime": 1787858967.9849072,
+    "ast_hash": "19bfa65dba02296c532d7f0c1e13db1b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_purple.json": {
+    "mtime": 1787858967.992918,
+    "ast_hash": "6b0f2f86451b4962a3ff03db819a5b22",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_red.json": {
+    "mtime": 1787858968.001611,
+    "ast_hash": "cff5949377829f26402896a7bcd40d4f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/canopy_yellow.json": {
+    "mtime": 1787858968.0094464,
+    "ast_hash": "7d4e26960959c6bc36d1e299266baf11",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/crimson_butcher_display.json": {
+    "mtime": 1787858968.132619,
+    "ast_hash": "37e341cadb281a65daa44f67bc427030",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/crimson_butchers_table.json": {
+    "mtime": 1787858968.0703552,
+    "ast_hash": "a239d390b1f7001f96a0bbe4c6ad2fd7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/crimson_counter.json": {
+    "mtime": 1787858967.8795795,
+    "ast_hash": "e125df6d57645d2245e7cd2122c46e01",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/dark_oak_butcher_display.json": {
+    "mtime": 1787858968.1255891,
+    "ast_hash": "fdc09d97312a113f4a35e00a7711ebd5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/dark_oak_butchers_table.json": {
+    "mtime": 1787858968.0543492,
+    "ast_hash": "8ec8603da246a7e63a45e90166937537",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/dark_oak_counter.json": {
+    "mtime": 1787858967.8709812,
+    "ast_hash": "70e4c28831a78ffec691709c53504c8b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/jungle_butcher_display.json": {
+    "mtime": 1787858968.1098902,
+    "ast_hash": "cc64e32e9b3f20725e39e5cbddadf091",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/jungle_butchers_table.json": {
+    "mtime": 1787858968.037412,
+    "ast_hash": "6553cd9231cec83dfaeb6ed9c767d79f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/jungle_counter.json": {
+    "mtime": 1787858967.8547542,
+    "ast_hash": "50b3fc500190f8f5cd028e5203c7a6c8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/mangrove_butchers_table.json": {
+    "mtime": 1787858968.0622425,
+    "ast_hash": "41100096937c0bb517db8150cc40ff46",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/metal_butchers_table.json": {
+    "mtime": 1787858968.0798664,
+    "ast_hash": "ae1ab8465f5d2f245540ae787ae33951",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/oak_butcher_display.json": {
+    "mtime": 1787858968.082245,
+    "ast_hash": "2f72544cb39774a4c4800d9808f6a4d1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/oak_butchers_table.json": {
+    "mtime": 1787858968.010449,
+    "ast_hash": "c5a3a73d1923fdee86c60ae43a069839",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/oak_counter.json": {
+    "mtime": 1787858967.827268,
+    "ast_hash": "7a89dced3d21df4fb60370aeb321be46",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/spruce_butcher_display.json": {
+    "mtime": 1787858968.100564,
+    "ast_hash": "a7cb5a8f78f7f9f869599f60f43dd2fe",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/spruce_butchers_table.json": {
+    "mtime": 1787858968.0276158,
+    "ast_hash": "1ad8b24870116af85bd2de9e6545cf4a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/spruce_counter.json": {
+    "mtime": 1787858967.8474267,
+    "ast_hash": "3a300623d96dee54ccb15ff44310c8ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/warped_butcher_display.json": {
+    "mtime": 1787858968.1416576,
+    "ast_hash": "91ab571c7915136f29ce74b13a097733",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/warped_butchers_table.json": {
+    "mtime": 1787858968.0788653,
+    "ast_hash": "36c66d13bdab606c06501fda2ca8f533",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/warped_counter.json": {
+    "mtime": 1787858967.8882387,
+    "ast_hash": "692d489660d905a880f33d5fde57d06e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/acacia_butcher_display.json": {
+    "mtime": 1787858968.6370623,
+    "ast_hash": "75cad8e7191ae16f02fa9f3851db793a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/acacia_butchers_table.json": {
+    "mtime": 1787858968.6148531,
+    "ast_hash": "ece178854bd18f00fac738772ec1e753",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/acacia_counter.json": {
+    "mtime": 1787858968.5609062,
+    "ast_hash": "c681ea76507d0963c009788794307951",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/birch_butcher_display.json": {
+    "mtime": 1787858968.6308756,
+    "ast_hash": "09a4392e3a92e58281686a762bcd8a56",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/birch_butchers_table.json": {
+    "mtime": 1787858968.6084154,
+    "ast_hash": "e238909b34b94b7b7e704a41a7c531dc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/birch_counter.json": {
+    "mtime": 1787858968.556384,
+    "ast_hash": "c6afb858c6ee36eddea8c81646314c98",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_black.json": {
+    "mtime": 1787858968.5709941,
+    "ast_hash": "47d6c9b2ffc49243598176a3d2a8ec2f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_blue.json": {
+    "mtime": 1787858968.5730271,
+    "ast_hash": "636524f22e456637d2be183ca1f04639",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_brown.json": {
+    "mtime": 1787858968.577494,
+    "ast_hash": "97bdc40e00b42eb05b82593da6d10962",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_cyan.json": {
+    "mtime": 1787858968.5789623,
+    "ast_hash": "131bc9a0591f875764add7a80e4865e2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_gray.json": {
+    "mtime": 1787858968.5804682,
+    "ast_hash": "324d0cd06465950b8ca17ce39c4a5830",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_green.json": {
+    "mtime": 1787858968.5824885,
+    "ast_hash": "51bfa1131cd3b0d776353c8097e1dba8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_light_blue.json": {
+    "mtime": 1787858968.5844915,
+    "ast_hash": "735e4d5af019b3d2d24877b94af9f970",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_light_gray.json": {
+    "mtime": 1787858968.58611,
+    "ast_hash": "36d34f3349edae0ffaed46ad3a3f2ce2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_lime.json": {
+    "mtime": 1787858968.5895922,
+    "ast_hash": "22133edca7d319c8f46c11a2a22a6cb3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_magenta.json": {
+    "mtime": 1787858968.591601,
+    "ast_hash": "ad38a1a4062cb8298bd93cc1b50d475a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_orange.json": {
+    "mtime": 1787858968.5926344,
+    "ast_hash": "72366f73fa1a5e3d792a17ce05bff9c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_pink.json": {
+    "mtime": 1787858968.5948546,
+    "ast_hash": "49fd7f840c229b91e021b5f95587f902",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_purple.json": {
+    "mtime": 1787858968.5986378,
+    "ast_hash": "d4c09e0d035f969e2f8ea7be10cd4c05",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_red.json": {
+    "mtime": 1787858968.6006808,
+    "ast_hash": "19ba72410275dd9a530e31280d006d72",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/canopy_yellow.json": {
+    "mtime": 1787858968.6019766,
+    "ast_hash": "91078f35f93965223e0a46420ef21db8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/crimson_butcher_display.json": {
+    "mtime": 1787858968.6411402,
+    "ast_hash": "34d0da789e7a227952950c942bbaa16f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/crimson_butchers_table.json": {
+    "mtime": 1787858968.6213782,
+    "ast_hash": "61a23db4d952a2db64a222205a661846",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/crimson_counter.json": {
+    "mtime": 1787858968.5663786,
+    "ast_hash": "73e0fece2357367d812fdf6100b0345c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/dark_oak_butcher_display.json": {
+    "mtime": 1787858968.6391153,
+    "ast_hash": "a79e67e88022ac057946ec49b8c580ba",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/dark_oak_butchers_table.json": {
+    "mtime": 1787858968.6173737,
+    "ast_hash": "956e28cfec6259692d896dc3b9bd72a8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/dark_oak_counter.json": {
+    "mtime": 1787858968.564376,
+    "ast_hash": "a08311ea395c5842bc6782362733d2c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/jungle_butcher_display.json": {
+    "mtime": 1787858968.633389,
+    "ast_hash": "8b4321304a4f2d75f9a7970c0b61b93c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/jungle_butchers_table.json": {
+    "mtime": 1787858968.6124156,
+    "ast_hash": "3c2b38fbb1872a9ed5ffa3e51e5dfe36",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/jungle_counter.json": {
+    "mtime": 1787858968.5599022,
+    "ast_hash": "18c8a753fa572fd98248479a560005bb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/mangrove_butchers_table.json": {
+    "mtime": 1787858968.6193762,
+    "ast_hash": "53f9434c20749c54d35cdf022bfe1e1a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/metal_butchers_table.json": {
+    "mtime": 1787858968.6248977,
+    "ast_hash": "469f923e8c708ee3f58767562bb1cbcb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/oak_butcher_display.json": {
+    "mtime": 1787858968.6284184,
+    "ast_hash": "bc480a0393e88217382e5b815385f902",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/oak_butchers_table.json": {
+    "mtime": 1787858968.605855,
+    "ast_hash": "71249e846d9ae991d68ab6090629bc37",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/oak_counter.json": {
+    "mtime": 1787858968.5528748,
+    "ast_hash": "43b501dcbbe01dde2e872c56a278f7cc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/spruce_butcher_display.json": {
+    "mtime": 1787858968.6318824,
+    "ast_hash": "d3a11950d71129e899f12f6ad97a1592",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/spruce_butchers_table.json": {
+    "mtime": 1787858968.610415,
+    "ast_hash": "d9afa25965931f3116745250d36f0253",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/spruce_counter.json": {
+    "mtime": 1787858968.5578947,
+    "ast_hash": "0e9e1ab62e4515c65ef15529294423fb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/warped_butcher_display.json": {
+    "mtime": 1787858968.642184,
+    "ast_hash": "c4658478c0529b45c8983afe986d6ba1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/warped_butchers_table.json": {
+    "mtime": 1787858968.622882,
+    "ast_hash": "783a34fc1682171b0c8b1d18ef260a2c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/warped_counter.json": {
+    "mtime": 1787858968.5689273,
+    "ast_hash": "08260708d70495e730fa4afccb6c2cdb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/acaciabutcherstablerecipe.json": {
+    "mtime": 1787858968.6706617,
+    "ast_hash": "e3c5147e3103a8be41eccec0a666da26",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/acaciacounterrecipe.json": {
+    "mtime": 1787858968.6742797,
+    "ast_hash": "99c78dce6f9a8cddb608951866cca336",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/birchbutcherstablerecipe.json": {
+    "mtime": 1787858968.6805942,
+    "ast_hash": "7fb0eff4464d766985820014d8483f09",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/birchcounterrecipe.json": {
+    "mtime": 1787858968.6833658,
+    "ast_hash": "36d01b86532293527cc7c237e85549c9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/blackcanopyrecipe.json": {
+    "mtime": 1787858968.6860876,
+    "ast_hash": "2981b50aa15d09d2d8f215256dbb167b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/bluecanopyrecipe.json": {
+    "mtime": 1787858968.6901023,
+    "ast_hash": "2085ef1b49ee88c16c9c82afe023e08a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/browncanopyrecipe.json": {
+    "mtime": 1787858968.694117,
+    "ast_hash": "9441c32035ea5e4d088512d2ffb678c2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/butchersapronrecipe.json": {
+    "mtime": 1787858968.6976254,
+    "ast_hash": "c51e9cf83e3adc79e1b5b1cda69a2181",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/butcherspapersrecipe.json": {
+    "mtime": 1787858968.7041748,
+    "ast_hash": "c7030140de6011d2ae1ed6dcb2abef1d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/crimsonbutcherstablerecipe.json": {
+    "mtime": 1787858968.714379,
+    "ast_hash": "23ff246402f0b1b433c3627603aaa5be",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/crimsoncounterrecipe.json": {
+    "mtime": 1787858968.7184966,
+    "ast_hash": "0dbff69ed5e913fcdc959fb77058eb08",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/cyancanopyrecipe.json": {
+    "mtime": 1787858968.7216299,
+    "ast_hash": "46d979d5612b182f02a9a10d42914385",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/darkoakbutcherstablerecipe.json": {
+    "mtime": 1787858968.7226558,
+    "ast_hash": "1f37db9da553a0f6e76205c75f94d6ad",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/darkoakcounterrecipe.json": {
+    "mtime": 1787858968.7272792,
+    "ast_hash": "21fd520a0ab2c55e1793c20571cf1f76",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/graycanopyrecipe.json": {
+    "mtime": 1787858968.7367039,
+    "ast_hash": "e0b29fcf6fb6fb5ce83dfb249195a544",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/greencanopyrecipe.json": {
+    "mtime": 1787858968.7397149,
+    "ast_hash": "2658c0950b1dd4fdffd6c2ee57673116",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/junglebutcherstablerecipe.json": {
+    "mtime": 1787858968.7473755,
+    "ast_hash": "b8a44747f5aa59f06de9c7d99ed09f72",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/junglecounterrecipe.json": {
+    "mtime": 1787858968.7503777,
+    "ast_hash": "e7ad22b6b8fb4b4066ec0c001ec20f0f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lightbluecanopyrecipe.json": {
+    "mtime": 1787858968.755044,
+    "ast_hash": "82510bb22e6ba0164d337fe79401ec82",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/lightgraycanopyrecipe.json": {
+    "mtime": 1787858968.7585661,
+    "ast_hash": "683a6919b4444179d30a5664a6325eb6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/limecanopyrecipe.json": {
+    "mtime": 1787858968.7615662,
+    "ast_hash": "9df833561facd5dfeb282fc93a17b9c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/magentacanopyrecipe.json": {
+    "mtime": 1787858968.765568,
+    "ast_hash": "721a5143c5193002d6649f46b01fd4cc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/mangrovebutcherstablerecipe.json": {
+    "mtime": 1787858968.768074,
+    "ast_hash": "c9ae011c2b88eefec71f3afff1794766",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/metalbutcherstablerecipe.json": {
+    "mtime": 1787858968.7725,
+    "ast_hash": "dde74ccfcbe41f3890329ad46f69955f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/oakbutcherstablerecipe.json": {
+    "mtime": 1787858968.7760885,
+    "ast_hash": "22acfef88c455868ff8f67e906a8fb39",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/oakcounterrecipe.json": {
+    "mtime": 1787858968.7791288,
+    "ast_hash": "14c46069144fbedbd243ed9c271ade71",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/orangecanopyrecipe.json": {
+    "mtime": 1787858968.782651,
+    "ast_hash": "102a0092ebcd751cdad412c3bdda5c73",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pinkcanopyrecipe.json": {
+    "mtime": 1787858968.7876725,
+    "ast_hash": "debbe5fe24ad47a2d46ae649b8aea3ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/purplecanopyrecipe.json": {
+    "mtime": 1787858968.794179,
+    "ast_hash": "2e07b778ff090f9e2358bbfe5756d345",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/redcanopyrecipe.json": {
+    "mtime": 1787858968.7986915,
+    "ast_hash": "6e131038c110452625f2f6c72e6cb7e0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sprucebutcherstablerecipe.json": {
+    "mtime": 1787858968.8062108,
+    "ast_hash": "134a7c6be0bb1d8211577764f5f0c1e1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/sprucecounterrecipe.json": {
+    "mtime": 1787858968.8094718,
+    "ast_hash": "c1099ed63b42ed2581889d9a101ecb94",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/warpedbutcherstablerecipe.json": {
+    "mtime": 1787858968.815008,
+    "ast_hash": "c1289b185fd46165c3644c720cf4dbf6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/warpedcounterrecipe.json": {
+    "mtime": 1787858968.8185298,
+    "ast_hash": "1ce0ba0e40f862adfe741fe04e59ada0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/yellowcanopyrecipe.json": {
+    "mtime": 1787858968.8226244,
+    "ast_hash": "328923d92eee95d541821650faa6a0c3",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.37.md": {
+    "mtime": 1787852849.3755984,
+    "ast_hash": "26a184c9f389efe1903c5c951552f607",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.38.md": {
+    "mtime": 1787855353.684726,
+    "ast_hash": "1fa5eb553e8876e075bf717ccdbefc37",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.39.md": {
+    "mtime": 1787856877.175711,
+    "ast_hash": "4ff10d536629ad4c1c71674154c7f2c3",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.40.md": {
+    "mtime": 1787858015.5955613,
+    "ast_hash": "e8ba599ddbe684a794e99a690d6fe005",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.41.md": {
+    "mtime": 1787859529.9706087,
+    "ast_hash": "be5d92e6c6532b267587c7bd7019a0a2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/acacia_display.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "04e653b3a5d55507dc1fc6c6360297ca",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/birch_display.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "9fbf14688a9d2785e1e63fb528adbe29",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/butchers_table.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "fe58772c263a23191fe5ee93c2bfaee8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/butchers_table_half.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "fd9cd7ced7bd1b702d0311b29d394f48",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "0dadcc8b7c1cad25b60287cc47d36e73",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_black.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "8292764e60d3fb4cba7e7727e9a9ce25",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_blue.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "ce0806380d2226bdae7a6f90aa33266f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_brown.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "c343e0fbef0ece15952d82572106af51",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_cyan.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "290d082599563603080d6f631221d144",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_gray.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "2021f5245c9ab83367656a92c3e39d2a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_green.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "2f49c3a621429e6408c65f2ccf91fa29",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_light_blue.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "0f43e7c8d19b353f187be98e37d5a972",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_light_gray.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "2d8d7737e26f016ee1bad13207bf432e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_lime.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "9588dccc2492bac7323c2785a54351c7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_magenta.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "4280971dc831d77f4f27158f1493146d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_orange.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "2444f1cc0fccf26c65f3e8f2a5f63b6e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_pink.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "19864e111efb1d127ea895272f6663b0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_purple.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "5b218b43c76e9632f7114f1fed90727a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/canopy_yellow.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "9346a8e33827d2efa4fe6a2e9cafb599",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/crimson_display.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "ba04f009037a00f8a7d2223a94faff6d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/dark_oak_display.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "8217bc9157e7aeaa14e721337eb1ff23",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/jungle_display.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "ac261eb211c04c00aae0a47e1c7370e8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/oak_display.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "334f5fd39f06e398293ee1128785bb95",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/spruce_display.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "09e73148d5f7eff57eed267a2e769d78",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/tank.png": {
+    "mtime": 1787856709.1677282,
+    "ast_hash": "44f15d4ea3717295d8b1b8fa5af8019a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/warped_display.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "f89fa1638aff775dfb2e30f9946a3392",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_dark_oak.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "0952f01da845d19cd0269b667121762d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_jungle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "b8b5df5bbee2bf8a9449390373b550af",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_acacia.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "1ff2e47f5f66257f673d483e06368f1b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_acacia_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "63211d1402943d8f6c72aba7ad6f1509",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_birch.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "209d5236a76611eef42a2d4a4872c71d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_birch_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "d4f80c30772b87ca2f736458e33fb4bb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_crimson.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "7e652fae1e0a819d7df88d209accd78e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_crimson_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "e21043c465bf25d16ea5166de322d7ef",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_dark_oak_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "330fa67b2793c6443075f15caab7d161",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_dark_oak_side.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "7c463fb9b109a524fbf2629393df3acf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_jungle_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "4b4f935f967c56ed8e89223003fc5596",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_jungle_side.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "5a865b68e3c6f6cb07ed5b1a6914aa92",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_mangrove.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "282bfb2ded266405635f670521a29be5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_mangrove_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "1d676c998fcd784ff7db340b132093f5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_oak.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "1773ba8a62c61171d6c489d8a1fa8731",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_oak_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "0d633bd4d4fa37b05d1351bf304527ea",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_side.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "4e616082d5a8853beaf30128c5ff8183",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_spruce.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "3f07c85a7406e9c548fb67297ea613ce",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_spruce_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "9bacb250ab1932bd4207f0ec440f4c84",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_warped.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "4a1249f972b25945a9b10777b1090ea2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_warped_middle.png": {
+    "mtime": 318207600.0,
+    "ast_hash": "e370fa6ff695b6dd4a138b58565fae3a",
     "semantic_hash": ""
   }
 }

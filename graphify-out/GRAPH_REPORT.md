@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-27)
 
 ## Corpus Check
-- 1108 files · ~504,714 words
+- 1494 files · ~650,132 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2049 nodes · 4852 edges · 147 communities (143 shown, 4 thin omitted)
+- 2154 nodes · 5081 edges · 147 communities (143 shown, 4 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e874a1dc`
+- Built from commit: `145e1d5b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -109,17 +109,12 @@
 - PestleAndMortarMenu
 - TaxidermyTableMenu
 - ModFluidTypes.java
-- CashRegisterInteractionHandler.java
-- ModFluids.java
-- ModBlockEntities.java
-- ModMenus.java
-- SlaughterHide.java
 - [0.0.0-beta.3] - 2026-08-15
 
 ## God Nodes (most connected - your core abstractions)
 1. `Carcasses` - 256 edges
 2. `CarcassDefinition` - 75 edges
-3. `ModBlocks` - 66 edges
+3. `ModBlocks` - 68 edges
 4. `MeatGrinderBlockEntity` - 46 edges
 5. `TaxidermyTableBlockEntity` - 34 edges
 6. `PestleAndMortarBlockEntity` - 31 edges
@@ -150,12 +145,12 @@ Cohesion: 0.09
 Nodes (29): BasinBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction (+21 more)
 
 ### Community 2 - "ModBlocks"
-Cohesion: 0.14
-Nodes (9): SoundEvent, HookPlacementHandler, Item, RightClickBlock, SubscribeEvent, Item, RightClickBlock, SubscribeEvent (+1 more)
+Cohesion: 0.13
+Nodes (11): Item, SoundEvent, HookPlacementHandler, Item, RightClickBlock, SubscribeEvent, Item, RightClickBlock (+3 more)
 
 ### Community 5 - "CorpseBlockEntity"
-Cohesion: 0.14
-Nodes (14): FreezerBlockEntity, AbstractContainerMenu, BlockPos, BlockState, ClientboundBlockEntityDataPacket, Component, CompoundTag, Inventory (+6 more)
+Cohesion: 0.19
+Nodes (16): DrainedCarcassBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext (+8 more)
 
 ### Community 6 - "Block"
 Cohesion: 0.20
@@ -163,59 +158,59 @@ Nodes (13): HookBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Bui
 
 ### Community 7 - "Roadmap — Slaughter & Hide (port de Butchery 5.2 → NeoForge 26.2)"
 Cohesion: 0.04
-Nodes (47): 🎯 ALCANCE ACTUAL — 7 mobs (recorte beta.35/36, consolidado 2026-08-27), Arquitectura idiomática propuesta (reemplaza ~330 clases de bloque + ~293 procedures), Assets (`assets/butchery/`), `block/` (456 clases), Bloques del mod base — qué falta (respuesta 2026-08-27), Catálogo Fase 0 — series vs mecánicas únicas (COMPLETADO 2026-08-15), Contexto y tamaño real del mod original, Código (clases `.class`, sin contar internas `$`) (+39 more)
+Nodes (47): 🎯 ALCANCE ACTUAL — 7 mobs (recorte beta.35/36, consolidado 2026-08-27), Arquitectura idiomática propuesta (reemplaza ~330 clases de bloque + ~293 procedures), Assets (`assets/butchery/`), `block/` (456 clases), Bloques del mod base — estado (actualizado 2026-08-27, tras port en 4 fases), Catálogo Fase 0 — series vs mecánicas únicas (COMPLETADO 2026-08-15), Contexto y tamaño real del mod original, Código (clases `.class`, sin contar internas `$`) (+39 more)
 
 ### Community 8 - "DrainedCarcassBlock"
-Cohesion: 0.09
-Nodes (31): BaseEntityBlock, ChestMenu, FreezerBlock, Block, BlockEntity, BlockGetter, BlockHitResult, BlockPlaceContext (+23 more)
+Cohesion: 0.13
+Nodes (23): BaseEntityBlock, FreezerBlock, Block, BlockEntity, BlockGetter, BlockHitResult, BlockPlaceContext, BlockPos (+15 more)
 
 ### Community 9 - "CarcassBlock"
-Cohesion: 0.23
+Cohesion: 0.25
 Nodes (11): HeadMountBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Mirror (+3 more)
 
 ### Community 10 - "CorpseBlock"
-Cohesion: 0.11
-Nodes (22): BlockEntity, CorpseBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder (+14 more)
+Cohesion: 0.10
+Nodes (23): BlockEntity, EntityBlock, CorpseBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState (+15 more)
 
 ### Community 11 - "CarcassDeathHandler.java"
-Cohesion: 0.32
+Cohesion: 0.34
 Nodes (4): DeferredItem, Items, Item, ModItems
 
 ### Community 12 - "Changelog — Slaughter & Hide"
-Cohesion: 0.25
-Nodes (7): [0.0.0-beta.1] - 2026-08-14, [0.0.0-beta.34] - 2026-08-26, [0.0.0-beta.6] - 2026-08-18, Add, Add, Changelog — Slaughter & Hide, Fix
+Cohesion: 0.13
+Nodes (14): [0.0.0-beta.1] - 2026-08-14, [0.0.0-beta.34] - 2026-08-26, [0.0.0-beta.39] - 2026-08-27, [0.0.0-beta.41] - 2026-08-27, [0.0.0-beta.4] - 2026-08-18, [0.0.0-beta.6] - 2026-08-18, Add, Add (+6 more)
 
 ### Community 13 - "SlaughterHide.java"
 Cohesion: 0.11
 Nodes (23): BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction, EnumProperty (+15 more)
 
 ### Community 14 - "port_assets.py"
-Cohesion: 0.09
-Nodes (16): AbstractContainerMenu, Block, BlockPos, BlockState, ClientboundBlockEntityDataPacket, Component, CompoundTag, Inventory (+8 more)
+Cohesion: 0.08
+Nodes (17): MenuProvider, AbstractContainerMenu, Block, BlockPos, BlockState, ClientboundBlockEntityDataPacket, Component, CompoundTag (+9 more)
 
 ### Community 16 - "TrophyHeadBlock.java"
-Cohesion: 0.13
-Nodes (6): CarcassDefinition, BlockState, EntityType, Identifier, Item, VoxelShape
+Cohesion: 0.11
+Nodes (9): CarcassDefinition, BlockState, EntityType, Identifier, Item, LootTable, ResourceKey, VoxelShape (+1 more)
 
 ### Community 17 - "Flujo de trabajo — Slaughter & Hide (NeoForge)"
 Cohesion: 0.15
 Nodes (12): Buenas prácticas, Commits (Conventional Commits), Convenciones de nomenclatura, Específico del mod, Estructura del proyecto, Flujo de trabajo — Slaughter & Hide (NeoForge), Flujo por tarea, Idioma (+4 more)
 
 ### Community 18 - "CurseForge — Variables del proyecto"
-Cohesion: 0.18
-Nodes (10): CurseForge — Variables del proyecto, Datos para el alta manual (formulario "Create Project"), Icono / imagen del proyecto, Nota, Proyecto, Rama, Tag, Tokens (+2 more)
+Cohesion: 0.17
+Nodes (11): CurseForge — Variables del proyecto, Datos para el alta manual (formulario "Create Project"), Icono / imagen del proyecto, Nota, Proyecto, Rama, Subidas, Tag (+3 more)
 
 ### Community 19 - "generate_carcasses.py"
-Cohesion: 0.10
-Nodes (16): MenuProvider, AbstractContainerMenu, BlockPos, BlockState, ClientboundBlockEntityDataPacket, Component, CompoundTag, Inventory (+8 more)
+Cohesion: 0.05
+Nodes (34): BlockEntityType, Container, FreezerBlockEntity, AbstractContainerMenu, BlockPos, BlockState, ClientboundBlockEntityDataPacket, Component (+26 more)
 
 ### Community 20 - "CarcassLoot.java"
-Cohesion: 0.26
-Nodes (9): BlockPos, BlockState, Entity, ItemStack, Level, LevelAccessor, RightClickBlock, SubscribeEvent (+1 more)
+Cohesion: 0.06
+Nodes (34): Blocks, ConfigValue, CreativeModeTab, FMLConstructModEvent, IEventBus, Mod, ModConfigSpec, ParticleType (+26 more)
 
 ### Community 21 - "CarcassDefinition.java"
-Cohesion: 0.10
-Nodes (17): Container, AbstractContainerMenu, BlockPos, BlockState, ClientboundBlockEntityDataPacket, Component, CompoundTag, Inventory (+9 more)
+Cohesion: 0.06
+Nodes (38): AbstractContainerMenu, BlockPos, BlockState, ClientboundBlockEntityDataPacket, Component, CompoundTag, Inventory, Item (+30 more)
 
 ### Community 26 - ".buildDOLPHIN"
 Cohesion: 0.05
@@ -226,16 +221,16 @@ Cohesion: 0.13
 Nodes (23): Block, BlockEntity, BlockGetter, BlockHitResult, BlockPlaceContext, BlockPos, BlockState, Builder (+15 more)
 
 ### Community 32 - ".buildOCELOT"
-Cohesion: 0.18
-Nodes (10): IntObjectPair, LivingDeathEvent, Post, CarcassDeathHandler, Entity, ServerLevel, SubscribeEvent, SubscribeEvent (+2 more)
+Cohesion: 0.33
+Nodes (5): LivingDeathEvent, CarcassDeathHandler, Entity, ServerLevel, SubscribeEvent
 
 ### Community 33 - ".buildPANDA"
 Cohesion: 0.13
 Nodes (23): Block, BlockEntity, BlockGetter, BlockHitResult, BlockPlaceContext, BlockPos, BlockState, Builder (+15 more)
 
 ### Community 36 - ".buildWolf"
-Cohesion: 0.23
-Nodes (8): Item, ItemInstance, ItemStackTemplate, ButcherToolItem, Override, TagKey, CarcassPlacementItem, ToolMaterial
+Cohesion: 0.33
+Nodes (6): ItemInstance, ItemStackTemplate, ButcherToolItem, Override, TagKey, ToolMaterial
 
 ### Community 37 - "CLAUDE.md — slaughter_hide (26.2)"
 Cohesion: 0.50
@@ -246,12 +241,12 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 39 - ".pigHanging"
-Cohesion: 0.48
-Nodes (5): ParticleType, DeferredHolder, DeferredRegister, SimpleParticleType, ModParticleTypes
+Cohesion: 0.17
+Nodes (15): CodBarrelBlock, Block, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext (+7 more)
 
 ### Community 40 - ".stageMap"
-Cohesion: 0.06
-Nodes (46): HorizontalDirectionalBlock, CodBarrelBlock, Block, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder (+38 more)
+Cohesion: 0.10
+Nodes (29): HorizontalDirectionalBlock, ButcherDisplayBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext (+21 more)
 
 ### Community 41 - ".phantomHanging"
 Cohesion: 0.16
@@ -266,24 +261,24 @@ Cohesion: 0.18
 Nodes (16): BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction, Entity (+8 more)
 
 ### Community 45 - "add_corpse_builders.py"
-Cohesion: 0.14
-Nodes (22): Block, BlockEntity, BlockGetter, BlockHitResult, BlockPlaceContext, BlockPos, BlockState, Builder (+14 more)
+Cohesion: 0.17
+Nodes (15): Block, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction (+7 more)
 
 ### Community 55 - "update_carcasses2.py"
 Cohesion: 0.17
 Nodes (15): ButcherStatueBlock, Block, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext (+7 more)
 
 ### Community 56 - "update_carcasses_final.py"
-Cohesion: 0.23
-Nodes (9): BaseFlowingFluid, BloodFluid, Flowing, Builder, Fluid, FluidState, Override, ParticleOptions (+1 more)
+Cohesion: 0.07
+Nodes (29): BaseFlowingFluid, FlowingFluid, FluidType, BloodFluid, Flowing, Builder, Fluid, FluidState (+21 more)
 
 ### Community 57 - ".huskHanging"
 Cohesion: 0.53
 Nodes (4): CarcassBlockProperty, Direction, EnumProperty, IntegerProperty
 
 ### Community 61 - "CarcassBlock.java"
-Cohesion: 0.09
-Nodes (33): EntityBlock, CarcassBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder (+25 more)
+Cohesion: 0.18
+Nodes (16): CarcassBlock, BlockEntity, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext (+8 more)
 
 ### Community 62 - "BloodSplatterBlock"
 Cohesion: 0.14
@@ -294,12 +289,12 @@ Cohesion: 0.17
 Nodes (15): BoneBarrelBlock, Block, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext (+7 more)
 
 ### Community 65 - "FloorStandingSignBlock"
-Cohesion: 0.16
-Nodes (6): CarcassBlockEntity, BlockPos, BlockState, ClientboundBlockEntityDataPacket, CompoundTag, Override
+Cohesion: 0.12
+Nodes (10): CarcassBlockEntity, BlockPos, BlockState, ClientboundBlockEntityDataPacket, CompoundTag, Override, CarcassCutupHandler, BlockPos (+2 more)
 
 ### Community 66 - ".zombie_horseHanging"
-Cohesion: 0.11
-Nodes (23): JarBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction (+15 more)
+Cohesion: 0.19
+Nodes (15): JarBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction (+7 more)
 
 ### Community 67 - ".zombieHanging"
 Cohesion: 0.17
@@ -307,18 +302,18 @@ Nodes (15): Block, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder
 
 ### Community 69 - "ModBlocks"
 Cohesion: 0.20
-Nodes (4): DeferredBlock, LiquidBlock, Block, ModBlocks
+Nodes (3): DeferredBlock, Block, ModBlocks
 
 ### Community 70 - ".ravagerHanging"
 Cohesion: 0.20
 Nodes (13): BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction, EnumProperty (+5 more)
 
 ### Community 71 - ".silverfishHanging"
-Cohesion: 0.60
-Nodes (3): Item, TagKey, ModItemTags
+Cohesion: 0.19
+Nodes (13): ButchersTableBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction (+5 more)
 
 ### Community 72 - "SkeletonBlock.java"
-Cohesion: 0.23
+Cohesion: 0.25
 Nodes (11): BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Mirror, Override (+3 more)
 
 ### Community 73 - "SaltFormationBaseBlock"
@@ -326,8 +321,8 @@ Cohesion: 0.23
 Nodes (11): BlockGetter, BlockPlaceContext, BlockPos, BlockState, BooleanProperty, Builder, CollisionContext, FluidState (+3 more)
 
 ### Community 74 - "ModItems"
-Cohesion: 0.17
-Nodes (16): RenderShape, CashRegisterBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, BooleanProperty, Builder (+8 more)
+Cohesion: 0.12
+Nodes (21): RenderShape, CashRegisterBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, BooleanProperty, Builder (+13 more)
 
 ### Community 76 - ".handle"
 Cohesion: 0.19
@@ -338,20 +333,20 @@ Cohesion: 0.27
 Nodes (8): SlabBlock, DioriteBrickSlabBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
 
 ### Community 78 - "DioriteBrickStairsBlock.java"
-Cohesion: 0.27
-Nodes (8): DioriteBrickStairsBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape, StairBlock
+Cohesion: 0.23
+Nodes (9): LiquidBlock, DioriteBrickStairsBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape (+1 more)
 
 ### Community 79 - "DioriteBrickWallBlock.java"
 Cohesion: 0.27
 Nodes (8): DioriteBrickWallBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape, WallBlock
 
 ### Community 80 - "ClingFilmBlock.java"
-Cohesion: 0.33
-Nodes (7): ClingFilmBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
+Cohesion: 0.31
+Nodes (8): Block, ClingFilmBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
 
 ### Community 81 - "CookedBloodSausagesBlock.java"
-Cohesion: 0.31
-Nodes (8): Block, CookedBloodSausagesBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
+Cohesion: 0.33
+Nodes (7): CookedBloodSausagesBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
 
 ### Community 82 - "CookedSausagesBlock.java"
 Cohesion: 0.33
@@ -398,8 +393,8 @@ Cohesion: 0.33
 Nodes (7): BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape, SulfurOreBlock
 
 ### Community 93 - "CorpseInteractionHandler.java"
-Cohesion: 0.16
-Nodes (12): Blocks, LootTable, ResourceKey, CarcassCutupHandler, BlockPos, Level, Player, CorpseInteractionHandler (+4 more)
+Cohesion: 0.21
+Nodes (13): CanopyBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction (+5 more)
 
 ### Community 94 - "ServerWorkScheduler.java"
 Cohesion: 0.20
@@ -410,8 +405,8 @@ Cohesion: 0.33
 Nodes (3): CarcassInteractionHandler, RightClickBlock, SubscribeEvent
 
 ### Community 96 - ".handle"
-Cohesion: 0.42
-Nodes (5): CarcassBleedingHandler, BlockPos, Level, Player, ServerLevel
+Cohesion: 0.37
+Nodes (6): CarcassBleedingHandler, BlockPos, BlockState, Level, Player, ServerLevel
 
 ### Community 97 - "ModItemTags.java"
 Cohesion: 0.20
@@ -434,20 +429,20 @@ Cohesion: 0.23
 Nodes (11): BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Mirror, Override (+3 more)
 
 ### Community 106 - "SlaughterHideConfig"
-Cohesion: 0.32
-Nodes (5): ConfigValue, FMLConstructModEvent, ModConfigSpec, Builder, SlaughterHideConfig
+Cohesion: 0.19
+Nodes (13): CounterBlock, BlockGetter, BlockPlaceContext, BlockPos, BlockState, Builder, CollisionContext, Direction (+5 more)
 
 ### Community 107 - ".onRightClickBlock"
 Cohesion: 0.40
 Nodes (5): [0.0.0-beta.33] - 2026-08-26, Add, Add (sesión 2026-08-26 — Freezer), Delegación (nota de proceso), Fix (sesión 2026-08-26 — Freezer)
 
 ### Community 108 - "ModCreativeTabs.java"
-Cohesion: 0.53
-Nodes (4): CreativeModeTab, DeferredHolder, DeferredRegister, ModCreativeTabs
+Cohesion: 0.23
+Nodes (8): JarInteractionHandler, BlockPos, BlockState, Entity, ItemStack, LevelAccessor, RightClickBlock, SubscribeEvent
 
 ### Community 113 - ".sheepHead"
-Cohesion: 0.22
-Nodes (9): [0.0.0-beta.37] - 2026-08-27, Add, Add — máquinas GUI (Fase 1 de 4: Meat Grinder), Add — máquinas GUI (Fase 2 de 4: Pestle and Mortar), Add — máquinas GUI (Fase 3 de 4: Taxidermy Table), Add — sistema de sangre (Fase 4 de 4), Docs, Fix (+1 more)
+Cohesion: 0.20
+Nodes (10): [0.0.0-beta.38] - 2026-08-27, Add, Add — máquinas GUI (Fase 1 de 4: Meat Grinder), Add — máquinas GUI (Fase 2 de 4: Pestle and Mortar), Add — máquinas GUI (Fase 3 de 4: Taxidermy Table), Add — sistema de sangre (Fase 4 de 4), Docs, Fix (+2 more)
 
 ### Community 114 - ".horseHanging"
 Cohesion: 0.50
@@ -470,8 +465,8 @@ Cohesion: 0.67
 Nodes (3): [0.0.0-beta.35] - 2026-08-26, Changed (BREAKING), Fix
 
 ### Community 124 - ".zombie_horseHanging"
-Cohesion: 0.67
-Nodes (3): [0.0.0-beta.4] - 2026-08-18, Change, Known issues
+Cohesion: 0.27
+Nodes (8): ChestMenu, FreezerMenu, BlockPos, Container, FriendlyByteBuf, Inventory, Override, Player
 
 ### Community 125 - ".zombieHanging"
 Cohesion: 0.67
@@ -482,8 +477,8 @@ Cohesion: 0.21
 Nodes (12): InteractionHand, BloodGrateBlock, BlockHitResult, BlockPos, BlockState, Builder, IntegerProperty, InteractionResult (+4 more)
 
 ### Community 135 - "InfectedBloodFluid.java"
-Cohesion: 0.24
-Nodes (8): Flowing, InfectedBloodFluid, Builder, Fluid, FluidState, Override, ParticleOptions, Source
+Cohesion: 0.39
+Nodes (5): IntObjectPair, Post, SubscribeEvent, ServerWorkScheduler, TickTask
 
 ### Community 136 - "MeatGrinderMenu"
 Cohesion: 0.24
@@ -494,60 +489,40 @@ Cohesion: 0.29
 Nodes (9): BloodPuddleBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, RandomSource, ServerLevel (+1 more)
 
 ### Community 138 - "PestleAndMortarMenu"
-Cohesion: 0.25
-Nodes (9): BlockEntity, BlockPos, Container, FriendlyByteBuf, Inventory, ItemStack, Override, Player (+1 more)
+Cohesion: 0.18
+Nodes (13): MenuType, DeferredHolder, DeferredRegister, ModMenus, BlockEntity, BlockPos, Container, FriendlyByteBuf (+5 more)
 
 ### Community 139 - "TaxidermyTableMenu"
 Cohesion: 0.25
 Nodes (9): BlockEntity, BlockPos, Container, FriendlyByteBuf, Inventory, ItemStack, Override, Player (+1 more)
 
 ### Community 140 - "ModFluidTypes.java"
-Cohesion: 0.23
-Nodes (7): FluidType, BloodFluidType, InfectedBloodFluidType, DeferredHolder, DeferredRegister, FluidType, ModFluidTypes
-
-### Community 141 - "CashRegisterInteractionHandler.java"
-Cohesion: 0.33
-Nodes (5): CashRegisterInteractionHandler, BlockPos, Level, RightClickBlock, SubscribeEvent
-
-### Community 142 - "ModFluids.java"
-Cohesion: 0.48
-Nodes (5): FlowingFluid, DeferredHolder, DeferredRegister, Fluid, ModFluids
-
-### Community 143 - "ModBlockEntities.java"
-Cohesion: 0.53
-Nodes (4): BlockEntityType, DeferredHolder, DeferredRegister, ModBlockEntities
-
-### Community 144 - "ModMenus.java"
-Cohesion: 0.53
-Nodes (4): MenuType, DeferredHolder, DeferredRegister, ModMenus
-
-### Community 145 - "SlaughterHide.java"
-Cohesion: 0.60
-Nodes (3): IEventBus, Mod, SlaughterHide
+Cohesion: 0.67
+Nodes (3): [0.0.0-beta.40] - 2026-08-27, Fix, Pendiente conocido
 
 ### Community 146 - "[0.0.0-beta.3] - 2026-08-15"
 Cohesion: 0.67
 Nodes (3): [0.0.0-beta.3] - 2026-08-15, Add, Fix
 
 ## Knowledge Gaps
-- **98 isolated node(s):** `Workflow del mod`, `Prioridad de instrucciones`, `Add — sistema de sangre (Fase 4 de 4)`, `Add — máquinas GUI (Fase 3 de 4: Taxidermy Table)`, `Add — máquinas GUI (Fase 2 de 4: Pestle and Mortar)` (+93 more)
+- **104 isolated node(s):** `Workflow del mod`, `Prioridad de instrucciones`, `Add`, `Fix`, `Pendiente conocido` (+99 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CarcassDefinition` connect `TrophyHeadBlock.java` to `VoxelShape`, `ModBlocks`, `CarcassBlock`, `CorpseBlock`, `CarcassDeathHandler.java`, `.buildChicken`, `.buildDONKEY`, `.buildGoat`, `.buildMULE`, `.buildOCELOT`, `.buildPOLAR_BEAR`, `.buildRabbit`, `.buildWolf`, `CarcassBlock.java`, `FloorStandingSignBlock`, `ModBlocks`, `SkeletonBlock.java`, `CorpseInteractionHandler.java`, `ButcherToolItem.java`, `.handle`, `ModBlocks.java`, `ModItemTags.java`, `.pigHanging`?**
+- **Why does `CarcassDefinition` connect `TrophyHeadBlock.java` to `VoxelShape`, `ModBlocks`, `CorpseBlockEntity`, `CarcassBlock`, `CorpseBlock`, `CarcassDeathHandler.java`, `.buildChicken`, `.buildDONKEY`, `.buildGoat`, `.buildMULE`, `.buildOCELOT`, `.buildPOLAR_BEAR`, `.buildRabbit`, `CarcassBlock.java`, `FloorStandingSignBlock`, `ModBlocks`, `SkeletonBlock.java`, `DioriteBrickStairsBlock.java`, `ButcherToolItem.java`, `.handle`, `ModBlocks.java`, `ModItemTags.java`, `.pigHanging`?**
   _High betweenness centrality (0.135) - this node is a cross-community bridge._
-- **Why does `ModBlocks` connect `ModBlocks` to `CarcassBlockEntity`, `InteractionHand`, `Block`, `DrainedCarcassBlock`, `BloodPuddleBlock.java`, `CorpseBlock`, `SlaughterHide.java`, `.buildHOGLIN`, `.buildPANDA`, `.stageMap`, `.phantomHanging`, `.spiderHead`, `.axolotlLying`, `add_corpse_builders.py`, `update_carcasses2.py`, `CarcassBlock.java`, `BloodSplatterBlock`, `BoneBarrelBlock`, `.zombie_horseHanging`, `.zombieHanging`, `.ravagerHanging`, `SaltFormationBaseBlock`, `ModItems`, `.handle`, `DioriteBrickSlabBlock.java`, `DioriteBrickStairsBlock.java`, `DioriteBrickWallBlock.java`, `ClingFilmBlock.java`, `CookedBloodSausagesBlock.java`, `CookedSausagesBlock.java`, `DeepslateSulfurOreBlock.java`, `DioriteBricksBlock.java`, `DragonScaleBlock.java`, `RawBloodSausagesBlock.java`, `RawSausagesBlock.java`, `SaltBlock.java`, `SaltFormationFrustumBlock.java`, `SaltFormationMiddleBlock.java`, `SaltFormationTipBlock.java`, `SulfurOreBlock.java`, `CorpseInteractionHandler.java`, `ServerWorkScheduler.java`, `ModItemTags.java`?**
-  _High betweenness centrality (0.110) - this node is a cross-community bridge._
 - **Why does `Carcasses` connect `VoxelShape` to `.drownedHanging`, `.foxHanging`, `.piglinBruteHanging`, `Carcasses`, `CarcassDefinition`, `.skeleton_horseHanging`, `.slimeHanging`, `TrophyHeadBlock.java`, `.batHanging`, `.buildCAMEL`, `.buildChicken`, `.buildDONKEY`, `.buildFox`, `.buildGoat`, `.buildMULE`, `.buildPOLAR_BEAR`, `.buildRabbit`, `ButcherToolItem.java`, `ModBlocks.java`, `.pigHanging`, `.spiderHanging`, `.endermiteHanging`, `.evokerHanging`, `.phantomHanging`, `.phantomLying`, `.pufferfishHanging`, `.shulkerHanging`, `.wolfLying`, `.spiderHeadMount`?**
-  _High betweenness centrality (0.108) - this node is a cross-community bridge._
-- **What connects `Workflow del mod`, `Prioridad de instrucciones`, `Add — sistema de sangre (Fase 4 de 4)` to the rest of the system?**
-  _98 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
+- **Why does `ModBlocks` connect `ModBlocks` to `CarcassBlockEntity`, `CorpseBlockEntity`, `InteractionHand`, `Block`, `DrainedCarcassBlock`, `BloodPuddleBlock.java`, `CorpseBlock`, `SlaughterHide.java`, `CarcassLoot.java`, `CarcassDefinition.java`, `.buildHOGLIN`, `.buildPANDA`, `.pigHanging`, `.stageMap`, `.phantomHanging`, `.spiderHead`, `.axolotlLying`, `add_corpse_builders.py`, `update_carcasses2.py`, `CarcassBlock.java`, `BloodSplatterBlock`, `BoneBarrelBlock`, `.zombie_horseHanging`, `.zombieHanging`, `.ravagerHanging`, `SaltFormationBaseBlock`, `ModItems`, `.handle`, `DioriteBrickSlabBlock.java`, `DioriteBrickStairsBlock.java`, `DioriteBrickWallBlock.java`, `ClingFilmBlock.java`, `CookedBloodSausagesBlock.java`, `CookedSausagesBlock.java`, `DeepslateSulfurOreBlock.java`, `DioriteBricksBlock.java`, `DragonScaleBlock.java`, `RawBloodSausagesBlock.java`, `RawSausagesBlock.java`, `SaltBlock.java`, `SaltFormationFrustumBlock.java`, `SaltFormationMiddleBlock.java`, `SaltFormationTipBlock.java`, `SulfurOreBlock.java`, `ServerWorkScheduler.java`, `ModItemTags.java`?**
+  _High betweenness centrality (0.076) - this node is a cross-community bridge._
+- **What connects `Workflow del mod`, `Prioridad de instrucciones`, `Add` to the rest of the system?**
+  _104 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `VoxelShape` be split into smaller, more focused modules?**
   _Cohesion score 0.06013986013986014 - nodes in this community are weakly interconnected._
 - **Should `CarcassBlockEntity` be split into smaller, more focused modules?**
   _Cohesion score 0.09049773755656108 - nodes in this community are weakly interconnected._
 - **Should `ModBlocks` be split into smaller, more focused modules?**
-  _Cohesion score 0.14035087719298245 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13438735177865613 - nodes in this community are weakly interconnected._
