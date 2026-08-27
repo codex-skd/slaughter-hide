@@ -2,16 +2,20 @@ package com.skd.slaughterhide.block;
 
 import com.mojang.serialization.MapCodec;
 import com.skd.slaughterhide.block.entity.TaxidermyTableBlockEntity;
+import com.skd.slaughterhide.init.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Mirror;
@@ -83,11 +87,52 @@ public class TaxidermyTableBlock extends BaseEntityBlock {
         builder.add(FACING, BLOCKSTATE);
     }
 
+    /** The overhang tile (invisible solid half). */
+    public static BlockPos extensionPos(BlockState state, BlockPos pos) {
+        return pos.relative(state.getValue(FACING).getClockWise());
+    }
+
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState()
-                .setValue(FACING, context.getHorizontalDirection().getOpposite())
-                .setValue(BLOCKSTATE, 0);
+        Direction facing = context.getHorizontalDirection().getOpposite();
+        BlockPos ext = context.getClickedPos().relative(facing.getClockWise());
+        if (!context.getLevel().getBlockState(ext).canBeReplaced(context)) {
+            return null; // no room for the wide half
+        }
+        return this.defaultBlockState().setValue(FACING, facing).setValue(BLOCKSTATE, 0);
+    }
+
+    @Override
+    public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+        super.setPlacedBy(level, pos, state, placer, stack);
+        if (!level.isClientSide()) {
+            BlockPos ext = extensionPos(state, pos);
+            level.setBlock(ext, ModBlocks.TAXIDERMY_TABLE_EXTENSION.get().defaultBlockState()
+                    .setValue(TaxidermyTableExtensionBlock.FACING, state.getValue(FACING)), 3);
+        }
+    }
+
+    @Override
+    public BlockState playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+        if (!level.isClientSide()) {
+            BlockPos ext = extensionPos(state, pos);
+            if (level.getBlockState(ext).getBlock() instanceof TaxidermyTableExtensionBlock) {
+                level.setBlock(ext, Blocks.AIR.defaultBlockState(),
+                        Block.UPDATE_SUPPRESS_DROPS | Block.UPDATE_KNOWN_SHAPE);
+                level.levelEvent(player, 2001, ext, Block.getId(level.getBlockState(ext)));
+            }
+        }
+        return super.playerWillDestroy(level, pos, state, player);
+    }
+
+    @Override
+    protected void affectNeighborsAfterRemoval(BlockState state, ServerLevel level, BlockPos pos, boolean movedByPiston) {
+        BlockPos ext = extensionPos(state, pos);
+        if (level.getBlockState(ext).getBlock() instanceof TaxidermyTableExtensionBlock) {
+            level.setBlock(ext, Blocks.AIR.defaultBlockState(),
+                    Block.UPDATE_SUPPRESS_DROPS | Block.UPDATE_KNOWN_SHAPE);
+            level.updateNeighborsAt(ext, this);
+        }
     }
 
     @Override

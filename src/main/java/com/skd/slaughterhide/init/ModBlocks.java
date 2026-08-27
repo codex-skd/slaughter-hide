@@ -49,6 +49,7 @@ import com.skd.slaughterhide.block.FreezerBlock;
 import com.skd.slaughterhide.block.MeatGrinderBlock;
 import com.skd.slaughterhide.block.PestleAndMortarBlock;
 import com.skd.slaughterhide.block.TaxidermyTableBlock;
+import com.skd.slaughterhide.block.TaxidermyTableExtensionBlock;
 import com.skd.slaughterhide.block.SkinRackBlock;
 import com.skd.slaughterhide.block.WoodenSpitRotisserieBlock;
 import com.skd.slaughterhide.block.CounterBlock;
@@ -184,6 +185,7 @@ public final class ModBlocks {
     public static final DeferredBlock<MeatGrinderBlock> MEAT_GRINDER = register("meat_grinder", MeatGrinderBlock::new);
     public static final DeferredBlock<PestleAndMortarBlock> PESTLE_AND_MORTAR = register("pestle_and_mortar", PestleAndMortarBlock::new);
     public static final DeferredBlock<TaxidermyTableBlock> TAXIDERMY_TABLE = register("taxidermy_table", TaxidermyTableBlock::new);
+    public static final DeferredBlock<TaxidermyTableExtensionBlock> TAXIDERMY_TABLE_EXTENSION = register("taxidermy_table_extension", TaxidermyTableExtensionBlock::new);
 
     // Furniture blocks (counters, canopies, butcher's tables, butcher displays)
     private static final List<DeferredBlock<Block>> FURNITURE_BLOCKS = new ArrayList<>();

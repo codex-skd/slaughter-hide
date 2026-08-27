@@ -1,5 +1,11 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.43] - 2026-08-27
+
+### Fix
+
+- **Mesa de taxidermia ahora es una estructura de 2 bloques** (patrón cama): bloque principal (con la GUI + el modelo ancho) + `taxidermy_table_extension` (medio invisible, colisión sólida completa, ocupa la casilla del saliente = `facing.getClockWise()`). Colocar coloca ambos; romper cualquiera de los dos elimina los dos y suelta un solo ítem; clic derecho en el saliente también abre la GUI. Si no hay hueco para el segundo bloque, no deja colocar. Las mesas colocadas antes de beta.43 no tienen el saliente sólido hasta re-colocarlas.
+
 ## [0.0.0-beta.42] - 2026-08-27
 
 ### Fix
