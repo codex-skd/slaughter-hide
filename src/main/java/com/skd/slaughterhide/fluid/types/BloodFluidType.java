@@ -11,9 +11,9 @@ public class BloodFluidType extends FluidType {
                 .canExtinguish(true)
                 .supportsBoating(true)
                 .canHydrate(true)
-                .motionScale(0.007)
-                .density(8000)
-                .viscosity(80000)
+                .motionScale(0.014)
+                .density(1600)
+                .viscosity(2500)
                 .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                 .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
                 .sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));

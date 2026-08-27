@@ -1,8 +1,8 @@
 {
-  "variants": {
-    "fill_level=0": { "model": "slaughter_hide:block/blood_grate" },
-    "fill_level=1": { "model": "slaughter_hide:block/blood_grate" },
-    "fill_level=2": { "model": "slaughter_hide:block/blood_grate" },
-    "fill_level=3": { "model": "slaughter_hide:block/blood_grate" }
-  }
+  "multipart": [
+    { "apply": { "model": "slaughter_hide:block/blood_grate" } },
+    { "when": { "fill_level": "1|2|3" }, "apply": { "model": "slaughter_hide:block/blood_grate_fill_1" } },
+    { "when": { "fill_level": "2|3" },   "apply": { "model": "slaughter_hide:block/blood_grate_fill_2" } },
+    { "when": { "fill_level": "3" },     "apply": { "model": "slaughter_hide:block/blood_grate_fill_3" } }
+  ]
 }

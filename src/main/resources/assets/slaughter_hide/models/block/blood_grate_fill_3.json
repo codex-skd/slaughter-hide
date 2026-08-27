@@ -1,0 +1,21 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "blood": "slaughter_hide:block/blood_still",
+    "particle": "slaughter_hide:block/blood_still"
+  },
+  "elements": [
+    {
+      "from": [2, 1, 2],
+      "to": [14, 12, 14],
+      "faces": {
+        "up":    { "uv": [2, 2, 14, 14], "texture": "#blood" },
+        "down":  { "uv": [2, 2, 14, 14], "texture": "#blood" },
+        "north": { "uv": [2, 2, 14, 14], "texture": "#blood" },
+        "south": { "uv": [2, 2, 14, 14], "texture": "#blood" },
+        "east":  { "uv": [2, 2, 14, 14], "texture": "#blood" },
+        "west":  { "uv": [2, 2, 14, 14], "texture": "#blood" }
+      }
+    }
+  ]
+}

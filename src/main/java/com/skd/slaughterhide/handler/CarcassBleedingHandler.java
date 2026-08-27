@@ -80,15 +80,37 @@ public final class CarcassBleedingHandler {
         }
     }
 
-    /** A single drip: particles beneath the carcass + grate fill or a puddle. */
+    /** A single drip: falling blood particles down the column + grate fill or a puddle. */
     private static void bloodPulse(ServerLevel level, BlockPos pos) {
         RandomSource rand = level.getRandom();
-        for (int i = 0; i < BLOOD_PARTICLE_COUNT; i++) {
-            double x = pos.getX() + 0.5 + (rand.nextDouble() - 0.5) * 0.6;
-            double y = pos.getY() - 0.1 - rand.nextDouble() * 0.4;
-            double z = pos.getZ() + 0.5 + (rand.nextDouble() - 0.5) * 0.6;
-            level.sendParticles(ParticleTypes.DRIPPING_DRIPSTONE_LAVA, x, y, z, 1, 0.1, 0.1, 0.1, 0.0);
+
+        // How far down is the landing surface (grate, ground or up to 6 blocks)?
+        int drop = 1;
+        for (int d = 1; d <= 6; d++) {
+            BlockState below = level.getBlockState(pos.below(d));
+            if (below.is(ModBlocks.BLOOD_GRATE.get()) || !below.isAir()) {
+                drop = d;
+                break;
+            }
+            drop = d;
         }
+
+        for (int i = 0; i < BLOOD_PARTICLE_COUNT; i++) {
+            double x = pos.getX() + 0.5 + (rand.nextDouble() - 0.5) * 0.5;
+            double z = pos.getZ() + 0.5 + (rand.nextDouble() - 0.5) * 0.5;
+            // start just under the carcass, with a downward push so it streams to the floor
+            double y = pos.getY() - 0.15;
+            level.sendParticles(ParticleTypes.FALLING_DRIPSTONE_LAVA, x, y, z, 1, 0.0, -0.6, 0.0, 0.0);
+            // plus a mid-air splash halfway down the gap
+            if (drop > 1) {
+                double my = pos.getY() - rand.nextInt(drop) - rand.nextDouble();
+                level.sendParticles(ParticleTypes.FALLING_DRIPSTONE_LAVA, x, my, z, 1, 0.0, -0.4, 0.0, 0.0);
+            }
+        }
+        // a small pool splash where it lands
+        level.sendParticles(ParticleTypes.LANDING_LAVA,
+                pos.getX() + 0.5, pos.getY() - drop + 0.05, pos.getZ() + 0.5, 3, 0.25, 0.0, 0.25, 0.0);
+
         placeBloodBlock(level, pos);
     }
 
@@ -103,31 +125,59 @@ public final class CarcassBleedingHandler {
     }
 
     /**
-     * Tries to place a blood_grate within 2 blocks below/around the carcass.
-     * If none found, places a blood_puddle on the ground directly beneath.
+     * Feeds the blood the carcass is losing: a blood_grate straight below (up to
+     * 6 blocks) or within 2 blocks around gains one fill level; if there is no
+     * grate, a thin blood_puddle is (re)placed on the first solid surface below.
      */
     private static void placeBloodBlock(ServerLevel level, BlockPos pos) {
-        // Search for a blood grate within 2 blocks below/around
+        // 1) grate directly below, up to 6 blocks
+        for (int d = 1; d <= 6; d++) {
+            BlockPos p = pos.below(d);
+            BlockState s = level.getBlockState(p);
+            if (s.is(ModBlocks.BLOOD_GRATE.get())) {
+                fillGrate(level, p, s);
+                return;
+            }
+            if (!s.isAir()) {
+                break; // solid floor before any grate
+            }
+        }
+        // 2) grate within 2 blocks around (below/level)
         for (int dy = -2; dy <= 0; dy++) {
             for (int dx = -2; dx <= 2; dx++) {
                 for (int dz = -2; dz <= 2; dz++) {
-                    BlockPos checkPos = pos.offset(dx, dy, dz);
-                    BlockState checkState = level.getBlockState(checkPos);
-                    if (checkState.is(ModBlocks.BLOOD_GRATE.get())) {
-                        // Found a blood grate, increment its fill level
-                        int current = checkState.getValue(BloodGrateBlock.FILL_LEVEL);
-                        if (current < 3) {
-                            level.setBlock(checkPos, checkState.setValue(BloodGrateBlock.FILL_LEVEL, current + 1), 3);
-                        }
+                    BlockPos p = pos.offset(dx, dy, dz);
+                    BlockState s = level.getBlockState(p);
+                    if (s.is(ModBlocks.BLOOD_GRATE.get())) {
+                        fillGrate(level, p, s);
                         return;
                     }
                 }
             }
         }
-        // No blood grate found, place a blood puddle beneath
-        BlockPos below = pos.below();
-        if (level.getBlockState(below).isAir()) {
-            level.setBlock(below, ModBlocks.BLOOD_PUDDLE.get().defaultBlockState(), 3);
+        // 3) no grate -> puddle on the first solid surface below (up to 6)
+        for (int d = 1; d <= 6; d++) {
+            BlockPos p = pos.below(d);
+            BlockState s = level.getBlockState(p);
+            if (s.isAir()) {
+                continue;
+            }
+            BlockPos on = p.above();
+            if (level.getBlockState(on).isAir() && s.isFaceSturdy(level, p, Direction.UP)) {
+                level.setBlock(on, ModBlocks.BLOOD_PUDDLE.get().defaultBlockState(), 3);
+            }
+            return;
+        }
+    }
+
+    private static void fillGrate(ServerLevel level, BlockPos p, BlockState s) {
+        int current = s.getValue(BloodGrateBlock.FILL_LEVEL);
+        if (current < 3) {
+            level.setBlock(p, s.setValue(BloodGrateBlock.FILL_LEVEL, current + 1), 3);
+            if (current + 1 == 3) {
+                // grate just filled up -> audible cue that a bottle can now be taken
+                playSound(level, p, SoundEvents.BREWING_STAND_BREW, 0.6f);
+            }
         }
     }
 

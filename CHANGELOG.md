@@ -1,5 +1,19 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.40] - 2026-08-27
+
+### Fix
+
+- **Te quedabas atascado en la sangre**: el `FluidType` copiaba los valores extremos del original (`viscosity 80000` = 13x lava, `density 8000`, `motionScale 0.007`). Bajados a `viscosity 2500` / `density 1600` / `motionScale 0.014` (algo mas denso que el agua, sin atrapar). Aplica a `blood` e `infected_blood`.
+- **Los cubos parecian de agua**: los modelos de `blood_bucket` / `infected_blood_bucket` usan ahora el loader `neoforge:fluid_container`, que pinta el cubo con el color real del fluido (rojo / verde). Eliminadas las texturas placeholder de water_bucket.
+- **La rejilla no mostraba el nivel de sangre**: blockstate `multipart` con 3 modelos de relleno (`blood_grate_fill_1/2/3`) que apilan una capa de sangre segun `fill_level`. Sonido al llegar a nivel 3 (ya se puede sacar la botella).
+- **Las gotas no caian**: `bloodPulse` ahora usa `FALLING_DRIPSTONE_LAVA` con empuje hacia abajo + un chorro a media altura + salpicadura `LANDING_LAVA` donde aterriza; y detecta la superficie/rejilla hasta 6 bloques por debajo (antes solo miraba el bloque justo debajo). El charco se coloca sobre el suelo real, no en el aire.
+- **La mesa de taxidermia ocupaba 2 bloques**: el modelo custom medía ~31 px de ancho; reescalado a 16 px para caber en un bloque.
+
+### Pendiente conocido
+
+- Al drenar una carcasa colgada del gancho, cambia de la pose "colgada" a la "tumbada" (el original tenía estados 1-5 de drenado colgado que este port no incluye) — pendiente, necesita portar esos assets.
+
 ## [0.0.0-beta.39] - 2026-08-27
 
 ### Fix / pulido (sangre + herramientas)
