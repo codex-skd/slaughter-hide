@@ -90,7 +90,7 @@ El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mo
 | `0.0.0-beta.40` | `8748994` | 2026-08-27 (blood feel) |
 | `0.0.0-beta.41` | `8749159` | 2026-08-27 (41 bloques decoración) |
 | `0.0.0-beta.42` | `8749463` | 2026-08-27 (pose carcasa colgada) |
-| `0.0.0-beta.43` | (pendiente) | 2026-08-27 |
+| `0.0.0-beta.43` | `8749739` | 2026-08-27 (mesa taxidermia 2 bloques) |
 
 ## Rama
 
