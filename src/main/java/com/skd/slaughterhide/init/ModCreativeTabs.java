@@ -45,6 +45,33 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.INFECTED_BLOOD_BUCKET.get());
                         output.accept(ModItems.BLOOD_GRATE.get());
                         output.accept(ModItems.BLOOD_PUDDLE.get());
+                        // Furniture: counters
+                        Stream.of(
+                                ModItems.OAK_COUNTER, ModItems.BIRCH_COUNTER, ModItems.SPRUCE_COUNTER,
+                                ModItems.JUNGLE_COUNTER, ModItems.ACACIA_COUNTER, ModItems.DARK_OAK_COUNTER,
+                                ModItems.CRIMSON_COUNTER, ModItems.WARPED_COUNTER
+                        ).forEach(item -> output.accept(item.get()));
+                        // Furniture: canopies
+                        Stream.of(
+                                ModItems.CANOPY_BLACK, ModItems.CANOPY_BLUE, ModItems.CANOPY_BROWN,
+                                ModItems.CANOPY_CYAN, ModItems.CANOPY_GRAY, ModItems.CANOPY_GREEN,
+                                ModItems.CANOPY_LIGHT_BLUE, ModItems.CANOPY_LIGHT_GRAY, ModItems.CANOPY_LIME,
+                                ModItems.CANOPY_MAGENTA, ModItems.CANOPY_ORANGE, ModItems.CANOPY_PINK,
+                                ModItems.CANOPY_PURPLE, ModItems.CANOPY_RED, ModItems.CANOPY_YELLOW
+                        ).forEach(item -> output.accept(item.get()));
+                        // Furniture: butcher's tables
+                        Stream.of(
+                                ModItems.OAK_BUTCHERS_TABLE, ModItems.BIRCH_BUTCHERS_TABLE, ModItems.SPRUCE_BUTCHERS_TABLE,
+                                ModItems.JUNGLE_BUTCHERS_TABLE, ModItems.ACACIA_BUTCHERS_TABLE, ModItems.DARK_OAK_BUTCHERS_TABLE,
+                                ModItems.MANGROVE_BUTCHERS_TABLE, ModItems.CRIMSON_BUTCHERS_TABLE, ModItems.WARPED_BUTCHERS_TABLE,
+                                ModItems.METAL_BUTCHERS_TABLE
+                        ).forEach(item -> output.accept(item.get()));
+                        // Furniture: butcher displays
+                        Stream.of(
+                                ModItems.OAK_BUTCHER_DISPLAY, ModItems.BIRCH_BUTCHER_DISPLAY, ModItems.SPRUCE_BUTCHER_DISPLAY,
+                                ModItems.JUNGLE_BUTCHER_DISPLAY, ModItems.ACACIA_BUTCHER_DISPLAY, ModItems.DARK_OAK_BUTCHER_DISPLAY,
+                                ModItems.CRIMSON_BUTCHER_DISPLAY, ModItems.WARPED_BUTCHER_DISPLAY
+                        ).forEach(item -> output.accept(item.get()));
                     })
                     .build());
 

@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/birch_display",
+  "textures": {
+    "all": "slaughter_hide:block/birch_display",
+    "particle": "slaughter_hide:block/birch_display",
+    "0": "slaughter_hide:block/birch_display"
+  }
+}

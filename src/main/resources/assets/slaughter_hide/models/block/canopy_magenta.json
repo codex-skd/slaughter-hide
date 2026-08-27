@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/canopy_magenta",
+  "textures": {
+    "all": "slaughter_hide:block/canopy_magenta",
+    "particle": "slaughter_hide:block/canopy_magenta",
+    "0": "slaughter_hide:block/canopy_magenta"
+  }
+}

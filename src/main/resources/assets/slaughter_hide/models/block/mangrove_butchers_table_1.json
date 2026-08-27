@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/wooden_butchers_table_mangrove_left",
+  "textures": {
+    "all": "slaughter_hide:block/wooden_butchers_table_mangrove_side",
+    "particle": "slaughter_hide:block/wooden_butchers_table_mangrove",
+    "0": "slaughter_hide:block/wooden_butchers_table_mangrove_side"
+  }
+}

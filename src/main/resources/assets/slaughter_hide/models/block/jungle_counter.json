@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/jungle_counter",
+  "textures": {
+    "all": "slaughter_hide:block/jungle_display",
+    "particle": "slaughter_hide:block/jungle_display",
+    "0": "slaughter_hide:block/jungle_display"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/butchers_table",
+  "textures": {
+    "all": "slaughter_hide:block/butchers_table",
+    "particle": "slaughter_hide:block/butchers_table",
+    "0": "slaughter_hide:block/butchers_table"
+  }
+}

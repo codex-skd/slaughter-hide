@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/wooden_butchers_table_warped_center",
+  "textures": {
+    "all": "slaughter_hide:block/wooden_butchers_table_warped_middle",
+    "particle": "slaughter_hide:block/wooden_butchers_table_warped",
+    "0": "slaughter_hide:block/wooden_butchers_table_warped_middle"
+  }
+}

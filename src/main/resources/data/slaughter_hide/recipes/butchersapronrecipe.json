@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "slaughter_hide:goat_skin"
+  },
+  "result": {
+    "id": "slaughter_hide:butchers_apron_chestplate",
+    "count": 1
+  }
+}

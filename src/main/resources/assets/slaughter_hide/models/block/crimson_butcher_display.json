@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/crimson_display",
+  "textures": {
+    "all": "slaughter_hide:block/crimson_display",
+    "particle": "slaughter_hide:block/crimson_display",
+    "0": "slaughter_hide:block/crimson_display"
+  }
+}

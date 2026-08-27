@@ -1,5 +1,12 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.41] - 2026-08-27
+
+### Add
+
+- **41 bloques de decoración de carnicero** portados (delegado a `mimo-v2.5`, revisado por Claude): 8 mostradores (`<madera>_counter`), 15 toldos (`canopy_<color>`), 10 mesas de carnicero (`<madera>_butchers_table`), 8 vitrinas (`<madera>_butcher_display`). Todos son bloques decorativos planos (`FACING` + forma, sin BlockEntity/GUI — el original tenía contenedor vestigial en mesas/vitrinas, no se porta). 4 clases genéricas + registro por bucle. Assets, recetas (todas con ítems vanilla) y loot tables copiados del dump; 82 claves de idioma (en + es).
+- **Fix post-delegación**: `ButcherDisplayBlock` tenía forma de colisión de 2 bloques de alto (Y hasta 30) → el bloque de encima quedaba intransitable; reescalada a un bloque (mostrador de media altura + panel trasero fino).
+
 ## [0.0.0-beta.40] - 2026-08-27
 
 ### Fix

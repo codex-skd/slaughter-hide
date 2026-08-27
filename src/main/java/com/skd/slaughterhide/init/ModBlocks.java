@@ -51,6 +51,10 @@ import com.skd.slaughterhide.block.PestleAndMortarBlock;
 import com.skd.slaughterhide.block.TaxidermyTableBlock;
 import com.skd.slaughterhide.block.SkinRackBlock;
 import com.skd.slaughterhide.block.WoodenSpitRotisserieBlock;
+import com.skd.slaughterhide.block.CounterBlock;
+import com.skd.slaughterhide.block.CanopyBlock;
+import com.skd.slaughterhide.block.ButchersTableBlock;
+import com.skd.slaughterhide.block.ButcherDisplayBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -60,7 +64,9 @@ import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
@@ -179,6 +185,34 @@ public final class ModBlocks {
     public static final DeferredBlock<PestleAndMortarBlock> PESTLE_AND_MORTAR = register("pestle_and_mortar", PestleAndMortarBlock::new);
     public static final DeferredBlock<TaxidermyTableBlock> TAXIDERMY_TABLE = register("taxidermy_table", TaxidermyTableBlock::new);
 
+    // Furniture blocks (counters, canopies, butcher's tables, butcher displays)
+    private static final List<DeferredBlock<Block>> FURNITURE_BLOCKS = new ArrayList<>();
+
+    private static final String[] COUNTER_IDS = {
+            "oak_counter", "birch_counter", "spruce_counter", "jungle_counter",
+            "acacia_counter", "dark_oak_counter", "crimson_counter", "warped_counter"
+    };
+
+    private static final String[] CANOPY_IDS = {
+            "canopy_black", "canopy_blue", "canopy_brown", "canopy_cyan", "canopy_gray",
+            "canopy_green", "canopy_light_blue", "canopy_light_gray", "canopy_lime",
+            "canopy_magenta", "canopy_orange", "canopy_pink", "canopy_purple",
+            "canopy_red", "canopy_yellow"
+    };
+
+    private static final String[] BUTCHERS_TABLE_IDS = {
+            "oak_butchers_table", "birch_butchers_table", "spruce_butchers_table",
+            "jungle_butchers_table", "acacia_butchers_table", "dark_oak_butchers_table",
+            "mangrove_butchers_table", "crimson_butchers_table", "warped_butchers_table",
+            "metal_butchers_table"
+    };
+
+    private static final String[] BUTCHER_DISPLAY_IDS = {
+            "oak_butcher_display", "birch_butcher_display", "spruce_butcher_display",
+            "jungle_butcher_display", "acacia_butcher_display", "dark_oak_butcher_display",
+            "crimson_butcher_display", "warped_butcher_display"
+    };
+
     static {
         registerFamily(Carcasses.COW);
         registerFamily(Carcasses.PIG);
@@ -187,7 +221,24 @@ public final class ModBlocks {
         registerFamily(Carcasses.RABBIT);
         registerFamily(Carcasses.GOAT);
         registerFamily(Carcasses.POLAR_BEAR);                // CorpseBlock humanoids (organ harvesting)
-        // Cat variants (11 variants, all share ocelot shapes, have head+head_mount+skin, no skeleton, 0 cuts)
+
+        // Furniture blocks
+        for (String id : COUNTER_IDS) {
+            DeferredBlock<Block> block = register(id, props -> new CounterBlock(props));
+            FURNITURE_BLOCKS.add(block);
+        }
+        for (String id : CANOPY_IDS) {
+            DeferredBlock<Block> block = register(id, props -> new CanopyBlock(props));
+            FURNITURE_BLOCKS.add(block);
+        }
+        for (String id : BUTCHERS_TABLE_IDS) {
+            DeferredBlock<Block> block = register(id, props -> new ButchersTableBlock(props));
+            FURNITURE_BLOCKS.add(block);
+        }
+        for (String id : BUTCHER_DISPLAY_IDS) {
+            DeferredBlock<Block> block = register(id, props -> new ButcherDisplayBlock(props));
+            FURNITURE_BLOCKS.add(block);
+        }
     }
 
     private ModBlocks() {
@@ -279,5 +330,18 @@ public final class ModBlocks {
 
     public static DeferredBlock<CorpseBlock> corpseFor(String mobId) {
         return CORPSE.get(mobId);
+    }
+
+    /** Lookup a furniture block by its registry id (counter, canopy, table, display). */
+    public static DeferredBlock<Block> furnitureFor(String id) {
+        return FURNITURE_BLOCKS.stream()
+                .filter(b -> b.getId().getPath().equals(id))
+                .findFirst()
+                .orElse(null);
+    }
+
+    /** All furniture blocks, for the creative tab. */
+    public static List<DeferredBlock<Block>> allFurniture() {
+        return FURNITURE_BLOCKS;
     }
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "slaughter_hide:block/crimson_counter"
+    },
+    "facing=east": {
+      "model": "slaughter_hide:block/crimson_counter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "slaughter_hide:block/crimson_counter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "slaughter_hide:block/crimson_counter",
+      "y": 270
+    }
+  }
+}

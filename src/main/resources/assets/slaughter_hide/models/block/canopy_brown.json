@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/canopy_brown",
+  "textures": {
+    "all": "slaughter_hide:block/canopy_brown",
+    "particle": "slaughter_hide:block/canopy_brown",
+    "0": "slaughter_hide:block/canopy_brown"
+  }
+}

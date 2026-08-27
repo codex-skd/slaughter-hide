@@ -359,6 +359,52 @@ public final class ModItems {
     // Blood fluid block items (these are liquid blocks, so they don't have normal BlockItems)
     // Blood and infected_blood are registered via the blockItem switch above
 
+    // Furniture block-items
+    public static final DeferredItem<Item> OAK_COUNTER = blockItem("oak_counter", new Item.Properties());
+    public static final DeferredItem<Item> BIRCH_COUNTER = blockItem("birch_counter", new Item.Properties());
+    public static final DeferredItem<Item> SPRUCE_COUNTER = blockItem("spruce_counter", new Item.Properties());
+    public static final DeferredItem<Item> JUNGLE_COUNTER = blockItem("jungle_counter", new Item.Properties());
+    public static final DeferredItem<Item> ACACIA_COUNTER = blockItem("acacia_counter", new Item.Properties());
+    public static final DeferredItem<Item> DARK_OAK_COUNTER = blockItem("dark_oak_counter", new Item.Properties());
+    public static final DeferredItem<Item> CRIMSON_COUNTER = blockItem("crimson_counter", new Item.Properties());
+    public static final DeferredItem<Item> WARPED_COUNTER = blockItem("warped_counter", new Item.Properties());
+
+    public static final DeferredItem<Item> CANOPY_BLACK = blockItem("canopy_black", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_BLUE = blockItem("canopy_blue", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_BROWN = blockItem("canopy_brown", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_CYAN = blockItem("canopy_cyan", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_GRAY = blockItem("canopy_gray", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_GREEN = blockItem("canopy_green", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_LIGHT_BLUE = blockItem("canopy_light_blue", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_LIGHT_GRAY = blockItem("canopy_light_gray", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_LIME = blockItem("canopy_lime", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_MAGENTA = blockItem("canopy_magenta", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_ORANGE = blockItem("canopy_orange", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_PINK = blockItem("canopy_pink", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_PURPLE = blockItem("canopy_purple", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_RED = blockItem("canopy_red", new Item.Properties());
+    public static final DeferredItem<Item> CANOPY_YELLOW = blockItem("canopy_yellow", new Item.Properties());
+
+    public static final DeferredItem<Item> OAK_BUTCHERS_TABLE = blockItem("oak_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> BIRCH_BUTCHERS_TABLE = blockItem("birch_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> SPRUCE_BUTCHERS_TABLE = blockItem("spruce_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> JUNGLE_BUTCHERS_TABLE = blockItem("jungle_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> ACACIA_BUTCHERS_TABLE = blockItem("acacia_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> DARK_OAK_BUTCHERS_TABLE = blockItem("dark_oak_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> MANGROVE_BUTCHERS_TABLE = blockItem("mangrove_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> CRIMSON_BUTCHERS_TABLE = blockItem("crimson_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> WARPED_BUTCHERS_TABLE = blockItem("warped_butchers_table", new Item.Properties());
+    public static final DeferredItem<Item> METAL_BUTCHERS_TABLE = blockItem("metal_butchers_table", new Item.Properties());
+
+    public static final DeferredItem<Item> OAK_BUTCHER_DISPLAY = blockItem("oak_butcher_display", new Item.Properties());
+    public static final DeferredItem<Item> BIRCH_BUTCHER_DISPLAY = blockItem("birch_butcher_display", new Item.Properties());
+    public static final DeferredItem<Item> SPRUCE_BUTCHER_DISPLAY = blockItem("spruce_butcher_display", new Item.Properties());
+    public static final DeferredItem<Item> JUNGLE_BUTCHER_DISPLAY = blockItem("jungle_butcher_display", new Item.Properties());
+    public static final DeferredItem<Item> ACACIA_BUTCHER_DISPLAY = blockItem("acacia_butcher_display", new Item.Properties());
+    public static final DeferredItem<Item> DARK_OAK_BUTCHER_DISPLAY = blockItem("dark_oak_butcher_display", new Item.Properties());
+    public static final DeferredItem<Item> CRIMSON_BUTCHER_DISPLAY = blockItem("crimson_butcher_display", new Item.Properties());
+    public static final DeferredItem<Item> WARPED_BUTCHER_DISPLAY = blockItem("warped_butcher_display", new Item.Properties());
+
     // Cat variants (11 variants, all share ocelot shapes, have head + head_mount + skin, no skeleton)
     // all_black_cat (variant 0)
     // Black Cat (variant 1)
@@ -495,35 +541,7 @@ public final class ModItems {
             case "goat_skeleton" -> ModBlocks.skeletonFor(Carcasses.GOAT.mobId());
             case "polar_bear_head" -> ModBlocks.headFor(Carcasses.POLAR_BEAR.mobId());
             case "polar_bear_head_mount" -> ModBlocks.mountFor(Carcasses.POLAR_BEAR.mobId());
-            case "polar_bear_skeleton" -> ModBlocks.skeletonFor(Carcasses.POLAR_BEAR.mobId());            // zoglin has no skeleton
-            // silverfish has no skeleton
-            // endermite has no skeleton
-            // Brown Llama has no skeleton            // White Llama has no skeleton            // Creamy Llama has no skeleton            // Gray Llama has no skeleton
-            // Squid has no head mount
-            // Glow Squid has no head mount
-            // Spider has no skeleton
-            // Cave Spider has no skeleton
-            // Slime has no head mount, no skeleton
-            // Medium Slime has no head mount, no skeleton
-            // Small Slime has no head mount, no skeleton
-            // Magma Cube has no head mount, no skeleton
-            // Medium Magma Cube has no head mount, no skeleton
-            // Small Magma Cube has no head mount, no skeleton
-            // all_black_cat has no skeleton
-            // black_cat has no skeleton
-            // bshorthair has no skeleton
-            // calico has no skeleton
-            // jellie has no skeleton
-            // persian has no skeleton
-            // ragdoll has no skeleton
-            // red_cat has no skeleton
-            // siamese has no skeleton
-            // tabby has no skeleton
-            // white_cat has no skeleton
-            // Enderman has no skeleton
-            // Sniffer has no head mount, skeleton
-            // Turtle has no skeleton
-            // Pufferfish has no head, head mount, skeleton
+            case "polar_bear_skeleton" -> ModBlocks.skeletonFor(Carcasses.POLAR_BEAR.mobId());
             case "hook" -> ModBlocks.HOOK;
             case "rope" -> ModBlocks.ROPE;
             case "deepslate_sulfur_ore" -> ModBlocks.DEEPSLATE_SULFUR_ORE;
@@ -567,7 +585,7 @@ public final class ModItems {
             case "meat_grinder" -> ModBlocks.MEAT_GRINDER;
             case "pestle_and_mortar" -> ModBlocks.PESTLE_AND_MORTAR;
             case "taxidermy_table" -> ModBlocks.TAXIDERMY_TABLE;
-            default -> null;
+            default -> ModBlocks.furnitureFor(name);
         };
         return REGISTRY.registerItem(name,
                 props -> {

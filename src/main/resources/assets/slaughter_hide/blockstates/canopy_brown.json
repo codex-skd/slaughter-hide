@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "slaughter_hide:block/canopy_brown"
+    },
+    "facing=east": {
+      "model": "slaughter_hide:block/canopy_brown",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "slaughter_hide:block/canopy_brown",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "slaughter_hide:block/canopy_brown",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/spruce_display",
+  "textures": {
+    "all": "slaughter_hide:block/spruce_display",
+    "particle": "slaughter_hide:block/spruce_display",
+    "0": "slaughter_hide:block/spruce_display"
+  }
+}
