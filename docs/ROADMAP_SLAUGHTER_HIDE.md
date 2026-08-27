@@ -26,9 +26,13 @@ Mark-and-sweep de assets/datos contra los IDs realmente registrados (7 mobs + bl
 
 **Residuo aún pendiente** (más invasivo, requiere decisión): ítems de carne/órganos de mobs cortados que siguen registrados en `ModItems.java` sin gameplay que los alcance (`raw_bat_meat`, `raw_camel_meat`, `raw_fox_meat`, `raw_wolf_meat`, `raw_ocelot_meat`, `raw_panda_steak`, `raw_hoglin_chunk`, `raw_dolphin_meat`, `raw_enderman_steak`, `raw_strider_meat`, `raw_sniffer_steak`, `raw_silverfish_chunks`, `raw_endermite_chunks`, `raw_creeper_leg/steak`, organos `heart/intestines/kidney/liver/lungs/stomach` + `rotten_*`); sistema `Corpse*` (bloques nunca registrados pero `CorpseInteractionHandler` sigue en el event bus).
 
-### Bloques del mod base — qué falta (respuesta 2026-08-27)
+### Bloques del mod base — estado (actualizado 2026-08-27, tras port en 4 fases)
 
-El mod original tiene **4 bloques con GUI/menú real** (`ButcheryModMenus`): **Freezer** (✅ portado), **Meat Grinder**, **Pestle and Mortar**, **Taxidermy Table** (❌ los 3 sin portar). Además: sistema de sangre (`Blood`/`Infected Blood` fluidos + `Blood Grate` + `Blood Puddle`, ❌), y familias de mobiliario decorativo sin GUI (`<madera>_butchers_table`/`_counter`/`_butcher_display`, `canopy_<color>` ×16, ❌ cortadas). Los bloques `basin`/`brain`/`cash_register_block`/`skin_rack`/`jar`/`metal_tray`/`wooden_spit_rotisserie` están portados pero como versiones **sin GUI** (contenedor vestigial de MCreator).
+Los **4 bloques con GUI/menú real** (`ButcheryModMenus`) están **portados**: **Freezer**, **Meat Grinder** (`cc9e822`), **Pestle and Mortar** (`9678018`), **Taxidermy Table** (`8ac422f`). Los 3 nuevos siguen el patrón del Freezer (block `FACING`/`BLOCKSTATE` + BlockEntity `Container` + Menu + Screen), con lógica de procesado hardcoded (sin `RecipeType`/serializer custom ni capa JEI). Molienda del grinder y triturado del mortero portados 1:1 de sus procedures; recetas de la taxidermia inventadas (7 combos `skin`+`head`+tablón→`head_mount`) porque el tipo `butchery:taxidermy` no venía en el dump.
+
+**Sistema de sangre** portado (`e874a1d`): 2 fluidos custom (`blood`/`infected_blood` + flowing), `FluidType`s, `LiquidBlock`s, cubos, `BloodGrateBlock` (se llena desde carcasa sangrando encima → botella con clic de vial), `BloodPuddleBlock`, integración en `CarcassBleedingHandler`, render de fluido cliente (`RegisterFluidModelsEvent` + `RegisterClientExtensionsEvent`). **Sin verificar el render en cliente en ejecución.** Gaps menores en CHANGELOG beta.37.
+
+**Sin portar** (decisión de alcance): mobiliario decorativo (`<madera>_butchers_table`/`_counter`/`_butcher_display`, `canopy_<color>` ×16), esparcido de `BloodPuddle`, compat cross-mod del grate. `basin`/`brain`/`cash_register_block`/`skin_rack`/`jar`/`metal_tray`/`wooden_spit_rotisserie` siguen como versiones **sin GUI** (contenedor vestigial).
 
 ### Instancia de test
 
