@@ -39,6 +39,7 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.ROPE.get());
                         output.accept(ModItems.FREEZER.get());
                         output.accept(ModItems.MEAT_GRINDER.get());
+                        output.accept(ModItems.PESTLE_AND_MORTAR.get());
                     })
                     .build());
 

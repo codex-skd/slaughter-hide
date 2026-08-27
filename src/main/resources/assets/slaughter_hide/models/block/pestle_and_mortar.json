@@ -1,0 +1,8 @@
+{
+  "parent": "slaughter_hide:custom/pestle_and_mortar",
+  "textures": {
+    "all": "slaughter_hide:block/pestle_and_mortar",
+    "particle": "slaughter_hide:block/pestle_and_mortar",
+    "0": "slaughter_hide:block/pestle_and_mortar"
+  }
+}

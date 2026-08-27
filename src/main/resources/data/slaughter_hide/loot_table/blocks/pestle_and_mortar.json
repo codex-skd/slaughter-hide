@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "slaughter_hide:blocks/pestle_and_mortar",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [{ "condition": "minecraft:survives_explosion" }],
+      "entries": [{ "type": "minecraft:item", "name": "slaughter_hide:pestle_and_mortar" }]
+    }
+  ]
+}

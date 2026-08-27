@@ -114,6 +114,7 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_BEEF_MINCE = item("raw_beef_mince", Item::new);
     public static final DeferredItem<Item> RAW_LAMB_MINCE = item("raw_lamb_mince", Item::new);
 
+
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
     public static final DeferredItem<Item> COW_CARCASS =
@@ -337,6 +338,7 @@ public final class ModItems {
     public static final DeferredItem<Item> METAL_TRAY = blockItem("metal_tray", new Item.Properties());
     public static final DeferredItem<Item> FREEZER = blockItem("freezer", new Item.Properties());
     public static final DeferredItem<Item> MEAT_GRINDER = blockItem("meat_grinder", new Item.Properties());
+    public static final DeferredItem<Item> PESTLE_AND_MORTAR = blockItem("pestle_and_mortar", new Item.Properties());
 
     // Cat variants (11 variants, all share ocelot shapes, have head + head_mount + skin, no skeleton)
     // all_black_cat (variant 0)
@@ -540,6 +542,7 @@ public final class ModItems {
             case "metal_tray" -> ModBlocks.METAL_TRAY;
             case "freezer" -> ModBlocks.FREEZER;
             case "meat_grinder" -> ModBlocks.MEAT_GRINDER;
+            case "pestle_and_mortar" -> ModBlocks.PESTLE_AND_MORTAR;
             default -> null;
         };
         return REGISTRY.registerItem(name,

@@ -2,6 +2,12 @@
 
 ## [0.0.0-beta.37] - 2026-08-27
 
+### Add — máquinas GUI (Fase 2 de 4: Pestle and Mortar)
+
+- **Pestle and Mortar** portado (delegado a `mimo-v2.5`, revisado + saneado por Claude): `BaseEntityBlock` `FACING`, `PestleAndMortarBlockEntity` (2 slots entrada/salida + progreso NBT), `PestleAndMortarMenu` / `PestleAndMortarScreen`, registrado en las 6 clases init, assets + loot table del dump. Triturado 1:1 de `PestleupdatetickProcedure`: `hoof` → `slime_ball`, tag `#slaughter_hide:crushable_bone` (`minecraft:bone` + `bird_foot` + `wishbone`) → `bone_meal`.
+- **Recortadas 3 recetas de triturado inalcanzables** (`wither_bone`/`icey_bone`/`sculk_bone` → sus `_meal`): esos huesos no tienen forma de obtenerse en el alcance de 7 mobs, así que se quitaron los 6 ítems + 18 archivos de asset que la delegación había añadido y sus ramas en el `BlockEntity`. La máquina queda funcional con las 2 recetas alcanzables.
+- **Completado tras corte de la delegación**: `pestle_and_mortar_recipe.json` (stone + `#wooden_slabs`) y las claves de idioma (`mimo-v2.5` se cortó antes de escribirlas).
+
 ### Add — máquinas GUI (Fase 1 de 4: Meat Grinder)
 
 - **Meat Grinder** portado (delegado a OpenCode `mimo-v2.5`, revisado por Claude): bloque `FACING` + `BLOCKSTATE` 0-5 con formas 1:1 del original, `BaseEntityBlock` + `MeatGrinderBlockEntity` (6 slots, progreso en NBT), `MeatGrinderMenu` (layout de slots propio) + `MeatGrinderScreen`, registrado en `ModBlocks`/`ModItems`/`ModBlockEntities`/`ModMenus`/`ClientSetup`/`ModCreativeTabs`. Assets + receta + loot table del dump (namespace remapeado). Molienda funcional reproducida de `MeatgrinderrecipeprocedureProcedure`: carcasa→`meat_scraps`, cerdo+`intestines`+`sausage_attachment`→`raw_sausage` (+`bottle_of_blood`→`raw_blood_sausage`), cordero→`raw_lamb_mince`, vacuno→`raw_beef_mince`. **Sin** portar la capa custom `RecipeType`/`RecipeSerializer`+JEI (fuera de alcance).

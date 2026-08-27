@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "slaughter_hide:block/pestle_and_mortar" },
+    "facing=east": { "model": "slaughter_hide:block/pestle_and_mortar", "y": 90 },
+    "facing=south": { "model": "slaughter_hide:block/pestle_and_mortar", "y": 180 },
+    "facing=west": { "model": "slaughter_hide:block/pestle_and_mortar", "y": 270 }
+  }
+}
