@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/CarcassBlockProperty.java": {
-    "mtime": 1787590251.6196392,
-    "ast_hash": "ce3bde4ef35dd22ac5ef8df2c474e3bf",
+    "mtime": 1787862311.6867096,
+    "ast_hash": "6aecec2103de2c50bfe0ee8635bc05db",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/CarcassDefinition.java": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/DrainedCarcassBlock.java": {
-    "mtime": 1787589982.8276198,
-    "ast_hash": "ba61a66b9fae2d20c738a64a710b654b",
+    "mtime": 1787862324.0475612,
+    "ast_hash": "851056e083c3585effbb4444554773c6",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/HeadMountBlock.java": {
@@ -90,8 +90,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/CarcassBleedingHandler.java": {
-    "mtime": 1787857907.4215822,
-    "ast_hash": "f605f08e46ff9ca89e6fc27c3ed478b0",
+    "mtime": 1787862332.5172489,
+    "ast_hash": "d638789f54e9396cb936ca26a492deca",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/CarcassCutupHandler.java": {
@@ -115,8 +115,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/HookPlacementHandler.java": {
-    "mtime": 1787589982.8338418,
-    "ast_hash": "3f83c5349eae47f8ca74f1b237dc3aba",
+    "mtime": 1787862343.154654,
+    "ast_hash": "75df5b2a286f6c425f8c63751b6b13cb",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlockEntities.java": {
@@ -125,8 +125,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787858812.336495,
-    "ast_hash": "0e761a93b5b93da107d91a2d5cfe7421",
+    "mtime": 1787865314.7819343,
+    "ast_hash": "fa6c25ba81dd0df7a0eb669616ff06df",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
@@ -195,38 +195,38 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/drained_chicken_carcass.json": {
-    "mtime": 1787589982.8472247,
-    "ast_hash": "3f7b4e7c65e46700684e11d4f274a00a",
+    "mtime": 1787862368.1082935,
+    "ast_hash": "64bde014a68dc758fd4d91cbf3d2fcc8",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/drained_cow_carcass.json": {
-    "mtime": 1787589982.8472247,
-    "ast_hash": "d2fa5566b892594aa761861dfd352574",
+    "mtime": 1787862368.1059203,
+    "ast_hash": "8a49154d0a5a754f14fff0b42ee4a0d5",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/drained_goat_carcass.json": {
-    "mtime": 1787589982.848299,
-    "ast_hash": "0db3d1bc7fd267dc1c2c7fa30a7ed059",
+    "mtime": 1787862368.109294,
+    "ast_hash": "4497db2cb7760cf0ca9902225de4764d",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/drained_pig_carcass.json": {
-    "mtime": 1787589982.849412,
-    "ast_hash": "a153b0d81b8cc2f949172d1a3c85727a",
+    "mtime": 1787862368.106981,
+    "ast_hash": "6859169a04a4be04d0ca8d2ca3c29550",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/drained_polar_bear_carcass.json": {
-    "mtime": 1787589982.849412,
-    "ast_hash": "95a42013fbeb32f72d4f3f7deda9f19c",
+    "mtime": 1787862368.1102955,
+    "ast_hash": "b9bf7c35a6fca9cdf4aea395fd49a7a6",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/drained_rabbit_carcass.json": {
-    "mtime": 1787589982.849412,
-    "ast_hash": "bba98b3cb40cb4e118301ede93c078ce",
+    "mtime": 1787862368.109294,
+    "ast_hash": "2b24f938fbb74ed74e2746b19a014466",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/drained_sheep_carcass.json": {
-    "mtime": 1787589982.849412,
-    "ast_hash": "dd6b892aaa6fd3b8caa219a1901e76b4",
+    "mtime": 1787862368.106981,
+    "ast_hash": "0895435d88a346b649d3aa8ff4fa5242",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/goat_carcass.json": {
@@ -1940,8 +1940,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787859529.9434257,
-    "ast_hash": "b02123472c8c96e8df91e044eec27e9a",
+    "mtime": 1787865480.7764244,
+    "ast_hash": "46b62a5c981682e7b7e4828431a8f272",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1965,8 +1965,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1787859569.4478507,
-    "ast_hash": "a0ecbc0b4acd4630016a41395c5184fb",
+    "mtime": 1787865501.841711,
+    "ast_hash": "f091d750da7e4c228372d2a1ee0e3fd3",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.2.md": {
@@ -5975,8 +5975,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/TaxidermyTableBlock.java": {
-    "mtime": 1787847678.455261,
-    "ast_hash": "e2dd92e06a70233cd00e007fbe0b814b",
+    "mtime": 1787865285.2739925,
+    "ast_hash": "11deeecd2db3aa848db1cb7b342c46ba",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/entity/MeatGrinderBlockEntity.java": {
@@ -6270,8 +6270,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/custom/taxidermy_table.json": {
-    "mtime": 1787857921.1142359,
-    "ast_hash": "8022cb9f812dc930b9d4ab29d045b3bf",
+    "mtime": 1787862178.4922469,
+    "ast_hash": "5e198e8c6fb7e97c76b20dad5d0619d1",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/custom/taxidermy_table_bounding.json": {
@@ -8682,6 +8682,36 @@
   "src/main/resources/assets/slaughter_hide/textures/block/wooden_butchers_table_warped_middle.png": {
     "mtime": 318207600.0,
     "ast_hash": "e370fa6ff695b6dd4a138b58565fae3a",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/TaxidermyTableExtensionBlock.java": {
+    "mtime": 1787865252.3913476,
+    "ast_hash": "7e05cc4625197ee3c8871fc79deffe90",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/taxidermy_table_extension.json": {
+    "mtime": 1787865314.8986096,
+    "ast_hash": "e2850744b35acdd1030e15571290a582",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/taxidermy_table_extension.json": {
+    "mtime": 1787865314.8996124,
+    "ast_hash": "f95e0c7b506042f111cf5db2162ddb06",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/taxidermy_table_extension.json": {
+    "mtime": 1787865314.8996124,
+    "ast_hash": "2ddf17937e7c63b159f7c4b8423622c0",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.42.md": {
+    "mtime": 1787862445.0360518,
+    "ast_hash": "f5a77c56a16452854b450965c63ef0b0",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.43.md": {
+    "mtime": 1787865480.8257167,
+    "ast_hash": "ff67f50ce49bbc48c987867e8d7ed7ac",
     "semantic_hash": ""
   }
 }
