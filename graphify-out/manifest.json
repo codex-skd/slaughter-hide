@@ -1,27 +1,12 @@
 {
-  "add_corpse_builders.py": {
-    "mtime": 1787589982.7681453,
-    "ast_hash": "5d8513c0e66894b8fbdb1f185a9f7930",
-    "semantic_hash": ""
-  },
   "build.gradle": {
     "mtime": 1787738074.365255,
     "ast_hash": "8a2d38fc3e4770396c8de3dd954362a5",
     "semantic_hash": ""
   },
-  "generate_carcasses.py": {
-    "mtime": 1787589982.7746227,
-    "ast_hash": "6e1b4225221d11e8b3948f7e8cb9b239",
-    "semantic_hash": ""
-  },
   "gradlew": {
     "mtime": 1787589982.7746227,
     "ast_hash": "f2d3d383787f61a4a99710ee8d780434",
-    "semantic_hash": ""
-  },
-  "port_assets.py": {
-    "mtime": 1787589982.8209314,
-    "ast_hash": "7752a0320abe511573231ec86c1e2bba",
     "semantic_hash": ""
   },
   "settings.gradle": {
@@ -50,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/SlaughterHide.java": {
-    "mtime": 1787737003.0569363,
-    "ast_hash": "dc296f593a845e870180e5dc78a416e6",
+    "mtime": 1787849500.317386,
+    "ast_hash": "6d869b2b760278f40f022e516642110f",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/CarcassBlock.java": {
@@ -105,8 +90,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/CarcassBleedingHandler.java": {
-    "mtime": 1787590251.6211689,
-    "ast_hash": "4c6ac4a4d42317342bfd13f97819cd0d",
+    "mtime": 1787848923.6240218,
+    "ast_hash": "ac4e952d515a5349aa98e20669167219",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/handler/CarcassCutupHandler.java": {
@@ -135,23 +120,23 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlockEntities.java": {
-    "mtime": 1787759030.6559446,
-    "ast_hash": "9c162491d7862445cd5408d9e5e5f5c9",
+    "mtime": 1787847776.1943028,
+    "ast_hash": "385b8954b123c8bff97a2cf8b6f832ea",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModBlocks.java": {
-    "mtime": 1787831130.644742,
-    "ast_hash": "8f20942380cc8a5d9417e2c66c43eeb8",
+    "mtime": 1787849439.7356703,
+    "ast_hash": "6d63fbac0e46338307c41f9ce12a9997",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
-    "mtime": 1787832500.2449203,
-    "ast_hash": "4cf69d513a42c6fbdda952efe9e44e0b",
+    "mtime": 1787848884.2921464,
+    "ast_hash": "13ac5fb399921010a7007ab30bc84eb4",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787832403.3473191,
-    "ast_hash": "7601daec4dcec6ed48de0da74905a6c4",
+    "mtime": 1787848875.0945773,
+    "ast_hash": "feb69e98721bcddbb1a2cc093844ee0b",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -167,16 +152,6 @@
   "src/main/java/com/skd/slaughterhide/tag/ModItemTags.java": {
     "mtime": 1787590251.6237276,
     "ast_hash": "75dbdc59380036cd2769bb1a0d1ba454",
-    "semantic_hash": ""
-  },
-  "src/main/java/com/skd/slaughterhide/update_carcasses2.py": {
-    "mtime": 1787589982.8387074,
-    "ast_hash": "222bd04c951e731a31f871376752b4af",
-    "semantic_hash": ""
-  },
-  "src/main/java/com/skd/slaughterhide/update_carcasses_final.py": {
-    "mtime": 1787589982.8397098,
-    "ast_hash": "fc87a810cd14d9d17a4ba9ca93967060",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/blockstates/chicken_carcass.json": {
@@ -610,13 +585,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/en_us.json": {
-    "mtime": 1787832602.151389,
-    "ast_hash": "34614adc67d7a9d1489507424bcd4bf7",
+    "mtime": 1787849099.3471208,
+    "ast_hash": "061ef5213a759f762773fda47142752b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/es_es.json": {
-    "mtime": 1787832621.5853739,
-    "ast_hash": "37bbee894adaa1ed7842a96d3a2885dd",
+    "mtime": 1787849133.0868363,
+    "ast_hash": "56193d39451a3585ccc339812169bc1e",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/chicken_carcass.json": {
@@ -1965,18 +1940,13 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787833352.8507068,
-    "ast_hash": "7e4893ea2d29182c40fd7bd4a85d1eca",
+    "mtime": 1787849826.5221677,
+    "ast_hash": "0c77383ea1a5011997684ba47b7e92b1",
     "semantic_hash": ""
   },
   "README.md": {
     "mtime": 1787757344.3719692,
     "ast_hash": "08f21208b06d4217af557595e6c7a4a6",
-    "semantic_hash": ""
-  },
-  "carcasses_new.txt": {
-    "mtime": 1787589982.7681453,
-    "ast_hash": "4a73b041b9b12df91e1a6f58a736391b",
     "semantic_hash": ""
   },
   "docs/ROADMAP_SLAUGHTER_HIDE.md": {
@@ -2259,11 +2229,6 @@
     "ast_hash": "74c8e431e7dd99395864a8bf468d41e6",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/textures/item/raw_camel_meat.png": {
-    "mtime": 1787589983.1801474,
-    "ast_hash": "e4b32fe6e255e18d31fc60de0889695b",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/textures/item/raw_chicken_leg.png": {
     "mtime": 1787589983.1801474,
     "ast_hash": "3a9688e2ce10a62e86e78d34cbde8089",
@@ -2277,11 +2242,6 @@
   "src/main/resources/assets/slaughter_hide/textures/item/raw_chuck_steak.png": {
     "mtime": 1787589983.1801474,
     "ast_hash": "273575b20daefd45e4929ee8b27fc90c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/raw_fox_meat.png": {
-    "mtime": 1787589983.1811595,
-    "ast_hash": "b1e7568e6627449bfe7272e334e67810",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/textures/item/raw_ham.png": {
@@ -2312,16 +2272,6 @@
   "src/main/resources/assets/slaughter_hide/textures/item/raw_lamb_sirloin.png": {
     "mtime": 1787589983.1824298,
     "ast_hash": "55a704d0695d974edc4024fcea92907a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/raw_ocelot_meat.png": {
-    "mtime": 1787589983.183426,
-    "ast_hash": "124259c14a849dd61d406af6e18932d2",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/raw_panda_meat.png": {
-    "mtime": 1787589983.183426,
-    "ast_hash": "ae288b173843146e70385e271cc76c40",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/textures/item/raw_pork_belly.png": {
@@ -2507,11 +2457,6 @@
   "src/main/resources/data/slaughter_hide/recipes/dragonscaleblockrecipe.json": {
     "mtime": 1787589983.2878134,
     "ast_hash": "d2fdae6cee227caa83d41c7b400b1bbf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/data/slaughter_hide/recipes/endermanheartrecipe.json": {
-    "mtime": 1787589983.288817,
-    "ast_hash": "61c06742120da1ece3095dcdf7ebd8b3",
     "semantic_hash": ""
   },
   "src/main/resources/data/slaughter_hide/recipes/freezercrafting.json": {
@@ -5175,8 +5120,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/ClientSetup.java": {
-    "mtime": 1787736992.6559286,
-    "ast_hash": "74ceef48cc3195070cb255c04cf8320d",
+    "mtime": 1787849399.221711,
+    "ast_hash": "8266130e9a4d5fd64a40acdb1323dd4a",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/block/FreezerBlock.java": {
@@ -5200,8 +5145,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModMenus.java": {
-    "mtime": 1787698844.1511686,
-    "ast_hash": "fbfd51a0276e2f1add2ea7587263e0a7",
+    "mtime": 1787847795.6795654,
+    "ast_hash": "6beee2e878d98f3dfee17658f1d2faa3",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModParticleTypes.java": {
@@ -5229,64 +5174,9 @@
     "ast_hash": "bfc80c7d9a47f6c5c448ac5efebcce97",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/heart.json": {
-    "mtime": 1787685395.3814738,
-    "ast_hash": "38350f8ee338d40721b9b6a461a15ad4",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/intestines.json": {
-    "mtime": 1787685397.199451,
+    "mtime": 1787836874.7492821,
     "ast_hash": "8c538b8371e824e6bab3538072c74a4e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/kidney.json": {
-    "mtime": 1787685397.6533806,
-    "ast_hash": "3e7f25861402321f1c0b2bc94d89721e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/liver.json": {
-    "mtime": 1787685398.5361302,
-    "ast_hash": "fe63836f7e78e1801405dbb8f7ba7c47",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/lungs.json": {
-    "mtime": 1787685399.4203048,
-    "ast_hash": "800975525daa530639bb0415b1db6dee",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/rotten_heart.json": {
-    "mtime": 1787685401.462771,
-    "ast_hash": "f26e5ecbfe55eeae749df91370fcc90c",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/rotten_intestines.json": {
-    "mtime": 1787685402.5083334,
-    "ast_hash": "7a08dff7404f4917ba6cf629b98c6f9b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/rotten_kidney.json": {
-    "mtime": 1787685403.5140536,
-    "ast_hash": "98f44ce5edca6c30d563db860bbaf452",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/rotten_liver.json": {
-    "mtime": 1787685404.7099035,
-    "ast_hash": "9e1a1e69e0fbb465b5cff85c225e11d6",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/rotten_lungs.json": {
-    "mtime": 1787685405.8251686,
-    "ast_hash": "99c1b7219dee8102b357b6c0af57e540",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/rotten_stomach.json": {
-    "mtime": 1787685406.8152702,
-    "ast_hash": "7c6bbd3daf73135355fd0d6d047aea09",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/stomach.json": {
-    "mtime": 1787685400.3452077,
-    "ast_hash": "37bc441ae87e2598c438daefc76f81a5",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/freezer.json": {
@@ -5349,64 +5239,9 @@
     "ast_hash": "c7d1a8d9c4ed4bc5cb641513a5d30394",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/models/item/heart.json": {
-    "mtime": 1787685377.6726465,
-    "ast_hash": "41cb8b07cfdec436386d6f3cc667b41b",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/models/item/intestines.json": {
-    "mtime": 1787685378.4404356,
+    "mtime": 1787836874.7932315,
     "ast_hash": "6bddb5792d27015eacaf24350c22af35",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/kidney.json": {
-    "mtime": 1787685379.7303805,
-    "ast_hash": "6244e501eceb31db9e472753b93d19da",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/liver.json": {
-    "mtime": 1787685380.382478,
-    "ast_hash": "bc59d5254f59df7bd17bfb9f527f2273",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/lungs.json": {
-    "mtime": 1787685381.8072853,
-    "ast_hash": "721e385d9ce08486ccbc06a1bc59ba2b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/rotten_heart.json": {
-    "mtime": 1787685384.3051555,
-    "ast_hash": "a992099a83b36ba83068f82e5e16a3f8",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/rotten_intestines.json": {
-    "mtime": 1787685384.5347123,
-    "ast_hash": "75372535f07078187c587853a88d9d8d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/rotten_kidney.json": {
-    "mtime": 1787685385.8971162,
-    "ast_hash": "2d4992bd228b10b64425166d1e51cd08",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/rotten_liver.json": {
-    "mtime": 1787685386.9696622,
-    "ast_hash": "94d0c048c64e6d08194695d16ba43e0a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/rotten_lungs.json": {
-    "mtime": 1787685388.1071315,
-    "ast_hash": "0ac9fc83e175e427465d66dca1e625e3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/rotten_stomach.json": {
-    "mtime": 1787685389.070758,
-    "ast_hash": "95778eeb661e8539293cdb344ae90629",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/stomach.json": {
-    "mtime": 1787685382.5992143,
-    "ast_hash": "59bcd6658a22260d3168252c00d3b0d9",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/particles/freezersmoke.json": {
@@ -5439,64 +5274,9 @@
     "ast_hash": "913fb566405065490a1206ef8fbe6c56",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/textures/item/heart.png": {
-    "mtime": 1787685706.108776,
-    "ast_hash": "e63c1a9f203b5e24d065c3dfb028ced3",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/textures/item/intestines.png": {
-    "mtime": 1787685706.1625338,
+    "mtime": 1787836867.4793441,
     "ast_hash": "4b890efdaea2078ba6707e5bc2ad359d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/kidney.png": {
-    "mtime": 1787685706.2060258,
-    "ast_hash": "ef0a07c05d14f3a3f89ec1dbb5579973",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/liver.png": {
-    "mtime": 1787685706.2534633,
-    "ast_hash": "0c01f53b77f8b704f9f134b980626f2e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/lungs.png": {
-    "mtime": 1787685706.3019695,
-    "ast_hash": "a6c8478dbbc699fdb6bdb4a92274d188",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/rotten_heart.png": {
-    "mtime": 1787685706.3922546,
-    "ast_hash": "9f0ba3bb18ff95a2ebcaf5efef823710",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/rotten_intestines.png": {
-    "mtime": 1787685706.4268346,
-    "ast_hash": "9e689a85c4ef3e8d50bf809749b93a05",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/rotten_kidney.png": {
-    "mtime": 1787685706.456715,
-    "ast_hash": "606cafaeecb41e91571d23637f7ee111",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/rotten_liver.png": {
-    "mtime": 1787685706.504839,
-    "ast_hash": "23a2b923c00dd069dc70242f06f47867",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/rotten_lungs.png": {
-    "mtime": 1787685706.5467057,
-    "ast_hash": "71855c6436ce2853267f2a0a90553420",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/rotten_stomach.png": {
-    "mtime": 1787685706.5938983,
-    "ast_hash": "621a997fe37a9b8f1f4bf82983e19db3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/stomach.png": {
-    "mtime": 1787685706.3467755,
-    "ast_hash": "58d26c7379e05f09631e405854c4dafe",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/textures/particle/freezersmoke_1.png": {
@@ -5749,89 +5529,9 @@
     "ast_hash": "da67b28d3401ee3d8f951e556c6dc7a7",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/items/raw_bat_meat.json": {
-    "mtime": 1787745315.2332234,
-    "ast_hash": "f30f01bfeb3dc32a51886b215552ae11",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_camel_meat.json": {
-    "mtime": 1787745315.2663043,
-    "ast_hash": "88b762f25aedbd2f18421b07afe61fc7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_creeper_leg.json": {
-    "mtime": 1787745315.3000202,
-    "ast_hash": "4cfd4687aba8e5c63db693ec31e4b0ee",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_creeper_steak.json": {
-    "mtime": 1787745315.333338,
-    "ast_hash": "2838c5095b9b2aa71a351a80228f7379",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_dolphin_meat.json": {
-    "mtime": 1787745315.3676212,
-    "ast_hash": "ee985e4a21a376f03999f874503828c0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_enderman_steak.json": {
-    "mtime": 1787745315.4330702,
-    "ast_hash": "e002f45f24610349070732d8a77bce61",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_endermite_chunks.json": {
-    "mtime": 1787754008.6276286,
-    "ast_hash": "e9d409c8649a72c6bcf8e383e61e26b7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_fox_meat.json": {
-    "mtime": 1787745315.4738243,
-    "ast_hash": "1e8b55a4b1107b83e38dc194d4bd3c27",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_hoglin_chunk.json": {
-    "mtime": 1787745315.497535,
-    "ast_hash": "761831c23f8f5c6bba79f1554c97ba93",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_ocelot_meat.json": {
-    "mtime": 1787745315.568085,
-    "ast_hash": "8675cd3dce6170295eccd203664c23bf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_panda_steak.json": {
-    "mtime": 1787745315.5915103,
-    "ast_hash": "3e46c377c88776a0cd4f4400d4c95613",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/items/raw_polar_bear_meat.json": {
     "mtime": 1787745315.6157377,
     "ast_hash": "ba287073dc98eb8769538ecd09e08cc8",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_pufferfish.json": {
-    "mtime": 1787745315.6502955,
-    "ast_hash": "d82dd4b1ea776fd272846eaf0032cccd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_silverfish_chunks.json": {
-    "mtime": 1787754008.6276286,
-    "ast_hash": "4c20402bebcb50b4797dcfa41f33fd9a",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_sniffer_steak.json": {
-    "mtime": 1787745315.7054257,
-    "ast_hash": "dc43db7a575714ab63944a4fa13957c5",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_strider_meat.json": {
-    "mtime": 1787745315.7396326,
-    "ast_hash": "748c65b34c8d27ceedd7dba97ada124b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/items/raw_wolf_meat.json": {
-    "mtime": 1787745315.8061788,
-    "ast_hash": "1451e8f88bbafd0dd0fa8afdfd074942",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/items/rope.json": {
@@ -5914,84 +5614,9 @@
     "ast_hash": "9d475218eabc0ccabd720e964e59850f",
     "semantic_hash": ""
   },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_bat_meat.json": {
-    "mtime": 1787745315.2512138,
-    "ast_hash": "c30f18f9cb1d39ede6e6d744d1b1c8c4",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_camel_meat.json": {
-    "mtime": 1787745315.2771938,
-    "ast_hash": "28e98ade0a01d86aced65fe5045ca895",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_creeper_leg.json": {
-    "mtime": 1787745315.320541,
-    "ast_hash": "375e1bf5559a2ece8e8b7dce6f63b9fd",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_creeper_steak.json": {
-    "mtime": 1787745315.3536663,
-    "ast_hash": "75fde1693b003a08f06f569a3814b0db",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_dolphin_meat.json": {
-    "mtime": 1787745315.3987687,
-    "ast_hash": "5d1212663f440ff3a2d81e59a962ab58",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_enderman_steak.json": {
-    "mtime": 1787745315.4544184,
-    "ast_hash": "bb77bd329f3a4744b7214968c8cf1ed3",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_fox_meat.json": {
-    "mtime": 1787745315.4869921,
-    "ast_hash": "984489073c78697e18ec9c70c34fce40",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_hoglin_chunk.json": {
-    "mtime": 1787745315.5197086,
-    "ast_hash": "87f9700eb977e4222ba6998f1163ec2e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_ocelot_meat.json": {
-    "mtime": 1787745315.5777805,
-    "ast_hash": "9e3f8bb4515956eadee6e4780eb7950e",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_panda_steak.json": {
-    "mtime": 1787745315.601763,
-    "ast_hash": "2ca4eddd46266f5fe759f444e57613f0",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/slaughter_hide/models/item/raw_polar_bear_meat.json": {
     "mtime": 1787745315.639486,
     "ast_hash": "94730b72278e929052f53a0e98f6fe2b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_pufferfish.json": {
-    "mtime": 1787745315.6787403,
-    "ast_hash": "c9ff7c656743c941658c494b3fa1db94",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_sniffer_steak.json": {
-    "mtime": 1787745315.7253292,
-    "ast_hash": "3cd3d6e340f429a019cd5da4717df8db",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_strider_meat.json": {
-    "mtime": 1787745315.7599096,
-    "ast_hash": "a09936e09a643afd9af37c4dace524b7",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/models/item/raw_wolf_meat.json": {
-    "mtime": 1787745315.8330722,
-    "ast_hash": "27597c0b6c7b336053200bb8ba7ceff0",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/bat_meat.png": {
-    "mtime": 1787745315.2512138,
-    "ast_hash": "b54dd4a924c6b399c52f760127cd1af5",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/textures/item/bear_meat.png": {
@@ -6072,51 +5697,6 @@
   "src/main/resources/assets/slaughter_hide/textures/item/cooked_t_bone_steak.png": {
     "mtime": 1787745308.1697958,
     "ast_hash": "eb1906e737900220609e5d0facea3d67",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/creeper_leg.png": {
-    "mtime": 1787745315.320541,
-    "ast_hash": "ac4f123ae561280238475c4acff27d66",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/creeper_meat.png": {
-    "mtime": 1787745315.3526626,
-    "ast_hash": "d1b2b808f9bf0b83e26308841a00e605",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/enderman_meat.png": {
-    "mtime": 1787745315.4538977,
-    "ast_hash": "3c27c76d7cd53f1599f63198aff16a2b",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/hogling_chunk.png": {
-    "mtime": 1787745315.518702,
-    "ast_hash": "d15ea8531d0b464d2f83b692f8fc3ecf",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/raw_dolphin_meat.png": {
-    "mtime": 1787745315.3977633,
-    "ast_hash": "dece7fd805494a85bf559a2f7b211330",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/raw_pufferfish.png": {
-    "mtime": 1787745315.6777346,
-    "ast_hash": "6e116950a986dbcfc3b016ffefae1c3f",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/sniffer_meat.png": {
-    "mtime": 1787745315.7248025,
-    "ast_hash": "583ab90db96529a4434af9a9036cf35d",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/strider_meat.png": {
-    "mtime": 1787745315.7599096,
-    "ast_hash": "7996ae62c40a605ba765d79ffafa2b74",
-    "semantic_hash": ""
-  },
-  "src/main/resources/assets/slaughter_hide/textures/item/wolf_meat.png": {
-    "mtime": 1787745315.832563,
-    "ast_hash": "84d0d0154d5a65b2a892ab608770b98c",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.34.md": {
@@ -6372,6 +5952,571 @@
   "src/main/resources/assets/slaughter_hide/textures/item/cooked_chicken_wing.png": {
     "mtime": 1787832559.014535,
     "ast_hash": "e1aa2c44d7e4bd639f3a96fc6ba2f42e",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/BloodGrateBlock.java": {
+    "mtime": 1787849747.5914037,
+    "ast_hash": "984b4338ec3e4f63e0882d3da6666e3c",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/BloodPuddleBlock.java": {
+    "mtime": 1787849566.0624979,
+    "ast_hash": "ca1381941715b76cdb330214336b995e",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/MeatGrinderBlock.java": {
+    "mtime": 1787836464.2976832,
+    "ast_hash": "1d72e0007d6ab8b44f0cc9e418ec1d67",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/PestleAndMortarBlock.java": {
+    "mtime": 1787837925.7315507,
+    "ast_hash": "4eb97c1cf298d0e3990bb1a8e7e8e5db",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/TaxidermyTableBlock.java": {
+    "mtime": 1787847678.455261,
+    "ast_hash": "e2dd92e06a70233cd00e007fbe0b814b",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/entity/MeatGrinderBlockEntity.java": {
+    "mtime": 1787836554.6482196,
+    "ast_hash": "64c61205c95e55d58a8c8d1c74709d52",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/entity/PestleAndMortarBlockEntity.java": {
+    "mtime": 1787846473.1007085,
+    "ast_hash": "0613d3e5218bc060b4628b818ae8405c",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/block/entity/TaxidermyTableBlockEntity.java": {
+    "mtime": 1787847711.4946463,
+    "ast_hash": "5ca4568fd25af7f956b49ab9a795e6a1",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/fluid/BloodFluid.java": {
+    "mtime": 1787848640.8195684,
+    "ast_hash": "d9e0b8e1cd9280316a1666edc628bb3d",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/fluid/InfectedBloodFluid.java": {
+    "mtime": 1787848647.9604423,
+    "ast_hash": "822d780268ba513bb1096b5d3cd85409",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/fluid/types/BloodFluidType.java": {
+    "mtime": 1787848572.6274755,
+    "ast_hash": "f78e3d9b522ff8d0915a42cd74fe542b",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/fluid/types/InfectedBloodFluidType.java": {
+    "mtime": 1787848576.577014,
+    "ast_hash": "4f83b6b996e6cf4b5de7432b003bd0f6",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/init/ModFluidTypes.java": {
+    "mtime": 1787848657.5196204,
+    "ast_hash": "11bfd5a5757c798ebe12c206ae48fec9",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/init/ModFluids.java": {
+    "mtime": 1787848662.4646964,
+    "ast_hash": "6066bdb521e9bc359d35afb39b1b1dc6",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/menu/MeatGrinderMenu.java": {
+    "mtime": 1787837336.2167342,
+    "ast_hash": "b2c3f3844b0110d6c65ac2c59f134808",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/menu/MeatGrinderScreen.java": {
+    "mtime": 1787836639.5385294,
+    "ast_hash": "867cb834810b9161ef9fbf51ad45d8ac",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/menu/PestleAndMortarMenu.java": {
+    "mtime": 1787837953.3036273,
+    "ast_hash": "e13aaf81986bb9f523b283afc66912ad",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/menu/PestleAndMortarScreen.java": {
+    "mtime": 1787837956.886407,
+    "ast_hash": "f222248f0a64d86841ef1974fb67895e",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/menu/TaxidermyTableMenu.java": {
+    "mtime": 1787847722.468633,
+    "ast_hash": "4619b8cf0dfe37527895abb51d0d964b",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/slaughterhide/menu/TaxidermyTableScreen.java": {
+    "mtime": 1787847725.001094,
+    "ast_hash": "abc8d42e396700ef2597a8558d5fa4a9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/blood.json": {
+    "mtime": 1787849015.3787587,
+    "ast_hash": "dd80ee3619edf38d0858d06202861ff6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/blood_grate.json": {
+    "mtime": 1787849019.5454426,
+    "ast_hash": "60ae70670f44692924708fef76abe865",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/blood_puddle.json": {
+    "mtime": 1787849020.5719213,
+    "ast_hash": "cf8d41c096bcc676a8b062b2a9b9b183",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/infected_blood.json": {
+    "mtime": 1787849017.331503,
+    "ast_hash": "57d8ede9285fd81bf667995df2290533",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/meat_grinder.json": {
+    "mtime": 1787836756.7911468,
+    "ast_hash": "d873d66a2bd36553e5d5fafac22170ca",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/pestle_and_mortar.json": {
+    "mtime": 1787837998.4885068,
+    "ast_hash": "6e819601374ad439d270c61a002a6983",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/blockstates/taxidermy_table.json": {
+    "mtime": 1787847856.0123556,
+    "ast_hash": "41ff1e0b5d6615b3bf0acf7ab2ae2e61",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/blood_bucket.json": {
+    "mtime": 1787849064.1563785,
+    "ast_hash": "d58407f113ea95eead97bb6abee57e74",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/blood_grate.json": {
+    "mtime": 1787849066.3586464,
+    "ast_hash": "6fbbed7ea77deb920d738e57b616bd06",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/blood_puddle.json": {
+    "mtime": 1787849067.5550954,
+    "ast_hash": "ddb5438a1f31bc49bc79b265b5eeab04",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/bottle_of_blood.json": {
+    "mtime": 1787836874.888009,
+    "ast_hash": "fdc4c4c268ff57920ef82a972ad7fb8b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/bottle_of_infected_blood.json": {
+    "mtime": 1787849069.330143,
+    "ast_hash": "27338ae461c226e0911a002b36f97bc1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/infected_blood_bucket.json": {
+    "mtime": 1787849065.2842896,
+    "ast_hash": "1306ac89dcdca24869bad5fbd300e592",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/meat_grinder.json": {
+    "mtime": 1787836782.3428695,
+    "ast_hash": "3ab670e15602300c17f9d69fd38cee70",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/meat_scraps.json": {
+    "mtime": 1787836874.970336,
+    "ast_hash": "23fa9e354141c748eb519e4c9ed868e0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/pestle_and_mortar.json": {
+    "mtime": 1787838004.7708197,
+    "ast_hash": "2e786955097c71a7e94b898808bfbbcc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/raw_beef_mince.json": {
+    "mtime": 1787836875.1860714,
+    "ast_hash": "065fc6d9674727f54ba05d12ecc4cde5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/raw_blood_sausage.json": {
+    "mtime": 1787836875.121117,
+    "ast_hash": "d8d7c079cdf5c1639a9f9519f4b8f429",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/raw_lamb_mince.json": {
+    "mtime": 1787836875.273283,
+    "ast_hash": "10bc9a0d52d5857540eaa778830b6780",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/raw_sausage.json": {
+    "mtime": 1787836875.050403,
+    "ast_hash": "f9035d14ac0d957bda2c067810ae7582",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/sausage_attachment.json": {
+    "mtime": 1787836874.8255792,
+    "ast_hash": "c584371ee14c1e52c29200c0165b5528",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/taxidermy_table.json": {
+    "mtime": 1787847862.6933272,
+    "ast_hash": "a744b4dd0c9cfb8aa13f0d8629bbbdf3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/blood.json": {
+    "mtime": 1787849024.3846176,
+    "ast_hash": "e2cb3dabad97c7cfdb20afb9aa66d6ef",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/blood_grate.json": {
+    "mtime": 1787849026.3738003,
+    "ast_hash": "175638f0ba65e39ee43c812e6d7f4ef3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/blood_puddle.json": {
+    "mtime": 1787849027.4004412,
+    "ast_hash": "175638f0ba65e39ee43c812e6d7f4ef3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/infected_blood.json": {
+    "mtime": 1787849025.2743635,
+    "ast_hash": "7413e7dc8587982be51bf8fb4ad32910",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/meat_grinder.json": {
+    "mtime": 1787836758.6072745,
+    "ast_hash": "b33ea132182c9528139cd211e589a3d6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/meat_grinder_0.json": {
+    "mtime": 1787836760.6058726,
+    "ast_hash": "1ccd48a8197d81d4ea86037601fecae6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/meat_grinder_1.json": {
+    "mtime": 1787836762.250373,
+    "ast_hash": "08a12f1ee4f20e39f8880f5a9b7ac29c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/meat_grinder_2.json": {
+    "mtime": 1787836764.07647,
+    "ast_hash": "176e8ddaff09d6bdaee59e808cd20a86",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/meat_grinder_3.json": {
+    "mtime": 1787836766.8594096,
+    "ast_hash": "4d15f6746ff7e40ce4538bba36ab7a38",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/meat_grinder_4.json": {
+    "mtime": 1787836768.4444876,
+    "ast_hash": "f2dce74c7a61c6dbf4c3e274e76fa9aa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/pestle_and_mortar.json": {
+    "mtime": 1787838000.9912543,
+    "ast_hash": "a9f48b7f4d16fa1a7330096e310102bc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/taxidermy_table.json": {
+    "mtime": 1787847857.7175486,
+    "ast_hash": "e0b178678c8fff9693d204aa98bba7fb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/block/taxidermy_table_0.json": {
+    "mtime": 1787847859.565871,
+    "ast_hash": "e0b178678c8fff9693d204aa98bba7fb",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/meat_grinder.json": {
+    "mtime": 1787836731.89039,
+    "ast_hash": "2223cfd60bd2e4d0fa31dbbcc4acd458",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/meat_grinder_bounding.json": {
+    "mtime": 1787836731.9648318,
+    "ast_hash": "c6989e97c45fa6874c93562f9c7393d8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/meat_grinder_meat.json": {
+    "mtime": 1787836732.0422628,
+    "ast_hash": "5d01f5972cf35db1011cdf227977744f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/meat_grinder_sf_empty.json": {
+    "mtime": 1787836732.1379604,
+    "ast_hash": "cc8ae9d863b01383eed8ae753939040c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/meat_grinder_sf_intestines_and_meat.json": {
+    "mtime": 1787836732.2159905,
+    "ast_hash": "b48195d850d909d1187e48805607ac2c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/meat_grinder_sf_intestines_only.json": {
+    "mtime": 1787836732.2888799,
+    "ast_hash": "80d6518931039791d04381a77047a643",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/meat_grinder_sf_meat_only.json": {
+    "mtime": 1787836732.368559,
+    "ast_hash": "366a2e14218a4c6d39befd8fcaa58a90",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/pestle_and_mortar.json": {
+    "mtime": 1787837990.6222458,
+    "ast_hash": "9893f3b14266fb9705575b9e4468e43e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/taxidermy_table.json": {
+    "mtime": 1787847877.029266,
+    "ast_hash": "6493dce19e2d00fb42f2b2f95dd6957a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/taxidermy_table_bounding.json": {
+    "mtime": 1787847877.9041307,
+    "ast_hash": "f8b684c38a49dd7e16be4503d75a8524",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/taxidermy_table_left.json": {
+    "mtime": 1787847879.3914652,
+    "ast_hash": "09735abdc2e909618f05b2de556ddbfc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/custom/taxidermy_table_right.json": {
+    "mtime": 1787847881.1362572,
+    "ast_hash": "cc0985ebc150f4b8e7861421462225be",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/blood_bucket.json": {
+    "mtime": 1787849044.4969423,
+    "ast_hash": "3071fd81b468be604d6b5631c47ab200",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/blood_grate.json": {
+    "mtime": 1787849046.6153476,
+    "ast_hash": "e43c80fe020627b29ee3c9c90c64893f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/blood_puddle.json": {
+    "mtime": 1787849047.3778906,
+    "ast_hash": "2fc80e6c4a52e1b9982d2173f070e5c4",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/bottle_of_blood.json": {
+    "mtime": 1787836874.921009,
+    "ast_hash": "aca327d32420b30a0d30359f154dbc1b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/bottle_of_infected_blood.json": {
+    "mtime": 1787849048.3218727,
+    "ast_hash": "aca327d32420b30a0d30359f154dbc1b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/infected_blood_bucket.json": {
+    "mtime": 1787849045.491892,
+    "ast_hash": "3071fd81b468be604d6b5631c47ab200",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/meat_grinder.json": {
+    "mtime": 1787836780.017643,
+    "ast_hash": "736a23aa8b016e14d447e32a4e4fc1b2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/meat_scraps.json": {
+    "mtime": 1787836875.0113254,
+    "ast_hash": "9651dfd0b9c811f502bbf433e87fb7cf",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/pestle_and_mortar.json": {
+    "mtime": 1787838003.1735291,
+    "ast_hash": "41de3d93ebfc9f663f351ed597638cae",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/raw_beef_mince.json": {
+    "mtime": 1787836875.2213664,
+    "ast_hash": "c6340249a795a6e87dfcf1cc1cc15109",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/raw_blood_sausage.json": {
+    "mtime": 1787836875.1522136,
+    "ast_hash": "ad8bbf6fd95bece65eebbfa189f07539",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/raw_lamb_mince.json": {
+    "mtime": 1787836875.30997,
+    "ast_hash": "b49374a4061ffd3161af24eaad058883",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/raw_sausage.json": {
+    "mtime": 1787836875.0910637,
+    "ast_hash": "1898b89e2965d311b2f5062d5af7b6a6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/sausage_attachment.json": {
+    "mtime": 1787836874.857952,
+    "ast_hash": "7ee72012cb84a3101b2961f1c486917c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/taxidermy_table.json": {
+    "mtime": 1787847861.6540616,
+    "ast_hash": "4c2514602c81c7f4a4ac1bae75093e6a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/blood_grate.json": {
+    "mtime": 1787849177.0517275,
+    "ast_hash": "97ae1e2e1531cc0900c405fae6c20ddd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/blood_puddle.json": {
+    "mtime": 1787849179.0834818,
+    "ast_hash": "1a8f144b5b001d8b6f9f1270e063d0aa",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/meat_grinder.json": {
+    "mtime": 1787836883.617921,
+    "ast_hash": "4c532077211d935e5a6ba2702929ff48",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/pestle_and_mortar.json": {
+    "mtime": 1787838007.6477985,
+    "ast_hash": "876b3377e525abd6d39bfaab9cff9b58",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/taxidermy_table.json": {
+    "mtime": 1787847896.9822378,
+    "ast_hash": "ac514f029cde4aa4380d785167f0f8d7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/meatgrinderrecipe.json": {
+    "mtime": 1787836886.037645,
+    "ast_hash": "90f1e471f5a53228a5a5e8f641d9f210",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/pestle_and_mortar_recipe.json": {
+    "mtime": 1787846554.9876864,
+    "ast_hash": "8972f564014b1c6a131e2e9ff4736e0a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/taxidermystationrecipe.json": {
+    "mtime": 1787847899.4603493,
+    "ast_hash": "2b7096cbf59ca48440c95246b71ebb48",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/tags/item/crushable_bone.json": {
+    "mtime": 1787838009.377845,
+    "ast_hash": "de411eb2e728eb677ff08229b28b3aa7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/tags/item/skins.json": {
+    "mtime": 1787847901.0664222,
+    "ast_hash": "9a43f8ff13d05bc4d25a8a894c596d29",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/blood_flow.png": {
+    "mtime": 1787848967.6094213,
+    "ast_hash": "460b7e06a85e3705a920bbc58070238f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/blood_still.png": {
+    "mtime": 1787848965.784443,
+    "ast_hash": "0a666151b29e524b60dd22bc6372bb32",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/infected_blood_flow.png": {
+    "mtime": 1787848974.2678757,
+    "ast_hash": "e770454319ec068ae389dc910a420986",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/infected_blood_still.png": {
+    "mtime": 1787848972.4997678,
+    "ast_hash": "c3736890281c810591993b3c4556d72b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/meat_grinder.png": {
+    "mtime": 1787836729.5749433,
+    "ast_hash": "c8efe8973b8828aefc91108d68d9c224",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/meat_grinder_sausage.png": {
+    "mtime": 1787836729.6146307,
+    "ast_hash": "52838e783000f27781f975826608b3f2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/pestle_and_mortar.png": {
+    "mtime": 1787837981.4424298,
+    "ast_hash": "a0d634e2faf82f1d9ba8e2be9fc1e819",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/taxidermy_table.png": {
+    "mtime": 1787847889.1466153,
+    "ast_hash": "ab97c4b957cab3b5808013982c369c30",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/taxidermy_table_front.png": {
+    "mtime": 1787847889.2748823,
+    "ast_hash": "b6bf0f6c2d90af562943aa02a09c2cc6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/taxidermy_table_side.png": {
+    "mtime": 1787847889.239928,
+    "ast_hash": "cf263bbd8e7546f8fee30d2b7841ac0a",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/block/taxidermy_table_top.png": {
+    "mtime": 1787847889.1940956,
+    "ast_hash": "f058c5e2943a0f5df8adcdd348004a75",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/gui/container/meat_grinder.png": {
+    "mtime": 1787836729.5254369,
+    "ast_hash": "b68fa449275a87e141d77ae4cb87c9d9",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/gui/container/pestle_and_mortar.png": {
+    "mtime": 1787837982.60136,
+    "ast_hash": "6b420dee690c1d7cb73502f5edeb2066",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/gui/container/taxidermy_table.png": {
+    "mtime": 1787847890.265306,
+    "ast_hash": "262730ee808e96a9c94eaec76f6fc952",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/bottle_of_blood.png": {
+    "mtime": 1787836867.5864642,
+    "ast_hash": "71af134e1b985ae7ccd818ea49bfdafd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/meat_scraps.png": {
+    "mtime": 1787836867.6236672,
+    "ast_hash": "ea8a4b602bf333313fb2fef38c66799b",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/raw_beef_mince.png": {
+    "mtime": 1787836867.766263,
+    "ast_hash": "f2abb8cadeb13b96d48e06953bc460d1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/raw_blood_sausage.png": {
+    "mtime": 1787836867.7155015,
+    "ast_hash": "760651cfa79c1fc9bfece57f78eac2d3",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/raw_lamb_mince.png": {
+    "mtime": 1787836867.8104134,
+    "ast_hash": "ec9b6af577c1b30e30e8959652288286",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/raw_sausage.png": {
+    "mtime": 1787836867.6711745,
+    "ast_hash": "122a8c3be9816a6295ef265ca1eba963",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/sausage_attachment.png": {
+    "mtime": 1787836867.5337715,
+    "ast_hash": "1e1757f12b644b1a7f65525245d89478",
     "semantic_hash": ""
   }
 }
