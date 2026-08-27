@@ -85,7 +85,7 @@ El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mo
 | Versión | CurseForge file ID | Fecha |
 |---|---|---|
 | `0.0.0-beta.37` | `8748477` | 2026-08-27 (CRASHEA al arrancar, sustituida por beta.38) |
-| `0.0.0-beta.38` | (pendiente) | 2026-08-27 |
+| `0.0.0-beta.38` | `8748711` | 2026-08-27 (hotfix del crash de beta.37) |
 
 ## Rama
 
