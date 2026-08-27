@@ -78,6 +78,8 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_LAMB_LOIN = item("raw_lamb_loin", Item::new);
     public static final DeferredItem<Item> RAW_CHICKEN_LEG = item("raw_chicken_leg", Item::new);
     public static final DeferredItem<Item> RAW_CHICKEN_WING = item("raw_chicken_wing", Item::new);
+    public static final DeferredItem<Item> COOKED_CHICKEN_LEG = item("cooked_chicken_leg", Item::new);
+    public static final DeferredItem<Item> COOKED_CHICKEN_WING = item("cooked_chicken_wing", Item::new);
     public static final DeferredItem<Item> BIRD_FOOT = item("bird_foot", Item::new);
     public static final DeferredItem<Item> WISHBONE = item("wishbone", Item::new);
     // Goat: shares the sheep's lamb cuts and the generic hoof (see goat_cut_*_drop loot tables)
@@ -112,6 +114,7 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_PANDA_STEAK = item("raw_panda_steak", Item::new);
     // Polar Bear
     public static final DeferredItem<Item> RAW_POLAR_BEAR_MEAT = item("raw_polar_bear_meat", Item::new);
+    public static final DeferredItem<Item> COOKED_POLAR_BEAR_MEAT = item("cooked_polar_bear_meat", Item::new);
     // Hoglin
     public static final DeferredItem<Item> RAW_HOGLIN_CHUNK = item("raw_hoglin_chunk", Item::new);
     // Zoglin

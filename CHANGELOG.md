@@ -11,12 +11,18 @@
 ### Add
 
 - **Traducciones del oso polar** en `en_us` + `es_es` (`polar_bear_carcass`, `drained_polar_bear_carcass`, `polar_bear_head`, `polar_bear_head_mount`, `polar_bear_skeleton`, `polar_bear_skin`, bloque+item). Faltaban todas menos `raw_polar_bear_meat` (el oso se re-añadió tras el sync de traducciones de beta.35). `raw_polar_bear_meat` en `es_es` traducido ("Carne de Oso Polar Cruda").
+- **Integración del ciclo completo matar→colgar→sangrar→drenar→cortar para los 7 mobs** (delegado a OpenCode `mimo-v2.5`, verificado por Claude):
+  - `cooked_polar_bear_meat` registrado (faltaba pese a existir el `raw_`): ítem + modelo + item-def + textura `cooked_bear_meat.png` (del dump) + 3 recetas (smelting 275t / smoking 137t / campfire 275t, grupo `polar_bear`) + lang en/es + tab creativa (raw + cooked).
+  - `cooked_chicken_leg` / `cooked_chicken_wing` registrados (el original de Butchery sí los tiene y no se habían portado): ídem, 6 recetas (150/75/150t, grupo `chicken`), texturas md5-idénticas al dump. Conejo: el original no tiene cocinados, no se añade.
+  - `drained_goat_carcass` / `drained_polar_bear_carcass`: loot tables de rotura de bloque que faltaban (stub sin pools, igual que las de los otros 5 mobs y que el dump).
+  - `Carcasses.buildPOLAR_BEAR()`: `sweptVanillaItems` `[COD]` → `[COD, SALMON]` (el oso polar vanilla suelta ambos) + comentario corregido.
+  - Verificado contra la fuente decompilada que pig/sheep/chicken/rabbit/goat tienen `CarcassDefinition`, loot tables, sets de assets y blockstates fieles al original — sin discrepancias.
 
 ### Removed
 
 - **6 ítems `*_goat` fantasma** (`raw_leg_of_lamb_goat`, `raw_lamb_shoulder_goat`, `raw_lamb_rib_goat`, `raw_lamb_sirloin_goat`, `raw_lamb_loin_goat`, `hoof_goat`) — no existen en Butchery original, nada los usa (la cabra comparte los cortes de cordero y el `hoof` genérico). Eliminadas declaraciones en `ModItems.java`, refs en `ModCreativeTabs.java`, los 6 JSON stub y sus claves de idioma. `goat_skin` se mantiene.
 - **Limpieza masiva de residuo del recorte 77→7 mobs** (mark-and-sweep contra los IDs realmente registrados): **1822 archivos** de `assets/`+`data/` — blockstates 174→70, models/block 638→198, models/item 346→159, models/custom 552→168, textures/block 222→95, textures/item 122→91, loot_table/blocks 377→109, recipes 376→96. Sanity check: toda blockstate/itemdef de bloque o ítem registrado se conserva. Incluye la feature "rug" muerta completa (`polarbear_rug`, `goat_rug`, `panda_rug` + sus recetas) y el residuo del rename `polarbear`.
-- **22 claves de idioma huérfanas** (`en_us` + `es_es`) de bloques/ítems ya no registrados (`iron_golem_head_mount`, `ravager_head(_mount)`, `bone_*` tools, `cooked_polar_bear_meat` — este último se re-añadirá al registrar el ítem).
+- **22 claves de idioma huérfanas** (`en_us` + `es_es`) de bloques/ítems ya no registrados (`iron_golem_head_mount`, `ravager_head(_mount)`, `bone_*` tools; `cooked_polar_bear_meat` se elimina aquí y se vuelve a añadir en la sección Add al registrar el ítem).
 - **3 clases Java muertas**: `IronGolemHeadMountBlock`, `RavagerHeadBlock`, `RavagerHeadMountBlock` (solo importadas en `ModBlocks.java`, nunca registradas) + sus imports.
 
 ### Docs

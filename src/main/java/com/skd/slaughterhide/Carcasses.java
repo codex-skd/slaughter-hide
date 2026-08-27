@@ -127,8 +127,8 @@ public final class Carcasses {
                 Carcasses::polar_bearHead,
                 Carcasses::polar_bearHeadMount,
                 state -> state.getValue(CarcassBlockProperty.BLOCKSTATE) == 1 ? polar_bearSkeletonHanging(state) : polar_bearSkeletonLying(state),
-                // polar_bear drops raw_polar_bear_meat
-                java.util.List.of(net.minecraft.world.item.Items.COD), null);
+                // polar_bear drops raw cod and raw salmon; carcass replaces both
+                java.util.List.of(net.minecraft.world.item.Items.COD, net.minecraft.world.item.Items.SALMON), null);
     }
 
     private static void register(CarcassDefinition definition) {
