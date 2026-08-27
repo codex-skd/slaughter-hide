@@ -1,7 +1,7 @@
 # Graph Report - 26.2  (2026-08-27)
 
 ## Corpus Check
-- 1057 files · ~468,868 words
+- 1074 files · ~469,632 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4e6bc021`
+- Built from commit: `bf88c047`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -167,7 +167,7 @@ Nodes (3): DeferredItem, Item, ModItems
 
 ### Community 12 - "Changelog — Slaughter & Hide"
 Cohesion: 0.18
-Nodes (10): [0.0.0-beta.1] - 2026-08-14, [0.0.0-beta.34] - 2026-08-26, [0.0.0-beta.35] - 2026-08-26, [0.0.0-beta.6] - 2026-08-18, Add, Add, Changed (BREAKING), Changelog — Slaughter & Hide (+2 more)
+Nodes (10): [0.0.0-beta.1] - 2026-08-14, [0.0.0-beta.34] - 2026-08-26, [0.0.0-beta.3] - 2026-08-15, [0.0.0-beta.6] - 2026-08-18, Add, Add, Add, Changelog — Slaughter & Hide (+2 more)
 
 ### Community 13 - "SlaughterHide.java"
 Cohesion: 0.11
@@ -322,8 +322,8 @@ Cohesion: 0.33
 Nodes (7): ClingFilmBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
 
 ### Community 81 - "CookedBloodSausagesBlock.java"
-Cohesion: 0.31
-Nodes (8): Block, CookedBloodSausagesBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
+Cohesion: 0.33
+Nodes (7): CookedBloodSausagesBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
 
 ### Community 82 - "CookedSausagesBlock.java"
 Cohesion: 0.33
@@ -342,8 +342,8 @@ Cohesion: 0.33
 Nodes (7): DragonScaleBlock, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape
 
 ### Community 86 - "RawBloodSausagesBlock.java"
-Cohesion: 0.33
-Nodes (7): BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape, RawBloodSausagesBlock
+Cohesion: 0.31
+Nodes (8): Block, BlockGetter, BlockPos, BlockState, CollisionContext, Override, VoxelShape, RawBloodSausagesBlock
 
 ### Community 87 - "RawSausagesBlock.java"
 Cohesion: 0.33
@@ -439,7 +439,7 @@ Nodes (3): [0.0.0-beta.36] - 2026-08-26, Changed (BREAKING), Fix
 
 ### Community 122 - ".witchHanging"
 Cohesion: 0.67
-Nodes (3): [0.0.0-beta.3] - 2026-08-15, Add, Fix
+Nodes (3): [0.0.0-beta.35] - 2026-08-26, Changed (BREAKING), Fix
 
 ### Community 124 - ".zombie_horseHanging"
 Cohesion: 0.67

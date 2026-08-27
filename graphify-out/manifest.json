@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/Carcasses.java": {
-    "mtime": 1787771704.2369266,
-    "ast_hash": "ead8ec872681297779881429734bd8ff",
+    "mtime": 1787832673.5221813,
+    "ast_hash": "713b86f2ea0e1d382b4af30b58610c81",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/ServerWorkScheduler.java": {
@@ -145,13 +145,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModCreativeTabs.java": {
-    "mtime": 1787828192.3925135,
-    "ast_hash": "11d5d0506cfbcc723d724f929ecbddd1",
+    "mtime": 1787832500.2449203,
+    "ast_hash": "4cf69d513a42c6fbdda952efe9e44e0b",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/init/ModItems.java": {
-    "mtime": 1787828185.5281742,
-    "ast_hash": "e536343d1d92bded3bf530dfa138eca7",
+    "mtime": 1787832403.3473191,
+    "ast_hash": "7601daec4dcec6ed48de0da74905a6c4",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/slaughterhide/item/ButcherToolItem.java": {
@@ -610,13 +610,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/en_us.json": {
-    "mtime": 1787831057.8867533,
-    "ast_hash": "1d1151fa2ea341b0305a92bb4cee637b",
+    "mtime": 1787832602.151389,
+    "ast_hash": "34614adc67d7a9d1489507424bcd4bf7",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/lang/es_es.json": {
-    "mtime": 1787831057.8902915,
-    "ast_hash": "844638d8d8d7a7068701dae16593a2f8",
+    "mtime": 1787832621.5853739,
+    "ast_hash": "37bbee894adaa1ed7842a96d3a2885dd",
     "semantic_hash": ""
   },
   "src/main/resources/assets/slaughter_hide/models/block/chicken_carcass.json": {
@@ -1965,8 +1965,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787831277.189529,
-    "ast_hash": "82ef794f6b0b804c16d2988b5c43b4e7",
+    "mtime": 1787833352.8507068,
+    "ast_hash": "7e4893ea2d29182c40fd7bd4a85d1eca",
     "semantic_hash": ""
   },
   "README.md": {
@@ -6272,6 +6272,106 @@
   "src/main/resources/assets/slaughter_hide/textures/item/goat_fur.png": {
     "mtime": 1787828220.339036,
     "ast_hash": "9acf65d5b895104217f28edc1f7881ac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/cooked_chicken_leg.json": {
+    "mtime": 1787832521.8424613,
+    "ast_hash": "7d6e97de87d8315c95921c00afebbc23",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/cooked_chicken_wing.json": {
+    "mtime": 1787832524.5687444,
+    "ast_hash": "a1bec4953994c01c3f3a1cfec32af722",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/items/cooked_polar_bear_meat.json": {
+    "mtime": 1787832519.0285237,
+    "ast_hash": "aa08cd6be404959dc1b767accfa9faa7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/cooked_chicken_leg.json": {
+    "mtime": 1787832520.3176293,
+    "ast_hash": "12b6831f9a6174eb82057e34226fffed",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/cooked_chicken_wing.json": {
+    "mtime": 1787832523.0063362,
+    "ast_hash": "071064cc7778d9c1c517c0b01ceabf5f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/models/item/cooked_polar_bear_meat.json": {
+    "mtime": 1787832517.5184166,
+    "ast_hash": "061d93dfa21e9f0cc7e4b16429919973",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_goat_carcass.json": {
+    "mtime": 1787832640.7361324,
+    "ast_hash": "529cd5c498d019b14e5606d06a5f5da2",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/loot_table/blocks/drained_polar_bear_carcass.json": {
+    "mtime": 1787832642.2961016,
+    "ast_hash": "7e6d2db33bb903c4447ef8099ebedfed",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenlegrecipe_1.json": {
+    "mtime": 1787832571.0357141,
+    "ast_hash": "552a4382539041fc65ea7f9e50d4cb66",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenlegrecipe_2.json": {
+    "mtime": 1787832573.8265078,
+    "ast_hash": "3f14639105c523896438e7bbd7cd4f35",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenlegrecipe_3.json": {
+    "mtime": 1787832576.0437462,
+    "ast_hash": "6412274454a0a4dd41c2da17414a9339",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenwingrecipe_1.json": {
+    "mtime": 1787832578.4866192,
+    "ast_hash": "2d9a6c7e7c02540a3baea066278a4fb8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenwingrecipe_2.json": {
+    "mtime": 1787832580.583635,
+    "ast_hash": "2bd9774edfcc206361cd63b328705a86",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/chickenwingrecipe_3.json": {
+    "mtime": 1787832583.2819128,
+    "ast_hash": "be3a1b4f407389708369ed425dbcf526",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/polarbearmeatrecipe_1.json": {
+    "mtime": 1787832564.3702395,
+    "ast_hash": "310a13686692dbaca7168c14890d2c0e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/polarbearmeatrecipe_2.json": {
+    "mtime": 1787832566.5840015,
+    "ast_hash": "aa48d010435861255351e4d7b10d32e5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/slaughter_hide/recipes/polarbearmeatrecipe_3.json": {
+    "mtime": 1787832568.6131563,
+    "ast_hash": "19e27bfc076636809b3ef1860e1f150d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/cooked_bear_meat.png": {
+    "mtime": 1787832558.7875655,
+    "ast_hash": "37162fb27391070d54eff363cc01ff5d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/cooked_chicken_leg.png": {
+    "mtime": 1787832558.8244388,
+    "ast_hash": "de6f00a71fbdb2e0c82c9dd224b89c90",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/slaughter_hide/textures/item/cooked_chicken_wing.png": {
+    "mtime": 1787832559.014535,
+    "ast_hash": "e1aa2c44d7e4bd639f3a96fc6ba2f42e",
     "semantic_hash": ""
   }
 }
