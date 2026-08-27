@@ -4,6 +4,7 @@ import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.menu.FreezerMenu;
 import com.skd.slaughterhide.menu.MeatGrinderMenu;
 import com.skd.slaughterhide.menu.PestleAndMortarMenu;
+import com.skd.slaughterhide.menu.TaxidermyTableMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.MenuType;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
@@ -25,6 +26,10 @@ public final class ModMenus {
     public static final DeferredHolder<MenuType<?>, MenuType<PestleAndMortarMenu>> PESTLE_AND_MORTAR =
             REGISTRY.register("pestle_and_mortar",
                     () -> IMenuTypeExtension.create(PestleAndMortarMenu::new));
+
+    public static final DeferredHolder<MenuType<?>, MenuType<TaxidermyTableMenu>> TAXIDERMY_TABLE =
+            REGISTRY.register("taxidermy_table",
+                    () -> IMenuTypeExtension.create(TaxidermyTableMenu::new));
 
     private ModMenus() {
     }

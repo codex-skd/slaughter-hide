@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "slaughter_hide:cow_skin",
+    "slaughter_hide:pig_skin",
+    "slaughter_hide:sheep_skin",
+    "slaughter_hide:goat_skin",
+    "slaughter_hide:polar_bear_skin"
+  ]
+}

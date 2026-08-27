@@ -2,6 +2,12 @@
 
 ## [0.0.0-beta.37] - 2026-08-27
 
+### Add — máquinas GUI (Fase 3 de 4: Taxidermy Table)
+
+- **Taxidermy Table** portado (delegado a `mimo-v2.5`, brief prescriptivo, revisado por Claude — sin correcciones necesarias): `BaseEntityBlock` `FACING` + `BLOCKSTATE` 0-1, `TaxidermyTableBlockEntity` (4 slots: 3 entrada + 1 salida, progreso NBT), `TaxidermyTableMenu` (slots en 44,25 / 80,12 / 116,25 / 80,56) / `TaxidermyTableScreen`, registrado en las 6 clases init, assets del dump. Receta de crafteo del bloque: tag `#slaughter_hide:skins` (5 pieles) sobre `#minecraft:planks`.
+- **Recetas de taxidermia: 7 combos hardcoded** (el tipo de receta custom `butchery:taxidermy` del original NO viene en el dump extraído — decisión del usuario: set inventado razonable): `<mob>_skin` + `<mob>_head` + tablón → `<mob>_head_mount` para cow/pig/sheep/goat/polar_bear; pollo y conejo (sin piel) → cabeza + 2 tablones → head_mount. Todos los ingredientes ya registrados; sin `RecipeType` custom (hardcode como en el grinder y el mortero).
+- Simplificaciones documentadas: VoxelShape a cajas simples, `blockstate=1` reutiliza el modelo base, sin `WorldlyContainer` (automatización con tolvas) ni advancement.
+
 ### Add — máquinas GUI (Fase 2 de 4: Pestle and Mortar)
 
 - **Pestle and Mortar** portado (delegado a `mimo-v2.5`, revisado + saneado por Claude): `BaseEntityBlock` `FACING`, `PestleAndMortarBlockEntity` (2 slots entrada/salida + progreso NBT), `PestleAndMortarMenu` / `PestleAndMortarScreen`, registrado en las 6 clases init, assets + loot table del dump. Triturado 1:1 de `PestleupdatetickProcedure`: `hoof` → `slime_ball`, tag `#slaughter_hide:crushable_bone` (`minecraft:bone` + `bird_foot` + `wishbone`) → `bone_meal`.

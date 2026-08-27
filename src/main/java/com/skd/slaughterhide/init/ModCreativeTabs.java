@@ -40,6 +40,7 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.FREEZER.get());
                         output.accept(ModItems.MEAT_GRINDER.get());
                         output.accept(ModItems.PESTLE_AND_MORTAR.get());
+                        output.accept(ModItems.TAXIDERMY_TABLE.get());
                     })
                     .build());
 

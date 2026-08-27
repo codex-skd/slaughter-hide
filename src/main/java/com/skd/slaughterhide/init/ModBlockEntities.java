@@ -6,6 +6,7 @@ import com.skd.slaughterhide.block.entity.CorpseBlockEntity;
 import com.skd.slaughterhide.block.entity.FreezerBlockEntity;
 import com.skd.slaughterhide.block.entity.MeatGrinderBlockEntity;
 import com.skd.slaughterhide.block.entity.PestleAndMortarBlockEntity;
+import com.skd.slaughterhide.block.entity.TaxidermyTableBlockEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -47,6 +48,11 @@ public final class ModBlockEntities {
             REGISTRY.register("pestle_and_mortar",
                     () -> new BlockEntityType<>(PestleAndMortarBlockEntity::new,
                             new Block[]{ModBlocks.PESTLE_AND_MORTAR.get()}));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<TaxidermyTableBlockEntity>> TAXIDERMY_TABLE =
+            REGISTRY.register("taxidermy_table",
+                    () -> new BlockEntityType<>(TaxidermyTableBlockEntity::new,
+                            new Block[]{ModBlocks.TAXIDERMY_TABLE.get()}));
 
     private ModBlockEntities() {
     }

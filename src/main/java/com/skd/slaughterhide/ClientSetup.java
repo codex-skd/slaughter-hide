@@ -5,6 +5,7 @@ import com.skd.slaughterhide.init.ModParticleTypes;
 import com.skd.slaughterhide.menu.FreezerScreen;
 import com.skd.slaughterhide.menu.MeatGrinderScreen;
 import com.skd.slaughterhide.menu.PestleAndMortarScreen;
+import com.skd.slaughterhide.menu.TaxidermyTableScreen;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
@@ -16,6 +17,7 @@ public class ClientSetup {
 		event.register(com.skd.slaughterhide.init.ModMenus.FREEZER.get(), FreezerScreen::new);
 		event.register(com.skd.slaughterhide.init.ModMenus.MEAT_GRINDER.get(), MeatGrinderScreen::new);
 		event.register(com.skd.slaughterhide.init.ModMenus.PESTLE_AND_MORTAR.get(), PestleAndMortarScreen::new);
+		event.register(com.skd.slaughterhide.init.ModMenus.TAXIDERMY_TABLE.get(), TaxidermyTableScreen::new);
 	}
 
 	@SubscribeEvent

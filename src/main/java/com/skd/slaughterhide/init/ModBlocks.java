@@ -46,6 +46,7 @@ import com.skd.slaughterhide.block.MetalTrayBlock;
 import com.skd.slaughterhide.block.FreezerBlock;
 import com.skd.slaughterhide.block.MeatGrinderBlock;
 import com.skd.slaughterhide.block.PestleAndMortarBlock;
+import com.skd.slaughterhide.block.TaxidermyTableBlock;
 import com.skd.slaughterhide.block.SkinRackBlock;
 import com.skd.slaughterhide.block.WoodenSpitRotisserieBlock;
 import net.minecraft.world.level.block.Block;
@@ -157,6 +158,7 @@ public final class ModBlocks {
     public static final DeferredBlock<FreezerBlock> FREEZER = register("freezer", FreezerBlock::new);
     public static final DeferredBlock<MeatGrinderBlock> MEAT_GRINDER = register("meat_grinder", MeatGrinderBlock::new);
     public static final DeferredBlock<PestleAndMortarBlock> PESTLE_AND_MORTAR = register("pestle_and_mortar", PestleAndMortarBlock::new);
+    public static final DeferredBlock<TaxidermyTableBlock> TAXIDERMY_TABLE = register("taxidermy_table", TaxidermyTableBlock::new);
 
     static {
         registerFamily(Carcasses.COW);

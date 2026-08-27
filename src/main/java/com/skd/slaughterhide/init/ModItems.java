@@ -339,6 +339,7 @@ public final class ModItems {
     public static final DeferredItem<Item> FREEZER = blockItem("freezer", new Item.Properties());
     public static final DeferredItem<Item> MEAT_GRINDER = blockItem("meat_grinder", new Item.Properties());
     public static final DeferredItem<Item> PESTLE_AND_MORTAR = blockItem("pestle_and_mortar", new Item.Properties());
+    public static final DeferredItem<Item> TAXIDERMY_TABLE = blockItem("taxidermy_table", new Item.Properties());
 
     // Cat variants (11 variants, all share ocelot shapes, have head + head_mount + skin, no skeleton)
     // all_black_cat (variant 0)
@@ -543,6 +544,7 @@ public final class ModItems {
             case "freezer" -> ModBlocks.FREEZER;
             case "meat_grinder" -> ModBlocks.MEAT_GRINDER;
             case "pestle_and_mortar" -> ModBlocks.PESTLE_AND_MORTAR;
+            case "taxidermy_table" -> ModBlocks.TAXIDERMY_TABLE;
             default -> null;
         };
         return REGISTRY.registerItem(name,
