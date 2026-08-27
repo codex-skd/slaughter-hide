@@ -100,39 +100,9 @@ public final class ModItems {
     public static final DeferredItem<Item> COOKED_LAMB_RIB = item("cooked_lamb_rib", Item::new);
     public static final DeferredItem<Item> COOKED_LAMB_SIRLOIN = item("cooked_lamb_sirloin", Item::new);
     public static final DeferredItem<Item> COOKED_LAMB_LOIN = item("cooked_lamb_loin", Item::new);
-    // Fox
-    public static final DeferredItem<Item> RAW_FOX_MEAT = item("raw_fox_meat", Item::new);
-    // Wolf
-    public static final DeferredItem<Item> RAW_WOLF_MEAT = item("raw_wolf_meat", Item::new);
-    // Camel
-    public static final DeferredItem<Item> RAW_CAMEL_MEAT = item("raw_camel_meat", Item::new);
-    // Donkey
-    // Mule
-    // Ocelot
-    public static final DeferredItem<Item> RAW_OCELOT_MEAT = item("raw_ocelot_meat", Item::new);
-    // Panda
-    public static final DeferredItem<Item> RAW_PANDA_STEAK = item("raw_panda_steak", Item::new);
     // Polar Bear
     public static final DeferredItem<Item> RAW_POLAR_BEAR_MEAT = item("raw_polar_bear_meat", Item::new);
     public static final DeferredItem<Item> COOKED_POLAR_BEAR_MEAT = item("cooked_polar_bear_meat", Item::new);
-    // Hoglin
-    public static final DeferredItem<Item> RAW_HOGLIN_CHUNK = item("raw_hoglin_chunk", Item::new);
-    // Zoglin
-    // Dolphin
-    public static final DeferredItem<Item> RAW_DOLPHIN_MEAT = item("raw_dolphin_meat", Item::new);
-    // Bat
-    public static final DeferredItem<Item> RAW_BAT_MEAT = item("raw_bat_meat", Item::new);
-    // Silverfish
-    public static final DeferredItem<Item> RAW_SILVERFISH_CHUNKS = item("raw_silverfish_chunks", Item::new);
-    // Endermite
-    public static final DeferredItem<Item> RAW_ENDERMITE_CHUNKS = item("raw_endermite_chunks", Item::new);
-    // Enderman
-    public static final DeferredItem<Item> RAW_ENDERMAN_STEAK = item("raw_enderman_steak", Item::new);
-    // Strider
-    public static final DeferredItem<Item> RAW_STRIDER_MEAT = item("raw_strider_meat", Item::new);
-    // Sniffer
-    public static final DeferredItem<Item> RAW_SNIFFER_STEAK = item("raw_sniffer_steak", Item::new);
-    // Turtle
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
@@ -347,34 +317,6 @@ public final class ModItems {
     // Brown Axolotl
     // Cyan Axolotl
     // Gold Axolotl
-    // Pufferfish
-    // Pufferfish has no head, head mount, skeleton
-    public static final DeferredItem<Item> RAW_PUFFERFISH = item("raw_pufferfish", Item::new);
-
-    // Spider
-    // Spider has no skeleton
-
-    // Cave Spider
-    // Cave Spider has no skeleton
-
-    // Creeper
-    public static final DeferredItem<Item> RAW_CREEPER_STEAK = item("raw_creeper_steak", Item::new);
-    public static final DeferredItem<Item> RAW_CREEPER_LEG = item("raw_creeper_leg", Item::new);
-
-    // Organs (shared corpse drops + rotten variants)
-    public static final DeferredItem<Item> HEART = item("heart", Item::new);
-    public static final DeferredItem<Item> INTESTINES = item("intestines", Item::new);
-    public static final DeferredItem<Item> KIDNEY = item("kidney", Item::new);
-    public static final DeferredItem<Item> LIVER = item("liver", Item::new);
-    public static final DeferredItem<Item> LUNGS = item("lungs", Item::new);
-    public static final DeferredItem<Item> STOMACH = item("stomach", Item::new);
-    public static final DeferredItem<Item> ROTTEN_HEART = item("rotten_heart", Item::new);
-    public static final DeferredItem<Item> ROTTEN_INTESTINES = item("rotten_intestines", Item::new);
-    public static final DeferredItem<Item> ROTTEN_KIDNEY = item("rotten_kidney", Item::new);
-    public static final DeferredItem<Item> ROTTEN_LIVER = item("rotten_liver", Item::new);
-    public static final DeferredItem<Item> ROTTEN_LUNGS = item("rotten_lungs", Item::new);
-    public static final DeferredItem<Item> ROTTEN_STOMACH = item("rotten_stomach", Item::new);
-
     // Basin, Brain, Cash Register, Skin Rack, Wooden Spit Rotisserie, Jar, Metal Tray (Butchery blocks)
     public static final DeferredItem<Item> BASIN = blockItem("basin", new Item.Properties());
     public static final DeferredItem<Item> BRAIN = blockItem("brain", new Item.Properties());
