@@ -1,6 +1,10 @@
 # Changelog — Slaughter & Hide
 
-## [0.0.0-beta.37] - 2026-08-27
+## [0.0.0-beta.38] - 2026-08-27
+
+### Fix
+
+- **Crash de arranque de beta.37** (`NullPointerException: Item id not set` en `BucketItem.<init>` durante `RegisterEvent`). Las declaraciones de `blood_bucket` / `infected_blood_bucket` en `ModItems.java` descartaban el `Item.Properties` que les pasa el `DeferredRegister` (que lleva el id vía `setId`) y creaban un `new Item.Properties()` vacío; el constructor de `BucketItem` en MC 26.2 valida el id y peta. Ahora encadenan sobre el `props` del lambda. El resto de beta.37 no se veía porque el crash abortaba el registro antes de cargar modelos/texturas.
 
 ### Add — sistema de sangre (Fase 4 de 4)
 

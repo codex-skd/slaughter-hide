@@ -116,14 +116,16 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_BEEF_MINCE = item("raw_beef_mince", Item::new);
     public static final DeferredItem<Item> RAW_LAMB_MINCE = item("raw_lamb_mince", Item::new);
 
-    // Fluid buckets
+    // Fluid buckets -- must chain onto the Properties the DeferredRegister passes in
+    // (it carries the registry id via setId); a fresh Item.Properties() would crash
+    // with "Item id not set" when BucketItem's constructor validates it.
     public static final DeferredItem<Item> BLOOD_BUCKET = REGISTRY.registerItem("blood_bucket",
             props -> new BucketItem(ModFluids.BLOOD.get(),
-                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)),
+                    props.craftRemainder(Items.BUCKET).stacksTo(1)),
             Item.Properties::new);
     public static final DeferredItem<Item> INFECTED_BLOOD_BUCKET = REGISTRY.registerItem("infected_blood_bucket",
             props -> new BucketItem(ModFluids.INFECTED_BLOOD.get(),
-                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)),
+                    props.craftRemainder(Items.BUCKET).stacksTo(1)),
             Item.Properties::new);
 
 
