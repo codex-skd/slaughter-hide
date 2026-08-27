@@ -86,7 +86,9 @@ public final class HookPlacementHandler {
         }
         Block carcassBlock = target.get();
         BlockState toPlace = carcassBlock.defaultBlockState().setValue(CarcassBlockProperty.FACING, facing);
-        if (!placementItem.isDrained()) {
+        if (placementItem.isDrained()) {
+            toPlace = toPlace.setValue(CarcassBlockProperty.HANGING, true);
+        } else {
             toPlace = toPlace.setValue(CarcassBlockProperty.BLOCKSTATE, 1);
         }
         level.setBlock(below, toPlace, 3);

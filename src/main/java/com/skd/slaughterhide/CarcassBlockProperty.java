@@ -2,6 +2,7 @@ package com.skd.slaughterhide;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
@@ -22,4 +23,10 @@ public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockst
 
 /** Cut-stage values accepted by the drained carcass block only. */
 public static final IntegerProperty DRAINED_BLOCKSTATE = IntegerProperty.create("blockstate", 0, 9);
+
+/**
+ * Set on a drained carcass that was bled while hanging from a hook, so it keeps
+ * a hanging pose instead of snapping to the lying model.
+ */
+public static final BooleanProperty HANGING = BooleanProperty.create("hanging");
 }

@@ -1,64 +1,124 @@
 {
   "variants": {
-    "facing=north,blockstate=0": {
+    "facing=north,blockstate=0,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass"
     },
-    "facing=north,blockstate=6": {
+    "facing=north,blockstate=0,hanging=true": {
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=north,blockstate=6,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_5"
     },
-    "facing=north,blockstate=7": {
+    "facing=north,blockstate=6,hanging=true": {
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=north,blockstate=7,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_6"
     },
-    "facing=north,blockstate=8": {
+    "facing=north,blockstate=7,hanging=true": {
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=north,blockstate=8,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_7"
     },
-    "facing=east,blockstate=0": {
+    "facing=north,blockstate=8,hanging=true": {
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=east,blockstate=0,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass",
       "y": 90
     },
-    "facing=east,blockstate=6": {
+    "facing=east,blockstate=0,hanging=true": {
+      "y": 90,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=east,blockstate=6,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_5",
       "y": 90
     },
-    "facing=east,blockstate=7": {
+    "facing=east,blockstate=6,hanging=true": {
+      "y": 90,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=east,blockstate=7,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_6",
       "y": 90
     },
-    "facing=east,blockstate=8": {
+    "facing=east,blockstate=7,hanging=true": {
+      "y": 90,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=east,blockstate=8,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_7",
       "y": 90
     },
-    "facing=south,blockstate=0": {
+    "facing=east,blockstate=8,hanging=true": {
+      "y": 90,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=south,blockstate=0,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass",
       "y": 180
     },
-    "facing=south,blockstate=6": {
+    "facing=south,blockstate=0,hanging=true": {
+      "y": 180,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=south,blockstate=6,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_5",
       "y": 180
     },
-    "facing=south,blockstate=7": {
+    "facing=south,blockstate=6,hanging=true": {
+      "y": 180,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=south,blockstate=7,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_6",
       "y": 180
     },
-    "facing=south,blockstate=8": {
+    "facing=south,blockstate=7,hanging=true": {
+      "y": 180,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=south,blockstate=8,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_7",
       "y": 180
     },
-    "facing=west,blockstate=0": {
+    "facing=south,blockstate=8,hanging=true": {
+      "y": 180,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=west,blockstate=0,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass",
       "y": 270
     },
-    "facing=west,blockstate=6": {
+    "facing=west,blockstate=0,hanging=true": {
+      "y": 270,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=west,blockstate=6,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_5",
       "y": 270
     },
-    "facing=west,blockstate=7": {
+    "facing=west,blockstate=6,hanging=true": {
+      "y": 270,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=west,blockstate=7,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_6",
       "y": 270
     },
-    "facing=west,blockstate=8": {
+    "facing=west,blockstate=7,hanging=true": {
+      "y": 270,
+      "model": "slaughter_hide:block/chicken_carcass_0"
+    },
+    "facing=west,blockstate=8,hanging=false": {
       "model": "slaughter_hide:block/drained_chicken_carcass_7",
       "y": 270
+    },
+    "facing=west,blockstate=8,hanging=true": {
+      "y": 270,
+      "model": "slaughter_hide:block/chicken_carcass_0"
     }
   }
 }

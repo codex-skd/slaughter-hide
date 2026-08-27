@@ -51,11 +51,18 @@ public class DrainedCarcassBlock extends Block implements EntityBlock {
         this.definition = definition;
         registerDefaultState(stateDefinition.any()
                 .setValue(CarcassBlockProperty.FACING, Direction.NORTH)
-                .setValue(CarcassBlockProperty.DRAINED_BLOCKSTATE, STAGE_UNTOUCHED));
+                .setValue(CarcassBlockProperty.DRAINED_BLOCKSTATE, STAGE_UNTOUCHED)
+                .setValue(CarcassBlockProperty.HANGING, false));
     }
+
+    /** Generic upright box used while the drained carcass hangs from a hook. */
+    private static final VoxelShape HANGING_SHAPE = Block.box(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        if (state.getValue(CarcassBlockProperty.HANGING)) {
+            return HANGING_SHAPE;
+        }
         return definition.drainedCarcassShape().apply(state);
     }
 
@@ -67,7 +74,7 @@ public class DrainedCarcassBlock extends Block implements EntityBlock {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
-        builder.add(CarcassBlockProperty.FACING, CarcassBlockProperty.DRAINED_BLOCKSTATE);
+        builder.add(CarcassBlockProperty.FACING, CarcassBlockProperty.DRAINED_BLOCKSTATE, CarcassBlockProperty.HANGING);
     }
 
     @Override

@@ -89,6 +89,7 @@ El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mo
 | `0.0.0-beta.39` | `8748853` | 2026-08-27 (pulido sangre + tiers herramienta) |
 | `0.0.0-beta.40` | `8748994` | 2026-08-27 (blood feel) |
 | `0.0.0-beta.41` | `8749159` | 2026-08-27 (41 bloques decoración) |
+| `0.0.0-beta.42` | (pendiente) | 2026-08-27 |
 
 ## Rama
 

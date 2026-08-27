@@ -1,5 +1,12 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.42] - 2026-08-27
+
+### Fix
+
+- **Carcasa colgada que cambiaba de pose al drenar** (#5): nueva propiedad `hanging` en `DrainedCarcassBlock`. `CarcassBleedingHandler` la pone a `true` si la carcasa fresca estaba en `blockstate=1` (colgada del gancho); `HookPlacementHandler` la pone a `true` al colgar una carcasa ya drenada. Con `hanging=true` la carcasa drenada conserva el modelo/forma colgante en vez de tumbarse (el despiece la mantiene colgada hasta el último corte). Blockstates de los 7 mobs regenerados con variantes `hanging=true/false`.
+- **Mesa de taxidermia**: restaurado el modelo ancho (~2 bloques) que se veía bien; el bloque en sí es ahora sólido completo. La mitad que sobresale sigue siendo atravesable — MC no permite colisión de un bloque en la casilla vecina; hacerla sólida requiere convertirla en estructura de 2 bloques (pendiente).
+
 ## [0.0.0-beta.41] - 2026-08-27
 
 ### Add

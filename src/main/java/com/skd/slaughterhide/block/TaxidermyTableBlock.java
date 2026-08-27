@@ -34,10 +34,14 @@ public class TaxidermyTableBlock extends BaseEntityBlock {
 
     public static final MapCodec<TaxidermyTableBlock> CODEC = simpleCodec(TaxidermyTableBlock::new);
 
-    private static final VoxelShape SHAPE_NORTH = Block.box(1, 0, 0, 15, 16, 16);
-    private static final VoxelShape SHAPE_EAST = Block.box(0, 0, 1, 16, 16, 15);
-    private static final VoxelShape SHAPE_SOUTH = Block.box(1, 0, 0, 15, 16, 16);
-    private static final VoxelShape SHAPE_WEST = Block.box(0, 0, 1, 16, 16, 15);
+    // The model is ~2 blocks wide on purpose; MC can't give a single block
+    // collision in a neighbour tile, so the block itself is fully solid and the
+    // overhanging half stays cosmetic (walk-through) until this becomes a real
+    // 2-block structure.
+    private static final VoxelShape SHAPE_NORTH = Shapes.block();
+    private static final VoxelShape SHAPE_EAST = Shapes.block();
+    private static final VoxelShape SHAPE_SOUTH = Shapes.block();
+    private static final VoxelShape SHAPE_WEST = Shapes.block();
 
     public TaxidermyTableBlock(BlockBehaviour.Properties properties) {
         super(properties.sound(SoundType.WOOD).strength(1.0f, 10.0f).noOcclusion()

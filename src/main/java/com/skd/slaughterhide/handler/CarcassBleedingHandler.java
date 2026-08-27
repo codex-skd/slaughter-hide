@@ -190,13 +190,18 @@ public final class CarcassBleedingHandler {
     }
 
     private static void transitionToDrained(ServerLevel level, BlockPos pos, CarcassDefinition definition) {
-        Direction facing = level.getBlockState(pos).getValue(CarcassBlockProperty.FACING);
+        BlockState fresh = level.getBlockState(pos);
+        Direction facing = fresh.getValue(CarcassBlockProperty.FACING);
+        // The fresh carcass sits at BLOCKSTATE 1 while hung on a hook; keep that pose.
+        boolean hanging = fresh.hasProperty(CarcassBlockProperty.BLOCKSTATE)
+                && fresh.getValue(CarcassBlockProperty.BLOCKSTATE) == 1;
         var drained = ModBlocks.drainedFor(definition.mobId());
         if (drained == null) {
             return;
         }
         BlockState drainedState = drained.get().defaultBlockState()
-                .setValue(CarcassBlockProperty.FACING, facing);
+                .setValue(CarcassBlockProperty.FACING, facing)
+                .setValue(CarcassBlockProperty.HANGING, hanging);
         level.setBlock(pos, drainedState, 3);
 
         if (level.getBlockEntity(pos) instanceof CarcassBlockEntity blockEntity) {
