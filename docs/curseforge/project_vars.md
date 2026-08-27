@@ -80,6 +80,12 @@ El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mo
 | `java_version` | `25` |
 | `environment` | `Client`, `Server` |
 
+## Subidas
+
+| Versión | CurseForge file ID | Fecha |
+|---|---|---|
+| `0.0.0-beta.37` | `8748477` | 2026-08-27 |
+
 ## Rama
 
 ```
