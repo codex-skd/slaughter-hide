@@ -3,6 +3,7 @@ package com.skd.slaughterhide.handler;
 import com.skd.slaughterhide.CarcassBlockProperty;
 import com.skd.slaughterhide.CarcassDefinition;
 import com.skd.slaughterhide.ServerWorkScheduler;
+import com.skd.slaughterhide.block.BloodGrateBlock;
 import com.skd.slaughterhide.block.CarcassBlock;
 import com.skd.slaughterhide.block.DrainedCarcassBlock;
 import com.skd.slaughterhide.block.entity.CarcassBlockEntity;
@@ -31,9 +32,9 @@ import java.util.List;
  * the original -- or instantly when the config toggle is set -- replaces the
  * block with its drained variant.
  *
- * <p>Includes visible blood effects using smoke particles spawned around the
- * carcass, matching the original's blood pooling concept without requiring
- * BloodDropletEntity (not yet available in this NeoForge 26.2 port pass).</p>
+ * <p>During bleeding, if a {@code blood_grate} is within 2 blocks below/around
+ * the carcass, its fill level is incremented over the bleed duration. Otherwise,
+ * a {@code blood_puddle} is placed on the ground beneath the carcass.</p>
  */
 public final class CarcassBleedingHandler {
     private CarcassBleedingHandler() {
@@ -74,8 +75,8 @@ public final class CarcassBleedingHandler {
     }
 
     /**
-     * Spawns smoke particles visualizing the blood effect around the carcass
-     * position, simulating blood droplets and pooling.
+     * Spawns blood particles around the carcass. Also handles placing blood
+     * grates or puddles when a carcass starts bleeding.
      */
     private static void spawnBloodParticles(Level level, BlockPos pos) {
         if (level instanceof ServerLevel serverLevel) {
@@ -85,8 +86,39 @@ public final class CarcassBleedingHandler {
                 double offsetZ = rand.nextDouble() - 0.5;
                 double offsetY = rand.nextDouble() * 0.5;
                 Vec3 posVec = new Vec3(pos.getX() + 0.5 + offsetX, pos.getY() + offsetY, pos.getZ() + 0.5 + offsetZ);
-                serverLevel.sendParticles(ParticleTypes.SMOKE, posVec.x, posVec.y, posVec.z, 1, 0.3, 0.3, 0.3, 0.1f);
+                serverLevel.sendParticles(ParticleTypes.DRIPPING_DRIPSTONE_LAVA, posVec.x, posVec.y, posVec.z, 1, 0.3, 0.3, 0.3, 0.1f);
             }
+            // Place blood grate or puddle beneath the carcass
+            placeBloodBlock(serverLevel, pos);
+        }
+    }
+
+    /**
+     * Tries to place a blood_grate within 2 blocks below/around the carcass.
+     * If none found, places a blood_puddle on the ground directly beneath.
+     */
+    private static void placeBloodBlock(ServerLevel level, BlockPos pos) {
+        // Search for a blood grate within 2 blocks below/around
+        for (int dy = -2; dy <= 0; dy++) {
+            for (int dx = -2; dx <= 2; dx++) {
+                for (int dz = -2; dz <= 2; dz++) {
+                    BlockPos checkPos = pos.offset(dx, dy, dz);
+                    BlockState checkState = level.getBlockState(checkPos);
+                    if (checkState.is(ModBlocks.BLOOD_GRATE.get())) {
+                        // Found a blood grate, increment its fill level
+                        int current = checkState.getValue(BloodGrateBlock.FILL_LEVEL);
+                        if (current < 3) {
+                            level.setBlock(checkPos, checkState.setValue(BloodGrateBlock.FILL_LEVEL, current + 1), 3);
+                        }
+                        return;
+                    }
+                }
+            }
+        }
+        // No blood grate found, place a blood puddle beneath
+        BlockPos below = pos.below();
+        if (level.getBlockState(below).isAir()) {
+            level.setBlock(below, ModBlocks.BLOOD_PUDDLE.get().defaultBlockState(), 3);
         }
     }
 

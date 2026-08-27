@@ -6,8 +6,10 @@ import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.tag.ModItemTags;
 import com.skd.slaughterhide.item.ButcherToolItem;
 import com.skd.slaughterhide.item.CarcassPlacementItem;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -113,6 +115,16 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_BLOOD_SAUSAGE = item("raw_blood_sausage", Item::new);
     public static final DeferredItem<Item> RAW_BEEF_MINCE = item("raw_beef_mince", Item::new);
     public static final DeferredItem<Item> RAW_LAMB_MINCE = item("raw_lamb_mince", Item::new);
+
+    // Fluid buckets
+    public static final DeferredItem<Item> BLOOD_BUCKET = REGISTRY.registerItem("blood_bucket",
+            props -> new BucketItem(ModFluids.BLOOD.get(),
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)),
+            Item.Properties::new);
+    public static final DeferredItem<Item> INFECTED_BLOOD_BUCKET = REGISTRY.registerItem("infected_blood_bucket",
+            props -> new BucketItem(ModFluids.INFECTED_BLOOD.get(),
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)),
+            Item.Properties::new);
 
 
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
@@ -340,6 +352,10 @@ public final class ModItems {
     public static final DeferredItem<Item> MEAT_GRINDER = blockItem("meat_grinder", new Item.Properties());
     public static final DeferredItem<Item> PESTLE_AND_MORTAR = blockItem("pestle_and_mortar", new Item.Properties());
     public static final DeferredItem<Item> TAXIDERMY_TABLE = blockItem("taxidermy_table", new Item.Properties());
+    public static final DeferredItem<Item> BLOOD_GRATE = blockItem("blood_grate", new Item.Properties());
+    public static final DeferredItem<Item> BLOOD_PUDDLE = blockItem("blood_puddle", new Item.Properties());
+    // Blood fluid block items (these are liquid blocks, so they don't have normal BlockItems)
+    // Blood and infected_blood are registered via the blockItem switch above
 
     // Cat variants (11 variants, all share ocelot shapes, have head + head_mount + skin, no skeleton)
     // all_black_cat (variant 0)
@@ -534,7 +550,11 @@ public final class ModItems {
             case "plastic_sheet" -> ModBlocks.PLASTIC_SHEET;
             case "plastic_sheet_corner" -> ModBlocks.PLASTIC_SHEET_CORNER;
             case "spike_trap" -> ModBlocks.SPIKE_TRAP;
+            case "blood_grate" -> ModBlocks.BLOOD_GRATE;
+            case "blood_puddle" -> ModBlocks.BLOOD_PUDDLE;
             case "basin" -> ModBlocks.BASIN;
+            case "blood" -> ModBlocks.BLOOD;
+            case "infected_blood" -> ModBlocks.INFECTED_BLOOD;
             case "brain" -> ModBlocks.BRAIN;
             case "cash_register_block" -> ModBlocks.CASH_REGISTER;
             case "skin_rack" -> ModBlocks.SKIN_RACK;

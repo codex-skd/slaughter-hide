@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "fill_level=0": { "model": "slaughter_hide:block/blood_grate" },
+    "fill_level=1": { "model": "slaughter_hide:block/blood_grate" },
+    "fill_level=2": { "model": "slaughter_hide:block/blood_grate" },
+    "fill_level=3": { "model": "slaughter_hide:block/blood_grate" }
+  }
+}

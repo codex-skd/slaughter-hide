@@ -41,6 +41,10 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.MEAT_GRINDER.get());
                         output.accept(ModItems.PESTLE_AND_MORTAR.get());
                         output.accept(ModItems.TAXIDERMY_TABLE.get());
+                        output.accept(ModItems.BLOOD_BUCKET.get());
+                        output.accept(ModItems.INFECTED_BLOOD_BUCKET.get());
+                        output.accept(ModItems.BLOOD_GRATE.get());
+                        output.accept(ModItems.BLOOD_PUDDLE.get());
                     })
                     .build());
 

@@ -2,6 +2,15 @@
 
 ## [0.0.0-beta.37] - 2026-08-27
 
+### Add — sistema de sangre (Fase 4 de 4)
+
+- **2 fluidos custom** `blood` / `infected_blood` (con sus `flowing_*`): `BloodFluid` / `InfectedBloodFluid` (`BaseFlowingFluid` + `Source`/`Flowing`), `BloodFluidType` / `InfectedBloodFluidType` (`FluidType.Properties` densidad/viscosidad/sonidos del original), nuevas clases `init/ModFluidTypes` + `init/ModFluids` registradas en `SlaughterHide.java`. `LiquidBlock` para cada uno + `blood_bucket` / `infected_blood_bucket` (`BucketItem`).
+- **`BloodGrateBlock`** (`fill_level` 0-3): se llena SOLO desde una carcasa sangrando encima (no por tick propio) y, lleno, con clic derecho de botella de cristal da `bottle_of_blood` (esto cierra el bucle de la morcilla del Meat Grinder de la Fase 1). **`BloodPuddleBlock`**: capa fina decorativa que se seca con random ticks.
+- **`CarcassBleedingHandler`** ahora, al sangrar una carcasa, incrementa un `blood_grate` cercano (radio 2, debajo/alrededor) o coloca un `blood_puddle` debajo; partículas cambiadas de humo a `DRIPPING_DRIPSTONE_LAVA`.
+- **Render de fluido en cliente**: `RegisterFluidModelsEvent` (texturas still/flow del dump) + `RegisterClientExtensionsEvent` (color de niebla rojo oscuro / verde enfermizo).
+- **Fixes post-delegación**: `BloodGrateBlock` se auto-rellenaba por temporizador (sangre infinita gratis, anulaba la integración con el sangrado) y la recogida en botella estaba en `useWithoutItem` (nunca se dispara con ítem en mano) → reescrito sin auto-tick y con `useItemOn`. `mimo-v2.5` arrancó fallando por permiso de sandbox al leer el jar de sources de NeoForge; reanudado con la referencia de API redirigida al bytecode decompilado.
+- **Pendiente / simplificado**: render de fluido sin verificar en cliente en ejecución (API `RegisterFluidModelsEvent` compila pero sin `runClient`); texturas de cubo = placeholder `water_bucket` (el dump no traía); `bottle_of_infected_blood` reutiliza la textura de `bottle_of_blood`; `BloodPuddle` sin esparcido (`BloodspreadProcedure`); `BloodGrate` sin compat cross-mod (blood_magic/vampirism); el grate sube +1 por evento de sangrado (3 animales para llenarlo), no gradualmente.
+
 ### Add — máquinas GUI (Fase 3 de 4: Taxidermy Table)
 
 - **Taxidermy Table** portado (delegado a `mimo-v2.5`, brief prescriptivo, revisado por Claude — sin correcciones necesarias): `BaseEntityBlock` `FACING` + `BLOCKSTATE` 0-1, `TaxidermyTableBlockEntity` (4 slots: 3 entrada + 1 salida, progreso NBT), `TaxidermyTableMenu` (slots en 44,25 / 80,12 / 116,25 / 80,56) / `TaxidermyTableScreen`, registrado en las 6 clases init, assets del dump. Receta de crafteo del bloque: tag `#slaughter_hide:skins` (5 pieles) sobre `#minecraft:planks`.

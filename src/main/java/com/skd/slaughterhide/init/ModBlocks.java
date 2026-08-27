@@ -15,6 +15,8 @@ import com.skd.slaughterhide.block.DragonScaleBlock;
 import com.skd.slaughterhide.block.HeadMountBlock;
 import com.skd.slaughterhide.block.HookBlock;
 import com.skd.slaughterhide.block.RopeBlock;
+import com.skd.slaughterhide.block.BloodGrateBlock;
+import com.skd.slaughterhide.block.BloodPuddleBlock;
 import com.skd.slaughterhide.block.BloodSplatterBlock;
 import com.skd.slaughterhide.block.PlasticSheetBlock;
 import com.skd.slaughterhide.block.PlasticSheetCornerBlock;
@@ -50,7 +52,11 @@ import com.skd.slaughterhide.block.TaxidermyTableBlock;
 import com.skd.slaughterhide.block.SkinRackBlock;
 import com.skd.slaughterhide.block.WoodenSpitRotisserieBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -144,9 +150,22 @@ public final class ModBlocks {
     public static final DeferredBlock<RawSausagesBlock> RAW_SAUSAGES = register("raw_sausages", RawSausagesBlock::new);
 
     public static final DeferredBlock<BloodSplatterBlock> BLOOD_SPLATTER = register("blood_splatter", BloodSplatterBlock::new);
+
+    // Blood fluid blocks
+    public static final DeferredBlock<LiquidBlock> BLOOD = REGISTRY.registerBlock("blood",
+            props -> new LiquidBlock(ModFluids.FLOWING_BLOOD.get(),
+                    props.mapColor(MapColor.WATER).strength(100f).noCollision().noLootTable()
+                            .liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable()));
+    public static final DeferredBlock<LiquidBlock> INFECTED_BLOOD = REGISTRY.registerBlock("infected_blood",
+            props -> new LiquidBlock(ModFluids.FLOWING_INFECTED_BLOOD.get(),
+                    props.mapColor(MapColor.WATER).strength(100f).noCollision().noLootTable()
+                            .liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable()));
+
     public static final DeferredBlock<PlasticSheetBlock> PLASTIC_SHEET = register("plastic_sheet", PlasticSheetBlock::new);
     public static final DeferredBlock<PlasticSheetCornerBlock> PLASTIC_SHEET_CORNER = register("plastic_sheet_corner", PlasticSheetCornerBlock::new);
     public static final DeferredBlock<SpikeTrapBlock> SPIKE_TRAP = register("spike_trap", SpikeTrapBlock::new);
+    public static final DeferredBlock<BloodGrateBlock> BLOOD_GRATE = register("blood_grate", BloodGrateBlock::new);
+    public static final DeferredBlock<BloodPuddleBlock> BLOOD_PUDDLE = register("blood_puddle", BloodPuddleBlock::new);
 
     public static final DeferredBlock<BasinBlock> BASIN = register("basin", BasinBlock::new);
     public static final DeferredBlock<BrainBlock> BRAIN = register("brain", BrainBlock::new);

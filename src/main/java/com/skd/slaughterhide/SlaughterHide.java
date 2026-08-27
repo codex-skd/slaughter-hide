@@ -9,6 +9,8 @@ import com.skd.slaughterhide.handler.HookPlacementHandler;
 import com.skd.slaughterhide.init.ModBlockEntities;
 import com.skd.slaughterhide.init.ModBlocks;
 import com.skd.slaughterhide.init.ModCreativeTabs;
+import com.skd.slaughterhide.init.ModFluidTypes;
+import com.skd.slaughterhide.init.ModFluids;
 import com.skd.slaughterhide.init.ModItems;
 import com.skd.slaughterhide.init.ModMenus;
 import com.skd.slaughterhide.init.ModParticleTypes;
@@ -21,6 +23,8 @@ public class SlaughterHide {
     public static final String MOD_ID = "slaughter_hide";
 
     public SlaughterHide(IEventBus modEventBus) {
+        ModFluidTypes.REGISTRY.register(modEventBus);
+        ModFluids.REGISTRY.register(modEventBus);
         ModBlocks.REGISTRY.register(modEventBus);
         ModItems.REGISTRY.register(modEventBus);
         ModBlockEntities.REGISTRY.register(modEventBus);
@@ -29,6 +33,8 @@ public class SlaughterHide {
         ModCreativeTabs.REGISTRY.register(modEventBus);
         modEventBus.addListener(SlaughterHideConfig::registerCommon);
         modEventBus.addListener(ClientSetup::onRegisterMenuScreens);
+        modEventBus.addListener(ClientSetup::onRegisterFluidModels);
+        modEventBus.addListener(ClientSetup::onRegisterClientExtensions);
 
         NeoForge.EVENT_BUS.register(CarcassDeathHandler.class);
         NeoForge.EVENT_BUS.register(CarcassInteractionHandler.class);
