@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "slaughter_hide:custom/blood_grate",
   "textures": {
-    "all": "slaughter_hide:block/blood_still"
+    "all": "slaughter_hide:block/tank",
+    "particle": "slaughter_hide:block/tank",
+    "1": "slaughter_hide:block/tank"
   }
 }

@@ -1,5 +1,14 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.39] - 2026-08-27
+
+### Fix / pulido (sangre + herramientas)
+
+- **Todos los tiers de herramienta funcionan ahora**: `#slaughter_hide:cleaver` y `#skinning_knives` solo contenían el tier de hierro; copper/gold/diamond/netherite estaban registrados pero no servían para sangrar ni despiezar. Añadidos los 4 tiers a cada tag.
+- **`blood_grate`**: el modelo era un stub `cube_all` con la textura del fluido → se veía como un cubo de sangre sólido. Portado el modelo real del dump (`custom/blood_grate` + textura `tank`); se ve como una rejilla/depósito de metal. (El nivel de llenado 0-3 sigue siendo funcional — comparador + recogida en botella — no visual todavía.)
+- **`blood_puddle`**: mismo stub → cubo sólido. Portado el modelo real (`custom/blood_puddle`, capa fina de 0,3 px) + `noCollision`/`noOcclusion`/`instabreak` para que sea una mancha por la que se camina.
+- **Goteo continuo durante el sangrado**: `CarcassBleedingHandler` ahora emite un pulso de partículas + rellena la rejilla (o refresca el charco) cada 40 ticks durante los 900 del drenado (~22 pulsos), en vez de una sola vez. Una rejilla debajo de la carcasa se llena en ~3 pulsos.
+
 ## [0.0.0-beta.38] - 2026-08-27
 
 ### Fix

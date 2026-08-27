@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "slaughter_hide:iron_skinning_knife"
+    "slaughter_hide:iron_skinning_knife",
+    "slaughter_hide:copper_skinning_knife",
+    "slaughter_hide:gold_skinning_knife",
+    "slaughter_hide:diamond_skinning_knife",
+    "slaughter_hide:netherite_skinning_knife"
   ]
 }

@@ -22,7 +22,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
 
@@ -32,9 +31,10 @@ import java.util.List;
  * the original -- or instantly when the config toggle is set -- replaces the
  * block with its drained variant.
  *
- * <p>During bleeding, if a {@code blood_grate} is within 2 blocks below/around
- * the carcass, its fill level is incremented over the bleed duration. Otherwise,
- * a {@code blood_puddle} is placed on the ground beneath the carcass.</p>
+ * <p>While it bleeds the carcass drips: every {@link #PULSE_INTERVAL} ticks a
+ * burst of blood particles falls beneath it and, if a {@code blood_grate} sits
+ * within 2 blocks below/around, that grate gains one fill level (capped at 3);
+ * otherwise a thin {@code blood_puddle} is (re)placed on the ground beneath.</p>
  */
 public final class CarcassBleedingHandler {
     private CarcassBleedingHandler() {
@@ -43,8 +43,11 @@ public final class CarcassBleedingHandler {
     /** Tick delay before the fresh carcass drains, matching the original. */
     private static final int BLEED_TICKS = 900;
 
-    /** Number of smoke particle clusters spawned per bleeding event. */
-    private static final int BLOOD_PARTICLE_COUNT = 12;
+    /** How often, in ticks, a bleeding carcass drips while draining. */
+    private static final int PULSE_INTERVAL = 40;
+
+    /** Blood particles per drip pulse. */
+    private static final int BLOOD_PARTICLE_COUNT = 6;
 
     public static void handle(Level level, BlockPos pos, Player player,
                               CarcassBlockEntity blockEntity, CarcassDefinition definition) {
@@ -63,33 +66,39 @@ public final class CarcassBleedingHandler {
         player.swing(InteractionHand.MAIN_HAND);
         playSound(level, pos, SoundEvents.PLAYER_ATTACK_SWEEP, 1.0f);
         playSound(level, pos, SoundEvents.HONEY_BLOCK_HIT, 1.0f);
-        spawnBloodParticles(level, pos);
 
         if (level instanceof ServerLevel serverLevel) {
+            bloodPulse(serverLevel, pos);
             if (SlaughterHideConfig.INSTANT_BLEED.get()) {
                 transitionToDrained(serverLevel, pos, definition);
             } else {
+                for (int t = PULSE_INTERVAL; t < BLEED_TICKS; t += PULSE_INTERVAL) {
+                    ServerWorkScheduler.queue(t, () -> pulseIfStillBleeding(serverLevel, pos));
+                }
                 ServerWorkScheduler.queue(BLEED_TICKS, () -> recheckAndDrain(serverLevel, pos, definition));
             }
         }
     }
 
-    /**
-     * Spawns blood particles around the carcass. Also handles placing blood
-     * grates or puddles when a carcass starts bleeding.
-     */
-    private static void spawnBloodParticles(Level level, BlockPos pos) {
-        if (level instanceof ServerLevel serverLevel) {
-            RandomSource rand = serverLevel.getRandom();
-            for (int i = 0; i < BLOOD_PARTICLE_COUNT; i++) {
-                double offsetX = rand.nextDouble() - 0.5;
-                double offsetZ = rand.nextDouble() - 0.5;
-                double offsetY = rand.nextDouble() * 0.5;
-                Vec3 posVec = new Vec3(pos.getX() + 0.5 + offsetX, pos.getY() + offsetY, pos.getZ() + 0.5 + offsetZ);
-                serverLevel.sendParticles(ParticleTypes.DRIPPING_DRIPSTONE_LAVA, posVec.x, posVec.y, posVec.z, 1, 0.3, 0.3, 0.3, 0.1f);
-            }
-            // Place blood grate or puddle beneath the carcass
-            placeBloodBlock(serverLevel, pos);
+    /** A single drip: particles beneath the carcass + grate fill or a puddle. */
+    private static void bloodPulse(ServerLevel level, BlockPos pos) {
+        RandomSource rand = level.getRandom();
+        for (int i = 0; i < BLOOD_PARTICLE_COUNT; i++) {
+            double x = pos.getX() + 0.5 + (rand.nextDouble() - 0.5) * 0.6;
+            double y = pos.getY() - 0.1 - rand.nextDouble() * 0.4;
+            double z = pos.getZ() + 0.5 + (rand.nextDouble() - 0.5) * 0.6;
+            level.sendParticles(ParticleTypes.DRIPPING_DRIPSTONE_LAVA, x, y, z, 1, 0.1, 0.1, 0.1, 0.0);
+        }
+        placeBloodBlock(level, pos);
+    }
+
+    /** Scheduled pulse: only drips while the carcass is still a fresh, bleeding one. */
+    private static void pulseIfStillBleeding(ServerLevel level, BlockPos pos) {
+        if (!(level.getBlockState(pos).getBlock() instanceof CarcassBlock)) {
+            return;
+        }
+        if (level.getBlockEntity(pos) instanceof CarcassBlockEntity be && be.isBleeding() && !be.isDrained()) {
+            bloodPulse(level, pos);
         }
     }
 
@@ -148,8 +157,8 @@ public final class CarcassBleedingHandler {
             sync(level, pos);
         }
         playSound(level, pos, SoundEvents.HONEY_BLOCK_HIT, 1.0f);
-        // Blood particles fade when the carcass is fully drained
-        spawnBloodParticles(level, pos);
+        // One last drip as the carcass finishes draining.
+        bloodPulse(level, pos);
     }
 
     static void playSound(Level level, BlockPos pos, net.minecraft.sounds.SoundEvent sound, float volume) {

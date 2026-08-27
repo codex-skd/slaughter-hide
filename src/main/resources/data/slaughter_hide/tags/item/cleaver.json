@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "slaughter_hide:iron_cleaver"
+    "slaughter_hide:iron_cleaver",
+    "slaughter_hide:copper_cleaver",
+    "slaughter_hide:gold_cleaver",
+    "slaughter_hide:diamond_cleaver",
+    "slaughter_hide:netherite_cleaver"
   ]
 }

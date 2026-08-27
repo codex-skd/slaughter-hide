@@ -17,7 +17,7 @@ public class BloodPuddleBlock extends Block {
     protected static final VoxelShape SHAPE = Block.box(0.0, 0.0, 0.0, 16.0, 0.1, 16.0);
 
     public BloodPuddleBlock(Properties properties) {
-        super(properties.randomTicks());
+        super(properties.randomTicks().noCollision().noOcclusion().instabreak());
     }
 
     @Override
