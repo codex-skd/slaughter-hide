@@ -104,6 +104,16 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_POLAR_BEAR_MEAT = item("raw_polar_bear_meat", Item::new);
     public static final DeferredItem<Item> COOKED_POLAR_BEAR_MEAT = item("cooked_polar_bear_meat", Item::new);
 
+    // Grinder items
+    public static final DeferredItem<Item> INTESTINES = item("intestines", Item::new);
+    public static final DeferredItem<Item> SAUSAGE_ATTACHMENT = item("sausage_attachment", Item::new);
+    public static final DeferredItem<Item> BOTTLE_OF_BLOOD = item("bottle_of_blood", Item::new);
+    public static final DeferredItem<Item> MEAT_SCRAPS = item("meat_scraps", Item::new);
+    public static final DeferredItem<Item> RAW_SAUSAGE = item("raw_sausage", Item::new);
+    public static final DeferredItem<Item> RAW_BLOOD_SAUSAGE = item("raw_blood_sausage", Item::new);
+    public static final DeferredItem<Item> RAW_BEEF_MINCE = item("raw_beef_mince", Item::new);
+    public static final DeferredItem<Item> RAW_LAMB_MINCE = item("raw_lamb_mince", Item::new);
+
     // Fresh/drained carcass items only hang from a Hook (HookPlacementHandler),
     // they don't place a block on right-click like a normal BlockItem.
     public static final DeferredItem<Item> COW_CARCASS =
@@ -326,6 +336,7 @@ public final class ModItems {
     public static final DeferredItem<Item> JAR = blockItem("jar", new Item.Properties());
     public static final DeferredItem<Item> METAL_TRAY = blockItem("metal_tray", new Item.Properties());
     public static final DeferredItem<Item> FREEZER = blockItem("freezer", new Item.Properties());
+    public static final DeferredItem<Item> MEAT_GRINDER = blockItem("meat_grinder", new Item.Properties());
 
     // Cat variants (11 variants, all share ocelot shapes, have head + head_mount + skin, no skeleton)
     // all_black_cat (variant 0)
@@ -528,6 +539,7 @@ public final class ModItems {
             case "jar" -> ModBlocks.JAR;
             case "metal_tray" -> ModBlocks.METAL_TRAY;
             case "freezer" -> ModBlocks.FREEZER;
+            case "meat_grinder" -> ModBlocks.MEAT_GRINDER;
             default -> null;
         };
         return REGISTRY.registerItem(name,

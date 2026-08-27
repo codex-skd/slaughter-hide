@@ -37,8 +37,8 @@ public final class ModCreativeTabs {
                         // Hook and rope
                         output.accept(ModItems.HOOK.get());
                         output.accept(ModItems.ROPE.get());
-                        // Freezer
                         output.accept(ModItems.FREEZER.get());
+                        output.accept(ModItems.MEAT_GRINDER.get());
                     })
                     .build());
 

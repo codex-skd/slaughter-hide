@@ -4,6 +4,7 @@ import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.block.entity.CarcassBlockEntity;
 import com.skd.slaughterhide.block.entity.CorpseBlockEntity;
 import com.skd.slaughterhide.block.entity.FreezerBlockEntity;
+import com.skd.slaughterhide.block.entity.MeatGrinderBlockEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -35,6 +36,11 @@ public final class ModBlockEntities {
             REGISTRY.register("freezer",
                     () -> new BlockEntityType<>(FreezerBlockEntity::new,
                             new Block[]{ModBlocks.FREEZER.get()}));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MeatGrinderBlockEntity>> MEAT_GRINDER =
+            REGISTRY.register("meat_grinder",
+                    () -> new BlockEntityType<>(MeatGrinderBlockEntity::new,
+                            new Block[]{ModBlocks.MEAT_GRINDER.get()}));
 
     private ModBlockEntities() {
     }

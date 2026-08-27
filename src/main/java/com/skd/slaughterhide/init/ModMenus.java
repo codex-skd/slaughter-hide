@@ -2,6 +2,7 @@ package com.skd.slaughterhide.init;
 
 import com.skd.slaughterhide.SlaughterHide;
 import com.skd.slaughterhide.menu.FreezerMenu;
+import com.skd.slaughterhide.menu.MeatGrinderMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.MenuType;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
@@ -15,6 +16,10 @@ public final class ModMenus {
     public static final DeferredHolder<MenuType<?>, MenuType<FreezerMenu>> FREEZER =
             REGISTRY.register("freezer",
                     () -> IMenuTypeExtension.create(FreezerMenu::new));
+
+    public static final DeferredHolder<MenuType<?>, MenuType<MeatGrinderMenu>> MEAT_GRINDER =
+            REGISTRY.register("meat_grinder",
+                    () -> IMenuTypeExtension.create(MeatGrinderMenu::new));
 
     private ModMenus() {
     }

@@ -2,6 +2,12 @@
 
 ## [0.0.0-beta.37] - 2026-08-27
 
+### Add — máquinas GUI (Fase 1 de 4: Meat Grinder)
+
+- **Meat Grinder** portado (delegado a OpenCode `mimo-v2.5`, revisado por Claude): bloque `FACING` + `BLOCKSTATE` 0-5 con formas 1:1 del original, `BaseEntityBlock` + `MeatGrinderBlockEntity` (6 slots, progreso en NBT), `MeatGrinderMenu` (layout de slots propio) + `MeatGrinderScreen`, registrado en `ModBlocks`/`ModItems`/`ModBlockEntities`/`ModMenus`/`ClientSetup`/`ModCreativeTabs`. Assets + receta + loot table del dump (namespace remapeado). Molienda funcional reproducida de `MeatgrinderrecipeprocedureProcedure`: carcasa→`meat_scraps`, cerdo+`intestines`+`sausage_attachment`→`raw_sausage` (+`bottle_of_blood`→`raw_blood_sausage`), cordero→`raw_lamb_mince`, vacuno→`raw_beef_mince`. **Sin** portar la capa custom `RecipeType`/`RecipeSerializer`+JEI (fuera de alcance).
+- **8 ítems de E/S del grinder** (todos contenido real de Butchery, texturas md5-idénticas al dump): `intestines` (reintroducido, ahora con uso), `sausage_attachment`, `meat_scraps`, `raw_sausage` / `raw_blood_sausage` (ítems, distintos de los bloques `raw_sausages`/`raw_blood_sausages`), `raw_beef_mince`, `raw_lamb_mince`, `bottle_of_blood` (ítem simple de momento; su producción se conecta en la Fase 4 del sistema de sangre).
+- **Fix post-delegación**: `MeatGrinderMenu#removed()` tiraba todo el inventario al suelo al cerrar la GUI (como el Freezer, la máquina conserva su contenido); imports sin usar; claves de idioma re-ordenadas.
+
 ### Fix
 
 - **Cabeza de Oso Polar Montada sin textura** — el bloque `polar_bear_head_mount` **nunca se registraba**: `polar_bear` faltaba en el `Set` `HAS_HEAD_MOUNT_ASSETS` de `ModBlocks.java`, así que `mountFor("polar_bear")` devolvía `null` y el `blockItem` quedaba sin bloque. Añadido `polar_bear` al set. Además el modelo custom `polarbear_head_mount.json` tenía 4 UVs fuera de rango (se re-añadió el oso en beta.36, después del clampeo masivo de UVs de beta.35) → reemplazado por la versión ya clampeada. Loot tables `polar_bear_head_mount`/`polar_bear_skeleton` apuntaban a los ítems viejos sin guion bajo (`polarbear_*`, borrados) → corregidas.
