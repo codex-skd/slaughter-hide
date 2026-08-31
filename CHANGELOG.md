@@ -1,5 +1,25 @@
 # Changelog — Slaughter & Hide
 
+## [0.0.0-beta.44] - 2026-08-31
+
+### Add
+
+- **Guía in-game "Butcher's Guide"** vía [Vellumli](https://www.curseforge.com/minecraft/mc-mods/vellumli) (dependencia **opcional** — el libro solo aparece si Vellumli está instalado). Port de la guía Patchouli del mod original: 4 categorías (bloques, guías, objetos, recursos) y 22 entradas, con las recetas remapeadas a los IDs de este mod y descartadas las entradas de contenido no portado (jefes, armaduras, disfraces). Traducción completa a español. Se craftea con un libro + carne cruda (`#slaughter_hide:raw_meat`, tag nuevo). `book.json` usa claves de traducción para el título y el texto de portada.
+- **Partícula de sangre propia** (`slaughter_hide:blood_drip`, rojo oscuro con gravedad) para el goteo del sangrado, en lugar de las partículas de lava de gotalita que se tomaban prestadas de vanilla.
+
+### Fix
+
+- **Las vitrinas (`<madera>_butcher_display`) son ahora una estructura vertical de 2 bloques** (mismo patrón que la mesa de taxidermia): la mitad inferior mantiene el modelo alto y la superior (`<madera>_butcher_display_top`, invisible) da colisión sólida completa a la casilla de encima. Colocar coloca ambas; romper cualquiera elimina las dos y suelta un solo ítem; si no hay hueco arriba, no deja colocar. Las vitrinas colocadas antes de esta versión siguen siendo de 1 bloque hasta recolocarlas.
+- **Charco de sangre (`blood_puddle`) se veía como cubo mágenta**, tanto el ítem como el bloque: el ítem apuntaba a un modelo de bloque plano con textura animada; el bloque referenciaba una textura del atlas de objetos (no permitido en modelos de bloque). Ítem → `item/generated`; bloque → modelo decal fino con textura propia en el atlas de bloques.
+- **Cubos de sangre / sangre infectada**: sus `items/*.json` tenían sintaxis antigua de loader sin las máscaras `neoforge:item/mask/*`. Reescritos con `neoforge:fluid_container` en línea como el original.
+- **27 bloques se veían como cubo mágenta en el inventario** por faltarles el fichero `assets/slaughter_hide/items/<id>.json` (formato de definición de ítem de MC 26.2): `photos`, `salt_block`, `spike_trap`, `sulfur_ore`, `deepslate_sulfur_ore`, ladrillos de diorita (bloque/losa/escalera/muro), `dragon_scale_block`, `plastic_sheet` y `plastic_sheet_corner`, `bone_barrel`, `cod_barrel`, `salmon_barrel`, `butcher_statue`, `floorstanding_sign`, `cling_film`, `blood_splatter`, salchichas crudas y cocinadas (normales y de sangre) y las 4 formaciones de sal.
+- **`wishbone` y `salt` sin textura** — texturas restauradas desde los assets del mod original.
+- **La rejilla de sangre se rompía de un golpe en supervivencia** — se le da dureza real (`strength 3/6`) y sonido metálico. Además, hacer clic con la mano vacía muestra el nivel de sangre acumulado (`N/3`) en la barra de acción.
+
+### Notas
+
+- Pendiente de verificación en cliente y de una sesión dedicada: el goteo visible del sangrado y el llenado visual de la rejilla, y los modelos de despiece de la carcasa colgada (fases de corte sobre el gancho).
+
 ## [0.0.0-beta.43] - 2026-08-27
 
 ### Fix
