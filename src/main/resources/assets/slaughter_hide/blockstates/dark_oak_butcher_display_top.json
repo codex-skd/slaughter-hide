@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "slaughter_hide:block/butcher_display_top" },
+    "facing=east":  { "model": "slaughter_hide:block/butcher_display_top" },
+    "facing=south": { "model": "slaughter_hide:block/butcher_display_top" },
+    "facing=west":  { "model": "slaughter_hide:block/butcher_display_top" }
+  }
+}

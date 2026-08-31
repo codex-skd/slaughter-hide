@@ -1,0 +1,16 @@
+{
+      "name": "Rejilla de sangre",
+    "icon": "slaughter_hide:blood_grate",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:blood_grate",
+            "link_recipe": true,
+            "title" : "Rejilla de sangre",
+            "text": "La rejilla de sangre es un bloque que puede recoger sangre de carcosas que sangran. Este bloque debe colocarse directamente debajo de la carcasa colgante."
+        }
+    ]
+}

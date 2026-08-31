@@ -1,0 +1,24 @@
+{
+      "name": "Carnear carcassen",
+    "icon": "slaughter_hide:hook",
+    "category": "slaughter_hide:guides",
+    "read_by_default": true,
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:hook",
+            "link_recipe": true,
+            "title" : "Carnear carcassen",
+            "text": "La mayoría de las carcassen se carnea de la misma manera, sin embargo hay algunas excepciones. Vamos a cubrir el proceso normal de carnear. Antes de poder carnear la carcasa, necesitarás colgarla y sangrarla. Esto requerirá un gancho; puedes leer más sobre ellos aquí. Una vez que tengas tu gancho, simplemente haz clic derecho mientras sostienes la carcasa, esto colocará la carcasa en el gancho."
+        },
+        {
+            "type": "vellumli:text",
+            "text": "Ahora necesitarás una cuchilla; cualquier material sirve. Haz clic derecho en la carcasa colgante mientras sostienes tu cuchilla y empezarás a ver sangre goteando. ¡Asegúrate de tener una rejilla de sangre debajo para recoger la sangre, de lo contrario terminarás con un desastre enorme! Este proceso solo tarda unos segundos; sabrás que ha terminado cuando la carcasa cambie a su variante escurrida (algunas también se vuelven más claras para indicar que están escurridas)."
+        },
+        {
+            "type": "vellumli:text",
+            "text": "¡Ahora tienes una carcasa escurrida! De aquí tienes 2 opciones. Dejar la carcasa en el gancho para carnearla o romper la carcasa y recogerla, luego puedes colocarla en la mesa de carnicero (la mesa no es necesaria). Una vez más con tu fiel cuchilla, haz clic derecho en la carcasa mientras sostienes la cuchilla para comenzar a carnear. La mayoría de las carcassen requerirán una segunda herramienta para ser carneadas; esta herramienta es el cuchillo de despellejar. Como puedes adivinar por el nombre, este cuchillo despelleja la carcasa para obtener la piel (este proceso aplica para quitar armaduras a otros mobs como el Pillager)."
+        }
+    ]
+}

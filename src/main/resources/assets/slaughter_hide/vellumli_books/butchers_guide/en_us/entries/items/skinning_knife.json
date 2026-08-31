@@ -1,0 +1,29 @@
+{
+      "name": "Skinning Knives",
+    "icon": "slaughter_hide:iron_skinning_knife",
+    "category": "slaughter_hide:items",
+    "read_by_default": true,
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:iron_skinning_knife",
+            "link_recipe": true,
+            "title" : "Skinning Knives",
+            "text": "The skinning knives are used for skinning mobs and obtaining the fur/skin. To skin a carcass it must be fully drained first, then right clicking on the carcass whilst holding the skinning knife. Like the cleavers the skinning knives come in 5 materials, all do the same again with the exception of Netherite which is strong enough to skin boss carcasses."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:ironskinningkniferecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:goldskinningkniferecipe",
+            "recipe2": "slaughter_hide:diamondskinningkniferecipe"
+        },
+        {
+            "type": "vellumli:smithing",
+            "recipe": "slaughter_hide:netheriteskinningkniferecipe"
+        }
+    ]
+}

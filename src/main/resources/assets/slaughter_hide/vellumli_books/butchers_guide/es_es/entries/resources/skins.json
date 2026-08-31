@@ -1,0 +1,16 @@
+{
+    "name": "Pieles",
+    "icon": "slaughter_hide:cow_skin",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:cow_skin",
+            "link_recipe": true,
+            "title": "Piel",
+            "text": "Las pieles se obtienen al carnear carcassen. Se pueden usar en el $(l:slaughter_hide:blocks/skin_rack)Bastidor de pieles$() y convertirse en cuero."
+        }
+    ]
+}

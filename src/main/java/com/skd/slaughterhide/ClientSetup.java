@@ -1,5 +1,6 @@
 package com.skd.slaughterhide;
 
+import com.skd.slaughterhide.client.particle.BloodDripParticle;
 import com.skd.slaughterhide.client.particle.FreezerSmokeParticle;
 import com.skd.slaughterhide.init.ModFluidTypes;
 import com.skd.slaughterhide.init.ModFluids;
@@ -40,6 +41,7 @@ public class ClientSetup {
 	@SubscribeEvent
 	public static void onRegisterParticleProviders(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(ModParticleTypes.FREEZER_SMOKE.get(), FreezerSmokeParticle.Provider::new);
+		event.registerSpriteSet(ModParticleTypes.BLOOD_DRIP.get(), BloodDripParticle.Provider::new);
 	}
 
 	@SubscribeEvent

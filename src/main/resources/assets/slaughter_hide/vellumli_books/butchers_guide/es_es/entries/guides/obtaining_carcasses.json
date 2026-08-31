@@ -1,0 +1,16 @@
+{
+      "name": "Obtener carcassen",
+    "icon": "slaughter_hide:pig_carcass",
+    "category": "slaughter_hide:guides",
+    "read_by_default": true,
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:pig_carcass",
+            "link_recipe": true,
+            "title" : "Obtener carcassen",
+            "text": "Obtener la carcasa de un mob es bastante simple. Solo necesitas una cuchilla (a menos que se habilite cualquier otra herramienta/arma para soltar carcassen en la configuración). Simplemente mata al mob que desees con la cuchilla; esto hará que suelte la carcasa del mob y luego ¡simplemente recógela! Puede que notes que te sientes un poco pesado, ¿por qué? Las carcassen son ligeras, ya sabes... Ligar carcassen causa efecto de lentitud cuando están en tu inventario. (Se puede desactivar en la configuración)"
+        }
+    ]
+}

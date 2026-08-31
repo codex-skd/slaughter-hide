@@ -1,0 +1,20 @@
+{
+      "name": "Bastidor de pieles",
+    "icon": "slaughter_hide:skin_rack",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:skin_rack",
+            "link_recipe": true,
+            "title" : "Bastidor de pieles",
+            "text": "El bastidor de pieles se puede usar para convertir pieles de animales en cuero. Para usar el bastidor, coloca una piel de mob haciendo clic derecho en el bastidor mientras sostienes la piel. Una vez colocada, usa una esponja mojada, un trapo o una botella de agua para mojar la piel. Finalmente, haz clic derecho en la piel mojada mientras sostienes un poco de sal. Después de seguir estos pasos, tendrás que esperar a que la piel se cure y se convierta en cuero."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:skinrackrecipe"
+        }
+    ]
+}

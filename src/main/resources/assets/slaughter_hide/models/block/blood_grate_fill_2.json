@@ -1,21 +1,78 @@
 {
   "parent": "block/block",
   "textures": {
-    "blood": "slaughter_hide:block/blood_still",
-    "particle": "slaughter_hide:block/blood_still"
+    "blood": "slaughter_hide:block/inner_blood",
+    "particle": "slaughter_hide:block/inner_blood"
   },
   "elements": [
     {
-      "from": [2, 1, 2],
-      "to": [14, 8, 14],
+      "from": [
+        2,
+        1,
+        2
+      ],
+      "to": [
+        14,
+        8,
+        14
+      ],
       "faces": {
-        "up":    { "uv": [2, 2, 14, 14], "texture": "#blood" },
-        "down":  { "uv": [2, 2, 14, 14], "texture": "#blood" },
-        "north": { "uv": [2, 2, 14, 14], "texture": "#blood" },
-        "south": { "uv": [2, 2, 14, 14], "texture": "#blood" },
-        "east":  { "uv": [2, 2, 14, 14], "texture": "#blood" },
-        "west":  { "uv": [2, 2, 14, 14], "texture": "#blood" }
+        "up": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#blood"
+        },
+        "down": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#blood"
+        },
+        "north": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#blood"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#blood"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#blood"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#blood"
+        }
       }
     }
-  ]
+  ],
+  "render_type": "minecraft:solid"
 }

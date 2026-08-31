@@ -1,0 +1,16 @@
+{
+      "name": "Blood Grate",
+    "icon": "slaughter_hide:blood_grate",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:blood_grate",
+            "link_recipe": true,
+            "title" : "Blood Grate",
+            "text": "The blood grate is a block that can collect blood from bleeding carcasses. This block will need to be placed directly below the hanging carcass."
+        }
+    ]
+}

@@ -117,6 +117,8 @@
   "block.slaughter_hide.warped_butchers_table": "Warped Butcher's Table",
   "block.slaughter_hide.warped_counter": "Warped Counter",
   "block.slaughter_hide.wooden_spit_rotisserie": "Wooden Spit Rotisserie",
+  "book.slaughter_hide.butchers_guide": "Butcher's Guide Vol. I",
+  "book.slaughter_hide.butchers_guide.landing": "Welcome $(#f92020)$(playername)$() to the Butcher's Guide! $(br)$(br)Slaughter & Hide adds realistic animal processing: harvest and process animal carcasses for extra resources.",
   "container.slaughter_hide.freezer": "Freezer",
   "container.slaughter_hide.meat_grinder": "Meat Grinder",
   "container.slaughter_hide.pestle_and_mortar": "Pestle and Mortar",
@@ -316,5 +318,6 @@
   "item.slaughter_hide.wooden_spit_rotisserie": "Wooden Spit Rotisserie",
   "item_group.slaughter_hide.slaughter_hide_blocks": "Slaughter & Hide: Blocks",
   "item_group.slaughter_hide.slaughter_hide_food": "Slaughter & Hide: Foods",
-  "item_group.slaughter_hide.slaughter_hide_items": "Slaughter & Hide: Items"
+  "item_group.slaughter_hide.slaughter_hide_items": "Slaughter & Hide: Items",
+  "message.slaughter_hide.blood_grate.level": "Blood grate: %s/%s (%s)"
 }

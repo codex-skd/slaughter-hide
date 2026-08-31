@@ -14,6 +14,9 @@ public final class ModParticleTypes {
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FREEZER_SMOKE =
 			REGISTRY.register("freezersmoke", () -> new SimpleParticleType(false));
 
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> BLOOD_DRIP =
+			REGISTRY.register("blood_drip", () -> new SimpleParticleType(false));
+
 	private ModParticleTypes() {
 	}
 }

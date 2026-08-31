@@ -1,0 +1,20 @@
+{
+      "name": "Mortero",
+    "icon": "slaughter_hide:pestle_and_mortar",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:pestle_and_mortar",
+            "link_recipe": true,
+            "title" : "Mortero",
+            "text": "El mortero tiene usos similares a la picadora en cuanto a que puede triturar ciertos objetos. Por ejemplo, los huesos de pollo se pueden moler en polvo de hueso, los cascos en bolas de slime y los huesos añadidos por Carnicería en sus respectivos polvos de hueso."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:pestle_and_mortar_recipe"
+        }
+    ]
+}

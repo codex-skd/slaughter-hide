@@ -1,0 +1,29 @@
+{
+      "name": "Sierras de mano",
+    "icon": "slaughter_hide:iron_hacksaw",
+    "category": "slaughter_hide:items",
+    "read_by_default": true,
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:iron_hacksaw",
+            "link_recipe": true,
+            "title" : "Sierras de mano",
+            "text": "Las sierras de mano son necesarias para carnear algunos mobs más resistentes que las cuchillas no pueden tocar, por ejemplo los Gólems de hierro. Las sierras de mano se usan igual para estos mobs que las cuchillas para los mobs normales, haciendo clic derecho en las carcassen con ellas."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:ironhacksawrecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:goldhacksawrecipe",
+            "recipe2": "slaughter_hide:diamondhacksawrecipe"
+        },
+        {
+            "type": "vellumli:smithing",
+            "recipe": "slaughter_hide:netheritehacksawrecipe"
+        }
+    ]
+}

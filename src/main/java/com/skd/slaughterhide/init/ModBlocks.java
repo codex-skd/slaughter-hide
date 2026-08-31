@@ -56,6 +56,7 @@ import com.skd.slaughterhide.block.CounterBlock;
 import com.skd.slaughterhide.block.CanopyBlock;
 import com.skd.slaughterhide.block.ButchersTableBlock;
 import com.skd.slaughterhide.block.ButcherDisplayBlock;
+import com.skd.slaughterhide.block.ButcherDisplayTopBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -189,6 +190,7 @@ public final class ModBlocks {
 
     // Furniture blocks (counters, canopies, butcher's tables, butcher displays)
     private static final List<DeferredBlock<Block>> FURNITURE_BLOCKS = new ArrayList<>();
+    private static final Map<String, DeferredBlock<Block>> BUTCHER_DISPLAY_BOTTOMS = new HashMap<>();
 
     private static final String[] COUNTER_IDS = {
             "oak_counter", "birch_counter", "spruce_counter", "jungle_counter",
@@ -238,8 +240,12 @@ public final class ModBlocks {
             FURNITURE_BLOCKS.add(block);
         }
         for (String id : BUTCHER_DISPLAY_IDS) {
-            DeferredBlock<Block> block = register(id, props -> new ButcherDisplayBlock(props));
-            FURNITURE_BLOCKS.add(block);
+            DeferredBlock<Block> top = register(id + "_top",
+                    props -> new ButcherDisplayTopBlock(props, () -> BUTCHER_DISPLAY_BOTTOMS.get(id).get()));
+            DeferredBlock<Block> bottom = register(id,
+                    props -> new ButcherDisplayBlock(props, () -> top.get()));
+            BUTCHER_DISPLAY_BOTTOMS.put(id, bottom);
+            FURNITURE_BLOCKS.add(bottom);
         }
     }
 

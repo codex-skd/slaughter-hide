@@ -117,6 +117,8 @@
   "block.slaughter_hide.warped_butchers_table": "Mesa de Carnicero Deformado",
   "block.slaughter_hide.warped_counter": "Mostrador Deformado",
   "block.slaughter_hide.wooden_spit_rotisserie": "Wooden Spit Rotisserie",
+  "book.slaughter_hide.butchers_guide": "Guía del Carnicero, Vol. I",
+  "book.slaughter_hide.butchers_guide.landing": "¡Bienvenido $(#f92020)$(playername)$() a la Guía del Carnicero! $(br)$(br)Slaughter & Hide añade un procesado realista de animales: aprovecha y procesa las carcasas de animales para obtener recursos extra.",
   "container.slaughter_hide.freezer": "Congelador",
   "container.slaughter_hide.meat_grinder": "Picadora de Carne",
   "container.slaughter_hide.pestle_and_mortar": "Mortero",
@@ -316,5 +318,6 @@
   "item.slaughter_hide.wooden_spit_rotisserie": "Wooden Spit Rotisserie",
   "item_group.slaughter_hide.slaughter_hide_blocks": "Slaughter & Hide: Bloques",
   "item_group.slaughter_hide.slaughter_hide_food": "Slaughter & Hide: Comida",
-  "item_group.slaughter_hide.slaughter_hide_items": "Slaughter & Hide: Objetos"
+  "item_group.slaughter_hide.slaughter_hide_items": "Slaughter & Hide: Objetos",
+  "message.slaughter_hide.blood_grate.level": "Rejilla de sangre: %s/%s (%s)"
 }

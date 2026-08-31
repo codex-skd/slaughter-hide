@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "slaughter_hide:raw_chuck_steak",
+    "slaughter_hide:raw_ribeye_steak",
+    "slaughter_hide:raw_rump_steak",
+    "slaughter_hide:raw_sirloin_steak",
+    "slaughter_hide:raw_tbone_steak",
+    "slaughter_hide:raw_beef_mince",
+    "slaughter_hide:raw_pork_shoulder",
+    "slaughter_hide:raw_pork_loin",
+    "slaughter_hide:raw_pork_leg",
+    "slaughter_hide:raw_pork_belly",
+    "slaughter_hide:raw_ham",
+    "slaughter_hide:raw_leg_of_lamb",
+    "slaughter_hide:raw_lamb_shoulder",
+    "slaughter_hide:raw_lamb_rib",
+    "slaughter_hide:raw_lamb_sirloin",
+    "slaughter_hide:raw_lamb_loin",
+    "slaughter_hide:raw_lamb_mince",
+    "slaughter_hide:raw_chicken_leg",
+    "slaughter_hide:raw_chicken_wing",
+    "slaughter_hide:raw_polar_bear_meat"
+  ]
+}

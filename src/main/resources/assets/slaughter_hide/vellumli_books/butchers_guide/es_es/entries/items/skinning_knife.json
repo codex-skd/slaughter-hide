@@ -1,0 +1,29 @@
+{
+      "name": "Cuchillos de despellejar",
+    "icon": "slaughter_hide:iron_skinning_knife",
+    "category": "slaughter_hide:items",
+    "read_by_default": true,
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:iron_skinning_knife",
+            "link_recipe": true,
+            "title" : "Cuchillos de despellejar",
+            "text": "Los cuchillos de despellejar se usan para despellejar mobs y obtener el pelaje/piel. Para despellejar una carcasa, esta debe estar completamente escurrida; luego haz clic derecho en la carcasa mientras sostienes el cuchillo de despellejar. Al igual que las cuchillas, los cuchillos de despellejar vienen en 5 materiales; todos hacen lo mismo, con la excepción de la Netherita que es lo suficientemente fuerte para despellejar carcassen de jefes."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:ironskinningkniferecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:goldskinningkniferecipe",
+            "recipe2": "slaughter_hide:diamondskinningkniferecipe"
+        },
+        {
+            "type": "vellumli:smithing",
+            "recipe": "slaughter_hide:netheriteskinningkniferecipe"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+      "name": "Cascos",
+    "icon": "slaughter_hide:hoof",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 8,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:hoof",
+            "link_recipe": true,
+            "title" : "Cascos",
+            "text": "Los cascos se pueden usar en el $(l:slaughter_hide:blocks/pestle_and_mortar)mortero$() para obtener bolas de slime."
+        }
+    ]
+}

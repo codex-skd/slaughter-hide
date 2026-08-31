@@ -1,0 +1,13 @@
+{
+    "name": "Salt",
+    "icon": "slaughter_hide:salt_block",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "Salt is produced by evaporating water in a $(l:slaughter_hide:blocks/basin)Basin$() in direct sunlight. Salt from other mods using the c:salt tag also works in this mod's recipes."
+        }
+    ]
+}

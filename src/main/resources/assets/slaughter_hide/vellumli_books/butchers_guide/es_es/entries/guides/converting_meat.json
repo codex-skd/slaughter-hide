@@ -1,0 +1,25 @@
+{
+      "name": "Conversión de carne",
+    "icon": "minecraft:beef",
+    "category": "slaughter_hide:guides",
+    "read_by_default": true,
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "minecraft:beef",
+            "link_recipe": true,
+            "title" : "Conversión de carne",
+            "text": "¿No quieres usar la carne de Carnicería? ¡No hay problema! La carne de Carnicería se puede convertir en carne vanilla; para hacerlo, simplemente coloca la carne en una mesa de trabajo, siempre que tenga un equivalente vanilla. ¡También puedes usar la tabla de picar de Farmer's Delight para esto!"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:beefconversion",
+            "recipe2": "slaughter_hide:porkconversion"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:muttonconversion"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Sal",
+    "icon": "slaughter_hide:salt_block",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "vellumli:text",
+            "text": "La sal se produce evaporando agua en una $(l:slaughter_hide:blocks/basin)Cuenca$() a la luz directa del sol. La sal de otros mods que usen la etiqueta c:salt también funciona en las recetas de este mod."
+        }
+    ]
+}

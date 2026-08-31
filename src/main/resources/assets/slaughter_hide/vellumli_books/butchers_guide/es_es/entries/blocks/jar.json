@@ -1,0 +1,20 @@
+{
+      "name": "Tarro",
+    "icon": "slaughter_hide:jar",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:jar",
+            "link_recipe": true,
+            "title" : "Tarro",
+            "text": "Los tarros se pueden usar para exhibir diferentes órganos. Para añadir un órgano al tarro, simplemente haz clic derecho mientras sostienes el órgano; consumirá el órgano, pero para recuperarlo simplemente rompe el tarro."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:jarrecipe"
+        }
+    ]
+}

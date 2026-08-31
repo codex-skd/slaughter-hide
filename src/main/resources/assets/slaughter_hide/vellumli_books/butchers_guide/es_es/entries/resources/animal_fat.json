@@ -1,0 +1,16 @@
+{
+      "name": "Grasa animal",
+    "icon": "slaughter_hide:animal_fat",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:animal_fat",
+            "link_recipe": true,
+            "title" : "Grasa animal",
+            "text": "La grasa animal se obtiene durante el carnear. Tiene varios usos diferentes, como crear velas; otro uso es como combustible de baja calidad en hornos etc. en lugar de carbón y madera."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Skins",
+    "icon": "slaughter_hide:cow_skin",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:cow_skin",
+            "link_recipe": true,
+            "title": "Skin",
+            "text": "Skins are obtained while butchering carcasses. These can be used on the $(l:slaughter_hide:blocks/skin_rack)Skin Rack$() and converted into leather."
+        }
+    ]
+}

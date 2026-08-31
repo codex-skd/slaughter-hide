@@ -1,0 +1,16 @@
+{
+      "name": "Sangre",
+    "icon": "slaughter_hide:blood_bucket",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:blood_bucket",
+            "link_recipe": true,
+            "title" : "Sangre",
+            "text": "La sangre es un recurso del que tendrás mucho. Se obtiene al sangrar carcassen mientras tienes una $(l:slaughter_hide:blocks/blood_grate)Rejilla de sangre$() debajo para recoger la sangre. La sangre se puede extraer de la rejilla con un cubo o una botella. La sangre en botella se puede usar en recetas de la $(l:slaughter_hide:blocks/meat_grinder)Picadora de carne$() para obtener salchichas de sangre."
+        }
+    ]
+}

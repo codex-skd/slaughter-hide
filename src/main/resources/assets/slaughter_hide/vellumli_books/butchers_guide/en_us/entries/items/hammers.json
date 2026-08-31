@@ -1,0 +1,29 @@
+{
+      "name": "Hammers",
+    "icon": "slaughter_hide:iron_hammer",
+    "category": "slaughter_hide:items",
+    "read_by_default": true,
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:iron_hammer",
+            "link_recipe": true,
+            "title" : "Hammers",
+            "text": "Some carcasses have tough shell and shell-like exteriors, unfortunately the cleavers just can't get through. This is where the hammers come in, using these tools with enough force can break open shells. For mobs like turtles and shulkers the shells can be removed by right-clicking with the hammer."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:ironhammerrecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:goldhammerrecipe",
+            "recipe2": "slaughter_hide:diamondhammerrecipe"
+        },
+        {
+            "type": "vellumli:smithing",
+            "recipe": "slaughter_hide:netheritehammerrecipe"
+        }
+    ]
+}

@@ -1,3 +1,6 @@
 {
-  "parent": "slaughter_hide:block/blood_puddle"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "slaughter_hide:item/blood_puddle"
+  }
 }

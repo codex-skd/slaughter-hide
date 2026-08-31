@@ -1,0 +1,9 @@
+{
+    "name": "book.slaughter_hide.butchers_guide",
+    "landing_text": "book.slaughter_hide.butchers_guide.landing",
+    "version": 1,
+    "show_progress": false,
+    "show_toasts": false,
+    "creative_tab": "slaughter_hide:slaughter_hide_items",
+    "use_resource_pack": true
+}

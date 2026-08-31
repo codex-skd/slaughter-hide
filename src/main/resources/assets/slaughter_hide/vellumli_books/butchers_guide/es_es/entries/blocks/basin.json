@@ -1,0 +1,20 @@
+{
+      "name": "Cuenca",
+    "icon": "slaughter_hide:basin",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:basin",
+            "link_recipe": true,
+            "title" : "Cuenca",
+            "text": "La cuenca se puede usar para automatizar la recolección de $(l:slaughter_hide:resources/salt)Sal$(). Para usar este bloque debes llenarlo de agua y, a lo largo de medio día de Minecraft, el agua se evaporará dejando sal que se puede recoger haciendo clic derecho o extrayendo con una tolva. La cuenca DEBE estar afuera a la luz directa del sol para evaporar el agua; no funcionará por la noche ni mientras llueva."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:basinrecipe"
+        }
+    ]
+}

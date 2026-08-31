@@ -1,8 +1,18 @@
 {
-  "parent": "slaughter_hide:custom/blood_puddle",
+  "parent": "block/block",
+  "render_type": "minecraft:cutout",
   "textures": {
-    "all": "slaughter_hide:block/blood_still",
-    "particle": "slaughter_hide:block/blood_still",
-    "0": "slaughter_hide:block/blood_still"
-  }
+    "puddle": "slaughter_hide:block/blood_puddle",
+    "particle": "slaughter_hide:block/blood_puddle"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 0.25, 16],
+      "faces": {
+        "up": { "uv": [0, 0, 16, 16], "texture": "#puddle" },
+        "down": { "uv": [0, 0, 16, 16], "texture": "#puddle" }
+      }
+    }
+  ]
 }

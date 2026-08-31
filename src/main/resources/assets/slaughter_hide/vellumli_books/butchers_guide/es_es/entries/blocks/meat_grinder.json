@@ -1,0 +1,20 @@
+{
+      "name": "Picadora de carne",
+    "icon": "slaughter_hide:meat_grinder",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:meat_grinder",
+            "link_recipe": true,
+            "title" : "Picadora de carne",
+            "text": "La picadora de carne se puede usar para crear múltiples alimentos diferentes. Primero puede picar res o cordero en carne picada que se puede usar en recetas adicionales o simplemente cocinar y comer. Otro alimento son las salchichas; estas requieren algunos objetos más como: el accesorio de relleno de salchichas, intestinos y, si se hacen salchichas de sangre, ¡sangre! La picadora de carne también se puede usar para triturar carcassen y cabezas sobrantes en carne de desecho."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:meatgrinderrecipe"
+        }
+    ]
+}

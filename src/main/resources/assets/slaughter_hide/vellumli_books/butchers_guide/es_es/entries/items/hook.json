@@ -1,0 +1,20 @@
+{
+      "name": "Gancho",
+    "icon": "slaughter_hide:hook",
+    "category": "slaughter_hide:items",
+    "read_by_default": true,
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:hook",
+            "link_recipe": true,
+            "title" : "Gancho",
+            "text": "El gancho es una herramienta esencial para poder carnear carcassen. Este objeto es necesario para poder colgar carcassen y sangrarlas y comenzar el proceso de carnear. Los ganchos se pueden colocar en los lados o la parte inferior de los bloques; también se pueden colocar en cadenas horizontales."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:hookrecipe"
+        }
+    ]
+}

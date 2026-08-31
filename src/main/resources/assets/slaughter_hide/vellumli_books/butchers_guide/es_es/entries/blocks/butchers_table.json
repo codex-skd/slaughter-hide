@@ -1,0 +1,40 @@
+{
+      "name": "Mesa de carnicero de madera",
+    "icon": "slaughter_hide:oak_butchers_table",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:oak_butchers_table",
+            "link_recipe": true,
+            "title" : "Mesa de carnicero de madera",
+            "text": "La mesa de carnicero de madera es un bloque sobre el que se pueden colocar carcassen para carnearlas una vez escurridas. La mesa NO es necesaria para carnear carcassen."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:oakbutcherstablerecipe",
+            "recipe2": "slaughter_hide:acaciabutcherstablerecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:birchbutcherstablerecipe",
+            "recipe2": "slaughter_hide:crimsonbutcherstablerecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:darkoakbutcherstablerecipe",
+            "recipe2": "slaughter_hide:junglebutcherstablerecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:mangrovebutcherstablerecipe",
+            "recipe2": "slaughter_hide:sprucebutcherstablerecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:warpedbutcherstablerecipe"
+        }
+    ]
+}

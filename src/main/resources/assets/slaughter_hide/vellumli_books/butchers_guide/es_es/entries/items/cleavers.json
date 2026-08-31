@@ -1,0 +1,29 @@
+{
+      "name": "Cuchillas",
+    "icon": "slaughter_hide:iron_cleaver",
+    "category": "slaughter_hide:items",
+    "read_by_default": true,
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:iron_cleaver",
+            "link_recipe": true,
+            "title" : "Cuchillas",
+            "text": "Las cuchillas se usan para obtener las carcassen de los mobs, sangrar carcassen y carnearlas. Hay 5 materiales diferentes, igual que las herramientas vanilla: Hueso, Hierro, Oro, Diamante y Netherita. Con la excepción de la Netherita, todas estas cuchillas hacen lo mismo; sin embargo, las cuchillas de Netherita son las únicas que pueden obtener y carnear carcassen de mobs jefes."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:ironcleaverrecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:goldcleaverrecipe",
+            "recipe2": "slaughter_hide:diamondcleaverrecipe"
+        },
+        {
+            "type": "vellumli:smithing",
+            "recipe": "slaughter_hide:netheritecleaverrecipe"
+        }
+    ]
+}

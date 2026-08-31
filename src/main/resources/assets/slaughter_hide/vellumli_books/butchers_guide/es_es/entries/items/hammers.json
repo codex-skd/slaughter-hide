@@ -1,0 +1,29 @@
+{
+      "name": "Martillos",
+    "icon": "slaughter_hide:iron_hammer",
+    "category": "slaughter_hide:items",
+    "read_by_default": true,
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:iron_hammer",
+            "link_recipe": true,
+            "title" : "Martillos",
+            "text": "Algunas carcassen tienen caparazones duros y exterioressimilar a caparazones; lamentablemente, las cuchillas simplemente no pueden atravesarlos. Aquí es donde entran los martillos; usar estas herramientas con suficiente fuerza puede romper los caparazones. Para mobs como tortugas y shulkers, los caparazones se pueden quitar haciendo clic derecho con el martillo."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:ironhammerrecipe"
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:goldhammerrecipe",
+            "recipe2": "slaughter_hide:diamondhammerrecipe"
+        },
+        {
+            "type": "vellumli:smithing",
+            "recipe": "slaughter_hide:netheritehammerrecipe"
+        }
+    ]
+}

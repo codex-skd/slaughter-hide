@@ -1,1 +1,6 @@
-{"loader":"neoforge:fluid_container","fluid":"slaughter_hide:infected_blood","flip_gas":false,"apply_fluid_luminosity":true}
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/bucket"
+  }
+}

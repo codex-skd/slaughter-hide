@@ -68,3 +68,11 @@ Realistically butcher everything in Minecraft!
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+
+# Vellumli — optional, provides in-game guidebook.
+[[dependencies.${mod_id}]]
+    modId="vellumli"
+    type="optional"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"

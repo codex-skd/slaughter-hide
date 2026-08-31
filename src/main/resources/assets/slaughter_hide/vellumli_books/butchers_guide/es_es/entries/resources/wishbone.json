@@ -1,0 +1,16 @@
+{
+      "name": "Hueso de deseo",
+    "icon": "slaughter_hide:wishbone",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:wishbone",
+            "link_recipe": true,
+            "title" : "Hueso de deseo",
+            "text": "Los huesos de deseo se pueden obtener de carcassen de pollo escurridas haciendo clic derecho con la mano vacía; esto depende de la probabilidad, por lo que podrías recibir un hueso de deseo roto que se puede moler en polvo de hueso en la picadora de carne. Si tienes éxito en recibir un hueso de deseo, podrás impregnarlo con la magia de una Estrella del Nether en un soporte de pociones. Esto requiere 3 huesos de deseo y 1 estrella del Nether. Romper un hueso de deseo mágico causará eventos aleatorios. Algunos serán buenos, otros muy buenos y algunos malos... muy malos. (¡NO ROMPAS EL HUESO DE DESEO MÁGICO EN TU BASE!)"
+        }
+    ]
+}

@@ -9,10 +9,10 @@ import com.skd.slaughterhide.block.DrainedCarcassBlock;
 import com.skd.slaughterhide.block.entity.CarcassBlockEntity;
 import com.skd.slaughterhide.config.SlaughterHideConfig;
 import com.skd.slaughterhide.init.ModBlocks;
+import com.skd.slaughterhide.init.ModParticleTypes;
 import com.skd.slaughterhide.tag.ModItemTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -100,15 +100,15 @@ public final class CarcassBleedingHandler {
             double z = pos.getZ() + 0.5 + (rand.nextDouble() - 0.5) * 0.5;
             // start just under the carcass, with a downward push so it streams to the floor
             double y = pos.getY() - 0.15;
-            level.sendParticles(ParticleTypes.FALLING_DRIPSTONE_LAVA, x, y, z, 1, 0.0, -0.6, 0.0, 0.0);
+            level.sendParticles(ModParticleTypes.BLOOD_DRIP.get(), x, y, z, 1, 0.0, -0.6, 0.0, 0.0);
             // plus a mid-air splash halfway down the gap
             if (drop > 1) {
                 double my = pos.getY() - rand.nextInt(drop) - rand.nextDouble();
-                level.sendParticles(ParticleTypes.FALLING_DRIPSTONE_LAVA, x, my, z, 1, 0.0, -0.4, 0.0, 0.0);
+                level.sendParticles(ModParticleTypes.BLOOD_DRIP.get(), x, my, z, 1, 0.0, -0.4, 0.0, 0.0);
             }
         }
         // a small pool splash where it lands
-        level.sendParticles(ParticleTypes.LANDING_LAVA,
+        level.sendParticles(ModParticleTypes.BLOOD_DRIP.get(),
                 pos.getX() + 0.5, pos.getY() - drop + 0.05, pos.getZ() + 0.5, 3, 0.25, 0.0, 0.25, 0.0);
 
         placeBloodBlock(level, pos);

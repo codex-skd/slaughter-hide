@@ -1,0 +1,16 @@
+{
+      "name": "Hoofs",
+    "icon": "slaughter_hide:hoof",
+    "category": "slaughter_hide:resources",
+    "read_by_default": true,
+    "sortnum": 8,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:hoof",
+            "link_recipe": true,
+            "title" : "Hoofs",
+            "text": "Hoofs can be used in the $(l:slaughter_hide:blocks/pestle_and_mortar)pestle and mortar$() to obtain slime balls."
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+      "name": "Mesa de carnicero de metal",
+    "icon": "slaughter_hide:metal_butchers_table",
+    "category": "slaughter_hide:blocks",
+    "read_by_default": true,
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "vellumli:spotlight",
+            "item": "slaughter_hide:metal_butchers_table",
+            "link_recipe": true,
+            "title" : "Mesa de carnicero de metal",
+            "text": "La mesa de carnicero de metal, igual que las de madera, es un bloque sobre el que se pueden colocar carcassen para carnearlas una vez escurridas. La mesa NO es necesaria para carnear carcassen."
+        },
+        {
+            "type": "vellumli:crafting",
+            "recipe": "slaughter_hide:metalbutcherstablerecipe"
+        }
+    ]
+}

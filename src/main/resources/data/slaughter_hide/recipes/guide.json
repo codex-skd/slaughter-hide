@@ -2,24 +2,20 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "patchouli"
+      "modid": "vellumli"
     }
   ],
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:book"
-    },
-    {
-      "tag": "slaughter_hide:raw_meat"
-    }
+    "minecraft:book",
+    "#slaughter_hide:raw_meat"
   ],
   "result": {
     "components": {
-      "patchouli:book": "slaughter_hide:butchers_guide"
+      "vellumli:book": "slaughter_hide:butchers_guide"
     },
     "count": 1,
-    "id": "patchouli:guide_book"
+    "id": "vellumli:guide_book"
   }
 }
